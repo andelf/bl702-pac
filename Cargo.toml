@@ -13,3 +13,4 @@ categories = ["embedded", "hardware-support", "no-std"]
 
 [dependencies]
 vcell = "0.1"
+riscv = "0.6.0"
