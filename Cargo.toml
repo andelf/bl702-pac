@@ -1,0 +1,15 @@
+[package]
+name = "bl702-pac"
+description = "Embedded Rust's Peripheral Access Crate for BL702 RISC-V BLE microcontroller"
+version = "0.0.1"
+edition = "2018"
+authors = ["Andelf <andelf@gmail.com>"]
+repository = "https://github.com/andelf/bl702-pac"
+documentation = "https://docs.rs/bl702-pac"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["riscv", "bl702", "pac"]
+categories = ["embedded", "hardware-support", "no-std"]
+
+[dependencies]
+vcell = "0.1"
