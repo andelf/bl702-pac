@@ -1,6 +1,6 @@
 [package]
 name = "bl702-pac"
-description = "Embedded Rust's Peripheral Access Crate for BL702 RISC-V BLE microcontroller"
+description = "Embedded Rust's Peripheral Access Crate for BL702/BL704/BL706 RISC-V BLE + Zigbee microcontroller"
 version = "0.0.1"
 edition = "2018"
 authors = ["Andelf <andelf@gmail.com>"]
