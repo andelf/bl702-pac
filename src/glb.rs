@@ -87,45 +87,11 @@ pub struct RegisterBlock {
     #[doc = "0xe0 - debug."]
     pub debug: crate::Reg<debug::DEBUG_SPEC>,
     _reserved40: [u8; 0x1c],
-    #[doc = "0x100 - GPIO_CFGCTL0."]
-    pub gpio_cfgctl0: crate::Reg<gpio_cfgctl0::GPIO_CFGCTL0_SPEC>,
-    #[doc = "0x104 - GPIO_CFGCTL1."]
-    pub gpio_cfgctl1: crate::Reg<gpio_cfgctl1::GPIO_CFGCTL1_SPEC>,
-    #[doc = "0x108 - GPIO_CFGCTL2."]
-    pub gpio_cfgctl2: crate::Reg<gpio_cfgctl2::GPIO_CFGCTL2_SPEC>,
-    #[doc = "0x10c - GPIO_CFGCTL3."]
-    pub gpio_cfgctl3: crate::Reg<gpio_cfgctl3::GPIO_CFGCTL3_SPEC>,
-    #[doc = "0x110 - GPIO_CFGCTL4."]
-    pub gpio_cfgctl4: crate::Reg<gpio_cfgctl4::GPIO_CFGCTL4_SPEC>,
-    #[doc = "0x114 - GPIO_CFGCTL5."]
-    pub gpio_cfgctl5: crate::Reg<gpio_cfgctl5::GPIO_CFGCTL5_SPEC>,
-    #[doc = "0x118 - GPIO_CFGCTL6."]
-    pub gpio_cfgctl6: crate::Reg<gpio_cfgctl6::GPIO_CFGCTL6_SPEC>,
-    #[doc = "0x11c - GPIO_CFGCTL7."]
-    pub gpio_cfgctl7: crate::Reg<gpio_cfgctl7::GPIO_CFGCTL7_SPEC>,
-    #[doc = "0x120 - GPIO_CFGCTL8."]
-    pub gpio_cfgctl8: crate::Reg<gpio_cfgctl8::GPIO_CFGCTL8_SPEC>,
-    #[doc = "0x124 - GPIO_CFGCTL9."]
-    pub gpio_cfgctl9: crate::Reg<gpio_cfgctl9::GPIO_CFGCTL9_SPEC>,
-    #[doc = "0x128 - GPIO_CFGCTL10."]
-    pub gpio_cfgctl10: crate::Reg<gpio_cfgctl10::GPIO_CFGCTL10_SPEC>,
-    #[doc = "0x12c - GPIO_CFGCTL11."]
-    pub gpio_cfgctl11: crate::Reg<gpio_cfgctl11::GPIO_CFGCTL11_SPEC>,
-    #[doc = "0x130 - GPIO_CFGCTL12."]
-    pub gpio_cfgctl12: crate::Reg<gpio_cfgctl12::GPIO_CFGCTL12_SPEC>,
-    #[doc = "0x134 - GPIO_CFGCTL13."]
-    pub gpio_cfgctl13: crate::Reg<gpio_cfgctl13::GPIO_CFGCTL13_SPEC>,
-    #[doc = "0x138 - GPIO_CFGCTL14."]
-    pub gpio_cfgctl14: crate::Reg<gpio_cfgctl14::GPIO_CFGCTL14_SPEC>,
-    #[doc = "0x13c - GPIO_CFGCTL15."]
-    pub gpio_cfgctl15: crate::Reg<gpio_cfgctl15::GPIO_CFGCTL15_SPEC>,
-    #[doc = "0x140 - GPIO_CFGCTL16."]
-    pub gpio_cfgctl16: crate::Reg<gpio_cfgctl16::GPIO_CFGCTL16_SPEC>,
-    #[doc = "0x144 - GPIO_CFGCTL17."]
-    pub gpio_cfgctl17: crate::Reg<gpio_cfgctl17::GPIO_CFGCTL17_SPEC>,
-    #[doc = "0x148 - GPIO_CFGCTL18."]
-    pub gpio_cfgctl18: crate::Reg<gpio_cfgctl18::GPIO_CFGCTL18_SPEC>,
-    _reserved59: [u8; 0x34],
+    #[doc = "0x100..0x140 - GPIO_CFGCTL%s."]
+    pub gpio_pinmode: [crate::Reg<gpio_pinmode::GPIO_PINMODE_SPEC>; 16],
+    #[doc = "0x140..0x14c - GPIO_CFGCTL16."]
+    pub gpio_pinmode2: [crate::Reg<gpio_pinmode2::GPIO_PINMODE2_SPEC>; 3],
+    _reserved42: [u8; 0x34],
     #[doc = "0x180 - GPIO_CFGCTL30."]
     pub gpio_cfgctl30: crate::Reg<gpio_cfgctl30::GPIO_CFGCTL30_SPEC>,
     #[doc = "0x184 - GPIO_CFGCTL31."]
@@ -138,16 +104,16 @@ pub struct RegisterBlock {
     pub gpio_cfgctl34: crate::Reg<gpio_cfgctl34::GPIO_CFGCTL34_SPEC>,
     #[doc = "0x194 - GPIO_CFGCTL35."]
     pub gpio_cfgctl35: crate::Reg<gpio_cfgctl35::GPIO_CFGCTL35_SPEC>,
-    _reserved65: [u8; 0x08],
+    _reserved48: [u8; 0x08],
     #[doc = "0x1a0 - GPIO_INT_MASK1."]
     pub gpio_int_mask1: crate::Reg<gpio_int_mask1::GPIO_INT_MASK1_SPEC>,
-    _reserved66: [u8; 0x04],
+    _reserved49: [u8; 0x04],
     #[doc = "0x1a8 - GPIO_INT_STAT1."]
     pub gpio_int_stat1: crate::Reg<gpio_int_stat1::GPIO_INT_STAT1_SPEC>,
-    _reserved67: [u8; 0x04],
+    _reserved50: [u8; 0x04],
     #[doc = "0x1b0 - GPIO_INT_CLR1."]
     pub gpio_int_clr1: crate::Reg<gpio_int_clr1::GPIO_INT_CLR1_SPEC>,
-    _reserved68: [u8; 0x0c],
+    _reserved51: [u8; 0x0c],
     #[doc = "0x1c0 - GPIO_INT_MODE_SET1."]
     pub gpio_int_mode_set1: crate::Reg<gpio_int_mode_set1::GPIO_INT_MODE_SET1_SPEC>,
     #[doc = "0x1c4 - GPIO_INT_MODE_SET2."]
@@ -170,17 +136,17 @@ pub struct RegisterBlock {
     pub gpio_int2_mode_set3: crate::Reg<gpio_int2_mode_set3::GPIO_INT2_MODE_SET3_SPEC>,
     #[doc = "0x1e8 - GPIO_INT2_MODE_SET4."]
     pub gpio_int2_mode_set4: crate::Reg<gpio_int2_mode_set4::GPIO_INT2_MODE_SET4_SPEC>,
-    _reserved79: [u8; 0x14],
+    _reserved62: [u8; 0x14],
     #[doc = "0x200 - dll."]
     pub dll: crate::Reg<dll::DLL_SPEC>,
-    _reserved80: [u8; 0x20],
+    _reserved63: [u8; 0x20],
     #[doc = "0x224 - led_driver."]
     pub led_driver: crate::Reg<led_driver::LED_DRIVER_SPEC>,
     #[doc = "0x228 - usb_xcvr."]
     pub usb_xcvr: crate::Reg<usb_xcvr::USB_XCVR_SPEC>,
     #[doc = "0x22c - usb_xcvr_config."]
     pub usb_xcvr_config: crate::Reg<usb_xcvr_config::USB_XCVR_CONFIG_SPEC>,
-    _reserved83: [u8; 0xd8],
+    _reserved66: [u8; 0xd8],
     #[doc = "0x308 - gpdac_ctrl."]
     pub gpdac_ctrl: crate::Reg<gpdac_ctrl::GPDAC_CTRL_SPEC>,
     #[doc = "0x30c - gpdac_actrl."]
@@ -189,10 +155,10 @@ pub struct RegisterBlock {
     pub gpdac_bctrl: crate::Reg<gpdac_bctrl::GPDAC_BCTRL_SPEC>,
     #[doc = "0x314 - gpdac_data."]
     pub gpdac_data: crate::Reg<gpdac_data::GPDAC_DATA_SPEC>,
-    _reserved87: [u8; 0x0ae8],
+    _reserved70: [u8; 0x0ae8],
     #[doc = "0xe00 - chip_revision."]
     pub chip_revision: crate::Reg<chip_revision::CHIP_REVISION_SPEC>,
-    _reserved88: [u8; 0xfc],
+    _reserved71: [u8; 0xfc],
     #[doc = "0xf00 - tzc_glb_ctrl_0."]
     pub tzc_glb_ctrl_0: crate::Reg<tzc_glb_ctrl_0::TZC_GLB_CTRL_0_SPEC>,
     #[doc = "0xf04 - tzc_glb_ctrl_1."]
@@ -362,82 +328,14 @@ pub mod dbg_sel_hh;
 pub type DEBUG = crate::Reg<debug::DEBUG_SPEC>;
 #[doc = "debug."]
 pub mod debug;
-#[doc = "GPIO_CFGCTL0 register accessor: an alias for `Reg<GPIO_CFGCTL0_SPEC>`"]
-pub type GPIO_CFGCTL0 = crate::Reg<gpio_cfgctl0::GPIO_CFGCTL0_SPEC>;
-#[doc = "GPIO_CFGCTL0."]
-pub mod gpio_cfgctl0;
-#[doc = "GPIO_CFGCTL1 register accessor: an alias for `Reg<GPIO_CFGCTL1_SPEC>`"]
-pub type GPIO_CFGCTL1 = crate::Reg<gpio_cfgctl1::GPIO_CFGCTL1_SPEC>;
-#[doc = "GPIO_CFGCTL1."]
-pub mod gpio_cfgctl1;
-#[doc = "GPIO_CFGCTL2 register accessor: an alias for `Reg<GPIO_CFGCTL2_SPEC>`"]
-pub type GPIO_CFGCTL2 = crate::Reg<gpio_cfgctl2::GPIO_CFGCTL2_SPEC>;
-#[doc = "GPIO_CFGCTL2."]
-pub mod gpio_cfgctl2;
-#[doc = "GPIO_CFGCTL3 register accessor: an alias for `Reg<GPIO_CFGCTL3_SPEC>`"]
-pub type GPIO_CFGCTL3 = crate::Reg<gpio_cfgctl3::GPIO_CFGCTL3_SPEC>;
-#[doc = "GPIO_CFGCTL3."]
-pub mod gpio_cfgctl3;
-#[doc = "GPIO_CFGCTL4 register accessor: an alias for `Reg<GPIO_CFGCTL4_SPEC>`"]
-pub type GPIO_CFGCTL4 = crate::Reg<gpio_cfgctl4::GPIO_CFGCTL4_SPEC>;
-#[doc = "GPIO_CFGCTL4."]
-pub mod gpio_cfgctl4;
-#[doc = "GPIO_CFGCTL5 register accessor: an alias for `Reg<GPIO_CFGCTL5_SPEC>`"]
-pub type GPIO_CFGCTL5 = crate::Reg<gpio_cfgctl5::GPIO_CFGCTL5_SPEC>;
-#[doc = "GPIO_CFGCTL5."]
-pub mod gpio_cfgctl5;
-#[doc = "GPIO_CFGCTL6 register accessor: an alias for `Reg<GPIO_CFGCTL6_SPEC>`"]
-pub type GPIO_CFGCTL6 = crate::Reg<gpio_cfgctl6::GPIO_CFGCTL6_SPEC>;
-#[doc = "GPIO_CFGCTL6."]
-pub mod gpio_cfgctl6;
-#[doc = "GPIO_CFGCTL7 register accessor: an alias for `Reg<GPIO_CFGCTL7_SPEC>`"]
-pub type GPIO_CFGCTL7 = crate::Reg<gpio_cfgctl7::GPIO_CFGCTL7_SPEC>;
-#[doc = "GPIO_CFGCTL7."]
-pub mod gpio_cfgctl7;
-#[doc = "GPIO_CFGCTL8 register accessor: an alias for `Reg<GPIO_CFGCTL8_SPEC>`"]
-pub type GPIO_CFGCTL8 = crate::Reg<gpio_cfgctl8::GPIO_CFGCTL8_SPEC>;
-#[doc = "GPIO_CFGCTL8."]
-pub mod gpio_cfgctl8;
-#[doc = "GPIO_CFGCTL9 register accessor: an alias for `Reg<GPIO_CFGCTL9_SPEC>`"]
-pub type GPIO_CFGCTL9 = crate::Reg<gpio_cfgctl9::GPIO_CFGCTL9_SPEC>;
-#[doc = "GPIO_CFGCTL9."]
-pub mod gpio_cfgctl9;
-#[doc = "GPIO_CFGCTL10 register accessor: an alias for `Reg<GPIO_CFGCTL10_SPEC>`"]
-pub type GPIO_CFGCTL10 = crate::Reg<gpio_cfgctl10::GPIO_CFGCTL10_SPEC>;
-#[doc = "GPIO_CFGCTL10."]
-pub mod gpio_cfgctl10;
-#[doc = "GPIO_CFGCTL11 register accessor: an alias for `Reg<GPIO_CFGCTL11_SPEC>`"]
-pub type GPIO_CFGCTL11 = crate::Reg<gpio_cfgctl11::GPIO_CFGCTL11_SPEC>;
-#[doc = "GPIO_CFGCTL11."]
-pub mod gpio_cfgctl11;
-#[doc = "GPIO_CFGCTL12 register accessor: an alias for `Reg<GPIO_CFGCTL12_SPEC>`"]
-pub type GPIO_CFGCTL12 = crate::Reg<gpio_cfgctl12::GPIO_CFGCTL12_SPEC>;
-#[doc = "GPIO_CFGCTL12."]
-pub mod gpio_cfgctl12;
-#[doc = "GPIO_CFGCTL13 register accessor: an alias for `Reg<GPIO_CFGCTL13_SPEC>`"]
-pub type GPIO_CFGCTL13 = crate::Reg<gpio_cfgctl13::GPIO_CFGCTL13_SPEC>;
-#[doc = "GPIO_CFGCTL13."]
-pub mod gpio_cfgctl13;
-#[doc = "GPIO_CFGCTL14 register accessor: an alias for `Reg<GPIO_CFGCTL14_SPEC>`"]
-pub type GPIO_CFGCTL14 = crate::Reg<gpio_cfgctl14::GPIO_CFGCTL14_SPEC>;
-#[doc = "GPIO_CFGCTL14."]
-pub mod gpio_cfgctl14;
-#[doc = "GPIO_CFGCTL15 register accessor: an alias for `Reg<GPIO_CFGCTL15_SPEC>`"]
-pub type GPIO_CFGCTL15 = crate::Reg<gpio_cfgctl15::GPIO_CFGCTL15_SPEC>;
-#[doc = "GPIO_CFGCTL15."]
-pub mod gpio_cfgctl15;
-#[doc = "GPIO_CFGCTL16 register accessor: an alias for `Reg<GPIO_CFGCTL16_SPEC>`"]
-pub type GPIO_CFGCTL16 = crate::Reg<gpio_cfgctl16::GPIO_CFGCTL16_SPEC>;
+#[doc = "GPIO_PINMODE register accessor: an alias for `Reg<GPIO_PINMODE_SPEC>`"]
+pub type GPIO_PINMODE = crate::Reg<gpio_pinmode::GPIO_PINMODE_SPEC>;
+#[doc = "GPIO_CFGCTL%s."]
+pub mod gpio_pinmode;
+#[doc = "GPIO_PINMODE2 register accessor: an alias for `Reg<GPIO_PINMODE2_SPEC>`"]
+pub type GPIO_PINMODE2 = crate::Reg<gpio_pinmode2::GPIO_PINMODE2_SPEC>;
 #[doc = "GPIO_CFGCTL16."]
-pub mod gpio_cfgctl16;
-#[doc = "GPIO_CFGCTL17 register accessor: an alias for `Reg<GPIO_CFGCTL17_SPEC>`"]
-pub type GPIO_CFGCTL17 = crate::Reg<gpio_cfgctl17::GPIO_CFGCTL17_SPEC>;
-#[doc = "GPIO_CFGCTL17."]
-pub mod gpio_cfgctl17;
-#[doc = "GPIO_CFGCTL18 register accessor: an alias for `Reg<GPIO_CFGCTL18_SPEC>`"]
-pub type GPIO_CFGCTL18 = crate::Reg<gpio_cfgctl18::GPIO_CFGCTL18_SPEC>;
-#[doc = "GPIO_CFGCTL18."]
-pub mod gpio_cfgctl18;
+pub mod gpio_pinmode2;
 #[doc = "GPIO_CFGCTL30 register accessor: an alias for `Reg<GPIO_CFGCTL30_SPEC>`"]
 pub type GPIO_CFGCTL30 = crate::Reg<gpio_cfgctl30::GPIO_CFGCTL30_SPEC>;
 #[doc = "GPIO_CFGCTL30."]

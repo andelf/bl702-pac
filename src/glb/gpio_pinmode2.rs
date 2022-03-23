@@ -1,22 +1,22 @@
-#[doc = "Register `GPIO_CFGCTL18` reader"]
-pub struct R(crate::R<GPIO_CFGCTL18_SPEC>);
+#[doc = "Register `GPIO_PINMODE2%s` reader"]
+pub struct R(crate::R<GPIO_PINMODE2_SPEC>);
 impl core::ops::Deref for R {
-    type Target = crate::R<GPIO_CFGCTL18_SPEC>;
+    type Target = crate::R<GPIO_PINMODE2_SPEC>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-impl From<crate::R<GPIO_CFGCTL18_SPEC>> for R {
+impl From<crate::R<GPIO_PINMODE2_SPEC>> for R {
     #[inline(always)]
-    fn from(reader: crate::R<GPIO_CFGCTL18_SPEC>) -> Self {
+    fn from(reader: crate::R<GPIO_PINMODE2_SPEC>) -> Self {
         R(reader)
     }
 }
-#[doc = "Register `GPIO_CFGCTL18` writer"]
-pub struct W(crate::W<GPIO_CFGCTL18_SPEC>);
+#[doc = "Register `GPIO_PINMODE2%s` writer"]
+pub struct W(crate::W<GPIO_PINMODE2_SPEC>);
 impl core::ops::Deref for W {
-    type Target = crate::W<GPIO_CFGCTL18_SPEC>;
+    type Target = crate::W<GPIO_PINMODE2_SPEC>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
@@ -28,32 +28,32 @@ impl core::ops::DerefMut for W {
         &mut self.0
     }
 }
-impl From<crate::W<GPIO_CFGCTL18_SPEC>> for W {
+impl From<crate::W<GPIO_PINMODE2_SPEC>> for W {
     #[inline(always)]
-    fn from(writer: crate::W<GPIO_CFGCTL18_SPEC>) -> Self {
+    fn from(writer: crate::W<GPIO_PINMODE2_SPEC>) -> Self {
         W(writer)
     }
 }
-#[doc = "Field `reg_gpio_37_pd` reader - "]
-pub struct REG_GPIO_37_PD_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_37_PD_R {
+#[doc = "Field `reg_gpio_33_pd` reader - "]
+pub struct REG_GPIO_33_PD_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_33_PD_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_37_PD_R(crate::FieldReader::new(bits))
+        REG_GPIO_33_PD_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_37_PD_R {
+impl core::ops::Deref for REG_GPIO_33_PD_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_37_pd` writer - "]
-pub struct REG_GPIO_37_PD_W<'a> {
+#[doc = "Field `reg_gpio_33_pd` writer - "]
+pub struct REG_GPIO_33_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_37_PD_W<'a> {
+impl<'a> REG_GPIO_33_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -71,26 +71,26 @@ impl<'a> REG_GPIO_37_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_37_pu` reader - "]
-pub struct REG_GPIO_37_PU_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_37_PU_R {
+#[doc = "Field `reg_gpio_33_pu` reader - "]
+pub struct REG_GPIO_33_PU_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_33_PU_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_37_PU_R(crate::FieldReader::new(bits))
+        REG_GPIO_33_PU_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_37_PU_R {
+impl core::ops::Deref for REG_GPIO_33_PU_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_37_pu` writer - "]
-pub struct REG_GPIO_37_PU_W<'a> {
+#[doc = "Field `reg_gpio_33_pu` writer - "]
+pub struct REG_GPIO_33_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_37_PU_W<'a> {
+impl<'a> REG_GPIO_33_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -108,26 +108,26 @@ impl<'a> REG_GPIO_37_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_37_drv` reader - "]
-pub struct REG_GPIO_37_DRV_R(crate::FieldReader<u8, u8>);
-impl REG_GPIO_37_DRV_R {
+#[doc = "Field `reg_gpio_33_drv` reader - "]
+pub struct REG_GPIO_33_DRV_R(crate::FieldReader<u8, u8>);
+impl REG_GPIO_33_DRV_R {
     #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
-        REG_GPIO_37_DRV_R(crate::FieldReader::new(bits))
+        REG_GPIO_33_DRV_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_37_DRV_R {
+impl core::ops::Deref for REG_GPIO_33_DRV_R {
     type Target = crate::FieldReader<u8, u8>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_37_drv` writer - "]
-pub struct REG_GPIO_37_DRV_W<'a> {
+#[doc = "Field `reg_gpio_33_drv` writer - "]
+pub struct REG_GPIO_33_DRV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_37_DRV_W<'a> {
+impl<'a> REG_GPIO_33_DRV_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -135,26 +135,26 @@ impl<'a> REG_GPIO_37_DRV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_37_smt` reader - "]
-pub struct REG_GPIO_37_SMT_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_37_SMT_R {
+#[doc = "Field `reg_gpio_33_smt` reader - "]
+pub struct REG_GPIO_33_SMT_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_33_SMT_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_37_SMT_R(crate::FieldReader::new(bits))
+        REG_GPIO_33_SMT_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_37_SMT_R {
+impl core::ops::Deref for REG_GPIO_33_SMT_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_37_smt` writer - "]
-pub struct REG_GPIO_37_SMT_W<'a> {
+#[doc = "Field `reg_gpio_33_smt` writer - "]
+pub struct REG_GPIO_33_SMT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_37_SMT_W<'a> {
+impl<'a> REG_GPIO_33_SMT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -172,26 +172,26 @@ impl<'a> REG_GPIO_37_SMT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_37_ie` reader - "]
-pub struct REG_GPIO_37_IE_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_37_IE_R {
+#[doc = "Field `reg_gpio_33_ie` reader - "]
+pub struct REG_GPIO_33_IE_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_33_IE_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_37_IE_R(crate::FieldReader::new(bits))
+        REG_GPIO_33_IE_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_37_IE_R {
+impl core::ops::Deref for REG_GPIO_33_IE_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_37_ie` writer - "]
-pub struct REG_GPIO_37_IE_W<'a> {
+#[doc = "Field `reg_gpio_33_ie` writer - "]
+pub struct REG_GPIO_33_IE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_37_IE_W<'a> {
+impl<'a> REG_GPIO_33_IE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -209,26 +209,26 @@ impl<'a> REG_GPIO_37_IE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_36_pd` reader - "]
-pub struct REG_GPIO_36_PD_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_36_PD_R {
+#[doc = "Field `reg_gpio_32_pd` reader - "]
+pub struct REG_GPIO_32_PD_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_32_PD_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_36_PD_R(crate::FieldReader::new(bits))
+        REG_GPIO_32_PD_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_36_PD_R {
+impl core::ops::Deref for REG_GPIO_32_PD_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_36_pd` writer - "]
-pub struct REG_GPIO_36_PD_W<'a> {
+#[doc = "Field `reg_gpio_32_pd` writer - "]
+pub struct REG_GPIO_32_PD_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_36_PD_W<'a> {
+impl<'a> REG_GPIO_32_PD_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -246,26 +246,26 @@ impl<'a> REG_GPIO_36_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_36_pu` reader - "]
-pub struct REG_GPIO_36_PU_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_36_PU_R {
+#[doc = "Field `reg_gpio_32_pu` reader - "]
+pub struct REG_GPIO_32_PU_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_32_PU_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_36_PU_R(crate::FieldReader::new(bits))
+        REG_GPIO_32_PU_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_36_PU_R {
+impl core::ops::Deref for REG_GPIO_32_PU_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_36_pu` writer - "]
-pub struct REG_GPIO_36_PU_W<'a> {
+#[doc = "Field `reg_gpio_32_pu` writer - "]
+pub struct REG_GPIO_32_PU_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_36_PU_W<'a> {
+impl<'a> REG_GPIO_32_PU_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -283,26 +283,26 @@ impl<'a> REG_GPIO_36_PU_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_36_drv` reader - "]
-pub struct REG_GPIO_36_DRV_R(crate::FieldReader<u8, u8>);
-impl REG_GPIO_36_DRV_R {
+#[doc = "Field `reg_gpio_32_drv` reader - "]
+pub struct REG_GPIO_32_DRV_R(crate::FieldReader<u8, u8>);
+impl REG_GPIO_32_DRV_R {
     #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
-        REG_GPIO_36_DRV_R(crate::FieldReader::new(bits))
+        REG_GPIO_32_DRV_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_36_DRV_R {
+impl core::ops::Deref for REG_GPIO_32_DRV_R {
     type Target = crate::FieldReader<u8, u8>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_36_drv` writer - "]
-pub struct REG_GPIO_36_DRV_W<'a> {
+#[doc = "Field `reg_gpio_32_drv` writer - "]
+pub struct REG_GPIO_32_DRV_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_36_DRV_W<'a> {
+impl<'a> REG_GPIO_32_DRV_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -310,26 +310,26 @@ impl<'a> REG_GPIO_36_DRV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_36_smt` reader - "]
-pub struct REG_GPIO_36_SMT_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_36_SMT_R {
+#[doc = "Field `reg_gpio_32_smt` reader - "]
+pub struct REG_GPIO_32_SMT_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_32_SMT_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_36_SMT_R(crate::FieldReader::new(bits))
+        REG_GPIO_32_SMT_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_36_SMT_R {
+impl core::ops::Deref for REG_GPIO_32_SMT_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_36_smt` writer - "]
-pub struct REG_GPIO_36_SMT_W<'a> {
+#[doc = "Field `reg_gpio_32_smt` writer - "]
+pub struct REG_GPIO_32_SMT_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_36_SMT_W<'a> {
+impl<'a> REG_GPIO_32_SMT_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -347,26 +347,26 @@ impl<'a> REG_GPIO_36_SMT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_gpio_36_ie` reader - "]
-pub struct REG_GPIO_36_IE_R(crate::FieldReader<bool, bool>);
-impl REG_GPIO_36_IE_R {
+#[doc = "Field `reg_gpio_32_ie` reader - "]
+pub struct REG_GPIO_32_IE_R(crate::FieldReader<bool, bool>);
+impl REG_GPIO_32_IE_R {
     #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
-        REG_GPIO_36_IE_R(crate::FieldReader::new(bits))
+        REG_GPIO_32_IE_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for REG_GPIO_36_IE_R {
+impl core::ops::Deref for REG_GPIO_32_IE_R {
     type Target = crate::FieldReader<bool, bool>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `reg_gpio_36_ie` writer - "]
-pub struct REG_GPIO_36_IE_W<'a> {
+#[doc = "Field `reg_gpio_32_ie` writer - "]
+pub struct REG_GPIO_32_IE_W<'a> {
     w: &'a mut W,
 }
-impl<'a> REG_GPIO_36_IE_W<'a> {
+impl<'a> REG_GPIO_32_IE_W<'a> {
     #[doc = r"Sets the field bit"]
     #[inline(always)]
     pub fn set_bit(self) -> &'a mut W {
@@ -387,105 +387,105 @@ impl<'a> REG_GPIO_36_IE_W<'a> {
 impl R {
     #[doc = "Bit 21"]
     #[inline(always)]
-    pub fn reg_gpio_37_pd(&self) -> REG_GPIO_37_PD_R {
-        REG_GPIO_37_PD_R::new(((self.bits >> 21) & 0x01) != 0)
+    pub fn reg_gpio_33_pd(&self) -> REG_GPIO_33_PD_R {
+        REG_GPIO_33_PD_R::new(((self.bits >> 21) & 0x01) != 0)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn reg_gpio_37_pu(&self) -> REG_GPIO_37_PU_R {
-        REG_GPIO_37_PU_R::new(((self.bits >> 20) & 0x01) != 0)
+    pub fn reg_gpio_33_pu(&self) -> REG_GPIO_33_PU_R {
+        REG_GPIO_33_PU_R::new(((self.bits >> 20) & 0x01) != 0)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
-    pub fn reg_gpio_37_drv(&self) -> REG_GPIO_37_DRV_R {
-        REG_GPIO_37_DRV_R::new(((self.bits >> 18) & 0x03) as u8)
+    pub fn reg_gpio_33_drv(&self) -> REG_GPIO_33_DRV_R {
+        REG_GPIO_33_DRV_R::new(((self.bits >> 18) & 0x03) as u8)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn reg_gpio_37_smt(&self) -> REG_GPIO_37_SMT_R {
-        REG_GPIO_37_SMT_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn reg_gpio_33_smt(&self) -> REG_GPIO_33_SMT_R {
+        REG_GPIO_33_SMT_R::new(((self.bits >> 17) & 0x01) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn reg_gpio_37_ie(&self) -> REG_GPIO_37_IE_R {
-        REG_GPIO_37_IE_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn reg_gpio_33_ie(&self) -> REG_GPIO_33_IE_R {
+        REG_GPIO_33_IE_R::new(((self.bits >> 16) & 0x01) != 0)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn reg_gpio_36_pd(&self) -> REG_GPIO_36_PD_R {
-        REG_GPIO_36_PD_R::new(((self.bits >> 5) & 0x01) != 0)
+    pub fn reg_gpio_32_pd(&self) -> REG_GPIO_32_PD_R {
+        REG_GPIO_32_PD_R::new(((self.bits >> 5) & 0x01) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn reg_gpio_36_pu(&self) -> REG_GPIO_36_PU_R {
-        REG_GPIO_36_PU_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn reg_gpio_32_pu(&self) -> REG_GPIO_32_PU_R {
+        REG_GPIO_32_PU_R::new(((self.bits >> 4) & 0x01) != 0)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn reg_gpio_36_drv(&self) -> REG_GPIO_36_DRV_R {
-        REG_GPIO_36_DRV_R::new(((self.bits >> 2) & 0x03) as u8)
+    pub fn reg_gpio_32_drv(&self) -> REG_GPIO_32_DRV_R {
+        REG_GPIO_32_DRV_R::new(((self.bits >> 2) & 0x03) as u8)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_gpio_36_smt(&self) -> REG_GPIO_36_SMT_R {
-        REG_GPIO_36_SMT_R::new(((self.bits >> 1) & 0x01) != 0)
+    pub fn reg_gpio_32_smt(&self) -> REG_GPIO_32_SMT_R {
+        REG_GPIO_32_SMT_R::new(((self.bits >> 1) & 0x01) != 0)
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_gpio_36_ie(&self) -> REG_GPIO_36_IE_R {
-        REG_GPIO_36_IE_R::new((self.bits & 0x01) != 0)
+    pub fn reg_gpio_32_ie(&self) -> REG_GPIO_32_IE_R {
+        REG_GPIO_32_IE_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
     #[doc = "Bit 21"]
     #[inline(always)]
-    pub fn reg_gpio_37_pd(&mut self) -> REG_GPIO_37_PD_W {
-        REG_GPIO_37_PD_W { w: self }
+    pub fn reg_gpio_33_pd(&mut self) -> REG_GPIO_33_PD_W {
+        REG_GPIO_33_PD_W { w: self }
     }
     #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn reg_gpio_37_pu(&mut self) -> REG_GPIO_37_PU_W {
-        REG_GPIO_37_PU_W { w: self }
+    pub fn reg_gpio_33_pu(&mut self) -> REG_GPIO_33_PU_W {
+        REG_GPIO_33_PU_W { w: self }
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
-    pub fn reg_gpio_37_drv(&mut self) -> REG_GPIO_37_DRV_W {
-        REG_GPIO_37_DRV_W { w: self }
+    pub fn reg_gpio_33_drv(&mut self) -> REG_GPIO_33_DRV_W {
+        REG_GPIO_33_DRV_W { w: self }
     }
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn reg_gpio_37_smt(&mut self) -> REG_GPIO_37_SMT_W {
-        REG_GPIO_37_SMT_W { w: self }
+    pub fn reg_gpio_33_smt(&mut self) -> REG_GPIO_33_SMT_W {
+        REG_GPIO_33_SMT_W { w: self }
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn reg_gpio_37_ie(&mut self) -> REG_GPIO_37_IE_W {
-        REG_GPIO_37_IE_W { w: self }
+    pub fn reg_gpio_33_ie(&mut self) -> REG_GPIO_33_IE_W {
+        REG_GPIO_33_IE_W { w: self }
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn reg_gpio_36_pd(&mut self) -> REG_GPIO_36_PD_W {
-        REG_GPIO_36_PD_W { w: self }
+    pub fn reg_gpio_32_pd(&mut self) -> REG_GPIO_32_PD_W {
+        REG_GPIO_32_PD_W { w: self }
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn reg_gpio_36_pu(&mut self) -> REG_GPIO_36_PU_W {
-        REG_GPIO_36_PU_W { w: self }
+    pub fn reg_gpio_32_pu(&mut self) -> REG_GPIO_32_PU_W {
+        REG_GPIO_32_PU_W { w: self }
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn reg_gpio_36_drv(&mut self) -> REG_GPIO_36_DRV_W {
-        REG_GPIO_36_DRV_W { w: self }
+    pub fn reg_gpio_32_drv(&mut self) -> REG_GPIO_32_DRV_W {
+        REG_GPIO_32_DRV_W { w: self }
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_gpio_36_smt(&mut self) -> REG_GPIO_36_SMT_W {
-        REG_GPIO_36_SMT_W { w: self }
+    pub fn reg_gpio_32_smt(&mut self) -> REG_GPIO_32_SMT_W {
+        REG_GPIO_32_SMT_W { w: self }
     }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_gpio_36_ie(&mut self) -> REG_GPIO_36_IE_W {
-        REG_GPIO_36_IE_W { w: self }
+    pub fn reg_gpio_32_ie(&mut self) -> REG_GPIO_32_IE_W {
+        REG_GPIO_32_IE_W { w: self }
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]
@@ -494,21 +494,21 @@ impl W {
         self
     }
 }
-#[doc = "GPIO_CFGCTL18.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gpio_cfgctl18](index.html) module"]
-pub struct GPIO_CFGCTL18_SPEC;
-impl crate::RegisterSpec for GPIO_CFGCTL18_SPEC {
+#[doc = "GPIO_CFGCTL16.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gpio_pinmode2](index.html) module"]
+pub struct GPIO_PINMODE2_SPEC;
+impl crate::RegisterSpec for GPIO_PINMODE2_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [gpio_cfgctl18::R](R) reader structure"]
-impl crate::Readable for GPIO_CFGCTL18_SPEC {
+#[doc = "`read()` method returns [gpio_pinmode2::R](R) reader structure"]
+impl crate::Readable for GPIO_PINMODE2_SPEC {
     type Reader = R;
 }
-#[doc = "`write(|w| ..)` method takes [gpio_cfgctl18::W](W) writer structure"]
-impl crate::Writable for GPIO_CFGCTL18_SPEC {
+#[doc = "`write(|w| ..)` method takes [gpio_pinmode2::W](W) writer structure"]
+impl crate::Writable for GPIO_PINMODE2_SPEC {
     type Writer = W;
 }
-#[doc = "`reset()` method sets GPIO_CFGCTL18 to value 0"]
-impl crate::Resettable for GPIO_CFGCTL18_SPEC {
+#[doc = "`reset()` method sets GPIO_PINMODE2%s to value 0"]
+impl crate::Resettable for GPIO_PINMODE2_SPEC {
     #[inline(always)]
     fn reset_value() -> Self::Ux {
         0
