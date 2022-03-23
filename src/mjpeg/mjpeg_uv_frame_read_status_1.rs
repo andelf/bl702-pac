@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_UV_FRAME_READ_STATUS_1_SPEC>> for W {
 #[doc = "Field `uv_frm_hblk_r` reader - "]
 pub struct UV_FRM_HBLK_R_R(crate::FieldReader<u16, u16>);
 impl UV_FRM_HBLK_R_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         UV_FRM_HBLK_R_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> UV_FRM_HBLK_R_W<'a> {
 #[doc = "Field `uv_mem_hblk_r` reader - "]
 pub struct UV_MEM_HBLK_R_R(crate::FieldReader<u16, u16>);
 impl UV_MEM_HBLK_R_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         UV_MEM_HBLK_R_R(crate::FieldReader::new(bits))
     }

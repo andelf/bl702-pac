@@ -37,6 +37,7 @@ impl From<crate::W<USB_CONFIG_SPEC>> for W {
 #[doc = "Field `sts_usb_ep0_sw_rdy` reader - "]
 pub struct STS_USB_EP0_SW_RDY_R(crate::FieldReader<bool, bool>);
 impl STS_USB_EP0_SW_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_USB_EP0_SW_RDY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_USB_EP0_SW_RDY_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_rdy` reader - "]
 pub struct CR_USB_EP0_SW_RDY_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EP0_SW_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EP0_SW_RDY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_USB_EP0_SW_RDY_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_nack_out` reader - "]
 pub struct CR_USB_EP0_SW_NACK_OUT_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EP0_SW_NACK_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EP0_SW_NACK_OUT_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_USB_EP0_SW_NACK_OUT_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_nack_in` reader - "]
 pub struct CR_USB_EP0_SW_NACK_IN_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EP0_SW_NACK_IN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EP0_SW_NACK_IN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_USB_EP0_SW_NACK_IN_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_stall` reader - "]
 pub struct CR_USB_EP0_SW_STALL_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EP0_SW_STALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EP0_SW_STALL_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_USB_EP0_SW_STALL_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_size` reader - "]
 pub struct CR_USB_EP0_SW_SIZE_R(crate::FieldReader<u8, u8>);
 impl CR_USB_EP0_SW_SIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_USB_EP0_SW_SIZE_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> CR_USB_EP0_SW_SIZE_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_addr` reader - "]
 pub struct CR_USB_EP0_SW_ADDR_R(crate::FieldReader<u8, u8>);
 impl CR_USB_EP0_SW_ADDR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_USB_EP0_SW_ADDR_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> CR_USB_EP0_SW_ADDR_W<'a> {
 #[doc = "Field `cr_usb_ep0_sw_ctrl` reader - "]
 pub struct CR_USB_EP0_SW_CTRL_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EP0_SW_CTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EP0_SW_CTRL_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> CR_USB_EP0_SW_CTRL_W<'a> {
 #[doc = "Field `cr_usb_rom_dct_en` reader - "]
 pub struct CR_USB_ROM_DCT_EN_R(crate::FieldReader<bool, bool>);
 impl CR_USB_ROM_DCT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_ROM_DCT_EN_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> CR_USB_ROM_DCT_EN_W<'a> {
 #[doc = "Field `cr_usb_en` reader - "]
 pub struct CR_USB_EN_R(crate::FieldReader<bool, bool>);
 impl CR_USB_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_EN_R(crate::FieldReader::new(bits))
     }

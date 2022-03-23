@@ -37,6 +37,7 @@ impl From<crate::W<TPLCR2_SPEC>> for W {
 #[doc = "Field `tplcr` reader - "]
 pub struct TPLCR_R(crate::FieldReader<u8, u8>);
 impl TPLCR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TPLCR_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<HBN_GLB_SPEC>> for W {
 #[doc = "Field `sw_ldo11_aon_vout_sel` reader - "]
 pub struct SW_LDO11_AON_VOUT_SEL_R(crate::FieldReader<u8, u8>);
 impl SW_LDO11_AON_VOUT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SW_LDO11_AON_VOUT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SW_LDO11_AON_VOUT_SEL_W<'a> {
 #[doc = "Field `sw_ldo11_rt_vout_sel` reader - "]
 pub struct SW_LDO11_RT_VOUT_SEL_R(crate::FieldReader<u8, u8>);
 impl SW_LDO11_RT_VOUT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SW_LDO11_RT_VOUT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SW_LDO11_RT_VOUT_SEL_W<'a> {
 #[doc = "Field `sw_ldo11soc_vout_sel_aon` reader - "]
 pub struct SW_LDO11SOC_VOUT_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl SW_LDO11SOC_VOUT_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SW_LDO11SOC_VOUT_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> SW_LDO11SOC_VOUT_SEL_AON_W<'a> {
 #[doc = "Field `hbn_clear_reset_event` reader - "]
 pub struct HBN_CLEAR_RESET_EVENT_R(crate::FieldReader<bool, bool>);
 impl HBN_CLEAR_RESET_EVENT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_CLEAR_RESET_EVENT_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> HBN_CLEAR_RESET_EVENT_W<'a> {
 #[doc = "Field `hbn_reset_event` reader - "]
 pub struct HBN_RESET_EVENT_R(crate::FieldReader<u8, u8>);
 impl HBN_RESET_EVENT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_RESET_EVENT_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> HBN_RESET_EVENT_W<'a> {
 #[doc = "Field `ldo11_rt_iload_sel` reader - "]
 pub struct LDO11_RT_ILOAD_SEL_R(crate::FieldReader<u8, u8>);
 impl LDO11_RT_ILOAD_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO11_RT_ILOAD_SEL_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> LDO11_RT_ILOAD_SEL_W<'a> {
 #[doc = "Field `hbn_pu_rc32k` reader - "]
 pub struct HBN_PU_RC32K_R(crate::FieldReader<bool, bool>);
 impl HBN_PU_RC32K_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_PU_RC32K_R(crate::FieldReader::new(bits))
     }
@@ -239,6 +246,7 @@ impl<'a> HBN_PU_RC32K_W<'a> {
 #[doc = "Field `hbn_f32k_sel` reader - "]
 pub struct HBN_F32K_SEL_R(crate::FieldReader<u8, u8>);
 impl HBN_F32K_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_F32K_SEL_R(crate::FieldReader::new(bits))
     }
@@ -265,6 +273,7 @@ impl<'a> HBN_F32K_SEL_W<'a> {
 #[doc = "Field `hbn_uart_clk_sel` reader - "]
 pub struct HBN_UART_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl HBN_UART_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_UART_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -301,6 +310,7 @@ impl<'a> HBN_UART_CLK_SEL_W<'a> {
 #[doc = "Field `hbn_root_clk_sel` reader - "]
 pub struct HBN_ROOT_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl HBN_ROOT_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_ROOT_CLK_SEL_R(crate::FieldReader::new(bits))
     }

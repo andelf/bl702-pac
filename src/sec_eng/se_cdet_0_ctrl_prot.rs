@@ -37,6 +37,7 @@ impl From<crate::W<SE_CDET_0_CTRL_PROT_SPEC>> for W {
 #[doc = "Field `se_cdet_id1_en` reader - "]
 pub struct SE_CDET_ID1_EN_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_ID1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_ID1_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_CDET_ID1_EN_W<'a> {
 #[doc = "Field `se_cdet_id0_en` reader - "]
 pub struct SE_CDET_ID0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_ID0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_ID0_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SE_CDET_ID0_EN_W<'a> {
 #[doc = "Field `se_cdet_prot_en` reader - "]
 pub struct SE_CDET_PROT_EN_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_PROT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_PROT_EN_R(crate::FieldReader::new(bits))
     }

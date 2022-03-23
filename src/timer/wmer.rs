@@ -37,6 +37,7 @@ impl From<crate::W<WMER_SPEC>> for W {
 #[doc = "Field `wrie` reader - "]
 pub struct WRIE_R(crate::FieldReader<bool, bool>);
 impl WRIE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WRIE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> WRIE_W<'a> {
 #[doc = "Field `we` reader - "]
 pub struct WE_R(crate::FieldReader<bool, bool>);
 impl WE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WE_R(crate::FieldReader::new(bits))
     }

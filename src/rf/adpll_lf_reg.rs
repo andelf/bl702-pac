@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_LF_REG_SPEC>> for W {
 #[doc = "Field `adpll_lf_ctrl_hw` reader - "]
 pub struct ADPLL_LF_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LF_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LF_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_LF_CTRL_HW_W<'a> {
 #[doc = "Field `adpll_lf_alpha_base` reader - "]
 pub struct ADPLL_LF_ALPHA_BASE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LF_ALPHA_BASE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LF_ALPHA_BASE_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_LF_ALPHA_BASE_W<'a> {
 #[doc = "Field `adpll_lf_alpha_exp` reader - "]
 pub struct ADPLL_LF_ALPHA_EXP_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_ALPHA_EXP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_ALPHA_EXP_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> ADPLL_LF_ALPHA_EXP_W<'a> {
 #[doc = "Field `adpll_lf_alpha_fast` reader - "]
 pub struct ADPLL_LF_ALPHA_FAST_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_ALPHA_FAST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_ALPHA_FAST_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> ADPLL_LF_ALPHA_FAST_W<'a> {
 #[doc = "Field `adpll_lf_beta_base` reader - "]
 pub struct ADPLL_LF_BETA_BASE_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_BETA_BASE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_BETA_BASE_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> ADPLL_LF_BETA_BASE_W<'a> {
 #[doc = "Field `adpll_lf_beta_exp` reader - "]
 pub struct ADPLL_LF_BETA_EXP_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_BETA_EXP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_BETA_EXP_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> ADPLL_LF_BETA_EXP_W<'a> {
 #[doc = "Field `adpll_lf_beta_fast` reader - "]
 pub struct ADPLL_LF_BETA_FAST_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LF_BETA_FAST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LF_BETA_FAST_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> ADPLL_LF_BETA_FAST_W<'a> {
 #[doc = "Field `adpll_lf_f_p3` reader - "]
 pub struct ADPLL_LF_F_P3_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_F_P3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_F_P3_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> ADPLL_LF_F_P3_W<'a> {
 #[doc = "Field `adpll_lf_avg_en` reader - "]
 pub struct ADPLL_LF_AVG_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LF_AVG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LF_AVG_EN_R(crate::FieldReader::new(bits))
     }
@@ -311,6 +320,7 @@ impl<'a> ADPLL_LF_AVG_EN_W<'a> {
 #[doc = "Field `adpll_lf_lsb_ext` reader - "]
 pub struct ADPLL_LF_LSB_EXT_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_LSB_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_LSB_EXT_R(crate::FieldReader::new(bits))
     }
@@ -337,6 +347,7 @@ impl<'a> ADPLL_LF_LSB_EXT_W<'a> {
 #[doc = "Field `adpll_lf_vctrl_range_ext` reader - "]
 pub struct ADPLL_LF_VCTRL_RANGE_EXT_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LF_VCTRL_RANGE_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LF_VCTRL_RANGE_EXT_R(crate::FieldReader::new(bits))
     }

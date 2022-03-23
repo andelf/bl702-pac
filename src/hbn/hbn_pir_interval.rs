@@ -37,6 +37,7 @@ impl From<crate::W<HBN_PIR_INTERVAL_SPEC>> for W {
 #[doc = "Field `pir_interval` reader - "]
 pub struct PIR_INTERVAL_R(crate::FieldReader<u16, u16>);
 impl PIR_INTERVAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PIR_INTERVAL_R(crate::FieldReader::new(bits))
     }

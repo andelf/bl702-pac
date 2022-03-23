@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_DATA_WORD1_SPEC>> for W {
 #[doc = "Field `sts_irrx_data_word1` reader - "]
 pub struct STS_IRRX_DATA_WORD1_R(crate::FieldReader<u32, u32>);
 impl STS_IRRX_DATA_WORD1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         STS_IRRX_DATA_WORD1_R(crate::FieldReader::new(bits))
     }
@@ -56,7 +57,7 @@ impl<'a> STS_IRRX_DATA_WORD1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
+        self.w.bits = value;
         self.w
     }
 }
@@ -64,7 +65,7 @@ impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn sts_irrx_data_word1(&self) -> STS_IRRX_DATA_WORD1_R {
-        STS_IRRX_DATA_WORD1_R::new((self.bits & 0xffff_ffff) as u32)
+        STS_IRRX_DATA_WORD1_R::new(self.bits)
     }
 }
 impl W {

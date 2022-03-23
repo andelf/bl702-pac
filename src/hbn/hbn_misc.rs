@@ -37,6 +37,7 @@ impl From<crate::W<HBN_MISC_SPEC>> for W {
 #[doc = "Field `hbn_flash_pulldown_aon` reader - "]
 pub struct HBN_FLASH_PULLDOWN_AON_R(crate::FieldReader<u8, u8>);
 impl HBN_FLASH_PULLDOWN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_FLASH_PULLDOWN_AON_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> HBN_FLASH_PULLDOWN_AON_W<'a> {
 #[doc = "Field `hbn_flash_pullup_aon` reader - "]
 pub struct HBN_FLASH_PULLUP_AON_R(crate::FieldReader<u8, u8>);
 impl HBN_FLASH_PULLUP_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_FLASH_PULLUP_AON_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> HBN_FLASH_PULLUP_AON_W<'a> {
 #[doc = "Field `r_bor_out` reader - "]
 pub struct R_BOR_OUT_R(crate::FieldReader<bool, bool>);
 impl R_BOR_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         R_BOR_OUT_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> R_BOR_OUT_W<'a> {
 #[doc = "Field `pu_bor` reader - "]
 pub struct PU_BOR_R(crate::FieldReader<bool, bool>);
 impl PU_BOR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_BOR_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> PU_BOR_W<'a> {
 #[doc = "Field `bor_vth` reader - "]
 pub struct BOR_VTH_R(crate::FieldReader<bool, bool>);
 impl BOR_VTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BOR_VTH_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> BOR_VTH_W<'a> {
 #[doc = "Field `bor_sel` reader - "]
 pub struct BOR_SEL_R(crate::FieldReader<bool, bool>);
 impl BOR_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BOR_SEL_R(crate::FieldReader::new(bits))
     }

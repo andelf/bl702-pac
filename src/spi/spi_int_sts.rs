@@ -37,6 +37,7 @@ impl From<crate::W<SPI_INT_STS_SPEC>> for W {
 #[doc = "Field `cr_spi_fer_en` reader - "]
 pub struct CR_SPI_FER_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_FER_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_FER_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_SPI_FER_EN_W<'a> {
 #[doc = "Field `cr_spi_txu_en` reader - "]
 pub struct CR_SPI_TXU_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_TXU_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_TXU_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_SPI_TXU_EN_W<'a> {
 #[doc = "Field `cr_spi_sto_en` reader - "]
 pub struct CR_SPI_STO_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_STO_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_STO_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_SPI_STO_EN_W<'a> {
 #[doc = "Field `cr_spi_rxf_en` reader - "]
 pub struct CR_SPI_RXF_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_RXF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_RXF_EN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_SPI_RXF_EN_W<'a> {
 #[doc = "Field `cr_spi_txf_en` reader - "]
 pub struct CR_SPI_TXF_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_TXF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_TXF_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_SPI_TXF_EN_W<'a> {
 #[doc = "Field `cr_spi_end_en` reader - "]
 pub struct CR_SPI_END_EN_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_END_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_END_EN_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CR_SPI_END_EN_W<'a> {
 #[doc = "Field `rsvd_21` reader - "]
 pub struct RSVD_21_R(crate::FieldReader<bool, bool>);
 impl RSVD_21_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_21_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> RSVD_21_W<'a> {
 #[doc = "Field `cr_spi_txu_clr` reader - "]
 pub struct CR_SPI_TXU_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_TXU_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_TXU_CLR_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CR_SPI_TXU_CLR_W<'a> {
 #[doc = "Field `cr_spi_sto_clr` reader - "]
 pub struct CR_SPI_STO_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_STO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_STO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> CR_SPI_STO_CLR_W<'a> {
 #[doc = "Field `rsvd_18` reader - "]
 pub struct RSVD_18_R(crate::FieldReader<bool, bool>);
 impl RSVD_18_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_18_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> RSVD_18_W<'a> {
 #[doc = "Field `rsvd_17` reader - "]
 pub struct RSVD_17_R(crate::FieldReader<bool, bool>);
 impl RSVD_17_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_17_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> RSVD_17_W<'a> {
 #[doc = "Field `cr_spi_end_clr` reader - "]
 pub struct CR_SPI_END_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_END_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_END_CLR_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> CR_SPI_END_CLR_W<'a> {
 #[doc = "Field `cr_spi_fer_mask` reader - "]
 pub struct CR_SPI_FER_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_FER_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_FER_MASK_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> CR_SPI_FER_MASK_W<'a> {
 #[doc = "Field `cr_spi_txu_mask` reader - "]
 pub struct CR_SPI_TXU_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_TXU_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_TXU_MASK_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> CR_SPI_TXU_MASK_W<'a> {
 #[doc = "Field `cr_spi_sto_mask` reader - "]
 pub struct CR_SPI_STO_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_STO_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_STO_MASK_R(crate::FieldReader::new(bits))
     }
@@ -577,6 +592,7 @@ impl<'a> CR_SPI_STO_MASK_W<'a> {
 #[doc = "Field `cr_spi_rxf_mask` reader - "]
 pub struct CR_SPI_RXF_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_RXF_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_RXF_MASK_R(crate::FieldReader::new(bits))
     }
@@ -613,6 +629,7 @@ impl<'a> CR_SPI_RXF_MASK_W<'a> {
 #[doc = "Field `cr_spi_txf_mask` reader - "]
 pub struct CR_SPI_TXF_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_TXF_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_TXF_MASK_R(crate::FieldReader::new(bits))
     }
@@ -649,6 +666,7 @@ impl<'a> CR_SPI_TXF_MASK_W<'a> {
 #[doc = "Field `cr_spi_end_mask` reader - "]
 pub struct CR_SPI_END_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SPI_END_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SPI_END_MASK_R(crate::FieldReader::new(bits))
     }
@@ -685,6 +703,7 @@ impl<'a> CR_SPI_END_MASK_W<'a> {
 #[doc = "Field `spi_fer_int` reader - "]
 pub struct SPI_FER_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_FER_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_FER_INT_R(crate::FieldReader::new(bits))
     }
@@ -721,6 +740,7 @@ impl<'a> SPI_FER_INT_W<'a> {
 #[doc = "Field `spi_txu_int` reader - "]
 pub struct SPI_TXU_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_TXU_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_TXU_INT_R(crate::FieldReader::new(bits))
     }
@@ -757,6 +777,7 @@ impl<'a> SPI_TXU_INT_W<'a> {
 #[doc = "Field `spi_sto_int` reader - "]
 pub struct SPI_STO_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_STO_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_STO_INT_R(crate::FieldReader::new(bits))
     }
@@ -793,6 +814,7 @@ impl<'a> SPI_STO_INT_W<'a> {
 #[doc = "Field `spi_rxf_int` reader - "]
 pub struct SPI_RXF_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_RXF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_RXF_INT_R(crate::FieldReader::new(bits))
     }
@@ -829,6 +851,7 @@ impl<'a> SPI_RXF_INT_W<'a> {
 #[doc = "Field `spi_txf_int` reader - "]
 pub struct SPI_TXF_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_TXF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_TXF_INT_R(crate::FieldReader::new(bits))
     }
@@ -865,6 +888,7 @@ impl<'a> SPI_TXF_INT_W<'a> {
 #[doc = "Field `spi_end_int` reader - "]
 pub struct SPI_END_INT_R(crate::FieldReader<bool, bool>);
 impl SPI_END_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_END_INT_R(crate::FieldReader::new(bits))
     }

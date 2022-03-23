@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_INT_STS_SPEC>> for W {
 #[doc = "Field `cr_irrx_end_en` reader - "]
 pub struct CR_IRRX_END_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_END_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_END_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_IRRX_END_EN_W<'a> {
 #[doc = "Field `cr_irrx_end_clr` reader - "]
 pub struct CR_IRRX_END_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_END_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_END_CLR_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_IRRX_END_CLR_W<'a> {
 #[doc = "Field `cr_irrx_end_mask` reader - "]
 pub struct CR_IRRX_END_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_END_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_END_MASK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_IRRX_END_MASK_W<'a> {
 #[doc = "Field `irrx_end_int` reader - "]
 pub struct IRRX_END_INT_R(crate::FieldReader<bool, bool>);
 impl IRRX_END_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IRRX_END_INT_R(crate::FieldReader::new(bits))
     }

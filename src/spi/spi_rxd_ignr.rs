@@ -37,6 +37,7 @@ impl From<crate::W<SPI_RXD_IGNR_SPEC>> for W {
 #[doc = "Field `cr_spi_rxd_ignr_s` reader - "]
 pub struct CR_SPI_RXD_IGNR_S_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_RXD_IGNR_S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_RXD_IGNR_S_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_SPI_RXD_IGNR_S_W<'a> {
 #[doc = "Field `cr_spi_rxd_ignr_p` reader - "]
 pub struct CR_SPI_RXD_IGNR_P_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_RXD_IGNR_P_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_RXD_IGNR_P_R(crate::FieldReader::new(bits))
     }

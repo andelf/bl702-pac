@@ -37,6 +37,7 @@ impl From<crate::W<SWRST_CFG1_SPEC>> for W {
 #[doc = "Field `swrst_s1ae` reader - "]
 pub struct SWRST_S1AE_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1AE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1AE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SWRST_S1AE_W<'a> {
 #[doc = "Field `swrst_s1ad` reader - "]
 pub struct SWRST_S1AD_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1AD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1AD_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SWRST_S1AD_W<'a> {
 #[doc = "Field `swrst_s1ac` reader - "]
 pub struct SWRST_S1AC_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1AC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1AC_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SWRST_S1AC_W<'a> {
 #[doc = "Field `swrst_s1ab` reader - "]
 pub struct SWRST_S1AB_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1AB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1AB_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SWRST_S1AB_W<'a> {
 #[doc = "Field `swrst_s1aa` reader - "]
 pub struct SWRST_S1AA_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1AA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1AA_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SWRST_S1AA_W<'a> {
 #[doc = "Field `swrst_s1a9` reader - "]
 pub struct SWRST_S1A9_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A9_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A9_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SWRST_S1A9_W<'a> {
 #[doc = "Field `swrst_s1a8` reader - "]
 pub struct SWRST_S1A8_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A8_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A8_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SWRST_S1A8_W<'a> {
 #[doc = "Field `swrst_s1a7` reader - "]
 pub struct SWRST_S1A7_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A7_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> SWRST_S1A7_W<'a> {
 #[doc = "Field `swrst_s1a6` reader - "]
 pub struct SWRST_S1A6_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A6_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A6_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> SWRST_S1A6_W<'a> {
 #[doc = "Field `swrst_s1a5` reader - "]
 pub struct SWRST_S1A5_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A5_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A5_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> SWRST_S1A5_W<'a> {
 #[doc = "Field `swrst_s1a4` reader - "]
 pub struct SWRST_S1A4_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A4_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> SWRST_S1A4_W<'a> {
 #[doc = "Field `swrst_s1a3` reader - "]
 pub struct SWRST_S1A3_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A3_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> SWRST_S1A3_W<'a> {
 #[doc = "Field `swrst_s1a2` reader - "]
 pub struct SWRST_S1A2_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A2_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> SWRST_S1A2_W<'a> {
 #[doc = "Field `swrst_s1a1` reader - "]
 pub struct SWRST_S1A1_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A1_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> SWRST_S1A1_W<'a> {
 #[doc = "Field `swrst_s1a0` reader - "]
 pub struct SWRST_S1A0_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A0_R(crate::FieldReader::new(bits))
     }
@@ -577,6 +592,7 @@ impl<'a> SWRST_S1A0_W<'a> {
 #[doc = "Field `swrst_s1f` reader - "]
 pub struct SWRST_S1F_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1F_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1F_R(crate::FieldReader::new(bits))
     }
@@ -613,6 +629,7 @@ impl<'a> SWRST_S1F_W<'a> {
 #[doc = "Field `swrst_s1e` reader - "]
 pub struct SWRST_S1E_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1E_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1E_R(crate::FieldReader::new(bits))
     }
@@ -649,6 +666,7 @@ impl<'a> SWRST_S1E_W<'a> {
 #[doc = "Field `swrst_s1d` reader - "]
 pub struct SWRST_S1D_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1D_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1D_R(crate::FieldReader::new(bits))
     }
@@ -685,6 +703,7 @@ impl<'a> SWRST_S1D_W<'a> {
 #[doc = "Field `swrst_s1c` reader - "]
 pub struct SWRST_S1C_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1C_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1C_R(crate::FieldReader::new(bits))
     }
@@ -721,6 +740,7 @@ impl<'a> SWRST_S1C_W<'a> {
 #[doc = "Field `swrst_s1b` reader - "]
 pub struct SWRST_S1B_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1B_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1B_R(crate::FieldReader::new(bits))
     }
@@ -757,6 +777,7 @@ impl<'a> SWRST_S1B_W<'a> {
 #[doc = "Field `swrst_s1a` reader - "]
 pub struct SWRST_S1A_R(crate::FieldReader<bool, bool>);
 impl SWRST_S1A_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S1A_R(crate::FieldReader::new(bits))
     }
@@ -793,6 +814,7 @@ impl<'a> SWRST_S1A_W<'a> {
 #[doc = "Field `swrst_s19` reader - "]
 pub struct SWRST_S19_R(crate::FieldReader<bool, bool>);
 impl SWRST_S19_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S19_R(crate::FieldReader::new(bits))
     }
@@ -829,6 +851,7 @@ impl<'a> SWRST_S19_W<'a> {
 #[doc = "Field `swrst_s18` reader - "]
 pub struct SWRST_S18_R(crate::FieldReader<bool, bool>);
 impl SWRST_S18_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S18_R(crate::FieldReader::new(bits))
     }
@@ -865,6 +888,7 @@ impl<'a> SWRST_S18_W<'a> {
 #[doc = "Field `swrst_s17` reader - "]
 pub struct SWRST_S17_R(crate::FieldReader<bool, bool>);
 impl SWRST_S17_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S17_R(crate::FieldReader::new(bits))
     }
@@ -901,6 +925,7 @@ impl<'a> SWRST_S17_W<'a> {
 #[doc = "Field `swrst_s16` reader - "]
 pub struct SWRST_S16_R(crate::FieldReader<bool, bool>);
 impl SWRST_S16_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S16_R(crate::FieldReader::new(bits))
     }
@@ -937,6 +962,7 @@ impl<'a> SWRST_S16_W<'a> {
 #[doc = "Field `swrst_s15` reader - "]
 pub struct SWRST_S15_R(crate::FieldReader<bool, bool>);
 impl SWRST_S15_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S15_R(crate::FieldReader::new(bits))
     }
@@ -973,6 +999,7 @@ impl<'a> SWRST_S15_W<'a> {
 #[doc = "Field `swrst_s14` reader - "]
 pub struct SWRST_S14_R(crate::FieldReader<bool, bool>);
 impl SWRST_S14_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S14_R(crate::FieldReader::new(bits))
     }
@@ -1009,6 +1036,7 @@ impl<'a> SWRST_S14_W<'a> {
 #[doc = "Field `swrst_s13` reader - "]
 pub struct SWRST_S13_R(crate::FieldReader<bool, bool>);
 impl SWRST_S13_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S13_R(crate::FieldReader::new(bits))
     }
@@ -1045,6 +1073,7 @@ impl<'a> SWRST_S13_W<'a> {
 #[doc = "Field `swrst_s12` reader - "]
 pub struct SWRST_S12_R(crate::FieldReader<bool, bool>);
 impl SWRST_S12_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S12_R(crate::FieldReader::new(bits))
     }
@@ -1081,6 +1110,7 @@ impl<'a> SWRST_S12_W<'a> {
 #[doc = "Field `swrst_s11` reader - "]
 pub struct SWRST_S11_R(crate::FieldReader<bool, bool>);
 impl SWRST_S11_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S11_R(crate::FieldReader::new(bits))
     }
@@ -1117,6 +1147,7 @@ impl<'a> SWRST_S11_W<'a> {
 #[doc = "Field `swrst_s10` reader - "]
 pub struct SWRST_S10_R(crate::FieldReader<bool, bool>);
 impl SWRST_S10_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SWRST_S10_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_POLARITY_SPEC>> for W {
 #[doc = "Field `adpll_lp_polarity` reader - "]
 pub struct ADPLL_LP_POLARITY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LP_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LP_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_LP_POLARITY_W<'a> {
 #[doc = "Field `adpll_fcal_polarity` reader - "]
 pub struct ADPLL_FCAL_POLARITY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FCAL_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FCAL_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_FCAL_POLARITY_W<'a> {
 #[doc = "Field `adpll_lms_polarity` reader - "]
 pub struct ADPLL_LMS_POLARITY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LMS_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LMS_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ADPLL_LMS_POLARITY_W<'a> {
 #[doc = "Field `adpll_lp_mom_polarity` reader - "]
 pub struct ADPLL_LP_MOM_POLARITY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LP_MOM_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LP_MOM_POLARITY_R(crate::FieldReader::new(bits))
     }

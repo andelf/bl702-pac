@@ -37,6 +37,7 @@ impl From<crate::W<SE_GMAC_0_CTRL_0_SPEC>> for W {
 #[doc = "Field `se_gmac_0_x_endian` reader - "]
 pub struct SE_GMAC_0_X_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_X_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_X_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_GMAC_0_X_ENDIAN_W<'a> {
 #[doc = "Field `se_gmac_0_h_endian` reader - "]
 pub struct SE_GMAC_0_H_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_H_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_H_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SE_GMAC_0_H_ENDIAN_W<'a> {
 #[doc = "Field `se_gmac_0_t_endian` reader - "]
 pub struct SE_GMAC_0_T_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_T_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_T_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SE_GMAC_0_T_ENDIAN_W<'a> {
 #[doc = "Field `se_gmac_0_int_mask` reader - "]
 pub struct SE_GMAC_0_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SE_GMAC_0_INT_MASK_W<'a> {
 #[doc = "Field `se_gmac_0_int_set_1t` reader - "]
 pub struct SE_GMAC_0_INT_SET_1T_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_INT_SET_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_INT_SET_1T_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SE_GMAC_0_INT_SET_1T_W<'a> {
 #[doc = "Field `se_gmac_0_int_clr_1t` reader - "]
 pub struct SE_GMAC_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_INT_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SE_GMAC_0_INT_CLR_1T_W<'a> {
 #[doc = "Field `se_gmac_0_int` reader - "]
 pub struct SE_GMAC_0_INT_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_INT_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SE_GMAC_0_INT_W<'a> {
 #[doc = "Field `se_gmac_0_en` reader - "]
 pub struct SE_GMAC_0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_EN_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> SE_GMAC_0_EN_W<'a> {
 #[doc = "Field `se_gmac_0_trig_1t` reader - "]
 pub struct SE_GMAC_0_TRIG_1T_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_TRIG_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_TRIG_1T_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> SE_GMAC_0_TRIG_1T_W<'a> {
 #[doc = "Field `se_gmac_0_busy` reader - "]
 pub struct SE_GMAC_0_BUSY_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_0_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_0_BUSY_R(crate::FieldReader::new(bits))
     }

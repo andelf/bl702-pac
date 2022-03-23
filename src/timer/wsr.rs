@@ -37,6 +37,7 @@ impl From<crate::W<WSR_SPEC>> for W {
 #[doc = "Field `wts` reader - "]
 pub struct WTS_R(crate::FieldReader<bool, bool>);
 impl WTS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WTS_R(crate::FieldReader::new(bits))
     }

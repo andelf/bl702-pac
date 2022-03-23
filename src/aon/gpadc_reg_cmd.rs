@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_CMD_SPEC>> for W {
 #[doc = "Field `gpadc_sen_test_en` reader - "]
 pub struct GPADC_SEN_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_SEN_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_SEN_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> GPADC_SEN_TEST_EN_W<'a> {
 #[doc = "Field `gpadc_sen_sel` reader - "]
 pub struct GPADC_SEN_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_SEN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SEN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> GPADC_SEN_SEL_W<'a> {
 #[doc = "Field `gpadc_chip_sen_pu` reader - "]
 pub struct GPADC_CHIP_SEN_PU_R(crate::FieldReader<bool, bool>);
 impl GPADC_CHIP_SEN_PU_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CHIP_SEN_PU_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> GPADC_CHIP_SEN_PU_W<'a> {
 #[doc = "Field `gpadc_micboost_32db_en` reader - "]
 pub struct GPADC_MICBOOST_32DB_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_MICBOOST_32DB_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_MICBOOST_32DB_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> GPADC_MICBOOST_32DB_EN_W<'a> {
 #[doc = "Field `gpadc_mic_pga2_gain` reader - "]
 pub struct GPADC_MIC_PGA2_GAIN_R(crate::FieldReader<u8, u8>);
 impl GPADC_MIC_PGA2_GAIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_MIC_PGA2_GAIN_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> GPADC_MIC_PGA2_GAIN_W<'a> {
 #[doc = "Field `gpadc_mic1_diff` reader - "]
 pub struct GPADC_MIC1_DIFF_R(crate::FieldReader<bool, bool>);
 impl GPADC_MIC1_DIFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_MIC1_DIFF_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> GPADC_MIC1_DIFF_W<'a> {
 #[doc = "Field `gpadc_mic2_diff` reader - "]
 pub struct GPADC_MIC2_DIFF_R(crate::FieldReader<bool, bool>);
 impl GPADC_MIC2_DIFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_MIC2_DIFF_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> GPADC_MIC2_DIFF_W<'a> {
 #[doc = "Field `gpadc_dwa_en` reader - "]
 pub struct GPADC_DWA_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_DWA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_DWA_EN_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> GPADC_DWA_EN_W<'a> {
 #[doc = "Field `gpadc_byp_micboost` reader - "]
 pub struct GPADC_BYP_MICBOOST_R(crate::FieldReader<bool, bool>);
 impl GPADC_BYP_MICBOOST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_BYP_MICBOOST_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> GPADC_BYP_MICBOOST_W<'a> {
 #[doc = "Field `gpadc_micpga_en` reader - "]
 pub struct GPADC_MICPGA_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_MICPGA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_MICPGA_EN_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> GPADC_MICPGA_EN_W<'a> {
 #[doc = "Field `gpadc_micbias_en` reader - "]
 pub struct GPADC_MICBIAS_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_MICBIAS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_MICBIAS_EN_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> GPADC_MICBIAS_EN_W<'a> {
 #[doc = "Field `gpadc_neg_gnd` reader - "]
 pub struct GPADC_NEG_GND_R(crate::FieldReader<bool, bool>);
 impl GPADC_NEG_GND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_NEG_GND_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> GPADC_NEG_GND_W<'a> {
 #[doc = "Field `gpadc_pos_sel` reader - "]
 pub struct GPADC_POS_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_POS_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_POS_SEL_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> GPADC_POS_SEL_W<'a> {
 #[doc = "Field `gpadc_neg_sel` reader - "]
 pub struct GPADC_NEG_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_NEG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_NEG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -501,6 +515,7 @@ impl<'a> GPADC_NEG_SEL_W<'a> {
 #[doc = "Field `gpadc_soft_rst` reader - "]
 pub struct GPADC_SOFT_RST_R(crate::FieldReader<bool, bool>);
 impl GPADC_SOFT_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_SOFT_RST_R(crate::FieldReader::new(bits))
     }
@@ -537,6 +552,7 @@ impl<'a> GPADC_SOFT_RST_W<'a> {
 #[doc = "Field `gpadc_conv_start` reader - "]
 pub struct GPADC_CONV_START_R(crate::FieldReader<bool, bool>);
 impl GPADC_CONV_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CONV_START_R(crate::FieldReader::new(bits))
     }
@@ -573,6 +589,7 @@ impl<'a> GPADC_CONV_START_W<'a> {
 #[doc = "Field `gpadc_global_en` reader - "]
 pub struct GPADC_GLOBAL_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_GLOBAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_GLOBAL_EN_R(crate::FieldReader::new(bits))
     }

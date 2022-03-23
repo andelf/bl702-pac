@@ -37,6 +37,7 @@ impl From<crate::W<URX_RTO_TIMER_SPEC>> for W {
 #[doc = "Field `cr_urx_rto_value` reader - "]
 pub struct CR_URX_RTO_VALUE_R(crate::FieldReader<u8, u8>);
 impl CR_URX_RTO_VALUE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_URX_RTO_VALUE_R(crate::FieldReader::new(bits))
     }

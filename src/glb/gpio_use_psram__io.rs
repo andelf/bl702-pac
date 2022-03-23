@@ -37,6 +37,7 @@ impl From<crate::W<GPIO_USE_PSRAM__IO_SPEC>> for W {
 #[doc = "Field `cfg_gpio_use_psram_io` reader - "]
 pub struct CFG_GPIO_USE_PSRAM_IO_R(crate::FieldReader<u8, u8>);
 impl CFG_GPIO_USE_PSRAM_IO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CFG_GPIO_USE_PSRAM_IO_R(crate::FieldReader::new(bits))
     }

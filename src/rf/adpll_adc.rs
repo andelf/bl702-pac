@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_ADC_SPEC>> for W {
 #[doc = "Field `adpll_adc_clk_en` reader - "]
 pub struct ADPLL_ADC_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_ADC_CLK_EN_W<'a> {
 #[doc = "Field `adpll_adc_clk_inv` reader - "]
 pub struct ADPLL_ADC_CLK_INV_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_CLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_CLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_ADC_CLK_INV_W<'a> {
 #[doc = "Field `adpll_adc_clk_div_sel` reader - "]
 pub struct ADPLL_ADC_CLK_DIV_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_CLK_DIV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_CLK_DIV_SEL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ADPLL_ADC_CLK_DIV_SEL_W<'a> {
 #[doc = "Field `adpll_adc_clk_sync_inv` reader - "]
 pub struct ADPLL_ADC_CLK_SYNC_INV_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_CLK_SYNC_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_CLK_SYNC_INV_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> ADPLL_ADC_CLK_SYNC_INV_W<'a> {
 #[doc = "Field `adpll_adc_oscal_en` reader - "]
 pub struct ADPLL_ADC_OSCAL_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_OSCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_OSCAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> ADPLL_ADC_OSCAL_EN_W<'a> {
 #[doc = "Field `adpll_adc_vref_coarse` reader - "]
 pub struct ADPLL_ADC_VREF_COARSE_R(crate::FieldReader<u8, u8>);
 impl ADPLL_ADC_VREF_COARSE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_ADC_VREF_COARSE_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> ADPLL_ADC_VREF_COARSE_W<'a> {
 #[doc = "Field `adpll_adc_vref_fine` reader - "]
 pub struct ADPLL_ADC_VREF_FINE_R(crate::FieldReader<u8, u8>);
 impl ADPLL_ADC_VREF_FINE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_ADC_VREF_FINE_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> ADPLL_ADC_VREF_FINE_W<'a> {
 #[doc = "Field `adpll_adc_data_sign_sel` reader - "]
 pub struct ADPLL_ADC_DATA_SIGN_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_DATA_SIGN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_DATA_SIGN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> ADPLL_ADC_DATA_SIGN_SEL_W<'a> {
 #[doc = "Field `adpll_adc_vth_en` reader - "]
 pub struct ADPLL_ADC_VTH_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_VTH_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_VTH_EN_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> ADPLL_ADC_VTH_EN_W<'a> {
 #[doc = "Field `adpll_adc_vth_bias_mode` reader - "]
 pub struct ADPLL_ADC_VTH_BIAS_MODE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ADC_VTH_BIAS_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ADC_VTH_BIAS_MODE_R(crate::FieldReader::new(bits))
     }

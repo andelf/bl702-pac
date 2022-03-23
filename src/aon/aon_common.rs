@@ -37,6 +37,7 @@ impl From<crate::W<AON_COMMON_SPEC>> for W {
 #[doc = "Field `ten_cip_misc_aon` reader - "]
 pub struct TEN_CIP_MISC_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_CIP_MISC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_CIP_MISC_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TEN_CIP_MISC_AON_W<'a> {
 #[doc = "Field `ten_mbg_aon` reader - "]
 pub struct TEN_MBG_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_MBG_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_MBG_AON_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TEN_MBG_AON_W<'a> {
 #[doc = "Field `dten_xtal_aon` reader - "]
 pub struct DTEN_XTAL_AON_R(crate::FieldReader<bool, bool>);
 impl DTEN_XTAL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_XTAL_AON_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> DTEN_XTAL_AON_W<'a> {
 #[doc = "Field `ten_xtal_aon` reader - "]
 pub struct TEN_XTAL_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_XTAL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_XTAL_AON_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TEN_XTAL_AON_W<'a> {
 #[doc = "Field `ten_ldo15rf_aon` reader - "]
 pub struct TEN_LDO15RF_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_LDO15RF_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_LDO15RF_AON_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> TEN_LDO15RF_AON_W<'a> {
 #[doc = "Field `ten_bg_sys_aon` reader - "]
 pub struct TEN_BG_SYS_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_BG_SYS_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_BG_SYS_AON_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TEN_BG_SYS_AON_W<'a> {
 #[doc = "Field `ten_dcdc18_1_aon` reader - "]
 pub struct TEN_DCDC18_1_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_DCDC18_1_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_DCDC18_1_AON_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> TEN_DCDC18_1_AON_W<'a> {
 #[doc = "Field `ten_dcdc18_0_aon` reader - "]
 pub struct TEN_DCDC18_0_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_DCDC18_0_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_DCDC18_0_AON_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> TEN_DCDC18_0_AON_W<'a> {
 #[doc = "Field `ten_ldo11soc_aon` reader - "]
 pub struct TEN_LDO11SOC_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_LDO11SOC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_LDO11SOC_AON_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> TEN_LDO11SOC_AON_W<'a> {
 #[doc = "Field `ten_vddcore_aon` reader - "]
 pub struct TEN_VDDCORE_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_VDDCORE_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_VDDCORE_AON_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> TEN_VDDCORE_AON_W<'a> {
 #[doc = "Field `ten_xtal32k` reader - "]
 pub struct TEN_XTAL32K_R(crate::FieldReader<bool, bool>);
 impl TEN_XTAL32K_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_XTAL32K_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> TEN_XTAL32K_W<'a> {
 #[doc = "Field `dten_xtal32k` reader - "]
 pub struct DTEN_XTAL32K_R(crate::FieldReader<bool, bool>);
 impl DTEN_XTAL32K_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_XTAL32K_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> DTEN_XTAL32K_W<'a> {
 #[doc = "Field `ten_aon` reader - "]
 pub struct TEN_AON_R(crate::FieldReader<bool, bool>);
 impl TEN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_AON_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> TEN_AON_W<'a> {
 #[doc = "Field `tmux_aon` reader - "]
 pub struct TMUX_AON_R(crate::FieldReader<u8, u8>);
 impl TMUX_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TMUX_AON_R(crate::FieldReader::new(bits))
     }

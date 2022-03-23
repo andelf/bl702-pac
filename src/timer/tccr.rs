@@ -37,6 +37,7 @@ impl From<crate::W<TCCR_SPEC>> for W {
 #[doc = "Field `cs_wdt` reader - "]
 pub struct CS_WDT_R(crate::FieldReader<u8, u8>);
 impl CS_WDT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CS_WDT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CS_WDT_W<'a> {
 #[doc = "Field `RESERVED_7` reader - "]
 pub struct RESERVED_7_R(crate::FieldReader<bool, bool>);
 impl RESERVED_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RESERVED_7_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RESERVED_7_W<'a> {
 #[doc = "Field `cs_2` reader - "]
 pub struct CS_2_R(crate::FieldReader<u8, u8>);
 impl CS_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CS_2_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CS_2_W<'a> {
 #[doc = "Field `RESERVED_4` reader - "]
 pub struct RESERVED_4_R(crate::FieldReader<bool, bool>);
 impl RESERVED_4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RESERVED_4_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> RESERVED_4_W<'a> {
 #[doc = "Field `cs_1` reader - "]
 pub struct CS_1_R(crate::FieldReader<u8, u8>);
 impl CS_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CS_1_R(crate::FieldReader::new(bits))
     }

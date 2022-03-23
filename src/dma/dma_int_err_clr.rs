@@ -37,6 +37,7 @@ impl From<crate::W<DMA_INTERRCLR_SPEC>> for W {
 #[doc = "Field `IntErrClr` reader - "]
 pub struct INTERRCLR_R(crate::FieldReader<u8, u8>);
 impl INTERRCLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         INTERRCLR_R(crate::FieldReader::new(bits))
     }

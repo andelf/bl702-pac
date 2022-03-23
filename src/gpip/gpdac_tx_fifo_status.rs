@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_TX_FIFO_STATUS_SPEC>> for W {
 #[doc = "Field `TxFifoWrPtr` reader - "]
 pub struct TXFIFOWRPTR_R(crate::FieldReader<u8, u8>);
 impl TXFIFOWRPTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TXFIFOWRPTR_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> TXFIFOWRPTR_W<'a> {
 #[doc = "Field `TxFifoRdPtr` reader - "]
 pub struct TXFIFORDPTR_R(crate::FieldReader<u8, u8>);
 impl TXFIFORDPTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TXFIFORDPTR_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> TXFIFORDPTR_W<'a> {
 #[doc = "Field `tx_cs` reader - "]
 pub struct TX_CS_R(crate::FieldReader<u8, u8>);
 impl TX_CS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TX_CS_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> TX_CS_W<'a> {
 #[doc = "Field `tx_fifo_full` reader - "]
 pub struct TX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_FULL_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> TX_FIFO_FULL_W<'a> {
 #[doc = "Field `tx_fifo_empty` reader - "]
 pub struct TX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_EMPTY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
     }

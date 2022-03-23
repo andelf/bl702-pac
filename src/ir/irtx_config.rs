@@ -37,6 +37,7 @@ impl From<crate::W<IRTX_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_irtx_data_num` reader - "]
 pub struct CR_IRTX_DATA_NUM_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_DATA_NUM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_DATA_NUM_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_IRTX_DATA_NUM_W<'a> {
 #[doc = "Field `cr_irtx_tail_hl_inv` reader - "]
 pub struct CR_IRTX_TAIL_HL_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_TAIL_HL_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_TAIL_HL_INV_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CR_IRTX_TAIL_HL_INV_W<'a> {
 #[doc = "Field `cr_irtx_tail_en` reader - "]
 pub struct CR_IRTX_TAIL_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_TAIL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_TAIL_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> CR_IRTX_TAIL_EN_W<'a> {
 #[doc = "Field `cr_irtx_head_hl_inv` reader - "]
 pub struct CR_IRTX_HEAD_HL_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_HEAD_HL_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_HEAD_HL_INV_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> CR_IRTX_HEAD_HL_INV_W<'a> {
 #[doc = "Field `cr_irtx_head_en` reader - "]
 pub struct CR_IRTX_HEAD_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_HEAD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_HEAD_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> CR_IRTX_HEAD_EN_W<'a> {
 #[doc = "Field `cr_irtx_logic1_hl_inv` reader - "]
 pub struct CR_IRTX_LOGIC1_HL_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_LOGIC1_HL_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_LOGIC1_HL_INV_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> CR_IRTX_LOGIC1_HL_INV_W<'a> {
 #[doc = "Field `cr_irtx_logic0_hl_inv` reader - "]
 pub struct CR_IRTX_LOGIC0_HL_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_LOGIC0_HL_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_LOGIC0_HL_INV_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> CR_IRTX_LOGIC0_HL_INV_W<'a> {
 #[doc = "Field `cr_irtx_data_en` reader - "]
 pub struct CR_IRTX_DATA_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_DATA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_DATA_EN_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> CR_IRTX_DATA_EN_W<'a> {
 #[doc = "Field `cr_irtx_swm_en` reader - "]
 pub struct CR_IRTX_SWM_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_SWM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_SWM_EN_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> CR_IRTX_SWM_EN_W<'a> {
 #[doc = "Field `cr_irtx_mod_en` reader - "]
 pub struct CR_IRTX_MOD_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_MOD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_MOD_EN_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> CR_IRTX_MOD_EN_W<'a> {
 #[doc = "Field `cr_irtx_out_inv` reader - "]
 pub struct CR_IRTX_OUT_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_OUT_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_OUT_INV_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> CR_IRTX_OUT_INV_W<'a> {
 #[doc = "Field `cr_irtx_en` reader - "]
 pub struct CR_IRTX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRTX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRTX_EN_R(crate::FieldReader::new(bits))
     }

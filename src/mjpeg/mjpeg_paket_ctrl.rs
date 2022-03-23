@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_PAKET_CTRL_SPEC>> for W {
 #[doc = "Field `reg_pket_body_byte` reader - "]
 pub struct REG_PKET_BODY_BYTE_R(crate::FieldReader<u16, u16>);
 impl REG_PKET_BODY_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_PKET_BODY_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_PKET_BODY_BYTE_W<'a> {
 #[doc = "Field `reg_jend_to_pend` reader - "]
 pub struct REG_JEND_TO_PEND_R(crate::FieldReader<bool, bool>);
 impl REG_JEND_TO_PEND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_JEND_TO_PEND_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_JEND_TO_PEND_W<'a> {
 #[doc = "Field `reg_pket_en` reader - "]
 pub struct REG_PKET_EN_R(crate::FieldReader<bool, bool>);
 impl REG_PKET_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_PKET_EN_R(crate::FieldReader::new(bits))
     }

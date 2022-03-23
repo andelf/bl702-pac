@@ -37,6 +37,7 @@ impl From<crate::W<SF2_IF_IO_DLY_0_SPEC>> for W {
 #[doc = "Field `sf2_dqs_do_dly_sel` reader - "]
 pub struct SF2_DQS_DO_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_DQS_DO_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_DQS_DO_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SF2_DQS_DO_DLY_SEL_W<'a> {
 #[doc = "Field `sf2_dqs_di_dly_sel` reader - "]
 pub struct SF2_DQS_DI_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_DQS_DI_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_DQS_DI_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SF2_DQS_DI_DLY_SEL_W<'a> {
 #[doc = "Field `sf2_dqs_oe_dly_sel` reader - "]
 pub struct SF2_DQS_OE_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_DQS_OE_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_DQS_OE_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> SF2_DQS_OE_DLY_SEL_W<'a> {
 #[doc = "Field `sf2_clk_out_dly_sel` reader - "]
 pub struct SF2_CLK_OUT_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_CLK_OUT_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_CLK_OUT_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> SF2_CLK_OUT_DLY_SEL_W<'a> {
 #[doc = "Field `sf2_cs2_dly_sel` reader - "]
 pub struct SF2_CS2_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_CS2_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_CS2_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> SF2_CS2_DLY_SEL_W<'a> {
 #[doc = "Field `sf2_cs_dly_sel` reader - "]
 pub struct SF2_CS_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF2_CS_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_CS_DLY_SEL_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<SD_DBG_PWD_HIGH_SPEC>> for W {
 #[doc = "Field `sd_dbg_pwd_high` reader - "]
 pub struct SD_DBG_PWD_HIGH_R(crate::FieldReader<u32, u32>);
 impl SD_DBG_PWD_HIGH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         SD_DBG_PWD_HIGH_R(crate::FieldReader::new(bits))
     }
@@ -56,7 +57,7 @@ impl<'a> SD_DBG_PWD_HIGH_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
+        self.w.bits = value;
         self.w
     }
 }
@@ -64,7 +65,7 @@ impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn sd_dbg_pwd_high(&self) -> SD_DBG_PWD_HIGH_R {
-        SD_DBG_PWD_HIGH_R::new((self.bits & 0xffff_ffff) as u32)
+        SD_DBG_PWD_HIGH_R::new(self.bits)
     }
 }
 impl W {

@@ -37,6 +37,7 @@ impl From<crate::W<I2S_INT_STS_SPEC>> for W {
 #[doc = "Field `cr_i2s_fer_en` reader - "]
 pub struct CR_I2S_FER_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_FER_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_FER_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_I2S_FER_EN_W<'a> {
 #[doc = "Field `cr_i2s_rxf_en` reader - "]
 pub struct CR_I2S_RXF_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_RXF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_RXF_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_I2S_RXF_EN_W<'a> {
 #[doc = "Field `cr_i2s_txf_en` reader - "]
 pub struct CR_I2S_TXF_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_TXF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_TXF_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_I2S_TXF_EN_W<'a> {
 #[doc = "Field `cr_i2s_fer_mask` reader - "]
 pub struct CR_I2S_FER_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_FER_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_FER_MASK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_I2S_FER_MASK_W<'a> {
 #[doc = "Field `cr_i2s_rxf_mask` reader - "]
 pub struct CR_I2S_RXF_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_RXF_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_RXF_MASK_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_I2S_RXF_MASK_W<'a> {
 #[doc = "Field `cr_i2s_txf_mask` reader - "]
 pub struct CR_I2S_TXF_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_TXF_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_TXF_MASK_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CR_I2S_TXF_MASK_W<'a> {
 #[doc = "Field `i2s_fer_int` reader - "]
 pub struct I2S_FER_INT_R(crate::FieldReader<bool, bool>);
 impl I2S_FER_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2S_FER_INT_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> I2S_FER_INT_W<'a> {
 #[doc = "Field `i2s_rxf_int` reader - "]
 pub struct I2S_RXF_INT_R(crate::FieldReader<bool, bool>);
 impl I2S_RXF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2S_RXF_INT_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> I2S_RXF_INT_W<'a> {
 #[doc = "Field `i2s_txf_int` reader - "]
 pub struct I2S_TXF_INT_R(crate::FieldReader<bool, bool>);
 impl I2S_TXF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2S_TXF_INT_R(crate::FieldReader::new(bits))
     }

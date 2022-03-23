@@ -37,6 +37,7 @@ impl From<crate::W<DCDC18_TOP_1_SPEC>> for W {
 #[doc = "Field `dcdc18_pulldown_aon` reader - "]
 pub struct DCDC18_PULLDOWN_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_PULLDOWN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_PULLDOWN_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> DCDC18_PULLDOWN_AON_W<'a> {
 #[doc = "Field `dcdc18_en_antiring_aon` reader - "]
 pub struct DCDC18_EN_ANTIRING_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_EN_ANTIRING_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_EN_ANTIRING_AON_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> DCDC18_EN_ANTIRING_AON_W<'a> {
 #[doc = "Field `dcdc18_cfb_sel_aon` reader - "]
 pub struct DCDC18_CFB_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_CFB_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_CFB_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> DCDC18_CFB_SEL_AON_W<'a> {
 #[doc = "Field `dcdc18_chf_sel_aon` reader - "]
 pub struct DCDC18_CHF_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_CHF_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_CHF_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> DCDC18_CHF_SEL_AON_W<'a> {
 #[doc = "Field `dcdc18_rc_sel_aon` reader - "]
 pub struct DCDC18_RC_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_RC_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_RC_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> DCDC18_RC_SEL_AON_W<'a> {
 #[doc = "Field `dcdc18_nonoverlap_td_aon` reader - "]
 pub struct DCDC18_NONOVERLAP_TD_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_NONOVERLAP_TD_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_NONOVERLAP_TD_AON_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> DCDC18_NONOVERLAP_TD_AON_W<'a> {
 #[doc = "Field `dcdc18_zvs_td_opt_aon` reader - "]
 pub struct DCDC18_ZVS_TD_OPT_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_ZVS_TD_OPT_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_ZVS_TD_OPT_AON_R(crate::FieldReader::new(bits))
     }
@@ -239,6 +246,7 @@ impl<'a> DCDC18_ZVS_TD_OPT_AON_W<'a> {
 #[doc = "Field `dcdc18_cs_delay_aon` reader - "]
 pub struct DCDC18_CS_DELAY_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_CS_DELAY_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_CS_DELAY_AON_R(crate::FieldReader::new(bits))
     }
@@ -265,6 +273,7 @@ impl<'a> DCDC18_CS_DELAY_AON_W<'a> {
 #[doc = "Field `dcdc18_force_cs_zvs_aon` reader - "]
 pub struct DCDC18_FORCE_CS_ZVS_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_FORCE_CS_ZVS_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_FORCE_CS_ZVS_AON_R(crate::FieldReader::new(bits))
     }

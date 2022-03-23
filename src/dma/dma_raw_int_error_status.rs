@@ -37,6 +37,7 @@ impl From<crate::W<DMA_RAWINTERRORSTATUS_SPEC>> for W {
 #[doc = "Field `RawIntErrorStatus` reader - "]
 pub struct RAWINTERRORSTATUS_R(crate::FieldReader<u8, u8>);
 impl RAWINTERRORSTATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RAWINTERRORSTATUS_R(crate::FieldReader::new(bits))
     }

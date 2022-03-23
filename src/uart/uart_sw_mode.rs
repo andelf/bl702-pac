@@ -37,6 +37,7 @@ impl From<crate::W<UART_SW_MODE_SPEC>> for W {
 #[doc = "Field `cr_urx_rts_sw_val` reader - "]
 pub struct CR_URX_RTS_SW_VAL_R(crate::FieldReader<bool, bool>);
 impl CR_URX_RTS_SW_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_RTS_SW_VAL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_URX_RTS_SW_VAL_W<'a> {
 #[doc = "Field `cr_urx_rts_sw_mode` reader - "]
 pub struct CR_URX_RTS_SW_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_URX_RTS_SW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_RTS_SW_MODE_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_URX_RTS_SW_MODE_W<'a> {
 #[doc = "Field `cr_utx_txd_sw_val` reader - "]
 pub struct CR_UTX_TXD_SW_VAL_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_TXD_SW_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_TXD_SW_VAL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_UTX_TXD_SW_VAL_W<'a> {
 #[doc = "Field `cr_utx_txd_sw_mode` reader - "]
 pub struct CR_UTX_TXD_SW_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_TXD_SW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_TXD_SW_MODE_R(crate::FieldReader::new(bits))
     }

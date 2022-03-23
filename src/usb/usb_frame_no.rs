@@ -37,6 +37,7 @@ impl From<crate::W<USB_FRAME_NO_SPEC>> for W {
 #[doc = "Field `sts_ep_no` reader - "]
 pub struct STS_EP_NO_R(crate::FieldReader<u8, u8>);
 impl STS_EP_NO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_EP_NO_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> STS_EP_NO_W<'a> {
 #[doc = "Field `sts_pid` reader - "]
 pub struct STS_PID_R(crate::FieldReader<u8, u8>);
 impl STS_PID_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_PID_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> STS_PID_W<'a> {
 #[doc = "Field `sts_frame_no` reader - "]
 pub struct STS_FRAME_NO_R(crate::FieldReader<u16, u16>);
 impl STS_FRAME_NO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         STS_FRAME_NO_R(crate::FieldReader::new(bits))
     }

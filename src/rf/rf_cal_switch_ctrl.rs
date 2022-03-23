@@ -37,6 +37,7 @@ impl From<crate::W<RF_CAL_SWITCH_CTRL_SPEC>> for W {
 #[doc = "Field `inc_fcal_en_hw` reader - "]
 pub struct INC_FCAL_EN_HW_R(crate::FieldReader<bool, bool>);
 impl INC_FCAL_EN_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_FCAL_EN_HW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> INC_FCAL_EN_HW_W<'a> {
 #[doc = "Field `inc_fcal_en` reader - "]
 pub struct INC_FCAL_EN_R(crate::FieldReader<bool, bool>);
 impl INC_FCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_FCAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> INC_FCAL_EN_W<'a> {
 #[doc = "Field `inc_acal_en` reader - "]
 pub struct INC_ACAL_EN_R(crate::FieldReader<bool, bool>);
 impl INC_ACAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_ACAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> INC_ACAL_EN_W<'a> {
 #[doc = "Field `rccal_en` reader - "]
 pub struct RCCAL_EN_R(crate::FieldReader<bool, bool>);
 impl RCCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RCCAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RCCAL_EN_W<'a> {
 #[doc = "Field `kcal_en` reader - "]
 pub struct KCAL_EN_R(crate::FieldReader<bool, bool>);
 impl KCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KCAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> KCAL_EN_W<'a> {
 #[doc = "Field `acal_en` reader - "]
 pub struct ACAL_EN_R(crate::FieldReader<bool, bool>);
 impl ACAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACAL_EN_R(crate::FieldReader::new(bits))
     }

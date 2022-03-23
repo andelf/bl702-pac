@@ -37,6 +37,7 @@ impl From<crate::W<RF_SINGEN_4_SPEC>> for W {
 #[doc = "Field `singen_fix_en_i` reader - "]
 pub struct SINGEN_FIX_EN_I_R(crate::FieldReader<bool, bool>);
 impl SINGEN_FIX_EN_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SINGEN_FIX_EN_I_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SINGEN_FIX_EN_I_W<'a> {
 #[doc = "Field `singen_fix_i` reader - "]
 pub struct SINGEN_FIX_I_R(crate::FieldReader<u16, u16>);
 impl SINGEN_FIX_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_FIX_I_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SINGEN_FIX_I_W<'a> {
 #[doc = "Field `singen_fix_en_q` reader - "]
 pub struct SINGEN_FIX_EN_Q_R(crate::FieldReader<bool, bool>);
 impl SINGEN_FIX_EN_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SINGEN_FIX_EN_Q_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SINGEN_FIX_EN_Q_W<'a> {
 #[doc = "Field `singen_fix_q` reader - "]
 pub struct SINGEN_FIX_Q_R(crate::FieldReader<u16, u16>);
 impl SINGEN_FIX_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_FIX_Q_R(crate::FieldReader::new(bits))
     }

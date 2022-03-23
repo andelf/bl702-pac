@@ -37,6 +37,7 @@ impl From<crate::W<SE_TRNG_0_CTRL_2_SPEC>> for W {
 #[doc = "Field `se_trng_0_reseed_n_msb` reader - "]
 pub struct SE_TRNG_0_RESEED_N_MSB_R(crate::FieldReader<u16, u16>);
 impl SE_TRNG_0_RESEED_N_MSB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SE_TRNG_0_RESEED_N_MSB_R(crate::FieldReader::new(bits))
     }

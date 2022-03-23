@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_SWAP_MODE_SPEC>> for W {
 #[doc = "Field `sts_swap_fend` reader - "]
 pub struct STS_SWAP_FEND_R(crate::FieldReader<bool, bool>);
 impl STS_SWAP_FEND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SWAP_FEND_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_SWAP_FEND_W<'a> {
 #[doc = "Field `sts_swap_fstart` reader - "]
 pub struct STS_SWAP_FSTART_R(crate::FieldReader<bool, bool>);
 impl STS_SWAP_FSTART_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SWAP_FSTART_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> STS_SWAP_FSTART_W<'a> {
 #[doc = "Field `sts_read_swap_idx` reader - "]
 pub struct STS_READ_SWAP_IDX_R(crate::FieldReader<bool, bool>);
 impl STS_READ_SWAP_IDX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_READ_SWAP_IDX_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> STS_READ_SWAP_IDX_W<'a> {
 #[doc = "Field `sts_swap1_full` reader - "]
 pub struct STS_SWAP1_FULL_R(crate::FieldReader<bool, bool>);
 impl STS_SWAP1_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SWAP1_FULL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> STS_SWAP1_FULL_W<'a> {
 #[doc = "Field `sts_swap0_full` reader - "]
 pub struct STS_SWAP0_FULL_R(crate::FieldReader<bool, bool>);
 impl STS_SWAP0_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SWAP0_FULL_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> STS_SWAP0_FULL_W<'a> {
 #[doc = "Field `reg_w_swap_mode` reader - "]
 pub struct REG_W_SWAP_MODE_R(crate::FieldReader<bool, bool>);
 impl REG_W_SWAP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_W_SWAP_MODE_R(crate::FieldReader::new(bits))
     }

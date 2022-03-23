@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_VCTRL_SPEC>> for W {
 #[doc = "Field `adpll_vctrl_range_sel_ext_en` reader - "]
 pub struct ADPLL_VCTRL_RANGE_SEL_EXT_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_RANGE_SEL_EXT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_RANGE_SEL_EXT_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_VCTRL_RANGE_SEL_EXT_EN_W<'a> {
 #[doc = "Field `adpll_vctrl_lock_win_sel` reader - "]
 pub struct ADPLL_VCTRL_LOCK_WIN_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_LOCK_WIN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_LOCK_WIN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_VCTRL_LOCK_WIN_SEL_W<'a> {
 #[doc = "Field `adpll_vctrl_moni_win_sel` reader - "]
 pub struct ADPLL_VCTRL_MONI_WIN_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_MONI_WIN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_MONI_WIN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ADPLL_VCTRL_MONI_WIN_SEL_W<'a> {
 #[doc = "Field `adpll_vctrl_det_cons_en` reader - "]
 pub struct ADPLL_VCTRL_DET_CONS_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_DET_CONS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_DET_CONS_EN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> ADPLL_VCTRL_DET_CONS_EN_W<'a> {
 #[doc = "Field `adpll_mom_update_period` reader - "]
 pub struct ADPLL_MOM_UPDATE_PERIOD_R(crate::FieldReader<u8, u8>);
 impl ADPLL_MOM_UPDATE_PERIOD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_MOM_UPDATE_PERIOD_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> ADPLL_MOM_UPDATE_PERIOD_W<'a> {
 #[doc = "Field `adpll_force_mom_hold` reader - "]
 pub struct ADPLL_FORCE_MOM_HOLD_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_MOM_HOLD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_MOM_HOLD_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> ADPLL_FORCE_MOM_HOLD_W<'a> {
 #[doc = "Field `adpll_dco_mash_bypass` reader - "]
 pub struct ADPLL_DCO_MASH_BYPASS_R(crate::FieldReader<bool, bool>);
 impl ADPLL_DCO_MASH_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_DCO_MASH_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> ADPLL_DCO_MASH_BYPASS_W<'a> {
 #[doc = "Field `adpll_capcode_bypass` reader - "]
 pub struct ADPLL_CAPCODE_BYPASS_R(crate::FieldReader<bool, bool>);
 impl ADPLL_CAPCODE_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_CAPCODE_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> ADPLL_CAPCODE_BYPASS_W<'a> {
 #[doc = "Field `sdm_order` reader - "]
 pub struct SDM_ORDER_R(crate::FieldReader<bool, bool>);
 impl SDM_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SDM_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> SDM_ORDER_W<'a> {
 #[doc = "Field `sdm_dither` reader - "]
 pub struct SDM_DITHER_R(crate::FieldReader<u8, u8>);
 impl SDM_DITHER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SDM_DITHER_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> SDM_DITHER_W<'a> {
 #[doc = "Field `sdm_bypass` reader - "]
 pub struct SDM_BYPASS_R(crate::FieldReader<bool, bool>);
 impl SDM_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SDM_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> SDM_BYPASS_W<'a> {
 #[doc = "Field `sdmout_dly_sel` reader - "]
 pub struct SDMOUT_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SDMOUT_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SDMOUT_DLY_SEL_R(crate::FieldReader::new(bits))
     }

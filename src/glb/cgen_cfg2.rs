@@ -37,6 +37,7 @@ impl From<crate::W<CGEN_CFG2_SPEC>> for W {
 #[doc = "Field `cgen_s3` reader - "]
 pub struct CGEN_S3_R(crate::FieldReader<bool, bool>);
 impl CGEN_S3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CGEN_S3_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CGEN_S3_W<'a> {
 #[doc = "Field `cgen_s2` reader - "]
 pub struct CGEN_S2_R(crate::FieldReader<bool, bool>);
 impl CGEN_S2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CGEN_S2_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_32M_SRC_CTRL_SPEC>> for W {
 #[doc = "Field `gpadc_32m_div_en` reader - "]
 pub struct GPADC_32M_DIV_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_32M_DIV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_32M_DIV_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> GPADC_32M_DIV_EN_W<'a> {
 #[doc = "Field `gpadc_32m_clk_sel` reader - "]
 pub struct GPADC_32M_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl GPADC_32M_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_32M_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> GPADC_32M_CLK_SEL_W<'a> {
 #[doc = "Field `gpadc_32m_clk_div` reader - "]
 pub struct GPADC_32M_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl GPADC_32M_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_32M_CLK_DIV_R(crate::FieldReader::new(bits))
     }

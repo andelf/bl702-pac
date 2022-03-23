@@ -37,6 +37,7 @@ impl From<crate::W<MODE_SPEC>> for W {
 #[doc = "Field `rsvd_23_18` reader - "]
 pub struct RSVD_23_18_R(crate::FieldReader<u8, u8>);
 impl RSVD_23_18_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_23_18_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RSVD_23_18_W<'a> {
 #[doc = "Field `RMII_EN` reader - "]
 pub struct RMII_EN_R(crate::FieldReader<bool, bool>);
 impl RMII_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RMII_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RMII_EN_W<'a> {
 #[doc = "Field `RECSMALL` reader - "]
 pub struct RECSMALL_R(crate::FieldReader<bool, bool>);
 impl RECSMALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RECSMALL_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RECSMALL_W<'a> {
 #[doc = "Field `PAD` reader - "]
 pub struct PAD_R(crate::FieldReader<bool, bool>);
 impl PAD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PAD_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> PAD_W<'a> {
 #[doc = "Field `HUGEN` reader - "]
 pub struct HUGEN_R(crate::FieldReader<bool, bool>);
 impl HUGEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HUGEN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> HUGEN_W<'a> {
 #[doc = "Field `CRCEN` reader - "]
 pub struct CRCEN_R(crate::FieldReader<bool, bool>);
 impl CRCEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CRCEN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> CRCEN_W<'a> {
 #[doc = "Field `rsvd_12_11` reader - "]
 pub struct RSVD_12_11_R(crate::FieldReader<u8, u8>);
 impl RSVD_12_11_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_12_11_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> RSVD_12_11_W<'a> {
 #[doc = "Field `FULLD` reader - "]
 pub struct FULLD_R(crate::FieldReader<bool, bool>);
 impl FULLD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FULLD_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> FULLD_W<'a> {
 #[doc = "Field `rsvd_9_7` reader - "]
 pub struct RSVD_9_7_R(crate::FieldReader<u8, u8>);
 impl RSVD_9_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_9_7_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> RSVD_9_7_W<'a> {
 #[doc = "Field `IFG` reader - "]
 pub struct IFG_R(crate::FieldReader<bool, bool>);
 impl IFG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IFG_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> IFG_W<'a> {
 #[doc = "Field `PRO` reader - "]
 pub struct PRO_R(crate::FieldReader<bool, bool>);
 impl PRO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PRO_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> PRO_W<'a> {
 #[doc = "Field `rsvd_4` reader - "]
 pub struct RSVD_4_R(crate::FieldReader<bool, bool>);
 impl RSVD_4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_4_R(crate::FieldReader::new(bits))
     }
@@ -439,6 +451,7 @@ impl<'a> RSVD_4_W<'a> {
 #[doc = "Field `BRO` reader - "]
 pub struct BRO_R(crate::FieldReader<bool, bool>);
 impl BRO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BRO_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> BRO_W<'a> {
 #[doc = "Field `NOPRE` reader - "]
 pub struct NOPRE_R(crate::FieldReader<bool, bool>);
 impl NOPRE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         NOPRE_R(crate::FieldReader::new(bits))
     }
@@ -511,6 +525,7 @@ impl<'a> NOPRE_W<'a> {
 #[doc = "Field `TXEN` reader - "]
 pub struct TXEN_R(crate::FieldReader<bool, bool>);
 impl TXEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TXEN_R(crate::FieldReader::new(bits))
     }
@@ -547,6 +562,7 @@ impl<'a> TXEN_W<'a> {
 #[doc = "Field `RXEN` reader - "]
 pub struct RXEN_R(crate::FieldReader<bool, bool>);
 impl RXEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXEN_R(crate::FieldReader::new(bits))
     }

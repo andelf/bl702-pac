@@ -37,6 +37,7 @@ impl From<crate::W<DIG32K_WAKEUP_CTRL_SPEC>> for W {
 #[doc = "Field `reg_en_platform_wakeup` reader - "]
 pub struct REG_EN_PLATFORM_WAKEUP_R(crate::FieldReader<bool, bool>);
 impl REG_EN_PLATFORM_WAKEUP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_EN_PLATFORM_WAKEUP_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_EN_PLATFORM_WAKEUP_W<'a> {
 #[doc = "Field `dig_clk_src_sel` reader - "]
 pub struct DIG_CLK_SRC_SEL_R(crate::FieldReader<u8, u8>);
 impl DIG_CLK_SRC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DIG_CLK_SRC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> DIG_CLK_SRC_SEL_W<'a> {
 #[doc = "Field `dig_512k_comp` reader - "]
 pub struct DIG_512K_COMP_R(crate::FieldReader<bool, bool>);
 impl DIG_512K_COMP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DIG_512K_COMP_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> DIG_512K_COMP_W<'a> {
 #[doc = "Field `dig_512k_en` reader - "]
 pub struct DIG_512K_EN_R(crate::FieldReader<bool, bool>);
 impl DIG_512K_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DIG_512K_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> DIG_512K_EN_W<'a> {
 #[doc = "Field `dig_512k_div` reader - "]
 pub struct DIG_512K_DIV_R(crate::FieldReader<u8, u8>);
 impl DIG_512K_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DIG_512K_DIV_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> DIG_512K_DIV_W<'a> {
 #[doc = "Field `dig_32k_comp` reader - "]
 pub struct DIG_32K_COMP_R(crate::FieldReader<bool, bool>);
 impl DIG_32K_COMP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DIG_32K_COMP_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> DIG_32K_COMP_W<'a> {
 #[doc = "Field `dig_32k_en` reader - "]
 pub struct DIG_32K_EN_R(crate::FieldReader<bool, bool>);
 impl DIG_32K_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DIG_32K_EN_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> DIG_32K_EN_W<'a> {
 #[doc = "Field `dig_32k_div` reader - "]
 pub struct DIG_32K_DIV_R(crate::FieldReader<u16, u16>);
 impl DIG_32K_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         DIG_32K_DIV_R(crate::FieldReader::new(bits))
     }

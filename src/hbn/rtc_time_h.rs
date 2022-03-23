@@ -37,6 +37,7 @@ impl From<crate::W<RTC_TIME_H_SPEC>> for W {
 #[doc = "Field `rtc_time_latch` reader - "]
 pub struct RTC_TIME_LATCH_R(crate::FieldReader<bool, bool>);
 impl RTC_TIME_LATCH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RTC_TIME_LATCH_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RTC_TIME_LATCH_W<'a> {
 #[doc = "Field `rtc_time_latch_h` reader - "]
 pub struct RTC_TIME_LATCH_H_R(crate::FieldReader<u8, u8>);
 impl RTC_TIME_LATCH_H_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RTC_TIME_LATCH_H_R(crate::FieldReader::new(bits))
     }

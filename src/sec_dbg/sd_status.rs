@@ -37,6 +37,7 @@ impl From<crate::W<SD_STATUS_SPEC>> for W {
 #[doc = "Field `sd_dbg_ena` reader - "]
 pub struct SD_DBG_ENA_R(crate::FieldReader<u8, u8>);
 impl SD_DBG_ENA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SD_DBG_ENA_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SD_DBG_ENA_W<'a> {
 #[doc = "Field `sd_dbg_mode` reader - "]
 pub struct SD_DBG_MODE_R(crate::FieldReader<u8, u8>);
 impl SD_DBG_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SD_DBG_MODE_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SD_DBG_MODE_W<'a> {
 #[doc = "Field `sd_dbg_pwd_cnt` reader - "]
 pub struct SD_DBG_PWD_CNT_R(crate::FieldReader<u32, u32>);
 impl SD_DBG_PWD_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         SD_DBG_PWD_CNT_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> SD_DBG_PWD_CNT_W<'a> {
 #[doc = "Field `sd_dbg_cci_clk_sel` reader - "]
 pub struct SD_DBG_CCI_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl SD_DBG_CCI_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SD_DBG_CCI_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> SD_DBG_CCI_CLK_SEL_W<'a> {
 #[doc = "Field `sd_dbg_cci_read_en` reader - "]
 pub struct SD_DBG_CCI_READ_EN_R(crate::FieldReader<bool, bool>);
 impl SD_DBG_CCI_READ_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SD_DBG_CCI_READ_EN_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> SD_DBG_CCI_READ_EN_W<'a> {
 #[doc = "Field `sd_dbg_pwd_trig` reader - "]
 pub struct SD_DBG_PWD_TRIG_R(crate::FieldReader<bool, bool>);
 impl SD_DBG_PWD_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SD_DBG_PWD_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> SD_DBG_PWD_TRIG_W<'a> {
 #[doc = "Field `sd_dbg_pwd_busy` reader - "]
 pub struct SD_DBG_PWD_BUSY_R(crate::FieldReader<bool, bool>);
 impl SD_DBG_PWD_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SD_DBG_PWD_BUSY_R(crate::FieldReader::new(bits))
     }

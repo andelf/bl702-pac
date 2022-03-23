@@ -37,6 +37,7 @@ impl From<crate::W<MIIMODE_SPEC>> for W {
 #[doc = "Field `MIINOPRE` reader - "]
 pub struct MIINOPRE_R(crate::FieldReader<bool, bool>);
 impl MIINOPRE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MIINOPRE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> MIINOPRE_W<'a> {
 #[doc = "Field `CLKDIV` reader - "]
 pub struct CLKDIV_R(crate::FieldReader<u8, u8>);
 impl CLKDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKDIV_R(crate::FieldReader::new(bits))
     }

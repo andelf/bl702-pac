@@ -37,6 +37,7 @@ impl From<crate::W<TZC_GLB_CTRL_2_SPEC>> for W {
 #[doc = "Field `tzc_glb_gpio_31_lock` reader - "]
 pub struct TZC_GLB_GPIO_31_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_31_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_31_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TZC_GLB_GPIO_31_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_30_lock` reader - "]
 pub struct TZC_GLB_GPIO_30_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_30_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_30_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TZC_GLB_GPIO_30_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_29_lock` reader - "]
 pub struct TZC_GLB_GPIO_29_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_29_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_29_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> TZC_GLB_GPIO_29_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_28_lock` reader - "]
 pub struct TZC_GLB_GPIO_28_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_28_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_28_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TZC_GLB_GPIO_28_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_27_lock` reader - "]
 pub struct TZC_GLB_GPIO_27_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_27_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_27_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> TZC_GLB_GPIO_27_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_26_lock` reader - "]
 pub struct TZC_GLB_GPIO_26_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_26_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_26_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TZC_GLB_GPIO_26_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_25_lock` reader - "]
 pub struct TZC_GLB_GPIO_25_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_25_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_25_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> TZC_GLB_GPIO_25_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_24_lock` reader - "]
 pub struct TZC_GLB_GPIO_24_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_24_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_24_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> TZC_GLB_GPIO_24_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_23_lock` reader - "]
 pub struct TZC_GLB_GPIO_23_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_23_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_23_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> TZC_GLB_GPIO_23_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_22_lock` reader - "]
 pub struct TZC_GLB_GPIO_22_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_22_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_22_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> TZC_GLB_GPIO_22_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_21_lock` reader - "]
 pub struct TZC_GLB_GPIO_21_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_21_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_21_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> TZC_GLB_GPIO_21_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_20_lock` reader - "]
 pub struct TZC_GLB_GPIO_20_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_20_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_20_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> TZC_GLB_GPIO_20_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_19_lock` reader - "]
 pub struct TZC_GLB_GPIO_19_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_19_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_19_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> TZC_GLB_GPIO_19_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_18_lock` reader - "]
 pub struct TZC_GLB_GPIO_18_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_18_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_18_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> TZC_GLB_GPIO_18_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_17_lock` reader - "]
 pub struct TZC_GLB_GPIO_17_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_17_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_17_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -577,6 +592,7 @@ impl<'a> TZC_GLB_GPIO_17_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_16_lock` reader - "]
 pub struct TZC_GLB_GPIO_16_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_16_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_16_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -613,6 +629,7 @@ impl<'a> TZC_GLB_GPIO_16_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_15_lock` reader - "]
 pub struct TZC_GLB_GPIO_15_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_15_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_15_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -649,6 +666,7 @@ impl<'a> TZC_GLB_GPIO_15_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_14_lock` reader - "]
 pub struct TZC_GLB_GPIO_14_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_14_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_14_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -685,6 +703,7 @@ impl<'a> TZC_GLB_GPIO_14_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_13_lock` reader - "]
 pub struct TZC_GLB_GPIO_13_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_13_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_13_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -721,6 +740,7 @@ impl<'a> TZC_GLB_GPIO_13_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_12_lock` reader - "]
 pub struct TZC_GLB_GPIO_12_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_12_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_12_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -757,6 +777,7 @@ impl<'a> TZC_GLB_GPIO_12_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_11_lock` reader - "]
 pub struct TZC_GLB_GPIO_11_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_11_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_11_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -793,6 +814,7 @@ impl<'a> TZC_GLB_GPIO_11_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_10_lock` reader - "]
 pub struct TZC_GLB_GPIO_10_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_10_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_10_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -829,6 +851,7 @@ impl<'a> TZC_GLB_GPIO_10_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_9_lock` reader - "]
 pub struct TZC_GLB_GPIO_9_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_9_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_9_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -865,6 +888,7 @@ impl<'a> TZC_GLB_GPIO_9_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_8_lock` reader - "]
 pub struct TZC_GLB_GPIO_8_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_8_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_8_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -901,6 +925,7 @@ impl<'a> TZC_GLB_GPIO_8_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_7_lock` reader - "]
 pub struct TZC_GLB_GPIO_7_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_7_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_7_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -937,6 +962,7 @@ impl<'a> TZC_GLB_GPIO_7_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_6_lock` reader - "]
 pub struct TZC_GLB_GPIO_6_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_6_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_6_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -973,6 +999,7 @@ impl<'a> TZC_GLB_GPIO_6_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_5_lock` reader - "]
 pub struct TZC_GLB_GPIO_5_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_5_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_5_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -1009,6 +1036,7 @@ impl<'a> TZC_GLB_GPIO_5_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_4_lock` reader - "]
 pub struct TZC_GLB_GPIO_4_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_4_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_4_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -1045,6 +1073,7 @@ impl<'a> TZC_GLB_GPIO_4_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_3_lock` reader - "]
 pub struct TZC_GLB_GPIO_3_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_3_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_3_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -1081,6 +1110,7 @@ impl<'a> TZC_GLB_GPIO_3_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_2_lock` reader - "]
 pub struct TZC_GLB_GPIO_2_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_2_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_2_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -1117,6 +1147,7 @@ impl<'a> TZC_GLB_GPIO_2_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_1_lock` reader - "]
 pub struct TZC_GLB_GPIO_1_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_1_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_1_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -1153,6 +1184,7 @@ impl<'a> TZC_GLB_GPIO_1_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_0_lock` reader - "]
 pub struct TZC_GLB_GPIO_0_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_0_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_0_LOCK_R(crate::FieldReader::new(bits))
     }

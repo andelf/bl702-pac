@@ -37,6 +37,7 @@ impl From<crate::W<EF_SW_CFG_0_SPEC>> for W {
 #[doc = "Field `ef_sw_dbg_mode` reader - "]
 pub struct EF_SW_DBG_MODE_R(crate::FieldReader<u8, u8>);
 impl EF_SW_DBG_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_DBG_MODE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> EF_SW_DBG_MODE_W<'a> {
 #[doc = "Field `ef_sw_dbg_jtag_0_dis` reader - "]
 pub struct EF_SW_DBG_JTAG_0_DIS_R(crate::FieldReader<u8, u8>);
 impl EF_SW_DBG_JTAG_0_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_DBG_JTAG_0_DIS_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> EF_SW_DBG_JTAG_0_DIS_W<'a> {
 #[doc = "Field `ef_sw_dbg_jtag_1_dis` reader - "]
 pub struct EF_SW_DBG_JTAG_1_DIS_R(crate::FieldReader<u8, u8>);
 impl EF_SW_DBG_JTAG_1_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_DBG_JTAG_1_DIS_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> EF_SW_DBG_JTAG_1_DIS_W<'a> {
 #[doc = "Field `ef_sw_efuse_dbg_dis` reader - "]
 pub struct EF_SW_EFUSE_DBG_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_EFUSE_DBG_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_EFUSE_DBG_DIS_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> EF_SW_EFUSE_DBG_DIS_W<'a> {
 #[doc = "Field `ef_sw_se_dbg_dis` reader - "]
 pub struct EF_SW_SE_DBG_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_SE_DBG_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_SE_DBG_DIS_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> EF_SW_SE_DBG_DIS_W<'a> {
 #[doc = "Field `ef_sw_cpu_rst_dbg_dis` reader - "]
 pub struct EF_SW_CPU_RST_DBG_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_CPU_RST_DBG_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_CPU_RST_DBG_DIS_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> EF_SW_CPU_RST_DBG_DIS_W<'a> {
 #[doc = "Field `ef_sw_cpu1_dis` reader - "]
 pub struct EF_SW_CPU1_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_CPU1_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_CPU1_DIS_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> EF_SW_CPU1_DIS_W<'a> {
 #[doc = "Field `ef_sw_sf_dis` reader - "]
 pub struct EF_SW_SF_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_SF_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_SF_DIS_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> EF_SW_SF_DIS_W<'a> {
 #[doc = "Field `ef_sw_cam_dis` reader - "]
 pub struct EF_SW_CAM_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_CAM_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_CAM_DIS_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> EF_SW_CAM_DIS_W<'a> {
 #[doc = "Field `ef_sw_0_key_enc_en` reader - "]
 pub struct EF_SW_0_KEY_ENC_EN_R(crate::FieldReader<bool, bool>);
 impl EF_SW_0_KEY_ENC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_0_KEY_ENC_EN_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> EF_SW_0_KEY_ENC_EN_W<'a> {
 #[doc = "Field `ef_sw_wifi_dis` reader - "]
 pub struct EF_SW_WIFI_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_WIFI_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_WIFI_DIS_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> EF_SW_WIFI_DIS_W<'a> {
 #[doc = "Field `ef_sw_ble_dis` reader - "]
 pub struct EF_SW_BLE_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_BLE_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_BLE_DIS_R(crate::FieldReader::new(bits))
     }
@@ -439,6 +451,7 @@ impl<'a> EF_SW_BLE_DIS_W<'a> {
 #[doc = "Field `ef_sw_sdu_dis` reader - "]
 pub struct EF_SW_SDU_DIS_R(crate::FieldReader<bool, bool>);
 impl EF_SW_SDU_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_SDU_DIS_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> EF_SW_SDU_DIS_W<'a> {
 #[doc = "Field `ef_sw_sf_key_0_sel` reader - "]
 pub struct EF_SW_SF_KEY_0_SEL_R(crate::FieldReader<u8, u8>);
 impl EF_SW_SF_KEY_0_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_SF_KEY_0_SEL_R(crate::FieldReader::new(bits))
     }
@@ -501,6 +515,7 @@ impl<'a> EF_SW_SF_KEY_0_SEL_W<'a> {
 #[doc = "Field `ef_sw_cpu0_enc_en` reader - "]
 pub struct EF_SW_CPU0_ENC_EN_R(crate::FieldReader<bool, bool>);
 impl EF_SW_CPU0_ENC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_CPU0_ENC_EN_R(crate::FieldReader::new(bits))
     }
@@ -537,6 +552,7 @@ impl<'a> EF_SW_CPU0_ENC_EN_W<'a> {
 #[doc = "Field `ef_sw_cpu1_enc_en` reader - "]
 pub struct EF_SW_CPU1_ENC_EN_R(crate::FieldReader<bool, bool>);
 impl EF_SW_CPU1_ENC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_SW_CPU1_ENC_EN_R(crate::FieldReader::new(bits))
     }
@@ -573,6 +589,7 @@ impl<'a> EF_SW_CPU1_ENC_EN_W<'a> {
 #[doc = "Field `ef_sw_sboot_en` reader - "]
 pub struct EF_SW_SBOOT_EN_R(crate::FieldReader<u8, u8>);
 impl EF_SW_SBOOT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_SBOOT_EN_R(crate::FieldReader::new(bits))
     }
@@ -599,6 +616,7 @@ impl<'a> EF_SW_SBOOT_EN_W<'a> {
 #[doc = "Field `ef_sw_sboot_sign_mode` reader - "]
 pub struct EF_SW_SBOOT_SIGN_MODE_R(crate::FieldReader<u8, u8>);
 impl EF_SW_SBOOT_SIGN_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_SBOOT_SIGN_MODE_R(crate::FieldReader::new(bits))
     }
@@ -625,6 +643,7 @@ impl<'a> EF_SW_SBOOT_SIGN_MODE_W<'a> {
 #[doc = "Field `ef_sw_sf_aes_mode` reader - "]
 pub struct EF_SW_SF_AES_MODE_R(crate::FieldReader<u8, u8>);
 impl EF_SW_SF_AES_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_SW_SF_AES_MODE_R(crate::FieldReader::new(bits))
     }

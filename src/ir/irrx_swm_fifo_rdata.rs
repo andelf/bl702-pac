@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_SWM_FIFO_RDATA_SPEC>> for W {
 #[doc = "Field `rx_fifo_rdata` reader - "]
 pub struct RX_FIFO_RDATA_R(crate::FieldReader<u16, u16>);
 impl RX_FIFO_RDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RX_FIFO_RDATA_R(crate::FieldReader::new(bits))
     }

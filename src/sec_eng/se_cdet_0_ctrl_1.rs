@@ -37,6 +37,7 @@ impl From<crate::W<SE_CDET_0_CTRL_1_SPEC>> for W {
 #[doc = "Field `se_cdet_0_g_slp_n` reader - "]
 pub struct SE_CDET_0_G_SLP_N_R(crate::FieldReader<u8, u8>);
 impl SE_CDET_0_G_SLP_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_CDET_0_G_SLP_N_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_CDET_0_G_SLP_N_W<'a> {
 #[doc = "Field `se_cdet_0_t_dly_n` reader - "]
 pub struct SE_CDET_0_T_DLY_N_R(crate::FieldReader<u8, u8>);
 impl SE_CDET_0_T_DLY_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_CDET_0_T_DLY_N_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SE_CDET_0_T_DLY_N_W<'a> {
 #[doc = "Field `se_cdet_0_t_loop_n` reader - "]
 pub struct SE_CDET_0_T_LOOP_N_R(crate::FieldReader<u8, u8>);
 impl SE_CDET_0_T_LOOP_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_CDET_0_T_LOOP_N_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<RBB_GAIN_CTRL11_SPEC>> for W {
 #[doc = "Field `gain_ctrl11_g_rbb1` reader - "]
 pub struct GAIN_CTRL11_G_RBB1_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_G_RBB1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_G_RBB1_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GAIN_CTRL11_G_RBB1_W<'a> {
 #[doc = "Field `gain_ctrl11_g_rbb2` reader - "]
 pub struct GAIN_CTRL11_G_RBB2_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_G_RBB2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_G_RBB2_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GAIN_CTRL11_G_RBB2_W<'a> {
 #[doc = "Field `gain_ctrl11_rosdac_i_bw1` reader - "]
 pub struct GAIN_CTRL11_ROSDAC_I_BW1_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_ROSDAC_I_BW1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_ROSDAC_I_BW1_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> GAIN_CTRL11_ROSDAC_I_BW1_W<'a> {
 #[doc = "Field `gain_ctrl11_rosdac_q_bw1` reader - "]
 pub struct GAIN_CTRL11_ROSDAC_Q_BW1_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_ROSDAC_Q_BW1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_ROSDAC_Q_BW1_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> GAIN_CTRL11_ROSDAC_Q_BW1_W<'a> {
 #[doc = "Field `gain_ctrl11_rosdac_i_bw0` reader - "]
 pub struct GAIN_CTRL11_ROSDAC_I_BW0_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_ROSDAC_I_BW0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_ROSDAC_I_BW0_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> GAIN_CTRL11_ROSDAC_I_BW0_W<'a> {
 #[doc = "Field `gain_ctrl11_rosdac_q_bw0` reader - "]
 pub struct GAIN_CTRL11_ROSDAC_Q_BW0_R(crate::FieldReader<u8, u8>);
 impl GAIN_CTRL11_ROSDAC_Q_BW0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GAIN_CTRL11_ROSDAC_Q_BW0_R(crate::FieldReader::new(bits))
     }

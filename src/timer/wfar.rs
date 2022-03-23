@@ -37,6 +37,7 @@ impl From<crate::W<WFAR_SPEC>> for W {
 #[doc = "Field `wfar` reader - "]
 pub struct WFAR_R(crate::FieldReader<u16, u16>);
 impl WFAR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         WFAR_R(crate::FieldReader::new(bits))
     }

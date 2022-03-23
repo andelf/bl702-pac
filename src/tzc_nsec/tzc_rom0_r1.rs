@@ -37,6 +37,7 @@ impl From<crate::W<TZC_ROM0_R1_SPEC>> for W {
 #[doc = "Field `tzc_rom0_r1_start` reader - "]
 pub struct TZC_ROM0_R1_START_R(crate::FieldReader<u16, u16>);
 impl TZC_ROM0_R1_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TZC_ROM0_R1_START_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> TZC_ROM0_R1_START_W<'a> {
 #[doc = "Field `tzc_rom0_r1_end` reader - "]
 pub struct TZC_ROM0_R1_END_R(crate::FieldReader<u16, u16>);
 impl TZC_ROM0_R1_END_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TZC_ROM0_R1_END_R(crate::FieldReader::new(bits))
     }

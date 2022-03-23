@@ -37,6 +37,7 @@ impl From<crate::W<DVP_DEBUG_SPEC>> for W {
 #[doc = "Field `reg_dvp_dbg_sel` reader - "]
 pub struct REG_DVP_DBG_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_DVP_DBG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_DVP_DBG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_DVP_DBG_SEL_W<'a> {
 #[doc = "Field `reg_dvp_dbg_en` reader - "]
 pub struct REG_DVP_DBG_EN_R(crate::FieldReader<bool, bool>);
 impl REG_DVP_DBG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_DVP_DBG_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<FBDV_SPEC>> for W {
 #[doc = "Field `dco_dither_clk_polarity` reader - "]
 pub struct DCO_DITHER_CLK_POLARITY_R(crate::FieldReader<bool, bool>);
 impl DCO_DITHER_CLK_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCO_DITHER_CLK_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> DCO_DITHER_CLK_POLARITY_W<'a> {
 #[doc = "Field `lotpm_fmash_clk_polarity` reader - "]
 pub struct LOTPM_FMASH_CLK_POLARITY_R(crate::FieldReader<bool, bool>);
 impl LOTPM_FMASH_CLK_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LOTPM_FMASH_CLK_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> LOTPM_FMASH_CLK_POLARITY_W<'a> {
 #[doc = "Field `rst_mmdiv` reader - "]
 pub struct RST_MMDIV_R(crate::FieldReader<bool, bool>);
 impl RST_MMDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RST_MMDIV_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> RST_MMDIV_W<'a> {
 #[doc = "Field `fbdv_stg_sel` reader - "]
 pub struct FBDV_STG_SEL_R(crate::FieldReader<bool, bool>);
 impl FBDV_STG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FBDV_STG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> FBDV_STG_SEL_W<'a> {
 #[doc = "Field `fbdv_sample_clk_sel` reader - "]
 pub struct FBDV_SAMPLE_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl FBDV_SAMPLE_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FBDV_SAMPLE_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> FBDV_SAMPLE_CLK_SEL_W<'a> {
 #[doc = "Field `fbdv_fb_clk_sel` reader - "]
 pub struct FBDV_FB_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl FBDV_FB_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FBDV_FB_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> FBDV_FB_CLK_SEL_W<'a> {
 #[doc = "Field `fbdv_dco_dither_clk_sel` reader - "]
 pub struct FBDV_DCO_DITHER_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl FBDV_DCO_DITHER_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FBDV_DCO_DITHER_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> FBDV_DCO_DITHER_CLK_SEL_W<'a> {
 #[doc = "Field `fbdv_adpll_clk_sel` reader - "]
 pub struct FBDV_ADPLL_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl FBDV_ADPLL_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FBDV_ADPLL_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> FBDV_ADPLL_CLK_SEL_W<'a> {
 #[doc = "Field `fbdv_tpm_clk_sel` reader - "]
 pub struct FBDV_TPM_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl FBDV_TPM_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FBDV_TPM_CLK_SEL_R(crate::FieldReader::new(bits))
     }

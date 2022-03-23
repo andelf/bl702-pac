@@ -37,6 +37,7 @@ impl From<crate::W<RXADC_SPEC>> for W {
 #[doc = "Field `rxadc_dly_ctrl` reader - "]
 pub struct RXADC_DLY_CTRL_R(crate::FieldReader<u8, u8>);
 impl RXADC_DLY_CTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RXADC_DLY_CTRL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RXADC_DLY_CTRL_W<'a> {
 #[doc = "Field `rxadc_glitch_remove` reader - "]
 pub struct RXADC_GLITCH_REMOVE_R(crate::FieldReader<bool, bool>);
 impl RXADC_GLITCH_REMOVE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXADC_GLITCH_REMOVE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RXADC_GLITCH_REMOVE_W<'a> {
 #[doc = "Field `rxadc_clk_div_sel` reader - "]
 pub struct RXADC_CLK_DIV_SEL_R(crate::FieldReader<bool, bool>);
 impl RXADC_CLK_DIV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXADC_CLK_DIV_SEL_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RXADC_CLK_DIV_SEL_W<'a> {
 #[doc = "Field `rxadc_clk_inv` reader - "]
 pub struct RXADC_CLK_INV_R(crate::FieldReader<bool, bool>);
 impl RXADC_CLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXADC_CLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> RXADC_CLK_INV_W<'a> {
 #[doc = "Field `rxadc_clk_sync_inv` reader - "]
 pub struct RXADC_CLK_SYNC_INV_R(crate::FieldReader<bool, bool>);
 impl RXADC_CLK_SYNC_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXADC_CLK_SYNC_INV_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RXADC_CLK_SYNC_INV_W<'a> {
 #[doc = "Field `rxadc_vref_sel` reader - "]
 pub struct RXADC_VREF_SEL_R(crate::FieldReader<u8, u8>);
 impl RXADC_VREF_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RXADC_VREF_SEL_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> RXADC_VREF_SEL_W<'a> {
 #[doc = "Field `rxadc_oscal_en` reader - "]
 pub struct RXADC_OSCAL_EN_R(crate::FieldReader<bool, bool>);
 impl RXADC_OSCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXADC_OSCAL_EN_R(crate::FieldReader::new(bits))
     }

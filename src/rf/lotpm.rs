@@ -37,6 +37,7 @@ impl From<crate::W<LOTPM_SPEC>> for W {
 #[doc = "Field `lotpm_hfp_mash1_sel` reader - "]
 pub struct LOTPM_HFP_MASH1_SEL_R(crate::FieldReader<bool, bool>);
 impl LOTPM_HFP_MASH1_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LOTPM_HFP_MASH1_SEL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> LOTPM_HFP_MASH1_SEL_W<'a> {
 #[doc = "Field `lotpm_hfp_polarity` reader - "]
 pub struct LOTPM_HFP_POLARITY_R(crate::FieldReader<bool, bool>);
 impl LOTPM_HFP_POLARITY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LOTPM_HFP_POLARITY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> LOTPM_HFP_POLARITY_W<'a> {
 #[doc = "Field `lotpm_hfp_delay_fref` reader - "]
 pub struct LOTPM_HFP_DELAY_FREF_R(crate::FieldReader<u8, u8>);
 impl LOTPM_HFP_DELAY_FREF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LOTPM_HFP_DELAY_FREF_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> LOTPM_HFP_DELAY_FREF_W<'a> {
 #[doc = "Field `lotpm_hfp_delay_fmash` reader - "]
 pub struct LOTPM_HFP_DELAY_FMASH_R(crate::FieldReader<u8, u8>);
 impl LOTPM_HFP_DELAY_FMASH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LOTPM_HFP_DELAY_FMASH_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> LOTPM_HFP_DELAY_FMASH_W<'a> {
 #[doc = "Field `lotpm_lfp_delay_sel` reader - "]
 pub struct LOTPM_LFP_DELAY_SEL_R(crate::FieldReader<u8, u8>);
 impl LOTPM_LFP_DELAY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LOTPM_LFP_DELAY_SEL_R(crate::FieldReader::new(bits))
     }

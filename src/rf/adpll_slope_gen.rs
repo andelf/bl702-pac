@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_SLOPE_GEN_SPEC>> for W {
 #[doc = "Field `adpll_slope_gen_pulse_width_enhance` reader - "]
 pub struct ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<'a> {
 #[doc = "Field `adpll_slope_gen_dc_corr` reader - "]
 pub struct ADPLL_SLOPE_GEN_DC_CORR_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SLOPE_GEN_DC_CORR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SLOPE_GEN_DC_CORR_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> ADPLL_SLOPE_GEN_DC_CORR_W<'a> {
 #[doc = "Field `adpll_slope_gen_r_sel` reader - "]
 pub struct ADPLL_SLOPE_GEN_R_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SLOPE_GEN_R_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SLOPE_GEN_R_SEL_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<GPIO_CFGCTL7_SPEC>> for W {
 #[doc = "Field `reg_gpio_15_func_sel` reader - "]
 pub struct REG_GPIO_15_FUNC_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_GPIO_15_FUNC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_GPIO_15_FUNC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_GPIO_15_FUNC_SEL_W<'a> {
 #[doc = "Field `reg_gpio_15_pd` reader - "]
 pub struct REG_GPIO_15_PD_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_15_PD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_15_PD_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_GPIO_15_PD_W<'a> {
 #[doc = "Field `reg_gpio_15_pu` reader - "]
 pub struct REG_GPIO_15_PU_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_15_PU_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_15_PU_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_GPIO_15_PU_W<'a> {
 #[doc = "Field `reg_gpio_15_drv` reader - "]
 pub struct REG_GPIO_15_DRV_R(crate::FieldReader<u8, u8>);
 impl REG_GPIO_15_DRV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_GPIO_15_DRV_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> REG_GPIO_15_DRV_W<'a> {
 #[doc = "Field `reg_gpio_15_smt` reader - "]
 pub struct REG_GPIO_15_SMT_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_15_SMT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_15_SMT_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> REG_GPIO_15_SMT_W<'a> {
 #[doc = "Field `reg_gpio_15_ie` reader - "]
 pub struct REG_GPIO_15_IE_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_15_IE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_15_IE_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> REG_GPIO_15_IE_W<'a> {
 #[doc = "Field `reg_gpio_14_func_sel` reader - "]
 pub struct REG_GPIO_14_FUNC_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_GPIO_14_FUNC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_GPIO_14_FUNC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> REG_GPIO_14_FUNC_SEL_W<'a> {
 #[doc = "Field `reg_gpio_14_pd` reader - "]
 pub struct REG_GPIO_14_PD_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_14_PD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_14_PD_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> REG_GPIO_14_PD_W<'a> {
 #[doc = "Field `reg_gpio_14_pu` reader - "]
 pub struct REG_GPIO_14_PU_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_14_PU_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_14_PU_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> REG_GPIO_14_PU_W<'a> {
 #[doc = "Field `reg_gpio_14_drv` reader - "]
 pub struct REG_GPIO_14_DRV_R(crate::FieldReader<u8, u8>);
 impl REG_GPIO_14_DRV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_GPIO_14_DRV_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> REG_GPIO_14_DRV_W<'a> {
 #[doc = "Field `reg_gpio_14_smt` reader - "]
 pub struct REG_GPIO_14_SMT_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_14_SMT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_14_SMT_R(crate::FieldReader::new(bits))
     }
@@ -393,6 +404,7 @@ impl<'a> REG_GPIO_14_SMT_W<'a> {
 #[doc = "Field `reg_gpio_14_ie` reader - "]
 pub struct REG_GPIO_14_IE_R(crate::FieldReader<bool, bool>);
 impl REG_GPIO_14_IE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_GPIO_14_IE_R(crate::FieldReader::new(bits))
     }

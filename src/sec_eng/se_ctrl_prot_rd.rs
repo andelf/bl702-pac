@@ -37,6 +37,7 @@ impl From<crate::W<SE_CTRL_PROT_RD_SPEC>> for W {
 #[doc = "Field `se_dbg_dis` reader - "]
 pub struct SE_DBG_DIS_R(crate::FieldReader<bool, bool>);
 impl SE_DBG_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_DBG_DIS_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_DBG_DIS_W<'a> {
 #[doc = "Field `se_gmac_id1_en_rd` reader - "]
 pub struct SE_GMAC_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SE_GMAC_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_gmac_id0_en_rd` reader - "]
 pub struct SE_GMAC_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SE_GMAC_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_gmac_prot_en_rd` reader - "]
 pub struct SE_GMAC_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_GMAC_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_GMAC_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SE_GMAC_PROT_EN_RD_W<'a> {
 #[doc = "Field `se_cdet_id1_en_rd` reader - "]
 pub struct SE_CDET_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SE_CDET_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_cdet_id0_en_rd` reader - "]
 pub struct SE_CDET_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SE_CDET_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_cdet_prot_en_rd` reader - "]
 pub struct SE_CDET_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SE_CDET_PROT_EN_RD_W<'a> {
 #[doc = "Field `se_pka_id1_en_rd` reader - "]
 pub struct SE_PKA_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> SE_PKA_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_pka_id0_en_rd` reader - "]
 pub struct SE_PKA_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> SE_PKA_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_pka_prot_en_rd` reader - "]
 pub struct SE_PKA_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> SE_PKA_PROT_EN_RD_W<'a> {
 #[doc = "Field `se_trng_id1_en_rd` reader - "]
 pub struct SE_TRNG_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> SE_TRNG_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_trng_id0_en_rd` reader - "]
 pub struct SE_TRNG_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> SE_TRNG_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_trng_prot_en_rd` reader - "]
 pub struct SE_TRNG_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> SE_TRNG_PROT_EN_RD_W<'a> {
 #[doc = "Field `se_aes_id1_en_rd` reader - "]
 pub struct SE_AES_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_AES_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> SE_AES_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_aes_id0_en_rd` reader - "]
 pub struct SE_AES_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_AES_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -577,6 +592,7 @@ impl<'a> SE_AES_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_aes_prot_en_rd` reader - "]
 pub struct SE_AES_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_AES_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -613,6 +629,7 @@ impl<'a> SE_AES_PROT_EN_RD_W<'a> {
 #[doc = "Field `se_sha_id1_en_rd` reader - "]
 pub struct SE_SHA_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -649,6 +666,7 @@ impl<'a> SE_SHA_ID1_EN_RD_W<'a> {
 #[doc = "Field `se_sha_id0_en_rd` reader - "]
 pub struct SE_SHA_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -685,6 +703,7 @@ impl<'a> SE_SHA_ID0_EN_RD_W<'a> {
 #[doc = "Field `se_sha_prot_en_rd` reader - "]
 pub struct SE_SHA_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }

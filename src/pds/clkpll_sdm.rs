@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_SDM_SPEC>> for W {
 #[doc = "Field `clkpll_sdm_bypass` reader - "]
 pub struct CLKPLL_SDM_BYPASS_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_SDM_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_SDM_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CLKPLL_SDM_BYPASS_W<'a> {
 #[doc = "Field `clkpll_sdm_flag` reader - "]
 pub struct CLKPLL_SDM_FLAG_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_SDM_FLAG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_SDM_FLAG_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CLKPLL_SDM_FLAG_W<'a> {
 #[doc = "Field `clkpll_dither_sel` reader - "]
 pub struct CLKPLL_DITHER_SEL_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_DITHER_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_DITHER_SEL_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> CLKPLL_DITHER_SEL_W<'a> {
 #[doc = "Field `clkpll_sdmin` reader - "]
 pub struct CLKPLL_SDMIN_R(crate::FieldReader<u32, u32>);
 impl CLKPLL_SDMIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         CLKPLL_SDMIN_R(crate::FieldReader::new(bits))
     }

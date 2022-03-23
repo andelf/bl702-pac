@@ -37,6 +37,7 @@ impl From<crate::W<HBN_CTL_SPEC>> for W {
 #[doc = "Field `hbn_state` reader - "]
 pub struct HBN_STATE_R(crate::FieldReader<u8, u8>);
 impl HBN_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_STATE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> HBN_STATE_W<'a> {
 #[doc = "Field `sram_slp` reader - "]
 pub struct SRAM_SLP_R(crate::FieldReader<bool, bool>);
 impl SRAM_SLP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SRAM_SLP_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SRAM_SLP_W<'a> {
 #[doc = "Field `sram_slp_option` reader - "]
 pub struct SRAM_SLP_OPTION_R(crate::FieldReader<bool, bool>);
 impl SRAM_SLP_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SRAM_SLP_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SRAM_SLP_OPTION_W<'a> {
 #[doc = "Field `pwr_on_option` reader - "]
 pub struct PWR_ON_OPTION_R(crate::FieldReader<bool, bool>);
 impl PWR_ON_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWR_ON_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> PWR_ON_OPTION_W<'a> {
 #[doc = "Field `rtc_dly_option` reader - "]
 pub struct RTC_DLY_OPTION_R(crate::FieldReader<bool, bool>);
 impl RTC_DLY_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RTC_DLY_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RTC_DLY_OPTION_W<'a> {
 #[doc = "Field `pu_dcdc18_aon` reader - "]
 pub struct PU_DCDC18_AON_R(crate::FieldReader<bool, bool>);
 impl PU_DCDC18_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_DCDC18_AON_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> PU_DCDC18_AON_W<'a> {
 #[doc = "Field `hbn_ldo11_aon_vout_sel` reader - "]
 pub struct HBN_LDO11_AON_VOUT_SEL_R(crate::FieldReader<u8, u8>);
 impl HBN_LDO11_AON_VOUT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_LDO11_AON_VOUT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> HBN_LDO11_AON_VOUT_SEL_W<'a> {
 #[doc = "Field `hbn_ldo11_rt_vout_sel` reader - "]
 pub struct HBN_LDO11_RT_VOUT_SEL_R(crate::FieldReader<u8, u8>);
 impl HBN_LDO11_RT_VOUT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_LDO11_RT_VOUT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> HBN_LDO11_RT_VOUT_SEL_W<'a> {
 #[doc = "Field `hbn_dis_pwr_off_ldo11_rt` reader - "]
 pub struct HBN_DIS_PWR_OFF_LDO11_RT_R(crate::FieldReader<bool, bool>);
 impl HBN_DIS_PWR_OFF_LDO11_RT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_DIS_PWR_OFF_LDO11_RT_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> HBN_DIS_PWR_OFF_LDO11_RT_W<'a> {
 #[doc = "Field `hbn_dis_pwr_off_ldo11` reader - "]
 pub struct HBN_DIS_PWR_OFF_LDO11_R(crate::FieldReader<bool, bool>);
 impl HBN_DIS_PWR_OFF_LDO11_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_DIS_PWR_OFF_LDO11_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> HBN_DIS_PWR_OFF_LDO11_W<'a> {
 #[doc = "Field `sw_rst` reader - "]
 pub struct SW_RST_R(crate::FieldReader<bool, bool>);
 impl SW_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SW_RST_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> SW_RST_W<'a> {
 #[doc = "Field `pwrdn_hbn_rtc` reader - "]
 pub struct PWRDN_HBN_RTC_R(crate::FieldReader<bool, bool>);
 impl PWRDN_HBN_RTC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWRDN_HBN_RTC_R(crate::FieldReader::new(bits))
     }
@@ -439,6 +451,7 @@ impl<'a> PWRDN_HBN_RTC_W<'a> {
 #[doc = "Field `pwrdn_hbn_core` reader - "]
 pub struct PWRDN_HBN_CORE_R(crate::FieldReader<bool, bool>);
 impl PWRDN_HBN_CORE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWRDN_HBN_CORE_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> PWRDN_HBN_CORE_W<'a> {
 #[doc = "Field `trap_mode` reader - "]
 pub struct TRAP_MODE_R(crate::FieldReader<bool, bool>);
 impl TRAP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TRAP_MODE_R(crate::FieldReader::new(bits))
     }
@@ -511,6 +525,7 @@ impl<'a> TRAP_MODE_W<'a> {
 #[doc = "Field `hbn_mode` reader - "]
 pub struct HBN_MODE_R(crate::FieldReader<bool, bool>);
 impl HBN_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_MODE_R(crate::FieldReader::new(bits))
     }
@@ -547,6 +562,7 @@ impl<'a> HBN_MODE_W<'a> {
 #[doc = "Field `rtc_ctl` reader - "]
 pub struct RTC_CTL_R(crate::FieldReader<u8, u8>);
 impl RTC_CTL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RTC_CTL_R(crate::FieldReader::new(bits))
     }

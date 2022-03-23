@@ -37,6 +37,7 @@ impl From<crate::W<PU_RST_CLKPLL_SPEC>> for W {
 #[doc = "Field `pu_clkpll` reader - "]
 pub struct PU_CLKPLL_R(crate::FieldReader<bool, bool>);
 impl PU_CLKPLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_CLKPLL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PU_CLKPLL_W<'a> {
 #[doc = "Field `pu_clkpll_sfreg` reader - "]
 pub struct PU_CLKPLL_SFREG_R(crate::FieldReader<bool, bool>);
 impl PU_CLKPLL_SFREG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_CLKPLL_SFREG_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PU_CLKPLL_SFREG_W<'a> {
 #[doc = "Field `clkpll_pu_cp` reader - "]
 pub struct CLKPLL_PU_CP_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_PU_CP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_PU_CP_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CLKPLL_PU_CP_W<'a> {
 #[doc = "Field `clkpll_pu_pfd` reader - "]
 pub struct CLKPLL_PU_PFD_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_PU_PFD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_PU_PFD_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CLKPLL_PU_PFD_W<'a> {
 #[doc = "Field `clkpll_pu_clamp_op` reader - "]
 pub struct CLKPLL_PU_CLAMP_OP_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_PU_CLAMP_OP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_PU_CLAMP_OP_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CLKPLL_PU_CLAMP_OP_W<'a> {
 #[doc = "Field `clkpll_pu_fbdv` reader - "]
 pub struct CLKPLL_PU_FBDV_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_PU_FBDV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_PU_FBDV_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CLKPLL_PU_FBDV_W<'a> {
 #[doc = "Field `clkpll_pu_postdiv` reader - "]
 pub struct CLKPLL_PU_POSTDIV_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_PU_POSTDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_PU_POSTDIV_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> CLKPLL_PU_POSTDIV_W<'a> {
 #[doc = "Field `clkpll_reset_refdiv` reader - "]
 pub struct CLKPLL_RESET_REFDIV_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_RESET_REFDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_RESET_REFDIV_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CLKPLL_RESET_REFDIV_W<'a> {
 #[doc = "Field `clkpll_reset_fbdv` reader - "]
 pub struct CLKPLL_RESET_FBDV_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_RESET_FBDV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_RESET_FBDV_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> CLKPLL_RESET_FBDV_W<'a> {
 #[doc = "Field `clkpll_reset_postdiv` reader - "]
 pub struct CLKPLL_RESET_POSTDIV_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_RESET_POSTDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_RESET_POSTDIV_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> CLKPLL_RESET_POSTDIV_W<'a> {
 #[doc = "Field `clkpll_sdm_reset` reader - "]
 pub struct CLKPLL_SDM_RESET_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_SDM_RESET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_SDM_RESET_R(crate::FieldReader::new(bits))
     }

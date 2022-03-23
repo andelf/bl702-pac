@@ -37,6 +37,7 @@ impl From<crate::W<BMX_CFG2_SPEC>> for W {
 #[doc = "Field `bmx_dbg_sel` reader - "]
 pub struct BMX_DBG_SEL_R(crate::FieldReader<u8, u8>);
 impl BMX_DBG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         BMX_DBG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> BMX_DBG_SEL_W<'a> {
 #[doc = "Field `reg_w_thre_l1c` reader - "]
 pub struct REG_W_THRE_L1C_R(crate::FieldReader<u8, u8>);
 impl REG_W_THRE_L1C_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_W_THRE_L1C_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> REG_W_THRE_L1C_W<'a> {
 #[doc = "Field `reg_w_thre_bmx` reader - "]
 pub struct REG_W_THRE_BMX_R(crate::FieldReader<u8, u8>);
 impl REG_W_THRE_BMX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_W_THRE_BMX_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> REG_W_THRE_BMX_W<'a> {
 #[doc = "Field `bmx_err_tz` reader - "]
 pub struct BMX_ERR_TZ_R(crate::FieldReader<bool, bool>);
 impl BMX_ERR_TZ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_ERR_TZ_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> BMX_ERR_TZ_W<'a> {
 #[doc = "Field `bmx_err_dec` reader - "]
 pub struct BMX_ERR_DEC_R(crate::FieldReader<bool, bool>);
 impl BMX_ERR_DEC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_ERR_DEC_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> BMX_ERR_DEC_W<'a> {
 #[doc = "Field `bmx_err_addr_dis` reader - "]
 pub struct BMX_ERR_ADDR_DIS_R(crate::FieldReader<bool, bool>);
 impl BMX_ERR_ADDR_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_ERR_ADDR_DIS_R(crate::FieldReader::new(bits))
     }

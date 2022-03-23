@@ -37,6 +37,7 @@ impl From<crate::W<MIICOMMAND_SPEC>> for W {
 #[doc = "Field `WCTRLDATA` reader - "]
 pub struct WCTRLDATA_R(crate::FieldReader<bool, bool>);
 impl WCTRLDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WCTRLDATA_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> WCTRLDATA_W<'a> {
 #[doc = "Field `RSTAT` reader - "]
 pub struct RSTAT_R(crate::FieldReader<bool, bool>);
 impl RSTAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSTAT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RSTAT_W<'a> {
 #[doc = "Field `SCANSTAT` reader - "]
 pub struct SCANSTAT_R(crate::FieldReader<bool, bool>);
 impl SCANSTAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SCANSTAT_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<EP4_CONFIG_SPEC>> for W {
 #[doc = "Field `sts_ep4_rdy` reader - "]
 pub struct STS_EP4_RDY_R(crate::FieldReader<bool, bool>);
 impl STS_EP4_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_EP4_RDY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_EP4_RDY_W<'a> {
 #[doc = "Field `cr_ep4_rdy` reader - "]
 pub struct CR_EP4_RDY_R(crate::FieldReader<bool, bool>);
 impl CR_EP4_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP4_RDY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_EP4_RDY_W<'a> {
 #[doc = "Field `cr_ep4_nack` reader - "]
 pub struct CR_EP4_NACK_R(crate::FieldReader<bool, bool>);
 impl CR_EP4_NACK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP4_NACK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_EP4_NACK_W<'a> {
 #[doc = "Field `cr_ep4_stall` reader - "]
 pub struct CR_EP4_STALL_R(crate::FieldReader<bool, bool>);
 impl CR_EP4_STALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP4_STALL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_EP4_STALL_W<'a> {
 #[doc = "Field `cr_ep4_type` reader - "]
 pub struct CR_EP4_TYPE_R(crate::FieldReader<u8, u8>);
 impl CR_EP4_TYPE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_EP4_TYPE_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> CR_EP4_TYPE_W<'a> {
 #[doc = "Field `cr_ep4_dir` reader - "]
 pub struct CR_EP4_DIR_R(crate::FieldReader<u8, u8>);
 impl CR_EP4_DIR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_EP4_DIR_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> CR_EP4_DIR_W<'a> {
 #[doc = "Field `cr_ep4_size` reader - "]
 pub struct CR_EP4_SIZE_R(crate::FieldReader<u16, u16>);
 impl CR_EP4_SIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_EP4_SIZE_R(crate::FieldReader::new(bits))
     }

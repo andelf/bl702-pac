@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_irrx_deg_cnt` reader - "]
 pub struct CR_IRRX_DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl CR_IRRX_DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRRX_DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_IRRX_DEG_CNT_W<'a> {
 #[doc = "Field `cr_irrx_deg_en` reader - "]
 pub struct CR_IRRX_DEG_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CR_IRRX_DEG_EN_W<'a> {
 #[doc = "Field `cr_irrx_mode` reader - "]
 pub struct CR_IRRX_MODE_R(crate::FieldReader<u8, u8>);
 impl CR_IRRX_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRRX_MODE_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CR_IRRX_MODE_W<'a> {
 #[doc = "Field `cr_irrx_in_inv` reader - "]
 pub struct CR_IRRX_IN_INV_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_IN_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_IN_INV_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> CR_IRRX_IN_INV_W<'a> {
 #[doc = "Field `cr_irrx_en` reader - "]
 pub struct CR_IRRX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_IRRX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_IRRX_EN_R(crate::FieldReader::new(bits))
     }

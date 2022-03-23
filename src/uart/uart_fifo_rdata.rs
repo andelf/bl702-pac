@@ -37,6 +37,7 @@ impl From<crate::W<UART_FIFO_RDATA_SPEC>> for W {
 #[doc = "Field `uart_fifo_rdata` reader - "]
 pub struct UART_FIFO_RDATA_R(crate::FieldReader<u8, u8>);
 impl UART_FIFO_RDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_FIFO_RDATA_R(crate::FieldReader::new(bits))
     }

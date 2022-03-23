@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_STATUS_SPEC>> for W {
 #[doc = "Field `gpadc_reserved` reader - "]
 pub struct GPADC_RESERVED_R(crate::FieldReader<u16, u16>);
 impl GPADC_RESERVED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         GPADC_RESERVED_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPADC_RESERVED_W<'a> {
 #[doc = "Field `gpadc_data_rdy` reader - "]
 pub struct GPADC_DATA_RDY_R(crate::FieldReader<bool, bool>);
 impl GPADC_DATA_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_DATA_RDY_R(crate::FieldReader::new(bits))
     }

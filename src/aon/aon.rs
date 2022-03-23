@@ -37,6 +37,7 @@ impl From<crate::W<AON_SPEC>> for W {
 #[doc = "Field `sw_pu_ldo11_rt` reader - "]
 pub struct SW_PU_LDO11_RT_R(crate::FieldReader<bool, bool>);
 impl SW_PU_LDO11_RT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SW_PU_LDO11_RT_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SW_PU_LDO11_RT_W<'a> {
 #[doc = "Field `ldo11_rt_pulldown_sel` reader - "]
 pub struct LDO11_RT_PULLDOWN_SEL_R(crate::FieldReader<bool, bool>);
 impl LDO11_RT_PULLDOWN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11_RT_PULLDOWN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> LDO11_RT_PULLDOWN_SEL_W<'a> {
 #[doc = "Field `ldo11_rt_pulldown` reader - "]
 pub struct LDO11_RT_PULLDOWN_R(crate::FieldReader<bool, bool>);
 impl LDO11_RT_PULLDOWN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11_RT_PULLDOWN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> LDO11_RT_PULLDOWN_W<'a> {
 #[doc = "Field `pu_aon_dc_tbuf` reader - "]
 pub struct PU_AON_DC_TBUF_R(crate::FieldReader<bool, bool>);
 impl PU_AON_DC_TBUF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_AON_DC_TBUF_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> PU_AON_DC_TBUF_W<'a> {
 #[doc = "Field `aon_resv` reader - "]
 pub struct AON_RESV_R(crate::FieldReader<u8, u8>);
 impl AON_RESV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         AON_RESV_R(crate::FieldReader::new(bits))
     }

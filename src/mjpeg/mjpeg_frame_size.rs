@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_FRAME_SIZE_SPEC>> for W {
 #[doc = "Field `reg_frame_hblk` reader - "]
 pub struct REG_FRAME_HBLK_R(crate::FieldReader<u16, u16>);
 impl REG_FRAME_HBLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_FRAME_HBLK_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_FRAME_HBLK_W<'a> {
 #[doc = "Field `reg_frame_wblk` reader - "]
 pub struct REG_FRAME_WBLK_R(crate::FieldReader<u16, u16>);
 impl REG_FRAME_WBLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_FRAME_WBLK_R(crate::FieldReader::new(bits))
     }

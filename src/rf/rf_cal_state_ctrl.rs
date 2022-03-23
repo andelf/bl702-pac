@@ -37,6 +37,7 @@ impl From<crate::W<RF_CAL_STATE_CTRL_SPEC>> for W {
 #[doc = "Field `inc_roscal_state_en` reader - "]
 pub struct INC_ROSCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl INC_ROSCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_ROSCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> INC_ROSCAL_STATE_EN_W<'a> {
 #[doc = "Field `inc_acal_state_en` reader - "]
 pub struct INC_ACAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl INC_ACAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_ACAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> INC_ACAL_STATE_EN_W<'a> {
 #[doc = "Field `inc_fcal_state_en` reader - "]
 pub struct INC_FCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl INC_FCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_FCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> INC_FCAL_STATE_EN_W<'a> {
 #[doc = "Field `rccal_state_en` reader - "]
 pub struct RCCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl RCCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RCCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RCCAL_STATE_EN_W<'a> {
 #[doc = "Field `roscal_state_en` reader - "]
 pub struct ROSCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl ROSCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ROSCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> ROSCAL_STATE_EN_W<'a> {
 #[doc = "Field `kcal_state_en` reader - "]
 pub struct KCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl KCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> KCAL_STATE_EN_W<'a> {
 #[doc = "Field `acal_state_en` reader - "]
 pub struct ACAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl ACAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACAL_STATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> ACAL_STATE_EN_W<'a> {
 #[doc = "Field `fcal_state_en` reader - "]
 pub struct FCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
 impl FCAL_STATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FCAL_STATE_EN_R(crate::FieldReader::new(bits))
     }

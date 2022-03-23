@@ -37,6 +37,7 @@ impl From<crate::W<SPI_BUS_BUSY_SPEC>> for W {
 #[doc = "Field `sts_spi_bus_busy` reader - "]
 pub struct STS_SPI_BUS_BUSY_R(crate::FieldReader<bool, bool>);
 impl STS_SPI_BUS_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SPI_BUS_BUSY_R(crate::FieldReader::new(bits))
     }

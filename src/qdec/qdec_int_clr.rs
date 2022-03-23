@@ -37,6 +37,7 @@ impl From<crate::W<QDEC_INT_CLR_SPEC>> for W {
 #[doc = "Field `overflow_clr` reader - "]
 pub struct OVERFLOW_CLR_R(crate::FieldReader<bool, bool>);
 impl OVERFLOW_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         OVERFLOW_CLR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> OVERFLOW_CLR_W<'a> {
 #[doc = "Field `dbl_rdy_clr` reader - "]
 pub struct DBL_RDY_CLR_R(crate::FieldReader<bool, bool>);
 impl DBL_RDY_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DBL_RDY_CLR_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> DBL_RDY_CLR_W<'a> {
 #[doc = "Field `spl_rdy_clr` reader - "]
 pub struct SPL_RDY_CLR_R(crate::FieldReader<bool, bool>);
 impl SPL_RDY_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPL_RDY_CLR_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SPL_RDY_CLR_W<'a> {
 #[doc = "Field `rpt_rdy_clr` reader - "]
 pub struct RPT_RDY_CLR_R(crate::FieldReader<bool, bool>);
 impl RPT_RDY_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RPT_RDY_CLR_R(crate::FieldReader::new(bits))
     }

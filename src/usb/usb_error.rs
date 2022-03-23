@@ -37,6 +37,7 @@ impl From<crate::W<USB_ERROR_SPEC>> for W {
 #[doc = "Field `crc16_err` reader - "]
 pub struct CRC16_ERR_R(crate::FieldReader<bool, bool>);
 impl CRC16_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CRC16_ERR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CRC16_ERR_W<'a> {
 #[doc = "Field `crc5_err` reader - "]
 pub struct CRC5_ERR_R(crate::FieldReader<bool, bool>);
 impl CRC5_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CRC5_ERR_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CRC5_ERR_W<'a> {
 #[doc = "Field `pid_cks_err` reader - "]
 pub struct PID_CKS_ERR_R(crate::FieldReader<bool, bool>);
 impl PID_CKS_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PID_CKS_ERR_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> PID_CKS_ERR_W<'a> {
 #[doc = "Field `pid_seq_err` reader - "]
 pub struct PID_SEQ_ERR_R(crate::FieldReader<bool, bool>);
 impl PID_SEQ_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PID_SEQ_ERR_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> PID_SEQ_ERR_W<'a> {
 #[doc = "Field `ivld_ep_err` reader - "]
 pub struct IVLD_EP_ERR_R(crate::FieldReader<bool, bool>);
 impl IVLD_EP_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IVLD_EP_ERR_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> IVLD_EP_ERR_W<'a> {
 #[doc = "Field `xfer_to_err` reader - "]
 pub struct XFER_TO_ERR_R(crate::FieldReader<bool, bool>);
 impl XFER_TO_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XFER_TO_ERR_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> XFER_TO_ERR_W<'a> {
 #[doc = "Field `utmi_rx_err` reader - "]
 pub struct UTMI_RX_ERR_R(crate::FieldReader<bool, bool>);
 impl UTMI_RX_ERR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         UTMI_RX_ERR_R(crate::FieldReader::new(bits))
     }

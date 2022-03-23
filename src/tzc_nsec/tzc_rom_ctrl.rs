@@ -37,6 +37,7 @@ impl From<crate::W<TZC_ROM_CTRL_SPEC>> for W {
 #[doc = "Field `tzc_sboot_done` reader - "]
 pub struct TZC_SBOOT_DONE_R(crate::FieldReader<u8, u8>);
 impl TZC_SBOOT_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TZC_SBOOT_DONE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> TZC_SBOOT_DONE_W<'a> {
 #[doc = "Field `tzc_rom1_r1_lock` reader - "]
 pub struct TZC_ROM1_R1_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R1_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R1_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> TZC_ROM1_R1_LOCK_W<'a> {
 #[doc = "Field `tzc_rom1_r0_lock` reader - "]
 pub struct TZC_ROM1_R0_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R0_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R0_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> TZC_ROM1_R0_LOCK_W<'a> {
 #[doc = "Field `tzc_rom0_r1_lock` reader - "]
 pub struct TZC_ROM0_R1_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R1_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R1_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> TZC_ROM0_R1_LOCK_W<'a> {
 #[doc = "Field `tzc_rom0_r0_lock` reader - "]
 pub struct TZC_ROM0_R0_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R0_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R0_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> TZC_ROM0_R0_LOCK_W<'a> {
 #[doc = "Field `tzc_rom1_r1_en` reader - "]
 pub struct TZC_ROM1_R1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R1_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> TZC_ROM1_R1_EN_W<'a> {
 #[doc = "Field `tzc_rom1_r0_en` reader - "]
 pub struct TZC_ROM1_R0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R0_EN_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> TZC_ROM1_R0_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r1_en` reader - "]
 pub struct TZC_ROM0_R1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R1_EN_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> TZC_ROM0_R1_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r0_en` reader - "]
 pub struct TZC_ROM0_R0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R0_EN_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> TZC_ROM0_R0_EN_W<'a> {
 #[doc = "Field `tzc_rom1_r1_id1_en` reader - "]
 pub struct TZC_ROM1_R1_ID1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R1_ID1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R1_ID1_EN_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> TZC_ROM1_R1_ID1_EN_W<'a> {
 #[doc = "Field `tzc_rom1_r0_id1_en` reader - "]
 pub struct TZC_ROM1_R0_ID1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R0_ID1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R0_ID1_EN_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> TZC_ROM1_R0_ID1_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r1_id1_en` reader - "]
 pub struct TZC_ROM0_R1_ID1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R1_ID1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R1_ID1_EN_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> TZC_ROM0_R1_ID1_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r0_id1_en` reader - "]
 pub struct TZC_ROM0_R0_ID1_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R0_ID1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R0_ID1_EN_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> TZC_ROM0_R0_ID1_EN_W<'a> {
 #[doc = "Field `tzc_rom1_r1_id0_en` reader - "]
 pub struct TZC_ROM1_R1_ID0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R1_ID0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R1_ID0_EN_R(crate::FieldReader::new(bits))
     }
@@ -531,6 +545,7 @@ impl<'a> TZC_ROM1_R1_ID0_EN_W<'a> {
 #[doc = "Field `tzc_rom1_r0_id0_en` reader - "]
 pub struct TZC_ROM1_R0_ID0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM1_R0_ID0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM1_R0_ID0_EN_R(crate::FieldReader::new(bits))
     }
@@ -567,6 +582,7 @@ impl<'a> TZC_ROM1_R0_ID0_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r1_id0_en` reader - "]
 pub struct TZC_ROM0_R1_ID0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R1_ID0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R1_ID0_EN_R(crate::FieldReader::new(bits))
     }
@@ -603,6 +619,7 @@ impl<'a> TZC_ROM0_R1_ID0_EN_W<'a> {
 #[doc = "Field `tzc_rom0_r0_id0_en` reader - "]
 pub struct TZC_ROM0_R0_ID0_EN_R(crate::FieldReader<bool, bool>);
 impl TZC_ROM0_R0_ID0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_ROM0_R0_ID0_EN_R(crate::FieldReader::new(bits))
     }

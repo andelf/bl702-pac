@@ -37,6 +37,7 @@ impl From<crate::W<DLL_SPEC>> for W {
 #[doc = "Field `ppu_dll` reader - "]
 pub struct PPU_DLL_R(crate::FieldReader<bool, bool>);
 impl PPU_DLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_DLL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PPU_DLL_W<'a> {
 #[doc = "Field `pu_dll` reader - "]
 pub struct PU_DLL_R(crate::FieldReader<bool, bool>);
 impl PU_DLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_DLL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PU_DLL_W<'a> {
 #[doc = "Field `dll_reset` reader - "]
 pub struct DLL_RESET_R(crate::FieldReader<bool, bool>);
 impl DLL_RESET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_RESET_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> DLL_RESET_W<'a> {
 #[doc = "Field `dll_refclk_sel` reader - "]
 pub struct DLL_REFCLK_SEL_R(crate::FieldReader<bool, bool>);
 impl DLL_REFCLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_REFCLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> DLL_REFCLK_SEL_W<'a> {
 #[doc = "Field `dll_cp_hiz` reader - "]
 pub struct DLL_CP_HIZ_R(crate::FieldReader<bool, bool>);
 impl DLL_CP_HIZ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CP_HIZ_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> DLL_CP_HIZ_W<'a> {
 #[doc = "Field `dll_cp_op_en` reader - "]
 pub struct DLL_CP_OP_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CP_OP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CP_OP_EN_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> DLL_CP_OP_EN_W<'a> {
 #[doc = "Field `dll_delay_sel` reader - "]
 pub struct DLL_DELAY_SEL_R(crate::FieldReader<u8, u8>);
 impl DLL_DELAY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DLL_DELAY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> DLL_DELAY_SEL_W<'a> {
 #[doc = "Field `dll_post_div` reader - "]
 pub struct DLL_POST_DIV_R(crate::FieldReader<u8, u8>);
 impl DLL_POST_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DLL_POST_DIV_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> DLL_POST_DIV_W<'a> {
 #[doc = "Field `dll_vctrl_force_en` reader - "]
 pub struct DLL_VCTRL_FORCE_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_VCTRL_FORCE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_VCTRL_FORCE_EN_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> DLL_VCTRL_FORCE_EN_W<'a> {
 #[doc = "Field `dll_prechg_en` reader - "]
 pub struct DLL_PRECHG_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_PRECHG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_PRECHG_EN_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> DLL_PRECHG_EN_W<'a> {
 #[doc = "Field `dll_prechg_reg` reader - "]
 pub struct DLL_PRECHG_REG_R(crate::FieldReader<bool, bool>);
 impl DLL_PRECHG_REG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_PRECHG_REG_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> DLL_PRECHG_REG_W<'a> {
 #[doc = "Field `dll_prechg_sel` reader - "]
 pub struct DLL_PRECHG_SEL_R(crate::FieldReader<bool, bool>);
 impl DLL_PRECHG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_PRECHG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> DLL_PRECHG_SEL_W<'a> {
 #[doc = "Field `dll_vctrl_sel` reader - "]
 pub struct DLL_VCTRL_SEL_R(crate::FieldReader<u8, u8>);
 impl DLL_VCTRL_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DLL_VCTRL_SEL_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> DLL_VCTRL_SEL_W<'a> {
 #[doc = "Field `dll_clk_57p6M_en` reader - "]
 pub struct DLL_CLK_57P6M_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CLK_57P6M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CLK_57P6M_EN_R(crate::FieldReader::new(bits))
     }
@@ -511,6 +525,7 @@ impl<'a> DLL_CLK_57P6M_EN_W<'a> {
 #[doc = "Field `dll_clk_96M_en` reader - "]
 pub struct DLL_CLK_96M_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CLK_96M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CLK_96M_EN_R(crate::FieldReader::new(bits))
     }
@@ -547,6 +562,7 @@ impl<'a> DLL_CLK_96M_EN_W<'a> {
 #[doc = "Field `dll_clk_144M_en` reader - "]
 pub struct DLL_CLK_144M_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CLK_144M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CLK_144M_EN_R(crate::FieldReader::new(bits))
     }
@@ -583,6 +599,7 @@ impl<'a> DLL_CLK_144M_EN_W<'a> {
 #[doc = "Field `dll_clk_288M_en` reader - "]
 pub struct DLL_CLK_288M_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CLK_288M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CLK_288M_EN_R(crate::FieldReader::new(bits))
     }
@@ -619,6 +636,7 @@ impl<'a> DLL_CLK_288M_EN_W<'a> {
 #[doc = "Field `dll_clk_mmdiv_en` reader - "]
 pub struct DLL_CLK_MMDIV_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_CLK_MMDIV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_CLK_MMDIV_EN_R(crate::FieldReader::new(bits))
     }
@@ -655,6 +673,7 @@ impl<'a> DLL_CLK_MMDIV_EN_W<'a> {
 #[doc = "Field `ten_dll` reader - "]
 pub struct TEN_DLL_R(crate::FieldReader<bool, bool>);
 impl TEN_DLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_DLL_R(crate::FieldReader::new(bits))
     }
@@ -691,6 +710,7 @@ impl<'a> TEN_DLL_W<'a> {
 #[doc = "Field `dtest_en_dll_outclk` reader - "]
 pub struct DTEST_EN_DLL_OUTCLK_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_DLL_OUTCLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_DLL_OUTCLK_R(crate::FieldReader::new(bits))
     }
@@ -727,6 +747,7 @@ impl<'a> DTEST_EN_DLL_OUTCLK_W<'a> {
 #[doc = "Field `dtest_en_dll_refclk` reader - "]
 pub struct DTEST_EN_DLL_REFCLK_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_DLL_REFCLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_DLL_REFCLK_R(crate::FieldReader::new(bits))
     }

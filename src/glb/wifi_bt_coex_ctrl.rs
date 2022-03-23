@@ -37,6 +37,7 @@ impl From<crate::W<WIFI_BT_COEX_CTRL_SPEC>> for W {
 #[doc = "Field `en_gpio_bt_coex` reader - "]
 pub struct EN_GPIO_BT_COEX_R(crate::FieldReader<bool, bool>);
 impl EN_GPIO_BT_COEX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EN_GPIO_BT_COEX_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> EN_GPIO_BT_COEX_W<'a> {
 #[doc = "Field `coex_bt_bw` reader - "]
 pub struct COEX_BT_BW_R(crate::FieldReader<bool, bool>);
 impl COEX_BT_BW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         COEX_BT_BW_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> COEX_BT_BW_W<'a> {
 #[doc = "Field `coex_bt_pti` reader - "]
 pub struct COEX_BT_PTI_R(crate::FieldReader<u8, u8>);
 impl COEX_BT_PTI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COEX_BT_PTI_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> COEX_BT_PTI_W<'a> {
 #[doc = "Field `coex_bt_channel` reader - "]
 pub struct COEX_BT_CHANNEL_R(crate::FieldReader<u8, u8>);
 impl COEX_BT_CHANNEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COEX_BT_CHANNEL_R(crate::FieldReader::new(bits))
     }

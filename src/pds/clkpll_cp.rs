@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_CP_SPEC>> for W {
 #[doc = "Field `clkpll_cp_opamp_en` reader - "]
 pub struct CLKPLL_CP_OPAMP_EN_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_CP_OPAMP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_CP_OPAMP_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CLKPLL_CP_OPAMP_EN_W<'a> {
 #[doc = "Field `clkpll_cp_startup_en` reader - "]
 pub struct CLKPLL_CP_STARTUP_EN_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_CP_STARTUP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_CP_STARTUP_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CLKPLL_CP_STARTUP_EN_W<'a> {
 #[doc = "Field `clkpll_int_frac_sw` reader - "]
 pub struct CLKPLL_INT_FRAC_SW_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_INT_FRAC_SW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_INT_FRAC_SW_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CLKPLL_INT_FRAC_SW_W<'a> {
 #[doc = "Field `clkpll_icp_1u` reader - "]
 pub struct CLKPLL_ICP_1U_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_ICP_1U_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_ICP_1U_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> CLKPLL_ICP_1U_W<'a> {
 #[doc = "Field `clkpll_icp_5u` reader - "]
 pub struct CLKPLL_ICP_5U_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_ICP_5U_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_ICP_5U_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> CLKPLL_ICP_5U_W<'a> {
 #[doc = "Field `clkpll_sel_cp_bias` reader - "]
 pub struct CLKPLL_SEL_CP_BIAS_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_SEL_CP_BIAS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_SEL_CP_BIAS_R(crate::FieldReader::new(bits))
     }

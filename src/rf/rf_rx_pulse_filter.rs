@@ -37,6 +37,7 @@ impl From<crate::W<RF_RX_PULSE_FILTER_SPEC>> for W {
 #[doc = "Field `pf_en_i` reader - "]
 pub struct PF_EN_I_R(crate::FieldReader<bool, bool>);
 impl PF_EN_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PF_EN_I_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PF_EN_I_W<'a> {
 #[doc = "Field `pf_en_q` reader - "]
 pub struct PF_EN_Q_R(crate::FieldReader<bool, bool>);
 impl PF_EN_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PF_EN_Q_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PF_EN_Q_W<'a> {
 #[doc = "Field `pf_th1` reader - "]
 pub struct PF_TH1_R(crate::FieldReader<u16, u16>);
 impl PF_TH1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PF_TH1_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> PF_TH1_W<'a> {
 #[doc = "Field `pf_th2` reader - "]
 pub struct PF_TH2_R(crate::FieldReader<u16, u16>);
 impl PF_TH2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PF_TH2_R(crate::FieldReader::new(bits))
     }

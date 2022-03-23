@@ -37,6 +37,7 @@ impl From<crate::W<TZC_GLB_CTRL_0_SPEC>> for W {
 #[doc = "Field `tzc_glb_clk_lock` reader - "]
 pub struct TZC_GLB_CLK_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_CLK_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_CLK_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TZC_GLB_CLK_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_mbist_lock` reader - "]
 pub struct TZC_GLB_MBIST_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_MBIST_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_MBIST_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TZC_GLB_MBIST_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_dbg_lock` reader - "]
 pub struct TZC_GLB_DBG_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_DBG_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_DBG_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> TZC_GLB_DBG_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_bmx_lock` reader - "]
 pub struct TZC_GLB_BMX_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_BMX_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_BMX_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TZC_GLB_BMX_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_l2c_lock` reader - "]
 pub struct TZC_GLB_L2C_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_L2C_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_L2C_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> TZC_GLB_L2C_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_sram_lock` reader - "]
 pub struct TZC_GLB_SRAM_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_SRAM_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_SRAM_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TZC_GLB_SRAM_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_misc_lock` reader - "]
 pub struct TZC_GLB_MISC_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_MISC_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_MISC_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> TZC_GLB_MISC_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_ctrl_ungated_ap_lock` reader - "]
 pub struct TZC_GLB_CTRL_UNGATED_AP_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_CTRL_UNGATED_AP_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_CTRL_UNGATED_AP_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> TZC_GLB_CTRL_UNGATED_AP_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_ctrl_sys_reset_lock` reader - "]
 pub struct TZC_GLB_CTRL_SYS_RESET_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_CTRL_SYS_RESET_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_CTRL_SYS_RESET_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> TZC_GLB_CTRL_SYS_RESET_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_ctrl_cpu_reset_lock` reader - "]
 pub struct TZC_GLB_CTRL_CPU_RESET_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_CTRL_CPU_RESET_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_CTRL_CPU_RESET_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> TZC_GLB_CTRL_CPU_RESET_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_ctrl_pwron_rst_lock` reader - "]
 pub struct TZC_GLB_CTRL_PWRON_RST_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_CTRL_PWRON_RST_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_CTRL_PWRON_RST_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> TZC_GLB_CTRL_PWRON_RST_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_swrst_s30_lock` reader - "]
 pub struct TZC_GLB_SWRST_S30_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_SWRST_S30_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_SWRST_S30_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> TZC_GLB_SWRST_S30_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_swrst_s01_lock` reader - "]
 pub struct TZC_GLB_SWRST_S01_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_SWRST_S01_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_SWRST_S01_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> TZC_GLB_SWRST_S01_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_swrst_s00_lock` reader - "]
 pub struct TZC_GLB_SWRST_S00_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_SWRST_S00_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_SWRST_S00_LOCK_R(crate::FieldReader::new(bits))
     }

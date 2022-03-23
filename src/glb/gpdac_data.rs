@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_DATA_SPEC>> for W {
 #[doc = "Field `gpdac_a_data` reader - "]
 pub struct GPDAC_A_DATA_R(crate::FieldReader<u16, u16>);
 impl GPDAC_A_DATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         GPDAC_A_DATA_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPDAC_A_DATA_W<'a> {
 #[doc = "Field `gpdac_b_data` reader - "]
 pub struct GPDAC_B_DATA_R(crate::FieldReader<u16, u16>);
 impl GPDAC_B_DATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         GPDAC_B_DATA_R(crate::FieldReader::new(bits))
     }

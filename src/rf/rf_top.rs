@@ -37,6 +37,7 @@ impl From<crate::W<RF_TOP_SPEC>> for W {
 #[doc = "Field `rf_tx_en_src` reader - "]
 pub struct RF_TX_EN_SRC_R(crate::FieldReader<bool, bool>);
 impl RF_TX_EN_SRC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_TX_EN_SRC_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RF_TX_EN_SRC_W<'a> {
 #[doc = "Field `rf_tx_en_4s` reader - "]
 pub struct RF_TX_EN_4S_R(crate::FieldReader<bool, bool>);
 impl RF_TX_EN_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_TX_EN_4S_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RF_TX_EN_4S_W<'a> {
 #[doc = "Field `rf_rx_en_src` reader - "]
 pub struct RF_RX_EN_SRC_R(crate::FieldReader<bool, bool>);
 impl RF_RX_EN_SRC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_RX_EN_SRC_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> RF_RX_EN_SRC_W<'a> {
 #[doc = "Field `rf_rx_en_4s` reader - "]
 pub struct RF_RX_EN_4S_R(crate::FieldReader<bool, bool>);
 impl RF_RX_EN_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_RX_EN_4S_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RF_RX_EN_4S_W<'a> {
 #[doc = "Field `rf_rx_mode_4s_en` reader - "]
 pub struct RF_RX_MODE_4S_EN_R(crate::FieldReader<bool, bool>);
 impl RF_RX_MODE_4S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_RX_MODE_4S_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> RF_RX_MODE_4S_EN_W<'a> {
 #[doc = "Field `rf_rx_mode_4s` reader - "]
 pub struct RF_RX_MODE_4S_R(crate::FieldReader<u8, u8>);
 impl RF_RX_MODE_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_RX_MODE_4S_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> RF_RX_MODE_4S_W<'a> {
 #[doc = "Field `rf_rx_mode_hw` reader - "]
 pub struct RF_RX_MODE_HW_R(crate::FieldReader<u8, u8>);
 impl RF_RX_MODE_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_RX_MODE_HW_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> RF_RX_MODE_HW_W<'a> {
 #[doc = "Field `rf_mac_lo_time_offset` reader - "]
 pub struct RF_MAC_LO_TIME_OFFSET_R(crate::FieldReader<u8, u8>);
 impl RF_MAC_LO_TIME_OFFSET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_MAC_LO_TIME_OFFSET_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> RF_MAC_LO_TIME_OFFSET_W<'a> {
 #[doc = "Field `rfckg_afifo_tx_inv` reader - "]
 pub struct RFCKG_AFIFO_TX_INV_R(crate::FieldReader<bool, bool>);
 impl RFCKG_AFIFO_TX_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RFCKG_AFIFO_TX_INV_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> RFCKG_AFIFO_TX_INV_W<'a> {
 #[doc = "Field `rfckg_afifo_rxadc_inv` reader - "]
 pub struct RFCKG_AFIFO_RXADC_INV_R(crate::FieldReader<bool, bool>);
 impl RFCKG_AFIFO_RXADC_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RFCKG_AFIFO_RXADC_INV_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> RFCKG_AFIFO_RXADC_INV_W<'a> {
 #[doc = "Field `rfckg_afifo_adpll_inv` reader - "]
 pub struct RFCKG_AFIFO_ADPLL_INV_R(crate::FieldReader<bool, bool>);
 impl RFCKG_AFIFO_ADPLL_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RFCKG_AFIFO_ADPLL_INV_R(crate::FieldReader::new(bits))
     }

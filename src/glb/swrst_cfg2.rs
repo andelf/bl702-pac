@@ -37,6 +37,7 @@ impl From<crate::W<SWRST_CFG2_SPEC>> for W {
 #[doc = "Field `pka_clk_sel` reader - "]
 pub struct PKA_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl PKA_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PKA_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PKA_CLK_SEL_W<'a> {
 #[doc = "Field `reg_ctrl_reset_dummy` reader - "]
 pub struct REG_CTRL_RESET_DUMMY_R(crate::FieldReader<u8, u8>);
 impl REG_CTRL_RESET_DUMMY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_CTRL_RESET_DUMMY_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_CTRL_RESET_DUMMY_W<'a> {
 #[doc = "Field `reg_ctrl_sys_reset` reader - "]
 pub struct REG_CTRL_SYS_RESET_R(crate::FieldReader<bool, bool>);
 impl REG_CTRL_SYS_RESET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CTRL_SYS_RESET_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_CTRL_SYS_RESET_W<'a> {
 #[doc = "Field `reg_ctrl_cpu_reset` reader - "]
 pub struct REG_CTRL_CPU_RESET_R(crate::FieldReader<bool, bool>);
 impl REG_CTRL_CPU_RESET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CTRL_CPU_RESET_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> REG_CTRL_CPU_RESET_W<'a> {
 #[doc = "Field `reg_ctrl_pwron_rst` reader - "]
 pub struct REG_CTRL_PWRON_RST_R(crate::FieldReader<bool, bool>);
 impl REG_CTRL_PWRON_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CTRL_PWRON_RST_R(crate::FieldReader::new(bits))
     }

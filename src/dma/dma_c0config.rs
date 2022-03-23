@@ -37,6 +37,7 @@ impl From<crate::W<DMA_C0CONFIG_SPEC>> for W {
 #[doc = "Field `LLICounter` reader - "]
 pub struct LLICOUNTER_R(crate::FieldReader<u16, u16>);
 impl LLICOUNTER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         LLICOUNTER_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> LLICOUNTER_W<'a> {
 #[doc = "Field `H` reader - "]
 pub struct H_R(crate::FieldReader<bool, bool>);
 impl H_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         H_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> H_W<'a> {
 #[doc = "Field `A` reader - "]
 pub struct A_R(crate::FieldReader<bool, bool>);
 impl A_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         A_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> A_W<'a> {
 #[doc = "Field `L` reader - "]
 pub struct L_R(crate::FieldReader<bool, bool>);
 impl L_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> L_W<'a> {
 #[doc = "Field `ITC` reader - "]
 pub struct ITC_R(crate::FieldReader<bool, bool>);
 impl ITC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ITC_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> ITC_W<'a> {
 #[doc = "Field `IE` reader - "]
 pub struct IE_R(crate::FieldReader<bool, bool>);
 impl IE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IE_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> IE_W<'a> {
 #[doc = "Field `FlowCntrl` reader - "]
 pub struct FLOWCNTRL_R(crate::FieldReader<u8, u8>);
 impl FLOWCNTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FLOWCNTRL_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> FLOWCNTRL_W<'a> {
 #[doc = "Field `DstPeripheral` reader - "]
 pub struct DSTPERIPHERAL_R(crate::FieldReader<u8, u8>);
 impl DSTPERIPHERAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DSTPERIPHERAL_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> DSTPERIPHERAL_W<'a> {
 #[doc = "Field `SrcPeripheral` reader - "]
 pub struct SRCPERIPHERAL_R(crate::FieldReader<u8, u8>);
 impl SRCPERIPHERAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SRCPERIPHERAL_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> SRCPERIPHERAL_W<'a> {
 #[doc = "Field `E` reader - "]
 pub struct E_R(crate::FieldReader<bool, bool>);
 impl E_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         E_R(crate::FieldReader::new(bits))
     }

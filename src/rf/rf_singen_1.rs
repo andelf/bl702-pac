@@ -37,6 +37,7 @@ impl From<crate::W<RF_SINGEN_1_SPEC>> for W {
 #[doc = "Field `singen_mode_i` reader - "]
 pub struct SINGEN_MODE_I_R(crate::FieldReader<u8, u8>);
 impl SINGEN_MODE_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SINGEN_MODE_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SINGEN_MODE_I_W<'a> {
 #[doc = "Field `singen_clkdiv_i` reader - "]
 pub struct SINGEN_CLKDIV_I_R(crate::FieldReader<u16, u16>);
 impl SINGEN_CLKDIV_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_CLKDIV_I_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SINGEN_CLKDIV_I_W<'a> {
 #[doc = "Field `singen_mode_q` reader - "]
 pub struct SINGEN_MODE_Q_R(crate::FieldReader<u8, u8>);
 impl SINGEN_MODE_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SINGEN_MODE_Q_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> SINGEN_MODE_Q_W<'a> {
 #[doc = "Field `singen_clkdiv_q` reader - "]
 pub struct SINGEN_CLKDIV_Q_R(crate::FieldReader<u16, u16>);
 impl SINGEN_CLKDIV_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_CLKDIV_Q_R(crate::FieldReader::new(bits))
     }

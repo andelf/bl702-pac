@@ -37,6 +37,7 @@ impl From<crate::W<PACKETLEN_SPEC>> for W {
 #[doc = "Field `MINFL` reader - "]
 pub struct MINFL_R(crate::FieldReader<u16, u16>);
 impl MINFL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         MINFL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> MINFL_W<'a> {
 #[doc = "Field `MAXFL` reader - "]
 pub struct MAXFL_R(crate::FieldReader<u16, u16>);
 impl MAXFL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         MAXFL_R(crate::FieldReader::new(bits))
     }

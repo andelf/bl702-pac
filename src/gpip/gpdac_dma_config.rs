@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_DMA_CONFIG_SPEC>> for W {
 #[doc = "Field `gpdac_dma_format` reader - "]
 pub struct GPDAC_DMA_FORMAT_R(crate::FieldReader<u8, u8>);
 impl GPDAC_DMA_FORMAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_DMA_FORMAT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPDAC_DMA_FORMAT_W<'a> {
 #[doc = "Field `gpdac_dma_tx_en` reader - "]
 pub struct GPDAC_DMA_TX_EN_R(crate::FieldReader<bool, bool>);
 impl GPDAC_DMA_TX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_DMA_TX_EN_R(crate::FieldReader::new(bits))
     }

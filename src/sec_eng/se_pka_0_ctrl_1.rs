@@ -37,6 +37,7 @@ impl From<crate::W<SE_PKA_0_CTRL_1_SPEC>> for W {
 #[doc = "Field `se_pka_0_hbypass` reader - "]
 pub struct SE_PKA_0_HBYPASS_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_HBYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_HBYPASS_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_PKA_0_HBYPASS_W<'a> {
 #[doc = "Field `se_pka_0_hburst` reader - "]
 pub struct SE_PKA_0_HBURST_R(crate::FieldReader<u8, u8>);
 impl SE_PKA_0_HBURST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_PKA_0_HBURST_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_DTC_SPEC>> for W {
 #[doc = "Field `adpll_dtc_inv_vth_sel` reader - "]
 pub struct ADPLL_DTC_INV_VTH_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_DTC_INV_VTH_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_DTC_INV_VTH_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ADPLL_DTC_INV_VTH_SEL_W<'a> {
 #[doc = "Field `adpll_dtc_r_sel` reader - "]
 pub struct ADPLL_DTC_R_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_DTC_R_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_DTC_R_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> ADPLL_DTC_R_SEL_W<'a> {
 #[doc = "Field `adpll_dtc_bypass` reader - "]
 pub struct ADPLL_DTC_BYPASS_R(crate::FieldReader<bool, bool>);
 impl ADPLL_DTC_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_DTC_BYPASS_R(crate::FieldReader::new(bits))
     }

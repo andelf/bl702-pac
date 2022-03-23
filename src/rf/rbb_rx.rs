@@ -37,6 +37,7 @@ impl From<crate::W<RBB_RX_SPEC>> for W {
 #[doc = "Field `rbb_rx1` reader - "]
 pub struct RBB_RX1_R(crate::FieldReader<u8, u8>);
 impl RBB_RX1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX1_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RBB_RX1_W<'a> {
 #[doc = "Field `rbb_rx2` reader - "]
 pub struct RBB_RX2_R(crate::FieldReader<u8, u8>);
 impl RBB_RX2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX2_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RBB_RX2_W<'a> {
 #[doc = "Field `rbb_rx1_hw` reader - "]
 pub struct RBB_RX1_HW_R(crate::FieldReader<u8, u8>);
 impl RBB_RX1_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX1_HW_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> RBB_RX1_HW_W<'a> {
 #[doc = "Field `rbb_rx2_hw` reader - "]
 pub struct RBB_RX2_HW_R(crate::FieldReader<u8, u8>);
 impl RBB_RX2_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX2_HW_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> RBB_RX2_HW_W<'a> {
 #[doc = "Field `rbb_rx1_bw0` reader - "]
 pub struct RBB_RX1_BW0_R(crate::FieldReader<u8, u8>);
 impl RBB_RX1_BW0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX1_BW0_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> RBB_RX1_BW0_W<'a> {
 #[doc = "Field `rbb_rx2_bw0` reader - "]
 pub struct RBB_RX2_BW0_R(crate::FieldReader<u8, u8>);
 impl RBB_RX2_BW0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX2_BW0_R(crate::FieldReader::new(bits))
     }
@@ -193,6 +199,7 @@ impl<'a> RBB_RX2_BW0_W<'a> {
 #[doc = "Field `rbb_rx1_bw1` reader - "]
 pub struct RBB_RX1_BW1_R(crate::FieldReader<u8, u8>);
 impl RBB_RX1_BW1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX1_BW1_R(crate::FieldReader::new(bits))
     }
@@ -219,6 +226,7 @@ impl<'a> RBB_RX1_BW1_W<'a> {
 #[doc = "Field `rbb_rx2_bw1` reader - "]
 pub struct RBB_RX2_BW1_R(crate::FieldReader<u8, u8>);
 impl RBB_RX2_BW1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_RX2_BW1_R(crate::FieldReader::new(bits))
     }

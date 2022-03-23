@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL1_SPEC>> for W {
 #[doc = "Field `adpll_force_inc_fcal_en` reader - "]
 pub struct ADPLL_FORCE_INC_FCAL_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_INC_FCAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_INC_FCAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_FORCE_INC_FCAL_EN_W<'a> {
 #[doc = "Field `adpll_lo_unlock_intrpt_clear_sel` reader - "]
 pub struct ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_W<'a> {
 #[doc = "Field `adpll_sfreg_sel` reader - "]
 pub struct ADPLL_SFREG_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SFREG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SFREG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ADPLL_SFREG_SEL_W<'a> {
 #[doc = "Field `adpll_lo_open` reader - "]
 pub struct ADPLL_LO_OPEN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_OPEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_OPEN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> ADPLL_LO_OPEN_W<'a> {
 #[doc = "Field `adpll_mom_search_en_ext` reader - "]
 pub struct ADPLL_MOM_SEARCH_EN_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_MOM_SEARCH_EN_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_MOM_SEARCH_EN_EXT_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> ADPLL_MOM_SEARCH_EN_EXT_W<'a> {
 #[doc = "Field `adpll_freqerr_det_start_ext` reader - "]
 pub struct ADPLL_FREQERR_DET_START_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FREQERR_DET_START_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FREQERR_DET_START_EXT_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> ADPLL_FREQERR_DET_START_EXT_W<'a> {
 #[doc = "Field `adpll_mom_update_en_ext` reader - "]
 pub struct ADPLL_MOM_UPDATE_EN_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_MOM_UPDATE_EN_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_MOM_UPDATE_EN_EXT_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> ADPLL_MOM_UPDATE_EN_EXT_W<'a> {
 #[doc = "Field `adpll_vctrl_det_en_ext` reader - "]
 pub struct ADPLL_VCTRL_DET_EN_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_DET_EN_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_DET_EN_EXT_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> ADPLL_VCTRL_DET_EN_EXT_W<'a> {
 #[doc = "Field `adpll_vctrl_det_start_ext` reader - "]
 pub struct ADPLL_VCTRL_DET_START_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_DET_START_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_DET_START_EXT_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> ADPLL_VCTRL_DET_START_EXT_W<'a> {
 #[doc = "Field `adpll_abnormal_dealed` reader - "]
 pub struct ADPLL_ABNORMAL_DEALED_R(crate::FieldReader<bool, bool>);
 impl ADPLL_ABNORMAL_DEALED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_ABNORMAL_DEALED_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> ADPLL_ABNORMAL_DEALED_W<'a> {
 #[doc = "Field `adpll_lock_fail_en` reader - "]
 pub struct ADPLL_LOCK_FAIL_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LOCK_FAIL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LOCK_FAIL_EN_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> ADPLL_LOCK_FAIL_EN_W<'a> {
 #[doc = "Field `adpll_fsm_en` reader - "]
 pub struct ADPLL_FSM_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FSM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FSM_EN_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> ADPLL_FSM_EN_W<'a> {
 #[doc = "Field `adpll_lo_fsm_ext` reader - "]
 pub struct ADPLL_LO_FSM_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_FSM_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_FSM_EXT_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> ADPLL_LO_FSM_EXT_W<'a> {
 #[doc = "Field `adpll_lo_lock_directly` reader - "]
 pub struct ADPLL_LO_LOCK_DIRECTLY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_LOCK_DIRECTLY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_LOCK_DIRECTLY_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> ADPLL_LO_LOCK_DIRECTLY_W<'a> {
 #[doc = "Field `adpll_fcal_start_ext` reader - "]
 pub struct ADPLL_FCAL_START_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FCAL_START_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FCAL_START_EXT_R(crate::FieldReader::new(bits))
     }
@@ -577,6 +592,7 @@ impl<'a> ADPLL_FCAL_START_EXT_W<'a> {
 #[doc = "Field `adpll_fcal_done_ext` reader - "]
 pub struct ADPLL_FCAL_DONE_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FCAL_DONE_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FCAL_DONE_EXT_R(crate::FieldReader::new(bits))
     }
@@ -613,6 +629,7 @@ impl<'a> ADPLL_FCAL_DONE_EXT_W<'a> {
 #[doc = "Field `adpll_loop_lock_ext` reader - "]
 pub struct ADPLL_LOOP_LOCK_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LOOP_LOCK_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LOOP_LOCK_EXT_R(crate::FieldReader::new(bits))
     }
@@ -649,6 +666,7 @@ impl<'a> ADPLL_LOOP_LOCK_EXT_W<'a> {
 #[doc = "Field `adpll_rst_spd_det_ext` reader - "]
 pub struct ADPLL_RST_SPD_DET_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_RST_SPD_DET_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_RST_SPD_DET_EXT_R(crate::FieldReader::new(bits))
     }
@@ -685,6 +703,7 @@ impl<'a> ADPLL_RST_SPD_DET_EXT_W<'a> {
 #[doc = "Field `adpll_rst_coarse_det_ext` reader - "]
 pub struct ADPLL_RST_COARSE_DET_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_RST_COARSE_DET_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_RST_COARSE_DET_EXT_R(crate::FieldReader::new(bits))
     }
@@ -721,6 +740,7 @@ impl<'a> ADPLL_RST_COARSE_DET_EXT_W<'a> {
 #[doc = "Field `adpll_momhold_lmsenb_ext` reader - "]
 pub struct ADPLL_MOMHOLD_LMSENB_EXT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_MOMHOLD_LMSENB_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_MOMHOLD_LMSENB_EXT_R(crate::FieldReader::new(bits))
     }
@@ -757,6 +777,7 @@ impl<'a> ADPLL_MOMHOLD_LMSENB_EXT_W<'a> {
 #[doc = "Field `adpll_timeout_cnt_sel` reader - "]
 pub struct ADPLL_TIMEOUT_CNT_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_TIMEOUT_CNT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_TIMEOUT_CNT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -793,6 +814,7 @@ impl<'a> ADPLL_TIMEOUT_CNT_SEL_W<'a> {
 #[doc = "Field `adpll_timeout_cnt1_sel` reader - "]
 pub struct ADPLL_TIMEOUT_CNT1_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_TIMEOUT_CNT1_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_TIMEOUT_CNT1_SEL_R(crate::FieldReader::new(bits))
     }
@@ -829,6 +851,7 @@ impl<'a> ADPLL_TIMEOUT_CNT1_SEL_W<'a> {
 #[doc = "Field `adpll_lo_lock_sel` reader - "]
 pub struct ADPLL_LO_LOCK_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_LOCK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_LOCK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -865,6 +888,7 @@ impl<'a> ADPLL_LO_LOCK_SEL_W<'a> {
 #[doc = "Field `adpll_lo_unlock_intrpt_clear` reader - "]
 pub struct ADPLL_LO_UNLOCK_INTRPT_CLEAR_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_UNLOCK_INTRPT_CLEAR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_UNLOCK_INTRPT_CLEAR_R(crate::FieldReader::new(bits))
     }

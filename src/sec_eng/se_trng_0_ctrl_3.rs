@@ -37,6 +37,7 @@ impl From<crate::W<SE_TRNG_0_CTRL_3_SPEC>> for W {
 #[doc = "Field `se_trng_0_rosc_en` reader - "]
 pub struct SE_TRNG_0_ROSC_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_ROSC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_ROSC_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_TRNG_0_ROSC_EN_W<'a> {
 #[doc = "Field `se_trng_0_ht_od_en` reader - "]
 pub struct SE_TRNG_0_HT_OD_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_HT_OD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_HT_OD_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SE_TRNG_0_HT_OD_EN_W<'a> {
 #[doc = "Field `se_trng_0_ht_apt_c` reader - "]
 pub struct SE_TRNG_0_HT_APT_C_R(crate::FieldReader<u16, u16>);
 impl SE_TRNG_0_HT_APT_C_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SE_TRNG_0_HT_APT_C_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SE_TRNG_0_HT_APT_C_W<'a> {
 #[doc = "Field `se_trng_0_ht_rct_c` reader - "]
 pub struct SE_TRNG_0_HT_RCT_C_R(crate::FieldReader<u8, u8>);
 impl SE_TRNG_0_HT_RCT_C_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_TRNG_0_HT_RCT_C_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> SE_TRNG_0_HT_RCT_C_W<'a> {
 #[doc = "Field `se_trng_0_cp_ratio` reader - "]
 pub struct SE_TRNG_0_CP_RATIO_R(crate::FieldReader<u8, u8>);
 impl SE_TRNG_0_CP_RATIO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_TRNG_0_CP_RATIO_R(crate::FieldReader::new(bits))
     }

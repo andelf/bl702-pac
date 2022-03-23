@@ -37,6 +37,7 @@ impl From<crate::W<DMA_INTSTATUS_SPEC>> for W {
 #[doc = "Field `IntStatus` reader - "]
 pub struct INTSTATUS_R(crate::FieldReader<u8, u8>);
 impl INTSTATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         INTSTATUS_R(crate::FieldReader::new(bits))
     }

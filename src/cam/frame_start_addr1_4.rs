@@ -37,6 +37,7 @@ impl From<crate::W<FRAME_START_ADDR1_4_SPEC>> for W {
 #[doc = "Field `frame_start_addr_1_4` reader - "]
 pub struct FRAME_START_ADDR_1_4_R(crate::FieldReader<u32, u32>);
 impl FRAME_START_ADDR_1_4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         FRAME_START_ADDR_1_4_R(crate::FieldReader::new(bits))
     }
@@ -56,7 +57,7 @@ impl<'a> FRAME_START_ADDR_1_4_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
+        self.w.bits = value;
         self.w
     }
 }
@@ -64,7 +65,7 @@ impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn frame_start_addr_1_4(&self) -> FRAME_START_ADDR_1_4_R {
-        FRAME_START_ADDR_1_4_R::new((self.bits & 0xffff_ffff) as u32)
+        FRAME_START_ADDR_1_4_R::new(self.bits)
     }
 }
 impl W {

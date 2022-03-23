@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_CONFIG1_SPEC>> for W {
 #[doc = "Field `gpadc_v18_sel` reader - "]
 pub struct GPADC_V18_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_V18_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_V18_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPADC_V18_SEL_W<'a> {
 #[doc = "Field `gpadc_v11_sel` reader - "]
 pub struct GPADC_V11_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_V11_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_V11_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPADC_V11_SEL_W<'a> {
 #[doc = "Field `gpadc_dither_en` reader - "]
 pub struct GPADC_DITHER_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_DITHER_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_DITHER_EN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> GPADC_DITHER_EN_W<'a> {
 #[doc = "Field `gpadc_scan_en` reader - "]
 pub struct GPADC_SCAN_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_SCAN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_SCAN_EN_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> GPADC_SCAN_EN_W<'a> {
 #[doc = "Field `gpadc_scan_length` reader - "]
 pub struct GPADC_SCAN_LENGTH_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_LENGTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_LENGTH_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> GPADC_SCAN_LENGTH_W<'a> {
 #[doc = "Field `gpadc_clk_div_ratio` reader - "]
 pub struct GPADC_CLK_DIV_RATIO_R(crate::FieldReader<u8, u8>);
 impl GPADC_CLK_DIV_RATIO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_CLK_DIV_RATIO_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> GPADC_CLK_DIV_RATIO_W<'a> {
 #[doc = "Field `gpadc_clk_ana_inv` reader - "]
 pub struct GPADC_CLK_ANA_INV_R(crate::FieldReader<bool, bool>);
 impl GPADC_CLK_ANA_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CLK_ANA_INV_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> GPADC_CLK_ANA_INV_W<'a> {
 #[doc = "Field `gpadc_lowv_det_en` reader - "]
 pub struct GPADC_LOWV_DET_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_LOWV_DET_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_LOWV_DET_EN_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> GPADC_LOWV_DET_EN_W<'a> {
 #[doc = "Field `gpadc_vcm_hyst_sel` reader - "]
 pub struct GPADC_VCM_HYST_SEL_R(crate::FieldReader<bool, bool>);
 impl GPADC_VCM_HYST_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_VCM_HYST_SEL_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> GPADC_VCM_HYST_SEL_W<'a> {
 #[doc = "Field `gpadc_vcm_sel_en` reader - "]
 pub struct GPADC_VCM_SEL_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_VCM_SEL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_VCM_SEL_EN_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> GPADC_VCM_SEL_EN_W<'a> {
 #[doc = "Field `gpadc_res_sel` reader - "]
 pub struct GPADC_RES_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_RES_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_RES_SEL_R(crate::FieldReader::new(bits))
     }
@@ -383,6 +394,7 @@ impl<'a> GPADC_RES_SEL_W<'a> {
 #[doc = "Field `gpadc_cont_conv_en` reader - "]
 pub struct GPADC_CONT_CONV_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_CONT_CONV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CONT_CONV_EN_R(crate::FieldReader::new(bits))
     }
@@ -419,6 +431,7 @@ impl<'a> GPADC_CONT_CONV_EN_W<'a> {
 #[doc = "Field `gpadc_cal_os_en` reader - "]
 pub struct GPADC_CAL_OS_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_CAL_OS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CAL_OS_EN_R(crate::FieldReader::new(bits))
     }

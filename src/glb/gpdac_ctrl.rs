@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_CTRL_SPEC>> for W {
 #[doc = "Field `gpdac_reserved` reader - "]
 pub struct GPDAC_RESERVED_R(crate::FieldReader<u8, u8>);
 impl GPDAC_RESERVED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_RESERVED_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPDAC_RESERVED_W<'a> {
 #[doc = "Field `gpdac_test_sel` reader - "]
 pub struct GPDAC_TEST_SEL_R(crate::FieldReader<u8, u8>);
 impl GPDAC_TEST_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_TEST_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPDAC_TEST_SEL_W<'a> {
 #[doc = "Field `gpdac_ref_sel` reader - "]
 pub struct GPDAC_REF_SEL_R(crate::FieldReader<bool, bool>);
 impl GPDAC_REF_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_REF_SEL_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> GPDAC_REF_SEL_W<'a> {
 #[doc = "Field `gpdac_test_en` reader - "]
 pub struct GPDAC_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl GPDAC_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> GPDAC_TEST_EN_W<'a> {
 #[doc = "Field `gpdacb_rstn_ana` reader - "]
 pub struct GPDACB_RSTN_ANA_R(crate::FieldReader<bool, bool>);
 impl GPDACB_RSTN_ANA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDACB_RSTN_ANA_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> GPDACB_RSTN_ANA_W<'a> {
 #[doc = "Field `gpdaca_rstn_ana` reader - "]
 pub struct GPDACA_RSTN_ANA_R(crate::FieldReader<bool, bool>);
 impl GPDACA_RSTN_ANA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDACA_RSTN_ANA_R(crate::FieldReader::new(bits))
     }

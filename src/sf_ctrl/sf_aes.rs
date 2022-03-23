@@ -37,6 +37,7 @@ impl From<crate::W<SF_AES_SPEC>> for W {
 #[doc = "Field `sf_aes_status` reader - "]
 pub struct SF_AES_STATUS_R(crate::FieldReader<u32, u32>);
 impl SF_AES_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         SF_AES_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SF_AES_STATUS_W<'a> {
 #[doc = "Field `sf_aes_pref_busy` reader - "]
 pub struct SF_AES_PREF_BUSY_R(crate::FieldReader<bool, bool>);
 impl SF_AES_PREF_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_PREF_BUSY_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_AES_PREF_BUSY_W<'a> {
 #[doc = "Field `sf_aes_pref_trig` reader - "]
 pub struct SF_AES_PREF_TRIG_R(crate::FieldReader<bool, bool>);
 impl SF_AES_PREF_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_PREF_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_AES_PREF_TRIG_W<'a> {
 #[doc = "Field `sf_aes_mode` reader - "]
 pub struct SF_AES_MODE_R(crate::FieldReader<u8, u8>);
 impl SF_AES_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_AES_MODE_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> SF_AES_MODE_W<'a> {
 #[doc = "Field `sf_aes_en` reader - "]
 pub struct SF_AES_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<INT_MASK_SPEC>> for W {
 #[doc = "Field `RXC_M` reader - "]
 pub struct RXC_M_R(crate::FieldReader<bool, bool>);
 impl RXC_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXC_M_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RXC_M_W<'a> {
 #[doc = "Field `TXC_M` reader - "]
 pub struct TXC_M_R(crate::FieldReader<bool, bool>);
 impl TXC_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TXC_M_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TXC_M_W<'a> {
 #[doc = "Field `BUSY_M` reader - "]
 pub struct BUSY_M_R(crate::FieldReader<bool, bool>);
 impl BUSY_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BUSY_M_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> BUSY_M_W<'a> {
 #[doc = "Field `RXE_M` reader - "]
 pub struct RXE_M_R(crate::FieldReader<bool, bool>);
 impl RXE_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXE_M_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RXE_M_W<'a> {
 #[doc = "Field `RXB_M` reader - "]
 pub struct RXB_M_R(crate::FieldReader<bool, bool>);
 impl RXB_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RXB_M_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> RXB_M_W<'a> {
 #[doc = "Field `TXE_M` reader - "]
 pub struct TXE_M_R(crate::FieldReader<bool, bool>);
 impl TXE_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TXE_M_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TXE_M_W<'a> {
 #[doc = "Field `TXB_M` reader - "]
 pub struct TXB_M_R(crate::FieldReader<bool, bool>);
 impl TXB_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TXB_M_R(crate::FieldReader::new(bits))
     }

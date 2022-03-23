@@ -37,6 +37,7 @@ impl From<crate::W<LED_DRIVER_SPEC>> for W {
 #[doc = "Field `pu_leddrv` reader - "]
 pub struct PU_LEDDRV_R(crate::FieldReader<bool, bool>);
 impl PU_LEDDRV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_LEDDRV_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PU_LEDDRV_W<'a> {
 #[doc = "Field `leddrv_out_en` reader - "]
 pub struct LEDDRV_OUT_EN_R(crate::FieldReader<u8, u8>);
 impl LEDDRV_OUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LEDDRV_OUT_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> LEDDRV_OUT_EN_W<'a> {
 #[doc = "Field `ir_rx_gpio_sel` reader - "]
 pub struct IR_RX_GPIO_SEL_R(crate::FieldReader<u8, u8>);
 impl IR_RX_GPIO_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         IR_RX_GPIO_SEL_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> IR_RX_GPIO_SEL_W<'a> {
 #[doc = "Field `leddrv_ibias` reader - "]
 pub struct LEDDRV_IBIAS_R(crate::FieldReader<u8, u8>);
 impl LEDDRV_IBIAS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LEDDRV_IBIAS_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> LEDDRV_IBIAS_W<'a> {
 #[doc = "Field `led_din_polarity_sel` reader - "]
 pub struct LED_DIN_POLARITY_SEL_R(crate::FieldReader<bool, bool>);
 impl LED_DIN_POLARITY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LED_DIN_POLARITY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> LED_DIN_POLARITY_SEL_W<'a> {
 #[doc = "Field `led_din_sel` reader - "]
 pub struct LED_DIN_SEL_R(crate::FieldReader<bool, bool>);
 impl LED_DIN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LED_DIN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> LED_DIN_SEL_W<'a> {
 #[doc = "Field `led_din_reg` reader - "]
 pub struct LED_DIN_REG_R(crate::FieldReader<bool, bool>);
 impl LED_DIN_REG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LED_DIN_REG_R(crate::FieldReader::new(bits))
     }

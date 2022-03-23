@@ -37,6 +37,7 @@ impl From<crate::W<SE_SHA_0_ENDIAN_SPEC>> for W {
 #[doc = "Field `se_sha_0_dout_endian` reader - "]
 pub struct SE_SHA_0_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_DOUT_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
     }

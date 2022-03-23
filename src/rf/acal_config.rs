@@ -37,6 +37,7 @@ impl From<crate::W<ACAL_CONFIG_SPEC>> for W {
 #[doc = "Field `vco_idac_hh` reader - "]
 pub struct VCO_IDAC_HH_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_HH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_HH_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> VCO_IDAC_HH_W<'a> {
 #[doc = "Field `vco_idac_hl` reader - "]
 pub struct VCO_IDAC_HL_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_HL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_HL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> VCO_IDAC_HL_W<'a> {
 #[doc = "Field `vco_idac_lh` reader - "]
 pub struct VCO_IDAC_LH_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_LH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_LH_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> VCO_IDAC_LH_W<'a> {
 #[doc = "Field `vco_idac_ll` reader - "]
 pub struct VCO_IDAC_LL_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_LL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_LL_R(crate::FieldReader::new(bits))
     }

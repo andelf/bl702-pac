@@ -37,6 +37,7 @@ impl From<crate::W<HBN_IRQ_MODE_SPEC>> for W {
 #[doc = "Field `pin_wakeup_en` reader - "]
 pub struct PIN_WAKEUP_EN_R(crate::FieldReader<bool, bool>);
 impl PIN_WAKEUP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PIN_WAKEUP_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PIN_WAKEUP_EN_W<'a> {
 #[doc = "Field `pin_wakeup_sel` reader - "]
 pub struct PIN_WAKEUP_SEL_R(crate::FieldReader<u8, u8>);
 impl PIN_WAKEUP_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PIN_WAKEUP_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> PIN_WAKEUP_SEL_W<'a> {
 #[doc = "Field `irq_acomp1_en` reader - "]
 pub struct IRQ_ACOMP1_EN_R(crate::FieldReader<u8, u8>);
 impl IRQ_ACOMP1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         IRQ_ACOMP1_EN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> IRQ_ACOMP1_EN_W<'a> {
 #[doc = "Field `irq_acomp0_en` reader - "]
 pub struct IRQ_ACOMP0_EN_R(crate::FieldReader<u8, u8>);
 impl IRQ_ACOMP0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         IRQ_ACOMP0_EN_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> IRQ_ACOMP0_EN_W<'a> {
 #[doc = "Field `irq_bor_en` reader - "]
 pub struct IRQ_BOR_EN_R(crate::FieldReader<bool, bool>);
 impl IRQ_BOR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IRQ_BOR_EN_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> IRQ_BOR_EN_W<'a> {
 #[doc = "Field `reg_en_hw_pu_pd` reader - "]
 pub struct REG_EN_HW_PU_PD_R(crate::FieldReader<bool, bool>);
 impl REG_EN_HW_PU_PD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_EN_HW_PU_PD_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> REG_EN_HW_PU_PD_W<'a> {
 #[doc = "Field `reg_aon_pad_ie_smt` reader - "]
 pub struct REG_AON_PAD_IE_SMT_R(crate::FieldReader<u8, u8>);
 impl REG_AON_PAD_IE_SMT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_AON_PAD_IE_SMT_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> REG_AON_PAD_IE_SMT_W<'a> {
 #[doc = "Field `hbn_pin_wakeup_mask` reader - "]
 pub struct HBN_PIN_WAKEUP_MASK_R(crate::FieldReader<u8, u8>);
 impl HBN_PIN_WAKEUP_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_PIN_WAKEUP_MASK_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> HBN_PIN_WAKEUP_MASK_W<'a> {
 #[doc = "Field `hbn_pin_wakeup_mode` reader - "]
 pub struct HBN_PIN_WAKEUP_MODE_R(crate::FieldReader<u8, u8>);
 impl HBN_PIN_WAKEUP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_PIN_WAKEUP_MODE_R(crate::FieldReader::new(bits))
     }

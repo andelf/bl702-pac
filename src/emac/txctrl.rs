@@ -37,6 +37,7 @@ impl From<crate::W<TXCTRL_SPEC>> for W {
 #[doc = "Field `TXPAUSERQ` reader - "]
 pub struct TXPAUSERQ_R(crate::FieldReader<bool, bool>);
 impl TXPAUSERQ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TXPAUSERQ_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TXPAUSERQ_W<'a> {
 #[doc = "Field `TXPAUSETV` reader - "]
 pub struct TXPAUSETV_R(crate::FieldReader<u16, u16>);
 impl TXPAUSETV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TXPAUSETV_R(crate::FieldReader::new(bits))
     }

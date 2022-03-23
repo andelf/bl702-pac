@@ -37,6 +37,7 @@ impl From<crate::W<EP7_RX_FIFO_RDATA_SPEC>> for W {
 #[doc = "Field `ep7_rx_fifo_rdata` reader - "]
 pub struct EP7_RX_FIFO_RDATA_R(crate::FieldReader<u8, u8>);
 impl EP7_RX_FIFO_RDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EP7_RX_FIFO_RDATA_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<RF_RESERVED_SPEC>> for W {
 #[doc = "Field `rf_resv0` reader - "]
 pub struct RF_RESV0_R(crate::FieldReader<u16, u16>);
 impl RF_RESV0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_RESV0_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RF_RESV0_W<'a> {
 #[doc = "Field `rf_resv1` reader - "]
 pub struct RF_RESV1_R(crate::FieldReader<u16, u16>);
 impl RF_RESV1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_RESV1_R(crate::FieldReader::new(bits))
     }

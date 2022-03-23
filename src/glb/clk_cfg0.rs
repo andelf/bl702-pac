@@ -37,6 +37,7 @@ impl From<crate::W<CLK_CFG0_SPEC>> for W {
 #[doc = "Field `glb_id` reader - "]
 pub struct GLB_ID_R(crate::FieldReader<u8, u8>);
 impl GLB_ID_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GLB_ID_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GLB_ID_W<'a> {
 #[doc = "Field `chip_rdy` reader - "]
 pub struct CHIP_RDY_R(crate::FieldReader<bool, bool>);
 impl CHIP_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CHIP_RDY_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CHIP_RDY_W<'a> {
 #[doc = "Field `fclk_sw_state` reader - "]
 pub struct FCLK_SW_STATE_R(crate::FieldReader<u8, u8>);
 impl FCLK_SW_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FCLK_SW_STATE_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> FCLK_SW_STATE_W<'a> {
 #[doc = "Field `reg_bclk_div` reader - "]
 pub struct REG_BCLK_DIV_R(crate::FieldReader<u8, u8>);
 impl REG_BCLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_BCLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> REG_BCLK_DIV_W<'a> {
 #[doc = "Field `reg_hclk_div` reader - "]
 pub struct REG_HCLK_DIV_R(crate::FieldReader<u8, u8>);
 impl REG_HCLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_HCLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> REG_HCLK_DIV_W<'a> {
 #[doc = "Field `hbn_root_clk_sel` reader - "]
 pub struct HBN_ROOT_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl HBN_ROOT_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_ROOT_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> HBN_ROOT_CLK_SEL_W<'a> {
 #[doc = "Field `reg_pll_sel` reader - "]
 pub struct REG_PLL_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_PLL_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_PLL_SEL_R(crate::FieldReader::new(bits))
     }
@@ -229,6 +236,7 @@ impl<'a> REG_PLL_SEL_W<'a> {
 #[doc = "Field `reg_bclk_en` reader - "]
 pub struct REG_BCLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_BCLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_BCLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -265,6 +273,7 @@ impl<'a> REG_BCLK_EN_W<'a> {
 #[doc = "Field `reg_hclk_en` reader - "]
 pub struct REG_HCLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_HCLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_HCLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -301,6 +310,7 @@ impl<'a> REG_HCLK_EN_W<'a> {
 #[doc = "Field `reg_fclk_en` reader - "]
 pub struct REG_FCLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_FCLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_FCLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -337,6 +347,7 @@ impl<'a> REG_FCLK_EN_W<'a> {
 #[doc = "Field `reg_pll_en` reader - "]
 pub struct REG_PLL_EN_R(crate::FieldReader<bool, bool>);
 impl REG_PLL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_PLL_EN_R(crate::FieldReader::new(bits))
     }

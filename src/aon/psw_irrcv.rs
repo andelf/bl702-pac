@@ -37,6 +37,7 @@ impl From<crate::W<PSW_IRRCV_SPEC>> for W {
 #[doc = "Field `pu_ir_psw_aon` reader - "]
 pub struct PU_IR_PSW_AON_R(crate::FieldReader<bool, bool>);
 impl PU_IR_PSW_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_IR_PSW_AON_R(crate::FieldReader::new(bits))
     }

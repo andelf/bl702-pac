@@ -37,6 +37,7 @@ impl From<crate::W<USB_INT_MASK_SPEC>> for W {
 #[doc = "Field `cr_usb_err_mask` reader - "]
 pub struct CR_USB_ERR_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_USB_ERR_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_ERR_MASK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_USB_ERR_MASK_W<'a> {
 #[doc = "Field `cr_sof_3ms_mask` reader - "]
 pub struct CR_SOF_3MS_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SOF_3MS_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SOF_3MS_MASK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_SOF_3MS_MASK_W<'a> {
 #[doc = "Field `cr_lpm_pkt_mask` reader - "]
 pub struct CR_LPM_PKT_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_LPM_PKT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_LPM_PKT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_LPM_PKT_MASK_W<'a> {
 #[doc = "Field `cr_lpm_wkup_mask` reader - "]
 pub struct CR_LPM_WKUP_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_LPM_WKUP_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_LPM_WKUP_MASK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_LPM_WKUP_MASK_W<'a> {
 #[doc = "Field `rsvd_27_24` reader - "]
 pub struct RSVD_27_24_R(crate::FieldReader<u8, u8>);
 impl RSVD_27_24_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_27_24_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RSVD_27_24_W<'a> {
 #[doc = "Field `cr_ep7_done_mask` reader - "]
 pub struct CR_EP7_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP7_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP7_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> CR_EP7_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep7_cmd_mask` reader - "]
 pub struct CR_EP7_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP7_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP7_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> CR_EP7_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep6_done_mask` reader - "]
 pub struct CR_EP6_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP6_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP6_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> CR_EP6_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep6_cmd_mask` reader - "]
 pub struct CR_EP6_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP6_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP6_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> CR_EP6_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep5_done_mask` reader - "]
 pub struct CR_EP5_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP5_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP5_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> CR_EP5_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep5_cmd_mask` reader - "]
 pub struct CR_EP5_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP5_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP5_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> CR_EP5_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep4_done_mask` reader - "]
 pub struct CR_EP4_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP4_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP4_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> CR_EP4_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep4_cmd_mask` reader - "]
 pub struct CR_EP4_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP4_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP4_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> CR_EP4_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep3_done_mask` reader - "]
 pub struct CR_EP3_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP3_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP3_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -531,6 +545,7 @@ impl<'a> CR_EP3_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep3_cmd_mask` reader - "]
 pub struct CR_EP3_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP3_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP3_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -567,6 +582,7 @@ impl<'a> CR_EP3_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep2_done_mask` reader - "]
 pub struct CR_EP2_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP2_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP2_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -603,6 +619,7 @@ impl<'a> CR_EP2_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep2_cmd_mask` reader - "]
 pub struct CR_EP2_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP2_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP2_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -639,6 +656,7 @@ impl<'a> CR_EP2_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep1_done_mask` reader - "]
 pub struct CR_EP1_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP1_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP1_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -675,6 +693,7 @@ impl<'a> CR_EP1_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep1_cmd_mask` reader - "]
 pub struct CR_EP1_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP1_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP1_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -711,6 +730,7 @@ impl<'a> CR_EP1_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep0_out_done_mask` reader - "]
 pub struct CR_EP0_OUT_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_OUT_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_OUT_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -747,6 +767,7 @@ impl<'a> CR_EP0_OUT_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep0_out_cmd_mask` reader - "]
 pub struct CR_EP0_OUT_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_OUT_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_OUT_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -783,6 +804,7 @@ impl<'a> CR_EP0_OUT_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep0_in_done_mask` reader - "]
 pub struct CR_EP0_IN_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_IN_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_IN_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -819,6 +841,7 @@ impl<'a> CR_EP0_IN_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep0_in_cmd_mask` reader - "]
 pub struct CR_EP0_IN_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_IN_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_IN_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -855,6 +878,7 @@ impl<'a> CR_EP0_IN_CMD_MASK_W<'a> {
 #[doc = "Field `cr_ep0_setup_done_mask` reader - "]
 pub struct CR_EP0_SETUP_DONE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_SETUP_DONE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_SETUP_DONE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -891,6 +915,7 @@ impl<'a> CR_EP0_SETUP_DONE_MASK_W<'a> {
 #[doc = "Field `cr_ep0_setup_cmd_mask` reader - "]
 pub struct CR_EP0_SETUP_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_EP0_SETUP_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP0_SETUP_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -927,6 +952,7 @@ impl<'a> CR_EP0_SETUP_CMD_MASK_W<'a> {
 #[doc = "Field `cr_get_dct_cmd_mask` reader - "]
 pub struct CR_GET_DCT_CMD_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_GET_DCT_CMD_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_GET_DCT_CMD_MASK_R(crate::FieldReader::new(bits))
     }
@@ -963,6 +989,7 @@ impl<'a> CR_GET_DCT_CMD_MASK_W<'a> {
 #[doc = "Field `cr_vbus_tgl_mask` reader - "]
 pub struct CR_VBUS_TGL_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_VBUS_TGL_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_VBUS_TGL_MASK_R(crate::FieldReader::new(bits))
     }
@@ -999,6 +1026,7 @@ impl<'a> CR_VBUS_TGL_MASK_W<'a> {
 #[doc = "Field `cr_usb_reset_mask` reader - "]
 pub struct CR_USB_RESET_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_USB_RESET_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_USB_RESET_MASK_R(crate::FieldReader::new(bits))
     }
@@ -1035,6 +1063,7 @@ impl<'a> CR_USB_RESET_MASK_W<'a> {
 #[doc = "Field `cr_sof_mask` reader - "]
 pub struct CR_SOF_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_SOF_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_SOF_MASK_R(crate::FieldReader::new(bits))
     }

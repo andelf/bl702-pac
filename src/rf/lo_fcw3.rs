@@ -37,6 +37,7 @@ impl From<crate::W<LO_FCW3_SPEC>> for W {
 #[doc = "Field `tx_freq_mod_hp` reader - "]
 pub struct TX_FREQ_MOD_HP_R(crate::FieldReader<u16, u16>);
 impl TX_FREQ_MOD_HP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TX_FREQ_MOD_HP_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> TX_FREQ_MOD_HP_W<'a> {
 #[doc = "Field `tx_freq_mod_lp` reader - "]
 pub struct TX_FREQ_MOD_LP_R(crate::FieldReader<u16, u16>);
 impl TX_FREQ_MOD_LP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TX_FREQ_MOD_LP_R(crate::FieldReader::new(bits))
     }

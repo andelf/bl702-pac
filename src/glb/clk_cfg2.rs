@@ -37,6 +37,7 @@ impl From<crate::W<CLK_CFG2_SPEC>> for W {
 #[doc = "Field `dma_clk_en` reader - "]
 pub struct DMA_CLK_EN_R(crate::FieldReader<u8, u8>);
 impl DMA_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DMA_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> DMA_CLK_EN_W<'a> {
 #[doc = "Field `ir_clk_en` reader - "]
 pub struct IR_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl IR_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IR_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> IR_CLK_EN_W<'a> {
 #[doc = "Field `ir_clk_div` reader - "]
 pub struct IR_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl IR_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         IR_CLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> IR_CLK_DIV_W<'a> {
 #[doc = "Field `sf_clk_sel2` reader - "]
 pub struct SF_CLK_SEL2_R(crate::FieldReader<u8, u8>);
 impl SF_CLK_SEL2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_CLK_SEL2_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> SF_CLK_SEL2_W<'a> {
 #[doc = "Field `sf_clk_sel` reader - "]
 pub struct SF_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl SF_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> SF_CLK_SEL_W<'a> {
 #[doc = "Field `sf_clk_en` reader - "]
 pub struct SF_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl SF_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> SF_CLK_EN_W<'a> {
 #[doc = "Field `sf_clk_div` reader - "]
 pub struct SF_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl SF_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_CLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -239,6 +246,7 @@ impl<'a> SF_CLK_DIV_W<'a> {
 #[doc = "Field `hbn_uart_clk_sel` reader - "]
 pub struct HBN_UART_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl HBN_UART_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HBN_UART_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> HBN_UART_CLK_SEL_W<'a> {
 #[doc = "Field `uart_clk_en` reader - "]
 pub struct UART_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl UART_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         UART_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -311,6 +320,7 @@ impl<'a> UART_CLK_EN_W<'a> {
 #[doc = "Field `uart_clk_div` reader - "]
 pub struct UART_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl UART_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_CLK_DIV_R(crate::FieldReader::new(bits))
     }

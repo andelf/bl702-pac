@@ -37,6 +37,7 @@ impl From<crate::W<XTAL_CFG_SPEC>> for W {
 #[doc = "Field `xtal_rdy_sel_aon` reader - "]
 pub struct XTAL_RDY_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_RDY_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_RDY_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> XTAL_RDY_SEL_AON_W<'a> {
 #[doc = "Field `xtal_gm_boost_aon` reader - "]
 pub struct XTAL_GM_BOOST_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_GM_BOOST_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_GM_BOOST_AON_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> XTAL_GM_BOOST_AON_W<'a> {
 #[doc = "Field `xtal_capcode_in_aon` reader - "]
 pub struct XTAL_CAPCODE_IN_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_CAPCODE_IN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_CAPCODE_IN_AON_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> XTAL_CAPCODE_IN_AON_W<'a> {
 #[doc = "Field `xtal_capcode_out_aon` reader - "]
 pub struct XTAL_CAPCODE_OUT_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_CAPCODE_OUT_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_CAPCODE_OUT_AON_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> XTAL_CAPCODE_OUT_AON_W<'a> {
 #[doc = "Field `xtal_amp_ctrl_aon` reader - "]
 pub struct XTAL_AMP_CTRL_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_AMP_CTRL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_AMP_CTRL_AON_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> XTAL_AMP_CTRL_AON_W<'a> {
 #[doc = "Field `xtal_sleep_aon` reader - "]
 pub struct XTAL_SLEEP_AON_R(crate::FieldReader<bool, bool>);
 impl XTAL_SLEEP_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_SLEEP_AON_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> XTAL_SLEEP_AON_W<'a> {
 #[doc = "Field `xtal_fast_startup_aon` reader - "]
 pub struct XTAL_FAST_STARTUP_AON_R(crate::FieldReader<bool, bool>);
 impl XTAL_FAST_STARTUP_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_FAST_STARTUP_AON_R(crate::FieldReader::new(bits))
     }
@@ -239,6 +246,7 @@ impl<'a> XTAL_FAST_STARTUP_AON_W<'a> {
 #[doc = "Field `xtal_buf_hp_aon` reader - "]
 pub struct XTAL_BUF_HP_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_BUF_HP_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_BUF_HP_AON_R(crate::FieldReader::new(bits))
     }
@@ -265,6 +273,7 @@ impl<'a> XTAL_BUF_HP_AON_W<'a> {
 #[doc = "Field `xtal_buf_en_aon` reader - "]
 pub struct XTAL_BUF_EN_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_BUF_EN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_BUF_EN_AON_R(crate::FieldReader::new(bits))
     }
@@ -291,6 +300,7 @@ impl<'a> XTAL_BUF_EN_AON_W<'a> {
 #[doc = "Field `xtal_ext_sel_aon` reader - "]
 pub struct XTAL_EXT_SEL_AON_R(crate::FieldReader<bool, bool>);
 impl XTAL_EXT_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_EXT_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -327,6 +337,7 @@ impl<'a> XTAL_EXT_SEL_AON_W<'a> {
 #[doc = "Field `xtal_capcode_extra_aon` reader - "]
 pub struct XTAL_CAPCODE_EXTRA_AON_R(crate::FieldReader<bool, bool>);
 impl XTAL_CAPCODE_EXTRA_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_CAPCODE_EXTRA_AON_R(crate::FieldReader::new(bits))
     }
@@ -363,6 +374,7 @@ impl<'a> XTAL_CAPCODE_EXTRA_AON_W<'a> {
 #[doc = "Field `xtal_bk_aon` reader - "]
 pub struct XTAL_BK_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_BK_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_BK_AON_R(crate::FieldReader::new(bits))
     }

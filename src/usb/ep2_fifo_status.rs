@@ -37,6 +37,7 @@ impl From<crate::W<EP2_FIFO_STATUS_SPEC>> for W {
 #[doc = "Field `ep2_rx_fifo_full` reader - "]
 pub struct EP2_RX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
 impl EP2_RX_FIFO_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_RX_FIFO_FULL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> EP2_RX_FIFO_FULL_W<'a> {
 #[doc = "Field `ep2_rx_fifo_empty` reader - "]
 pub struct EP2_RX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
 impl EP2_RX_FIFO_EMPTY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_RX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> EP2_RX_FIFO_EMPTY_W<'a> {
 #[doc = "Field `ep2_rx_fifo_cnt` reader - "]
 pub struct EP2_RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
 impl EP2_RX_FIFO_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EP2_RX_FIFO_CNT_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> EP2_RX_FIFO_CNT_W<'a> {
 #[doc = "Field `ep2_tx_fifo_full` reader - "]
 pub struct EP2_TX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
 impl EP2_TX_FIFO_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_TX_FIFO_FULL_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> EP2_TX_FIFO_FULL_W<'a> {
 #[doc = "Field `ep2_tx_fifo_empty` reader - "]
 pub struct EP2_TX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
 impl EP2_TX_FIFO_EMPTY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_TX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> EP2_TX_FIFO_EMPTY_W<'a> {
 #[doc = "Field `ep2_tx_fifo_cnt` reader - "]
 pub struct EP2_TX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
 impl EP2_TX_FIFO_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EP2_TX_FIFO_CNT_R(crate::FieldReader::new(bits))
     }

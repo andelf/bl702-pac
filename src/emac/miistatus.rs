@@ -37,6 +37,7 @@ impl From<crate::W<MIISTATUS_SPEC>> for W {
 #[doc = "Field `MIIM_BUSY` reader - "]
 pub struct MIIM_BUSY_R(crate::FieldReader<bool, bool>);
 impl MIIM_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MIIM_BUSY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> MIIM_BUSY_W<'a> {
 #[doc = "Field `MIIM_LINKFAIL` reader - "]
 pub struct MIIM_LINKFAIL_R(crate::FieldReader<bool, bool>);
 impl MIIM_LINKFAIL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MIIM_LINKFAIL_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<REG_DATA_1_LOCK_SPEC>> for W {
 #[doc = "Field `rd_lock_key_slot_9` reader - "]
 pub struct RD_LOCK_KEY_SLOT_9_R(crate::FieldReader<bool, bool>);
 impl RD_LOCK_KEY_SLOT_9_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RD_LOCK_KEY_SLOT_9_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RD_LOCK_KEY_SLOT_9_W<'a> {
 #[doc = "Field `rd_lock_key_slot_8` reader - "]
 pub struct RD_LOCK_KEY_SLOT_8_R(crate::FieldReader<bool, bool>);
 impl RD_LOCK_KEY_SLOT_8_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RD_LOCK_KEY_SLOT_8_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RD_LOCK_KEY_SLOT_8_W<'a> {
 #[doc = "Field `rd_lock_key_slot_7` reader - "]
 pub struct RD_LOCK_KEY_SLOT_7_R(crate::FieldReader<bool, bool>);
 impl RD_LOCK_KEY_SLOT_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RD_LOCK_KEY_SLOT_7_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> RD_LOCK_KEY_SLOT_7_W<'a> {
 #[doc = "Field `rd_lock_key_slot_6` reader - "]
 pub struct RD_LOCK_KEY_SLOT_6_R(crate::FieldReader<bool, bool>);
 impl RD_LOCK_KEY_SLOT_6_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RD_LOCK_KEY_SLOT_6_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RD_LOCK_KEY_SLOT_6_W<'a> {
 #[doc = "Field `RESERVED_25_16` reader - "]
 pub struct RESERVED_25_16_R(crate::FieldReader<u16, u16>);
 impl RESERVED_25_16_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RESERVED_25_16_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RESERVED_25_16_W<'a> {
 #[doc = "Field `wr_lock_key_slot_9` reader - "]
 pub struct WR_LOCK_KEY_SLOT_9_R(crate::FieldReader<bool, bool>);
 impl WR_LOCK_KEY_SLOT_9_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WR_LOCK_KEY_SLOT_9_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> WR_LOCK_KEY_SLOT_9_W<'a> {
 #[doc = "Field `wr_lock_key_slot_8` reader - "]
 pub struct WR_LOCK_KEY_SLOT_8_R(crate::FieldReader<bool, bool>);
 impl WR_LOCK_KEY_SLOT_8_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WR_LOCK_KEY_SLOT_8_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> WR_LOCK_KEY_SLOT_8_W<'a> {
 #[doc = "Field `wr_lock_key_slot_7` reader - "]
 pub struct WR_LOCK_KEY_SLOT_7_R(crate::FieldReader<bool, bool>);
 impl WR_LOCK_KEY_SLOT_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WR_LOCK_KEY_SLOT_7_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> WR_LOCK_KEY_SLOT_7_W<'a> {
 #[doc = "Field `wr_lock_key_slot_6` reader - "]
 pub struct WR_LOCK_KEY_SLOT_6_R(crate::FieldReader<bool, bool>);
 impl WR_LOCK_KEY_SLOT_6_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WR_LOCK_KEY_SLOT_6_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> WR_LOCK_KEY_SLOT_6_W<'a> {
 #[doc = "Field `RESERVED_9_0` reader - "]
 pub struct RESERVED_9_0_R(crate::FieldReader<u16, u16>);
 impl RESERVED_9_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RESERVED_9_0_R(crate::FieldReader::new(bits))
     }

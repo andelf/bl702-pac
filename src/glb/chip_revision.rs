@@ -37,6 +37,7 @@ impl From<crate::W<CHIP_REVISION_SPEC>> for W {
 #[doc = "Field `chip_rev` reader - "]
 pub struct CHIP_REV_R(crate::FieldReader<u8, u8>);
 impl CHIP_REV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CHIP_REV_R(crate::FieldReader::new(bits))
     }

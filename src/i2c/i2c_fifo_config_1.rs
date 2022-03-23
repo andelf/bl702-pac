@@ -37,6 +37,7 @@ impl From<crate::W<I2C_FIFO_CONFIG_1_SPEC>> for W {
 #[doc = "Field `rx_fifo_th` reader - "]
 pub struct RX_FIFO_TH_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_TH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_TH_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RX_FIFO_TH_W<'a> {
 #[doc = "Field `tx_fifo_th` reader - "]
 pub struct TX_FIFO_TH_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_TH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_TH_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TX_FIFO_TH_W<'a> {
 #[doc = "Field `rx_fifo_cnt` reader - "]
 pub struct RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
 impl RX_FIFO_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RX_FIFO_CNT_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RX_FIFO_CNT_W<'a> {
 #[doc = "Field `tx_fifo_cnt` reader - "]
 pub struct TX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
 impl TX_FIFO_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TX_FIFO_CNT_R(crate::FieldReader::new(bits))
     }

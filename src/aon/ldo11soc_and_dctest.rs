@@ -37,6 +37,7 @@ impl From<crate::W<LDO11SOC_AND_DCTEST_SPEC>> for W {
 #[doc = "Field `pmip_dc_tp_out_en_aon` reader - "]
 pub struct PMIP_DC_TP_OUT_EN_AON_R(crate::FieldReader<bool, bool>);
 impl PMIP_DC_TP_OUT_EN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PMIP_DC_TP_OUT_EN_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PMIP_DC_TP_OUT_EN_AON_W<'a> {
 #[doc = "Field `pu_vddcore_misc_aon` reader - "]
 pub struct PU_VDDCORE_MISC_AON_R(crate::FieldReader<bool, bool>);
 impl PU_VDDCORE_MISC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_VDDCORE_MISC_AON_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PU_VDDCORE_MISC_AON_W<'a> {
 #[doc = "Field `ldo11soc_power_good_aon` reader - "]
 pub struct LDO11SOC_POWER_GOOD_AON_R(crate::FieldReader<bool, bool>);
 impl LDO11SOC_POWER_GOOD_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11SOC_POWER_GOOD_AON_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> LDO11SOC_POWER_GOOD_AON_W<'a> {
 #[doc = "Field `ldo11soc_rdy_aon` reader - "]
 pub struct LDO11SOC_RDY_AON_R(crate::FieldReader<bool, bool>);
 impl LDO11SOC_RDY_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11SOC_RDY_AON_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> LDO11SOC_RDY_AON_W<'a> {
 #[doc = "Field `ldo11soc_cc_aon` reader - "]
 pub struct LDO11SOC_CC_AON_R(crate::FieldReader<u8, u8>);
 impl LDO11SOC_CC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO11SOC_CC_AON_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> LDO11SOC_CC_AON_W<'a> {
 #[doc = "Field `ldo11soc_vth_sel_aon` reader - "]
 pub struct LDO11SOC_VTH_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl LDO11SOC_VTH_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO11SOC_VTH_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> LDO11SOC_VTH_SEL_AON_W<'a> {
 #[doc = "Field `ldo11soc_pulldown_sel_aon` reader - "]
 pub struct LDO11SOC_PULLDOWN_SEL_AON_R(crate::FieldReader<bool, bool>);
 impl LDO11SOC_PULLDOWN_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11SOC_PULLDOWN_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> LDO11SOC_PULLDOWN_SEL_AON_W<'a> {
 #[doc = "Field `ldo11soc_pulldown_aon` reader - "]
 pub struct LDO11SOC_PULLDOWN_AON_R(crate::FieldReader<bool, bool>);
 impl LDO11SOC_PULLDOWN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11SOC_PULLDOWN_AON_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> LDO11SOC_PULLDOWN_AON_W<'a> {
 #[doc = "Field `ldo11soc_sstart_delay_aon` reader - "]
 pub struct LDO11SOC_SSTART_DELAY_AON_R(crate::FieldReader<u8, u8>);
 impl LDO11SOC_SSTART_DELAY_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO11SOC_SSTART_DELAY_AON_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> LDO11SOC_SSTART_DELAY_AON_W<'a> {
 #[doc = "Field `ldo11soc_sstart_sel_aon` reader - "]
 pub struct LDO11SOC_SSTART_SEL_AON_R(crate::FieldReader<bool, bool>);
 impl LDO11SOC_SSTART_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO11SOC_SSTART_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> LDO11SOC_SSTART_SEL_AON_W<'a> {
 #[doc = "Field `pu_ldo11soc_aon` reader - "]
 pub struct PU_LDO11SOC_AON_R(crate::FieldReader<bool, bool>);
 impl PU_LDO11SOC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_LDO11SOC_AON_R(crate::FieldReader::new(bits))
     }

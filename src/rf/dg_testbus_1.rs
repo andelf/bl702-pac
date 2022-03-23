@@ -37,6 +37,7 @@ impl From<crate::W<DG_TESTBUS_1_SPEC>> for W {
 #[doc = "Field `rf_testbus_sel` reader - "]
 pub struct RF_TESTBUS_SEL_R(crate::FieldReader<u8, u8>);
 impl RF_TESTBUS_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_TESTBUS_SEL_R(crate::FieldReader::new(bits))
     }

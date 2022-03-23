@@ -37,6 +37,7 @@ impl From<crate::W<SE_AES_0_ENDIAN_SPEC>> for W {
 #[doc = "Field `se_aes_0_ctr_len` reader - "]
 pub struct SE_AES_0_CTR_LEN_R(crate::FieldReader<u8, u8>);
 impl SE_AES_0_CTR_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_AES_0_CTR_LEN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_AES_0_CTR_LEN_W<'a> {
 #[doc = "Field `se_aes_0_iv_endian` reader - "]
 pub struct SE_AES_0_IV_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_AES_0_IV_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_0_IV_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SE_AES_0_IV_ENDIAN_W<'a> {
 #[doc = "Field `se_aes_0_key_endian` reader - "]
 pub struct SE_AES_0_KEY_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_AES_0_KEY_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_0_KEY_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SE_AES_0_KEY_ENDIAN_W<'a> {
 #[doc = "Field `se_aes_0_din_endian` reader - "]
 pub struct SE_AES_0_DIN_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_AES_0_DIN_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_0_DIN_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SE_AES_0_DIN_ENDIAN_W<'a> {
 #[doc = "Field `se_aes_0_dout_endian` reader - "]
 pub struct SE_AES_0_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_AES_0_DOUT_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_0_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
     }

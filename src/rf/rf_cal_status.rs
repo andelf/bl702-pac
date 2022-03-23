@@ -37,6 +37,7 @@ impl From<crate::W<RF_CAL_STATUS_SPEC>> for W {
 #[doc = "Field `dl_rfcal_table_status` reader - "]
 pub struct DL_RFCAL_TABLE_STATUS_R(crate::FieldReader<u8, u8>);
 impl DL_RFCAL_TABLE_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DL_RFCAL_TABLE_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> DL_RFCAL_TABLE_STATUS_W<'a> {
 #[doc = "Field `rccal_status` reader - "]
 pub struct RCCAL_STATUS_R(crate::FieldReader<u8, u8>);
 impl RCCAL_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RCCAL_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RCCAL_STATUS_W<'a> {
 #[doc = "Field `roscal_status` reader - "]
 pub struct ROSCAL_STATUS_R(crate::FieldReader<u8, u8>);
 impl ROSCAL_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSCAL_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> ROSCAL_STATUS_W<'a> {
 #[doc = "Field `kcal_status` reader - "]
 pub struct KCAL_STATUS_R(crate::FieldReader<u8, u8>);
 impl KCAL_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KCAL_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> KCAL_STATUS_W<'a> {
 #[doc = "Field `acal_status` reader - "]
 pub struct ACAL_STATUS_R(crate::FieldReader<u8, u8>);
 impl ACAL_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACAL_STATUS_R(crate::FieldReader::new(bits))
     }

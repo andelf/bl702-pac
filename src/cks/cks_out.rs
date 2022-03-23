@@ -37,6 +37,7 @@ impl From<crate::W<CKS_OUT_SPEC>> for W {
 #[doc = "Field `cks_out` reader - "]
 pub struct CKS_OUT_R(crate::FieldReader<u16, u16>);
 impl CKS_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CKS_OUT_R(crate::FieldReader::new(bits))
     }

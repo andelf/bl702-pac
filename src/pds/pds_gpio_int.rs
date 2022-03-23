@@ -37,6 +37,7 @@ impl From<crate::W<PDS_GPIO_INT_SPEC>> for W {
 #[doc = "Field `pds_gpio_int_select` reader - "]
 pub struct PDS_GPIO_INT_SELECT_R(crate::FieldReader<u8, u8>);
 impl PDS_GPIO_INT_SELECT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PDS_GPIO_INT_SELECT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> PDS_GPIO_INT_SELECT_W<'a> {
 #[doc = "Field `pds_gpio_int_mode` reader - "]
 pub struct PDS_GPIO_INT_MODE_R(crate::FieldReader<u8, u8>);
 impl PDS_GPIO_INT_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PDS_GPIO_INT_MODE_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> PDS_GPIO_INT_MODE_W<'a> {
 #[doc = "Field `pds_gpio_int_clr` reader - "]
 pub struct PDS_GPIO_INT_CLR_R(crate::FieldReader<bool, bool>);
 impl PDS_GPIO_INT_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PDS_GPIO_INT_CLR_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> PDS_GPIO_INT_CLR_W<'a> {
 #[doc = "Field `pds_gpio_int_stat` reader - "]
 pub struct PDS_GPIO_INT_STAT_R(crate::FieldReader<bool, bool>);
 impl PDS_GPIO_INT_STAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PDS_GPIO_INT_STAT_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> PDS_GPIO_INT_STAT_W<'a> {
 #[doc = "Field `pds_gpio_int_mask` reader - "]
 pub struct PDS_GPIO_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl PDS_GPIO_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PDS_GPIO_INT_MASK_R(crate::FieldReader::new(bits))
     }

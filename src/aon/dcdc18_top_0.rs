@@ -37,6 +37,7 @@ impl From<crate::W<DCDC18_TOP_0_SPEC>> for W {
 #[doc = "Field `dcdc18_rdy_aon` reader - "]
 pub struct DCDC18_RDY_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_RDY_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_RDY_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> DCDC18_RDY_AON_W<'a> {
 #[doc = "Field `dcdc18_sstart_time_aon` reader - "]
 pub struct DCDC18_SSTART_TIME_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_SSTART_TIME_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_SSTART_TIME_AON_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> DCDC18_SSTART_TIME_AON_W<'a> {
 #[doc = "Field `dcdc18_osc_inhibit_t2_aon` reader - "]
 pub struct DCDC18_OSC_INHIBIT_T2_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_OSC_INHIBIT_T2_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_OSC_INHIBIT_T2_AON_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> DCDC18_OSC_INHIBIT_T2_AON_W<'a> {
 #[doc = "Field `dcdc18_slow_osc_aon` reader - "]
 pub struct DCDC18_SLOW_OSC_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_SLOW_OSC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_SLOW_OSC_AON_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> DCDC18_SLOW_OSC_AON_W<'a> {
 #[doc = "Field `dcdc18_stop_osc_aon` reader - "]
 pub struct DCDC18_STOP_OSC_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_STOP_OSC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_STOP_OSC_AON_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> DCDC18_STOP_OSC_AON_W<'a> {
 #[doc = "Field `dcdc18_slope_curr_sel_aon` reader - "]
 pub struct DCDC18_SLOPE_CURR_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_SLOPE_CURR_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_SLOPE_CURR_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> DCDC18_SLOPE_CURR_SEL_AON_W<'a> {
 #[doc = "Field `dcdc18_osc_freq_trim_aon` reader - "]
 pub struct DCDC18_OSC_FREQ_TRIM_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_OSC_FREQ_TRIM_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_OSC_FREQ_TRIM_AON_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> DCDC18_OSC_FREQ_TRIM_AON_W<'a> {
 #[doc = "Field `dcdc18_osc_2m_mode_aon` reader - "]
 pub struct DCDC18_OSC_2M_MODE_AON_R(crate::FieldReader<bool, bool>);
 impl DCDC18_OSC_2M_MODE_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DCDC18_OSC_2M_MODE_AON_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> DCDC18_OSC_2M_MODE_AON_W<'a> {
 #[doc = "Field `dcdc18_vpfm_aon` reader - "]
 pub struct DCDC18_VPFM_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_VPFM_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_VPFM_AON_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> DCDC18_VPFM_AON_W<'a> {
 #[doc = "Field `dcdc18_vout_sel_aon` reader - "]
 pub struct DCDC18_VOUT_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl DCDC18_VOUT_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DCDC18_VOUT_SEL_AON_R(crate::FieldReader::new(bits))
     }

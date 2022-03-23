@@ -37,6 +37,7 @@ impl From<crate::W<INT_CONTROL_SPEC>> for W {
 #[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
 pub struct REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader<u8, u8>);
 impl REG_FRAME_CNT_TRGR_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_FRAME_CNT_TRGR_INT_W<'a> {
 #[doc = "Field `reg_int_vcnt_en` reader - "]
 pub struct REG_INT_VCNT_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_VCNT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_VCNT_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_INT_VCNT_EN_W<'a> {
 #[doc = "Field `reg_int_hcnt_en` reader - "]
 pub struct REG_INT_HCNT_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_HCNT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_HCNT_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_INT_HCNT_EN_W<'a> {
 #[doc = "Field `reg_int_fifo_en` reader - "]
 pub struct REG_INT_FIFO_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_FIFO_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_FIFO_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> REG_INT_FIFO_EN_W<'a> {
 #[doc = "Field `reg_int_frame_en` reader - "]
 pub struct REG_INT_FRAME_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_FRAME_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_FRAME_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> REG_INT_FRAME_EN_W<'a> {
 #[doc = "Field `reg_int_mem_en` reader - "]
 pub struct REG_INT_MEM_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_MEM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_MEM_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> REG_INT_MEM_EN_W<'a> {
 #[doc = "Field `reg_int_normal_1_en` reader - "]
 pub struct REG_INT_NORMAL_1_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_NORMAL_1_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_NORMAL_1_EN_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> REG_INT_NORMAL_1_EN_W<'a> {
 #[doc = "Field `reg_int_normal_0_en` reader - "]
 pub struct REG_INT_NORMAL_0_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_NORMAL_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_NORMAL_0_EN_R(crate::FieldReader::new(bits))
     }

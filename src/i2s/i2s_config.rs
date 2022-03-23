@@ -37,6 +37,7 @@ impl From<crate::W<I2S_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_ofs_en` reader - "]
 pub struct CR_OFS_EN_R(crate::FieldReader<bool, bool>);
 impl CR_OFS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_OFS_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_OFS_EN_W<'a> {
 #[doc = "Field `cr_ofs_cnt` reader - "]
 pub struct CR_OFS_CNT_R(crate::FieldReader<u8, u8>);
 impl CR_OFS_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_OFS_CNT_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CR_OFS_CNT_W<'a> {
 #[doc = "Field `cr_mono_rx_ch` reader - "]
 pub struct CR_MONO_RX_CH_R(crate::FieldReader<bool, bool>);
 impl CR_MONO_RX_CH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_MONO_RX_CH_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> CR_MONO_RX_CH_W<'a> {
 #[doc = "Field `cr_endian` reader - "]
 pub struct CR_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl CR_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> CR_ENDIAN_W<'a> {
 #[doc = "Field `cr_i2s_mode` reader - "]
 pub struct CR_I2S_MODE_R(crate::FieldReader<u8, u8>);
 impl CR_I2S_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2S_MODE_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> CR_I2S_MODE_W<'a> {
 #[doc = "Field `cr_data_size` reader - "]
 pub struct CR_DATA_SIZE_R(crate::FieldReader<u8, u8>);
 impl CR_DATA_SIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_DATA_SIZE_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> CR_DATA_SIZE_W<'a> {
 #[doc = "Field `cr_frame_size` reader - "]
 pub struct CR_FRAME_SIZE_R(crate::FieldReader<u8, u8>);
 impl CR_FRAME_SIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_FRAME_SIZE_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> CR_FRAME_SIZE_W<'a> {
 #[doc = "Field `cr_fs_3ch_mode` reader - "]
 pub struct CR_FS_3CH_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_FS_3CH_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FS_3CH_MODE_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> CR_FS_3CH_MODE_W<'a> {
 #[doc = "Field `cr_fs_4ch_mode` reader - "]
 pub struct CR_FS_4CH_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_FS_4CH_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FS_4CH_MODE_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> CR_FS_4CH_MODE_W<'a> {
 #[doc = "Field `cr_fs_1t_mode` reader - "]
 pub struct CR_FS_1T_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_FS_1T_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FS_1T_MODE_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> CR_FS_1T_MODE_W<'a> {
 #[doc = "Field `cr_mute_mode` reader - "]
 pub struct CR_MUTE_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_MUTE_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_MUTE_MODE_R(crate::FieldReader::new(bits))
     }
@@ -393,6 +404,7 @@ impl<'a> CR_MUTE_MODE_W<'a> {
 #[doc = "Field `cr_mono_mode` reader - "]
 pub struct CR_MONO_MODE_R(crate::FieldReader<bool, bool>);
 impl CR_MONO_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_MONO_MODE_R(crate::FieldReader::new(bits))
     }
@@ -429,6 +441,7 @@ impl<'a> CR_MONO_MODE_W<'a> {
 #[doc = "Field `cr_i2s_rxd_en` reader - "]
 pub struct CR_I2S_RXD_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_RXD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_RXD_EN_R(crate::FieldReader::new(bits))
     }
@@ -465,6 +478,7 @@ impl<'a> CR_I2S_RXD_EN_W<'a> {
 #[doc = "Field `cr_i2s_txd_en` reader - "]
 pub struct CR_I2S_TXD_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_TXD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_TXD_EN_R(crate::FieldReader::new(bits))
     }
@@ -501,6 +515,7 @@ impl<'a> CR_I2S_TXD_EN_W<'a> {
 #[doc = "Field `cr_i2s_s_en` reader - "]
 pub struct CR_I2S_S_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_S_EN_R(crate::FieldReader::new(bits))
     }
@@ -537,6 +552,7 @@ impl<'a> CR_I2S_S_EN_W<'a> {
 #[doc = "Field `cr_i2s_m_en` reader - "]
 pub struct CR_I2S_M_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_M_EN_R(crate::FieldReader::new(bits))
     }

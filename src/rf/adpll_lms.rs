@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_LMS_SPEC>> for W {
 #[doc = "Field `adpll_fref_div2_en` reader - "]
 pub struct ADPLL_FREF_DIV2_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FREF_DIV2_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FREF_DIV2_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_FREF_DIV2_EN_W<'a> {
 #[doc = "Field `adpll_lms_ext_value_en` reader - "]
 pub struct ADPLL_LMS_EXT_VALUE_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LMS_EXT_VALUE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LMS_EXT_VALUE_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_LMS_EXT_VALUE_EN_W<'a> {
 #[doc = "Field `adpll_lms_ext_value` reader - "]
 pub struct ADPLL_LMS_EXT_VALUE_R(crate::FieldReader<u16, u16>);
 impl ADPLL_LMS_EXT_VALUE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         ADPLL_LMS_EXT_VALUE_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> ADPLL_LMS_EXT_VALUE_W<'a> {
 #[doc = "Field `adpll_sdm_dither_en` reader - "]
 pub struct ADPLL_SDM_DITHER_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SDM_DITHER_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SDM_DITHER_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> ADPLL_SDM_DITHER_EN_W<'a> {
 #[doc = "Field `adpll_sdm_dither_en_ctrl_hw` reader - "]
 pub struct ADPLL_SDM_DITHER_EN_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SDM_DITHER_EN_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SDM_DITHER_EN_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> ADPLL_SDM_DITHER_EN_CTRL_HW_W<'a> {
 #[doc = "Field `adpll_lms_step` reader - "]
 pub struct ADPLL_LMS_STEP_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LMS_STEP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LMS_STEP_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> ADPLL_LMS_STEP_W<'a> {
 #[doc = "Field `adpll_sdm_dither_prbs_en` reader - "]
 pub struct ADPLL_SDM_DITHER_PRBS_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SDM_DITHER_PRBS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SDM_DITHER_PRBS_EN_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> ADPLL_SDM_DITHER_PRBS_EN_W<'a> {
 #[doc = "Field `adpll_pha_dem_en` reader - "]
 pub struct ADPLL_PHA_DEM_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_PHA_DEM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_PHA_DEM_EN_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> ADPLL_PHA_DEM_EN_W<'a> {
 #[doc = "Field `adpll_pha_dither_en` reader - "]
 pub struct ADPLL_PHA_DITHER_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_PHA_DITHER_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_PHA_DITHER_EN_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> ADPLL_PHA_DITHER_EN_W<'a> {
 #[doc = "Field `adpll_lms_step_enlarge` reader - "]
 pub struct ADPLL_LMS_STEP_ENLARGE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LMS_STEP_ENLARGE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LMS_STEP_ENLARGE_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> ADPLL_LMS_STEP_ENLARGE_W<'a> {
 #[doc = "Field `adpll_pha_prbs_sel` reader - "]
 pub struct ADPLL_PHA_PRBS_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_PHA_PRBS_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_PHA_PRBS_SEL_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> ADPLL_PHA_PRBS_SEL_W<'a> {
 #[doc = "Field `adpll_lms_q_delay` reader - "]
 pub struct ADPLL_LMS_Q_DELAY_R(crate::FieldReader<u8, u8>);
 impl ADPLL_LMS_Q_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_LMS_Q_DELAY_R(crate::FieldReader::new(bits))
     }
@@ -429,6 +441,7 @@ impl<'a> ADPLL_LMS_Q_DELAY_W<'a> {
 #[doc = "Field `adpll_pha_cancel_en` reader - "]
 pub struct ADPLL_PHA_CANCEL_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_PHA_CANCEL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_PHA_CANCEL_EN_R(crate::FieldReader::new(bits))
     }
@@ -465,6 +478,7 @@ impl<'a> ADPLL_PHA_CANCEL_EN_W<'a> {
 #[doc = "Field `adpll_pha_cancel_delay` reader - "]
 pub struct ADPLL_PHA_CANCEL_DELAY_R(crate::FieldReader<u8, u8>);
 impl ADPLL_PHA_CANCEL_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_PHA_CANCEL_DELAY_R(crate::FieldReader::new(bits))
     }

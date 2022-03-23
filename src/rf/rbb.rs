@@ -37,6 +37,7 @@ impl From<crate::W<RBB_SPEC>> for W {
 #[doc = "Field `rbb_bm_op` reader - "]
 pub struct RBB_BM_OP_R(crate::FieldReader<u8, u8>);
 impl RBB_BM_OP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_BM_OP_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RBB_BM_OP_W<'a> {
 #[doc = "Field `rbb_vcm` reader - "]
 pub struct RBB_VCM_R(crate::FieldReader<u8, u8>);
 impl RBB_VCM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_VCM_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RBB_VCM_W<'a> {
 #[doc = "Field `rbb_deq` reader - "]
 pub struct RBB_DEQ_R(crate::FieldReader<u8, u8>);
 impl RBB_DEQ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_DEQ_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> RBB_DEQ_W<'a> {
 #[doc = "Field `rbb_lpf_en` reader - "]
 pub struct RBB_LPF_EN_R(crate::FieldReader<bool, bool>);
 impl RBB_LPF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_LPF_EN_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> RBB_LPF_EN_W<'a> {
 #[doc = "Field `rosdac_range` reader - "]
 pub struct ROSDAC_RANGE_R(crate::FieldReader<u8, u8>);
 impl ROSDAC_RANGE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSDAC_RANGE_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> ROSDAC_RANGE_W<'a> {
 #[doc = "Field `rbb_pkdet_vth` reader - "]
 pub struct RBB_PKDET_VTH_R(crate::FieldReader<u8, u8>);
 impl RBB_PKDET_VTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_PKDET_VTH_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> RBB_PKDET_VTH_W<'a> {
 #[doc = "Field `rbb_pkdet_en` reader - "]
 pub struct RBB_PKDET_EN_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_EN_R(crate::FieldReader::new(bits))
     }
@@ -239,6 +246,7 @@ impl<'a> RBB_PKDET_EN_W<'a> {
 #[doc = "Field `rbb_pkdet_en_hw` reader - "]
 pub struct RBB_PKDET_EN_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_EN_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_EN_HW_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> RBB_PKDET_EN_HW_W<'a> {
 #[doc = "Field `rbb_pkdet_en_ctrl_hw` reader - "]
 pub struct RBB_PKDET_EN_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_EN_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_EN_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -311,6 +320,7 @@ impl<'a> RBB_PKDET_EN_CTRL_HW_W<'a> {
 #[doc = "Field `rbb_pkdet_out_rstn` reader - "]
 pub struct RBB_PKDET_OUT_RSTN_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_OUT_RSTN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_OUT_RSTN_R(crate::FieldReader::new(bits))
     }
@@ -347,6 +357,7 @@ impl<'a> RBB_PKDET_OUT_RSTN_W<'a> {
 #[doc = "Field `rbb_pkdet_out_rstn_hw` reader - "]
 pub struct RBB_PKDET_OUT_RSTN_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_OUT_RSTN_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_OUT_RSTN_HW_R(crate::FieldReader::new(bits))
     }
@@ -383,6 +394,7 @@ impl<'a> RBB_PKDET_OUT_RSTN_HW_W<'a> {
 #[doc = "Field `rbb_pkdet_out_rstn_ctrl_hw` reader - "]
 pub struct RBB_PKDET_OUT_RSTN_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_PKDET_OUT_RSTN_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_PKDET_OUT_RSTN_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -419,6 +431,7 @@ impl<'a> RBB_PKDET_OUT_RSTN_CTRL_HW_W<'a> {
 #[doc = "Field `pkdet_out_raw` reader - "]
 pub struct PKDET_OUT_RAW_R(crate::FieldReader<bool, bool>);
 impl PKDET_OUT_RAW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PKDET_OUT_RAW_R(crate::FieldReader::new(bits))
     }
@@ -455,6 +468,7 @@ impl<'a> PKDET_OUT_RAW_W<'a> {
 #[doc = "Field `pkdet_out_latch` reader - "]
 pub struct PKDET_OUT_LATCH_R(crate::FieldReader<bool, bool>);
 impl PKDET_OUT_LATCH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PKDET_OUT_LATCH_R(crate::FieldReader::new(bits))
     }

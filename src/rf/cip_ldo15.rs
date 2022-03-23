@@ -37,6 +37,7 @@ impl From<crate::W<CIP_LDO15_SPEC>> for W {
 #[doc = "Field `vg11_sel` reader - "]
 pub struct VG11_SEL_R(crate::FieldReader<u8, u8>);
 impl VG11_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VG11_SEL_R(crate::FieldReader::new(bits))
     }

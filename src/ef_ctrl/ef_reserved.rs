@@ -37,6 +37,7 @@ impl From<crate::W<EF_RESERVED_SPEC>> for W {
 #[doc = "Field `ef_reserved` reader - "]
 pub struct EF_RESERVED_R(crate::FieldReader<u32, u32>);
 impl EF_RESERVED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         EF_RESERVED_R(crate::FieldReader::new(bits))
     }
@@ -56,7 +57,7 @@ impl<'a> EF_RESERVED_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
+        self.w.bits = value;
         self.w
     }
 }
@@ -64,7 +65,7 @@ impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn ef_reserved(&self) -> EF_RESERVED_R {
-        EF_RESERVED_R::new((self.bits & 0xffff_ffff) as u32)
+        EF_RESERVED_R::new(self.bits)
     }
 }
 impl W {

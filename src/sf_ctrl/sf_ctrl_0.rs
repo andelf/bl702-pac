@@ -37,6 +37,7 @@ impl From<crate::W<SF_CTRL_0_SPEC>> for W {
 #[doc = "Field `sf_id` reader - "]
 pub struct SF_ID_R(crate::FieldReader<u8, u8>);
 impl SF_ID_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_ID_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SF_ID_W<'a> {
 #[doc = "Field `sf_aes_iv_endian` reader - "]
 pub struct SF_AES_IV_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_IV_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_IV_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_AES_IV_ENDIAN_W<'a> {
 #[doc = "Field `sf_aes_key_endian` reader - "]
 pub struct SF_AES_KEY_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_KEY_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_KEY_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_AES_KEY_ENDIAN_W<'a> {
 #[doc = "Field `sf_aes_ctr_plus_en` reader - "]
 pub struct SF_AES_CTR_PLUS_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_CTR_PLUS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_CTR_PLUS_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_AES_CTR_PLUS_EN_W<'a> {
 #[doc = "Field `sf_aes_dout_endian` reader - "]
 pub struct SF_AES_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_DOUT_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SF_AES_DOUT_ENDIAN_W<'a> {
 #[doc = "Field `sf_aes_dly_mode` reader - "]
 pub struct SF_AES_DLY_MODE_R(crate::FieldReader<bool, bool>);
 impl SF_AES_DLY_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_DLY_MODE_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SF_AES_DLY_MODE_W<'a> {
 #[doc = "Field `sf_if_int_set` reader - "]
 pub struct SF_IF_INT_SET_R(crate::FieldReader<bool, bool>);
 impl SF_IF_INT_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_INT_SET_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> SF_IF_INT_SET_W<'a> {
 #[doc = "Field `sf_if_int_clr` reader - "]
 pub struct SF_IF_INT_CLR_R(crate::FieldReader<bool, bool>);
 impl SF_IF_INT_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_INT_CLR_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> SF_IF_INT_CLR_W<'a> {
 #[doc = "Field `sf_if_int` reader - "]
 pub struct SF_IF_INT_R(crate::FieldReader<bool, bool>);
 impl SF_IF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_INT_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> SF_IF_INT_W<'a> {
 #[doc = "Field `sf_if_read_dly_en` reader - "]
 pub struct SF_IF_READ_DLY_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_READ_DLY_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_READ_DLY_EN_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> SF_IF_READ_DLY_EN_W<'a> {
 #[doc = "Field `sf_if_read_dly_n` reader - "]
 pub struct SF_IF_READ_DLY_N_R(crate::FieldReader<u8, u8>);
 impl SF_IF_READ_DLY_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_READ_DLY_N_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> SF_IF_READ_DLY_N_W<'a> {
 #[doc = "Field `sf_clk_sahb_sram_sel` reader - "]
 pub struct SF_CLK_SAHB_SRAM_SEL_R(crate::FieldReader<bool, bool>);
 impl SF_CLK_SAHB_SRAM_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CLK_SAHB_SRAM_SEL_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> SF_CLK_SAHB_SRAM_SEL_W<'a> {
 #[doc = "Field `sf_clk_out_inv_sel` reader - "]
 pub struct SF_CLK_OUT_INV_SEL_R(crate::FieldReader<bool, bool>);
 impl SF_CLK_OUT_INV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CLK_OUT_INV_SEL_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> SF_CLK_OUT_INV_SEL_W<'a> {
 #[doc = "Field `sf_clk_out_gate_en` reader - "]
 pub struct SF_CLK_OUT_GATE_EN_R(crate::FieldReader<bool, bool>);
 impl SF_CLK_OUT_GATE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CLK_OUT_GATE_EN_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> SF_CLK_OUT_GATE_EN_W<'a> {
 #[doc = "Field `sf_clk_sf_rx_inv_sel` reader - "]
 pub struct SF_CLK_SF_RX_INV_SEL_R(crate::FieldReader<bool, bool>);
 impl SF_CLK_SF_RX_INV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CLK_SF_RX_INV_SEL_R(crate::FieldReader::new(bits))
     }

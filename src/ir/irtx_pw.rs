@@ -37,6 +37,7 @@ impl From<crate::W<IRTX_PW_SPEC>> for W {
 #[doc = "Field `cr_irtx_tail_ph1_w` reader - "]
 pub struct CR_IRTX_TAIL_PH1_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_TAIL_PH1_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_TAIL_PH1_W_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_IRTX_TAIL_PH1_W_W<'a> {
 #[doc = "Field `cr_irtx_tail_ph0_w` reader - "]
 pub struct CR_IRTX_TAIL_PH0_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_TAIL_PH0_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_TAIL_PH0_W_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_IRTX_TAIL_PH0_W_W<'a> {
 #[doc = "Field `cr_irtx_head_ph1_w` reader - "]
 pub struct CR_IRTX_HEAD_PH1_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_HEAD_PH1_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_HEAD_PH1_W_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> CR_IRTX_HEAD_PH1_W_W<'a> {
 #[doc = "Field `cr_irtx_head_ph0_w` reader - "]
 pub struct CR_IRTX_HEAD_PH0_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_HEAD_PH0_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_HEAD_PH0_W_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> CR_IRTX_HEAD_PH0_W_W<'a> {
 #[doc = "Field `cr_irtx_logic1_ph1_w` reader - "]
 pub struct CR_IRTX_LOGIC1_PH1_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_LOGIC1_PH1_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_LOGIC1_PH1_W_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> CR_IRTX_LOGIC1_PH1_W_W<'a> {
 #[doc = "Field `cr_irtx_logic1_ph0_w` reader - "]
 pub struct CR_IRTX_LOGIC1_PH0_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_LOGIC1_PH0_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_LOGIC1_PH0_W_R(crate::FieldReader::new(bits))
     }
@@ -193,6 +199,7 @@ impl<'a> CR_IRTX_LOGIC1_PH0_W_W<'a> {
 #[doc = "Field `cr_irtx_logic0_ph1_w` reader - "]
 pub struct CR_IRTX_LOGIC0_PH1_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_LOGIC0_PH1_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_LOGIC0_PH1_W_R(crate::FieldReader::new(bits))
     }
@@ -219,6 +226,7 @@ impl<'a> CR_IRTX_LOGIC0_PH1_W_W<'a> {
 #[doc = "Field `cr_irtx_logic0_ph0_w` reader - "]
 pub struct CR_IRTX_LOGIC0_PH0_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_LOGIC0_PH0_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_LOGIC0_PH0_W_R(crate::FieldReader::new(bits))
     }

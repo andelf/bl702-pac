@@ -37,6 +37,7 @@ impl From<crate::W<BG_SYS_TOP_SPEC>> for W {
 #[doc = "Field `bg_sys_start_ctrl_aon` reader - "]
 pub struct BG_SYS_START_CTRL_AON_R(crate::FieldReader<bool, bool>);
 impl BG_SYS_START_CTRL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BG_SYS_START_CTRL_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> BG_SYS_START_CTRL_AON_W<'a> {
 #[doc = "Field `pu_bg_sys_aon` reader - "]
 pub struct PU_BG_SYS_AON_R(crate::FieldReader<bool, bool>);
 impl PU_BG_SYS_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_BG_SYS_AON_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PU_BG_SYS_AON_W<'a> {
 #[doc = "Field `pmip_resv` reader - "]
 pub struct PMIP_RESV_R(crate::FieldReader<u8, u8>);
 impl PMIP_RESV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PMIP_RESV_R(crate::FieldReader::new(bits))
     }

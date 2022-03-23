@@ -37,6 +37,7 @@ impl From<crate::W<I2S_FIFO_CONFIG_0_SPEC>> for W {
 #[doc = "Field `cr_fifo_24b_lj` reader - "]
 pub struct CR_FIFO_24B_LJ_R(crate::FieldReader<bool, bool>);
 impl CR_FIFO_24B_LJ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FIFO_24B_LJ_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_FIFO_24B_LJ_W<'a> {
 #[doc = "Field `cr_fifo_lr_exchg` reader - "]
 pub struct CR_FIFO_LR_EXCHG_R(crate::FieldReader<bool, bool>);
 impl CR_FIFO_LR_EXCHG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FIFO_LR_EXCHG_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_FIFO_LR_EXCHG_W<'a> {
 #[doc = "Field `cr_fifo_lr_merge` reader - "]
 pub struct CR_FIFO_LR_MERGE_R(crate::FieldReader<bool, bool>);
 impl CR_FIFO_LR_MERGE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_FIFO_LR_MERGE_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_FIFO_LR_MERGE_W<'a> {
 #[doc = "Field `rx_fifo_underflow` reader - "]
 pub struct RX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_UNDERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RX_FIFO_UNDERFLOW_W<'a> {
 #[doc = "Field `rx_fifo_overflow` reader - "]
 pub struct RX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_OVERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> RX_FIFO_OVERFLOW_W<'a> {
 #[doc = "Field `tx_fifo_underflow` reader - "]
 pub struct TX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_UNDERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TX_FIFO_UNDERFLOW_W<'a> {
 #[doc = "Field `tx_fifo_overflow` reader - "]
 pub struct TX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_OVERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> TX_FIFO_OVERFLOW_W<'a> {
 #[doc = "Field `rx_fifo_clr` reader - "]
 pub struct RX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> RX_FIFO_CLR_W<'a> {
 #[doc = "Field `tx_fifo_clr` reader - "]
 pub struct TX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl TX_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TX_FIFO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> TX_FIFO_CLR_W<'a> {
 #[doc = "Field `i2s_dma_rx_en` reader - "]
 pub struct I2S_DMA_RX_EN_R(crate::FieldReader<bool, bool>);
 impl I2S_DMA_RX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2S_DMA_RX_EN_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> I2S_DMA_RX_EN_W<'a> {
 #[doc = "Field `i2s_dma_tx_en` reader - "]
 pub struct I2S_DMA_TX_EN_R(crate::FieldReader<bool, bool>);
 impl I2S_DMA_TX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2S_DMA_TX_EN_R(crate::FieldReader::new(bits))
     }

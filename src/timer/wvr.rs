@@ -37,6 +37,7 @@ impl From<crate::W<WVR_SPEC>> for W {
 #[doc = "Field `wvr` reader - "]
 pub struct WVR_R(crate::FieldReader<u16, u16>);
 impl WVR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         WVR_R(crate::FieldReader::new(bits))
     }

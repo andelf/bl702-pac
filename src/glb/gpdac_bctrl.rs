@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_BCTRL_SPEC>> for W {
 #[doc = "Field `gpdac_b_outmux` reader - "]
 pub struct GPDAC_B_OUTMUX_R(crate::FieldReader<u8, u8>);
 impl GPDAC_B_OUTMUX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_B_OUTMUX_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPDAC_B_OUTMUX_W<'a> {
 #[doc = "Field `gpdac_b_rng` reader - "]
 pub struct GPDAC_B_RNG_R(crate::FieldReader<u8, u8>);
 impl GPDAC_B_RNG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_B_RNG_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPDAC_B_RNG_W<'a> {
 #[doc = "Field `gpdac_iob_en` reader - "]
 pub struct GPDAC_IOB_EN_R(crate::FieldReader<bool, bool>);
 impl GPDAC_IOB_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_IOB_EN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> GPDAC_IOB_EN_W<'a> {
 #[doc = "Field `gpdac_b_en` reader - "]
 pub struct GPDAC_B_EN_R(crate::FieldReader<bool, bool>);
 impl GPDAC_B_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_B_EN_R(crate::FieldReader::new(bits))
     }

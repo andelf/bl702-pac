@@ -37,6 +37,7 @@ impl From<crate::W<KS_INT_EN_SPEC>> for W {
 #[doc = "Field `ks_int_en` reader - "]
 pub struct KS_INT_EN_R(crate::FieldReader<bool, bool>);
 impl KS_INT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KS_INT_EN_R(crate::FieldReader::new(bits))
     }

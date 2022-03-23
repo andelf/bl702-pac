@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_CONFIG2_SPEC>> for W {
 #[doc = "Field `gpadc_tsvbe_low` reader - "]
 pub struct GPADC_TSVBE_LOW_R(crate::FieldReader<bool, bool>);
 impl GPADC_TSVBE_LOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_TSVBE_LOW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> GPADC_TSVBE_LOW_W<'a> {
 #[doc = "Field `gpadc_dly_sel` reader - "]
 pub struct GPADC_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> GPADC_DLY_SEL_W<'a> {
 #[doc = "Field `gpadc_pga1_gain` reader - "]
 pub struct GPADC_PGA1_GAIN_R(crate::FieldReader<u8, u8>);
 impl GPADC_PGA1_GAIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_PGA1_GAIN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> GPADC_PGA1_GAIN_W<'a> {
 #[doc = "Field `gpadc_pga2_gain` reader - "]
 pub struct GPADC_PGA2_GAIN_R(crate::FieldReader<u8, u8>);
 impl GPADC_PGA2_GAIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_PGA2_GAIN_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> GPADC_PGA2_GAIN_W<'a> {
 #[doc = "Field `gpadc_test_sel` reader - "]
 pub struct GPADC_TEST_SEL_R(crate::FieldReader<u8, u8>);
 impl GPADC_TEST_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_TEST_SEL_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> GPADC_TEST_SEL_W<'a> {
 #[doc = "Field `gpadc_test_en` reader - "]
 pub struct GPADC_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> GPADC_TEST_EN_W<'a> {
 #[doc = "Field `gpadc_bias_sel` reader - "]
 pub struct GPADC_BIAS_SEL_R(crate::FieldReader<bool, bool>);
 impl GPADC_BIAS_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_BIAS_SEL_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> GPADC_BIAS_SEL_W<'a> {
 #[doc = "Field `gpadc_chop_mode` reader - "]
 pub struct GPADC_CHOP_MODE_R(crate::FieldReader<u8, u8>);
 impl GPADC_CHOP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_CHOP_MODE_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> GPADC_CHOP_MODE_W<'a> {
 #[doc = "Field `gpadc_pga_vcmi_en` reader - "]
 pub struct GPADC_PGA_VCMI_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_PGA_VCMI_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_PGA_VCMI_EN_R(crate::FieldReader::new(bits))
     }
@@ -311,6 +320,7 @@ impl<'a> GPADC_PGA_VCMI_EN_W<'a> {
 #[doc = "Field `gpadc_pga_en` reader - "]
 pub struct GPADC_PGA_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_PGA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_PGA_EN_R(crate::FieldReader::new(bits))
     }
@@ -347,6 +357,7 @@ impl<'a> GPADC_PGA_EN_W<'a> {
 #[doc = "Field `gpadc_pga_os_cal` reader - "]
 pub struct GPADC_PGA_OS_CAL_R(crate::FieldReader<u8, u8>);
 impl GPADC_PGA_OS_CAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_PGA_OS_CAL_R(crate::FieldReader::new(bits))
     }
@@ -373,6 +384,7 @@ impl<'a> GPADC_PGA_OS_CAL_W<'a> {
 #[doc = "Field `gpadc_pga_vcm` reader - "]
 pub struct GPADC_PGA_VCM_R(crate::FieldReader<u8, u8>);
 impl GPADC_PGA_VCM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_PGA_VCM_R(crate::FieldReader::new(bits))
     }
@@ -399,6 +411,7 @@ impl<'a> GPADC_PGA_VCM_W<'a> {
 #[doc = "Field `gpadc_ts_en` reader - "]
 pub struct GPADC_TS_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_TS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_TS_EN_R(crate::FieldReader::new(bits))
     }
@@ -435,6 +448,7 @@ impl<'a> GPADC_TS_EN_W<'a> {
 #[doc = "Field `gpadc_tsext_sel` reader - "]
 pub struct GPADC_TSEXT_SEL_R(crate::FieldReader<bool, bool>);
 impl GPADC_TSEXT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_TSEXT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -471,6 +485,7 @@ impl<'a> GPADC_TSEXT_SEL_W<'a> {
 #[doc = "Field `gpadc_vbat_en` reader - "]
 pub struct GPADC_VBAT_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_VBAT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_VBAT_EN_R(crate::FieldReader::new(bits))
     }
@@ -507,6 +522,7 @@ impl<'a> GPADC_VBAT_EN_W<'a> {
 #[doc = "Field `gpadc_vref_sel` reader - "]
 pub struct GPADC_VREF_SEL_R(crate::FieldReader<bool, bool>);
 impl GPADC_VREF_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_VREF_SEL_R(crate::FieldReader::new(bits))
     }
@@ -543,6 +559,7 @@ impl<'a> GPADC_VREF_SEL_W<'a> {
 #[doc = "Field `gpadc_diff_mode` reader - "]
 pub struct GPADC_DIFF_MODE_R(crate::FieldReader<bool, bool>);
 impl GPADC_DIFF_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_DIFF_MODE_R(crate::FieldReader::new(bits))
     }

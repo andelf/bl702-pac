@@ -37,6 +37,7 @@ impl From<crate::W<RF_TOP_AON_SPEC>> for W {
 #[doc = "Field `ldo15rf_bypass_aon` reader - "]
 pub struct LDO15RF_BYPASS_AON_R(crate::FieldReader<bool, bool>);
 impl LDO15RF_BYPASS_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO15RF_BYPASS_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> LDO15RF_BYPASS_AON_W<'a> {
 #[doc = "Field `ldo15rf_cc_aon` reader - "]
 pub struct LDO15RF_CC_AON_R(crate::FieldReader<u8, u8>);
 impl LDO15RF_CC_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO15RF_CC_AON_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> LDO15RF_CC_AON_W<'a> {
 #[doc = "Field `ldo15rf_vout_sel_aon` reader - "]
 pub struct LDO15RF_VOUT_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl LDO15RF_VOUT_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO15RF_VOUT_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> LDO15RF_VOUT_SEL_AON_W<'a> {
 #[doc = "Field `ldo15rf_pulldown_sel_aon` reader - "]
 pub struct LDO15RF_PULLDOWN_SEL_AON_R(crate::FieldReader<bool, bool>);
 impl LDO15RF_PULLDOWN_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO15RF_PULLDOWN_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> LDO15RF_PULLDOWN_SEL_AON_W<'a> {
 #[doc = "Field `ldo15rf_pulldown_aon` reader - "]
 pub struct LDO15RF_PULLDOWN_AON_R(crate::FieldReader<bool, bool>);
 impl LDO15RF_PULLDOWN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO15RF_PULLDOWN_AON_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> LDO15RF_PULLDOWN_AON_W<'a> {
 #[doc = "Field `ldo15rf_sstart_delay_aon` reader - "]
 pub struct LDO15RF_SSTART_DELAY_AON_R(crate::FieldReader<u8, u8>);
 impl LDO15RF_SSTART_DELAY_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LDO15RF_SSTART_DELAY_AON_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> LDO15RF_SSTART_DELAY_AON_W<'a> {
 #[doc = "Field `ldo15rf_sstart_sel_aon` reader - "]
 pub struct LDO15RF_SSTART_SEL_AON_R(crate::FieldReader<bool, bool>);
 impl LDO15RF_SSTART_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LDO15RF_SSTART_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> LDO15RF_SSTART_SEL_AON_W<'a> {
 #[doc = "Field `pu_xtal_aon` reader - "]
 pub struct PU_XTAL_AON_R(crate::FieldReader<bool, bool>);
 impl PU_XTAL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_XTAL_AON_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> PU_XTAL_AON_W<'a> {
 #[doc = "Field `pu_xtal_buf_aon` reader - "]
 pub struct PU_XTAL_BUF_AON_R(crate::FieldReader<bool, bool>);
 impl PU_XTAL_BUF_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_XTAL_BUF_AON_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> PU_XTAL_BUF_AON_W<'a> {
 #[doc = "Field `pu_sfreg_aon` reader - "]
 pub struct PU_SFREG_AON_R(crate::FieldReader<bool, bool>);
 impl PU_SFREG_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_SFREG_AON_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> PU_SFREG_AON_W<'a> {
 #[doc = "Field `pu_ldo15rf_aon` reader - "]
 pub struct PU_LDO15RF_AON_R(crate::FieldReader<bool, bool>);
 impl PU_LDO15RF_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_LDO15RF_AON_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> PU_LDO15RF_AON_W<'a> {
 #[doc = "Field `pu_mbg_aon` reader - "]
 pub struct PU_MBG_AON_R(crate::FieldReader<bool, bool>);
 impl PU_MBG_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_MBG_AON_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<USB_SETUP_DATA_0_SPEC>> for W {
 #[doc = "Field `sts_setup_data_b3` reader - "]
 pub struct STS_SETUP_DATA_B3_R(crate::FieldReader<u8, u8>);
 impl STS_SETUP_DATA_B3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_SETUP_DATA_B3_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> STS_SETUP_DATA_B3_W<'a> {
 #[doc = "Field `sts_setup_data_b2` reader - "]
 pub struct STS_SETUP_DATA_B2_R(crate::FieldReader<u8, u8>);
 impl STS_SETUP_DATA_B2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_SETUP_DATA_B2_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> STS_SETUP_DATA_B2_W<'a> {
 #[doc = "Field `sts_setup_data_b1` reader - "]
 pub struct STS_SETUP_DATA_B1_R(crate::FieldReader<u8, u8>);
 impl STS_SETUP_DATA_B1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_SETUP_DATA_B1_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> STS_SETUP_DATA_B1_W<'a> {
 #[doc = "Field `sts_setup_data_b0` reader - "]
 pub struct STS_SETUP_DATA_B0_R(crate::FieldReader<u8, u8>);
 impl STS_SETUP_DATA_B0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_SETUP_DATA_B0_R(crate::FieldReader::new(bits))
     }

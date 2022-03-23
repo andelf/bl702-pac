@@ -37,6 +37,7 @@ impl From<crate::W<TRX_GAIN_BW_HW_SPEC>> for W {
 #[doc = "Field `pa_inbuf_unit_hw` reader - "]
 pub struct PA_INBUF_UNIT_HW_R(crate::FieldReader<u8, u8>);
 impl PA_INBUF_UNIT_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_INBUF_UNIT_HW_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> PA_INBUF_UNIT_HW_W<'a> {
 #[doc = "Field `pa_ref_dac_hw` reader - "]
 pub struct PA_REF_DAC_HW_R(crate::FieldReader<u8, u8>);
 impl PA_REF_DAC_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_REF_DAC_HW_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> PA_REF_DAC_HW_W<'a> {
 #[doc = "Field `rbb_bw_hw` reader - "]
 pub struct RBB_BW_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_BW_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_BW_HW_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> RBB_BW_HW_W<'a> {
 #[doc = "Field `gc_rbb2_hw` reader - "]
 pub struct GC_RBB2_HW_R(crate::FieldReader<u8, u8>);
 impl GC_RBB2_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GC_RBB2_HW_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> GC_RBB2_HW_W<'a> {
 #[doc = "Field `gc_rbb1_hw` reader - "]
 pub struct GC_RBB1_HW_R(crate::FieldReader<u8, u8>);
 impl GC_RBB1_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GC_RBB1_HW_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> GC_RBB1_HW_W<'a> {
 #[doc = "Field `gc_lna_hw` reader - "]
 pub struct GC_LNA_HW_R(crate::FieldReader<u8, u8>);
 impl GC_LNA_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GC_LNA_HW_R(crate::FieldReader::new(bits))
     }

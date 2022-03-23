@@ -37,6 +37,7 @@ impl From<crate::W<CLK_CFG3_SPEC>> for W {
 #[doc = "Field `chip_clk_out_1_sel` reader - "]
 pub struct CHIP_CLK_OUT_1_SEL_R(crate::FieldReader<u8, u8>);
 impl CHIP_CLK_OUT_1_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CHIP_CLK_OUT_1_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CHIP_CLK_OUT_1_SEL_W<'a> {
 #[doc = "Field `chip_clk_out_0_sel` reader - "]
 pub struct CHIP_CLK_OUT_0_SEL_R(crate::FieldReader<u8, u8>);
 impl CHIP_CLK_OUT_0_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CHIP_CLK_OUT_0_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CHIP_CLK_OUT_0_SEL_W<'a> {
 #[doc = "Field `i2c_clk_en` reader - "]
 pub struct I2C_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl I2C_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I2C_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> I2C_CLK_EN_W<'a> {
 #[doc = "Field `i2c_clk_div` reader - "]
 pub struct I2C_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl I2C_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         I2C_CLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> I2C_CLK_DIV_W<'a> {
 #[doc = "Field `cfg_inv_eth_rx_clk` reader - "]
 pub struct CFG_INV_ETH_RX_CLK_R(crate::FieldReader<bool, bool>);
 impl CFG_INV_ETH_RX_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_INV_ETH_RX_CLK_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> CFG_INV_ETH_RX_CLK_W<'a> {
 #[doc = "Field `cfg_inv_rf_test_clk_o` reader - "]
 pub struct CFG_INV_RF_TEST_CLK_O_R(crate::FieldReader<bool, bool>);
 impl CFG_INV_RF_TEST_CLK_O_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_INV_RF_TEST_CLK_O_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> CFG_INV_RF_TEST_CLK_O_W<'a> {
 #[doc = "Field `spi_clk_en` reader - "]
 pub struct SPI_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl SPI_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPI_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> SPI_CLK_EN_W<'a> {
 #[doc = "Field `cfg_inv_eth_tx_clk` reader - "]
 pub struct CFG_INV_ETH_TX_CLK_R(crate::FieldReader<bool, bool>);
 impl CFG_INV_ETH_TX_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_INV_ETH_TX_CLK_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> CFG_INV_ETH_TX_CLK_W<'a> {
 #[doc = "Field `cfg_inv_eth_ref_clk_o` reader - "]
 pub struct CFG_INV_ETH_REF_CLK_O_R(crate::FieldReader<bool, bool>);
 impl CFG_INV_ETH_REF_CLK_O_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_INV_ETH_REF_CLK_O_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> CFG_INV_ETH_REF_CLK_O_W<'a> {
 #[doc = "Field `cfg_sel_eth_ref_clk_o` reader - "]
 pub struct CFG_SEL_ETH_REF_CLK_O_R(crate::FieldReader<bool, bool>);
 impl CFG_SEL_ETH_REF_CLK_O_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_SEL_ETH_REF_CLK_O_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> CFG_SEL_ETH_REF_CLK_O_W<'a> {
 #[doc = "Field `spi_clk_div` reader - "]
 pub struct SPI_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl SPI_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SPI_CLK_DIV_R(crate::FieldReader::new(bits))
     }

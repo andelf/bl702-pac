@@ -37,6 +37,7 @@ impl From<crate::W<SE_AES_0_SBOOT_SPEC>> for W {
 #[doc = "Field `se_aes_0_sboot_key_sel` reader - "]
 pub struct SE_AES_0_SBOOT_KEY_SEL_R(crate::FieldReader<bool, bool>);
 impl SE_AES_0_SBOOT_KEY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_AES_0_SBOOT_KEY_SEL_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<XTAL32K_SPEC>> for W {
 #[doc = "Field `pu_xtal32k` reader - "]
 pub struct PU_XTAL32K_R(crate::FieldReader<bool, bool>);
 impl PU_XTAL32K_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_XTAL32K_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PU_XTAL32K_W<'a> {
 #[doc = "Field `pu_xtal32k_buf` reader - "]
 pub struct PU_XTAL32K_BUF_R(crate::FieldReader<bool, bool>);
 impl PU_XTAL32K_BUF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_XTAL32K_BUF_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PU_XTAL32K_BUF_W<'a> {
 #[doc = "Field `xtal32k_ac_cap_short` reader - "]
 pub struct XTAL32K_AC_CAP_SHORT_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_AC_CAP_SHORT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_AC_CAP_SHORT_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> XTAL32K_AC_CAP_SHORT_W<'a> {
 #[doc = "Field `xtal32k_capbank` reader - "]
 pub struct XTAL32K_CAPBANK_R(crate::FieldReader<u8, u8>);
 impl XTAL32K_CAPBANK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL32K_CAPBANK_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> XTAL32K_CAPBANK_W<'a> {
 #[doc = "Field `xtal32k_inv_stre` reader - "]
 pub struct XTAL32K_INV_STRE_R(crate::FieldReader<u8, u8>);
 impl XTAL32K_INV_STRE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL32K_INV_STRE_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> XTAL32K_INV_STRE_W<'a> {
 #[doc = "Field `xtal32k_otf_short` reader - "]
 pub struct XTAL32K_OTF_SHORT_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_OTF_SHORT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_OTF_SHORT_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> XTAL32K_OTF_SHORT_W<'a> {
 #[doc = "Field `xtal32k_outbuf_stre` reader - "]
 pub struct XTAL32K_OUTBUF_STRE_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_OUTBUF_STRE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_OUTBUF_STRE_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> XTAL32K_OUTBUF_STRE_W<'a> {
 #[doc = "Field `xtal32k_reg` reader - "]
 pub struct XTAL32K_REG_R(crate::FieldReader<u8, u8>);
 impl XTAL32K_REG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL32K_REG_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> XTAL32K_REG_W<'a> {
 #[doc = "Field `xtal32k_amp_ctrl` reader - "]
 pub struct XTAL32K_AMP_CTRL_R(crate::FieldReader<u8, u8>);
 impl XTAL32K_AMP_CTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL32K_AMP_CTRL_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> XTAL32K_AMP_CTRL_W<'a> {
 #[doc = "Field `xtal32k_ext_sel` reader - "]
 pub struct XTAL32K_EXT_SEL_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_EXT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_EXT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> XTAL32K_EXT_SEL_W<'a> {
 #[doc = "Field `xtal32k_lowv_en` reader - "]
 pub struct XTAL32K_LOWV_EN_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_LOWV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_LOWV_EN_R(crate::FieldReader::new(bits))
     }
@@ -393,6 +404,7 @@ impl<'a> XTAL32K_LOWV_EN_W<'a> {
 #[doc = "Field `xtal32k_hiz_en` reader - "]
 pub struct XTAL32K_HIZ_EN_R(crate::FieldReader<bool, bool>);
 impl XTAL32K_HIZ_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL32K_HIZ_EN_R(crate::FieldReader::new(bits))
     }

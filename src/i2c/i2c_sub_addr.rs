@@ -37,6 +37,7 @@ impl From<crate::W<I2C_SUB_ADDR_SPEC>> for W {
 #[doc = "Field `cr_i2c_sub_addr_b3` reader - "]
 pub struct CR_I2C_SUB_ADDR_B3_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SUB_ADDR_B3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SUB_ADDR_B3_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_I2C_SUB_ADDR_B3_W<'a> {
 #[doc = "Field `cr_i2c_sub_addr_b2` reader - "]
 pub struct CR_I2C_SUB_ADDR_B2_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SUB_ADDR_B2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SUB_ADDR_B2_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_I2C_SUB_ADDR_B2_W<'a> {
 #[doc = "Field `cr_i2c_sub_addr_b1` reader - "]
 pub struct CR_I2C_SUB_ADDR_B1_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SUB_ADDR_B1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SUB_ADDR_B1_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> CR_I2C_SUB_ADDR_B1_W<'a> {
 #[doc = "Field `cr_i2c_sub_addr_b0` reader - "]
 pub struct CR_I2C_SUB_ADDR_B0_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SUB_ADDR_B0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SUB_ADDR_B0_R(crate::FieldReader::new(bits))
     }

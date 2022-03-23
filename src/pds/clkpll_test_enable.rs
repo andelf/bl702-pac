@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_TEST_ENABLE_SPEC>> for W {
 #[doc = "Field `clkpll_dc_tp_out_en` reader - "]
 pub struct CLKPLL_DC_TP_OUT_EN_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_DC_TP_OUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_DC_TP_OUT_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CLKPLL_DC_TP_OUT_EN_W<'a> {
 #[doc = "Field `ten_clkpll` reader - "]
 pub struct TEN_CLKPLL_R(crate::FieldReader<bool, bool>);
 impl TEN_CLKPLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_CLKPLL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TEN_CLKPLL_W<'a> {
 #[doc = "Field `ten_clkpll_sfreg` reader - "]
 pub struct TEN_CLKPLL_SFREG_R(crate::FieldReader<bool, bool>);
 impl TEN_CLKPLL_SFREG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_CLKPLL_SFREG_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> TEN_CLKPLL_SFREG_W<'a> {
 #[doc = "Field `dten_clkpll_fin` reader - "]
 pub struct DTEN_CLKPLL_FIN_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLKPLL_FIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLKPLL_FIN_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> DTEN_CLKPLL_FIN_W<'a> {
 #[doc = "Field `dten_clkpll_fref` reader - "]
 pub struct DTEN_CLKPLL_FREF_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLKPLL_FREF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLKPLL_FREF_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> DTEN_CLKPLL_FREF_W<'a> {
 #[doc = "Field `dten_clkpll_fsdm` reader - "]
 pub struct DTEN_CLKPLL_FSDM_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLKPLL_FSDM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLKPLL_FSDM_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> DTEN_CLKPLL_FSDM_W<'a> {
 #[doc = "Field `dten_clk32M` reader - "]
 pub struct DTEN_CLK32M_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLK32M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLK32M_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> DTEN_CLK32M_W<'a> {
 #[doc = "Field `dten_clk96M` reader - "]
 pub struct DTEN_CLK96M_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLK96M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLK96M_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> DTEN_CLK96M_W<'a> {
 #[doc = "Field `dten_clkpll_postdiv_clk` reader - "]
 pub struct DTEN_CLKPLL_POSTDIV_CLK_R(crate::FieldReader<bool, bool>);
 impl DTEN_CLKPLL_POSTDIV_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEN_CLKPLL_POSTDIV_CLK_R(crate::FieldReader::new(bits))
     }

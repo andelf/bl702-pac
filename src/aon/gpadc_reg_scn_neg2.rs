@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_SCN_NEG2_SPEC>> for W {
 #[doc = "Field `gpadc_scan_neg_11` reader - "]
 pub struct GPADC_SCAN_NEG_11_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_11_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_11_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> GPADC_SCAN_NEG_11_W<'a> {
 #[doc = "Field `gpadc_scan_neg_10` reader - "]
 pub struct GPADC_SCAN_NEG_10_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_10_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_10_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPADC_SCAN_NEG_10_W<'a> {
 #[doc = "Field `gpadc_scan_neg_9` reader - "]
 pub struct GPADC_SCAN_NEG_9_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_9_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_9_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> GPADC_SCAN_NEG_9_W<'a> {
 #[doc = "Field `gpadc_scan_neg_8` reader - "]
 pub struct GPADC_SCAN_NEG_8_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_8_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_8_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> GPADC_SCAN_NEG_8_W<'a> {
 #[doc = "Field `gpadc_scan_neg_7` reader - "]
 pub struct GPADC_SCAN_NEG_7_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_7_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> GPADC_SCAN_NEG_7_W<'a> {
 #[doc = "Field `gpadc_scan_neg_6` reader - "]
 pub struct GPADC_SCAN_NEG_6_R(crate::FieldReader<u8, u8>);
 impl GPADC_SCAN_NEG_6_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_SCAN_NEG_6_R(crate::FieldReader::new(bits))
     }

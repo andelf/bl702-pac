@@ -37,6 +37,7 @@ impl From<crate::W<SE_PKA_0_CTRL_0_SPEC>> for W {
 #[doc = "Field `se_pka_0_status` reader - "]
 pub struct SE_PKA_0_STATUS_R(crate::FieldReader<u16, u16>);
 impl SE_PKA_0_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SE_PKA_0_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_PKA_0_STATUS_W<'a> {
 #[doc = "Field `se_pka_0_status_clr_1t` reader - "]
 pub struct SE_PKA_0_STATUS_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_STATUS_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_STATUS_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SE_PKA_0_STATUS_CLR_1T_W<'a> {
 #[doc = "Field `se_pka_0_ram_clr_md` reader - "]
 pub struct SE_PKA_0_RAM_CLR_MD_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_RAM_CLR_MD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_RAM_CLR_MD_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SE_PKA_0_RAM_CLR_MD_W<'a> {
 #[doc = "Field `se_pka_0_endian` reader - "]
 pub struct SE_PKA_0_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SE_PKA_0_ENDIAN_W<'a> {
 #[doc = "Field `se_pka_0_int_mask` reader - "]
 pub struct SE_PKA_0_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SE_PKA_0_INT_MASK_W<'a> {
 #[doc = "Field `se_pka_0_int_set` reader - "]
 pub struct SE_PKA_0_INT_SET_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_INT_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_INT_SET_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SE_PKA_0_INT_SET_W<'a> {
 #[doc = "Field `se_pka_0_int_clr_1t` reader - "]
 pub struct SE_PKA_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_INT_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> SE_PKA_0_INT_CLR_1T_W<'a> {
 #[doc = "Field `se_pka_0_int` reader - "]
 pub struct SE_PKA_0_INT_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_INT_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> SE_PKA_0_INT_W<'a> {
 #[doc = "Field `se_pka_0_prot_md` reader - "]
 pub struct SE_PKA_0_PROT_MD_R(crate::FieldReader<u8, u8>);
 impl SE_PKA_0_PROT_MD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_PKA_0_PROT_MD_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> SE_PKA_0_PROT_MD_W<'a> {
 #[doc = "Field `se_pka_0_en` reader - "]
 pub struct SE_PKA_0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_EN_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> SE_PKA_0_EN_W<'a> {
 #[doc = "Field `se_pka_0_busy` reader - "]
 pub struct SE_PKA_0_BUSY_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_BUSY_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> SE_PKA_0_BUSY_W<'a> {
 #[doc = "Field `se_pka_0_done_clr_1t` reader - "]
 pub struct SE_PKA_0_DONE_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_DONE_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_DONE_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> SE_PKA_0_DONE_CLR_1T_W<'a> {
 #[doc = "Field `se_pka_0_done` reader - "]
 pub struct SE_PKA_0_DONE_R(crate::FieldReader<bool, bool>);
 impl SE_PKA_0_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_PKA_0_DONE_R(crate::FieldReader::new(bits))
     }

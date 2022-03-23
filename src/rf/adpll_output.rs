@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_OUTPUT_SPEC>> for W {
 #[doc = "Field `adpll_freqerr_det_done` reader - "]
 pub struct ADPLL_FREQERR_DET_DONE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FREQERR_DET_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FREQERR_DET_DONE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_FREQERR_DET_DONE_W<'a> {
 #[doc = "Field `adpll_freqerr_ou` reader - "]
 pub struct ADPLL_FREQERR_OU_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FREQERR_OU_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FREQERR_OU_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_FREQERR_OU_W<'a> {
 #[doc = "Field `adpll_freqerr_sign` reader - "]
 pub struct ADPLL_FREQERR_SIGN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FREQERR_SIGN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FREQERR_SIGN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ADPLL_FREQERR_SIGN_W<'a> {
 #[doc = "Field `adpll_vctrl_det_done` reader - "]
 pub struct ADPLL_VCTRL_DET_DONE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_DET_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_DET_DONE_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> ADPLL_VCTRL_DET_DONE_W<'a> {
 #[doc = "Field `adpll_capcode_ud` reader - "]
 pub struct ADPLL_CAPCODE_UD_R(crate::FieldReader<bool, bool>);
 impl ADPLL_CAPCODE_UD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_CAPCODE_UD_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> ADPLL_CAPCODE_UD_W<'a> {
 #[doc = "Field `adpll_mom_update_total_ou` reader - "]
 pub struct ADPLL_MOM_UPDATE_TOTAL_OU_R(crate::FieldReader<u8, u8>);
 impl ADPLL_MOM_UPDATE_TOTAL_OU_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_MOM_UPDATE_TOTAL_OU_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> ADPLL_MOM_UPDATE_TOTAL_OU_W<'a> {
 #[doc = "Field `adpll_capcode_out_range` reader - "]
 pub struct ADPLL_CAPCODE_OUT_RANGE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_CAPCODE_OUT_RANGE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_CAPCODE_OUT_RANGE_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> ADPLL_CAPCODE_OUT_RANGE_W<'a> {
 #[doc = "Field `adpll_fcal_done_fsm` reader - "]
 pub struct ADPLL_FCAL_DONE_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FCAL_DONE_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FCAL_DONE_FSM_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> ADPLL_FCAL_DONE_FSM_W<'a> {
 #[doc = "Field `adpll_spd_lock_fsm` reader - "]
 pub struct ADPLL_SPD_LOCK_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SPD_LOCK_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SPD_LOCK_FSM_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> ADPLL_SPD_LOCK_FSM_W<'a> {
 #[doc = "Field `adpll_spd_unlock_fsm` reader - "]
 pub struct ADPLL_SPD_UNLOCK_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SPD_UNLOCK_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SPD_UNLOCK_FSM_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> ADPLL_SPD_UNLOCK_FSM_W<'a> {
 #[doc = "Field `adpll_mom_update_ou_fsm` reader - "]
 pub struct ADPLL_MOM_UPDATE_OU_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_MOM_UPDATE_OU_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_MOM_UPDATE_OU_FSM_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> ADPLL_MOM_UPDATE_OU_FSM_W<'a> {
 #[doc = "Field `adpll_mom_update_fail_fsm` reader - "]
 pub struct ADPLL_MOM_UPDATE_FAIL_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_MOM_UPDATE_FAIL_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_MOM_UPDATE_FAIL_FSM_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> ADPLL_MOM_UPDATE_FAIL_FSM_W<'a> {
 #[doc = "Field `adpll_vctrl_out_range_fsm` reader - "]
 pub struct ADPLL_VCTRL_OUT_RANGE_FSM_R(crate::FieldReader<bool, bool>);
 impl ADPLL_VCTRL_OUT_RANGE_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_VCTRL_OUT_RANGE_FSM_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> ADPLL_VCTRL_OUT_RANGE_FSM_W<'a> {
 #[doc = "Field `adpll_spd_unlock_sign` reader - "]
 pub struct ADPLL_SPD_UNLOCK_SIGN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SPD_UNLOCK_SIGN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SPD_UNLOCK_SIGN_R(crate::FieldReader::new(bits))
     }
@@ -531,6 +545,7 @@ impl<'a> ADPLL_SPD_UNLOCK_SIGN_W<'a> {
 #[doc = "Field `adpll_fsm_state` reader - "]
 pub struct ADPLL_FSM_STATE_R(crate::FieldReader<u8, u8>);
 impl ADPLL_FSM_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_FSM_STATE_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> ADPLL_FSM_STATE_W<'a> {
 #[doc = "Field `adpll_lo_lock` reader - "]
 pub struct ADPLL_LO_LOCK_R(crate::FieldReader<bool, bool>);
 impl ADPLL_LO_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_LO_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -593,6 +609,7 @@ impl<'a> ADPLL_LO_LOCK_W<'a> {
 #[doc = "Field `adpll_unlock_intrpt` reader - "]
 pub struct ADPLL_UNLOCK_INTRPT_R(crate::FieldReader<bool, bool>);
 impl ADPLL_UNLOCK_INTRPT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_UNLOCK_INTRPT_R(crate::FieldReader::new(bits))
     }

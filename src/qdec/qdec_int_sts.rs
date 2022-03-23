@@ -37,6 +37,7 @@ impl From<crate::W<QDEC_INT_STS_SPEC>> for W {
 #[doc = "Field `overflow_sts` reader - "]
 pub struct OVERFLOW_STS_R(crate::FieldReader<bool, bool>);
 impl OVERFLOW_STS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         OVERFLOW_STS_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> OVERFLOW_STS_W<'a> {
 #[doc = "Field `dbl_rdy_sts` reader - "]
 pub struct DBL_RDY_STS_R(crate::FieldReader<bool, bool>);
 impl DBL_RDY_STS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DBL_RDY_STS_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> DBL_RDY_STS_W<'a> {
 #[doc = "Field `spl_rdy_sts` reader - "]
 pub struct SPL_RDY_STS_R(crate::FieldReader<bool, bool>);
 impl SPL_RDY_STS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPL_RDY_STS_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SPL_RDY_STS_W<'a> {
 #[doc = "Field `rpt_rdy_sts` reader - "]
 pub struct RPT_RDY_STS_R(crate::FieldReader<bool, bool>);
 impl RPT_RDY_STS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RPT_RDY_STS_R(crate::FieldReader::new(bits))
     }

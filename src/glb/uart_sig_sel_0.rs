@@ -37,6 +37,7 @@ impl From<crate::W<UART_SIG_SEL_0_SPEC>> for W {
 #[doc = "Field `uart_sig_7_sel` reader - "]
 pub struct UART_SIG_7_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_7_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_7_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> UART_SIG_7_SEL_W<'a> {
 #[doc = "Field `uart_sig_6_sel` reader - "]
 pub struct UART_SIG_6_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_6_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_6_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> UART_SIG_6_SEL_W<'a> {
 #[doc = "Field `uart_sig_5_sel` reader - "]
 pub struct UART_SIG_5_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_5_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_5_SEL_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> UART_SIG_5_SEL_W<'a> {
 #[doc = "Field `uart_sig_4_sel` reader - "]
 pub struct UART_SIG_4_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_4_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_4_SEL_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> UART_SIG_4_SEL_W<'a> {
 #[doc = "Field `uart_sig_3_sel` reader - "]
 pub struct UART_SIG_3_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_3_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_3_SEL_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> UART_SIG_3_SEL_W<'a> {
 #[doc = "Field `uart_sig_2_sel` reader - "]
 pub struct UART_SIG_2_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_2_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_2_SEL_R(crate::FieldReader::new(bits))
     }
@@ -193,6 +199,7 @@ impl<'a> UART_SIG_2_SEL_W<'a> {
 #[doc = "Field `uart_sig_1_sel` reader - "]
 pub struct UART_SIG_1_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_1_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_1_SEL_R(crate::FieldReader::new(bits))
     }
@@ -219,6 +226,7 @@ impl<'a> UART_SIG_1_SEL_W<'a> {
 #[doc = "Field `uart_sig_0_sel` reader - "]
 pub struct UART_SIG_0_SEL_R(crate::FieldReader<u8, u8>);
 impl UART_SIG_0_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SIG_0_SEL_R(crate::FieldReader::new(bits))
     }

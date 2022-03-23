@@ -37,6 +37,7 @@ impl From<crate::W<SF_CTRL_2_SPEC>> for W {
 #[doc = "Field `sf_if_0_bk_sel` reader - "]
 pub struct SF_IF_0_BK_SEL_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_BK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_BK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_IF_0_BK_SEL_W<'a> {
 #[doc = "Field `sf_if_bk2_en` reader - "]
 pub struct SF_IF_BK2_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_BK2_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_BK2_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SF_IF_BK2_EN_W<'a> {
 #[doc = "Field `sf_if_bk2_mode` reader - "]
 pub struct SF_IF_BK2_MODE_R(crate::FieldReader<bool, bool>);
 impl SF_IF_BK2_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_BK2_MODE_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SF_IF_BK2_MODE_W<'a> {
 #[doc = "Field `sf_if_bk_swap` reader - "]
 pub struct SF_IF_BK_SWAP_R(crate::FieldReader<bool, bool>);
 impl SF_IF_BK_SWAP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_BK_SWAP_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SF_IF_BK_SWAP_W<'a> {
 #[doc = "Field `sf_if_dqs_en` reader - "]
 pub struct SF_IF_DQS_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_DQS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_DQS_EN_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SF_IF_DQS_EN_W<'a> {
 #[doc = "Field `sf_if_dtr_en` reader - "]
 pub struct SF_IF_DTR_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_DTR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_DTR_EN_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SF_IF_DTR_EN_W<'a> {
 #[doc = "Field `sf_if_pad_sel_lock` reader - "]
 pub struct SF_IF_PAD_SEL_LOCK_R(crate::FieldReader<bool, bool>);
 impl SF_IF_PAD_SEL_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_PAD_SEL_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SF_IF_PAD_SEL_LOCK_W<'a> {
 #[doc = "Field `sf_if_pad_sel` reader - "]
 pub struct SF_IF_PAD_SEL_R(crate::FieldReader<u8, u8>);
 impl SF_IF_PAD_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_PAD_SEL_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<MIIADDRESS_SPEC>> for W {
 #[doc = "Field `RGAD` reader - "]
 pub struct RGAD_R(crate::FieldReader<u8, u8>);
 impl RGAD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RGAD_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RGAD_W<'a> {
 #[doc = "Field `FIAD` reader - "]
 pub struct FIAD_R(crate::FieldReader<u8, u8>);
 impl FIAD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FIAD_R(crate::FieldReader::new(bits))
     }

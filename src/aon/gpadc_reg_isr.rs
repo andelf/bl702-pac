@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_ISR_SPEC>> for W {
 #[doc = "Field `gpadc_pos_satur_mask` reader - "]
 pub struct GPADC_POS_SATUR_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_POS_SATUR_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_POS_SATUR_MASK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> GPADC_POS_SATUR_MASK_W<'a> {
 #[doc = "Field `gpadc_neg_satur_mask` reader - "]
 pub struct GPADC_NEG_SATUR_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_NEG_SATUR_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_NEG_SATUR_MASK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> GPADC_NEG_SATUR_MASK_W<'a> {
 #[doc = "Field `gpadc_pos_satur_clr` reader - "]
 pub struct GPADC_POS_SATUR_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_POS_SATUR_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_POS_SATUR_CLR_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> GPADC_POS_SATUR_CLR_W<'a> {
 #[doc = "Field `gpadc_neg_satur_clr` reader - "]
 pub struct GPADC_NEG_SATUR_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_NEG_SATUR_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_NEG_SATUR_CLR_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> GPADC_NEG_SATUR_CLR_W<'a> {
 #[doc = "Field `gpadc_pos_satur` reader - "]
 pub struct GPADC_POS_SATUR_R(crate::FieldReader<bool, bool>);
 impl GPADC_POS_SATUR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_POS_SATUR_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> GPADC_POS_SATUR_W<'a> {
 #[doc = "Field `gpadc_neg_satur` reader - "]
 pub struct GPADC_NEG_SATUR_R(crate::FieldReader<bool, bool>);
 impl GPADC_NEG_SATUR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_NEG_SATUR_R(crate::FieldReader::new(bits))
     }

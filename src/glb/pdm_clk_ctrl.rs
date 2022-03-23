@@ -37,6 +37,7 @@ impl From<crate::W<PDM_CLK_CTRL_SPEC>> for W {
 #[doc = "Field `reg_pdm0_clk_en` reader - "]
 pub struct REG_PDM0_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_PDM0_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_PDM0_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_PDM0_CLK_EN_W<'a> {
 #[doc = "Field `reg_pdm0_clk_div` reader - "]
 pub struct REG_PDM0_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl REG_PDM0_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_PDM0_CLK_DIV_R(crate::FieldReader::new(bits))
     }

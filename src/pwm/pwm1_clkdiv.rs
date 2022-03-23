@@ -37,6 +37,7 @@ impl From<crate::W<PWM1_CLKDIV_SPEC>> for W {
 #[doc = "Field `pwm_clk_div` reader - "]
 pub struct PWM_CLK_DIV_R(crate::FieldReader<u16, u16>);
 impl PWM_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PWM_CLK_DIV_R(crate::FieldReader::new(bits))
     }

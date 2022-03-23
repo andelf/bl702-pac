@@ -37,6 +37,7 @@ impl From<crate::W<L1C_CONFIG_SPEC>> for W {
 #[doc = "Field `reserved_31_30` reader - "]
 pub struct RESERVED_31_30_R(crate::FieldReader<u8, u8>);
 impl RESERVED_31_30_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RESERVED_31_30_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RESERVED_31_30_W<'a> {
 #[doc = "Field `l1c_flush_done` reader - "]
 pub struct L1C_FLUSH_DONE_R(crate::FieldReader<bool, bool>);
 impl L1C_FLUSH_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_FLUSH_DONE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> L1C_FLUSH_DONE_W<'a> {
 #[doc = "Field `l1c_flush_en` reader - "]
 pub struct L1C_FLUSH_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_FLUSH_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_FLUSH_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> L1C_FLUSH_EN_W<'a> {
 #[doc = "Field `wrap_dis` reader - "]
 pub struct WRAP_DIS_R(crate::FieldReader<bool, bool>);
 impl WRAP_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WRAP_DIS_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> WRAP_DIS_W<'a> {
 #[doc = "Field `early_resp_dis` reader - "]
 pub struct EARLY_RESP_DIS_R(crate::FieldReader<bool, bool>);
 impl EARLY_RESP_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EARLY_RESP_DIS_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> EARLY_RESP_DIS_W<'a> {
 #[doc = "Field `l1c_bmx_busy_option_dis` reader - "]
 pub struct L1C_BMX_BUSY_OPTION_DIS_R(crate::FieldReader<bool, bool>);
 impl L1C_BMX_BUSY_OPTION_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BMX_BUSY_OPTION_DIS_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> L1C_BMX_BUSY_OPTION_DIS_W<'a> {
 #[doc = "Field `l1c_bmx_timeout_en` reader - "]
 pub struct L1C_BMX_TIMEOUT_EN_R(crate::FieldReader<u8, u8>);
 impl L1C_BMX_TIMEOUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         L1C_BMX_TIMEOUT_EN_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> L1C_BMX_TIMEOUT_EN_W<'a> {
 #[doc = "Field `l1c_bmx_arb_mode` reader - "]
 pub struct L1C_BMX_ARB_MODE_R(crate::FieldReader<u8, u8>);
 impl L1C_BMX_ARB_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         L1C_BMX_ARB_MODE_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> L1C_BMX_ARB_MODE_W<'a> {
 #[doc = "Field `l1c_bmx_err_en` reader - "]
 pub struct L1C_BMX_ERR_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_BMX_ERR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BMX_ERR_EN_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> L1C_BMX_ERR_EN_W<'a> {
 #[doc = "Field `l1c_bypass` reader - "]
 pub struct L1C_BYPASS_R(crate::FieldReader<bool, bool>);
 impl L1C_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> L1C_BYPASS_W<'a> {
 #[doc = "Field `irom_2t_access` reader - "]
 pub struct IROM_2T_ACCESS_R(crate::FieldReader<bool, bool>);
 impl IROM_2T_ACCESS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IROM_2T_ACCESS_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> IROM_2T_ACCESS_W<'a> {
 #[doc = "Field `l1c_way_dis` reader - "]
 pub struct L1C_WAY_DIS_R(crate::FieldReader<u8, u8>);
 impl L1C_WAY_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         L1C_WAY_DIS_R(crate::FieldReader::new(bits))
     }
@@ -429,6 +441,7 @@ impl<'a> L1C_WAY_DIS_W<'a> {
 #[doc = "Field `l1c_wa_en` reader - "]
 pub struct L1C_WA_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_WA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_WA_EN_R(crate::FieldReader::new(bits))
     }
@@ -465,6 +478,7 @@ impl<'a> L1C_WA_EN_W<'a> {
 #[doc = "Field `l1c_wb_en` reader - "]
 pub struct L1C_WB_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_WB_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_WB_EN_R(crate::FieldReader::new(bits))
     }
@@ -501,6 +515,7 @@ impl<'a> L1C_WB_EN_W<'a> {
 #[doc = "Field `l1c_wt_en` reader - "]
 pub struct L1C_WT_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_WT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_WT_EN_R(crate::FieldReader::new(bits))
     }
@@ -537,6 +552,7 @@ impl<'a> L1C_WT_EN_W<'a> {
 #[doc = "Field `l1c_invalid_done` reader - "]
 pub struct L1C_INVALID_DONE_R(crate::FieldReader<bool, bool>);
 impl L1C_INVALID_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_INVALID_DONE_R(crate::FieldReader::new(bits))
     }
@@ -573,6 +589,7 @@ impl<'a> L1C_INVALID_DONE_W<'a> {
 #[doc = "Field `l1c_invalid_en` reader - "]
 pub struct L1C_INVALID_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_INVALID_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_INVALID_EN_R(crate::FieldReader::new(bits))
     }
@@ -609,6 +626,7 @@ impl<'a> L1C_INVALID_EN_W<'a> {
 #[doc = "Field `l1c_cnt_en` reader - "]
 pub struct L1C_CNT_EN_R(crate::FieldReader<bool, bool>);
 impl L1C_CNT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_CNT_EN_R(crate::FieldReader::new(bits))
     }
@@ -645,6 +663,7 @@ impl<'a> L1C_CNT_EN_W<'a> {
 #[doc = "Field `l1c_cacheable` reader - "]
 pub struct L1C_CACHEABLE_R(crate::FieldReader<bool, bool>);
 impl L1C_CACHEABLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_CACHEABLE_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<DEBUG_SPEC>> for W {
 #[doc = "Field `debug_i` reader - "]
 pub struct DEBUG_I_R(crate::FieldReader<u32, u32>);
 impl DEBUG_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         DEBUG_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> DEBUG_I_W<'a> {
 #[doc = "Field `debug_oe` reader - "]
 pub struct DEBUG_OE_R(crate::FieldReader<bool, bool>);
 impl DEBUG_OE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DEBUG_OE_R(crate::FieldReader::new(bits))
     }

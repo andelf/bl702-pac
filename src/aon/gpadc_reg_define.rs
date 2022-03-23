@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_DEFINE_SPEC>> for W {
 #[doc = "Field `gpadc_os_cal_data` reader - "]
 pub struct GPADC_OS_CAL_DATA_R(crate::FieldReader<u16, u16>);
 impl GPADC_OS_CAL_DATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         GPADC_OS_CAL_DATA_R(crate::FieldReader::new(bits))
     }

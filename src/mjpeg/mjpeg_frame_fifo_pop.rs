@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_FRAME_FIFO_POP_SPEC>> for W {
 #[doc = "Field `reg_int_swap_clr` reader - "]
 pub struct REG_INT_SWAP_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_SWAP_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_SWAP_CLR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_INT_SWAP_CLR_W<'a> {
 #[doc = "Field `reg_int_idle_clr` reader - "]
 pub struct REG_INT_IDLE_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_IDLE_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_IDLE_CLR_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> REG_INT_IDLE_CLR_W<'a> {
 #[doc = "Field `reg_int_frame_clr` reader - "]
 pub struct REG_INT_FRAME_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_FRAME_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_FRAME_CLR_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> REG_INT_FRAME_CLR_W<'a> {
 #[doc = "Field `reg_int_mem_clr` reader - "]
 pub struct REG_INT_MEM_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_MEM_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_MEM_CLR_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> REG_INT_MEM_CLR_W<'a> {
 #[doc = "Field `reg_int_cam_clr` reader - "]
 pub struct REG_INT_CAM_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_CAM_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_CAM_CLR_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> REG_INT_CAM_CLR_W<'a> {
 #[doc = "Field `reg_int_normal_clr` reader - "]
 pub struct REG_INT_NORMAL_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_INT_NORMAL_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_NORMAL_CLR_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> REG_INT_NORMAL_CLR_W<'a> {
 #[doc = "Field `reg_w_swap_clr` reader - "]
 pub struct REG_W_SWAP_CLR_R(crate::FieldReader<bool, bool>);
 impl REG_W_SWAP_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_W_SWAP_CLR_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> REG_W_SWAP_CLR_W<'a> {
 #[doc = "Field `rfifo_pop` reader - "]
 pub struct RFIFO_POP_R(crate::FieldReader<bool, bool>);
 impl RFIFO_POP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RFIFO_POP_R(crate::FieldReader::new(bits))
     }

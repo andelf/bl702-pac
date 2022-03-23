@@ -37,6 +37,7 @@ impl From<crate::W<RF_ADC_OSDATA_SPEC>> for W {
 #[doc = "Field `rxadc_os_i` reader - "]
 pub struct RXADC_OS_I_R(crate::FieldReader<u16, u16>);
 impl RXADC_OS_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RXADC_OS_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RXADC_OS_I_W<'a> {
 #[doc = "Field `rxadc_os_q` reader - "]
 pub struct RXADC_OS_Q_R(crate::FieldReader<u16, u16>);
 impl RXADC_OS_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RXADC_OS_Q_R(crate::FieldReader::new(bits))
     }

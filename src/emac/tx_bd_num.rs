@@ -37,6 +37,7 @@ impl From<crate::W<TX_BD_NUM_SPEC>> for W {
 #[doc = "Field `RXBDPTR` reader - "]
 pub struct RXBDPTR_R(crate::FieldReader<u8, u8>);
 impl RXBDPTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RXBDPTR_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RXBDPTR_W<'a> {
 #[doc = "Field `TXBDPTR` reader - "]
 pub struct TXBDPTR_R(crate::FieldReader<u8, u8>);
 impl TXBDPTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TXBDPTR_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> TXBDPTR_W<'a> {
 #[doc = "Field `TXBDNUM` reader - "]
 pub struct TXBDNUM_R(crate::FieldReader<u8, u8>);
 impl TXBDNUM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TXBDNUM_R(crate::FieldReader::new(bits))
     }

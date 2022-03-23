@@ -37,6 +37,7 @@ impl From<crate::W<XCVR_IF_CONFIG_SPEC>> for W {
 #[doc = "Field `sts_vbus_det` reader - "]
 pub struct STS_VBUS_DET_R(crate::FieldReader<bool, bool>);
 impl STS_VBUS_DET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_VBUS_DET_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_VBUS_DET_W<'a> {
 #[doc = "Field `cr_xcvr_om_rx_dn` reader - "]
 pub struct CR_XCVR_OM_RX_DN_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_OM_RX_DN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_OM_RX_DN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_XCVR_OM_RX_DN_W<'a> {
 #[doc = "Field `cr_xcvr_om_rx_dp` reader - "]
 pub struct CR_XCVR_OM_RX_DP_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_OM_RX_DP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_OM_RX_DP_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_XCVR_OM_RX_DP_W<'a> {
 #[doc = "Field `cr_xcvr_om_rx_d` reader - "]
 pub struct CR_XCVR_OM_RX_D_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_OM_RX_D_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_OM_RX_D_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_XCVR_OM_RX_D_W<'a> {
 #[doc = "Field `cr_xcvr_om_rx_sel` reader - "]
 pub struct CR_XCVR_OM_RX_SEL_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_OM_RX_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_OM_RX_SEL_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_XCVR_OM_RX_SEL_W<'a> {
 #[doc = "Field `cr_xcvr_force_rx_dn` reader - "]
 pub struct CR_XCVR_FORCE_RX_DN_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_RX_DN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_RX_DN_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CR_XCVR_FORCE_RX_DN_W<'a> {
 #[doc = "Field `cr_xcvr_force_rx_dp` reader - "]
 pub struct CR_XCVR_FORCE_RX_DP_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_RX_DP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_RX_DP_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> CR_XCVR_FORCE_RX_DP_W<'a> {
 #[doc = "Field `cr_xcvr_force_rx_d` reader - "]
 pub struct CR_XCVR_FORCE_RX_D_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_RX_D_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_RX_D_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CR_XCVR_FORCE_RX_D_W<'a> {
 #[doc = "Field `cr_xcvr_force_rx_en` reader - "]
 pub struct CR_XCVR_FORCE_RX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_RX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_RX_EN_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> CR_XCVR_FORCE_RX_EN_W<'a> {
 #[doc = "Field `cr_xcvr_force_tx_dn` reader - "]
 pub struct CR_XCVR_FORCE_TX_DN_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_TX_DN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_TX_DN_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> CR_XCVR_FORCE_TX_DN_W<'a> {
 #[doc = "Field `cr_xcvr_force_tx_dp` reader - "]
 pub struct CR_XCVR_FORCE_TX_DP_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_TX_DP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_TX_DP_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> CR_XCVR_FORCE_TX_DP_W<'a> {
 #[doc = "Field `cr_xcvr_force_tx_oe` reader - "]
 pub struct CR_XCVR_FORCE_TX_OE_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_TX_OE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_TX_OE_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> CR_XCVR_FORCE_TX_OE_W<'a> {
 #[doc = "Field `cr_xcvr_force_tx_en` reader - "]
 pub struct CR_XCVR_FORCE_TX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_XCVR_FORCE_TX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_XCVR_FORCE_TX_EN_R(crate::FieldReader::new(bits))
     }

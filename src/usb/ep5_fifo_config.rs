@@ -37,6 +37,7 @@ impl From<crate::W<EP5_FIFO_CONFIG_SPEC>> for W {
 #[doc = "Field `ep5_rx_fifo_underflow` reader - "]
 pub struct EP5_RX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
 impl EP5_RX_FIFO_UNDERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_RX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> EP5_RX_FIFO_UNDERFLOW_W<'a> {
 #[doc = "Field `ep5_rx_fifo_overflow` reader - "]
 pub struct EP5_RX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
 impl EP5_RX_FIFO_OVERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_RX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> EP5_RX_FIFO_OVERFLOW_W<'a> {
 #[doc = "Field `ep5_tx_fifo_underflow` reader - "]
 pub struct EP5_TX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
 impl EP5_TX_FIFO_UNDERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_TX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> EP5_TX_FIFO_UNDERFLOW_W<'a> {
 #[doc = "Field `ep5_tx_fifo_overflow` reader - "]
 pub struct EP5_TX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
 impl EP5_TX_FIFO_OVERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_TX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> EP5_TX_FIFO_OVERFLOW_W<'a> {
 #[doc = "Field `ep5_rx_fifo_clr` reader - "]
 pub struct EP5_RX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl EP5_RX_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_RX_FIFO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> EP5_RX_FIFO_CLR_W<'a> {
 #[doc = "Field `ep5_tx_fifo_clr` reader - "]
 pub struct EP5_TX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl EP5_TX_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_TX_FIFO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> EP5_TX_FIFO_CLR_W<'a> {
 #[doc = "Field `ep5_dma_rx_en` reader - "]
 pub struct EP5_DMA_RX_EN_R(crate::FieldReader<bool, bool>);
 impl EP5_DMA_RX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_DMA_RX_EN_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> EP5_DMA_RX_EN_W<'a> {
 #[doc = "Field `ep5_dma_tx_en` reader - "]
 pub struct EP5_DMA_TX_EN_R(crate::FieldReader<bool, bool>);
 impl EP5_DMA_TX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_DMA_TX_EN_R(crate::FieldReader::new(bits))
     }

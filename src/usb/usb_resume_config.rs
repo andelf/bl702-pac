@@ -37,6 +37,7 @@ impl From<crate::W<USB_RESUME_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_res_force` reader - "]
 pub struct CR_RES_FORCE_R(crate::FieldReader<bool, bool>);
 impl CR_RES_FORCE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_RES_FORCE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_RES_FORCE_W<'a> {
 #[doc = "Field `cr_res_trig` reader - "]
 pub struct CR_RES_TRIG_R(crate::FieldReader<bool, bool>);
 impl CR_RES_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_RES_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_RES_TRIG_W<'a> {
 #[doc = "Field `cr_res_width` reader - "]
 pub struct CR_RES_WIDTH_R(crate::FieldReader<u16, u16>);
 impl CR_RES_WIDTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_RES_WIDTH_R(crate::FieldReader::new(bits))
     }

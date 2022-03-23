@@ -37,6 +37,7 @@ impl From<crate::W<SF_IF_IAHB_6_SPEC>> for W {
 #[doc = "Field `sf_if_3_qpi_mode_en` reader - "]
 pub struct SF_IF_3_QPI_MODE_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_3_QPI_MODE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_3_QPI_MODE_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_IF_3_QPI_MODE_EN_W<'a> {
 #[doc = "Field `sf_if_3_spi_mode` reader - "]
 pub struct SF_IF_3_SPI_MODE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_3_SPI_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_3_SPI_MODE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_IF_3_SPI_MODE_W<'a> {
 #[doc = "Field `sf_if_3_cmd_en` reader - "]
 pub struct SF_IF_3_CMD_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_3_CMD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_3_CMD_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_IF_3_CMD_EN_W<'a> {
 #[doc = "Field `sf_if_3_adr_en` reader - "]
 pub struct SF_IF_3_ADR_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_3_ADR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_3_ADR_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_IF_3_ADR_EN_W<'a> {
 #[doc = "Field `sf_if_3_cmd_byte` reader - "]
 pub struct SF_IF_3_CMD_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_3_CMD_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_3_CMD_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> SF_IF_3_CMD_BYTE_W<'a> {
 #[doc = "Field `sf_if_3_adr_byte` reader - "]
 pub struct SF_IF_3_ADR_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_3_ADR_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_3_ADR_BYTE_R(crate::FieldReader::new(bits))
     }

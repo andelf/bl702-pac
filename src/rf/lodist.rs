@@ -37,6 +37,7 @@ impl From<crate::W<LODIST_SPEC>> for W {
 #[doc = "Field `lodist_75dc_sel` reader - "]
 pub struct LODIST_75DC_SEL_R(crate::FieldReader<bool, bool>);
 impl LODIST_75DC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LODIST_75DC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> LODIST_75DC_SEL_W<'a> {
 #[doc = "Field `lodist_nwell_bias` reader - "]
 pub struct LODIST_NWELL_BIAS_R(crate::FieldReader<u8, u8>);
 impl LODIST_NWELL_BIAS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LODIST_NWELL_BIAS_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> LODIST_NWELL_BIAS_W<'a> {
 #[doc = "Field `lodist_rwell_bias` reader - "]
 pub struct LODIST_RWELL_BIAS_R(crate::FieldReader<u8, u8>);
 impl LODIST_RWELL_BIAS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LODIST_RWELL_BIAS_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> LODIST_RWELL_BIAS_W<'a> {
 #[doc = "Field `lodist_rxbuf_supply_boost` reader - "]
 pub struct LODIST_RXBUF_SUPPLY_BOOST_R(crate::FieldReader<bool, bool>);
 impl LODIST_RXBUF_SUPPLY_BOOST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LODIST_RXBUF_SUPPLY_BOOST_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> LODIST_RXBUF_SUPPLY_BOOST_W<'a> {
 #[doc = "Field `lodist_rxbuf_supply_mode` reader - "]
 pub struct LODIST_RXBUF_SUPPLY_MODE_R(crate::FieldReader<u8, u8>);
 impl LODIST_RXBUF_SUPPLY_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LODIST_RXBUF_SUPPLY_MODE_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> LODIST_RXBUF_SUPPLY_MODE_W<'a> {
 #[doc = "Field `lodist_txbuf_supply_mode` reader - "]
 pub struct LODIST_TXBUF_SUPPLY_MODE_R(crate::FieldReader<u8, u8>);
 impl LODIST_TXBUF_SUPPLY_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LODIST_TXBUF_SUPPLY_MODE_R(crate::FieldReader::new(bits))
     }

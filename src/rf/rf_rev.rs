@@ -37,6 +37,7 @@ impl From<crate::W<RF_REV_SPEC>> for W {
 #[doc = "Field `hw_rev` reader - "]
 pub struct HW_REV_R(crate::FieldReader<u8, u8>);
 impl HW_REV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HW_REV_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> HW_REV_W<'a> {
 #[doc = "Field `fw_rev` reader - "]
 pub struct FW_REV_R(crate::FieldReader<u8, u8>);
 impl FW_REV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FW_REV_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> FW_REV_W<'a> {
 #[doc = "Field `rf_rev` reader - "]
 pub struct RF_REV_R(crate::FieldReader<u8, u8>);
 impl RF_REV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_REV_R(crate::FieldReader::new(bits))
     }

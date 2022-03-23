@@ -37,6 +37,7 @@ impl From<crate::W<RF_SRAM_CTRL1_SPEC>> for W {
 #[doc = "Field `rf_sram_addr_start` reader - "]
 pub struct RF_SRAM_ADDR_START_R(crate::FieldReader<u16, u16>);
 impl RF_SRAM_ADDR_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_SRAM_ADDR_START_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RF_SRAM_ADDR_START_W<'a> {
 #[doc = "Field `rf_sram_addr_end` reader - "]
 pub struct RF_SRAM_ADDR_END_R(crate::FieldReader<u16, u16>);
 impl RF_SRAM_ADDR_END_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_SRAM_ADDR_END_R(crate::FieldReader::new(bits))
     }

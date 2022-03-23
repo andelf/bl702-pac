@@ -37,6 +37,7 @@ impl From<crate::W<TMSR3_SPEC>> for W {
 #[doc = "Field `tmsr_2` reader - "]
 pub struct TMSR_2_R(crate::FieldReader<bool, bool>);
 impl TMSR_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TMSR_2_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TMSR_2_W<'a> {
 #[doc = "Field `tmsr_1` reader - "]
 pub struct TMSR_1_R(crate::FieldReader<bool, bool>);
 impl TMSR_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TMSR_1_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TMSR_1_W<'a> {
 #[doc = "Field `tmsr_0` reader - "]
 pub struct TMSR_0_R(crate::FieldReader<bool, bool>);
 impl TMSR_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TMSR_0_R(crate::FieldReader::new(bits))
     }

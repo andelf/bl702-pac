@@ -37,6 +37,7 @@ impl From<crate::W<DVP2AHB_FRAME_BCNT_0_SPEC>> for W {
 #[doc = "Field `reg_frame_burst_cnt_0` reader - "]
 pub struct REG_FRAME_BURST_CNT_0_R(crate::FieldReader<u32, u32>);
 impl REG_FRAME_BURST_CNT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         REG_FRAME_BURST_CNT_0_R(crate::FieldReader::new(bits))
     }
@@ -56,7 +57,7 @@ impl<'a> REG_FRAME_BURST_CNT_0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
+        self.w.bits = value;
         self.w
     }
 }
@@ -64,7 +65,7 @@ impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn reg_frame_burst_cnt_0(&self) -> REG_FRAME_BURST_CNT_0_R {
-        REG_FRAME_BURST_CNT_0_R::new((self.bits & 0xffff_ffff) as u32)
+        REG_FRAME_BURST_CNT_0_R::new(self.bits)
     }
 }
 impl W {

@@ -37,6 +37,7 @@ impl From<crate::W<SF_IF_SAHB_0_SPEC>> for W {
 #[doc = "Field `sf_if_0_qpi_mode_en` reader - "]
 pub struct SF_IF_0_QPI_MODE_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_QPI_MODE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_QPI_MODE_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_IF_0_QPI_MODE_EN_W<'a> {
 #[doc = "Field `sf_if_0_spi_mode` reader - "]
 pub struct SF_IF_0_SPI_MODE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_0_SPI_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_0_SPI_MODE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_IF_0_SPI_MODE_W<'a> {
 #[doc = "Field `sf_if_0_cmd_en` reader - "]
 pub struct SF_IF_0_CMD_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_CMD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_CMD_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_IF_0_CMD_EN_W<'a> {
 #[doc = "Field `sf_if_0_adr_en` reader - "]
 pub struct SF_IF_0_ADR_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_ADR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_ADR_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_IF_0_ADR_EN_W<'a> {
 #[doc = "Field `sf_if_0_dmy_en` reader - "]
 pub struct SF_IF_0_DMY_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_DMY_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_DMY_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SF_IF_0_DMY_EN_W<'a> {
 #[doc = "Field `sf_if_0_dat_en` reader - "]
 pub struct SF_IF_0_DAT_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_DAT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_DAT_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SF_IF_0_DAT_EN_W<'a> {
 #[doc = "Field `sf_if_0_dat_rw  ` reader - "]
 pub struct SF_IF_0_DAT_RW_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_DAT_RW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_DAT_RW_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> SF_IF_0_DAT_RW_W<'a> {
 #[doc = "Field `sf_if_0_cmd_byte` reader - "]
 pub struct SF_IF_0_CMD_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_0_CMD_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_0_CMD_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> SF_IF_0_CMD_BYTE_W<'a> {
 #[doc = "Field `sf_if_0_adr_byte` reader - "]
 pub struct SF_IF_0_ADR_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_0_ADR_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_0_ADR_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> SF_IF_0_ADR_BYTE_W<'a> {
 #[doc = "Field `sf_if_0_dmy_byte` reader - "]
 pub struct SF_IF_0_DMY_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_0_DMY_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_0_DMY_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> SF_IF_0_DMY_BYTE_W<'a> {
 #[doc = "Field `sf_if_0_dat_byte` reader - "]
 pub struct SF_IF_0_DAT_BYTE_R(crate::FieldReader<u16, u16>);
 impl SF_IF_0_DAT_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SF_IF_0_DAT_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -383,6 +394,7 @@ impl<'a> SF_IF_0_DAT_BYTE_W<'a> {
 #[doc = "Field `sf_if_0_trig` reader - "]
 pub struct SF_IF_0_TRIG_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -419,6 +431,7 @@ impl<'a> SF_IF_0_TRIG_W<'a> {
 #[doc = "Field `sf_if_busy` reader - "]
 pub struct SF_IF_BUSY_R(crate::FieldReader<bool, bool>);
 impl SF_IF_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_BUSY_R(crate::FieldReader::new(bits))
     }

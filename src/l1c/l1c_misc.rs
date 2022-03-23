@@ -37,6 +37,7 @@ impl From<crate::W<L1C_MISC_SPEC>> for W {
 #[doc = "Field `l1c_fsm` reader - "]
 pub struct L1C_FSM_R(crate::FieldReader<u8, u8>);
 impl L1C_FSM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         L1C_FSM_R(crate::FieldReader::new(bits))
     }

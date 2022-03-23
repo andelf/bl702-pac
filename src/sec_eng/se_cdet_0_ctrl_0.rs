@@ -37,6 +37,7 @@ impl From<crate::W<SE_CDET_0_CTRL_0_SPEC>> for W {
 #[doc = "Field `se_cdet_0_g_loop_min` reader - "]
 pub struct SE_CDET_0_G_LOOP_MIN_R(crate::FieldReader<u8, u8>);
 impl SE_CDET_0_G_LOOP_MIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_CDET_0_G_LOOP_MIN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_CDET_0_G_LOOP_MIN_W<'a> {
 #[doc = "Field `se_cdet_0_g_loop_max` reader - "]
 pub struct SE_CDET_0_G_LOOP_MAX_R(crate::FieldReader<u8, u8>);
 impl SE_CDET_0_G_LOOP_MAX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_CDET_0_G_LOOP_MAX_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SE_CDET_0_G_LOOP_MAX_W<'a> {
 #[doc = "Field `se_cdet_0_status` reader - "]
 pub struct SE_CDET_0_STATUS_R(crate::FieldReader<u16, u16>);
 impl SE_CDET_0_STATUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SE_CDET_0_STATUS_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> SE_CDET_0_STATUS_W<'a> {
 #[doc = "Field `se_cdet_0_error` reader - "]
 pub struct SE_CDET_0_ERROR_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_0_ERROR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_0_ERROR_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> SE_CDET_0_ERROR_W<'a> {
 #[doc = "Field `se_cdet_0_en` reader - "]
 pub struct SE_CDET_0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_CDET_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_CDET_0_EN_R(crate::FieldReader::new(bits))
     }

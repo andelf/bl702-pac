@@ -37,6 +37,7 @@ impl From<crate::W<PA_SPEC>> for W {
 #[doc = "Field `pa_force_short_open` reader - "]
 pub struct PA_FORCE_SHORT_OPEN_R(crate::FieldReader<bool, bool>);
 impl PA_FORCE_SHORT_OPEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PA_FORCE_SHORT_OPEN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PA_FORCE_SHORT_OPEN_W<'a> {
 #[doc = "Field `pa_hp_en` reader - "]
 pub struct PA_HP_EN_R(crate::FieldReader<bool, bool>);
 impl PA_HP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PA_HP_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PA_HP_EN_W<'a> {
 #[doc = "Field `pa_lp_en` reader - "]
 pub struct PA_LP_EN_R(crate::FieldReader<bool, bool>);
 impl PA_LP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PA_LP_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> PA_LP_EN_W<'a> {
 #[doc = "Field `pa_ldo_bm` reader - "]
 pub struct PA_LDO_BM_R(crate::FieldReader<u8, u8>);
 impl PA_LDO_BM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_LDO_BM_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> PA_LDO_BM_W<'a> {
 #[doc = "Field `pa_vdd11_sel` reader - "]
 pub struct PA_VDD11_SEL_R(crate::FieldReader<u8, u8>);
 impl PA_VDD11_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_VDD11_SEL_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> PA_VDD11_SEL_W<'a> {
 #[doc = "Field `pa_para_cs` reader - "]
 pub struct PA_PARA_CS_R(crate::FieldReader<u8, u8>);
 impl PA_PARA_CS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_PARA_CS_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> PA_PARA_CS_W<'a> {
 #[doc = "Field `pa_seri_cs_hw` reader - "]
 pub struct PA_SERI_CS_HW_R(crate::FieldReader<u8, u8>);
 impl PA_SERI_CS_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_SERI_CS_HW_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> PA_SERI_CS_HW_W<'a> {
 #[doc = "Field `pa_seri_cs_rx` reader - "]
 pub struct PA_SERI_CS_RX_R(crate::FieldReader<u8, u8>);
 impl PA_SERI_CS_RX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_SERI_CS_RX_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> PA_SERI_CS_RX_W<'a> {
 #[doc = "Field `pa_seri_cs_tx` reader - "]
 pub struct PA_SERI_CS_TX_R(crate::FieldReader<u8, u8>);
 impl PA_SERI_CS_TX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PA_SERI_CS_TX_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<DTEST_SPEC>> for W {
 #[doc = "Field `dtest_en_dtc_in` reader - "]
 pub struct DTEST_EN_DTC_IN_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_DTC_IN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_DTC_IN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> DTEST_EN_DTC_IN_W<'a> {
 #[doc = "Field `dtest_en_dtc_out` reader - "]
 pub struct DTEST_EN_DTC_OUT_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_DTC_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_DTC_OUT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> DTEST_EN_DTC_OUT_W<'a> {
 #[doc = "Field `dtest_en_fref` reader - "]
 pub struct DTEST_EN_FREF_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_FREF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_FREF_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> DTEST_EN_FREF_W<'a> {
 #[doc = "Field `dtest_en_mod4` reader - "]
 pub struct DTEST_EN_MOD4_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_MOD4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_MOD4_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> DTEST_EN_MOD4_W<'a> {
 #[doc = "Field `dtest_en_adpll_adc` reader - "]
 pub struct DTEST_EN_ADPLL_ADC_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_ADPLL_ADC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_ADPLL_ADC_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> DTEST_EN_ADPLL_ADC_W<'a> {
 #[doc = "Field `dtest_en_rxadc_i` reader - "]
 pub struct DTEST_EN_RXADC_I_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_RXADC_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_RXADC_I_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> DTEST_EN_RXADC_I_W<'a> {
 #[doc = "Field `dtest_en_rxadc_q` reader - "]
 pub struct DTEST_EN_RXADC_Q_R(crate::FieldReader<bool, bool>);
 impl DTEST_EN_RXADC_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_EN_RXADC_Q_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> DTEST_EN_RXADC_Q_W<'a> {
 #[doc = "Field `dtest_pulldown` reader - "]
 pub struct DTEST_PULLDOWN_R(crate::FieldReader<bool, bool>);
 impl DTEST_PULLDOWN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DTEST_PULLDOWN_R(crate::FieldReader::new(bits))
     }

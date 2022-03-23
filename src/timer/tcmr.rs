@@ -37,6 +37,7 @@ impl From<crate::W<TCMR_SPEC>> for W {
 #[doc = "Field `timer3_mode` reader - "]
 pub struct TIMER3_MODE_R(crate::FieldReader<bool, bool>);
 impl TIMER3_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TIMER3_MODE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TIMER3_MODE_W<'a> {
 #[doc = "Field `timer2_mode` reader - "]
 pub struct TIMER2_MODE_R(crate::FieldReader<bool, bool>);
 impl TIMER2_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TIMER2_MODE_R(crate::FieldReader::new(bits))
     }

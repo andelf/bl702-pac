@@ -37,6 +37,7 @@ impl From<crate::W<KCAL1_SPEC>> for W {
 #[doc = "Field `kcal_ratio` reader - "]
 pub struct KCAL_RATIO_R(crate::FieldReader<u16, u16>);
 impl KCAL_RATIO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         KCAL_RATIO_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> KCAL_RATIO_W<'a> {
 #[doc = "Field `kcal_cnt_start` reader - "]
 pub struct KCAL_CNT_START_R(crate::FieldReader<bool, bool>);
 impl KCAL_CNT_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KCAL_CNT_START_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> KCAL_CNT_START_W<'a> {
 #[doc = "Field `kcal_div` reader - "]
 pub struct KCAL_DIV_R(crate::FieldReader<u16, u16>);
 impl KCAL_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         KCAL_DIV_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<MBIST_CTL_SPEC>> for W {
 #[doc = "Field `reg_mbist_rst_n` reader - "]
 pub struct REG_MBIST_RST_N_R(crate::FieldReader<bool, bool>);
 impl REG_MBIST_RST_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MBIST_RST_N_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_MBIST_RST_N_W<'a> {
 #[doc = "Field `em_ram_mbist_mode` reader - "]
 pub struct EM_RAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl EM_RAM_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EM_RAM_MBIST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> EM_RAM_MBIST_MODE_W<'a> {
 #[doc = "Field `ocram_mbist_mode` reader - "]
 pub struct OCRAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl OCRAM_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         OCRAM_MBIST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> OCRAM_MBIST_MODE_W<'a> {
 #[doc = "Field `tag_mbist_mode` reader - "]
 pub struct TAG_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl TAG_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TAG_MBIST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TAG_MBIST_MODE_W<'a> {
 #[doc = "Field `hsram_cache_mbist_mode` reader - "]
 pub struct HSRAM_CACHE_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl HSRAM_CACHE_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HSRAM_CACHE_MBIST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> HSRAM_CACHE_MBIST_MODE_W<'a> {
 #[doc = "Field `hsram_mem_mbist_mode` reader - "]
 pub struct HSRAM_MEM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl HSRAM_MEM_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         HSRAM_MEM_MBIST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> HSRAM_MEM_MBIST_MODE_W<'a> {
 #[doc = "Field `irom_mbist_mode` reader - "]
 pub struct IROM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
 impl IROM_MBIST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         IROM_MBIST_MODE_R(crate::FieldReader::new(bits))
     }

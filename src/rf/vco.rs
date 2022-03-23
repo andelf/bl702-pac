@@ -37,6 +37,7 @@ impl From<crate::W<VCO_SPEC>> for W {
 #[doc = "Field `vco_acal_ud` reader - "]
 pub struct VCO_ACAL_UD_R(crate::FieldReader<bool, bool>);
 impl VCO_ACAL_UD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_ACAL_UD_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> VCO_ACAL_UD_W<'a> {
 #[doc = "Field `vco_idac_hw` reader - "]
 pub struct VCO_IDAC_HW_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_HW_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> VCO_IDAC_HW_W<'a> {
 #[doc = "Field `vco_idac` reader - "]
 pub struct VCO_IDAC_R(crate::FieldReader<u8, u8>);
 impl VCO_IDAC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_IDAC_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> VCO_IDAC_W<'a> {
 #[doc = "Field `vco_ldo_bypass` reader - "]
 pub struct VCO_LDO_BYPASS_R(crate::FieldReader<bool, bool>);
 impl VCO_LDO_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_LDO_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> VCO_LDO_BYPASS_W<'a> {
 #[doc = "Field `vco_ldo_vsel` reader - "]
 pub struct VCO_LDO_VSEL_R(crate::FieldReader<u8, u8>);
 impl VCO_LDO_VSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_LDO_VSEL_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> VCO_LDO_VSEL_W<'a> {
 #[doc = "Field `vco_idac_boost` reader - "]
 pub struct VCO_IDAC_BOOST_R(crate::FieldReader<bool, bool>);
 impl VCO_IDAC_BOOST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_IDAC_BOOST_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> VCO_IDAC_BOOST_W<'a> {
 #[doc = "Field `vco_vbias` reader - "]
 pub struct VCO_VBIAS_R(crate::FieldReader<u8, u8>);
 impl VCO_VBIAS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_VBIAS_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> VCO_VBIAS_W<'a> {
 #[doc = "Field `vco_acal_vref` reader - "]
 pub struct VCO_ACAL_VREF_R(crate::FieldReader<u8, u8>);
 impl VCO_ACAL_VREF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_ACAL_VREF_R(crate::FieldReader::new(bits))
     }
@@ -275,6 +283,7 @@ impl<'a> VCO_ACAL_VREF_W<'a> {
 #[doc = "Field `vco_modcap_sel` reader - "]
 pub struct VCO_MODCAP_SEL_R(crate::FieldReader<u8, u8>);
 impl VCO_MODCAP_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         VCO_MODCAP_SEL_R(crate::FieldReader::new(bits))
     }
@@ -301,6 +310,7 @@ impl<'a> VCO_MODCAP_SEL_W<'a> {
 #[doc = "Field `vco_short_idac_filter` reader - "]
 pub struct VCO_SHORT_IDAC_FILTER_R(crate::FieldReader<bool, bool>);
 impl VCO_SHORT_IDAC_FILTER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_SHORT_IDAC_FILTER_R(crate::FieldReader::new(bits))
     }
@@ -337,6 +347,7 @@ impl<'a> VCO_SHORT_IDAC_FILTER_W<'a> {
 #[doc = "Field `vco_short_vbias_filter` reader - "]
 pub struct VCO_SHORT_VBIAS_FILTER_R(crate::FieldReader<bool, bool>);
 impl VCO_SHORT_VBIAS_FILTER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_SHORT_VBIAS_FILTER_R(crate::FieldReader::new(bits))
     }

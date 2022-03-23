@@ -37,6 +37,7 @@ impl From<crate::W<GPIO_INT2_MODE_SET1_SPEC>> for W {
 #[doc = "Field `reg_gpio_int2_mode_set1` reader - "]
 pub struct REG_GPIO_INT2_MODE_SET1_R(crate::FieldReader<u32, u32>);
 impl REG_GPIO_INT2_MODE_SET1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         REG_GPIO_INT2_MODE_SET1_R(crate::FieldReader::new(bits))
     }

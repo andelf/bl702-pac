@@ -37,6 +37,7 @@ impl From<crate::W<SPI_PRD_1_SPEC>> for W {
 #[doc = "Field `cr_spi_prd_i` reader - "]
 pub struct CR_SPI_PRD_I_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_PRD_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_PRD_I_R(crate::FieldReader::new(bits))
     }

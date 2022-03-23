@@ -37,6 +37,7 @@ impl From<crate::W<I2S_IO_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_deg_en` reader - "]
 pub struct CR_DEG_EN_R(crate::FieldReader<bool, bool>);
 impl CR_DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_DEG_EN_W<'a> {
 #[doc = "Field `cr_deg_cnt` reader - "]
 pub struct CR_DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl CR_DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CR_DEG_CNT_W<'a> {
 #[doc = "Field `cr_i2s_bclk_inv` reader - "]
 pub struct CR_I2S_BCLK_INV_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_BCLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_BCLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> CR_I2S_BCLK_INV_W<'a> {
 #[doc = "Field `cr_i2s_fs_inv` reader - "]
 pub struct CR_I2S_FS_INV_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_FS_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_FS_INV_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> CR_I2S_FS_INV_W<'a> {
 #[doc = "Field `cr_i2s_rxd_inv` reader - "]
 pub struct CR_I2S_RXD_INV_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_RXD_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_RXD_INV_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> CR_I2S_RXD_INV_W<'a> {
 #[doc = "Field `cr_i2s_txd_inv` reader - "]
 pub struct CR_I2S_TXD_INV_R(crate::FieldReader<bool, bool>);
 impl CR_I2S_TXD_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2S_TXD_INV_R(crate::FieldReader::new(bits))
     }

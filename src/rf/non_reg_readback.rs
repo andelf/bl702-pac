@@ -37,6 +37,7 @@ impl From<crate::W<NON_REG_READBACK_SPEC>> for W {
 #[doc = "Field `ppu_lna_hw` reader - "]
 pub struct PPU_LNA_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_LNA_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_LNA_HW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PPU_LNA_HW_W<'a> {
 #[doc = "Field `ppu_rbb_hw` reader - "]
 pub struct PPU_RBB_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_RBB_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_RBB_HW_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PPU_RBB_HW_W<'a> {
 #[doc = "Field `ppu_lodist_body_bias_hw` reader - "]
 pub struct PPU_LODIST_BODY_BIAS_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_LODIST_BODY_BIAS_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_LODIST_BODY_BIAS_HW_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> PPU_LODIST_BODY_BIAS_HW_W<'a> {
 #[doc = "Field `ppu_vco_ldo_hw` reader - "]
 pub struct PPU_VCO_LDO_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_VCO_LDO_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_VCO_LDO_HW_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> PPU_VCO_LDO_HW_W<'a> {
 #[doc = "Field `ppu_vco_hw` reader - "]
 pub struct PPU_VCO_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_VCO_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_VCO_HW_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> PPU_VCO_HW_W<'a> {
 #[doc = "Field `pud_vco_hw` reader - "]
 pub struct PUD_VCO_HW_R(crate::FieldReader<bool, bool>);
 impl PUD_VCO_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PUD_VCO_HW_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> PUD_VCO_HW_W<'a> {
 #[doc = "Field `ppu_fbdv_hw` reader - "]
 pub struct PPU_FBDV_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_FBDV_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_FBDV_HW_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> PPU_FBDV_HW_W<'a> {
 #[doc = "Field `ppu_adpll_sfreg_hw` reader - "]
 pub struct PPU_ADPLL_SFREG_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_ADPLL_SFREG_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_ADPLL_SFREG_HW_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> PPU_ADPLL_SFREG_HW_W<'a> {
 #[doc = "Field `ppu_rxbuf_hw` reader - "]
 pub struct PPU_RXBUF_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_RXBUF_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_RXBUF_HW_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> PPU_RXBUF_HW_W<'a> {
 #[doc = "Field `ppu_txbuf_hw` reader - "]
 pub struct PPU_TXBUF_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_TXBUF_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_TXBUF_HW_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> PPU_TXBUF_HW_W<'a> {
 #[doc = "Field `ppu_testbuf_hw` reader - "]
 pub struct PPU_TESTBUF_HW_R(crate::FieldReader<bool, bool>);
 impl PPU_TESTBUF_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPU_TESTBUF_HW_R(crate::FieldReader::new(bits))
     }

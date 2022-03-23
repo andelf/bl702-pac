@@ -37,6 +37,7 @@ impl From<crate::W<UART_INT_MASK_SPEC>> for W {
 #[doc = "Field `cr_urx_lse_mask` reader - "]
 pub struct CR_URX_LSE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_LSE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_LSE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_URX_LSE_MASK_W<'a> {
 #[doc = "Field `cr_urx_fer_mask` reader - "]
 pub struct CR_URX_FER_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_FER_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_FER_MASK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_URX_FER_MASK_W<'a> {
 #[doc = "Field `cr_utx_fer_mask` reader - "]
 pub struct CR_UTX_FER_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_FER_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_FER_MASK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_UTX_FER_MASK_W<'a> {
 #[doc = "Field `cr_urx_pce_mask` reader - "]
 pub struct CR_URX_PCE_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_PCE_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_PCE_MASK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_URX_PCE_MASK_W<'a> {
 #[doc = "Field `cr_urx_rto_mask` reader - "]
 pub struct CR_URX_RTO_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_RTO_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_RTO_MASK_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_URX_RTO_MASK_W<'a> {
 #[doc = "Field `cr_urx_fifo_mask` reader - "]
 pub struct CR_URX_FIFO_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_FIFO_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_FIFO_MASK_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CR_URX_FIFO_MASK_W<'a> {
 #[doc = "Field `cr_utx_fifo_mask` reader - "]
 pub struct CR_UTX_FIFO_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_FIFO_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_FIFO_MASK_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> CR_UTX_FIFO_MASK_W<'a> {
 #[doc = "Field `cr_urx_end_mask` reader - "]
 pub struct CR_URX_END_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_URX_END_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_END_MASK_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CR_URX_END_MASK_W<'a> {
 #[doc = "Field `cr_utx_end_mask` reader - "]
 pub struct CR_UTX_END_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_END_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_END_MASK_R(crate::FieldReader::new(bits))
     }

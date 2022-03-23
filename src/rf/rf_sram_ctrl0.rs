@@ -37,6 +37,7 @@ impl From<crate::W<RF_SRAM_CTRL0_SPEC>> for W {
 #[doc = "Field `rf_sram_done_cnt` reader - "]
 pub struct RF_SRAM_DONE_CNT_R(crate::FieldReader<u16, u16>);
 impl RF_SRAM_DONE_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_SRAM_DONE_CNT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RF_SRAM_DONE_CNT_W<'a> {
 #[doc = "Field `rf_sram_mode` reader - "]
 pub struct RF_SRAM_MODE_R(crate::FieldReader<u8, u8>);
 impl RF_SRAM_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_SRAM_MODE_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RF_SRAM_MODE_W<'a> {
 #[doc = "Field `rf_sram_sts_clr` reader - "]
 pub struct RF_SRAM_STS_CLR_R(crate::FieldReader<bool, bool>);
 impl RF_SRAM_STS_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_SRAM_STS_CLR_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> RF_SRAM_STS_CLR_W<'a> {
 #[doc = "Field `rf_sram_loop_en` reader - "]
 pub struct RF_SRAM_LOOP_EN_R(crate::FieldReader<bool, bool>);
 impl RF_SRAM_LOOP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_SRAM_LOOP_EN_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> RF_SRAM_LOOP_EN_W<'a> {
 #[doc = "Field `rf_sram_en` reader - "]
 pub struct RF_SRAM_EN_R(crate::FieldReader<bool, bool>);
 impl RF_SRAM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_SRAM_EN_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> RF_SRAM_EN_W<'a> {
 #[doc = "Field `rf_sram_done` reader - "]
 pub struct RF_SRAM_DONE_R(crate::FieldReader<bool, bool>);
 impl RF_SRAM_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_SRAM_DONE_R(crate::FieldReader::new(bits))
     }

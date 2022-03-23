@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_CONTROL_1_SPEC>> for W {
 #[doc = "Field `reg_v0_order` reader - "]
 pub struct REG_V0_ORDER_R(crate::FieldReader<u8, u8>);
 impl REG_V0_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_V0_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_V0_ORDER_W<'a> {
 #[doc = "Field `reg_y1_order` reader - "]
 pub struct REG_Y1_ORDER_R(crate::FieldReader<u8, u8>);
 impl REG_Y1_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_Y1_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> REG_Y1_ORDER_W<'a> {
 #[doc = "Field `reg_u0_order` reader - "]
 pub struct REG_U0_ORDER_R(crate::FieldReader<u8, u8>);
 impl REG_U0_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_U0_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> REG_U0_ORDER_W<'a> {
 #[doc = "Field `reg_y0_order` reader - "]
 pub struct REG_Y0_ORDER_R(crate::FieldReader<u8, u8>);
 impl REG_Y0_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_Y0_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> REG_Y0_ORDER_W<'a> {
 #[doc = "Field `reg_q_mode` reader - "]
 pub struct REG_Q_MODE_R(crate::FieldReader<u8, u8>);
 impl REG_Q_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_Q_MODE_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> REG_Q_MODE_W<'a> {
 #[doc = "Field `reg_yuv_mode` reader - "]
 pub struct REG_YUV_MODE_R(crate::FieldReader<u8, u8>);
 impl REG_YUV_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_YUV_MODE_R(crate::FieldReader::new(bits))
     }
@@ -193,6 +199,7 @@ impl<'a> REG_YUV_MODE_W<'a> {
 #[doc = "Field `reg_h_bust` reader - "]
 pub struct REG_H_BUST_R(crate::FieldReader<u8, u8>);
 impl REG_H_BUST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_H_BUST_R(crate::FieldReader::new(bits))
     }
@@ -219,6 +226,7 @@ impl<'a> REG_H_BUST_W<'a> {
 #[doc = "Field `reg_reflect_dmy` reader - "]
 pub struct REG_REFLECT_DMY_R(crate::FieldReader<bool, bool>);
 impl REG_REFLECT_DMY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_REFLECT_DMY_R(crate::FieldReader::new(bits))
     }
@@ -255,6 +263,7 @@ impl<'a> REG_REFLECT_DMY_W<'a> {
 #[doc = "Field `reg_last_hf_hblk_dmy` reader - "]
 pub struct REG_LAST_HF_HBLK_DMY_R(crate::FieldReader<bool, bool>);
 impl REG_LAST_HF_HBLK_DMY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_LAST_HF_HBLK_DMY_R(crate::FieldReader::new(bits))
     }
@@ -291,6 +300,7 @@ impl<'a> REG_LAST_HF_HBLK_DMY_W<'a> {
 #[doc = "Field `reg_last_hf_wblk_dmy` reader - "]
 pub struct REG_LAST_HF_WBLK_DMY_R(crate::FieldReader<bool, bool>);
 impl REG_LAST_HF_WBLK_DMY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_LAST_HF_WBLK_DMY_R(crate::FieldReader::new(bits))
     }
@@ -327,6 +337,7 @@ impl<'a> REG_LAST_HF_WBLK_DMY_W<'a> {
 #[doc = "Field `reg_wr_over_stop` reader - "]
 pub struct REG_WR_OVER_STOP_R(crate::FieldReader<bool, bool>);
 impl REG_WR_OVER_STOP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_WR_OVER_STOP_R(crate::FieldReader::new(bits))
     }
@@ -363,6 +374,7 @@ impl<'a> REG_WR_OVER_STOP_W<'a> {
 #[doc = "Field `reg_order_u_even` reader - "]
 pub struct REG_ORDER_U_EVEN_R(crate::FieldReader<bool, bool>);
 impl REG_ORDER_U_EVEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_ORDER_U_EVEN_R(crate::FieldReader::new(bits))
     }
@@ -399,6 +411,7 @@ impl<'a> REG_ORDER_U_EVEN_W<'a> {
 #[doc = "Field `reg_mjpeg_bit_order` reader - "]
 pub struct REG_MJPEG_BIT_ORDER_R(crate::FieldReader<bool, bool>);
 impl REG_MJPEG_BIT_ORDER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MJPEG_BIT_ORDER_R(crate::FieldReader::new(bits))
     }
@@ -435,6 +448,7 @@ impl<'a> REG_MJPEG_BIT_ORDER_W<'a> {
 #[doc = "Field `reg_mjpeg_enable` reader - "]
 pub struct REG_MJPEG_ENABLE_R(crate::FieldReader<bool, bool>);
 impl REG_MJPEG_ENABLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MJPEG_ENABLE_R(crate::FieldReader::new(bits))
     }

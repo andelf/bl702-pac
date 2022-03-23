@@ -37,6 +37,7 @@ impl From<crate::W<BMX_CFG1_SPEC>> for W {
 #[doc = "Field `hbn_apb_cfg` reader - "]
 pub struct HBN_APB_CFG_R(crate::FieldReader<u8, u8>);
 impl HBN_APB_CFG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_APB_CFG_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> HBN_APB_CFG_W<'a> {
 #[doc = "Field `pds_apb_cfg` reader - "]
 pub struct PDS_APB_CFG_R(crate::FieldReader<u8, u8>);
 impl PDS_APB_CFG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PDS_APB_CFG_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> PDS_APB_CFG_W<'a> {
 #[doc = "Field `hsel_option` reader - "]
 pub struct HSEL_OPTION_R(crate::FieldReader<u8, u8>);
 impl HSEL_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HSEL_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> HSEL_OPTION_W<'a> {
 #[doc = "Field `bmx_gating_dis` reader - "]
 pub struct BMX_GATING_DIS_R(crate::FieldReader<bool, bool>);
 impl BMX_GATING_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_GATING_DIS_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> BMX_GATING_DIS_W<'a> {
 #[doc = "Field `bmx_busy_option_dis` reader - "]
 pub struct BMX_BUSY_OPTION_DIS_R(crate::FieldReader<bool, bool>);
 impl BMX_BUSY_OPTION_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_BUSY_OPTION_DIS_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> BMX_BUSY_OPTION_DIS_W<'a> {
 #[doc = "Field `bmx_err_en` reader - "]
 pub struct BMX_ERR_EN_R(crate::FieldReader<bool, bool>);
 impl BMX_ERR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BMX_ERR_EN_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> BMX_ERR_EN_W<'a> {
 #[doc = "Field `bmx_arb_mode` reader - "]
 pub struct BMX_ARB_MODE_R(crate::FieldReader<u8, u8>);
 impl BMX_ARB_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         BMX_ARB_MODE_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> BMX_ARB_MODE_W<'a> {
 #[doc = "Field `bmx_timeout_en` reader - "]
 pub struct BMX_TIMEOUT_EN_R(crate::FieldReader<u8, u8>);
 impl BMX_TIMEOUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         BMX_TIMEOUT_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<SE_SHA_0_CTRL_SPEC>> for W {
 #[doc = "Field `se_sha_0_msg_len` reader - "]
 pub struct SE_SHA_0_MSG_LEN_R(crate::FieldReader<u16, u16>);
 impl SE_SHA_0_MSG_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SE_SHA_0_MSG_LEN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_SHA_0_MSG_LEN_W<'a> {
 #[doc = "Field `se_sha_0_link_mode` reader - "]
 pub struct SE_SHA_0_LINK_MODE_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_LINK_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_LINK_MODE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SE_SHA_0_LINK_MODE_W<'a> {
 #[doc = "Field `se_sha_0_int_mask` reader - "]
 pub struct SE_SHA_0_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SE_SHA_0_INT_MASK_W<'a> {
 #[doc = "Field `se_sha_0_int_set_1t` reader - "]
 pub struct SE_SHA_0_INT_SET_1T_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_INT_SET_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_INT_SET_1T_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SE_SHA_0_INT_SET_1T_W<'a> {
 #[doc = "Field `se_sha_0_int_clr_1t` reader - "]
 pub struct SE_SHA_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_INT_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SE_SHA_0_INT_CLR_1T_W<'a> {
 #[doc = "Field `se_sha_0_int` reader - "]
 pub struct SE_SHA_0_INT_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_INT_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SE_SHA_0_INT_W<'a> {
 #[doc = "Field `se_sha_0_hash_sel` reader - "]
 pub struct SE_SHA_0_HASH_SEL_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_HASH_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_HASH_SEL_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> SE_SHA_0_HASH_SEL_W<'a> {
 #[doc = "Field `se_sha_0_en` reader - "]
 pub struct SE_SHA_0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_EN_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> SE_SHA_0_EN_W<'a> {
 #[doc = "Field `se_sha_0_mode` reader - "]
 pub struct SE_SHA_0_MODE_R(crate::FieldReader<u8, u8>);
 impl SE_SHA_0_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_SHA_0_MODE_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> SE_SHA_0_MODE_W<'a> {
 #[doc = "Field `se_sha_0_trig_1t` reader - "]
 pub struct SE_SHA_0_TRIG_1T_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_TRIG_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_TRIG_1T_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> SE_SHA_0_TRIG_1T_W<'a> {
 #[doc = "Field `se_sha_0_busy` reader - "]
 pub struct SE_SHA_0_BUSY_R(crate::FieldReader<bool, bool>);
 impl SE_SHA_0_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_SHA_0_BUSY_R(crate::FieldReader::new(bits))
     }

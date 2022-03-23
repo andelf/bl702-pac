@@ -37,6 +37,7 @@ impl From<crate::W<KS_INT_STS_SPEC>> for W {
 #[doc = "Field `keycode_valid` reader - "]
 pub struct KEYCODE_VALID_R(crate::FieldReader<u8, u8>);
 impl KEYCODE_VALID_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KEYCODE_VALID_R(crate::FieldReader::new(bits))
     }

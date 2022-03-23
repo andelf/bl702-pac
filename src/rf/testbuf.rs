@@ -37,6 +37,7 @@ impl From<crate::W<TESTBUF_SPEC>> for W {
 #[doc = "Field `pu_testbuf` reader - "]
 pub struct PU_TESTBUF_R(crate::FieldReader<bool, bool>);
 impl PU_TESTBUF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_TESTBUF_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PU_TESTBUF_W<'a> {
 #[doc = "Field `testbuf_vcm` reader - "]
 pub struct TESTBUF_VCM_R(crate::FieldReader<u8, u8>);
 impl TESTBUF_VCM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TESTBUF_VCM_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> TESTBUF_VCM_W<'a> {
 #[doc = "Field `testbuf_bm` reader - "]
 pub struct TESTBUF_BM_R(crate::FieldReader<u8, u8>);
 impl TESTBUF_BM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TESTBUF_BM_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> TESTBUF_BM_W<'a> {
 #[doc = "Field `testbuf_boost` reader - "]
 pub struct TESTBUF_BOOST_R(crate::FieldReader<bool, bool>);
 impl TESTBUF_BOOST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TESTBUF_BOOST_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> TESTBUF_BOOST_W<'a> {
 #[doc = "Field `testbuf_op_cc` reader - "]
 pub struct TESTBUF_OP_CC_R(crate::FieldReader<u8, u8>);
 impl TESTBUF_OP_CC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TESTBUF_OP_CC_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> TESTBUF_OP_CC_W<'a> {
 #[doc = "Field `testbuf_rfb` reader - "]
 pub struct TESTBUF_RFB_R(crate::FieldReader<bool, bool>);
 impl TESTBUF_RFB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TESTBUF_RFB_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> TESTBUF_RFB_W<'a> {
 #[doc = "Field `testbuf_rin` reader - "]
 pub struct TESTBUF_RIN_R(crate::FieldReader<bool, bool>);
 impl TESTBUF_RIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TESTBUF_RIN_R(crate::FieldReader::new(bits))
     }

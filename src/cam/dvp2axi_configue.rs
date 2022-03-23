@@ -37,6 +37,7 @@ impl From<crate::W<DVP2AXI_CONFIGUE_SPEC>> for W {
 #[doc = "Field `reg_dvp_wait_cycle` reader - "]
 pub struct REG_DVP_WAIT_CYCLE_R(crate::FieldReader<u8, u8>);
 impl REG_DVP_WAIT_CYCLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_DVP_WAIT_CYCLE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_DVP_WAIT_CYCLE_W<'a> {
 #[doc = "Field `reg_dvp_pix_clk_cg` reader - "]
 pub struct REG_DVP_PIX_CLK_CG_R(crate::FieldReader<bool, bool>);
 impl REG_DVP_PIX_CLK_CG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_DVP_PIX_CLK_CG_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_DVP_PIX_CLK_CG_W<'a> {
 #[doc = "Field `reg_interlv_mode` reader - "]
 pub struct REG_INTERLV_MODE_R(crate::FieldReader<bool, bool>);
 impl REG_INTERLV_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INTERLV_MODE_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_INTERLV_MODE_W<'a> {
 #[doc = "Field `reg_subsample_even` reader - "]
 pub struct REG_SUBSAMPLE_EVEN_R(crate::FieldReader<bool, bool>);
 impl REG_SUBSAMPLE_EVEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SUBSAMPLE_EVEN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> REG_SUBSAMPLE_EVEN_W<'a> {
 #[doc = "Field `reg_subsample_en` reader - "]
 pub struct REG_SUBSAMPLE_EN_R(crate::FieldReader<bool, bool>);
 impl REG_SUBSAMPLE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SUBSAMPLE_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> REG_SUBSAMPLE_EN_W<'a> {
 #[doc = "Field `reg_drop_even` reader - "]
 pub struct REG_DROP_EVEN_R(crate::FieldReader<bool, bool>);
 impl REG_DROP_EVEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_DROP_EVEN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> REG_DROP_EVEN_W<'a> {
 #[doc = "Field `reg_drop_en` reader - "]
 pub struct REG_DROP_EN_R(crate::FieldReader<bool, bool>);
 impl REG_DROP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_DROP_EN_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> REG_DROP_EN_W<'a> {
 #[doc = "Field `reg_hw_mode_fwrap` reader - "]
 pub struct REG_HW_MODE_FWRAP_R(crate::FieldReader<bool, bool>);
 impl REG_HW_MODE_FWRAP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_HW_MODE_FWRAP_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> REG_HW_MODE_FWRAP_W<'a> {
 #[doc = "Field `reg_dvp_mode` reader - "]
 pub struct REG_DVP_MODE_R(crate::FieldReader<u8, u8>);
 impl REG_DVP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_DVP_MODE_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> REG_DVP_MODE_W<'a> {
 #[doc = "Field `reg_hburst` reader - "]
 pub struct REG_HBURST_R(crate::FieldReader<u8, u8>);
 impl REG_HBURST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_HBURST_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> REG_HBURST_W<'a> {
 #[doc = "Field `reg_line_vld_pol` reader - "]
 pub struct REG_LINE_VLD_POL_R(crate::FieldReader<bool, bool>);
 impl REG_LINE_VLD_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_LINE_VLD_POL_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> REG_LINE_VLD_POL_W<'a> {
 #[doc = "Field `reg_fram_vld_pol` reader - "]
 pub struct REG_FRAM_VLD_POL_R(crate::FieldReader<bool, bool>);
 impl REG_FRAM_VLD_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_FRAM_VLD_POL_R(crate::FieldReader::new(bits))
     }
@@ -439,6 +451,7 @@ impl<'a> REG_FRAM_VLD_POL_W<'a> {
 #[doc = "Field `reg_sw_mode` reader - "]
 pub struct REG_SW_MODE_R(crate::FieldReader<bool, bool>);
 impl REG_SW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SW_MODE_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> REG_SW_MODE_W<'a> {
 #[doc = "Field `reg_dvp_enable` reader - "]
 pub struct REG_DVP_ENABLE_R(crate::FieldReader<bool, bool>);
 impl REG_DVP_ENABLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_DVP_ENABLE_R(crate::FieldReader::new(bits))
     }

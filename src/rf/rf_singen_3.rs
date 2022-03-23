@@ -37,6 +37,7 @@ impl From<crate::W<RF_SINGEN_3_SPEC>> for W {
 #[doc = "Field `singen_start_addr0_q` reader - "]
 pub struct SINGEN_START_ADDR0_Q_R(crate::FieldReader<u16, u16>);
 impl SINGEN_START_ADDR0_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_START_ADDR0_Q_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SINGEN_START_ADDR0_Q_W<'a> {
 #[doc = "Field `singen_start_addr1_q` reader - "]
 pub struct SINGEN_START_ADDR1_Q_R(crate::FieldReader<u16, u16>);
 impl SINGEN_START_ADDR1_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_START_ADDR1_Q_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SINGEN_START_ADDR1_Q_W<'a> {
 #[doc = "Field `singen_gain_q` reader - "]
 pub struct SINGEN_GAIN_Q_R(crate::FieldReader<u16, u16>);
 impl SINGEN_GAIN_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_GAIN_Q_R(crate::FieldReader::new(bits))
     }

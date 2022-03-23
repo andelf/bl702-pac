@@ -37,6 +37,7 @@ impl From<crate::W<DMA_ENBLDCHNS_SPEC>> for W {
 #[doc = "Field `EnabledChannels` reader - "]
 pub struct ENABLEDCHANNELS_R(crate::FieldReader<u8, u8>);
 impl ENABLEDCHANNELS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ENABLEDCHANNELS_R(crate::FieldReader::new(bits))
     }

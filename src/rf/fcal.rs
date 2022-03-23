@@ -37,6 +37,7 @@ impl From<crate::W<FCAL_SPEC>> for W {
 #[doc = "Field `fcal_mom_ini_ext` reader - "]
 pub struct FCAL_MOM_INI_EXT_R(crate::FieldReader<u8, u8>);
 impl FCAL_MOM_INI_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FCAL_MOM_INI_EXT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> FCAL_MOM_INI_EXT_W<'a> {
 #[doc = "Field `fcal_mode` reader - "]
 pub struct FCAL_MODE_R(crate::FieldReader<u8, u8>);
 impl FCAL_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FCAL_MODE_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> FCAL_MODE_W<'a> {
 #[doc = "Field `fcal_clk_period` reader - "]
 pub struct FCAL_CLK_PERIOD_R(crate::FieldReader<u8, u8>);
 impl FCAL_CLK_PERIOD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FCAL_CLK_PERIOD_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> FCAL_CLK_PERIOD_W<'a> {
 #[doc = "Field `fcal_mom_toggle_cnt` reader - "]
 pub struct FCAL_MOM_TOGGLE_CNT_R(crate::FieldReader<bool, bool>);
 impl FCAL_MOM_TOGGLE_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FCAL_MOM_TOGGLE_CNT_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> FCAL_MOM_TOGGLE_CNT_W<'a> {
 #[doc = "Field `fcal_coarse_pha_threshold` reader - "]
 pub struct FCAL_COARSE_PHA_THRESHOLD_R(crate::FieldReader<u8, u8>);
 impl FCAL_COARSE_PHA_THRESHOLD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FCAL_COARSE_PHA_THRESHOLD_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> FCAL_COARSE_PHA_THRESHOLD_W<'a> {
 #[doc = "Field `fcal_div_ratio_adj_en` reader - "]
 pub struct FCAL_DIV_RATIO_ADJ_EN_R(crate::FieldReader<bool, bool>);
 impl FCAL_DIV_RATIO_ADJ_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FCAL_DIV_RATIO_ADJ_EN_R(crate::FieldReader::new(bits))
     }

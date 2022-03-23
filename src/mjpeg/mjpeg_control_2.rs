@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_CONTROL_2_SPEC>> for W {
 #[doc = "Field `reg_mjpeg_wait_cycle` reader - "]
 pub struct REG_MJPEG_WAIT_CYCLE_R(crate::FieldReader<u16, u16>);
 impl REG_MJPEG_WAIT_CYCLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_MJPEG_WAIT_CYCLE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_MJPEG_WAIT_CYCLE_W<'a> {
 #[doc = "Field `reg_uv_dvp2ahb_fsel` reader - "]
 pub struct REG_UV_DVP2AHB_FSEL_R(crate::FieldReader<bool, bool>);
 impl REG_UV_DVP2AHB_FSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_UV_DVP2AHB_FSEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_UV_DVP2AHB_FSEL_W<'a> {
 #[doc = "Field `reg_uv_dvp2ahb_lsel` reader - "]
 pub struct REG_UV_DVP2AHB_LSEL_R(crate::FieldReader<bool, bool>);
 impl REG_UV_DVP2AHB_LSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_UV_DVP2AHB_LSEL_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_UV_DVP2AHB_LSEL_W<'a> {
 #[doc = "Field `reg_yy_dvp2ahb_fsel` reader - "]
 pub struct REG_YY_DVP2AHB_FSEL_R(crate::FieldReader<bool, bool>);
 impl REG_YY_DVP2AHB_FSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_YY_DVP2AHB_FSEL_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> REG_YY_DVP2AHB_FSEL_W<'a> {
 #[doc = "Field `reg_yy_dvp2ahb_lsel` reader - "]
 pub struct REG_YY_DVP2AHB_LSEL_R(crate::FieldReader<bool, bool>);
 impl REG_YY_DVP2AHB_LSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_YY_DVP2AHB_LSEL_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> REG_YY_DVP2AHB_LSEL_W<'a> {
 #[doc = "Field `reg_mjpeg_sw_run` reader - "]
 pub struct REG_MJPEG_SW_RUN_R(crate::FieldReader<bool, bool>);
 impl REG_MJPEG_SW_RUN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MJPEG_SW_RUN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> REG_MJPEG_SW_RUN_W<'a> {
 #[doc = "Field `reg_mjpeg_sw_mode` reader - "]
 pub struct REG_MJPEG_SW_MODE_R(crate::FieldReader<bool, bool>);
 impl REG_MJPEG_SW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MJPEG_SW_MODE_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> REG_MJPEG_SW_MODE_W<'a> {
 #[doc = "Field `reg_sw_frame` reader - "]
 pub struct REG_SW_FRAME_R(crate::FieldReader<u8, u8>);
 impl REG_SW_FRAME_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_SW_FRAME_R(crate::FieldReader::new(bits))
     }

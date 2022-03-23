@@ -37,6 +37,7 @@ impl From<crate::W<LO_FCW_CONFIG2_SPEC>> for W {
 #[doc = "Field `lo_fcw_hw` reader - "]
 pub struct LO_FCW_HW_R(crate::FieldReader<u32, u32>);
 impl LO_FCW_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         LO_FCW_HW_R(crate::FieldReader::new(bits))
     }

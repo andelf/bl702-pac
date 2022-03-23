@@ -37,6 +37,7 @@ impl From<crate::W<PWM_INT_CONFIG_SPEC>> for W {
 #[doc = "Field `pwm_int_clear` reader - "]
 pub struct PWM_INT_CLEAR_R(crate::FieldReader<u8, u8>);
 impl PWM_INT_CLEAR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PWM_INT_CLEAR_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> PWM_INT_CLEAR_W<'a> {
 #[doc = "Field `pwm_interrupt_sts` reader - "]
 pub struct PWM_INTERRUPT_STS_R(crate::FieldReader<u8, u8>);
 impl PWM_INTERRUPT_STS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PWM_INTERRUPT_STS_R(crate::FieldReader::new(bits))
     }

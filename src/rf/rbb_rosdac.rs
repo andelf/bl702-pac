@@ -37,6 +37,7 @@ impl From<crate::W<RBB_ROSDAC_SPEC>> for W {
 #[doc = "Field `rosdac_i` reader - "]
 pub struct ROSDAC_I_R(crate::FieldReader<u8, u8>);
 impl ROSDAC_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSDAC_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ROSDAC_I_W<'a> {
 #[doc = "Field `rosdac_q` reader - "]
 pub struct ROSDAC_Q_R(crate::FieldReader<u8, u8>);
 impl ROSDAC_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSDAC_Q_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> ROSDAC_Q_W<'a> {
 #[doc = "Field `rosdac_i_hw` reader - "]
 pub struct ROSDAC_I_HW_R(crate::FieldReader<u8, u8>);
 impl ROSDAC_I_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSDAC_I_HW_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> ROSDAC_I_HW_W<'a> {
 #[doc = "Field `rosdac_q_hw` reader - "]
 pub struct ROSDAC_Q_HW_R(crate::FieldReader<u8, u8>);
 impl ROSDAC_Q_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROSDAC_Q_HW_R(crate::FieldReader::new(bits))
     }

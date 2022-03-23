@@ -37,6 +37,7 @@ impl From<crate::W<SEAM_MISC_SPEC>> for W {
 #[doc = "Field `em_sel` reader - "]
 pub struct EM_SEL_R(crate::FieldReader<u8, u8>);
 impl EM_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EM_SEL_R(crate::FieldReader::new(bits))
     }

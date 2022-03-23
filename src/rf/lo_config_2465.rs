@@ -37,6 +37,7 @@ impl From<crate::W<LO_CONFIG_2465_SPEC>> for W {
 #[doc = "Field `adpll_sdm_dither_en_2465` reader - "]
 pub struct ADPLL_SDM_DITHER_EN_2465_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SDM_DITHER_EN_2465_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SDM_DITHER_EN_2465_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_SDM_DITHER_EN_2465_W<'a> {
 #[doc = "Field `kcal_ratio_2465` reader - "]
 pub struct KCAL_RATIO_2465_R(crate::FieldReader<u16, u16>);
 impl KCAL_RATIO_2465_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         KCAL_RATIO_2465_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<FRAME_SIZE_CONTROL_SPEC>> for W {
 #[doc = "Field `reg_total_vcnt` reader - "]
 pub struct REG_TOTAL_VCNT_R(crate::FieldReader<u16, u16>);
 impl REG_TOTAL_VCNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_TOTAL_VCNT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_TOTAL_VCNT_W<'a> {
 #[doc = "Field `reg_total_hcnt` reader - "]
 pub struct REG_TOTAL_HCNT_R(crate::FieldReader<u16, u16>);
 impl REG_TOTAL_HCNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_TOTAL_HCNT_R(crate::FieldReader::new(bits))
     }

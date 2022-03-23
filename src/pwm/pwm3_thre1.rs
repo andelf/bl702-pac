@@ -37,6 +37,7 @@ impl From<crate::W<PWM3_THRE1_SPEC>> for W {
 #[doc = "Field `pwm_thre1` reader - "]
 pub struct PWM_THRE1_R(crate::FieldReader<u16, u16>);
 impl PWM_THRE1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PWM_THRE1_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<RXADC_READBACK_SPEC>> for W {
 #[doc = "Field `rxadc_dout_i` reader - "]
 pub struct RXADC_DOUT_I_R(crate::FieldReader<u16, u16>);
 impl RXADC_DOUT_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RXADC_DOUT_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RXADC_DOUT_I_W<'a> {
 #[doc = "Field `rxadc_dout_q` reader - "]
 pub struct RXADC_DOUT_Q_R(crate::FieldReader<u16, u16>);
 impl RXADC_DOUT_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RXADC_DOUT_Q_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<I2C_BUS_BUSY_SPEC>> for W {
 #[doc = "Field `cr_i2c_bus_busy_clr` reader - "]
 pub struct CR_I2C_BUS_BUSY_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_BUS_BUSY_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_BUS_BUSY_CLR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_I2C_BUS_BUSY_CLR_W<'a> {
 #[doc = "Field `sts_i2c_bus_busy` reader - "]
 pub struct STS_I2C_BUS_BUSY_R(crate::FieldReader<bool, bool>);
 impl STS_I2C_BUS_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_I2C_BUS_BUSY_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<SF_ID1_OFFSET_SPEC>> for W {
 #[doc = "Field `sf_id1_offset` reader - "]
 pub struct SF_ID1_OFFSET_R(crate::FieldReader<u32, u32>);
 impl SF_ID1_OFFSET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         SF_ID1_OFFSET_R(crate::FieldReader::new(bits))
     }

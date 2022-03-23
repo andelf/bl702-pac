@@ -37,6 +37,7 @@ impl From<crate::W<SPI_STO_VALUE_SPEC>> for W {
 #[doc = "Field `cr_spi_sto_value` reader - "]
 pub struct CR_SPI_STO_VALUE_R(crate::FieldReader<u16, u16>);
 impl CR_SPI_STO_VALUE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_SPI_STO_VALUE_R(crate::FieldReader::new(bits))
     }

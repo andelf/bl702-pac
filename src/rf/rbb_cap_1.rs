@@ -37,6 +37,7 @@ impl From<crate::W<RBB_CAP_1_SPEC>> for W {
 #[doc = "Field `rbb_cap1_fc_i` reader - "]
 pub struct RBB_CAP1_FC_I_R(crate::FieldReader<u8, u8>);
 impl RBB_CAP1_FC_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_CAP1_FC_I_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RBB_CAP1_FC_I_W<'a> {
 #[doc = "Field `rbb_cap1_fc_q` reader - "]
 pub struct RBB_CAP1_FC_Q_R(crate::FieldReader<u8, u8>);
 impl RBB_CAP1_FC_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_CAP1_FC_Q_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RBB_CAP1_FC_Q_W<'a> {
 #[doc = "Field `rbb_cap2_fc_i` reader - "]
 pub struct RBB_CAP2_FC_I_R(crate::FieldReader<u8, u8>);
 impl RBB_CAP2_FC_I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_CAP2_FC_I_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> RBB_CAP2_FC_I_W<'a> {
 #[doc = "Field `rbb_cap2_fc_q` reader - "]
 pub struct RBB_CAP2_FC_Q_R(crate::FieldReader<u8, u8>);
 impl RBB_CAP2_FC_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_CAP2_FC_Q_R(crate::FieldReader::new(bits))
     }

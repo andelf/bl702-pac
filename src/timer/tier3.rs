@@ -37,6 +37,7 @@ impl From<crate::W<TIER3_SPEC>> for W {
 #[doc = "Field `tier_2` reader - "]
 pub struct TIER_2_R(crate::FieldReader<bool, bool>);
 impl TIER_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TIER_2_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TIER_2_W<'a> {
 #[doc = "Field `tier_1` reader - "]
 pub struct TIER_1_R(crate::FieldReader<bool, bool>);
 impl TIER_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TIER_1_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TIER_1_W<'a> {
 #[doc = "Field `tier_0` reader - "]
 pub struct TIER_0_R(crate::FieldReader<bool, bool>);
 impl TIER_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TIER_0_R(crate::FieldReader::new(bits))
     }

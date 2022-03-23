@@ -37,6 +37,7 @@ impl From<crate::W<PDS_CTL2_SPEC>> for W {
 #[doc = "Field `cr_pds_force_usb_gate_clk` reader - "]
 pub struct CR_PDS_FORCE_USB_GATE_CLK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_USB_GATE_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_USB_GATE_CLK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_PDS_FORCE_USB_GATE_CLK_W<'a> {
 #[doc = "Field `cr_pds_force_bz_gate_clk` reader - "]
 pub struct CR_PDS_FORCE_BZ_GATE_CLK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_BZ_GATE_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_BZ_GATE_CLK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_PDS_FORCE_BZ_GATE_CLK_W<'a> {
 #[doc = "Field `cr_pds_force_np_gate_clk` reader - "]
 pub struct CR_PDS_FORCE_NP_GATE_CLK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_NP_GATE_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_NP_GATE_CLK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_PDS_FORCE_NP_GATE_CLK_W<'a> {
 #[doc = "Field `cr_pds_force_usb_mem_stby` reader - "]
 pub struct CR_PDS_FORCE_USB_MEM_STBY_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_USB_MEM_STBY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_USB_MEM_STBY_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_PDS_FORCE_USB_MEM_STBY_W<'a> {
 #[doc = "Field `cr_pds_force_bz_mem_stby` reader - "]
 pub struct CR_PDS_FORCE_BZ_MEM_STBY_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_BZ_MEM_STBY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_BZ_MEM_STBY_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_PDS_FORCE_BZ_MEM_STBY_W<'a> {
 #[doc = "Field `cr_pds_force_np_mem_stby` reader - "]
 pub struct CR_PDS_FORCE_NP_MEM_STBY_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_NP_MEM_STBY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_NP_MEM_STBY_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CR_PDS_FORCE_NP_MEM_STBY_W<'a> {
 #[doc = "Field `cr_pds_force_usb_pds_rst` reader - "]
 pub struct CR_PDS_FORCE_USB_PDS_RST_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_USB_PDS_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_USB_PDS_RST_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> CR_PDS_FORCE_USB_PDS_RST_W<'a> {
 #[doc = "Field `cr_pds_force_bz_pds_rst` reader - "]
 pub struct CR_PDS_FORCE_BZ_PDS_RST_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_BZ_PDS_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_BZ_PDS_RST_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CR_PDS_FORCE_BZ_PDS_RST_W<'a> {
 #[doc = "Field `cr_pds_force_np_pds_rst` reader - "]
 pub struct CR_PDS_FORCE_NP_PDS_RST_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_NP_PDS_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_NP_PDS_RST_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> CR_PDS_FORCE_NP_PDS_RST_W<'a> {
 #[doc = "Field `cr_pds_force_usb_iso_en` reader - "]
 pub struct CR_PDS_FORCE_USB_ISO_EN_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_USB_ISO_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_USB_ISO_EN_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> CR_PDS_FORCE_USB_ISO_EN_W<'a> {
 #[doc = "Field `cr_pds_force_bz_iso_en` reader - "]
 pub struct CR_PDS_FORCE_BZ_ISO_EN_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_BZ_ISO_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_BZ_ISO_EN_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> CR_PDS_FORCE_BZ_ISO_EN_W<'a> {
 #[doc = "Field `cr_pds_force_np_iso_en` reader - "]
 pub struct CR_PDS_FORCE_NP_ISO_EN_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_NP_ISO_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_NP_ISO_EN_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> CR_PDS_FORCE_NP_ISO_EN_W<'a> {
 #[doc = "Field `cr_pds_force_usb_pwr_off` reader - "]
 pub struct CR_PDS_FORCE_USB_PWR_OFF_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_USB_PWR_OFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_USB_PWR_OFF_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> CR_PDS_FORCE_USB_PWR_OFF_W<'a> {
 #[doc = "Field `cr_pds_force_bz_pwr_off` reader - "]
 pub struct CR_PDS_FORCE_BZ_PWR_OFF_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_BZ_PWR_OFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_BZ_PWR_OFF_R(crate::FieldReader::new(bits))
     }
@@ -541,6 +555,7 @@ impl<'a> CR_PDS_FORCE_BZ_PWR_OFF_W<'a> {
 #[doc = "Field `cr_pds_force_np_pwr_off` reader - "]
 pub struct CR_PDS_FORCE_NP_PWR_OFF_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_FORCE_NP_PWR_OFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_FORCE_NP_PWR_OFF_R(crate::FieldReader::new(bits))
     }

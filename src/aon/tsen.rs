@@ -37,6 +37,7 @@ impl From<crate::W<TSEN_SPEC>> for W {
 #[doc = "Field `xtal_rdy_int_sel_aon` reader - "]
 pub struct XTAL_RDY_INT_SEL_AON_R(crate::FieldReader<u8, u8>);
 impl XTAL_RDY_INT_SEL_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         XTAL_RDY_INT_SEL_AON_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> XTAL_RDY_INT_SEL_AON_W<'a> {
 #[doc = "Field `xtal_inn_cfg_en_aon` reader - "]
 pub struct XTAL_INN_CFG_EN_AON_R(crate::FieldReader<bool, bool>);
 impl XTAL_INN_CFG_EN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_INN_CFG_EN_AON_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> XTAL_INN_CFG_EN_AON_W<'a> {
 #[doc = "Field `xtal_rdy` reader - "]
 pub struct XTAL_RDY_R(crate::FieldReader<bool, bool>);
 impl XTAL_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         XTAL_RDY_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> XTAL_RDY_W<'a> {
 #[doc = "Field `tsen_refcode_rfcal` reader - "]
 pub struct TSEN_REFCODE_RFCAL_R(crate::FieldReader<u16, u16>);
 impl TSEN_REFCODE_RFCAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TSEN_REFCODE_RFCAL_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> TSEN_REFCODE_RFCAL_W<'a> {
 #[doc = "Field `tsen_refcode_corner` reader - "]
 pub struct TSEN_REFCODE_CORNER_R(crate::FieldReader<u16, u16>);
 impl TSEN_REFCODE_CORNER_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TSEN_REFCODE_CORNER_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<PU_DELAY_CONFG_SPEC>> for W {
 #[doc = "Field `adpll_reset_width` reader - "]
 pub struct ADPLL_RESET_WIDTH_R(crate::FieldReader<u8, u8>);
 impl ADPLL_RESET_WIDTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_RESET_WIDTH_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ADPLL_RESET_WIDTH_W<'a> {
 #[doc = "Field `lo_reset_width` reader - "]
 pub struct LO_RESET_WIDTH_R(crate::FieldReader<u8, u8>);
 impl LO_RESET_WIDTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LO_RESET_WIDTH_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> LO_RESET_WIDTH_W<'a> {
 #[doc = "Field `lo_reset_delay` reader - "]
 pub struct LO_RESET_DELAY_R(crate::FieldReader<u8, u8>);
 impl LO_RESET_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LO_RESET_DELAY_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> LO_RESET_DELAY_W<'a> {
 #[doc = "Field `pud_delay` reader - "]
 pub struct PUD_DELAY_R(crate::FieldReader<u8, u8>);
 impl PUD_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PUD_DELAY_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> PUD_DELAY_W<'a> {
 #[doc = "Field `ppu_lead` reader - "]
 pub struct PPU_LEAD_R(crate::FieldReader<u8, u8>);
 impl PPU_LEAD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PPU_LEAD_R(crate::FieldReader::new(bits))
     }

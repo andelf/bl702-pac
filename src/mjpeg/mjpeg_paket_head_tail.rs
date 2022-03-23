@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_PAKET_HEAD_TAIL_SPEC>> for W {
 #[doc = "Field `reg_pket_tail_byte` reader - "]
 pub struct REG_PKET_TAIL_BYTE_R(crate::FieldReader<u16, u16>);
 impl REG_PKET_TAIL_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_PKET_TAIL_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_PKET_TAIL_BYTE_W<'a> {
 #[doc = "Field `reg_pket_head_byte` reader - "]
 pub struct REG_PKET_HEAD_BYTE_R(crate::FieldReader<u16, u16>);
 impl REG_PKET_HEAD_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_PKET_HEAD_BYTE_R(crate::FieldReader::new(bits))
     }

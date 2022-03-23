@@ -37,6 +37,7 @@ impl From<crate::W<DMA_TOP_CONFIG_SPEC>> for W {
 #[doc = "Field `M` reader - "]
 pub struct M_R(crate::FieldReader<bool, bool>);
 impl M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         M_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> M_W<'a> {
 #[doc = "Field `E` reader - "]
 pub struct E_R(crate::FieldReader<bool, bool>);
 impl E_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         E_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_TEST_SPEC>> for W {
 #[doc = "Field `adpll_test_start` reader - "]
 pub struct ADPLL_TEST_START_R(crate::FieldReader<bool, bool>);
 impl ADPLL_TEST_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_TEST_START_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ADPLL_TEST_START_W<'a> {
 #[doc = "Field `adpll_test_en` reader - "]
 pub struct ADPLL_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ADPLL_TEST_EN_W<'a> {
 #[doc = "Field `adpll_test_start_sel` reader - "]
 pub struct ADPLL_TEST_START_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_TEST_START_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_TEST_START_SEL_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> ADPLL_TEST_START_SEL_W<'a> {
 #[doc = "Field `adpll_test_data_sel` reader - "]
 pub struct ADPLL_TEST_DATA_SEL_R(crate::FieldReader<u8, u8>);
 impl ADPLL_TEST_DATA_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_TEST_DATA_SEL_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> ADPLL_TEST_DATA_SEL_W<'a> {
 #[doc = "Field `adpll_test_out` reader - "]
 pub struct ADPLL_TEST_OUT_R(crate::FieldReader<u16, u16>);
 impl ADPLL_TEST_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         ADPLL_TEST_OUT_R(crate::FieldReader::new(bits))
     }

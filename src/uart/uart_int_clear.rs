@@ -37,6 +37,7 @@ impl From<crate::W<UART_INT_CLEAR_SPEC>> for W {
 #[doc = "Field `cr_urx_lse_clr` reader - "]
 pub struct CR_URX_LSE_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_URX_LSE_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_LSE_CLR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_URX_LSE_CLR_W<'a> {
 #[doc = "Field `rsvd_7` reader - "]
 pub struct RSVD_7_R(crate::FieldReader<bool, bool>);
 impl RSVD_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_7_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RSVD_7_W<'a> {
 #[doc = "Field `rsvd_6` reader - "]
 pub struct RSVD_6_R(crate::FieldReader<bool, bool>);
 impl RSVD_6_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_6_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> RSVD_6_W<'a> {
 #[doc = "Field `cr_urx_pce_clr` reader - "]
 pub struct CR_URX_PCE_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_URX_PCE_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_PCE_CLR_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_URX_PCE_CLR_W<'a> {
 #[doc = "Field `cr_urx_rto_clr` reader - "]
 pub struct CR_URX_RTO_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_URX_RTO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_RTO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CR_URX_RTO_CLR_W<'a> {
 #[doc = "Field `rsvd_3` reader - "]
 pub struct RSVD_3_R(crate::FieldReader<bool, bool>);
 impl RSVD_3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_3_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> RSVD_3_W<'a> {
 #[doc = "Field `rsvd_2` reader - "]
 pub struct RSVD_2_R(crate::FieldReader<bool, bool>);
 impl RSVD_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RSVD_2_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> RSVD_2_W<'a> {
 #[doc = "Field `cr_urx_end_clr` reader - "]
 pub struct CR_URX_END_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_URX_END_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_END_CLR_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CR_URX_END_CLR_W<'a> {
 #[doc = "Field `cr_utx_end_clr` reader - "]
 pub struct CR_UTX_END_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_END_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_END_CLR_R(crate::FieldReader::new(bits))
     }

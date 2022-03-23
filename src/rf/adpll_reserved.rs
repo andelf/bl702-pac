@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_RESERVED_SPEC>> for W {
 #[doc = "Field `adpll_resv0` reader - "]
 pub struct ADPLL_RESV0_R(crate::FieldReader<u16, u16>);
 impl ADPLL_RESV0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         ADPLL_RESV0_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ADPLL_RESV0_W<'a> {
 #[doc = "Field `adpll_resv1` reader - "]
 pub struct ADPLL_RESV1_R(crate::FieldReader<u16, u16>);
 impl ADPLL_RESV1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         ADPLL_RESV1_R(crate::FieldReader::new(bits))
     }

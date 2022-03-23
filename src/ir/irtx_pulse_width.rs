@@ -37,6 +37,7 @@ impl From<crate::W<IRTX_PULSE_WIDTH_SPEC>> for W {
 #[doc = "Field `cr_irtx_mod_ph1_w` reader - "]
 pub struct CR_IRTX_MOD_PH1_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_MOD_PH1_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_MOD_PH1_W_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_IRTX_MOD_PH1_W_W<'a> {
 #[doc = "Field `cr_irtx_mod_ph0_w` reader - "]
 pub struct CR_IRTX_MOD_PH0_W_R(crate::FieldReader<u8, u8>);
 impl CR_IRTX_MOD_PH0_W_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_IRTX_MOD_PH0_W_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_IRTX_MOD_PH0_W_W<'a> {
 #[doc = "Field `cr_irtx_pw_unit` reader - "]
 pub struct CR_IRTX_PW_UNIT_R(crate::FieldReader<u16, u16>);
 impl CR_IRTX_PW_UNIT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_IRTX_PW_UNIT_R(crate::FieldReader::new(bits))
     }

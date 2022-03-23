@@ -37,6 +37,7 @@ impl From<crate::W<HSYNC_CONTROL_SPEC>> for W {
 #[doc = "Field `reg_hsync_act_start` reader - "]
 pub struct REG_HSYNC_ACT_START_R(crate::FieldReader<u16, u16>);
 impl REG_HSYNC_ACT_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_HSYNC_ACT_START_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_HSYNC_ACT_START_W<'a> {
 #[doc = "Field `reg_hsync_act_end` reader - "]
 pub struct REG_HSYNC_ACT_END_R(crate::FieldReader<u16, u16>);
 impl REG_HSYNC_ACT_END_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         REG_HSYNC_ACT_END_R(crate::FieldReader::new(bits))
     }

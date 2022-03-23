@@ -37,6 +37,7 @@ impl From<crate::W<COLLCONFIG_SPEC>> for W {
 #[doc = "Field `MAXRET` reader - "]
 pub struct MAXRET_R(crate::FieldReader<u8, u8>);
 impl MAXRET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         MAXRET_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> MAXRET_W<'a> {
 #[doc = "Field `COLLVALID` reader - "]
 pub struct COLLVALID_R(crate::FieldReader<u8, u8>);
 impl COLLVALID_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COLLVALID_R(crate::FieldReader::new(bits))
     }

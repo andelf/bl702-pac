@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>> for W {
 #[doc = "Field `rx_fifo_cnt` reader - "]
 pub struct RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
 impl RX_FIFO_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RX_FIFO_CNT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RX_FIFO_CNT_W<'a> {
 #[doc = "Field `rx_fifo_underflow` reader - "]
 pub struct RX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_UNDERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RX_FIFO_UNDERFLOW_W<'a> {
 #[doc = "Field `rx_fifo_overflow` reader - "]
 pub struct RX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_OVERFLOW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RX_FIFO_OVERFLOW_W<'a> {
 #[doc = "Field `rx_fifo_clr` reader - "]
 pub struct RX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl RX_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RX_FIFO_CLR_R(crate::FieldReader::new(bits))
     }

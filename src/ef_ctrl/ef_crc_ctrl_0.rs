@@ -37,6 +37,7 @@ impl From<crate::W<EF_CRC_CTRL_0_SPEC>> for W {
 #[doc = "Field `ef_crc_slp_n` reader - "]
 pub struct EF_CRC_SLP_N_R(crate::FieldReader<u16, u16>);
 impl EF_CRC_SLP_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         EF_CRC_SLP_N_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> EF_CRC_SLP_N_W<'a> {
 #[doc = "Field `ef_crc_lock` reader - "]
 pub struct EF_CRC_LOCK_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> EF_CRC_LOCK_W<'a> {
 #[doc = "Field `ef_crc_int_set` reader - "]
 pub struct EF_CRC_INT_SET_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_INT_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_INT_SET_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> EF_CRC_INT_SET_W<'a> {
 #[doc = "Field `ef_crc_int_clr` reader - "]
 pub struct EF_CRC_INT_CLR_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_INT_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_INT_CLR_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> EF_CRC_INT_CLR_W<'a> {
 #[doc = "Field `ef_crc_int` reader - "]
 pub struct EF_CRC_INT_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_INT_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> EF_CRC_INT_W<'a> {
 #[doc = "Field `ef_crc_din_endian` reader - "]
 pub struct EF_CRC_DIN_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_DIN_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_DIN_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> EF_CRC_DIN_ENDIAN_W<'a> {
 #[doc = "Field `ef_crc_dout_endian` reader - "]
 pub struct EF_CRC_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_DOUT_ENDIAN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> EF_CRC_DOUT_ENDIAN_W<'a> {
 #[doc = "Field `ef_crc_dout_inv_en` reader - "]
 pub struct EF_CRC_DOUT_INV_EN_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_DOUT_INV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_DOUT_INV_EN_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> EF_CRC_DOUT_INV_EN_W<'a> {
 #[doc = "Field `ef_crc_error` reader - "]
 pub struct EF_CRC_ERROR_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_ERROR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_ERROR_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> EF_CRC_ERROR_W<'a> {
 #[doc = "Field `ef_crc_mode` reader - "]
 pub struct EF_CRC_MODE_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_MODE_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> EF_CRC_MODE_W<'a> {
 #[doc = "Field `ef_crc_en` reader - "]
 pub struct EF_CRC_EN_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_EN_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> EF_CRC_EN_W<'a> {
 #[doc = "Field `ef_crc_trig` reader - "]
 pub struct EF_CRC_TRIG_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> EF_CRC_TRIG_W<'a> {
 #[doc = "Field `ef_crc_busy` reader - "]
 pub struct EF_CRC_BUSY_R(crate::FieldReader<bool, bool>);
 impl EF_CRC_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CRC_BUSY_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<CLK_CFG1_SPEC>> for W {
 #[doc = "Field `reg_cam_ref_clk_div` reader - "]
 pub struct REG_CAM_REF_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl REG_CAM_REF_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_CAM_REF_CLK_DIV_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_CAM_REF_CLK_DIV_W<'a> {
 #[doc = "Field `reg_cam_ref_clk_src_sel` reader - "]
 pub struct REG_CAM_REF_CLK_SRC_SEL_R(crate::FieldReader<bool, bool>);
 impl REG_CAM_REF_CLK_SRC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CAM_REF_CLK_SRC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> REG_CAM_REF_CLK_SRC_SEL_W<'a> {
 #[doc = "Field `reg_cam_ref_clk_en` reader - "]
 pub struct REG_CAM_REF_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_CAM_REF_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CAM_REF_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> REG_CAM_REF_CLK_EN_W<'a> {
 #[doc = "Field `m154_zbEn` reader - "]
 pub struct M154_ZBEN_R(crate::FieldReader<bool, bool>);
 impl M154_ZBEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         M154_ZBEN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> M154_ZBEN_W<'a> {
 #[doc = "Field `ble_en` reader - "]
 pub struct BLE_EN_R(crate::FieldReader<bool, bool>);
 impl BLE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BLE_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> BLE_EN_W<'a> {
 #[doc = "Field `ble_clk_sel` reader - "]
 pub struct BLE_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl BLE_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         BLE_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> BLE_CLK_SEL_W<'a> {
 #[doc = "Field `reg_i2s_0_ref_clk_oe` reader - "]
 pub struct REG_I2S_0_REF_CLK_OE_R(crate::FieldReader<bool, bool>);
 impl REG_I2S_0_REF_CLK_OE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_I2S_0_REF_CLK_OE_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> REG_I2S_0_REF_CLK_OE_W<'a> {
 #[doc = "Field `reg_i2s0_clk_en` reader - "]
 pub struct REG_I2S0_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_I2S0_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_I2S0_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> REG_I2S0_CLK_EN_W<'a> {
 #[doc = "Field `reg_i2s_clk_sel` reader - "]
 pub struct REG_I2S_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl REG_I2S_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_I2S_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> REG_I2S_CLK_SEL_W<'a> {
 #[doc = "Field `dll_48m_div_en` reader - "]
 pub struct DLL_48M_DIV_EN_R(crate::FieldReader<bool, bool>);
 impl DLL_48M_DIV_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DLL_48M_DIV_EN_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> DLL_48M_DIV_EN_W<'a> {
 #[doc = "Field `usb_clk_en` reader - "]
 pub struct USB_CLK_EN_R(crate::FieldReader<bool, bool>);
 impl USB_CLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_CLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> USB_CLK_EN_W<'a> {
 #[doc = "Field `qdec_clk_sel` reader - "]
 pub struct QDEC_CLK_SEL_R(crate::FieldReader<bool, bool>);
 impl QDEC_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         QDEC_CLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> QDEC_CLK_SEL_W<'a> {
 #[doc = "Field `qdec_clk_div` reader - "]
 pub struct QDEC_CLK_DIV_R(crate::FieldReader<u8, u8>);
 impl QDEC_CLK_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         QDEC_CLK_DIV_R(crate::FieldReader::new(bits))
     }

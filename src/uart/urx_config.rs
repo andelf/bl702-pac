@@ -37,6 +37,7 @@ impl From<crate::W<URX_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_urx_len` reader - "]
 pub struct CR_URX_LEN_R(crate::FieldReader<u16, u16>);
 impl CR_URX_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_URX_LEN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_URX_LEN_W<'a> {
 #[doc = "Field `cr_urx_deg_cnt` reader - "]
 pub struct CR_URX_DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl CR_URX_DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_URX_DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_URX_DEG_CNT_W<'a> {
 #[doc = "Field `cr_urx_deg_en` reader - "]
 pub struct CR_URX_DEG_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CR_URX_DEG_EN_W<'a> {
 #[doc = "Field `cr_urx_bit_cnt_d` reader - "]
 pub struct CR_URX_BIT_CNT_D_R(crate::FieldReader<u8, u8>);
 impl CR_URX_BIT_CNT_D_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_URX_BIT_CNT_D_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> CR_URX_BIT_CNT_D_W<'a> {
 #[doc = "Field `cr_urx_ir_inv` reader - "]
 pub struct CR_URX_IR_INV_R(crate::FieldReader<bool, bool>);
 impl CR_URX_IR_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_IR_INV_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> CR_URX_IR_INV_W<'a> {
 #[doc = "Field `cr_urx_ir_en` reader - "]
 pub struct CR_URX_IR_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_IR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_IR_EN_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> CR_URX_IR_EN_W<'a> {
 #[doc = "Field `cr_urx_prt_sel` reader - "]
 pub struct CR_URX_PRT_SEL_R(crate::FieldReader<bool, bool>);
 impl CR_URX_PRT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_PRT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> CR_URX_PRT_SEL_W<'a> {
 #[doc = "Field `cr_urx_prt_en` reader - "]
 pub struct CR_URX_PRT_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_PRT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_PRT_EN_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> CR_URX_PRT_EN_W<'a> {
 #[doc = "Field `cr_urx_lin_en` reader - "]
 pub struct CR_URX_LIN_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_LIN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_LIN_EN_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> CR_URX_LIN_EN_W<'a> {
 #[doc = "Field `cr_urx_abr_en` reader - "]
 pub struct CR_URX_ABR_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_ABR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_ABR_EN_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> CR_URX_ABR_EN_W<'a> {
 #[doc = "Field `cr_urx_en` reader - "]
 pub struct CR_URX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_URX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_URX_EN_R(crate::FieldReader::new(bits))
     }

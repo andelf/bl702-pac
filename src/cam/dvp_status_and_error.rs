@@ -37,6 +37,7 @@ impl From<crate::W<DVP_STATUS_AND_ERROR_SPEC>> for W {
 #[doc = "Field `st_bus_flsh` reader - "]
 pub struct ST_BUS_FLSH_R(crate::FieldReader<bool, bool>);
 impl ST_BUS_FLSH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ST_BUS_FLSH_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ST_BUS_FLSH_W<'a> {
 #[doc = "Field `st_bus_wait` reader - "]
 pub struct ST_BUS_WAIT_R(crate::FieldReader<bool, bool>);
 impl ST_BUS_WAIT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ST_BUS_WAIT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> ST_BUS_WAIT_W<'a> {
 #[doc = "Field `st_bus_func` reader - "]
 pub struct ST_BUS_FUNC_R(crate::FieldReader<bool, bool>);
 impl ST_BUS_FUNC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ST_BUS_FUNC_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> ST_BUS_FUNC_W<'a> {
 #[doc = "Field `st_bus_idle` reader - "]
 pub struct ST_BUS_IDLE_R(crate::FieldReader<bool, bool>);
 impl ST_BUS_IDLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ST_BUS_IDLE_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> ST_BUS_IDLE_W<'a> {
 #[doc = "Field `frame_valid_cnt_1` reader - "]
 pub struct FRAME_VALID_CNT_1_R(crate::FieldReader<u8, u8>);
 impl FRAME_VALID_CNT_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FRAME_VALID_CNT_1_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> FRAME_VALID_CNT_1_W<'a> {
 #[doc = "Field `frame_valid_cnt_0` reader - "]
 pub struct FRAME_VALID_CNT_0_R(crate::FieldReader<u8, u8>);
 impl FRAME_VALID_CNT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FRAME_VALID_CNT_0_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> FRAME_VALID_CNT_0_W<'a> {
 #[doc = "Field `st_dvp_idle` reader - "]
 pub struct ST_DVP_IDLE_R(crate::FieldReader<bool, bool>);
 impl ST_DVP_IDLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ST_DVP_IDLE_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> ST_DVP_IDLE_W<'a> {
 #[doc = "Field `ahb_idle_1` reader - "]
 pub struct AHB_IDLE_1_R(crate::FieldReader<bool, bool>);
 impl AHB_IDLE_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         AHB_IDLE_1_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> AHB_IDLE_1_W<'a> {
 #[doc = "Field `ahb_idle_0` reader - "]
 pub struct AHB_IDLE_0_R(crate::FieldReader<bool, bool>);
 impl AHB_IDLE_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         AHB_IDLE_0_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> AHB_IDLE_0_W<'a> {
 #[doc = "Field `sts_vcnt_int` reader - "]
 pub struct STS_VCNT_INT_R(crate::FieldReader<bool, bool>);
 impl STS_VCNT_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_VCNT_INT_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> STS_VCNT_INT_W<'a> {
 #[doc = "Field `sts_hcnt_int` reader - "]
 pub struct STS_HCNT_INT_R(crate::FieldReader<bool, bool>);
 impl STS_HCNT_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_HCNT_INT_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> STS_HCNT_INT_W<'a> {
 #[doc = "Field `sts_fifo_int_1` reader - "]
 pub struct STS_FIFO_INT_1_R(crate::FieldReader<bool, bool>);
 impl STS_FIFO_INT_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_FIFO_INT_1_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> STS_FIFO_INT_1_W<'a> {
 #[doc = "Field `sts_fifo_int_0` reader - "]
 pub struct STS_FIFO_INT_0_R(crate::FieldReader<bool, bool>);
 impl STS_FIFO_INT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_FIFO_INT_0_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> STS_FIFO_INT_0_W<'a> {
 #[doc = "Field `sts_frame_int_1` reader - "]
 pub struct STS_FRAME_INT_1_R(crate::FieldReader<bool, bool>);
 impl STS_FRAME_INT_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_FRAME_INT_1_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> STS_FRAME_INT_1_W<'a> {
 #[doc = "Field `sts_frame_int_0` reader - "]
 pub struct STS_FRAME_INT_0_R(crate::FieldReader<bool, bool>);
 impl STS_FRAME_INT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_FRAME_INT_0_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> STS_FRAME_INT_0_W<'a> {
 #[doc = "Field `sts_mem_int_1` reader - "]
 pub struct STS_MEM_INT_1_R(crate::FieldReader<bool, bool>);
 impl STS_MEM_INT_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_MEM_INT_1_R(crate::FieldReader::new(bits))
     }
@@ -593,6 +609,7 @@ impl<'a> STS_MEM_INT_1_W<'a> {
 #[doc = "Field `sts_mem_int_0` reader - "]
 pub struct STS_MEM_INT_0_R(crate::FieldReader<bool, bool>);
 impl STS_MEM_INT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_MEM_INT_0_R(crate::FieldReader::new(bits))
     }
@@ -629,6 +646,7 @@ impl<'a> STS_MEM_INT_0_W<'a> {
 #[doc = "Field `sts_normal_int_1` reader - "]
 pub struct STS_NORMAL_INT_1_R(crate::FieldReader<bool, bool>);
 impl STS_NORMAL_INT_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_NORMAL_INT_1_R(crate::FieldReader::new(bits))
     }
@@ -665,6 +683,7 @@ impl<'a> STS_NORMAL_INT_1_W<'a> {
 #[doc = "Field `sts_normal_int_0` reader - "]
 pub struct STS_NORMAL_INT_0_R(crate::FieldReader<bool, bool>);
 impl STS_NORMAL_INT_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_NORMAL_INT_0_R(crate::FieldReader::new(bits))
     }

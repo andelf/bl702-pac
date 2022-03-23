@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_DATA_COUNT_SPEC>> for W {
 #[doc = "Field `sts_irrx_data_cnt` reader - "]
 pub struct STS_IRRX_DATA_CNT_R(crate::FieldReader<u8, u8>);
 impl STS_IRRX_DATA_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         STS_IRRX_DATA_CNT_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<RF_FSM_SPEC>> for W {
 #[doc = "Field `rf_fsm_afifo_dly_time` reader - "]
 pub struct RF_FSM_AFIFO_DLY_TIME_R(crate::FieldReader<u8, u8>);
 impl RF_FSM_AFIFO_DLY_TIME_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_FSM_AFIFO_DLY_TIME_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RF_FSM_AFIFO_DLY_TIME_W<'a> {
 #[doc = "Field `rf_fsm_tx_afifo_4s_en` reader - "]
 pub struct RF_FSM_TX_AFIFO_4S_EN_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_TX_AFIFO_4S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_TX_AFIFO_4S_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RF_FSM_TX_AFIFO_4S_EN_W<'a> {
 #[doc = "Field `rf_fsm_tx_afifo_4s` reader - "]
 pub struct RF_FSM_TX_AFIFO_4S_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_TX_AFIFO_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_TX_AFIFO_4S_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RF_FSM_TX_AFIFO_4S_W<'a> {
 #[doc = "Field `rf_fsm_rx_afifo_4s_en` reader - "]
 pub struct RF_FSM_RX_AFIFO_4S_EN_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_RX_AFIFO_4S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_RX_AFIFO_4S_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> RF_FSM_RX_AFIFO_4S_EN_W<'a> {
 #[doc = "Field `rf_fsm_rx_afifo_4s` reader - "]
 pub struct RF_FSM_RX_AFIFO_4S_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_RX_AFIFO_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_RX_AFIFO_4S_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RF_FSM_RX_AFIFO_4S_W<'a> {
 #[doc = "Field `rf_fsm_en` reader - "]
 pub struct RF_FSM_EN_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> RF_FSM_EN_W<'a> {
 #[doc = "Field `rf_fsm_st_4s_en` reader - "]
 pub struct RF_FSM_ST_4S_EN_R(crate::FieldReader<bool, bool>);
 impl RF_FSM_ST_4S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_FSM_ST_4S_EN_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> RF_FSM_ST_4S_EN_W<'a> {
 #[doc = "Field `rf_fsm_st_4s` reader - "]
 pub struct RF_FSM_ST_4S_R(crate::FieldReader<u8, u8>);
 impl RF_FSM_ST_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_FSM_ST_4S_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> RF_FSM_ST_4S_W<'a> {
 #[doc = "Field `rf_fsm_state` reader - "]
 pub struct RF_FSM_STATE_R(crate::FieldReader<u8, u8>);
 impl RF_FSM_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_FSM_STATE_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> RF_FSM_STATE_W<'a> {
 #[doc = "Field `rf_fsm_lo_time` reader - "]
 pub struct RF_FSM_LO_TIME_R(crate::FieldReader<u16, u16>);
 impl RF_FSM_LO_TIME_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RF_FSM_LO_TIME_R(crate::FieldReader::new(bits))
     }

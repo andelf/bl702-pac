@@ -37,6 +37,7 @@ impl From<crate::W<SPI_PRD_0_SPEC>> for W {
 #[doc = "Field `cr_spi_prd_d_ph_1` reader - "]
 pub struct CR_SPI_PRD_D_PH_1_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_PRD_D_PH_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_PRD_D_PH_1_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_SPI_PRD_D_PH_1_W<'a> {
 #[doc = "Field `cr_spi_prd_d_ph_0` reader - "]
 pub struct CR_SPI_PRD_D_PH_0_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_PRD_D_PH_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_PRD_D_PH_0_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_SPI_PRD_D_PH_0_W<'a> {
 #[doc = "Field `cr_spi_prd_p` reader - "]
 pub struct CR_SPI_PRD_P_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_PRD_P_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_PRD_P_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> CR_SPI_PRD_P_W<'a> {
 #[doc = "Field `cr_spi_prd_s` reader - "]
 pub struct CR_SPI_PRD_S_R(crate::FieldReader<u8, u8>);
 impl CR_SPI_PRD_S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_SPI_PRD_S_R(crate::FieldReader::new(bits))
     }

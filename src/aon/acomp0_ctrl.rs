@@ -37,6 +37,7 @@ impl From<crate::W<ACOMP0_CTRL_SPEC>> for W {
 #[doc = "Field `acomp0_muxen` reader - "]
 pub struct ACOMP0_MUXEN_R(crate::FieldReader<bool, bool>);
 impl ACOMP0_MUXEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP0_MUXEN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> ACOMP0_MUXEN_W<'a> {
 #[doc = "Field `acomp0_pos_sel` reader - "]
 pub struct ACOMP0_POS_SEL_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_POS_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_POS_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> ACOMP0_POS_SEL_W<'a> {
 #[doc = "Field `acomp0_neg_sel` reader - "]
 pub struct ACOMP0_NEG_SEL_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_NEG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_NEG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> ACOMP0_NEG_SEL_W<'a> {
 #[doc = "Field `acomp0_level_sel` reader - "]
 pub struct ACOMP0_LEVEL_SEL_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_LEVEL_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_LEVEL_SEL_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> ACOMP0_LEVEL_SEL_W<'a> {
 #[doc = "Field `acomp0_bias_prog` reader - "]
 pub struct ACOMP0_BIAS_PROG_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_BIAS_PROG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_BIAS_PROG_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> ACOMP0_BIAS_PROG_W<'a> {
 #[doc = "Field `acomp0_hyst_selp` reader - "]
 pub struct ACOMP0_HYST_SELP_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_HYST_SELP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_HYST_SELP_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> ACOMP0_HYST_SELP_W<'a> {
 #[doc = "Field `acomp0_hyst_seln` reader - "]
 pub struct ACOMP0_HYST_SELN_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_HYST_SELN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_HYST_SELN_R(crate::FieldReader::new(bits))
     }
@@ -229,6 +236,7 @@ impl<'a> ACOMP0_HYST_SELN_W<'a> {
 #[doc = "Field `acomp0_en` reader - "]
 pub struct ACOMP0_EN_R(crate::FieldReader<bool, bool>);
 impl ACOMP0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP0_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<SF_CTRL_1_SPEC>> for W {
 #[doc = "Field `sf_ahb2sram_en` reader - "]
 pub struct SF_AHB2SRAM_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AHB2SRAM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AHB2SRAM_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_AHB2SRAM_EN_W<'a> {
 #[doc = "Field `sf_ahb2sif_en` reader - "]
 pub struct SF_AHB2SIF_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AHB2SIF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AHB2SIF_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SF_AHB2SIF_EN_W<'a> {
 #[doc = "Field `sf_if_en` reader - "]
 pub struct SF_IF_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SF_IF_EN_W<'a> {
 #[doc = "Field `sf_if_fn_sel` reader - "]
 pub struct SF_IF_FN_SEL_R(crate::FieldReader<bool, bool>);
 impl SF_IF_FN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_FN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SF_IF_FN_SEL_W<'a> {
 #[doc = "Field `sf_ahb2sif_stop` reader - "]
 pub struct SF_AHB2SIF_STOP_R(crate::FieldReader<bool, bool>);
 impl SF_AHB2SIF_STOP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AHB2SIF_STOP_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SF_AHB2SIF_STOP_W<'a> {
 #[doc = "Field `sf_ahb2sif_stopped` reader - "]
 pub struct SF_AHB2SIF_STOPPED_R(crate::FieldReader<bool, bool>);
 impl SF_AHB2SIF_STOPPED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AHB2SIF_STOPPED_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SF_AHB2SIF_STOPPED_W<'a> {
 #[doc = "Field `sf_if_reg_wp` reader - "]
 pub struct SF_IF_REG_WP_R(crate::FieldReader<bool, bool>);
 impl SF_IF_REG_WP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_REG_WP_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SF_IF_REG_WP_W<'a> {
 #[doc = "Field `sf_if_reg_hold` reader - "]
 pub struct SF_IF_REG_HOLD_R(crate::FieldReader<bool, bool>);
 impl SF_IF_REG_HOLD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_REG_HOLD_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> SF_IF_REG_HOLD_W<'a> {
 #[doc = "Field `sf_if_0_ack_lat` reader - "]
 pub struct SF_IF_0_ACK_LAT_R(crate::FieldReader<u8, u8>);
 impl SF_IF_0_ACK_LAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_0_ACK_LAT_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> SF_IF_0_ACK_LAT_W<'a> {
 #[doc = "Field `sf_if_sr_int_set` reader - "]
 pub struct SF_IF_SR_INT_SET_R(crate::FieldReader<bool, bool>);
 impl SF_IF_SR_INT_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_SR_INT_SET_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> SF_IF_SR_INT_SET_W<'a> {
 #[doc = "Field `sf_if_sr_int_en` reader - "]
 pub struct SF_IF_SR_INT_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_SR_INT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_SR_INT_EN_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> SF_IF_SR_INT_EN_W<'a> {
 #[doc = "Field `sf_if_sr_int` reader - "]
 pub struct SF_IF_SR_INT_R(crate::FieldReader<bool, bool>);
 impl SF_IF_SR_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_SR_INT_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> SF_IF_SR_INT_W<'a> {
 #[doc = "Field `sf_if_sr_pat` reader - "]
 pub struct SF_IF_SR_PAT_R(crate::FieldReader<u8, u8>);
 impl SF_IF_SR_PAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_SR_PAT_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> SF_IF_SR_PAT_W<'a> {
 #[doc = "Field `sf_if_sr_pat_mask` reader - "]
 pub struct SF_IF_SR_PAT_MASK_R(crate::FieldReader<u8, u8>);
 impl SF_IF_SR_PAT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_SR_PAT_MASK_R(crate::FieldReader::new(bits))
     }

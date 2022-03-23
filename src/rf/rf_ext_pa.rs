@@ -37,6 +37,7 @@ impl From<crate::W<RF_EXT_PA_SPEC>> for W {
 #[doc = "Field `rf_ext_pa_rx` reader - "]
 pub struct RF_EXT_PA_RX_R(crate::FieldReader<u8, u8>);
 impl RF_EXT_PA_RX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_EXT_PA_RX_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RF_EXT_PA_RX_W<'a> {
 #[doc = "Field `rf_ext_pa_lorx` reader - "]
 pub struct RF_EXT_PA_LORX_R(crate::FieldReader<u8, u8>);
 impl RF_EXT_PA_LORX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_EXT_PA_LORX_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RF_EXT_PA_LORX_W<'a> {
 #[doc = "Field `rf_ext_pa_tx` reader - "]
 pub struct RF_EXT_PA_TX_R(crate::FieldReader<u8, u8>);
 impl RF_EXT_PA_TX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_EXT_PA_TX_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> RF_EXT_PA_TX_W<'a> {
 #[doc = "Field `rf_ext_pa_lotx` reader - "]
 pub struct RF_EXT_PA_LOTX_R(crate::FieldReader<u8, u8>);
 impl RF_EXT_PA_LOTX_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_EXT_PA_LOTX_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> RF_EXT_PA_LOTX_W<'a> {
 #[doc = "Field `rf_ext_pa_sb` reader - "]
 pub struct RF_EXT_PA_SB_R(crate::FieldReader<u8, u8>);
 impl RF_EXT_PA_SB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RF_EXT_PA_SB_R(crate::FieldReader::new(bits))
     }

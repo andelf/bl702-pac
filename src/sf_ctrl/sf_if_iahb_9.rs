@@ -37,6 +37,7 @@ impl From<crate::W<SF_IF_IAHB_9_SPEC>> for W {
 #[doc = "Field `sf_if_4_qpi_mode_en` reader - "]
 pub struct SF_IF_4_QPI_MODE_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_QPI_MODE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_QPI_MODE_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_IF_4_QPI_MODE_EN_W<'a> {
 #[doc = "Field `sf_if_4_spi_mode` reader - "]
 pub struct SF_IF_4_SPI_MODE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_4_SPI_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_4_SPI_MODE_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_IF_4_SPI_MODE_W<'a> {
 #[doc = "Field `sf_if_4_cmd_en` reader - "]
 pub struct SF_IF_4_CMD_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_CMD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_CMD_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_IF_4_CMD_EN_W<'a> {
 #[doc = "Field `sf_if_4_adr_en` reader - "]
 pub struct SF_IF_4_ADR_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_ADR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_ADR_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_IF_4_ADR_EN_W<'a> {
 #[doc = "Field `sf_if_4_dmy_en` reader - "]
 pub struct SF_IF_4_DMY_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_DMY_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_DMY_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SF_IF_4_DMY_EN_W<'a> {
 #[doc = "Field `sf_if_4_dat_en` reader - "]
 pub struct SF_IF_4_DAT_EN_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_DAT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_DAT_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SF_IF_4_DAT_EN_W<'a> {
 #[doc = "Field `sf_if_4_dat_rw  ` reader - "]
 pub struct SF_IF_4_DAT_RW_R(crate::FieldReader<bool, bool>);
 impl SF_IF_4_DAT_RW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_4_DAT_RW_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> SF_IF_4_DAT_RW_W<'a> {
 #[doc = "Field `sf_if_4_cmd_byte` reader - "]
 pub struct SF_IF_4_CMD_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_4_CMD_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_4_CMD_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> SF_IF_4_CMD_BYTE_W<'a> {
 #[doc = "Field `sf_if_4_adr_byte` reader - "]
 pub struct SF_IF_4_ADR_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_4_ADR_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_4_ADR_BYTE_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> SF_IF_4_ADR_BYTE_W<'a> {
 #[doc = "Field `sf_if_4_dmy_byte` reader - "]
 pub struct SF_IF_4_DMY_BYTE_R(crate::FieldReader<u8, u8>);
 impl SF_IF_4_DMY_BYTE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_4_DMY_BYTE_R(crate::FieldReader::new(bits))
     }

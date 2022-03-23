@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_TOP_CTRL_SPEC>> for W {
 #[doc = "Field `clkpll_resv` reader - "]
 pub struct CLKPLL_RESV_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_RESV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_RESV_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CLKPLL_RESV_W<'a> {
 #[doc = "Field `clkpll_vg11_sel` reader - "]
 pub struct CLKPLL_VG11_SEL_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_VG11_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_VG11_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CLKPLL_VG11_SEL_W<'a> {
 #[doc = "Field `clkpll_refclk_sel` reader - "]
 pub struct CLKPLL_REFCLK_SEL_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_REFCLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_REFCLK_SEL_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CLKPLL_REFCLK_SEL_W<'a> {
 #[doc = "Field `clkpll_xtal_rc32m_sel` reader - "]
 pub struct CLKPLL_XTAL_RC32M_SEL_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_XTAL_RC32M_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_XTAL_RC32M_SEL_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> CLKPLL_XTAL_RC32M_SEL_W<'a> {
 #[doc = "Field `clkpll_refdiv_ratio` reader - "]
 pub struct CLKPLL_REFDIV_RATIO_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_REFDIV_RATIO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_REFDIV_RATIO_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> CLKPLL_REFDIV_RATIO_W<'a> {
 #[doc = "Field `clkpll_postdiv` reader - "]
 pub struct CLKPLL_POSTDIV_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_POSTDIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_POSTDIV_R(crate::FieldReader::new(bits))
     }

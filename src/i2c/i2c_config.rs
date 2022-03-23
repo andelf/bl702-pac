@@ -37,6 +37,7 @@ impl From<crate::W<I2C_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_i2c_deg_cnt` reader - "]
 pub struct CR_I2C_DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_I2C_DEG_CNT_W<'a> {
 #[doc = "Field `cr_i2c_pkt_len` reader - "]
 pub struct CR_I2C_PKT_LEN_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_PKT_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_PKT_LEN_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_I2C_PKT_LEN_W<'a> {
 #[doc = "Field `cr_i2c_slv_addr` reader - "]
 pub struct CR_I2C_SLV_ADDR_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SLV_ADDR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SLV_ADDR_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> CR_I2C_SLV_ADDR_W<'a> {
 #[doc = "Field `cr_i2c_sub_addr_bc` reader - "]
 pub struct CR_I2C_SUB_ADDR_BC_R(crate::FieldReader<u8, u8>);
 impl CR_I2C_SUB_ADDR_BC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_I2C_SUB_ADDR_BC_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> CR_I2C_SUB_ADDR_BC_W<'a> {
 #[doc = "Field `cr_i2c_sub_addr_en` reader - "]
 pub struct CR_I2C_SUB_ADDR_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_SUB_ADDR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_SUB_ADDR_EN_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> CR_I2C_SUB_ADDR_EN_W<'a> {
 #[doc = "Field `cr_i2c_scl_sync_en` reader - "]
 pub struct CR_I2C_SCL_SYNC_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_SCL_SYNC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_SCL_SYNC_EN_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> CR_I2C_SCL_SYNC_EN_W<'a> {
 #[doc = "Field `cr_i2c_deg_en` reader - "]
 pub struct CR_I2C_DEG_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> CR_I2C_DEG_EN_W<'a> {
 #[doc = "Field `cr_i2c_pkt_dir` reader - "]
 pub struct CR_I2C_PKT_DIR_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_PKT_DIR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_PKT_DIR_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> CR_I2C_PKT_DIR_W<'a> {
 #[doc = "Field `cr_i2c_m_en` reader - "]
 pub struct CR_I2C_M_EN_R(crate::FieldReader<bool, bool>);
 impl CR_I2C_M_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_I2C_M_EN_R(crate::FieldReader::new(bits))
     }

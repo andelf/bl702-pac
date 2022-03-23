@@ -37,6 +37,7 @@ impl From<crate::W<TZC_GLB_CTRL_3_SPEC>> for W {
 #[doc = "Field `tzc_glb_gpio_37_lock` reader - "]
 pub struct TZC_GLB_GPIO_37_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_37_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_37_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TZC_GLB_GPIO_37_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_36_lock` reader - "]
 pub struct TZC_GLB_GPIO_36_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_36_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_36_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TZC_GLB_GPIO_36_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_35_lock` reader - "]
 pub struct TZC_GLB_GPIO_35_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_35_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_35_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> TZC_GLB_GPIO_35_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_34_lock` reader - "]
 pub struct TZC_GLB_GPIO_34_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_34_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_34_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TZC_GLB_GPIO_34_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_33_lock` reader - "]
 pub struct TZC_GLB_GPIO_33_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_33_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_33_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> TZC_GLB_GPIO_33_LOCK_W<'a> {
 #[doc = "Field `tzc_glb_gpio_32_lock` reader - "]
 pub struct TZC_GLB_GPIO_32_LOCK_R(crate::FieldReader<bool, bool>);
 impl TZC_GLB_GPIO_32_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TZC_GLB_GPIO_32_LOCK_R(crate::FieldReader::new(bits))
     }

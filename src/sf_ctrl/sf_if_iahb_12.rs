@@ -37,6 +37,7 @@ impl From<crate::W<SF_IF_IAHB_12_SPEC>> for W {
 #[doc = "Field `sf2_if_read_dly_src` reader - "]
 pub struct SF2_IF_READ_DLY_SRC_R(crate::FieldReader<bool, bool>);
 impl SF2_IF_READ_DLY_SRC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF2_IF_READ_DLY_SRC_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF2_IF_READ_DLY_SRC_W<'a> {
 #[doc = "Field `sf2_if_read_dly_en` reader - "]
 pub struct SF2_IF_READ_DLY_EN_R(crate::FieldReader<bool, bool>);
 impl SF2_IF_READ_DLY_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF2_IF_READ_DLY_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SF2_IF_READ_DLY_EN_W<'a> {
 #[doc = "Field `sf2_if_read_dly_n` reader - "]
 pub struct SF2_IF_READ_DLY_N_R(crate::FieldReader<u8, u8>);
 impl SF2_IF_READ_DLY_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF2_IF_READ_DLY_N_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF2_IF_READ_DLY_N_W<'a> {
 #[doc = "Field `sf3_clk_out_inv_sel` reader - "]
 pub struct SF3_CLK_OUT_INV_SEL_R(crate::FieldReader<bool, bool>);
 impl SF3_CLK_OUT_INV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF3_CLK_OUT_INV_SEL_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF3_CLK_OUT_INV_SEL_W<'a> {
 #[doc = "Field `sf2_clk_out_inv_sel` reader - "]
 pub struct SF2_CLK_OUT_INV_SEL_R(crate::FieldReader<bool, bool>);
 impl SF2_CLK_OUT_INV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF2_CLK_OUT_INV_SEL_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SF2_CLK_OUT_INV_SEL_W<'a> {
 #[doc = "Field `sf2_clk_sf_rx_inv_src` reader - "]
 pub struct SF2_CLK_SF_RX_INV_SRC_R(crate::FieldReader<bool, bool>);
 impl SF2_CLK_SF_RX_INV_SRC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF2_CLK_SF_RX_INV_SRC_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> SF2_CLK_SF_RX_INV_SRC_W<'a> {
 #[doc = "Field `sf2_clk_sf_rx_inv_sel` reader - "]
 pub struct SF2_CLK_SF_RX_INV_SEL_R(crate::FieldReader<bool, bool>);
 impl SF2_CLK_SF_RX_INV_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF2_CLK_SF_RX_INV_SEL_R(crate::FieldReader::new(bits))
     }

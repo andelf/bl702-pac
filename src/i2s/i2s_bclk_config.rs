@@ -37,6 +37,7 @@ impl From<crate::W<I2S_BCLK_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_bclk_div_h` reader - "]
 pub struct CR_BCLK_DIV_H_R(crate::FieldReader<u16, u16>);
 impl CR_BCLK_DIV_H_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_BCLK_DIV_H_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_BCLK_DIV_H_W<'a> {
 #[doc = "Field `cr_bclk_div_l` reader - "]
 pub struct CR_BCLK_DIV_L_R(crate::FieldReader<u16, u16>);
 impl CR_BCLK_DIV_L_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_BCLK_DIV_L_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<PWM4_INTERRUPT_SPEC>> for W {
 #[doc = "Field `pwm_int_enable` reader - "]
 pub struct PWM_INT_ENABLE_R(crate::FieldReader<bool, bool>);
 impl PWM_INT_ENABLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_INT_ENABLE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PWM_INT_ENABLE_W<'a> {
 #[doc = "Field `pwm_int_period_cnt` reader - "]
 pub struct PWM_INT_PERIOD_CNT_R(crate::FieldReader<u16, u16>);
 impl PWM_INT_PERIOD_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PWM_INT_PERIOD_CNT_R(crate::FieldReader::new(bits))
     }

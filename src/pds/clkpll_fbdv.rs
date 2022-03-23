@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_FBDV_SPEC>> for W {
 #[doc = "Field `clkpll_sel_fb_clk` reader - "]
 pub struct CLKPLL_SEL_FB_CLK_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_SEL_FB_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_SEL_FB_CLK_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CLKPLL_SEL_FB_CLK_W<'a> {
 #[doc = "Field `clkpll_sel_sample_clk` reader - "]
 pub struct CLKPLL_SEL_SAMPLE_CLK_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_SEL_SAMPLE_CLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_SEL_SAMPLE_CLK_R(crate::FieldReader::new(bits))
     }

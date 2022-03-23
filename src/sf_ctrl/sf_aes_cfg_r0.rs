@@ -37,6 +37,7 @@ impl From<crate::W<SF_AES_CFG_R0_SPEC>> for W {
 #[doc = "Field `sf_aes_region_r0_lock` reader - "]
 pub struct SF_AES_REGION_R0_LOCK_R(crate::FieldReader<bool, bool>);
 impl SF_AES_REGION_R0_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_REGION_R0_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_AES_REGION_R0_LOCK_W<'a> {
 #[doc = "Field `sf_aes_region_r0_en` reader - "]
 pub struct SF_AES_REGION_R0_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_REGION_R0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_REGION_R0_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SF_AES_REGION_R0_EN_W<'a> {
 #[doc = "Field `sf_aes_region_r0_hw_key_en` reader - "]
 pub struct SF_AES_REGION_R0_HW_KEY_EN_R(crate::FieldReader<bool, bool>);
 impl SF_AES_REGION_R0_HW_KEY_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_AES_REGION_R0_HW_KEY_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SF_AES_REGION_R0_HW_KEY_EN_W<'a> {
 #[doc = "Field `sf_aes_region_r0_start` reader - "]
 pub struct SF_AES_REGION_R0_START_R(crate::FieldReader<u16, u16>);
 impl SF_AES_REGION_R0_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SF_AES_REGION_R0_START_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_AES_REGION_R0_START_W<'a> {
 #[doc = "Field `sf_aes_region_r0_end` reader - "]
 pub struct SF_AES_REGION_R0_END_R(crate::FieldReader<u16, u16>);
 impl SF_AES_REGION_R0_END_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SF_AES_REGION_R0_END_R(crate::FieldReader::new(bits))
     }

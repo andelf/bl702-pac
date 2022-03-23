@@ -37,6 +37,7 @@ impl From<crate::W<PDS_RAM1_SPEC>> for W {
 #[doc = "Field `cr_pds_ram_pgen` reader - "]
 pub struct CR_PDS_RAM_PGEN_R(crate::FieldReader<u8, u8>);
 impl CR_PDS_RAM_PGEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_PDS_RAM_PGEN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_PDS_RAM_PGEN_W<'a> {
 #[doc = "Field `cr_pds_ram_ret2n` reader - "]
 pub struct CR_PDS_RAM_RET2N_R(crate::FieldReader<u8, u8>);
 impl CR_PDS_RAM_RET2N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_PDS_RAM_RET2N_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_PDS_RAM_RET2N_W<'a> {
 #[doc = "Field `cr_pds_ram_ret1n` reader - "]
 pub struct CR_PDS_RAM_RET1N_R(crate::FieldReader<u8, u8>);
 impl CR_PDS_RAM_RET1N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_PDS_RAM_RET1N_R(crate::FieldReader::new(bits))
     }

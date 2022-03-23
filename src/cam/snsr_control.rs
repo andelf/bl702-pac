@@ -37,6 +37,7 @@ impl From<crate::W<SNSR_CONTROL_SPEC>> for W {
 #[doc = "Field `reg_cam_pwdn` reader - "]
 pub struct REG_CAM_PWDN_R(crate::FieldReader<bool, bool>);
 impl REG_CAM_PWDN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CAM_PWDN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_CAM_PWDN_W<'a> {
 #[doc = "Field `reg_cam_rst` reader - "]
 pub struct REG_CAM_RST_R(crate::FieldReader<bool, bool>);
 impl REG_CAM_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CAM_RST_R(crate::FieldReader::new(bits))
     }

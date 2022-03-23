@@ -37,6 +37,7 @@ impl From<crate::W<SF_IF_IO_DLY_3_SPEC>> for W {
 #[doc = "Field `sf_io_2_do_dly_sel` reader - "]
 pub struct SF_IO_2_DO_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF_IO_2_DO_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IO_2_DO_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SF_IO_2_DO_DLY_SEL_W<'a> {
 #[doc = "Field `sf_io_2_di_dly_sel` reader - "]
 pub struct SF_IO_2_DI_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF_IO_2_DI_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IO_2_DI_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> SF_IO_2_DI_DLY_SEL_W<'a> {
 #[doc = "Field `sf_io_2_oe_dly_sel` reader - "]
 pub struct SF_IO_2_OE_DLY_SEL_R(crate::FieldReader<u8, u8>);
 impl SF_IO_2_OE_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IO_2_OE_DLY_SEL_R(crate::FieldReader::new(bits))
     }

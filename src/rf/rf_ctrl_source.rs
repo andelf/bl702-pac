@@ -37,6 +37,7 @@ impl From<crate::W<RF_CTRL_SOURCE_SPEC>> for W {
 #[doc = "Field `vco_idac_ctrl_hw` reader - "]
 pub struct VCO_IDAC_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl VCO_IDAC_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VCO_IDAC_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> VCO_IDAC_CTRL_HW_W<'a> {
 #[doc = "Field `inc_fcal_en_ctrl_hw` reader - "]
 pub struct INC_FCAL_EN_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl INC_FCAL_EN_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INC_FCAL_EN_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> INC_FCAL_EN_CTRL_HW_W<'a> {
 #[doc = "Field `lo_fcw_ctrl_hw` reader - "]
 pub struct LO_FCW_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl LO_FCW_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LO_FCW_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> LO_FCW_CTRL_HW_W<'a> {
 #[doc = "Field `rbb_bw_ctrl_hw` reader - "]
 pub struct RBB_BW_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_BW_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_BW_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> RBB_BW_CTRL_HW_W<'a> {
 #[doc = "Field `kcal_ratio_ctrl_hw` reader - "]
 pub struct KCAL_RATIO_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl KCAL_RATIO_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KCAL_RATIO_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> KCAL_RATIO_CTRL_HW_W<'a> {
 #[doc = "Field `rosdac_ctrl_rccal` reader - "]
 pub struct ROSDAC_CTRL_RCCAL_R(crate::FieldReader<bool, bool>);
 impl ROSDAC_CTRL_RCCAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ROSDAC_CTRL_RCCAL_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> ROSDAC_CTRL_RCCAL_W<'a> {
 #[doc = "Field `rosdac_ctrl_hw` reader - "]
 pub struct ROSDAC_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl ROSDAC_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ROSDAC_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> ROSDAC_CTRL_HW_W<'a> {
 #[doc = "Field `gain_ctrl_rx_hw` reader - "]
 pub struct GAIN_CTRL_RX_HW_R(crate::FieldReader<bool, bool>);
 impl GAIN_CTRL_RX_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GAIN_CTRL_RX_HW_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> GAIN_CTRL_RX_HW_W<'a> {
 #[doc = "Field `gain_ctrl_tx_hw` reader - "]
 pub struct GAIN_CTRL_TX_HW_R(crate::FieldReader<bool, bool>);
 impl GAIN_CTRL_TX_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GAIN_CTRL_TX_HW_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> GAIN_CTRL_TX_HW_W<'a> {
 #[doc = "Field `pu_ctrl_hw` reader - "]
 pub struct PU_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl PU_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_CTRL_HW_R(crate::FieldReader::new(bits))
     }

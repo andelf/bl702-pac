@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_Q_MODE_F_SPEC>> for W {
 #[doc = "Field `frame_q_mode_f` reader - "]
 pub struct FRAME_Q_MODE_F_R(crate::FieldReader<u8, u8>);
 impl FRAME_Q_MODE_F_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FRAME_Q_MODE_F_R(crate::FieldReader::new(bits))
     }

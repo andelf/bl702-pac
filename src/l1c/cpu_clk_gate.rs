@@ -37,6 +37,7 @@ impl From<crate::W<CPU_CLK_GATE_SPEC>> for W {
 #[doc = "Field `force_e21_clock_on_2` reader - "]
 pub struct FORCE_E21_CLOCK_ON_2_R(crate::FieldReader<bool, bool>);
 impl FORCE_E21_CLOCK_ON_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FORCE_E21_CLOCK_ON_2_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> FORCE_E21_CLOCK_ON_2_W<'a> {
 #[doc = "Field `force_e21_clock_on_1` reader - "]
 pub struct FORCE_E21_CLOCK_ON_1_R(crate::FieldReader<bool, bool>);
 impl FORCE_E21_CLOCK_ON_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FORCE_E21_CLOCK_ON_1_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> FORCE_E21_CLOCK_ON_1_W<'a> {
 #[doc = "Field `force_e21_clock_on_0` reader - "]
 pub struct FORCE_E21_CLOCK_ON_0_R(crate::FieldReader<bool, bool>);
 impl FORCE_E21_CLOCK_ON_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FORCE_E21_CLOCK_ON_0_R(crate::FieldReader::new(bits))
     }

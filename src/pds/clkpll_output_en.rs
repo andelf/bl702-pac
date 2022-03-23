@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_OUTPUT_EN_SPEC>> for W {
 #[doc = "Field `clkpll_en_div2_480m` reader - "]
 pub struct CLKPLL_EN_DIV2_480M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_DIV2_480M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_DIV2_480M_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CLKPLL_EN_DIV2_480M_W<'a> {
 #[doc = "Field `clkpll_en_32m` reader - "]
 pub struct CLKPLL_EN_32M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_32M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_32M_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CLKPLL_EN_32M_W<'a> {
 #[doc = "Field `clkpll_en_48m` reader - "]
 pub struct CLKPLL_EN_48M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_48M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_48M_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CLKPLL_EN_48M_W<'a> {
 #[doc = "Field `clkpll_en_80m` reader - "]
 pub struct CLKPLL_EN_80M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_80M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_80M_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CLKPLL_EN_80M_W<'a> {
 #[doc = "Field `clkpll_en_96m` reader - "]
 pub struct CLKPLL_EN_96M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_96M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_96M_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> CLKPLL_EN_96M_W<'a> {
 #[doc = "Field `clkpll_en_120m` reader - "]
 pub struct CLKPLL_EN_120M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_120M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_120M_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> CLKPLL_EN_120M_W<'a> {
 #[doc = "Field `clkpll_en_160m` reader - "]
 pub struct CLKPLL_EN_160M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_160M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_160M_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> CLKPLL_EN_160M_W<'a> {
 #[doc = "Field `clkpll_en_192m` reader - "]
 pub struct CLKPLL_EN_192M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_192M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_192M_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> CLKPLL_EN_192M_W<'a> {
 #[doc = "Field `clkpll_en_240m` reader - "]
 pub struct CLKPLL_EN_240M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_240M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_240M_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> CLKPLL_EN_240M_W<'a> {
 #[doc = "Field `clkpll_en_480m` reader - "]
 pub struct CLKPLL_EN_480M_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_EN_480M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_EN_480M_R(crate::FieldReader::new(bits))
     }

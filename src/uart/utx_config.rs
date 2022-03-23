@@ -37,6 +37,7 @@ impl From<crate::W<UTX_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_utx_len` reader - "]
 pub struct CR_UTX_LEN_R(crate::FieldReader<u16, u16>);
 impl CR_UTX_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_UTX_LEN_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_UTX_LEN_W<'a> {
 #[doc = "Field `cr_utx_bit_cnt_b` reader - "]
 pub struct CR_UTX_BIT_CNT_B_R(crate::FieldReader<u8, u8>);
 impl CR_UTX_BIT_CNT_B_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_UTX_BIT_CNT_B_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_UTX_BIT_CNT_B_W<'a> {
 #[doc = "Field `cr_utx_bit_cnt_p` reader - "]
 pub struct CR_UTX_BIT_CNT_P_R(crate::FieldReader<u8, u8>);
 impl CR_UTX_BIT_CNT_P_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_UTX_BIT_CNT_P_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> CR_UTX_BIT_CNT_P_W<'a> {
 #[doc = "Field `cr_utx_bit_cnt_d` reader - "]
 pub struct CR_UTX_BIT_CNT_D_R(crate::FieldReader<u8, u8>);
 impl CR_UTX_BIT_CNT_D_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_UTX_BIT_CNT_D_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> CR_UTX_BIT_CNT_D_W<'a> {
 #[doc = "Field `cr_utx_ir_inv` reader - "]
 pub struct CR_UTX_IR_INV_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_IR_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_IR_INV_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> CR_UTX_IR_INV_W<'a> {
 #[doc = "Field `cr_utx_ir_en` reader - "]
 pub struct CR_UTX_IR_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_IR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_IR_EN_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> CR_UTX_IR_EN_W<'a> {
 #[doc = "Field `cr_utx_prt_sel` reader - "]
 pub struct CR_UTX_PRT_SEL_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_PRT_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_PRT_SEL_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> CR_UTX_PRT_SEL_W<'a> {
 #[doc = "Field `cr_utx_prt_en` reader - "]
 pub struct CR_UTX_PRT_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_PRT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_PRT_EN_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> CR_UTX_PRT_EN_W<'a> {
 #[doc = "Field `cr_utx_lin_en` reader - "]
 pub struct CR_UTX_LIN_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_LIN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_LIN_EN_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> CR_UTX_LIN_EN_W<'a> {
 #[doc = "Field `cr_utx_frm_en` reader - "]
 pub struct CR_UTX_FRM_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_FRM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_FRM_EN_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> CR_UTX_FRM_EN_W<'a> {
 #[doc = "Field `cr_utx_cts_en` reader - "]
 pub struct CR_UTX_CTS_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_CTS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_CTS_EN_R(crate::FieldReader::new(bits))
     }
@@ -393,6 +404,7 @@ impl<'a> CR_UTX_CTS_EN_W<'a> {
 #[doc = "Field `cr_utx_en` reader - "]
 pub struct CR_UTX_EN_R(crate::FieldReader<bool, bool>);
 impl CR_UTX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UTX_EN_R(crate::FieldReader::new(bits))
     }

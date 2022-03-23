@@ -37,6 +37,7 @@ impl From<crate::W<UTX_IR_POSITION_SPEC>> for W {
 #[doc = "Field `cr_utx_ir_pos_p` reader - "]
 pub struct CR_UTX_IR_POS_P_R(crate::FieldReader<u16, u16>);
 impl CR_UTX_IR_POS_P_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_UTX_IR_POS_P_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_UTX_IR_POS_P_W<'a> {
 #[doc = "Field `cr_utx_ir_pos_s` reader - "]
 pub struct CR_UTX_IR_POS_S_R(crate::FieldReader<u16, u16>);
 impl CR_UTX_IR_POS_S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_UTX_IR_POS_S_R(crate::FieldReader::new(bits))
     }

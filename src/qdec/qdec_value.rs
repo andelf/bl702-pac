@@ -37,6 +37,7 @@ impl From<crate::W<QDEC_VALUE_SPEC>> for W {
 #[doc = "Field `spl_val` reader - "]
 pub struct SPL_VAL_R(crate::FieldReader<u8, u8>);
 impl SPL_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SPL_VAL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SPL_VAL_W<'a> {
 #[doc = "Field `acc2_val` reader - "]
 pub struct ACC2_VAL_R(crate::FieldReader<u8, u8>);
 impl ACC2_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACC2_VAL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> ACC2_VAL_W<'a> {
 #[doc = "Field `acc1_val` reader - "]
 pub struct ACC1_VAL_R(crate::FieldReader<u16, u16>);
 impl ACC1_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         ACC1_VAL_R(crate::FieldReader::new(bits))
     }

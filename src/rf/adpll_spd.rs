@@ -37,6 +37,7 @@ impl From<crate::W<ADPLL_SPD_SPEC>> for W {
 #[doc = "Field `adpll_spd_in_range_delay_1` reader - "]
 pub struct ADPLL_SPD_IN_RANGE_DELAY_1_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_IN_RANGE_DELAY_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_IN_RANGE_DELAY_1_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ADPLL_SPD_IN_RANGE_DELAY_1_W<'a> {
 #[doc = "Field `adpll_coarsepha_dly_sel` reader - "]
 pub struct ADPLL_COARSEPHA_DLY_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_COARSEPHA_DLY_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_COARSEPHA_DLY_SEL_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> ADPLL_COARSEPHA_DLY_SEL_W<'a> {
 #[doc = "Field `adpll_force_coarse_path_on` reader - "]
 pub struct ADPLL_FORCE_COARSE_PATH_ON_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_COARSE_PATH_ON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_COARSE_PATH_ON_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> ADPLL_FORCE_COARSE_PATH_ON_W<'a> {
 #[doc = "Field `adpll_spd_lms_sstp_win_sel` reader - "]
 pub struct ADPLL_SPD_LMS_SSTP_WIN_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SPD_LMS_SSTP_WIN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SPD_LMS_SSTP_WIN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> ADPLL_SPD_LMS_SSTP_WIN_SEL_W<'a> {
 #[doc = "Field `adpll_spd_outrange_dly_sel_ext` reader - "]
 pub struct ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_W<'a> {
 #[doc = "Field `adpll_coarse_path_offtime_sel` reader - "]
 pub struct ADPLL_COARSE_PATH_OFFTIME_SEL_R(crate::FieldReader<bool, bool>);
 impl ADPLL_COARSE_PATH_OFFTIME_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_COARSE_PATH_OFFTIME_SEL_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> ADPLL_COARSE_PATH_OFFTIME_SEL_W<'a> {
 #[doc = "Field `adpll_coarse_phaerr_en` reader - "]
 pub struct ADPLL_COARSE_PHAERR_EN_R(crate::FieldReader<bool, bool>);
 impl ADPLL_COARSE_PHAERR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_COARSE_PHAERR_EN_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> ADPLL_COARSE_PHAERR_EN_W<'a> {
 #[doc = "Field `adpll_force_lf_fast_mode_hw` reader - "]
 pub struct ADPLL_FORCE_LF_FAST_MODE_HW_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_LF_FAST_MODE_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_LF_FAST_MODE_HW_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> ADPLL_FORCE_LF_FAST_MODE_HW_W<'a> {
 #[doc = "Field `adpll_force_lf_fast_mode` reader - "]
 pub struct ADPLL_FORCE_LF_FAST_MODE_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_LF_FAST_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_LF_FAST_MODE_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> ADPLL_FORCE_LF_FAST_MODE_W<'a> {
 #[doc = "Field `adpll_force_lf_fast_mode_ctrl_hw` reader - "]
 pub struct ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_W<'a> {
 #[doc = "Field `adpll_coarse_gain` reader - "]
 pub struct ADPLL_COARSE_GAIN_R(crate::FieldReader<u8, u8>);
 impl ADPLL_COARSE_GAIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_COARSE_GAIN_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> ADPLL_COARSE_GAIN_W<'a> {
 #[doc = "Field `adpll_spd_gain` reader - "]
 pub struct ADPLL_SPD_GAIN_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_GAIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_GAIN_R(crate::FieldReader::new(bits))
     }
@@ -429,6 +441,7 @@ impl<'a> ADPLL_SPD_GAIN_W<'a> {
 #[doc = "Field `adpll_coarse_in_range_cons` reader - "]
 pub struct ADPLL_COARSE_IN_RANGE_CONS_R(crate::FieldReader<u8, u8>);
 impl ADPLL_COARSE_IN_RANGE_CONS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_COARSE_IN_RANGE_CONS_R(crate::FieldReader::new(bits))
     }
@@ -455,6 +468,7 @@ impl<'a> ADPLL_COARSE_IN_RANGE_CONS_W<'a> {
 #[doc = "Field `adpll_spd_threshold` reader - "]
 pub struct ADPLL_SPD_THRESHOLD_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_THRESHOLD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_THRESHOLD_R(crate::FieldReader::new(bits))
     }
@@ -481,6 +495,7 @@ impl<'a> ADPLL_SPD_THRESHOLD_W<'a> {
 #[doc = "Field `adpll_coarse_path_turnoff` reader - "]
 pub struct ADPLL_COARSE_PATH_TURNOFF_R(crate::FieldReader<u8, u8>);
 impl ADPLL_COARSE_PATH_TURNOFF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_COARSE_PATH_TURNOFF_R(crate::FieldReader::new(bits))
     }
@@ -507,6 +522,7 @@ impl<'a> ADPLL_COARSE_PATH_TURNOFF_W<'a> {
 #[doc = "Field `adpll_spd_in_range_cons` reader - "]
 pub struct ADPLL_SPD_IN_RANGE_CONS_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_IN_RANGE_CONS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_IN_RANGE_CONS_R(crate::FieldReader::new(bits))
     }
@@ -533,6 +549,7 @@ impl<'a> ADPLL_SPD_IN_RANGE_CONS_W<'a> {
 #[doc = "Field `adpll_spd_out_range_delay` reader - "]
 pub struct ADPLL_SPD_OUT_RANGE_DELAY_R(crate::FieldReader<bool, bool>);
 impl ADPLL_SPD_OUT_RANGE_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ADPLL_SPD_OUT_RANGE_DELAY_R(crate::FieldReader::new(bits))
     }
@@ -569,6 +586,7 @@ impl<'a> ADPLL_SPD_OUT_RANGE_DELAY_W<'a> {
 #[doc = "Field `adpll_spd_in_range_delay` reader - "]
 pub struct ADPLL_SPD_IN_RANGE_DELAY_R(crate::FieldReader<u8, u8>);
 impl ADPLL_SPD_IN_RANGE_DELAY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ADPLL_SPD_IN_RANGE_DELAY_R(crate::FieldReader::new(bits))
     }

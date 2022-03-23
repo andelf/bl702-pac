@@ -37,6 +37,7 @@ impl From<crate::W<DCTEST_ACTEST_SPEC>> for W {
 #[doc = "Field `ten_mbg` reader - "]
 pub struct TEN_MBG_R(crate::FieldReader<bool, bool>);
 impl TEN_MBG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_MBG_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TEN_MBG_W<'a> {
 #[doc = "Field `ten_dll` reader - "]
 pub struct TEN_DLL_R(crate::FieldReader<bool, bool>);
 impl TEN_DLL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_DLL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TEN_DLL_W<'a> {
 #[doc = "Field `ten_lodist` reader - "]
 pub struct TEN_LODIST_R(crate::FieldReader<bool, bool>);
 impl TEN_LODIST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_LODIST_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> TEN_LODIST_W<'a> {
 #[doc = "Field `ten_pa_0` reader - "]
 pub struct TEN_PA_0_R(crate::FieldReader<bool, bool>);
 impl TEN_PA_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_PA_0_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> TEN_PA_0_W<'a> {
 #[doc = "Field `ten_pa_1` reader - "]
 pub struct TEN_PA_1_R(crate::FieldReader<bool, bool>);
 impl TEN_PA_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_PA_1_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> TEN_PA_1_W<'a> {
 #[doc = "Field `ten_rrf0` reader - "]
 pub struct TEN_RRF0_R(crate::FieldReader<bool, bool>);
 impl TEN_RRF0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_RRF0_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> TEN_RRF0_W<'a> {
 #[doc = "Field `ten_rrf1` reader - "]
 pub struct TEN_RRF1_R(crate::FieldReader<bool, bool>);
 impl TEN_RRF1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_RRF1_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> TEN_RRF1_W<'a> {
 #[doc = "Field `ten_rxadc` reader - "]
 pub struct TEN_RXADC_R(crate::FieldReader<bool, bool>);
 impl TEN_RXADC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_RXADC_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> TEN_RXADC_W<'a> {
 #[doc = "Field `ten_vco` reader - "]
 pub struct TEN_VCO_R(crate::FieldReader<bool, bool>);
 impl TEN_VCO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_VCO_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> TEN_VCO_W<'a> {
 #[doc = "Field `ten_adpll_adc` reader - "]
 pub struct TEN_ADPLL_ADC_R(crate::FieldReader<bool, bool>);
 impl TEN_ADPLL_ADC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_ADPLL_ADC_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> TEN_ADPLL_ADC_W<'a> {
 #[doc = "Field `ten_rbb_actest` reader - "]
 pub struct TEN_RBB_ACTEST_R(crate::FieldReader<bool, bool>);
 impl TEN_RBB_ACTEST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_RBB_ACTEST_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> TEN_RBB_ACTEST_W<'a> {
 #[doc = "Field `ten_rbb` reader - "]
 pub struct TEN_RBB_R(crate::FieldReader<bool, bool>);
 impl TEN_RBB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_RBB_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> TEN_RBB_W<'a> {
 #[doc = "Field `ten_dtc` reader - "]
 pub struct TEN_DTC_R(crate::FieldReader<bool, bool>);
 impl TEN_DTC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TEN_DTC_R(crate::FieldReader::new(bits))
     }
@@ -505,6 +518,7 @@ impl<'a> TEN_DTC_W<'a> {
 #[doc = "Field `atest_out_en` reader - "]
 pub struct ATEST_OUT_EN_R(crate::FieldReader<u8, u8>);
 impl ATEST_OUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ATEST_OUT_EN_R(crate::FieldReader::new(bits))
     }
@@ -531,6 +545,7 @@ impl<'a> ATEST_OUT_EN_W<'a> {
 #[doc = "Field `dc_tp_out_en` reader - "]
 pub struct DC_TP_OUT_EN_R(crate::FieldReader<u8, u8>);
 impl DC_TP_OUT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DC_TP_OUT_EN_R(crate::FieldReader::new(bits))
     }

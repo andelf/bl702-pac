@@ -37,6 +37,7 @@ impl From<crate::W<PWM2_CONFIG_SPEC>> for W {
 #[doc = "Field `pwm_sts_top` reader - "]
 pub struct PWM_STS_TOP_R(crate::FieldReader<bool, bool>);
 impl PWM_STS_TOP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_STS_TOP_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PWM_STS_TOP_W<'a> {
 #[doc = "Field `pwm_stop_en` reader - "]
 pub struct PWM_STOP_EN_R(crate::FieldReader<bool, bool>);
 impl PWM_STOP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_STOP_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> PWM_STOP_EN_W<'a> {
 #[doc = "Field `pwm_sw_mode` reader - "]
 pub struct PWM_SW_MODE_R(crate::FieldReader<bool, bool>);
 impl PWM_SW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_SW_MODE_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> PWM_SW_MODE_W<'a> {
 #[doc = "Field `pwm_sw_force_val` reader - "]
 pub struct PWM_SW_FORCE_VAL_R(crate::FieldReader<bool, bool>);
 impl PWM_SW_FORCE_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_SW_FORCE_VAL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> PWM_SW_FORCE_VAL_W<'a> {
 #[doc = "Field `pwm_stop_mode` reader - "]
 pub struct PWM_STOP_MODE_R(crate::FieldReader<bool, bool>);
 impl PWM_STOP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_STOP_MODE_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> PWM_STOP_MODE_W<'a> {
 #[doc = "Field `pwm_out_inv` reader - "]
 pub struct PWM_OUT_INV_R(crate::FieldReader<bool, bool>);
 impl PWM_OUT_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PWM_OUT_INV_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> PWM_OUT_INV_W<'a> {
 #[doc = "Field `reg_clk_sel` reader - "]
 pub struct REG_CLK_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_CLK_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_CLK_SEL_R(crate::FieldReader::new(bits))
     }

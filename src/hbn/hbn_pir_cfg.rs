@@ -37,6 +37,7 @@ impl From<crate::W<HBN_PIR_CFG_SPEC>> for W {
 #[doc = "Field `gpadc_nosync` reader - "]
 pub struct GPADC_NOSYNC_R(crate::FieldReader<bool, bool>);
 impl GPADC_NOSYNC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_NOSYNC_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> GPADC_NOSYNC_W<'a> {
 #[doc = "Field `gpadc_cgen` reader - "]
 pub struct GPADC_CGEN_R(crate::FieldReader<bool, bool>);
 impl GPADC_CGEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_CGEN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> GPADC_CGEN_W<'a> {
 #[doc = "Field `pir_en` reader - "]
 pub struct PIR_EN_R(crate::FieldReader<bool, bool>);
 impl PIR_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PIR_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> PIR_EN_W<'a> {
 #[doc = "Field `pir_dis` reader - "]
 pub struct PIR_DIS_R(crate::FieldReader<u8, u8>);
 impl PIR_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PIR_DIS_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> PIR_DIS_W<'a> {
 #[doc = "Field `pir_lpf_sel` reader - "]
 pub struct PIR_LPF_SEL_R(crate::FieldReader<bool, bool>);
 impl PIR_LPF_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PIR_LPF_SEL_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> PIR_LPF_SEL_W<'a> {
 #[doc = "Field `pir_hpf_sel` reader - "]
 pub struct PIR_HPF_SEL_R(crate::FieldReader<u8, u8>);
 impl PIR_HPF_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PIR_HPF_SEL_R(crate::FieldReader::new(bits))
     }

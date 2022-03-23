@@ -37,6 +37,7 @@ impl From<crate::W<RF_SINGEN_0_SPEC>> for W {
 #[doc = "Field `singen_en` reader - "]
 pub struct SINGEN_EN_R(crate::FieldReader<bool, bool>);
 impl SINGEN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SINGEN_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SINGEN_EN_W<'a> {
 #[doc = "Field `singen_clkdiv_n` reader - "]
 pub struct SINGEN_CLKDIV_N_R(crate::FieldReader<u8, u8>);
 impl SINGEN_CLKDIV_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SINGEN_CLKDIV_N_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SINGEN_CLKDIV_N_W<'a> {
 #[doc = "Field `singen_unsign_en` reader - "]
 pub struct SINGEN_UNSIGN_EN_R(crate::FieldReader<bool, bool>);
 impl SINGEN_UNSIGN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SINGEN_UNSIGN_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SINGEN_UNSIGN_EN_W<'a> {
 #[doc = "Field `singen_inc_step0` reader - "]
 pub struct SINGEN_INC_STEP0_R(crate::FieldReader<u16, u16>);
 impl SINGEN_INC_STEP0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_INC_STEP0_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> SINGEN_INC_STEP0_W<'a> {
 #[doc = "Field `singen_inc_step1` reader - "]
 pub struct SINGEN_INC_STEP1_R(crate::FieldReader<u16, u16>);
 impl SINGEN_INC_STEP1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         SINGEN_INC_STEP1_R(crate::FieldReader::new(bits))
     }

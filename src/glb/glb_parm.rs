@@ -37,6 +37,7 @@ impl From<crate::W<GLB_PARM_SPEC>> for W {
 #[doc = "Field `pin_sel_emac_cam` reader - "]
 pub struct PIN_SEL_EMAC_CAM_R(crate::FieldReader<bool, bool>);
 impl PIN_SEL_EMAC_CAM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PIN_SEL_EMAC_CAM_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PIN_SEL_EMAC_CAM_W<'a> {
 #[doc = "Field `reg_ext_rst_smt` reader - "]
 pub struct REG_EXT_RST_SMT_R(crate::FieldReader<bool, bool>);
 impl REG_EXT_RST_SMT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_EXT_RST_SMT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> REG_EXT_RST_SMT_W<'a> {
 #[doc = "Field `reg_kys_drv_val` reader - "]
 pub struct REG_KYS_DRV_VAL_R(crate::FieldReader<bool, bool>);
 impl REG_KYS_DRV_VAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_KYS_DRV_VAL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> REG_KYS_DRV_VAL_W<'a> {
 #[doc = "Field `uart_swap_set` reader - "]
 pub struct UART_SWAP_SET_R(crate::FieldReader<u8, u8>);
 impl UART_SWAP_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         UART_SWAP_SET_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> UART_SWAP_SET_W<'a> {
 #[doc = "Field `p6_jtag_use_io_0_2_7` reader - "]
 pub struct P6_JTAG_USE_IO_0_2_7_R(crate::FieldReader<bool, bool>);
 impl P6_JTAG_USE_IO_0_2_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P6_JTAG_USE_IO_0_2_7_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> P6_JTAG_USE_IO_0_2_7_W<'a> {
 #[doc = "Field `p5_dac_test_with_jtag` reader - "]
 pub struct P5_DAC_TEST_WITH_JTAG_R(crate::FieldReader<bool, bool>);
 impl P5_DAC_TEST_WITH_JTAG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P5_DAC_TEST_WITH_JTAG_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> P5_DAC_TEST_WITH_JTAG_W<'a> {
 #[doc = "Field `p4_adc_test_with_jtag` reader - "]
 pub struct P4_ADC_TEST_WITH_JTAG_R(crate::FieldReader<bool, bool>);
 impl P4_ADC_TEST_WITH_JTAG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P4_ADC_TEST_WITH_JTAG_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> P4_ADC_TEST_WITH_JTAG_W<'a> {
 #[doc = "Field `p3_cci_use_io_0_2_7` reader - "]
 pub struct P3_CCI_USE_IO_0_2_7_R(crate::FieldReader<bool, bool>);
 impl P3_CCI_USE_IO_0_2_7_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P3_CCI_USE_IO_0_2_7_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> P3_CCI_USE_IO_0_2_7_W<'a> {
 #[doc = "Field `p2_dac_test_with_cci` reader - "]
 pub struct P2_DAC_TEST_WITH_CCI_R(crate::FieldReader<bool, bool>);
 impl P2_DAC_TEST_WITH_CCI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P2_DAC_TEST_WITH_CCI_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> P2_DAC_TEST_WITH_CCI_W<'a> {
 #[doc = "Field `p1_adc_test_with_cci` reader - "]
 pub struct P1_ADC_TEST_WITH_CCI_R(crate::FieldReader<bool, bool>);
 impl P1_ADC_TEST_WITH_CCI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         P1_ADC_TEST_WITH_CCI_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> P1_ADC_TEST_WITH_CCI_W<'a> {
 #[doc = "Field `reg_cci_use_jtag_pin` reader - "]
 pub struct REG_CCI_USE_JTAG_PIN_R(crate::FieldReader<bool, bool>);
 impl REG_CCI_USE_JTAG_PIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_CCI_USE_JTAG_PIN_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> REG_CCI_USE_JTAG_PIN_W<'a> {
 #[doc = "Field `reg_spi_0_swap` reader - "]
 pub struct REG_SPI_0_SWAP_R(crate::FieldReader<bool, bool>);
 impl REG_SPI_0_SWAP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SPI_0_SWAP_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> REG_SPI_0_SWAP_W<'a> {
 #[doc = "Field `reg_spi_0_master_mode` reader - "]
 pub struct REG_SPI_0_MASTER_MODE_R(crate::FieldReader<bool, bool>);
 impl REG_SPI_0_MASTER_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SPI_0_MASTER_MODE_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> REG_SPI_0_MASTER_MODE_W<'a> {
 #[doc = "Field `cfg_flash_scenario` reader - "]
 pub struct CFG_FLASH_SCENARIO_R(crate::FieldReader<u8, u8>);
 impl CFG_FLASH_SCENARIO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CFG_FLASH_SCENARIO_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> CFG_FLASH_SCENARIO_W<'a> {
 #[doc = "Field `cfg_sflash2_swap_cs_io2` reader - "]
 pub struct CFG_SFLASH2_SWAP_CS_IO2_R(crate::FieldReader<bool, bool>);
 impl CFG_SFLASH2_SWAP_CS_IO2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_SFLASH2_SWAP_CS_IO2_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> CFG_SFLASH2_SWAP_CS_IO2_W<'a> {
 #[doc = "Field `cfg_sflash2_swap_io0_io3` reader - "]
 pub struct CFG_SFLASH2_SWAP_IO0_IO3_R(crate::FieldReader<bool, bool>);
 impl CFG_SFLASH2_SWAP_IO0_IO3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_SFLASH2_SWAP_IO0_IO3_R(crate::FieldReader::new(bits))
     }
@@ -593,6 +609,7 @@ impl<'a> CFG_SFLASH2_SWAP_IO0_IO3_W<'a> {
 #[doc = "Field `jtag_swap_set` reader - "]
 pub struct JTAG_SWAP_SET_R(crate::FieldReader<u8, u8>);
 impl JTAG_SWAP_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         JTAG_SWAP_SET_R(crate::FieldReader::new(bits))
     }

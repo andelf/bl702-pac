@@ -37,6 +37,7 @@ impl From<crate::W<WCR_SPEC>> for W {
 #[doc = "Field `wcr` reader - "]
 pub struct WCR_R(crate::FieldReader<bool, bool>);
 impl WCR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WCR_R(crate::FieldReader::new(bits))
     }

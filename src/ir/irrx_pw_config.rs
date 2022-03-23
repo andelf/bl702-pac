@@ -37,6 +37,7 @@ impl From<crate::W<IRRX_PW_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_irrx_end_th` reader - "]
 pub struct CR_IRRX_END_TH_R(crate::FieldReader<u16, u16>);
 impl CR_IRRX_END_TH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_IRRX_END_TH_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_IRRX_END_TH_W<'a> {
 #[doc = "Field `cr_irrx_data_th` reader - "]
 pub struct CR_IRRX_DATA_TH_R(crate::FieldReader<u16, u16>);
 impl CR_IRRX_DATA_TH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_IRRX_DATA_TH_R(crate::FieldReader::new(bits))
     }

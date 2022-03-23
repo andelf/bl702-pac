@@ -37,6 +37,7 @@ impl From<crate::W<STS_URX_ABR_PRD_SPEC>> for W {
 #[doc = "Field `sts_urx_abr_prd_0x55` reader - "]
 pub struct STS_URX_ABR_PRD_0X55_R(crate::FieldReader<u16, u16>);
 impl STS_URX_ABR_PRD_0X55_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         STS_URX_ABR_PRD_0X55_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> STS_URX_ABR_PRD_0X55_W<'a> {
 #[doc = "Field `sts_urx_abr_prd_start` reader - "]
 pub struct STS_URX_ABR_PRD_START_R(crate::FieldReader<u16, u16>);
 impl STS_URX_ABR_PRD_START_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         STS_URX_ABR_PRD_START_R(crate::FieldReader::new(bits))
     }

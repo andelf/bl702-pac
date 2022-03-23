@@ -37,6 +37,7 @@ impl From<crate::W<USB_XCVR_SPEC>> for W {
 #[doc = "Field `usb_rcv` reader - "]
 pub struct USB_RCV_R(crate::FieldReader<bool, bool>);
 impl USB_RCV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_RCV_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> USB_RCV_W<'a> {
 #[doc = "Field `usb_vip` reader - "]
 pub struct USB_VIP_R(crate::FieldReader<bool, bool>);
 impl USB_VIP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_VIP_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> USB_VIP_W<'a> {
 #[doc = "Field `usb_vim` reader - "]
 pub struct USB_VIM_R(crate::FieldReader<bool, bool>);
 impl USB_VIM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_VIM_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> USB_VIM_W<'a> {
 #[doc = "Field `usb_bd` reader - "]
 pub struct USB_BD_R(crate::FieldReader<bool, bool>);
 impl USB_BD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_BD_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> USB_BD_W<'a> {
 #[doc = "Field `pu_usb` reader - "]
 pub struct PU_USB_R(crate::FieldReader<bool, bool>);
 impl PU_USB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_USB_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> PU_USB_W<'a> {
 #[doc = "Field `usb_sus` reader - "]
 pub struct USB_SUS_R(crate::FieldReader<bool, bool>);
 impl USB_SUS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_SUS_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> USB_SUS_W<'a> {
 #[doc = "Field `usb_spd` reader - "]
 pub struct USB_SPD_R(crate::FieldReader<bool, bool>);
 impl USB_SPD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_SPD_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> USB_SPD_W<'a> {
 #[doc = "Field `usb_enum` reader - "]
 pub struct USB_ENUM_R(crate::FieldReader<bool, bool>);
 impl USB_ENUM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_ENUM_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> USB_ENUM_W<'a> {
 #[doc = "Field `usb_data_convert` reader - "]
 pub struct USB_DATA_CONVERT_R(crate::FieldReader<bool, bool>);
 impl USB_DATA_CONVERT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_DATA_CONVERT_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> USB_DATA_CONVERT_W<'a> {
 #[doc = "Field `usb_oeb` reader - "]
 pub struct USB_OEB_R(crate::FieldReader<bool, bool>);
 impl USB_OEB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_OEB_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> USB_OEB_W<'a> {
 #[doc = "Field `usb_oeb_reg` reader - "]
 pub struct USB_OEB_REG_R(crate::FieldReader<bool, bool>);
 impl USB_OEB_REG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_OEB_REG_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> USB_OEB_REG_W<'a> {
 #[doc = "Field `usb_oeb_sel` reader - "]
 pub struct USB_OEB_SEL_R(crate::FieldReader<bool, bool>);
 impl USB_OEB_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_OEB_SEL_R(crate::FieldReader::new(bits))
     }
@@ -469,6 +481,7 @@ impl<'a> USB_OEB_SEL_W<'a> {
 #[doc = "Field `usb_rout_pmos` reader - "]
 pub struct USB_ROUT_PMOS_R(crate::FieldReader<u8, u8>);
 impl USB_ROUT_PMOS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_ROUT_PMOS_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> USB_ROUT_PMOS_W<'a> {
 #[doc = "Field `usb_rout_nmos` reader - "]
 pub struct USB_ROUT_NMOS_R(crate::FieldReader<u8, u8>);
 impl USB_ROUT_NMOS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_ROUT_NMOS_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> USB_ROUT_NMOS_W<'a> {
 #[doc = "Field `pu_usb_ldo` reader - "]
 pub struct PU_USB_LDO_R(crate::FieldReader<bool, bool>);
 impl PU_USB_LDO_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PU_USB_LDO_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> PU_USB_LDO_W<'a> {
 #[doc = "Field `usb_ldo_vfb` reader - "]
 pub struct USB_LDO_VFB_R(crate::FieldReader<u8, u8>);
 impl USB_LDO_VFB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_LDO_VFB_R(crate::FieldReader::new(bits))
     }

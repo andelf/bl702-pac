@@ -37,6 +37,7 @@ impl From<crate::W<BZ_COEX_CTRL_SPEC>> for W {
 #[doc = "Field `coex_arb` reader - "]
 pub struct COEX_ARB_R(crate::FieldReader<u8, u8>);
 impl COEX_ARB_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COEX_ARB_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> COEX_ARB_W<'a> {
 #[doc = "Field `ble_tx_abort_dis` reader - "]
 pub struct BLE_TX_ABORT_DIS_R(crate::FieldReader<bool, bool>);
 impl BLE_TX_ABORT_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BLE_TX_ABORT_DIS_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> BLE_TX_ABORT_DIS_W<'a> {
 #[doc = "Field `ble_rx_abort_dis` reader - "]
 pub struct BLE_RX_ABORT_DIS_R(crate::FieldReader<bool, bool>);
 impl BLE_RX_ABORT_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BLE_RX_ABORT_DIS_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> BLE_RX_ABORT_DIS_W<'a> {
 #[doc = "Field `m154_tx_abort_dis` reader - "]
 pub struct M154_TX_ABORT_DIS_R(crate::FieldReader<bool, bool>);
 impl M154_TX_ABORT_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         M154_TX_ABORT_DIS_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> M154_TX_ABORT_DIS_W<'a> {
 #[doc = "Field `m154_rx_abort_dis` reader - "]
 pub struct M154_RX_ABORT_DIS_R(crate::FieldReader<bool, bool>);
 impl M154_RX_ABORT_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         M154_RX_ABORT_DIS_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> M154_RX_ABORT_DIS_W<'a> {
 #[doc = "Field `coex_force_ch` reader - "]
 pub struct COEX_FORCE_CH_R(crate::FieldReader<u8, u8>);
 impl COEX_FORCE_CH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COEX_FORCE_CH_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> COEX_FORCE_CH_W<'a> {
 #[doc = "Field `coex_option` reader - "]
 pub struct COEX_OPTION_R(crate::FieldReader<bool, bool>);
 impl COEX_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         COEX_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> COEX_OPTION_W<'a> {
 #[doc = "Field `force_ble_win` reader - "]
 pub struct FORCE_BLE_WIN_R(crate::FieldReader<bool, bool>);
 impl FORCE_BLE_WIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FORCE_BLE_WIN_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> FORCE_BLE_WIN_W<'a> {
 #[doc = "Field `force_m154_win` reader - "]
 pub struct FORCE_M154_WIN_R(crate::FieldReader<bool, bool>);
 impl FORCE_M154_WIN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         FORCE_M154_WIN_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> FORCE_M154_WIN_W<'a> {
 #[doc = "Field `coex_pri` reader - "]
 pub struct COEX_PRI_R(crate::FieldReader<bool, bool>);
 impl COEX_PRI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         COEX_PRI_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> COEX_PRI_W<'a> {
 #[doc = "Field `bz_abort_pol` reader - "]
 pub struct BZ_ABORT_POL_R(crate::FieldReader<bool, bool>);
 impl BZ_ABORT_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BZ_ABORT_POL_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> BZ_ABORT_POL_W<'a> {
 #[doc = "Field `bz_active_pol` reader - "]
 pub struct BZ_ACTIVE_POL_R(crate::FieldReader<bool, bool>);
 impl BZ_ACTIVE_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BZ_ACTIVE_POL_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> BZ_ACTIVE_POL_W<'a> {
 #[doc = "Field `bz_pri_pol` reader - "]
 pub struct BZ_PRI_POL_R(crate::FieldReader<bool, bool>);
 impl BZ_PRI_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BZ_PRI_POL_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> BZ_PRI_POL_W<'a> {
 #[doc = "Field `bz_pri_en` reader - "]
 pub struct BZ_PRI_EN_R(crate::FieldReader<bool, bool>);
 impl BZ_PRI_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BZ_PRI_EN_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> BZ_PRI_EN_W<'a> {
 #[doc = "Field `bz_pri_thr` reader - "]
 pub struct BZ_PRI_THR_R(crate::FieldReader<u8, u8>);
 impl BZ_PRI_THR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         BZ_PRI_THR_R(crate::FieldReader::new(bits))
     }
@@ -547,6 +562,7 @@ impl<'a> BZ_PRI_THR_W<'a> {
 #[doc = "Field `m154_rx_ignore` reader - "]
 pub struct M154_RX_IGNORE_R(crate::FieldReader<bool, bool>);
 impl M154_RX_IGNORE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         M154_RX_IGNORE_R(crate::FieldReader::new(bits))
     }
@@ -583,6 +599,7 @@ impl<'a> M154_RX_IGNORE_W<'a> {
 #[doc = "Field `ble_rx_ignore` reader - "]
 pub struct BLE_RX_IGNORE_R(crate::FieldReader<bool, bool>);
 impl BLE_RX_IGNORE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         BLE_RX_IGNORE_R(crate::FieldReader::new(bits))
     }
@@ -619,6 +636,7 @@ impl<'a> BLE_RX_IGNORE_W<'a> {
 #[doc = "Field `wlan_en` reader - "]
 pub struct WLAN_EN_R(crate::FieldReader<bool, bool>);
 impl WLAN_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         WLAN_EN_R(crate::FieldReader::new(bits))
     }
@@ -655,6 +673,7 @@ impl<'a> WLAN_EN_W<'a> {
 #[doc = "Field `coex_en` reader - "]
 pub struct COEX_EN_R(crate::FieldReader<bool, bool>);
 impl COEX_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         COEX_EN_R(crate::FieldReader::new(bits))
     }

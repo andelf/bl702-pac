@@ -37,6 +37,7 @@ impl From<crate::W<SE_AES_0_KEY_SEL_0_SPEC>> for W {
 #[doc = "Field `se_aes_0_key_sel_0` reader - "]
 pub struct SE_AES_0_KEY_SEL_0_R(crate::FieldReader<u8, u8>);
 impl SE_AES_0_KEY_SEL_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_AES_0_KEY_SEL_0_R(crate::FieldReader::new(bits))
     }

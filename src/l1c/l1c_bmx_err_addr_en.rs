@@ -37,6 +37,7 @@ impl From<crate::W<L1C_BMX_ERR_ADDR_EN_SPEC>> for W {
 #[doc = "Field `l1c_hsel_option` reader - "]
 pub struct L1C_HSEL_OPTION_R(crate::FieldReader<u8, u8>);
 impl L1C_HSEL_OPTION_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         L1C_HSEL_OPTION_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> L1C_HSEL_OPTION_W<'a> {
 #[doc = "Field `l1c_bmx_err_tz` reader - "]
 pub struct L1C_BMX_ERR_TZ_R(crate::FieldReader<bool, bool>);
 impl L1C_BMX_ERR_TZ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BMX_ERR_TZ_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> L1C_BMX_ERR_TZ_W<'a> {
 #[doc = "Field `l1c_bmx_err_dec` reader - "]
 pub struct L1C_BMX_ERR_DEC_R(crate::FieldReader<bool, bool>);
 impl L1C_BMX_ERR_DEC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BMX_ERR_DEC_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> L1C_BMX_ERR_DEC_W<'a> {
 #[doc = "Field `l1c_bmx_err_addr_dis` reader - "]
 pub struct L1C_BMX_ERR_ADDR_DIS_R(crate::FieldReader<bool, bool>);
 impl L1C_BMX_ERR_ADDR_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         L1C_BMX_ERR_ADDR_DIS_R(crate::FieldReader::new(bits))
     }

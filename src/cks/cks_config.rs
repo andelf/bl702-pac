@@ -37,6 +37,7 @@ impl From<crate::W<CKS_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_cks_byte_swap` reader - "]
 pub struct CR_CKS_BYTE_SWAP_R(crate::FieldReader<bool, bool>);
 impl CR_CKS_BYTE_SWAP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_CKS_BYTE_SWAP_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CR_CKS_BYTE_SWAP_W<'a> {
 #[doc = "Field `cr_cks_clr` reader - "]
 pub struct CR_CKS_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_CKS_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_CKS_CLR_R(crate::FieldReader::new(bits))
     }

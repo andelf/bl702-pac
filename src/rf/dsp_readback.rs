@@ -37,6 +37,7 @@ impl From<crate::W<DSP_READBACK_SPEC>> for W {
 #[doc = "Field `rbb_bw_ind_ctrl_hw` reader - "]
 pub struct RBB_BW_IND_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_BW_IND_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_BW_IND_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RBB_BW_IND_CTRL_HW_W<'a> {
 #[doc = "Field `rbb_bw_ind` reader - "]
 pub struct RBB_BW_IND_R(crate::FieldReader<bool, bool>);
 impl RBB_BW_IND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_BW_IND_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RBB_BW_IND_W<'a> {
 #[doc = "Field `rbb_ind_ctrl_hw` reader - "]
 pub struct RBB_IND_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_IND_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_IND_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> RBB_IND_CTRL_HW_W<'a> {
 #[doc = "Field `rbb_ind` reader - "]
 pub struct RBB_IND_R(crate::FieldReader<u8, u8>);
 impl RBB_IND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_IND_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> RBB_IND_W<'a> {
 #[doc = "Field `ch_ind_ctrl_hw` reader - "]
 pub struct CH_IND_CTRL_HW_R(crate::FieldReader<bool, bool>);
 impl CH_IND_CTRL_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CH_IND_CTRL_HW_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> CH_IND_CTRL_HW_W<'a> {
 #[doc = "Field `ch_ind` reader - "]
 pub struct CH_IND_R(crate::FieldReader<u8, u8>);
 impl CH_IND_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CH_IND_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> CH_IND_W<'a> {
 #[doc = "Field `rbb_bw_ind_hw` reader - "]
 pub struct RBB_BW_IND_HW_R(crate::FieldReader<bool, bool>);
 impl RBB_BW_IND_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RBB_BW_IND_HW_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> RBB_BW_IND_HW_W<'a> {
 #[doc = "Field `rbb_ind_hw` reader - "]
 pub struct RBB_IND_HW_R(crate::FieldReader<u8, u8>);
 impl RBB_IND_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RBB_IND_HW_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> RBB_IND_HW_W<'a> {
 #[doc = "Field `ch_ind_hw` reader - "]
 pub struct CH_IND_HW_R(crate::FieldReader<u8, u8>);
 impl CH_IND_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CH_IND_HW_R(crate::FieldReader::new(bits))
     }

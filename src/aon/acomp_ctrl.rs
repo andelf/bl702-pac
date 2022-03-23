@@ -37,6 +37,7 @@ impl From<crate::W<ACOMP_CTRL_SPEC>> for W {
 #[doc = "Field `acomp_reserved` reader - "]
 pub struct ACOMP_RESERVED_R(crate::FieldReader<u8, u8>);
 impl ACOMP_RESERVED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP_RESERVED_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> ACOMP_RESERVED_W<'a> {
 #[doc = "Field `acomp0_out_raw` reader - "]
 pub struct ACOMP0_OUT_RAW_R(crate::FieldReader<bool, bool>);
 impl ACOMP0_OUT_RAW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP0_OUT_RAW_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> ACOMP0_OUT_RAW_W<'a> {
 #[doc = "Field `acomp1_out_raw` reader - "]
 pub struct ACOMP1_OUT_RAW_R(crate::FieldReader<bool, bool>);
 impl ACOMP1_OUT_RAW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP1_OUT_RAW_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> ACOMP1_OUT_RAW_W<'a> {
 #[doc = "Field `acomp0_test_sel` reader - "]
 pub struct ACOMP0_TEST_SEL_R(crate::FieldReader<u8, u8>);
 impl ACOMP0_TEST_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP0_TEST_SEL_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> ACOMP0_TEST_SEL_W<'a> {
 #[doc = "Field `acomp1_test_sel` reader - "]
 pub struct ACOMP1_TEST_SEL_R(crate::FieldReader<u8, u8>);
 impl ACOMP1_TEST_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ACOMP1_TEST_SEL_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> ACOMP1_TEST_SEL_W<'a> {
 #[doc = "Field `acomp0_test_en` reader - "]
 pub struct ACOMP0_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl ACOMP0_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP0_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> ACOMP0_TEST_EN_W<'a> {
 #[doc = "Field `acomp1_test_en` reader - "]
 pub struct ACOMP1_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl ACOMP1_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP1_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> ACOMP1_TEST_EN_W<'a> {
 #[doc = "Field `acomp0_rstn_ana` reader - "]
 pub struct ACOMP0_RSTN_ANA_R(crate::FieldReader<bool, bool>);
 impl ACOMP0_RSTN_ANA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP0_RSTN_ANA_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> ACOMP0_RSTN_ANA_W<'a> {
 #[doc = "Field `acomp1_rstn_ana` reader - "]
 pub struct ACOMP1_RSTN_ANA_R(crate::FieldReader<bool, bool>);
 impl ACOMP1_RSTN_ANA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         ACOMP1_RSTN_ANA_R(crate::FieldReader::new(bits))
     }

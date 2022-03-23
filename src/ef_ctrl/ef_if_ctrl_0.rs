@@ -37,6 +37,7 @@ impl From<crate::W<EF_IF_CTRL_0_SPEC>> for W {
 #[doc = "Field `ef_if_prot_code_cyc` reader - "]
 pub struct EF_IF_PROT_CODE_CYC_R(crate::FieldReader<u8, u8>);
 impl EF_IF_PROT_CODE_CYC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_PROT_CODE_CYC_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> EF_IF_PROT_CODE_CYC_W<'a> {
 #[doc = "Field `ef_if_0_int_set` reader - "]
 pub struct EF_IF_0_INT_SET_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_INT_SET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_INT_SET_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> EF_IF_0_INT_SET_W<'a> {
 #[doc = "Field `ef_if_0_int_clr` reader - "]
 pub struct EF_IF_0_INT_CLR_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_INT_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_INT_CLR_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> EF_IF_0_INT_CLR_W<'a> {
 #[doc = "Field `ef_if_0_int` reader - "]
 pub struct EF_IF_0_INT_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_INT_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> EF_IF_0_INT_W<'a> {
 #[doc = "Field `ef_if_cyc_modify_lock` reader - "]
 pub struct EF_IF_CYC_MODIFY_LOCK_R(crate::FieldReader<bool, bool>);
 impl EF_IF_CYC_MODIFY_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_CYC_MODIFY_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> EF_IF_CYC_MODIFY_LOCK_W<'a> {
 #[doc = "Field `ef_if_auto_rd_en` reader - "]
 pub struct EF_IF_AUTO_RD_EN_R(crate::FieldReader<bool, bool>);
 impl EF_IF_AUTO_RD_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_AUTO_RD_EN_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> EF_IF_AUTO_RD_EN_W<'a> {
 #[doc = "Field `ef_clk_sahb_data_gate` reader - "]
 pub struct EF_CLK_SAHB_DATA_GATE_R(crate::FieldReader<bool, bool>);
 impl EF_CLK_SAHB_DATA_GATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CLK_SAHB_DATA_GATE_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> EF_CLK_SAHB_DATA_GATE_W<'a> {
 #[doc = "Field `ef_if_por_dig` reader - "]
 pub struct EF_IF_POR_DIG_R(crate::FieldReader<bool, bool>);
 impl EF_IF_POR_DIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_POR_DIG_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> EF_IF_POR_DIG_W<'a> {
 #[doc = "Field `ef_if_prot_code_ctrl` reader - "]
 pub struct EF_IF_PROT_CODE_CTRL_R(crate::FieldReader<u8, u8>);
 impl EF_IF_PROT_CODE_CTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_PROT_CODE_CTRL_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> EF_IF_PROT_CODE_CTRL_W<'a> {
 #[doc = "Field `ef_clk_sahb_data_sel` reader - "]
 pub struct EF_CLK_SAHB_DATA_SEL_R(crate::FieldReader<bool, bool>);
 impl EF_CLK_SAHB_DATA_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_CLK_SAHB_DATA_SEL_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> EF_CLK_SAHB_DATA_SEL_W<'a> {
 #[doc = "Field `ef_if_0_cyc_modify` reader - "]
 pub struct EF_IF_0_CYC_MODIFY_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_CYC_MODIFY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_CYC_MODIFY_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> EF_IF_0_CYC_MODIFY_W<'a> {
 #[doc = "Field `ef_if_0_manual_en` reader - "]
 pub struct EF_IF_0_MANUAL_EN_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_MANUAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_MANUAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> EF_IF_0_MANUAL_EN_W<'a> {
 #[doc = "Field `ef_if_0_trig` reader - "]
 pub struct EF_IF_0_TRIG_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_TRIG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_TRIG_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> EF_IF_0_TRIG_W<'a> {
 #[doc = "Field `ef_if_0_rw` reader - "]
 pub struct EF_IF_0_RW_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_RW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_RW_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> EF_IF_0_RW_W<'a> {
 #[doc = "Field `ef_if_0_busy` reader - "]
 pub struct EF_IF_0_BUSY_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_BUSY_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> EF_IF_0_BUSY_W<'a> {
 #[doc = "Field `ef_if_0_autoload_done` reader - "]
 pub struct EF_IF_0_AUTOLOAD_DONE_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_AUTOLOAD_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_AUTOLOAD_DONE_R(crate::FieldReader::new(bits))
     }
@@ -593,6 +609,7 @@ impl<'a> EF_IF_0_AUTOLOAD_DONE_W<'a> {
 #[doc = "Field `ef_if_0_autoload_p1_done` reader - "]
 pub struct EF_IF_0_AUTOLOAD_P1_DONE_R(crate::FieldReader<bool, bool>);
 impl EF_IF_0_AUTOLOAD_P1_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EF_IF_0_AUTOLOAD_P1_DONE_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<DMA_INTTCCLEAR_SPEC>> for W {
 #[doc = "Field `IntTCClear` reader - "]
 pub struct INTTCCLEAR_R(crate::FieldReader<u8, u8>);
 impl INTTCCLEAR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         INTTCCLEAR_R(crate::FieldReader::new(bits))
     }

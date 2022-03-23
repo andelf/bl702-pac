@@ -37,6 +37,7 @@ impl From<crate::W<TICR3_SPEC>> for W {
 #[doc = "Field `tclr_2` reader - "]
 pub struct TCLR_2_R(crate::FieldReader<bool, bool>);
 impl TCLR_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TCLR_2_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TCLR_2_W<'a> {
 #[doc = "Field `tclr_1` reader - "]
 pub struct TCLR_1_R(crate::FieldReader<bool, bool>);
 impl TCLR_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TCLR_1_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TCLR_1_W<'a> {
 #[doc = "Field `tclr_0` reader - "]
 pub struct TCLR_0_R(crate::FieldReader<bool, bool>);
 impl TCLR_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TCLR_0_R(crate::FieldReader::new(bits))
     }

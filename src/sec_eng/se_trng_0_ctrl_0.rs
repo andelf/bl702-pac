@@ -37,6 +37,7 @@ impl From<crate::W<SE_TRNG_0_CTRL_0_SPEC>> for W {
 #[doc = "Field `se_trng_0_manual_en` reader - "]
 pub struct SE_TRNG_0_MANUAL_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_MANUAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_MANUAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SE_TRNG_0_MANUAL_EN_W<'a> {
 #[doc = "Field `se_trng_0_manual_reseed` reader - "]
 pub struct SE_TRNG_0_MANUAL_RESEED_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_MANUAL_RESEED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_MANUAL_RESEED_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SE_TRNG_0_MANUAL_RESEED_W<'a> {
 #[doc = "Field `se_trng_0_manual_fun_sel` reader - "]
 pub struct SE_TRNG_0_MANUAL_FUN_SEL_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_MANUAL_FUN_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_MANUAL_FUN_SEL_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SE_TRNG_0_MANUAL_FUN_SEL_W<'a> {
 #[doc = "Field `se_trng_0_int_mask` reader - "]
 pub struct SE_TRNG_0_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SE_TRNG_0_INT_MASK_W<'a> {
 #[doc = "Field `se_trng_0_int_set_1t` reader - "]
 pub struct SE_TRNG_0_INT_SET_1T_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_INT_SET_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_INT_SET_1T_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> SE_TRNG_0_INT_SET_1T_W<'a> {
 #[doc = "Field `se_trng_0_int_clr_1t` reader - "]
 pub struct SE_TRNG_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_INT_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> SE_TRNG_0_INT_CLR_1T_W<'a> {
 #[doc = "Field `se_trng_0_int` reader - "]
 pub struct SE_TRNG_0_INT_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_INT_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> SE_TRNG_0_INT_W<'a> {
 #[doc = "Field `se_trng_0_ht_error` reader - "]
 pub struct SE_TRNG_0_HT_ERROR_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_HT_ERROR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_HT_ERROR_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> SE_TRNG_0_HT_ERROR_W<'a> {
 #[doc = "Field `se_trng_0_dout_clr_1t` reader - "]
 pub struct SE_TRNG_0_DOUT_CLR_1T_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_DOUT_CLR_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_DOUT_CLR_1T_R(crate::FieldReader::new(bits))
     }
@@ -361,6 +370,7 @@ impl<'a> SE_TRNG_0_DOUT_CLR_1T_W<'a> {
 #[doc = "Field `se_trng_0_en` reader - "]
 pub struct SE_TRNG_0_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_EN_R(crate::FieldReader::new(bits))
     }
@@ -397,6 +407,7 @@ impl<'a> SE_TRNG_0_EN_W<'a> {
 #[doc = "Field `se_trng_0_trig_1t` reader - "]
 pub struct SE_TRNG_0_TRIG_1T_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_TRIG_1T_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_TRIG_1T_R(crate::FieldReader::new(bits))
     }
@@ -433,6 +444,7 @@ impl<'a> SE_TRNG_0_TRIG_1T_W<'a> {
 #[doc = "Field `se_trng_0_busy` reader - "]
 pub struct SE_TRNG_0_BUSY_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_BUSY_R(crate::FieldReader::new(bits))
     }

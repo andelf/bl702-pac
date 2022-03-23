@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_DMA_RDATA_SPEC>> for W {
 #[doc = "Field `rsvd_31_26` reader - "]
 pub struct RSVD_31_26_R(crate::FieldReader<u8, u8>);
 impl RSVD_31_26_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_31_26_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RSVD_31_26_W<'a> {
 #[doc = "Field `gpadc_dma_rdata` reader - "]
 pub struct GPADC_DMA_RDATA_R(crate::FieldReader<u32, u32>);
 impl GPADC_DMA_RDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         GPADC_DMA_RDATA_R(crate::FieldReader::new(bits))
     }

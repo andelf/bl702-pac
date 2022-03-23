@@ -37,6 +37,7 @@ impl From<crate::W<LNA_MX_SPEC>> for W {
 #[doc = "Field `lna_bm_hw` reader - "]
 pub struct LNA_BM_HW_R(crate::FieldReader<u8, u8>);
 impl LNA_BM_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_BM_HW_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> LNA_BM_HW_W<'a> {
 #[doc = "Field `lna_bm_hg` reader - "]
 pub struct LNA_BM_HG_R(crate::FieldReader<u8, u8>);
 impl LNA_BM_HG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_BM_HG_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> LNA_BM_HG_W<'a> {
 #[doc = "Field `lna_bm_lg` reader - "]
 pub struct LNA_BM_LG_R(crate::FieldReader<u8, u8>);
 impl LNA_BM_LG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_BM_LG_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> LNA_BM_LG_W<'a> {
 #[doc = "Field `lna_cap_lg` reader - "]
 pub struct LNA_CAP_LG_R(crate::FieldReader<u8, u8>);
 impl LNA_CAP_LG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_CAP_LG_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> LNA_CAP_LG_W<'a> {
 #[doc = "Field `lna_cap_match` reader - "]
 pub struct LNA_CAP_MATCH_R(crate::FieldReader<u8, u8>);
 impl LNA_CAP_MATCH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_CAP_MATCH_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> LNA_CAP_MATCH_W<'a> {
 #[doc = "Field `lna_lg_gsel` reader - "]
 pub struct LNA_LG_GSEL_R(crate::FieldReader<u8, u8>);
 impl LNA_LG_GSEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_LG_GSEL_R(crate::FieldReader::new(bits))
     }
@@ -193,6 +199,7 @@ impl<'a> LNA_LG_GSEL_W<'a> {
 #[doc = "Field `lna_load_csw` reader - "]
 pub struct LNA_LOAD_CSW_R(crate::FieldReader<u8, u8>);
 impl LNA_LOAD_CSW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_LOAD_CSW_R(crate::FieldReader::new(bits))
     }
@@ -219,6 +226,7 @@ impl<'a> LNA_LOAD_CSW_W<'a> {
 #[doc = "Field `lna_vdd13_sel` reader - "]
 pub struct LNA_VDD13_SEL_R(crate::FieldReader<u8, u8>);
 impl LNA_VDD13_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_VDD13_SEL_R(crate::FieldReader::new(bits))
     }
@@ -245,6 +253,7 @@ impl<'a> LNA_VDD13_SEL_W<'a> {
 #[doc = "Field `lna_rfb_match` reader - "]
 pub struct LNA_RFB_MATCH_R(crate::FieldReader<u8, u8>);
 impl LNA_RFB_MATCH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         LNA_RFB_MATCH_R(crate::FieldReader::new(bits))
     }
@@ -271,6 +280,7 @@ impl<'a> LNA_RFB_MATCH_W<'a> {
 #[doc = "Field `rmx_bm` reader - "]
 pub struct RMX_BM_R(crate::FieldReader<u8, u8>);
 impl RMX_BM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RMX_BM_R(crate::FieldReader::new(bits))
     }

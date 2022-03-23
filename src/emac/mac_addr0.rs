@@ -37,6 +37,7 @@ impl From<crate::W<MAC_ADDR0_SPEC>> for W {
 #[doc = "Field `MAC_B2` reader - "]
 pub struct MAC_B2_R(crate::FieldReader<u8, u8>);
 impl MAC_B2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         MAC_B2_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> MAC_B2_W<'a> {
 #[doc = "Field `MAC_B3` reader - "]
 pub struct MAC_B3_R(crate::FieldReader<u8, u8>);
 impl MAC_B3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         MAC_B3_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> MAC_B3_W<'a> {
 #[doc = "Field `MAC_B4` reader - "]
 pub struct MAC_B4_R(crate::FieldReader<u8, u8>);
 impl MAC_B4_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         MAC_B4_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> MAC_B4_W<'a> {
 #[doc = "Field `MAC_B5` reader - "]
 pub struct MAC_B5_R(crate::FieldReader<u8, u8>);
 impl MAC_B5_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         MAC_B5_R(crate::FieldReader::new(bits))
     }

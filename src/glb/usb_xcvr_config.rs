@@ -37,6 +37,7 @@ impl From<crate::W<USB_XCVR_CONFIG_SPEC>> for W {
 #[doc = "Field `usb_slewrate_p_rise` reader - "]
 pub struct USB_SLEWRATE_P_RISE_R(crate::FieldReader<u8, u8>);
 impl USB_SLEWRATE_P_RISE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_SLEWRATE_P_RISE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> USB_SLEWRATE_P_RISE_W<'a> {
 #[doc = "Field `usb_slewrate_p_fall` reader - "]
 pub struct USB_SLEWRATE_P_FALL_R(crate::FieldReader<u8, u8>);
 impl USB_SLEWRATE_P_FALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_SLEWRATE_P_FALL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> USB_SLEWRATE_P_FALL_W<'a> {
 #[doc = "Field `usb_slewrate_m_rise` reader - "]
 pub struct USB_SLEWRATE_M_RISE_R(crate::FieldReader<u8, u8>);
 impl USB_SLEWRATE_M_RISE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_SLEWRATE_M_RISE_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> USB_SLEWRATE_M_RISE_W<'a> {
 #[doc = "Field `usb_slewrate_m_fall` reader - "]
 pub struct USB_SLEWRATE_M_FALL_R(crate::FieldReader<u8, u8>);
 impl USB_SLEWRATE_M_FALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_SLEWRATE_M_FALL_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> USB_SLEWRATE_M_FALL_W<'a> {
 #[doc = "Field `usb_res_pullup_tune` reader - "]
 pub struct USB_RES_PULLUP_TUNE_R(crate::FieldReader<u8, u8>);
 impl USB_RES_PULLUP_TUNE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_RES_PULLUP_TUNE_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> USB_RES_PULLUP_TUNE_W<'a> {
 #[doc = "Field `reg_usb_use_ctrl` reader - "]
 pub struct REG_USB_USE_CTRL_R(crate::FieldReader<bool, bool>);
 impl REG_USB_USE_CTRL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_USB_USE_CTRL_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> REG_USB_USE_CTRL_W<'a> {
 #[doc = "Field `usb_str_drv` reader - "]
 pub struct USB_STR_DRV_R(crate::FieldReader<u8, u8>);
 impl USB_STR_DRV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_STR_DRV_R(crate::FieldReader::new(bits))
     }
@@ -229,6 +236,7 @@ impl<'a> USB_STR_DRV_W<'a> {
 #[doc = "Field `reg_usb_use_xcvr` reader - "]
 pub struct REG_USB_USE_XCVR_R(crate::FieldReader<bool, bool>);
 impl REG_USB_USE_XCVR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_USB_USE_XCVR_R(crate::FieldReader::new(bits))
     }
@@ -265,6 +273,7 @@ impl<'a> REG_USB_USE_XCVR_W<'a> {
 #[doc = "Field `usb_bd_vth` reader - "]
 pub struct USB_BD_VTH_R(crate::FieldReader<u8, u8>);
 impl USB_BD_VTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_BD_VTH_R(crate::FieldReader::new(bits))
     }
@@ -291,6 +300,7 @@ impl<'a> USB_BD_VTH_W<'a> {
 #[doc = "Field `usb_v_hys_p` reader - "]
 pub struct USB_V_HYS_P_R(crate::FieldReader<u8, u8>);
 impl USB_V_HYS_P_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_V_HYS_P_R(crate::FieldReader::new(bits))
     }
@@ -317,6 +327,7 @@ impl<'a> USB_V_HYS_P_W<'a> {
 #[doc = "Field `usb_v_hys_m` reader - "]
 pub struct USB_V_HYS_M_R(crate::FieldReader<u8, u8>);
 impl USB_V_HYS_M_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         USB_V_HYS_M_R(crate::FieldReader::new(bits))
     }

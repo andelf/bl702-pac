@@ -37,6 +37,7 @@ impl From<crate::W<CCI_CTL_SPEC>> for W {
 #[doc = "Field `ahb_state` reader - "]
 pub struct AHB_STATE_R(crate::FieldReader<u8, u8>);
 impl AHB_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         AHB_STATE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> AHB_STATE_W<'a> {
 #[doc = "Field `cci_read_flag` reader - "]
 pub struct CCI_READ_FLAG_R(crate::FieldReader<bool, bool>);
 impl CCI_READ_FLAG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_READ_FLAG_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> CCI_READ_FLAG_W<'a> {
 #[doc = "Field `cci_write_flag` reader - "]
 pub struct CCI_WRITE_FLAG_R(crate::FieldReader<bool, bool>);
 impl CCI_WRITE_FLAG_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_WRITE_FLAG_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<RF_TEST_MODE_SPEC>> for W {
 #[doc = "Field `rf_test_mode_en` reader - "]
 pub struct RF_TEST_MODE_EN_R(crate::FieldReader<bool, bool>);
 impl RF_TEST_MODE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RF_TEST_MODE_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RF_TEST_MODE_EN_W<'a> {
 #[doc = "Field `dacout_4s_sram_en` reader - "]
 pub struct DACOUT_4S_SRAM_EN_R(crate::FieldReader<bool, bool>);
 impl DACOUT_4S_SRAM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DACOUT_4S_SRAM_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> DACOUT_4S_SRAM_EN_W<'a> {
 #[doc = "Field `dacout_4s_en` reader - "]
 pub struct DACOUT_4S_EN_R(crate::FieldReader<bool, bool>);
 impl DACOUT_4S_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DACOUT_4S_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> DACOUT_4S_EN_W<'a> {
 #[doc = "Field `dacout_4s` reader - "]
 pub struct DACOUT_4S_R(crate::FieldReader<u16, u16>);
 impl DACOUT_4S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         DACOUT_4S_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> DACOUT_4S_W<'a> {
 #[doc = "Field `dacout_hw` reader - "]
 pub struct DACOUT_HW_R(crate::FieldReader<u16, u16>);
 impl DACOUT_HW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         DACOUT_HW_R(crate::FieldReader::new(bits))
     }

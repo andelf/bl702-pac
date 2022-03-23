@@ -37,6 +37,7 @@ impl From<crate::W<HBN_PIR_VTH_SPEC>> for W {
 #[doc = "Field `pir_vth` reader - "]
 pub struct PIR_VTH_R(crate::FieldReader<u16, u16>);
 impl PIR_VTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PIR_VTH_R(crate::FieldReader::new(bits))
     }

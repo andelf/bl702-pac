@@ -37,6 +37,7 @@ impl From<crate::W<UART_BIT_PRD_SPEC>> for W {
 #[doc = "Field `cr_urx_bit_prd` reader - "]
 pub struct CR_URX_BIT_PRD_R(crate::FieldReader<u16, u16>);
 impl CR_URX_BIT_PRD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_URX_BIT_PRD_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> CR_URX_BIT_PRD_W<'a> {
 #[doc = "Field `cr_utx_bit_prd` reader - "]
 pub struct CR_UTX_BIT_PRD_R(crate::FieldReader<u16, u16>);
 impl CR_UTX_BIT_PRD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_UTX_BIT_PRD_R(crate::FieldReader::new(bits))
     }

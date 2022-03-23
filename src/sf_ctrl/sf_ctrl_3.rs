@@ -37,6 +37,7 @@ impl From<crate::W<SF_CTRL_3_SPEC>> for W {
 #[doc = "Field `sf_if_1_ack_lat` reader - "]
 pub struct SF_IF_1_ACK_LAT_R(crate::FieldReader<u8, u8>);
 impl SF_IF_1_ACK_LAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_IF_1_ACK_LAT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SF_IF_1_ACK_LAT_W<'a> {
 #[doc = "Field `sf_cmds_wrap_q` reader - "]
 pub struct SF_CMDS_WRAP_Q_R(crate::FieldReader<bool, bool>);
 impl SF_CMDS_WRAP_Q_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CMDS_WRAP_Q_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SF_CMDS_WRAP_Q_W<'a> {
 #[doc = "Field `sf_cmds_wrap_mode` reader - "]
 pub struct SF_CMDS_WRAP_MODE_R(crate::FieldReader<bool, bool>);
 impl SF_CMDS_WRAP_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CMDS_WRAP_MODE_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SF_CMDS_WRAP_MODE_W<'a> {
 #[doc = "Field `sf_cmds_wrap_q_ini` reader - "]
 pub struct SF_CMDS_WRAP_Q_INI_R(crate::FieldReader<bool, bool>);
 impl SF_CMDS_WRAP_Q_INI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CMDS_WRAP_Q_INI_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SF_CMDS_WRAP_Q_INI_W<'a> {
 #[doc = "Field `sf_cmds_bt_en` reader - "]
 pub struct SF_CMDS_BT_EN_R(crate::FieldReader<bool, bool>);
 impl SF_CMDS_BT_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CMDS_BT_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SF_CMDS_BT_EN_W<'a> {
 #[doc = "Field `sf_cmds_bt_dly` reader - "]
 pub struct SF_CMDS_BT_DLY_R(crate::FieldReader<u8, u8>);
 impl SF_CMDS_BT_DLY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_CMDS_BT_DLY_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> SF_CMDS_BT_DLY_W<'a> {
 #[doc = "Field `sf_cmds_en` reader - "]
 pub struct SF_CMDS_EN_R(crate::FieldReader<bool, bool>);
 impl SF_CMDS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CMDS_EN_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> SF_CMDS_EN_W<'a> {
 #[doc = "Field `sf_cmds_wrap_len` reader - "]
 pub struct SF_CMDS_WRAP_LEN_R(crate::FieldReader<u8, u8>);
 impl SF_CMDS_WRAP_LEN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SF_CMDS_WRAP_LEN_R(crate::FieldReader::new(bits))
     }

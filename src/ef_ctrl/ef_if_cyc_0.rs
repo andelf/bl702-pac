@@ -37,6 +37,7 @@ impl From<crate::W<EF_IF_CYC_0_SPEC>> for W {
 #[doc = "Field `ef_if_cyc_pd_cs_s` reader - "]
 pub struct EF_IF_CYC_PD_CS_S_R(crate::FieldReader<u8, u8>);
 impl EF_IF_CYC_PD_CS_S_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_CYC_PD_CS_S_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> EF_IF_CYC_PD_CS_S_W<'a> {
 #[doc = "Field `ef_if_cyc_cs` reader - "]
 pub struct EF_IF_CYC_CS_R(crate::FieldReader<u8, u8>);
 impl EF_IF_CYC_CS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_CYC_CS_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> EF_IF_CYC_CS_W<'a> {
 #[doc = "Field `ef_if_cyc_rd_adr` reader - "]
 pub struct EF_IF_CYC_RD_ADR_R(crate::FieldReader<u8, u8>);
 impl EF_IF_CYC_RD_ADR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_CYC_RD_ADR_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> EF_IF_CYC_RD_ADR_W<'a> {
 #[doc = "Field `ef_if_cyc_rd_dat` reader - "]
 pub struct EF_IF_CYC_RD_DAT_R(crate::FieldReader<u8, u8>);
 impl EF_IF_CYC_RD_DAT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_CYC_RD_DAT_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> EF_IF_CYC_RD_DAT_W<'a> {
 #[doc = "Field `ef_if_cyc_rd_dmy` reader - "]
 pub struct EF_IF_CYC_RD_DMY_R(crate::FieldReader<u8, u8>);
 impl EF_IF_CYC_RD_DMY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         EF_IF_CYC_RD_DMY_R(crate::FieldReader::new(bits))
     }

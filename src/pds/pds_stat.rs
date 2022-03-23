@@ -37,6 +37,7 @@ impl From<crate::W<PDS_STAT_SPEC>> for W {
 #[doc = "Field `ro_pds_pll_state` reader - "]
 pub struct RO_PDS_PLL_STATE_R(crate::FieldReader<u8, u8>);
 impl RO_PDS_PLL_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RO_PDS_PLL_STATE_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RO_PDS_PLL_STATE_W<'a> {
 #[doc = "Field `ro_pds_rf_state` reader - "]
 pub struct RO_PDS_RF_STATE_R(crate::FieldReader<u8, u8>);
 impl RO_PDS_RF_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RO_PDS_RF_STATE_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> RO_PDS_RF_STATE_W<'a> {
 #[doc = "Field `ro_pds_state` reader - "]
 pub struct RO_PDS_STATE_R(crate::FieldReader<u8, u8>);
 impl RO_PDS_STATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RO_PDS_STATE_R(crate::FieldReader::new(bits))
     }

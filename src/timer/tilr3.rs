@@ -37,6 +37,7 @@ impl From<crate::W<TILR3_SPEC>> for W {
 #[doc = "Field `tilr_2` reader - "]
 pub struct TILR_2_R(crate::FieldReader<bool, bool>);
 impl TILR_2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TILR_2_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> TILR_2_W<'a> {
 #[doc = "Field `tilr_1` reader - "]
 pub struct TILR_1_R(crate::FieldReader<bool, bool>);
 impl TILR_1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TILR_1_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> TILR_1_W<'a> {
 #[doc = "Field `tilr_0` reader - "]
 pub struct TILR_0_R(crate::FieldReader<bool, bool>);
 impl TILR_0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         TILR_0_R(crate::FieldReader::new(bits))
     }

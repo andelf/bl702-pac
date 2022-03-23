@@ -37,6 +37,7 @@ impl From<crate::W<AON_MISC_SPEC>> for W {
 #[doc = "Field `sw_bz_en_aon` reader - "]
 pub struct SW_BZ_EN_AON_R(crate::FieldReader<bool, bool>);
 impl SW_BZ_EN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SW_BZ_EN_AON_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SW_BZ_EN_AON_W<'a> {
 #[doc = "Field `sw_soc_en_aon` reader - "]
 pub struct SW_SOC_EN_AON_R(crate::FieldReader<bool, bool>);
 impl SW_SOC_EN_AON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SW_SOC_EN_AON_R(crate::FieldReader::new(bits))
     }

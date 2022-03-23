@@ -37,6 +37,7 @@ impl From<crate::W<RC32K_CTRL0_SPEC>> for W {
 #[doc = "Field `rc32k_code_fr_ext` reader - "]
 pub struct RC32K_CODE_FR_EXT_R(crate::FieldReader<u16, u16>);
 impl RC32K_CODE_FR_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RC32K_CODE_FR_EXT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RC32K_CODE_FR_EXT_W<'a> {
 #[doc = "Field `rc32k_cal_en` reader - "]
 pub struct RC32K_CAL_EN_R(crate::FieldReader<bool, bool>);
 impl RC32K_CAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_CAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RC32K_CAL_EN_W<'a> {
 #[doc = "Field `rc32k_ext_code_en` reader - "]
 pub struct RC32K_EXT_CODE_EN_R(crate::FieldReader<bool, bool>);
 impl RC32K_EXT_CODE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_EXT_CODE_EN_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RC32K_EXT_CODE_EN_W<'a> {
 #[doc = "Field `rc32k_allow_cal` reader - "]
 pub struct RC32K_ALLOW_CAL_R(crate::FieldReader<bool, bool>);
 impl RC32K_ALLOW_CAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_ALLOW_CAL_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> RC32K_ALLOW_CAL_W<'a> {
 #[doc = "Field `rc32k_vref_dly` reader - "]
 pub struct RC32K_VREF_DLY_R(crate::FieldReader<u8, u8>);
 impl RC32K_VREF_DLY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RC32K_VREF_DLY_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> RC32K_VREF_DLY_W<'a> {
 #[doc = "Field `rc32k_dig_code_fr_cal` reader - "]
 pub struct RC32K_DIG_CODE_FR_CAL_R(crate::FieldReader<u16, u16>);
 impl RC32K_DIG_CODE_FR_CAL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         RC32K_DIG_CODE_FR_CAL_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> RC32K_DIG_CODE_FR_CAL_W<'a> {
 #[doc = "Field `rc32k_cal_precharge` reader - "]
 pub struct RC32K_CAL_PRECHARGE_R(crate::FieldReader<bool, bool>);
 impl RC32K_CAL_PRECHARGE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_CAL_PRECHARGE_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> RC32K_CAL_PRECHARGE_W<'a> {
 #[doc = "Field `rc32k_cal_div` reader - "]
 pub struct RC32K_CAL_DIV_R(crate::FieldReader<u8, u8>);
 impl RC32K_CAL_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RC32K_CAL_DIV_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> RC32K_CAL_DIV_W<'a> {
 #[doc = "Field `rc32k_cal_inprogress` reader - "]
 pub struct RC32K_CAL_INPROGRESS_R(crate::FieldReader<bool, bool>);
 impl RC32K_CAL_INPROGRESS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_CAL_INPROGRESS_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> RC32K_CAL_INPROGRESS_W<'a> {
 #[doc = "Field `rc32k_rdy` reader - "]
 pub struct RC32K_RDY_R(crate::FieldReader<bool, bool>);
 impl RC32K_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_RDY_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> RC32K_RDY_W<'a> {
 #[doc = "Field `rc32k_cal_done` reader - "]
 pub struct RC32K_CAL_DONE_R(crate::FieldReader<bool, bool>);
 impl RC32K_CAL_DONE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32K_CAL_DONE_R(crate::FieldReader::new(bits))
     }

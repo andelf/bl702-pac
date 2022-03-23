@@ -37,6 +37,7 @@ impl From<crate::W<RC32M_CTRL1_SPEC>> for W {
 #[doc = "Field `rc32m_reserved` reader - "]
 pub struct RC32M_RESERVED_R(crate::FieldReader<u8, u8>);
 impl RC32M_RESERVED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RC32M_RESERVED_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RC32M_RESERVED_W<'a> {
 #[doc = "Field `rc32m_clk_force_on` reader - "]
 pub struct RC32M_CLK_FORCE_ON_R(crate::FieldReader<bool, bool>);
 impl RC32M_CLK_FORCE_ON_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32M_CLK_FORCE_ON_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> RC32M_CLK_FORCE_ON_W<'a> {
 #[doc = "Field `rc32m_clk_inv` reader - "]
 pub struct RC32M_CLK_INV_R(crate::FieldReader<bool, bool>);
 impl RC32M_CLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32M_CLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RC32M_CLK_INV_W<'a> {
 #[doc = "Field `rc32m_clk_soft_rst` reader - "]
 pub struct RC32M_CLK_SOFT_RST_R(crate::FieldReader<bool, bool>);
 impl RC32M_CLK_SOFT_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32M_CLK_SOFT_RST_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> RC32M_CLK_SOFT_RST_W<'a> {
 #[doc = "Field `rc32m_soft_rst` reader - "]
 pub struct RC32M_SOFT_RST_R(crate::FieldReader<bool, bool>);
 impl RC32M_SOFT_RST_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32M_SOFT_RST_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RC32M_SOFT_RST_W<'a> {
 #[doc = "Field `rc32m_test_en` reader - "]
 pub struct RC32M_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl RC32M_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RC32M_TEST_EN_R(crate::FieldReader::new(bits))
     }

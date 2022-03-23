@@ -37,6 +37,7 @@ impl From<crate::W<CCI_CFG_SPEC>> for W {
 #[doc = "Field `reg_mcci_clk_inv` reader - "]
 pub struct REG_MCCI_CLK_INV_R(crate::FieldReader<bool, bool>);
 impl REG_MCCI_CLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MCCI_CLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> REG_MCCI_CLK_INV_W<'a> {
 #[doc = "Field `reg_scci_clk_inv` reader - "]
 pub struct REG_SCCI_CLK_INV_R(crate::FieldReader<bool, bool>);
 impl REG_SCCI_CLK_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_SCCI_CLK_INV_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> REG_SCCI_CLK_INV_W<'a> {
 #[doc = "Field `cfg_cci1_pre_read` reader - "]
 pub struct CFG_CCI1_PRE_READ_R(crate::FieldReader<bool, bool>);
 impl CFG_CCI1_PRE_READ_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CFG_CCI1_PRE_READ_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CFG_CCI1_PRE_READ_W<'a> {
 #[doc = "Field `reg_div_m_cci_sclk` reader - "]
 pub struct REG_DIV_M_CCI_SCLK_R(crate::FieldReader<u8, u8>);
 impl REG_DIV_M_CCI_SCLK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_DIV_M_CCI_SCLK_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> REG_DIV_M_CCI_SCLK_W<'a> {
 #[doc = "Field `reg_m_cci_sclk_en` reader - "]
 pub struct REG_M_CCI_SCLK_EN_R(crate::FieldReader<bool, bool>);
 impl REG_M_CCI_SCLK_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_M_CCI_SCLK_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> REG_M_CCI_SCLK_EN_W<'a> {
 #[doc = "Field `cci_mas_hw_mode` reader - "]
 pub struct CCI_MAS_HW_MODE_R(crate::FieldReader<bool, bool>);
 impl CCI_MAS_HW_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_MAS_HW_MODE_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> CCI_MAS_HW_MODE_W<'a> {
 #[doc = "Field `cci_mas_sel_cci2` reader - "]
 pub struct CCI_MAS_SEL_CCI2_R(crate::FieldReader<bool, bool>);
 impl CCI_MAS_SEL_CCI2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_MAS_SEL_CCI2_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> CCI_MAS_SEL_CCI2_W<'a> {
 #[doc = "Field `cci_slv_sel_cci2` reader - "]
 pub struct CCI_SLV_SEL_CCI2_R(crate::FieldReader<bool, bool>);
 impl CCI_SLV_SEL_CCI2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_SLV_SEL_CCI2_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> CCI_SLV_SEL_CCI2_W<'a> {
 #[doc = "Field `cci_en` reader - "]
 pub struct CCI_EN_R(crate::FieldReader<bool, bool>);
 impl CCI_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CCI_EN_R(crate::FieldReader::new(bits))
     }

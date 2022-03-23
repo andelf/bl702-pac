@@ -37,6 +37,7 @@ impl From<crate::W<SF_CTRL_PROT_EN_RD_SPEC>> for W {
 #[doc = "Field `sf_dbg_dis` reader - "]
 pub struct SF_DBG_DIS_R(crate::FieldReader<bool, bool>);
 impl SF_DBG_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_DBG_DIS_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> SF_DBG_DIS_W<'a> {
 #[doc = "Field `sf_if_0_trig_wr_lock` reader - "]
 pub struct SF_IF_0_TRIG_WR_LOCK_R(crate::FieldReader<bool, bool>);
 impl SF_IF_0_TRIG_WR_LOCK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_IF_0_TRIG_WR_LOCK_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SF_IF_0_TRIG_WR_LOCK_W<'a> {
 #[doc = "Field `sf_ctrl_id1_en_rd` reader - "]
 pub struct SF_CTRL_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SF_CTRL_ID1_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CTRL_ID1_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SF_CTRL_ID1_EN_RD_W<'a> {
 #[doc = "Field `sf_ctrl_id0_en_rd` reader - "]
 pub struct SF_CTRL_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SF_CTRL_ID0_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CTRL_ID0_EN_RD_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> SF_CTRL_ID0_EN_RD_W<'a> {
 #[doc = "Field `sf_ctrl_prot_en_rd` reader - "]
 pub struct SF_CTRL_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
 impl SF_CTRL_PROT_EN_RD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SF_CTRL_PROT_EN_RD_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<KEYCODE_VALUE_SPEC>> for W {
 #[doc = "Field `keycode3` reader - "]
 pub struct KEYCODE3_R(crate::FieldReader<u8, u8>);
 impl KEYCODE3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KEYCODE3_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> KEYCODE3_W<'a> {
 #[doc = "Field `keycode2` reader - "]
 pub struct KEYCODE2_R(crate::FieldReader<u8, u8>);
 impl KEYCODE2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KEYCODE2_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> KEYCODE2_W<'a> {
 #[doc = "Field `keycode1` reader - "]
 pub struct KEYCODE1_R(crate::FieldReader<u8, u8>);
 impl KEYCODE1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KEYCODE1_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> KEYCODE1_W<'a> {
 #[doc = "Field `keycode0` reader - "]
 pub struct KEYCODE0_R(crate::FieldReader<u8, u8>);
 impl KEYCODE0_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         KEYCODE0_R(crate::FieldReader::new(bits))
     }

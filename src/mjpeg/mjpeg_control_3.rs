@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_CONTROL_3_SPEC>> for W {
 #[doc = "Field `sts_swap_int` reader - "]
 pub struct STS_SWAP_INT_R(crate::FieldReader<bool, bool>);
 impl STS_SWAP_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_SWAP_INT_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_SWAP_INT_W<'a> {
 #[doc = "Field `reg_int_swap_en` reader - "]
 pub struct REG_INT_SWAP_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_SWAP_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_SWAP_EN_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> REG_INT_SWAP_EN_W<'a> {
 #[doc = "Field `frame_valid_cnt` reader - "]
 pub struct FRAME_VALID_CNT_R(crate::FieldReader<u8, u8>);
 impl FRAME_VALID_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FRAME_VALID_CNT_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> FRAME_VALID_CNT_W<'a> {
 #[doc = "Field `sts_idle_int` reader - "]
 pub struct STS_IDLE_INT_R(crate::FieldReader<bool, bool>);
 impl STS_IDLE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_IDLE_INT_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> STS_IDLE_INT_W<'a> {
 #[doc = "Field `reg_int_idle_en` reader - "]
 pub struct REG_INT_IDLE_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_IDLE_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_IDLE_EN_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> REG_INT_IDLE_EN_W<'a> {
 #[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
 pub struct REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader<u8, u8>);
 impl REG_FRAME_CNT_TRGR_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> REG_FRAME_CNT_TRGR_INT_W<'a> {
 #[doc = "Field `ahb_idle` reader - "]
 pub struct AHB_IDLE_R(crate::FieldReader<bool, bool>);
 impl AHB_IDLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         AHB_IDLE_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> AHB_IDLE_W<'a> {
 #[doc = "Field `mjpeg_manf` reader - "]
 pub struct MJPEG_MANF_R(crate::FieldReader<bool, bool>);
 impl MJPEG_MANF_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_MANF_R(crate::FieldReader::new(bits))
     }
@@ -305,6 +313,7 @@ impl<'a> MJPEG_MANF_W<'a> {
 #[doc = "Field `mjpeg_mans` reader - "]
 pub struct MJPEG_MANS_R(crate::FieldReader<bool, bool>);
 impl MJPEG_MANS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_MANS_R(crate::FieldReader::new(bits))
     }
@@ -341,6 +350,7 @@ impl<'a> MJPEG_MANS_W<'a> {
 #[doc = "Field `mjpeg_flsh` reader - "]
 pub struct MJPEG_FLSH_R(crate::FieldReader<bool, bool>);
 impl MJPEG_FLSH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_FLSH_R(crate::FieldReader::new(bits))
     }
@@ -377,6 +387,7 @@ impl<'a> MJPEG_FLSH_W<'a> {
 #[doc = "Field `mjpeg_wait` reader - "]
 pub struct MJPEG_WAIT_R(crate::FieldReader<bool, bool>);
 impl MJPEG_WAIT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_WAIT_R(crate::FieldReader::new(bits))
     }
@@ -413,6 +424,7 @@ impl<'a> MJPEG_WAIT_W<'a> {
 #[doc = "Field `mjpeg_func` reader - "]
 pub struct MJPEG_FUNC_R(crate::FieldReader<bool, bool>);
 impl MJPEG_FUNC_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_FUNC_R(crate::FieldReader::new(bits))
     }
@@ -449,6 +461,7 @@ impl<'a> MJPEG_FUNC_W<'a> {
 #[doc = "Field `mjpeg_idle` reader - "]
 pub struct MJPEG_IDLE_R(crate::FieldReader<bool, bool>);
 impl MJPEG_IDLE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         MJPEG_IDLE_R(crate::FieldReader::new(bits))
     }
@@ -485,6 +498,7 @@ impl<'a> MJPEG_IDLE_W<'a> {
 #[doc = "Field `sts_frame_int` reader - "]
 pub struct STS_FRAME_INT_R(crate::FieldReader<bool, bool>);
 impl STS_FRAME_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_FRAME_INT_R(crate::FieldReader::new(bits))
     }
@@ -521,6 +535,7 @@ impl<'a> STS_FRAME_INT_W<'a> {
 #[doc = "Field `sts_mem_int` reader - "]
 pub struct STS_MEM_INT_R(crate::FieldReader<bool, bool>);
 impl STS_MEM_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_MEM_INT_R(crate::FieldReader::new(bits))
     }
@@ -557,6 +572,7 @@ impl<'a> STS_MEM_INT_W<'a> {
 #[doc = "Field `sts_cam_int` reader - "]
 pub struct STS_CAM_INT_R(crate::FieldReader<bool, bool>);
 impl STS_CAM_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_CAM_INT_R(crate::FieldReader::new(bits))
     }
@@ -593,6 +609,7 @@ impl<'a> STS_CAM_INT_W<'a> {
 #[doc = "Field `sts_normal_int` reader - "]
 pub struct STS_NORMAL_INT_R(crate::FieldReader<bool, bool>);
 impl STS_NORMAL_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_NORMAL_INT_R(crate::FieldReader::new(bits))
     }
@@ -629,6 +646,7 @@ impl<'a> STS_NORMAL_INT_W<'a> {
 #[doc = "Field `reg_int_frame_en` reader - "]
 pub struct REG_INT_FRAME_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_FRAME_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_FRAME_EN_R(crate::FieldReader::new(bits))
     }
@@ -665,6 +683,7 @@ impl<'a> REG_INT_FRAME_EN_W<'a> {
 #[doc = "Field `reg_int_mem_en` reader - "]
 pub struct REG_INT_MEM_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_MEM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_MEM_EN_R(crate::FieldReader::new(bits))
     }
@@ -701,6 +720,7 @@ impl<'a> REG_INT_MEM_EN_W<'a> {
 #[doc = "Field `reg_int_cam_en` reader - "]
 pub struct REG_INT_CAM_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_CAM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_CAM_EN_R(crate::FieldReader::new(bits))
     }
@@ -737,6 +757,7 @@ impl<'a> REG_INT_CAM_EN_W<'a> {
 #[doc = "Field `reg_int_normal_en` reader - "]
 pub struct REG_INT_NORMAL_EN_R(crate::FieldReader<bool, bool>);
 impl REG_INT_NORMAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_INT_NORMAL_EN_R(crate::FieldReader::new(bits))
     }

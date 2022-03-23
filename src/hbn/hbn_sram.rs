@@ -37,6 +37,7 @@ impl From<crate::W<HBN_SRAM_SPEC>> for W {
 #[doc = "Field `retram_slp` reader - "]
 pub struct RETRAM_SLP_R(crate::FieldReader<bool, bool>);
 impl RETRAM_SLP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RETRAM_SLP_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> RETRAM_SLP_W<'a> {
 #[doc = "Field `retram_ret` reader - "]
 pub struct RETRAM_RET_R(crate::FieldReader<bool, bool>);
 impl RETRAM_RET_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RETRAM_RET_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RETRAM_RET_W<'a> {
 #[doc = "Field `retram_emaw` reader - "]
 pub struct RETRAM_EMAW_R(crate::FieldReader<u8, u8>);
 impl RETRAM_EMAW_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RETRAM_EMAW_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> RETRAM_EMAW_W<'a> {
 #[doc = "Field `retram_ema` reader - "]
 pub struct RETRAM_EMA_R(crate::FieldReader<u8, u8>);
 impl RETRAM_EMA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RETRAM_EMA_R(crate::FieldReader::new(bits))
     }

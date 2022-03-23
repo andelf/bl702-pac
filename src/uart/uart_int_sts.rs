@@ -37,6 +37,7 @@ impl From<crate::W<UART_INT_STS_SPEC>> for W {
 #[doc = "Field `urx_lse_int` reader - "]
 pub struct URX_LSE_INT_R(crate::FieldReader<bool, bool>);
 impl URX_LSE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_LSE_INT_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> URX_LSE_INT_W<'a> {
 #[doc = "Field `urx_fer_int` reader - "]
 pub struct URX_FER_INT_R(crate::FieldReader<bool, bool>);
 impl URX_FER_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_FER_INT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> URX_FER_INT_W<'a> {
 #[doc = "Field `utx_fer_int` reader - "]
 pub struct UTX_FER_INT_R(crate::FieldReader<bool, bool>);
 impl UTX_FER_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         UTX_FER_INT_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> UTX_FER_INT_W<'a> {
 #[doc = "Field `urx_pce_int` reader - "]
 pub struct URX_PCE_INT_R(crate::FieldReader<bool, bool>);
 impl URX_PCE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_PCE_INT_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> URX_PCE_INT_W<'a> {
 #[doc = "Field `urx_rto_int` reader - "]
 pub struct URX_RTO_INT_R(crate::FieldReader<bool, bool>);
 impl URX_RTO_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_RTO_INT_R(crate::FieldReader::new(bits))
     }
@@ -217,6 +222,7 @@ impl<'a> URX_RTO_INT_W<'a> {
 #[doc = "Field `urx_fifo_int` reader - "]
 pub struct URX_FIFO_INT_R(crate::FieldReader<bool, bool>);
 impl URX_FIFO_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_FIFO_INT_R(crate::FieldReader::new(bits))
     }
@@ -253,6 +259,7 @@ impl<'a> URX_FIFO_INT_W<'a> {
 #[doc = "Field `utx_fifo_int` reader - "]
 pub struct UTX_FIFO_INT_R(crate::FieldReader<bool, bool>);
 impl UTX_FIFO_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         UTX_FIFO_INT_R(crate::FieldReader::new(bits))
     }
@@ -289,6 +296,7 @@ impl<'a> UTX_FIFO_INT_W<'a> {
 #[doc = "Field `urx_end_int` reader - "]
 pub struct URX_END_INT_R(crate::FieldReader<bool, bool>);
 impl URX_END_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         URX_END_INT_R(crate::FieldReader::new(bits))
     }
@@ -325,6 +333,7 @@ impl<'a> URX_END_INT_W<'a> {
 #[doc = "Field `utx_end_int` reader - "]
 pub struct UTX_END_INT_R(crate::FieldReader<bool, bool>);
 impl UTX_END_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         UTX_END_INT_R(crate::FieldReader::new(bits))
     }

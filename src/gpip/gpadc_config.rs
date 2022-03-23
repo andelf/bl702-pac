@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_CONFIG_SPEC>> for W {
 #[doc = "Field `rsvd_31_24` reader - "]
 pub struct RSVD_31_24_R(crate::FieldReader<u8, u8>);
 impl RSVD_31_24_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_31_24_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RSVD_31_24_W<'a> {
 #[doc = "Field `gpadc_fifo_thl` reader - "]
 pub struct GPADC_FIFO_THL_R(crate::FieldReader<u8, u8>);
 impl GPADC_FIFO_THL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_FIFO_THL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPADC_FIFO_THL_W<'a> {
 #[doc = "Field `gpadc_fifo_data_count` reader - "]
 pub struct GPADC_FIFO_DATA_COUNT_R(crate::FieldReader<u8, u8>);
 impl GPADC_FIFO_DATA_COUNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPADC_FIFO_DATA_COUNT_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> GPADC_FIFO_DATA_COUNT_W<'a> {
 #[doc = "Field `gpadc_fifo_rdy_mask` reader - "]
 pub struct GPADC_FIFO_RDY_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_RDY_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_RDY_MASK_R(crate::FieldReader::new(bits))
     }
@@ -151,6 +155,7 @@ impl<'a> GPADC_FIFO_RDY_MASK_W<'a> {
 #[doc = "Field `gpadc_fifo_underrun_mask` reader - "]
 pub struct GPADC_FIFO_UNDERRUN_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_UNDERRUN_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_UNDERRUN_MASK_R(crate::FieldReader::new(bits))
     }
@@ -187,6 +192,7 @@ impl<'a> GPADC_FIFO_UNDERRUN_MASK_W<'a> {
 #[doc = "Field `gpadc_fifo_overrun_mask` reader - "]
 pub struct GPADC_FIFO_OVERRUN_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_OVERRUN_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_OVERRUN_MASK_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> GPADC_FIFO_OVERRUN_MASK_W<'a> {
 #[doc = "Field `gpadc_rdy_mask` reader - "]
 pub struct GPADC_RDY_MASK_R(crate::FieldReader<bool, bool>);
 impl GPADC_RDY_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_RDY_MASK_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> GPADC_RDY_MASK_W<'a> {
 #[doc = "Field `gpadc_fifo_underrun_clr` reader - "]
 pub struct GPADC_FIFO_UNDERRUN_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_UNDERRUN_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_UNDERRUN_CLR_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> GPADC_FIFO_UNDERRUN_CLR_W<'a> {
 #[doc = "Field `gpadc_fifo_overrun_clr` reader - "]
 pub struct GPADC_FIFO_OVERRUN_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_OVERRUN_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_OVERRUN_CLR_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> GPADC_FIFO_OVERRUN_CLR_W<'a> {
 #[doc = "Field `gpadc_rdy_clr` reader - "]
 pub struct GPADC_RDY_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_RDY_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_RDY_CLR_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> GPADC_RDY_CLR_W<'a> {
 #[doc = "Field `gpadc_fifo_rdy` reader - "]
 pub struct GPADC_FIFO_RDY_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_RDY_R(crate::FieldReader::new(bits))
     }
@@ -403,6 +414,7 @@ impl<'a> GPADC_FIFO_RDY_W<'a> {
 #[doc = "Field `gpadc_fifo_underrun` reader - "]
 pub struct GPADC_FIFO_UNDERRUN_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_UNDERRUN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_UNDERRUN_R(crate::FieldReader::new(bits))
     }
@@ -439,6 +451,7 @@ impl<'a> GPADC_FIFO_UNDERRUN_W<'a> {
 #[doc = "Field `gpadc_fifo_overrun` reader - "]
 pub struct GPADC_FIFO_OVERRUN_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_OVERRUN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_OVERRUN_R(crate::FieldReader::new(bits))
     }
@@ -475,6 +488,7 @@ impl<'a> GPADC_FIFO_OVERRUN_W<'a> {
 #[doc = "Field `gpadc_rdy` reader - "]
 pub struct GPADC_RDY_R(crate::FieldReader<bool, bool>);
 impl GPADC_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_RDY_R(crate::FieldReader::new(bits))
     }
@@ -511,6 +525,7 @@ impl<'a> GPADC_RDY_W<'a> {
 #[doc = "Field `gpadc_fifo_full` reader - "]
 pub struct GPADC_FIFO_FULL_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_FULL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_FULL_R(crate::FieldReader::new(bits))
     }
@@ -547,6 +562,7 @@ impl<'a> GPADC_FIFO_FULL_W<'a> {
 #[doc = "Field `gpadc_fifo_ne` reader - "]
 pub struct GPADC_FIFO_NE_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_NE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_NE_R(crate::FieldReader::new(bits))
     }
@@ -583,6 +599,7 @@ impl<'a> GPADC_FIFO_NE_W<'a> {
 #[doc = "Field `gpadc_fifo_clr` reader - "]
 pub struct GPADC_FIFO_CLR_R(crate::FieldReader<bool, bool>);
 impl GPADC_FIFO_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_FIFO_CLR_R(crate::FieldReader::new(bits))
     }
@@ -619,6 +636,7 @@ impl<'a> GPADC_FIFO_CLR_W<'a> {
 #[doc = "Field `gpadc_dma_en` reader - "]
 pub struct GPADC_DMA_EN_R(crate::FieldReader<bool, bool>);
 impl GPADC_DMA_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPADC_DMA_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<UART_STATUS_SPEC>> for W {
 #[doc = "Field `sts_urx_bus_busy` reader - "]
 pub struct STS_URX_BUS_BUSY_R(crate::FieldReader<bool, bool>);
 impl STS_URX_BUS_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_URX_BUS_BUSY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_URX_BUS_BUSY_W<'a> {
 #[doc = "Field `sts_utx_bus_busy` reader - "]
 pub struct STS_UTX_BUS_BUSY_R(crate::FieldReader<bool, bool>);
 impl STS_UTX_BUS_BUSY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_UTX_BUS_BUSY_R(crate::FieldReader::new(bits))
     }

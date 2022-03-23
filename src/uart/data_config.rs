@@ -37,6 +37,7 @@ impl From<crate::W<DATA_CONFIG_SPEC>> for W {
 #[doc = "Field `cr_uart_bit_inv` reader - "]
 pub struct CR_UART_BIT_INV_R(crate::FieldReader<bool, bool>);
 impl CR_UART_BIT_INV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_UART_BIT_INV_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<USB_LPM_CONFIG_SPEC>> for W {
 #[doc = "Field `sts_lpm` reader - "]
 pub struct STS_LPM_R(crate::FieldReader<bool, bool>);
 impl STS_LPM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_LPM_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_LPM_W<'a> {
 #[doc = "Field `sts_lpm_attr` reader - "]
 pub struct STS_LPM_ATTR_R(crate::FieldReader<u16, u16>);
 impl STS_LPM_ATTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         STS_LPM_ATTR_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> STS_LPM_ATTR_W<'a> {
 #[doc = "Field `cr_lpm_resp` reader - "]
 pub struct CR_LPM_RESP_R(crate::FieldReader<u8, u8>);
 impl CR_LPM_RESP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_LPM_RESP_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CR_LPM_RESP_W<'a> {
 #[doc = "Field `cr_lpm_resp_upd` reader - "]
 pub struct CR_LPM_RESP_UPD_R(crate::FieldReader<bool, bool>);
 impl CR_LPM_RESP_UPD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_LPM_RESP_UPD_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> CR_LPM_RESP_UPD_W<'a> {
 #[doc = "Field `cr_lpm_en` reader - "]
 pub struct CR_LPM_EN_R(crate::FieldReader<bool, bool>);
 impl CR_LPM_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_LPM_EN_R(crate::FieldReader::new(bits))
     }

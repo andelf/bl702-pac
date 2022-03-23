@@ -37,6 +37,7 @@ impl From<crate::W<MIITX_DATA_SPEC>> for W {
 #[doc = "Field `CTRLDATA` reader - "]
 pub struct CTRLDATA_R(crate::FieldReader<u16, u16>);
 impl CTRLDATA_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CTRLDATA_R(crate::FieldReader::new(bits))
     }

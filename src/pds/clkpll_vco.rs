@@ -37,6 +37,7 @@ impl From<crate::W<CLKPLL_VCO_SPEC>> for W {
 #[doc = "Field `clkpll_shrtr` reader - "]
 pub struct CLKPLL_SHRTR_R(crate::FieldReader<bool, bool>);
 impl CLKPLL_SHRTR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CLKPLL_SHRTR_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> CLKPLL_SHRTR_W<'a> {
 #[doc = "Field `clkpll_vco_speed` reader - "]
 pub struct CLKPLL_VCO_SPEED_R(crate::FieldReader<u8, u8>);
 impl CLKPLL_VCO_SPEED_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CLKPLL_VCO_SPEED_R(crate::FieldReader::new(bits))
     }

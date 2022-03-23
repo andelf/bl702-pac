@@ -37,6 +37,7 @@ impl From<crate::W<KS_CTRL_SPEC>> for W {
 #[doc = "Field `col_num` reader - "]
 pub struct COL_NUM_R(crate::FieldReader<u8, u8>);
 impl COL_NUM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         COL_NUM_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> COL_NUM_W<'a> {
 #[doc = "Field `row_num` reader - "]
 pub struct ROW_NUM_R(crate::FieldReader<u8, u8>);
 impl ROW_NUM_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         ROW_NUM_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> ROW_NUM_W<'a> {
 #[doc = "Field `rc_ext` reader - "]
 pub struct RC_EXT_R(crate::FieldReader<u8, u8>);
 impl RC_EXT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RC_EXT_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> RC_EXT_W<'a> {
 #[doc = "Field `deg_cnt` reader - "]
 pub struct DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> DEG_CNT_W<'a> {
 #[doc = "Field `deg_en` reader - "]
 pub struct DEG_EN_R(crate::FieldReader<bool, bool>);
 impl DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -177,6 +182,7 @@ impl<'a> DEG_EN_W<'a> {
 #[doc = "Field `ghost_en` reader - "]
 pub struct GHOST_EN_R(crate::FieldReader<bool, bool>);
 impl GHOST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GHOST_EN_R(crate::FieldReader::new(bits))
     }
@@ -213,6 +219,7 @@ impl<'a> GHOST_EN_W<'a> {
 #[doc = "Field `ks_en` reader - "]
 pub struct KS_EN_R(crate::FieldReader<bool, bool>);
 impl KS_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         KS_EN_R(crate::FieldReader::new(bits))
     }

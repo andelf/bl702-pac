@@ -37,6 +37,7 @@ impl From<crate::W<MJPEG_DEBUG_SPEC>> for W {
 #[doc = "Field `reg_mjpeg_dbg_sel` reader - "]
 pub struct REG_MJPEG_DBG_SEL_R(crate::FieldReader<u8, u8>);
 impl REG_MJPEG_DBG_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         REG_MJPEG_DBG_SEL_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> REG_MJPEG_DBG_SEL_W<'a> {
 #[doc = "Field `reg_mjpeg_dbg_en` reader - "]
 pub struct REG_MJPEG_DBG_EN_R(crate::FieldReader<bool, bool>);
 impl REG_MJPEG_DBG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         REG_MJPEG_DBG_EN_R(crate::FieldReader::new(bits))
     }

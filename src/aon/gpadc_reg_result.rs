@@ -37,6 +37,7 @@ impl From<crate::W<GPADC_REG_RESULT_SPEC>> for W {
 #[doc = "Field `gpadc_data_out` reader - "]
 pub struct GPADC_DATA_OUT_R(crate::FieldReader<u32, u32>);
 impl GPADC_DATA_OUT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         GPADC_DATA_OUT_R(crate::FieldReader::new(bits))
     }

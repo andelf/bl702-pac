@@ -37,6 +37,7 @@ impl From<crate::W<GPDAC_CONFIG_SPEC>> for W {
 #[doc = "Field `rsvd_31_24` reader - "]
 pub struct RSVD_31_24_R(crate::FieldReader<u8, u8>);
 impl RSVD_31_24_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_31_24_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RSVD_31_24_W<'a> {
 #[doc = "Field `gpdac_ch_b_sel` reader - "]
 pub struct GPDAC_CH_B_SEL_R(crate::FieldReader<u8, u8>);
 impl GPDAC_CH_B_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_CH_B_SEL_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> GPDAC_CH_B_SEL_W<'a> {
 #[doc = "Field `gpdac_ch_a_sel` reader - "]
 pub struct GPDAC_CH_A_SEL_R(crate::FieldReader<u8, u8>);
 impl GPDAC_CH_A_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_CH_A_SEL_R(crate::FieldReader::new(bits))
     }
@@ -115,6 +118,7 @@ impl<'a> GPDAC_CH_A_SEL_W<'a> {
 #[doc = "Field `gpdac_mode` reader - "]
 pub struct GPDAC_MODE_R(crate::FieldReader<u8, u8>);
 impl GPDAC_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         GPDAC_MODE_R(crate::FieldReader::new(bits))
     }
@@ -141,6 +145,7 @@ impl<'a> GPDAC_MODE_W<'a> {
 #[doc = "Field `dsm_mode` reader - "]
 pub struct DSM_MODE_R(crate::FieldReader<u8, u8>);
 impl DSM_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DSM_MODE_R(crate::FieldReader::new(bits))
     }
@@ -167,6 +172,7 @@ impl<'a> DSM_MODE_W<'a> {
 #[doc = "Field `gpdac_en2` reader - "]
 pub struct GPDAC_EN2_R(crate::FieldReader<bool, bool>);
 impl GPDAC_EN2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_EN2_R(crate::FieldReader::new(bits))
     }
@@ -203,6 +209,7 @@ impl<'a> GPDAC_EN2_W<'a> {
 #[doc = "Field `gpdac_en` reader - "]
 pub struct GPDAC_EN_R(crate::FieldReader<bool, bool>);
 impl GPDAC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GPDAC_EN_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<DMA_C7LLI_SPEC>> for W {
 #[doc = "Field `LLI` reader - "]
 pub struct LLI_R(crate::FieldReader<u32, u32>);
 impl LLI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         LLI_R(crate::FieldReader::new(bits))
     }

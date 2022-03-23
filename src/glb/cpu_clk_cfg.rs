@@ -37,6 +37,7 @@ impl From<crate::W<CPU_CLK_CFG_SPEC>> for W {
 #[doc = "Field `debug_ndreset_gate` reader - "]
 pub struct DEBUG_NDRESET_GATE_R(crate::FieldReader<bool, bool>);
 impl DEBUG_NDRESET_GATE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DEBUG_NDRESET_GATE_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> DEBUG_NDRESET_GATE_W<'a> {
 #[doc = "Field `cpu_rtc_sel` reader - "]
 pub struct CPU_RTC_SEL_R(crate::FieldReader<bool, bool>);
 impl CPU_RTC_SEL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CPU_RTC_SEL_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CPU_RTC_SEL_W<'a> {
 #[doc = "Field `cpu_rtc_en` reader - "]
 pub struct CPU_RTC_EN_R(crate::FieldReader<bool, bool>);
 impl CPU_RTC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CPU_RTC_EN_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CPU_RTC_EN_W<'a> {
 #[doc = "Field `cpu_rtc_div` reader - "]
 pub struct CPU_RTC_DIV_R(crate::FieldReader<u32, u32>);
 impl CPU_RTC_DIV_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u32) -> Self {
         CPU_RTC_DIV_R(crate::FieldReader::new(bits))
     }

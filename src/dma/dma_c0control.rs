@@ -37,6 +37,7 @@ impl From<crate::W<DMA_C0CONTROL_SPEC>> for W {
 #[doc = "Field `I` reader - "]
 pub struct I_R(crate::FieldReader<bool, bool>);
 impl I_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         I_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> I_W<'a> {
 #[doc = "Field `Prot` reader - "]
 pub struct PROT_R(crate::FieldReader<u8, u8>);
 impl PROT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PROT_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> PROT_W<'a> {
 #[doc = "Field `DI` reader - "]
 pub struct DI_R(crate::FieldReader<bool, bool>);
 impl DI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DI_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> DI_W<'a> {
 #[doc = "Field `SI` reader - "]
 pub struct SI_R(crate::FieldReader<bool, bool>);
 impl SI_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SI_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SI_W<'a> {
 #[doc = "Field `SLargerD` reader - "]
 pub struct SLARGERD_R(crate::FieldReader<bool, bool>);
 impl SLARGERD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SLARGERD_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> SLARGERD_W<'a> {
 #[doc = "Field `fix_cnt` reader - "]
 pub struct FIX_CNT_R(crate::FieldReader<u8, u8>);
 impl FIX_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         FIX_CNT_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> FIX_CNT_W<'a> {
 #[doc = "Field `DWidth` reader - "]
 pub struct DWIDTH_R(crate::FieldReader<u8, u8>);
 impl DWIDTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DWIDTH_R(crate::FieldReader::new(bits))
     }
@@ -259,6 +266,7 @@ impl<'a> DWIDTH_W<'a> {
 #[doc = "Field `SWidth` reader - "]
 pub struct SWIDTH_R(crate::FieldReader<u8, u8>);
 impl SWIDTH_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SWIDTH_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> SWIDTH_W<'a> {
 #[doc = "Field `dst_add_mode` reader - "]
 pub struct DST_ADD_MODE_R(crate::FieldReader<bool, bool>);
 impl DST_ADD_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DST_ADD_MODE_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> DST_ADD_MODE_W<'a> {
 #[doc = "Field `DBSize` reader - "]
 pub struct DBSIZE_R(crate::FieldReader<u8, u8>);
 impl DBSIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DBSIZE_R(crate::FieldReader::new(bits))
     }
@@ -347,6 +357,7 @@ impl<'a> DBSIZE_W<'a> {
 #[doc = "Field `dst_min_mode` reader - "]
 pub struct DST_MIN_MODE_R(crate::FieldReader<bool, bool>);
 impl DST_MIN_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DST_MIN_MODE_R(crate::FieldReader::new(bits))
     }
@@ -383,6 +394,7 @@ impl<'a> DST_MIN_MODE_W<'a> {
 #[doc = "Field `SBSize` reader - "]
 pub struct SBSIZE_R(crate::FieldReader<u8, u8>);
 impl SBSIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SBSIZE_R(crate::FieldReader::new(bits))
     }
@@ -409,6 +421,7 @@ impl<'a> SBSIZE_W<'a> {
 #[doc = "Field `TransferSize` reader - "]
 pub struct TRANSFERSIZE_R(crate::FieldReader<u16, u16>);
 impl TRANSFERSIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         TRANSFERSIZE_R(crate::FieldReader::new(bits))
     }

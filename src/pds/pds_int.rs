@@ -37,6 +37,7 @@ impl From<crate::W<PDS_INT_SPEC>> for W {
 #[doc = "Field `ro_pds_wakeup_event` reader - "]
 pub struct RO_PDS_WAKEUP_EVENT_R(crate::FieldReader<u8, u8>);
 impl RO_PDS_WAKEUP_EVENT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RO_PDS_WAKEUP_EVENT_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> RO_PDS_WAKEUP_EVENT_W<'a> {
 #[doc = "Field `cr_pds_wakeup_src_en` reader - "]
 pub struct CR_PDS_WAKEUP_SRC_EN_R(crate::FieldReader<u8, u8>);
 impl CR_PDS_WAKEUP_SRC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_PDS_WAKEUP_SRC_EN_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> CR_PDS_WAKEUP_SRC_EN_W<'a> {
 #[doc = "Field `cr_pds_int_clr` reader - "]
 pub struct CR_PDS_INT_CLR_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_INT_CLR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_INT_CLR_R(crate::FieldReader::new(bits))
     }
@@ -125,6 +128,7 @@ impl<'a> CR_PDS_INT_CLR_W<'a> {
 #[doc = "Field `cr_pds_pll_done_int_mask` reader - "]
 pub struct CR_PDS_PLL_DONE_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_PLL_DONE_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_PLL_DONE_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -161,6 +165,7 @@ impl<'a> CR_PDS_PLL_DONE_INT_MASK_W<'a> {
 #[doc = "Field `cr_pds_rf_done_int_mask` reader - "]
 pub struct CR_PDS_RF_DONE_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_RF_DONE_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_RF_DONE_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> CR_PDS_RF_DONE_INT_MASK_W<'a> {
 #[doc = "Field `cr_pds_wake_int_mask` reader - "]
 pub struct CR_PDS_WAKE_INT_MASK_R(crate::FieldReader<bool, bool>);
 impl CR_PDS_WAKE_INT_MASK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_PDS_WAKE_INT_MASK_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> CR_PDS_WAKE_INT_MASK_W<'a> {
 #[doc = "Field `pds_clr_reset_event` reader - "]
 pub struct PDS_CLR_RESET_EVENT_R(crate::FieldReader<bool, bool>);
 impl PDS_CLR_RESET_EVENT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PDS_CLR_RESET_EVENT_R(crate::FieldReader::new(bits))
     }
@@ -269,6 +276,7 @@ impl<'a> PDS_CLR_RESET_EVENT_W<'a> {
 #[doc = "Field `pds_reset_event` reader - "]
 pub struct PDS_RESET_EVENT_R(crate::FieldReader<u8, u8>);
 impl PDS_RESET_EVENT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PDS_RESET_EVENT_R(crate::FieldReader::new(bits))
     }
@@ -295,6 +303,7 @@ impl<'a> PDS_RESET_EVENT_W<'a> {
 #[doc = "Field `ro_pds_pll_done_int` reader - "]
 pub struct RO_PDS_PLL_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl RO_PDS_PLL_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RO_PDS_PLL_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -331,6 +340,7 @@ impl<'a> RO_PDS_PLL_DONE_INT_W<'a> {
 #[doc = "Field `ro_pds_rf_done_int` reader - "]
 pub struct RO_PDS_RF_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl RO_PDS_RF_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RO_PDS_RF_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -367,6 +377,7 @@ impl<'a> RO_PDS_RF_DONE_INT_W<'a> {
 #[doc = "Field `ro_pds_wake_int` reader - "]
 pub struct RO_PDS_WAKE_INT_R(crate::FieldReader<bool, bool>);
 impl RO_PDS_WAKE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RO_PDS_WAKE_INT_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<TCDR_SPEC>> for W {
 #[doc = "Field `wcdr` reader - "]
 pub struct WCDR_R(crate::FieldReader<u8, u8>);
 impl WCDR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         WCDR_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> WCDR_W<'a> {
 #[doc = "Field `tcdr3` reader - "]
 pub struct TCDR3_R(crate::FieldReader<u8, u8>);
 impl TCDR3_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TCDR3_R(crate::FieldReader::new(bits))
     }
@@ -89,6 +91,7 @@ impl<'a> TCDR3_W<'a> {
 #[doc = "Field `tcdr2` reader - "]
 pub struct TCDR2_R(crate::FieldReader<u8, u8>);
 impl TCDR2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         TCDR2_R(crate::FieldReader::new(bits))
     }

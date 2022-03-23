@@ -37,6 +37,7 @@ impl From<crate::W<QDEC_CTRL_SPEC>> for W {
 #[doc = "Field `input_swap` reader - "]
 pub struct INPUT_SWAP_R(crate::FieldReader<bool, bool>);
 impl INPUT_SWAP_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         INPUT_SWAP_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> INPUT_SWAP_W<'a> {
 #[doc = "Field `rpt_mode` reader - "]
 pub struct RPT_MODE_R(crate::FieldReader<bool, bool>);
 impl RPT_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         RPT_MODE_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> RPT_MODE_W<'a> {
 #[doc = "Field `spl_mode` reader - "]
 pub struct SPL_MODE_R(crate::FieldReader<bool, bool>);
 impl SPL_MODE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SPL_MODE_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> SPL_MODE_W<'a> {
 #[doc = "Field `led_period` reader - "]
 pub struct LED_PERIOD_R(crate::FieldReader<u16, u16>);
 impl LED_PERIOD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         LED_PERIOD_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> LED_PERIOD_W<'a> {
 #[doc = "Field `rpt_period` reader - "]
 pub struct RPT_PERIOD_R(crate::FieldReader<u8, u8>);
 impl RPT_PERIOD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RPT_PERIOD_R(crate::FieldReader::new(bits))
     }
@@ -197,6 +202,7 @@ impl<'a> RPT_PERIOD_W<'a> {
 #[doc = "Field `spl_period` reader - "]
 pub struct SPL_PERIOD_R(crate::FieldReader<u8, u8>);
 impl SPL_PERIOD_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SPL_PERIOD_R(crate::FieldReader::new(bits))
     }
@@ -223,6 +229,7 @@ impl<'a> SPL_PERIOD_W<'a> {
 #[doc = "Field `deg_cnt` reader - "]
 pub struct DEG_CNT_R(crate::FieldReader<u8, u8>);
 impl DEG_CNT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         DEG_CNT_R(crate::FieldReader::new(bits))
     }
@@ -249,6 +256,7 @@ impl<'a> DEG_CNT_W<'a> {
 #[doc = "Field `deg_en` reader - "]
 pub struct DEG_EN_R(crate::FieldReader<bool, bool>);
 impl DEG_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         DEG_EN_R(crate::FieldReader::new(bits))
     }
@@ -285,6 +293,7 @@ impl<'a> DEG_EN_W<'a> {
 #[doc = "Field `led_pol` reader - "]
 pub struct LED_POL_R(crate::FieldReader<bool, bool>);
 impl LED_POL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LED_POL_R(crate::FieldReader::new(bits))
     }
@@ -321,6 +330,7 @@ impl<'a> LED_POL_W<'a> {
 #[doc = "Field `led_en` reader - "]
 pub struct LED_EN_R(crate::FieldReader<bool, bool>);
 impl LED_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LED_EN_R(crate::FieldReader::new(bits))
     }
@@ -357,6 +367,7 @@ impl<'a> LED_EN_W<'a> {
 #[doc = "Field `qdec_en` reader - "]
 pub struct QDEC_EN_R(crate::FieldReader<bool, bool>);
 impl QDEC_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         QDEC_EN_R(crate::FieldReader::new(bits))
     }

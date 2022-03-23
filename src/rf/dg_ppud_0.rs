@@ -37,6 +37,7 @@ impl From<crate::W<DG_PPUD_0_SPEC>> for W {
 #[doc = "Field `ppud_manaual_en` reader - "]
 pub struct PPUD_MANAUAL_EN_R(crate::FieldReader<bool, bool>);
 impl PPUD_MANAUAL_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         PPUD_MANAUAL_EN_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> PPUD_MANAUAL_EN_W<'a> {
 #[doc = "Field `ppud_cnt1` reader - "]
 pub struct PPUD_CNT1_R(crate::FieldReader<u8, u8>);
 impl PPUD_CNT1_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         PPUD_CNT1_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> PPUD_CNT1_W<'a> {
 #[doc = "Field `ppud_cnt2` reader - "]
 pub struct PPUD_CNT2_R(crate::FieldReader<u16, u16>);
 impl PPUD_CNT2_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         PPUD_CNT2_R(crate::FieldReader::new(bits))
     }

@@ -37,6 +37,7 @@ impl From<crate::W<EP7_CONFIG_SPEC>> for W {
 #[doc = "Field `sts_ep7_rdy` reader - "]
 pub struct STS_EP7_RDY_R(crate::FieldReader<bool, bool>);
 impl STS_EP7_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         STS_EP7_RDY_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> STS_EP7_RDY_W<'a> {
 #[doc = "Field `cr_ep7_rdy` reader - "]
 pub struct CR_EP7_RDY_R(crate::FieldReader<bool, bool>);
 impl CR_EP7_RDY_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP7_RDY_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> CR_EP7_RDY_W<'a> {
 #[doc = "Field `cr_ep7_nack` reader - "]
 pub struct CR_EP7_NACK_R(crate::FieldReader<bool, bool>);
 impl CR_EP7_NACK_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP7_NACK_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> CR_EP7_NACK_W<'a> {
 #[doc = "Field `cr_ep7_stall` reader - "]
 pub struct CR_EP7_STALL_R(crate::FieldReader<bool, bool>);
 impl CR_EP7_STALL_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         CR_EP7_STALL_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> CR_EP7_STALL_W<'a> {
 #[doc = "Field `cr_ep7_type` reader - "]
 pub struct CR_EP7_TYPE_R(crate::FieldReader<u8, u8>);
 impl CR_EP7_TYPE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_EP7_TYPE_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> CR_EP7_TYPE_W<'a> {
 #[doc = "Field `cr_ep7_dir` reader - "]
 pub struct CR_EP7_DIR_R(crate::FieldReader<u8, u8>);
 impl CR_EP7_DIR_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         CR_EP7_DIR_R(crate::FieldReader::new(bits))
     }
@@ -233,6 +239,7 @@ impl<'a> CR_EP7_DIR_W<'a> {
 #[doc = "Field `cr_ep7_size` reader - "]
 pub struct CR_EP7_SIZE_R(crate::FieldReader<u16, u16>);
 impl CR_EP7_SIZE_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u16) -> Self {
         CR_EP7_SIZE_R(crate::FieldReader::new(bits))
     }

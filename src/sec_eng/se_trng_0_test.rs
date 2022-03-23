@@ -37,6 +37,7 @@ impl From<crate::W<SE_TRNG_0_TEST_SPEC>> for W {
 #[doc = "Field `se_trng_0_ht_alarm_n` reader - "]
 pub struct SE_TRNG_0_HT_ALARM_N_R(crate::FieldReader<u8, u8>);
 impl SE_TRNG_0_HT_ALARM_N_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         SE_TRNG_0_HT_ALARM_N_R(crate::FieldReader::new(bits))
     }
@@ -63,6 +64,7 @@ impl<'a> SE_TRNG_0_HT_ALARM_N_W<'a> {
 #[doc = "Field `se_trng_0_ht_dis` reader - "]
 pub struct SE_TRNG_0_HT_DIS_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_HT_DIS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_HT_DIS_R(crate::FieldReader::new(bits))
     }
@@ -99,6 +101,7 @@ impl<'a> SE_TRNG_0_HT_DIS_W<'a> {
 #[doc = "Field `se_trng_0_cp_bypass` reader - "]
 pub struct SE_TRNG_0_CP_BYPASS_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_CP_BYPASS_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_CP_BYPASS_R(crate::FieldReader::new(bits))
     }
@@ -135,6 +138,7 @@ impl<'a> SE_TRNG_0_CP_BYPASS_W<'a> {
 #[doc = "Field `se_trng_0_cp_test_en` reader - "]
 pub struct SE_TRNG_0_CP_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_CP_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_CP_TEST_EN_R(crate::FieldReader::new(bits))
     }
@@ -171,6 +175,7 @@ impl<'a> SE_TRNG_0_CP_TEST_EN_W<'a> {
 #[doc = "Field `se_trng_0_test_en` reader - "]
 pub struct SE_TRNG_0_TEST_EN_R(crate::FieldReader<bool, bool>);
 impl SE_TRNG_0_TEST_EN_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SE_TRNG_0_TEST_EN_R(crate::FieldReader::new(bits))
     }

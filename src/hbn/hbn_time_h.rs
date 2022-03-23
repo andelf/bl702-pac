@@ -37,6 +37,7 @@ impl From<crate::W<HBN_TIME_H_SPEC>> for W {
 #[doc = "Field `hbn_time_h` reader - "]
 pub struct HBN_TIME_H_R(crate::FieldReader<u8, u8>);
 impl HBN_TIME_H_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         HBN_TIME_H_R(crate::FieldReader::new(bits))
     }

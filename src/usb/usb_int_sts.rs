@@ -37,6 +37,7 @@ impl From<crate::W<USB_INT_STS_SPEC>> for W {
 #[doc = "Field `usb_err_int` reader - "]
 pub struct USB_ERR_INT_R(crate::FieldReader<bool, bool>);
 impl USB_ERR_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_ERR_INT_R(crate::FieldReader::new(bits))
     }
@@ -73,6 +74,7 @@ impl<'a> USB_ERR_INT_W<'a> {
 #[doc = "Field `sof_3ms_int` reader - "]
 pub struct SOF_3MS_INT_R(crate::FieldReader<bool, bool>);
 impl SOF_3MS_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SOF_3MS_INT_R(crate::FieldReader::new(bits))
     }
@@ -109,6 +111,7 @@ impl<'a> SOF_3MS_INT_W<'a> {
 #[doc = "Field `lpm_pkt_int` reader - "]
 pub struct LPM_PKT_INT_R(crate::FieldReader<bool, bool>);
 impl LPM_PKT_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LPM_PKT_INT_R(crate::FieldReader::new(bits))
     }
@@ -145,6 +148,7 @@ impl<'a> LPM_PKT_INT_W<'a> {
 #[doc = "Field `lpm_wkup_int` reader - "]
 pub struct LPM_WKUP_INT_R(crate::FieldReader<bool, bool>);
 impl LPM_WKUP_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         LPM_WKUP_INT_R(crate::FieldReader::new(bits))
     }
@@ -181,6 +185,7 @@ impl<'a> LPM_WKUP_INT_W<'a> {
 #[doc = "Field `rsvd_27_24` reader - "]
 pub struct RSVD_27_24_R(crate::FieldReader<u8, u8>);
 impl RSVD_27_24_R {
+    #[inline(always)]
     pub(crate) fn new(bits: u8) -> Self {
         RSVD_27_24_R(crate::FieldReader::new(bits))
     }
@@ -207,6 +212,7 @@ impl<'a> RSVD_27_24_W<'a> {
 #[doc = "Field `ep7_done_int` reader - "]
 pub struct EP7_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP7_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP7_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -243,6 +249,7 @@ impl<'a> EP7_DONE_INT_W<'a> {
 #[doc = "Field `ep7_cmd_int` reader - "]
 pub struct EP7_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP7_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP7_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -279,6 +286,7 @@ impl<'a> EP7_CMD_INT_W<'a> {
 #[doc = "Field `ep6_done_int` reader - "]
 pub struct EP6_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP6_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP6_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -315,6 +323,7 @@ impl<'a> EP6_DONE_INT_W<'a> {
 #[doc = "Field `ep6_cmd_int` reader - "]
 pub struct EP6_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP6_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP6_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -351,6 +360,7 @@ impl<'a> EP6_CMD_INT_W<'a> {
 #[doc = "Field `ep5_done_int` reader - "]
 pub struct EP5_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP5_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -387,6 +397,7 @@ impl<'a> EP5_DONE_INT_W<'a> {
 #[doc = "Field `ep5_cmd_int` reader - "]
 pub struct EP5_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP5_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP5_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -423,6 +434,7 @@ impl<'a> EP5_CMD_INT_W<'a> {
 #[doc = "Field `ep4_done_int` reader - "]
 pub struct EP4_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP4_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP4_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -459,6 +471,7 @@ impl<'a> EP4_DONE_INT_W<'a> {
 #[doc = "Field `ep4_cmd_int` reader - "]
 pub struct EP4_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP4_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP4_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -495,6 +508,7 @@ impl<'a> EP4_CMD_INT_W<'a> {
 #[doc = "Field `ep3_done_int` reader - "]
 pub struct EP3_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP3_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP3_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -531,6 +545,7 @@ impl<'a> EP3_DONE_INT_W<'a> {
 #[doc = "Field `ep3_cmd_int` reader - "]
 pub struct EP3_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP3_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP3_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -567,6 +582,7 @@ impl<'a> EP3_CMD_INT_W<'a> {
 #[doc = "Field `ep2_done_int` reader - "]
 pub struct EP2_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP2_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -603,6 +619,7 @@ impl<'a> EP2_DONE_INT_W<'a> {
 #[doc = "Field `ep2_cmd_int` reader - "]
 pub struct EP2_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP2_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP2_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -639,6 +656,7 @@ impl<'a> EP2_CMD_INT_W<'a> {
 #[doc = "Field `ep1_done_int` reader - "]
 pub struct EP1_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP1_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP1_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -675,6 +693,7 @@ impl<'a> EP1_DONE_INT_W<'a> {
 #[doc = "Field `ep1_cmd_int` reader - "]
 pub struct EP1_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP1_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP1_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -711,6 +730,7 @@ impl<'a> EP1_CMD_INT_W<'a> {
 #[doc = "Field `ep0_out_done_int` reader - "]
 pub struct EP0_OUT_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_OUT_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_OUT_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -747,6 +767,7 @@ impl<'a> EP0_OUT_DONE_INT_W<'a> {
 #[doc = "Field `ep0_out_cmd_int` reader - "]
 pub struct EP0_OUT_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_OUT_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_OUT_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -783,6 +804,7 @@ impl<'a> EP0_OUT_CMD_INT_W<'a> {
 #[doc = "Field `ep0_in_done_int` reader - "]
 pub struct EP0_IN_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_IN_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_IN_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -819,6 +841,7 @@ impl<'a> EP0_IN_DONE_INT_W<'a> {
 #[doc = "Field `ep0_in_cmd_int` reader - "]
 pub struct EP0_IN_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_IN_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_IN_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -855,6 +878,7 @@ impl<'a> EP0_IN_CMD_INT_W<'a> {
 #[doc = "Field `ep0_setup_done_int` reader - "]
 pub struct EP0_SETUP_DONE_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_SETUP_DONE_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_SETUP_DONE_INT_R(crate::FieldReader::new(bits))
     }
@@ -891,6 +915,7 @@ impl<'a> EP0_SETUP_DONE_INT_W<'a> {
 #[doc = "Field `ep0_setup_cmd_int` reader - "]
 pub struct EP0_SETUP_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl EP0_SETUP_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         EP0_SETUP_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -927,6 +952,7 @@ impl<'a> EP0_SETUP_CMD_INT_W<'a> {
 #[doc = "Field `get_dct_cmd_int` reader - "]
 pub struct GET_DCT_CMD_INT_R(crate::FieldReader<bool, bool>);
 impl GET_DCT_CMD_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         GET_DCT_CMD_INT_R(crate::FieldReader::new(bits))
     }
@@ -963,6 +989,7 @@ impl<'a> GET_DCT_CMD_INT_W<'a> {
 #[doc = "Field `vbus_tgl_int` reader - "]
 pub struct VBUS_TGL_INT_R(crate::FieldReader<bool, bool>);
 impl VBUS_TGL_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         VBUS_TGL_INT_R(crate::FieldReader::new(bits))
     }
@@ -999,6 +1026,7 @@ impl<'a> VBUS_TGL_INT_W<'a> {
 #[doc = "Field `usb_reset_int` reader - "]
 pub struct USB_RESET_INT_R(crate::FieldReader<bool, bool>);
 impl USB_RESET_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         USB_RESET_INT_R(crate::FieldReader::new(bits))
     }
@@ -1035,6 +1063,7 @@ impl<'a> USB_RESET_INT_W<'a> {
 #[doc = "Field `sof_int` reader - "]
 pub struct SOF_INT_R(crate::FieldReader<bool, bool>);
 impl SOF_INT_R {
+    #[inline(always)]
     pub(crate) fn new(bits: bool) -> Self {
         SOF_INT_R(crate::FieldReader::new(bits))
     }
