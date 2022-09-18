@@ -2,9 +2,9 @@
 
 set -ex
 
-cargo install --version 0.21.0 svd2rust
-cargo install --version 0.8.0 form
-cargo install --version 0.2.1 svdtools
+cargo install --version 0.25.1 svd2rust
+cargo install --version 0.10.0 form
+cargo install --version 0.2.6 svdtools
 rustup component add rustfmt
 
 git rm -r -f src
