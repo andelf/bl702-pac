@@ -1,11 +1,12 @@
 _svd: "./bl702.svd"
 
-glb:
-  _array:
+# Disabling this patch for now for compatibility with bl602-hal
+#glb:
+#  _array:
     # as far as i can see 0-18 should work, maybe we need to patch 678?
-    "GPIO_CFGCTL[0123456789],GPIO_CFGCTL1[012345]":
-      _start_from_zero: true
-      name: GPIO_PINMODE%s
-    "GPIO_CFGCTL1[678]":
-      _start_from_zero: true
-      name: GPIO_PINMODE2%s
+#    "GPIO_CFGCTL[0123456789],GPIO_CFGCTL1[012345]":
+#      _start_from_zero: true
+#      name: GPIO_PINMODE%s
+#    "GPIO_CFGCTL1[678]":
+#      _start_from_zero: true
+#      name: GPIO_PINMODE2%s
