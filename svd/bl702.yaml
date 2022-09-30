@@ -6,162 +6,162 @@ glb:
         - cgen_s1a
         - cgen_s1
     _add:
-      AHB_SLAVE1_GLB:
+      GLB:
         description: GLB
         bitOffset: 0
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_MIX:
+      MIX:
         description: MIX
         bitOffset: 1
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_GPIP:
+      GPIP:
         description: gpip (gpadc, gpdac) clock ungate enable
         bitOffset: 2
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_SEC_DBG:
+      SEC_DBG:
         description: sec_dbg clock ungate enable
         bitOffset: 3
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_SEC:
+      SEC:
         description: sec_eng clock ungate enable
         bitOffset: 4
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_TZ1:
+      TZ1:
         description: TZC clock ungate enable
         bitOffset: 5
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_TZ2:
+      TZ2:
         description: TZC2 clock ungate enable
         bitOffset: 6
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_EFUSE:
+      EFUSE:
         description: ef_ctrl clock ungate enable
         bitOffset: 7
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_CCI:
+      CCI:
         description: CCI (efuse?)
         bitOffset: 8
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_L1C:
+      L1C:
         description: L1C (efuse?)
         bitOffset: 9
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_S1A_ALL:
+      S1A_ALL:
         description: S1A_ALL (efuse?)
         bitOffset: 10
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_SFC:
+      SFC:
         description: sf_ctrl clock ungate enable
         bitOffset: 11
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_DMA:
+      DMA:
         description: DMA clock ungate enable
         bitOffset: 12
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_EMAC:
+      EMAC:
         description: EMAC clock ungate enable
         bitOffset: 13
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_PDS_HBN_AON_HBNRAM:
+      PDS_HBN_AON_HBNRAM:
         description: DS_HBN_AON_HBNRAM
         bitOffset: 14
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_RSVD0F:
+      RSVD0F:
         description: RSVD0F
         bitOffset: 15
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_UART0:
+      UART0:
         description: uart0 clock ungate enable
         bitOffset: 16
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_UART1:
+      UART1:
         description: uart1 clock ungate enable
         bitOffset: 17
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_SPI:
+      SPI:
         description: spi clock ungate enable
         bitOffset: 18
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_I2C:
+      I2C:
         description: i2c clock ungate enable
         bitOffset: 19
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_PWM:
+      PWM:
         description: pwm clock ungate enable
         bitOffset: 20
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_TMR:
+      TMR:
         description: timer clock ungate enable
         bitOffset: 21
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_IRR:
+      IRR:
         description: ir_remote clock ungate enable
         bitOffset: 22
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_CKS:
+      CKS:
         description: checksum clock ungate enable
         bitOffset: 23
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_QDEC:
+      QDEC:
         description: qdec0 clock ungate enable
         bitOffset: 24
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_KYS:
+      KYS:
         description: KYS
         bitOffset: 25
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_I2S:
+      I2S:
         description: i2s and qdec2 clock ungate enable
         bitOffset: 26
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_RSVD1B:
+      RSVD1B:
         description: RSVD1B
         bitOffset: 27
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_USB:
+      USB:
         description: usb clock ungate enable
         bitOffset: 28
         bitWidth: 1 
         access: read-write
-      AHB_SLAVE1_CAM:
+      CAM:
         description: CAM
         bitOffset: 29
         bitWidth: 1 
         access: read-write
-      AHB_SLAVE1_MJPEG:
+      MJPEG:
         description: MJPEG
         bitOffset: 30
         bitWidth: 1
         access: read-write
-      AHB_SLAVE1_MAX:
+      MAX:
         description: MAX
         bitOffset: 31
         bitWidth: 1
