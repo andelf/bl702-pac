@@ -34,172 +34,66 @@ impl From<crate::W<CLKPLL_SDM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `clkpll_sdm_bypass` reader - "]
-pub struct CLKPLL_SDM_BYPASS_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_SDM_BYPASS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_SDM_BYPASS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDM_BYPASS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_sdm_bypass` writer - "]
-pub struct CLKPLL_SDM_BYPASS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CLKPLL_SDM_BYPASS_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `clkpll_sdm_flag` reader - "]
-pub struct CLKPLL_SDM_FLAG_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_SDM_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_SDM_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDM_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_sdm_flag` writer - "]
-pub struct CLKPLL_SDM_FLAG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CLKPLL_SDM_FLAG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `clkpll_dither_sel` reader - "]
-pub struct CLKPLL_DITHER_SEL_R(crate::FieldReader<u8, u8>);
-impl CLKPLL_DITHER_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CLKPLL_DITHER_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_DITHER_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_dither_sel` writer - "]
-pub struct CLKPLL_DITHER_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CLKPLL_DITHER_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 24)) | ((value as u32 & 0x03) << 24);
-        self.w
-    }
-}
 #[doc = "Field `clkpll_sdmin` reader - "]
-pub struct CLKPLL_SDMIN_R(crate::FieldReader<u32, u32>);
-impl CLKPLL_SDMIN_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        CLKPLL_SDMIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDMIN_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CLKPLL_SDMIN_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `clkpll_sdmin` writer - "]
-pub struct CLKPLL_SDMIN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CLKPLL_SDMIN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x00ff_ffff) | (value as u32 & 0x00ff_ffff);
-        self.w
-    }
-}
+pub type CLKPLL_SDMIN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, CLKPLL_SDM_SPEC, u32, u32, 24, O>;
+#[doc = "Field `clkpll_dither_sel` reader - "]
+pub type CLKPLL_DITHER_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `clkpll_dither_sel` writer - "]
+pub type CLKPLL_DITHER_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, CLKPLL_SDM_SPEC, u8, u8, 2, O>;
+#[doc = "Field `clkpll_sdm_flag` reader - "]
+pub type CLKPLL_SDM_FLAG_R = crate::BitReader<bool>;
+#[doc = "Field `clkpll_sdm_flag` writer - "]
+pub type CLKPLL_SDM_FLAG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CLKPLL_SDM_SPEC, bool, O>;
+#[doc = "Field `clkpll_sdm_bypass` reader - "]
+pub type CLKPLL_SDM_BYPASS_R = crate::BitReader<bool>;
+#[doc = "Field `clkpll_sdm_bypass` writer - "]
+pub type CLKPLL_SDM_BYPASS_W<'a, const O: u8> = crate::BitWriter<'a, u32, CLKPLL_SDM_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn clkpll_sdm_bypass(&self) -> CLKPLL_SDM_BYPASS_R {
-        CLKPLL_SDM_BYPASS_R::new(((self.bits >> 29) & 0x01) != 0)
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn clkpll_sdm_flag(&self) -> CLKPLL_SDM_FLAG_R {
-        CLKPLL_SDM_FLAG_R::new(((self.bits >> 28) & 0x01) != 0)
-    }
-    #[doc = "Bits 24:25"]
-    #[inline(always)]
-    pub fn clkpll_dither_sel(&self) -> CLKPLL_DITHER_SEL_R {
-        CLKPLL_DITHER_SEL_R::new(((self.bits >> 24) & 0x03) as u8)
-    }
     #[doc = "Bits 0:23"]
     #[inline(always)]
     pub fn clkpll_sdmin(&self) -> CLKPLL_SDMIN_R {
         CLKPLL_SDMIN_R::new((self.bits & 0x00ff_ffff) as u32)
     }
-}
-impl W {
-    #[doc = "Bit 29"]
+    #[doc = "Bits 24:25"]
     #[inline(always)]
-    pub fn clkpll_sdm_bypass(&mut self) -> CLKPLL_SDM_BYPASS_W {
-        CLKPLL_SDM_BYPASS_W { w: self }
+    pub fn clkpll_dither_sel(&self) -> CLKPLL_DITHER_SEL_R {
+        CLKPLL_DITHER_SEL_R::new(((self.bits >> 24) & 3) as u8)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
-    pub fn clkpll_sdm_flag(&mut self) -> CLKPLL_SDM_FLAG_W {
-        CLKPLL_SDM_FLAG_W { w: self }
+    pub fn clkpll_sdm_flag(&self) -> CLKPLL_SDM_FLAG_R {
+        CLKPLL_SDM_FLAG_R::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn clkpll_sdm_bypass(&self) -> CLKPLL_SDM_BYPASS_R {
+        CLKPLL_SDM_BYPASS_R::new(((self.bits >> 29) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:23"]
+    #[inline(always)]
+    pub fn clkpll_sdmin(&mut self) -> CLKPLL_SDMIN_W<0> {
+        CLKPLL_SDMIN_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
-    pub fn clkpll_dither_sel(&mut self) -> CLKPLL_DITHER_SEL_W {
-        CLKPLL_DITHER_SEL_W { w: self }
+    pub fn clkpll_dither_sel(&mut self) -> CLKPLL_DITHER_SEL_W<24> {
+        CLKPLL_DITHER_SEL_W::new(self)
     }
-    #[doc = "Bits 0:23"]
+    #[doc = "Bit 28"]
     #[inline(always)]
-    pub fn clkpll_sdmin(&mut self) -> CLKPLL_SDMIN_W {
-        CLKPLL_SDMIN_W { w: self }
+    pub fn clkpll_sdm_flag(&mut self) -> CLKPLL_SDM_FLAG_W<28> {
+        CLKPLL_SDM_FLAG_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn clkpll_sdm_bypass(&mut self) -> CLKPLL_SDM_BYPASS_W<29> {
+        CLKPLL_SDM_BYPASS_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

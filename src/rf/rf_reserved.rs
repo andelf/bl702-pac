@@ -34,80 +34,38 @@ impl From<crate::W<RF_RESERVED_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rf_resv0` reader - "]
-pub struct RF_RESV0_R(crate::FieldReader<u16, u16>);
-impl RF_RESV0_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RF_RESV0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_RESV0_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_resv0` writer - "]
-pub struct RF_RESV0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_RESV0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `rf_resv1` reader - "]
-pub struct RF_RESV1_R(crate::FieldReader<u16, u16>);
-impl RF_RESV1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RF_RESV1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_RESV1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RF_RESV1_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `rf_resv1` writer - "]
-pub struct RF_RESV1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_RESV1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type RF_RESV1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_RESERVED_SPEC, u16, u16, 16, O>;
+#[doc = "Field `rf_resv0` reader - "]
+pub type RF_RESV0_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `rf_resv0` writer - "]
+pub type RF_RESV0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_RESERVED_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn rf_resv0(&self) -> RF_RESV0_R {
-        RF_RESV0_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn rf_resv1(&self) -> RF_RESV1_R {
         RF_RESV1_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn rf_resv0(&mut self) -> RF_RESV0_W {
-        RF_RESV0_W { w: self }
+    pub fn rf_resv0(&self) -> RF_RESV0_R {
+        RF_RESV0_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn rf_resv1(&mut self) -> RF_RESV1_W {
-        RF_RESV1_W { w: self }
+    pub fn rf_resv1(&mut self) -> RF_RESV1_W<0> {
+        RF_RESV1_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn rf_resv0(&mut self) -> RF_RESV0_W<16> {
+        RF_RESV0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

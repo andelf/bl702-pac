@@ -34,330 +34,108 @@ impl From<crate::W<MBIST_CTL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_mbist_rst_n` reader - "]
-pub struct REG_MBIST_RST_N_R(crate::FieldReader<bool, bool>);
-impl REG_MBIST_RST_N_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_MBIST_RST_N_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_MBIST_RST_N_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_mbist_rst_n` writer - "]
-pub struct REG_MBIST_RST_N_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_MBIST_RST_N_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `em_ram_mbist_mode` reader - "]
-pub struct EM_RAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl EM_RAM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EM_RAM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EM_RAM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `em_ram_mbist_mode` writer - "]
-pub struct EM_RAM_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EM_RAM_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `ocram_mbist_mode` reader - "]
-pub struct OCRAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_mode` writer - "]
-pub struct OCRAM_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> OCRAM_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `tag_mbist_mode` reader - "]
-pub struct TAG_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_mode` writer - "]
-pub struct TAG_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TAG_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `hsram_cache_mbist_mode` reader - "]
-pub struct HSRAM_CACHE_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_CACHE_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_CACHE_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_CACHE_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_cache_mbist_mode` writer - "]
-pub struct HSRAM_CACHE_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_CACHE_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `hsram_mem_mbist_mode` reader - "]
-pub struct HSRAM_MEM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MEM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MEM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MEM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mem_mbist_mode` writer - "]
-pub struct HSRAM_MEM_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_MEM_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `irom_mbist_mode` reader - "]
-pub struct IROM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type IROM_MBIST_MODE_R = crate::BitReader<bool>;
 #[doc = "Field `irom_mbist_mode` writer - "]
-pub struct IROM_MBIST_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IROM_MBIST_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type IROM_MBIST_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `hsram_mem_mbist_mode` reader - "]
+pub type HSRAM_MEM_MBIST_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_mem_mbist_mode` writer - "]
+pub type HSRAM_MEM_MBIST_MODE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `hsram_cache_mbist_mode` reader - "]
+pub type HSRAM_CACHE_MBIST_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_cache_mbist_mode` writer - "]
+pub type HSRAM_CACHE_MBIST_MODE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `tag_mbist_mode` reader - "]
+pub type TAG_MBIST_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `tag_mbist_mode` writer - "]
+pub type TAG_MBIST_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `ocram_mbist_mode` reader - "]
+pub type OCRAM_MBIST_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `ocram_mbist_mode` writer - "]
+pub type OCRAM_MBIST_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `em_ram_mbist_mode` reader - "]
+pub type EM_RAM_MBIST_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `em_ram_mbist_mode` writer - "]
+pub type EM_RAM_MBIST_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
+#[doc = "Field `reg_mbist_rst_n` reader - "]
+pub type REG_MBIST_RST_N_R = crate::BitReader<bool>;
+#[doc = "Field `reg_mbist_rst_n` writer - "]
+pub type REG_MBIST_RST_N_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_CTL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_mbist_rst_n(&self) -> REG_MBIST_RST_N_R {
-        REG_MBIST_RST_N_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn em_ram_mbist_mode(&self) -> EM_RAM_MBIST_MODE_R {
-        EM_RAM_MBIST_MODE_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn ocram_mbist_mode(&self) -> OCRAM_MBIST_MODE_R {
-        OCRAM_MBIST_MODE_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn tag_mbist_mode(&self) -> TAG_MBIST_MODE_R {
-        TAG_MBIST_MODE_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn hsram_cache_mbist_mode(&self) -> HSRAM_CACHE_MBIST_MODE_R {
-        HSRAM_CACHE_MBIST_MODE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn irom_mbist_mode(&self) -> IROM_MBIST_MODE_R {
+        IROM_MBIST_MODE_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn hsram_mem_mbist_mode(&self) -> HSRAM_MEM_MBIST_MODE_R {
-        HSRAM_MEM_MBIST_MODE_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn irom_mbist_mode(&self) -> IROM_MBIST_MODE_R {
-        IROM_MBIST_MODE_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn reg_mbist_rst_n(&mut self) -> REG_MBIST_RST_N_W {
-        REG_MBIST_RST_N_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn em_ram_mbist_mode(&mut self) -> EM_RAM_MBIST_MODE_W {
-        EM_RAM_MBIST_MODE_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn ocram_mbist_mode(&mut self) -> OCRAM_MBIST_MODE_W {
-        OCRAM_MBIST_MODE_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn tag_mbist_mode(&mut self) -> TAG_MBIST_MODE_W {
-        TAG_MBIST_MODE_W { w: self }
+        HSRAM_MEM_MBIST_MODE_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn hsram_cache_mbist_mode(&mut self) -> HSRAM_CACHE_MBIST_MODE_W {
-        HSRAM_CACHE_MBIST_MODE_W { w: self }
+    pub fn hsram_cache_mbist_mode(&self) -> HSRAM_CACHE_MBIST_MODE_R {
+        HSRAM_CACHE_MBIST_MODE_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn tag_mbist_mode(&self) -> TAG_MBIST_MODE_R {
+        TAG_MBIST_MODE_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn ocram_mbist_mode(&self) -> OCRAM_MBIST_MODE_R {
+        OCRAM_MBIST_MODE_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn em_ram_mbist_mode(&self) -> EM_RAM_MBIST_MODE_R {
+        EM_RAM_MBIST_MODE_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn reg_mbist_rst_n(&self) -> REG_MBIST_RST_N_R {
+        REG_MBIST_RST_N_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn irom_mbist_mode(&mut self) -> IROM_MBIST_MODE_W<0> {
+        IROM_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn hsram_mem_mbist_mode(&mut self) -> HSRAM_MEM_MBIST_MODE_W {
-        HSRAM_MEM_MBIST_MODE_W { w: self }
+    pub fn hsram_mem_mbist_mode(&mut self) -> HSRAM_MEM_MBIST_MODE_W<1> {
+        HSRAM_MEM_MBIST_MODE_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn irom_mbist_mode(&mut self) -> IROM_MBIST_MODE_W {
-        IROM_MBIST_MODE_W { w: self }
+    pub fn hsram_cache_mbist_mode(&mut self) -> HSRAM_CACHE_MBIST_MODE_W<2> {
+        HSRAM_CACHE_MBIST_MODE_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn tag_mbist_mode(&mut self) -> TAG_MBIST_MODE_W<3> {
+        TAG_MBIST_MODE_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn ocram_mbist_mode(&mut self) -> OCRAM_MBIST_MODE_W<4> {
+        OCRAM_MBIST_MODE_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn em_ram_mbist_mode(&mut self) -> EM_RAM_MBIST_MODE_W<5> {
+        EM_RAM_MBIST_MODE_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn reg_mbist_rst_n(&mut self) -> REG_MBIST_RST_N_W<31> {
+        REG_MBIST_RST_N_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

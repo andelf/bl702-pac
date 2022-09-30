@@ -35,43 +35,21 @@ impl From<crate::W<MISS_CNT_SPEC>> for W {
     }
 }
 #[doc = "Field `miss_cnt` reader - "]
-pub struct MISS_CNT_R(crate::FieldReader<u32, u32>);
-impl MISS_CNT_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        MISS_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MISS_CNT_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type MISS_CNT_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `miss_cnt` writer - "]
-pub struct MISS_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MISS_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type MISS_CNT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MISS_CNT_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn miss_cnt(&self) -> MISS_CNT_R {
-        MISS_CNT_R::new((self.bits & 0xffff_ffff) as u32)
+        MISS_CNT_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn miss_cnt(&mut self) -> MISS_CNT_W {
-        MISS_CNT_W { w: self }
+    pub fn miss_cnt(&mut self) -> MISS_CNT_W<0> {
+        MISS_CNT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

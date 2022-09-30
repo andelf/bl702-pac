@@ -34,80 +34,38 @@ impl From<crate::W<STS_URX_ABR_PRD_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sts_urx_abr_prd_0x55` reader - "]
-pub struct STS_URX_ABR_PRD_0X55_R(crate::FieldReader<u16, u16>);
-impl STS_URX_ABR_PRD_0X55_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        STS_URX_ABR_PRD_0X55_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_URX_ABR_PRD_0X55_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_urx_abr_prd_0x55` writer - "]
-pub struct STS_URX_ABR_PRD_0X55_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_URX_ABR_PRD_0X55_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `sts_urx_abr_prd_start` reader - "]
-pub struct STS_URX_ABR_PRD_START_R(crate::FieldReader<u16, u16>);
-impl STS_URX_ABR_PRD_START_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        STS_URX_ABR_PRD_START_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_URX_ABR_PRD_START_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type STS_URX_ABR_PRD_START_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `sts_urx_abr_prd_start` writer - "]
-pub struct STS_URX_ABR_PRD_START_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_URX_ABR_PRD_START_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type STS_URX_ABR_PRD_START_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, STS_URX_ABR_PRD_SPEC, u16, u16, 16, O>;
+#[doc = "Field `sts_urx_abr_prd_0x55` reader - "]
+pub type STS_URX_ABR_PRD_0X55_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `sts_urx_abr_prd_0x55` writer - "]
+pub type STS_URX_ABR_PRD_0X55_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, STS_URX_ABR_PRD_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn sts_urx_abr_prd_0x55(&self) -> STS_URX_ABR_PRD_0X55_R {
-        STS_URX_ABR_PRD_0X55_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn sts_urx_abr_prd_start(&self) -> STS_URX_ABR_PRD_START_R {
         STS_URX_ABR_PRD_START_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn sts_urx_abr_prd_0x55(&mut self) -> STS_URX_ABR_PRD_0X55_W {
-        STS_URX_ABR_PRD_0X55_W { w: self }
+    pub fn sts_urx_abr_prd_0x55(&self) -> STS_URX_ABR_PRD_0X55_R {
+        STS_URX_ABR_PRD_0X55_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn sts_urx_abr_prd_start(&mut self) -> STS_URX_ABR_PRD_START_W {
-        STS_URX_ABR_PRD_START_W { w: self }
+    pub fn sts_urx_abr_prd_start(&mut self) -> STS_URX_ABR_PRD_START_W<0> {
+        STS_URX_ABR_PRD_START_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn sts_urx_abr_prd_0x55(&mut self) -> STS_URX_ABR_PRD_0X55_W<16> {
+        STS_URX_ABR_PRD_0X55_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

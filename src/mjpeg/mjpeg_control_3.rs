@@ -34,954 +34,312 @@ impl From<crate::W<MJPEG_CONTROL_3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sts_swap_int` reader - "]
-pub struct STS_SWAP_INT_R(crate::FieldReader<bool, bool>);
-impl STS_SWAP_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_SWAP_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_SWAP_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_swap_int` writer - "]
-pub struct STS_SWAP_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_SWAP_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_swap_en` reader - "]
-pub struct REG_INT_SWAP_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_SWAP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_SWAP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_SWAP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_swap_en` writer - "]
-pub struct REG_INT_SWAP_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_SWAP_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `frame_valid_cnt` reader - "]
-pub struct FRAME_VALID_CNT_R(crate::FieldReader<u8, u8>);
-impl FRAME_VALID_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FRAME_VALID_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FRAME_VALID_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `frame_valid_cnt` writer - "]
-pub struct FRAME_VALID_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FRAME_VALID_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 24)) | ((value as u32 & 0x1f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `sts_idle_int` reader - "]
-pub struct STS_IDLE_INT_R(crate::FieldReader<bool, bool>);
-impl STS_IDLE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_IDLE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_IDLE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_idle_int` writer - "]
-pub struct STS_IDLE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_IDLE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 22)) | ((value as u32 & 0x01) << 22);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_idle_en` reader - "]
-pub struct REG_INT_IDLE_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_IDLE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_IDLE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_IDLE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_idle_en` writer - "]
-pub struct REG_INT_IDLE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_IDLE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
-        self.w
-    }
-}
-#[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
-pub struct REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader<u8, u8>);
-impl REG_FRAME_CNT_TRGR_INT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_FRAME_CNT_TRGR_INT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_frame_cnt_trgr_int` writer - "]
-pub struct REG_FRAME_CNT_TRGR_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_FRAME_CNT_TRGR_INT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 16)) | ((value as u32 & 0x1f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `ahb_idle` reader - "]
-pub struct AHB_IDLE_R(crate::FieldReader<bool, bool>);
-impl AHB_IDLE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        AHB_IDLE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for AHB_IDLE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ahb_idle` writer - "]
-pub struct AHB_IDLE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> AHB_IDLE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_manf` reader - "]
-pub struct MJPEG_MANF_R(crate::FieldReader<bool, bool>);
-impl MJPEG_MANF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_MANF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_MANF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_manf` writer - "]
-pub struct MJPEG_MANF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_MANF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 13)) | ((value as u32 & 0x01) << 13);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_mans` reader - "]
-pub struct MJPEG_MANS_R(crate::FieldReader<bool, bool>);
-impl MJPEG_MANS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_MANS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_MANS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_mans` writer - "]
-pub struct MJPEG_MANS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_MANS_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_flsh` reader - "]
-pub struct MJPEG_FLSH_R(crate::FieldReader<bool, bool>);
-impl MJPEG_FLSH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_FLSH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_FLSH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_flsh` writer - "]
-pub struct MJPEG_FLSH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_FLSH_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 11)) | ((value as u32 & 0x01) << 11);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_wait` reader - "]
-pub struct MJPEG_WAIT_R(crate::FieldReader<bool, bool>);
-impl MJPEG_WAIT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_WAIT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_WAIT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_wait` writer - "]
-pub struct MJPEG_WAIT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_WAIT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_func` reader - "]
-pub struct MJPEG_FUNC_R(crate::FieldReader<bool, bool>);
-impl MJPEG_FUNC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_FUNC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_FUNC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_func` writer - "]
-pub struct MJPEG_FUNC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_FUNC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
-        self.w
-    }
-}
-#[doc = "Field `mjpeg_idle` reader - "]
-pub struct MJPEG_IDLE_R(crate::FieldReader<bool, bool>);
-impl MJPEG_IDLE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MJPEG_IDLE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_IDLE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `mjpeg_idle` writer - "]
-pub struct MJPEG_IDLE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_IDLE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `sts_frame_int` reader - "]
-pub struct STS_FRAME_INT_R(crate::FieldReader<bool, bool>);
-impl STS_FRAME_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_FRAME_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_FRAME_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_frame_int` writer - "]
-pub struct STS_FRAME_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_FRAME_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `sts_mem_int` reader - "]
-pub struct STS_MEM_INT_R(crate::FieldReader<bool, bool>);
-impl STS_MEM_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_MEM_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_MEM_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_mem_int` writer - "]
-pub struct STS_MEM_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_MEM_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `sts_cam_int` reader - "]
-pub struct STS_CAM_INT_R(crate::FieldReader<bool, bool>);
-impl STS_CAM_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_CAM_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_CAM_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_cam_int` writer - "]
-pub struct STS_CAM_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_CAM_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `sts_normal_int` reader - "]
-pub struct STS_NORMAL_INT_R(crate::FieldReader<bool, bool>);
-impl STS_NORMAL_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_NORMAL_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_NORMAL_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_normal_int` writer - "]
-pub struct STS_NORMAL_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_NORMAL_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_frame_en` reader - "]
-pub struct REG_INT_FRAME_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_FRAME_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_FRAME_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_FRAME_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_frame_en` writer - "]
-pub struct REG_INT_FRAME_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_FRAME_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_mem_en` reader - "]
-pub struct REG_INT_MEM_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_MEM_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_MEM_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_MEM_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_mem_en` writer - "]
-pub struct REG_INT_MEM_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_MEM_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_cam_en` reader - "]
-pub struct REG_INT_CAM_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_CAM_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_CAM_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_CAM_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_cam_en` writer - "]
-pub struct REG_INT_CAM_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_CAM_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `reg_int_normal_en` reader - "]
-pub struct REG_INT_NORMAL_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_NORMAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_NORMAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_NORMAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_INT_NORMAL_EN_R = crate::BitReader<bool>;
 #[doc = "Field `reg_int_normal_en` writer - "]
-pub struct REG_INT_NORMAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_NORMAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type REG_INT_NORMAL_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `reg_int_cam_en` reader - "]
+pub type REG_INT_CAM_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_cam_en` writer - "]
+pub type REG_INT_CAM_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `reg_int_mem_en` reader - "]
+pub type REG_INT_MEM_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_mem_en` writer - "]
+pub type REG_INT_MEM_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `reg_int_frame_en` reader - "]
+pub type REG_INT_FRAME_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_frame_en` writer - "]
+pub type REG_INT_FRAME_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_normal_int` reader - "]
+pub type STS_NORMAL_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_normal_int` writer - "]
+pub type STS_NORMAL_INT_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_cam_int` reader - "]
+pub type STS_CAM_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_cam_int` writer - "]
+pub type STS_CAM_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_mem_int` reader - "]
+pub type STS_MEM_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_mem_int` writer - "]
+pub type STS_MEM_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_frame_int` reader - "]
+pub type STS_FRAME_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_frame_int` writer - "]
+pub type STS_FRAME_INT_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_idle` reader - "]
+pub type MJPEG_IDLE_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_idle` writer - "]
+pub type MJPEG_IDLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_func` reader - "]
+pub type MJPEG_FUNC_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_func` writer - "]
+pub type MJPEG_FUNC_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_wait` reader - "]
+pub type MJPEG_WAIT_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_wait` writer - "]
+pub type MJPEG_WAIT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_flsh` reader - "]
+pub type MJPEG_FLSH_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_flsh` writer - "]
+pub type MJPEG_FLSH_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_mans` reader - "]
+pub type MJPEG_MANS_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_mans` writer - "]
+pub type MJPEG_MANS_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `mjpeg_manf` reader - "]
+pub type MJPEG_MANF_R = crate::BitReader<bool>;
+#[doc = "Field `mjpeg_manf` writer - "]
+pub type MJPEG_MANF_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `ahb_idle` reader - "]
+pub type AHB_IDLE_R = crate::BitReader<bool>;
+#[doc = "Field `ahb_idle` writer - "]
+pub type AHB_IDLE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
+pub type REG_FRAME_CNT_TRGR_INT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `reg_frame_cnt_trgr_int` writer - "]
+pub type REG_FRAME_CNT_TRGR_INT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_CONTROL_3_SPEC, u8, u8, 5, O>;
+#[doc = "Field `reg_int_idle_en` reader - "]
+pub type REG_INT_IDLE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_idle_en` writer - "]
+pub type REG_INT_IDLE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_idle_int` reader - "]
+pub type STS_IDLE_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_idle_int` writer - "]
+pub type STS_IDLE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `frame_valid_cnt` reader - "]
+pub type FRAME_VALID_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `frame_valid_cnt` writer - "]
+pub type FRAME_VALID_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_CONTROL_3_SPEC, u8, u8, 5, O>;
+#[doc = "Field `reg_int_swap_en` reader - "]
+pub type REG_INT_SWAP_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_swap_en` writer - "]
+pub type REG_INT_SWAP_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
+#[doc = "Field `sts_swap_int` reader - "]
+pub type STS_SWAP_INT_R = crate::BitReader<bool>;
+#[doc = "Field `sts_swap_int` writer - "]
+pub type STS_SWAP_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_CONTROL_3_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 30"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn sts_swap_int(&self) -> STS_SWAP_INT_R {
-        STS_SWAP_INT_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn reg_int_normal_en(&self) -> REG_INT_NORMAL_EN_R {
+        REG_INT_NORMAL_EN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 29"]
+    #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_int_swap_en(&self) -> REG_INT_SWAP_EN_R {
-        REG_INT_SWAP_EN_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn reg_int_cam_en(&self) -> REG_INT_CAM_EN_R {
+        REG_INT_CAM_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bits 24:28"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn frame_valid_cnt(&self) -> FRAME_VALID_CNT_R {
-        FRAME_VALID_CNT_R::new(((self.bits >> 24) & 0x1f) as u8)
+    pub fn reg_int_mem_en(&self) -> REG_INT_MEM_EN_R {
+        REG_INT_MEM_EN_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bit 22"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn sts_idle_int(&self) -> STS_IDLE_INT_R {
-        STS_IDLE_INT_R::new(((self.bits >> 22) & 0x01) != 0)
+    pub fn reg_int_frame_en(&self) -> REG_INT_FRAME_EN_R {
+        REG_INT_FRAME_EN_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 21"]
+    #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn reg_int_idle_en(&self) -> REG_INT_IDLE_EN_R {
-        REG_INT_IDLE_EN_R::new(((self.bits >> 21) & 0x01) != 0)
+    pub fn sts_normal_int(&self) -> STS_NORMAL_INT_R {
+        STS_NORMAL_INT_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn sts_cam_int(&self) -> STS_CAM_INT_R {
+        STS_CAM_INT_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn sts_mem_int(&self) -> STS_MEM_INT_R {
+        STS_MEM_INT_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn sts_frame_int(&self) -> STS_FRAME_INT_R {
+        STS_FRAME_INT_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn mjpeg_idle(&self) -> MJPEG_IDLE_R {
+        MJPEG_IDLE_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn mjpeg_func(&self) -> MJPEG_FUNC_R {
+        MJPEG_FUNC_R::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn mjpeg_wait(&self) -> MJPEG_WAIT_R {
+        MJPEG_WAIT_R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn mjpeg_flsh(&self) -> MJPEG_FLSH_R {
+        MJPEG_FLSH_R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn mjpeg_mans(&self) -> MJPEG_MANS_R {
+        MJPEG_MANS_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn mjpeg_manf(&self) -> MJPEG_MANF_R {
+        MJPEG_MANF_R::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn ahb_idle(&self) -> AHB_IDLE_R {
+        AHB_IDLE_R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bits 16:20"]
     #[inline(always)]
     pub fn reg_frame_cnt_trgr_int(&self) -> REG_FRAME_CNT_TRGR_INT_R {
         REG_FRAME_CNT_TRGR_INT_R::new(((self.bits >> 16) & 0x1f) as u8)
     }
-    #[doc = "Bit 14"]
+    #[doc = "Bit 21"]
     #[inline(always)]
-    pub fn ahb_idle(&self) -> AHB_IDLE_R {
-        AHB_IDLE_R::new(((self.bits >> 14) & 0x01) != 0)
-    }
-    #[doc = "Bit 13"]
-    #[inline(always)]
-    pub fn mjpeg_manf(&self) -> MJPEG_MANF_R {
-        MJPEG_MANF_R::new(((self.bits >> 13) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn mjpeg_mans(&self) -> MJPEG_MANS_R {
-        MJPEG_MANS_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn mjpeg_flsh(&self) -> MJPEG_FLSH_R {
-        MJPEG_FLSH_R::new(((self.bits >> 11) & 0x01) != 0)
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn mjpeg_wait(&self) -> MJPEG_WAIT_R {
-        MJPEG_WAIT_R::new(((self.bits >> 10) & 0x01) != 0)
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn mjpeg_func(&self) -> MJPEG_FUNC_R {
-        MJPEG_FUNC_R::new(((self.bits >> 9) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn mjpeg_idle(&self) -> MJPEG_IDLE_R {
-        MJPEG_IDLE_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn sts_frame_int(&self) -> STS_FRAME_INT_R {
-        STS_FRAME_INT_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn sts_mem_int(&self) -> STS_MEM_INT_R {
-        STS_MEM_INT_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn sts_cam_int(&self) -> STS_CAM_INT_R {
-        STS_CAM_INT_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn sts_normal_int(&self) -> STS_NORMAL_INT_R {
-        STS_NORMAL_INT_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn reg_int_frame_en(&self) -> REG_INT_FRAME_EN_R {
-        REG_INT_FRAME_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn reg_int_mem_en(&self) -> REG_INT_MEM_EN_R {
-        REG_INT_MEM_EN_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn reg_int_cam_en(&self) -> REG_INT_CAM_EN_R {
-        REG_INT_CAM_EN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn reg_int_normal_en(&self) -> REG_INT_NORMAL_EN_R {
-        REG_INT_NORMAL_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn sts_swap_int(&mut self) -> STS_SWAP_INT_W {
-        STS_SWAP_INT_W { w: self }
-    }
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn reg_int_swap_en(&mut self) -> REG_INT_SWAP_EN_W {
-        REG_INT_SWAP_EN_W { w: self }
-    }
-    #[doc = "Bits 24:28"]
-    #[inline(always)]
-    pub fn frame_valid_cnt(&mut self) -> FRAME_VALID_CNT_W {
-        FRAME_VALID_CNT_W { w: self }
+    pub fn reg_int_idle_en(&self) -> REG_INT_IDLE_EN_R {
+        REG_INT_IDLE_EN_R::new(((self.bits >> 21) & 1) != 0)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
-    pub fn sts_idle_int(&mut self) -> STS_IDLE_INT_W {
-        STS_IDLE_INT_W { w: self }
+    pub fn sts_idle_int(&self) -> STS_IDLE_INT_R {
+        STS_IDLE_INT_R::new(((self.bits >> 22) & 1) != 0)
     }
-    #[doc = "Bit 21"]
+    #[doc = "Bits 24:28"]
     #[inline(always)]
-    pub fn reg_int_idle_en(&mut self) -> REG_INT_IDLE_EN_W {
-        REG_INT_IDLE_EN_W { w: self }
+    pub fn frame_valid_cnt(&self) -> FRAME_VALID_CNT_R {
+        FRAME_VALID_CNT_R::new(((self.bits >> 24) & 0x1f) as u8)
     }
-    #[doc = "Bits 16:20"]
+    #[doc = "Bit 29"]
     #[inline(always)]
-    pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W {
-        REG_FRAME_CNT_TRGR_INT_W { w: self }
+    pub fn reg_int_swap_en(&self) -> REG_INT_SWAP_EN_R {
+        REG_INT_SWAP_EN_R::new(((self.bits >> 29) & 1) != 0)
     }
-    #[doc = "Bit 14"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn ahb_idle(&mut self) -> AHB_IDLE_W {
-        AHB_IDLE_W { w: self }
+    pub fn sts_swap_int(&self) -> STS_SWAP_INT_R {
+        STS_SWAP_INT_R::new(((self.bits >> 30) & 1) != 0)
     }
-    #[doc = "Bit 13"]
+}
+impl W {
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn mjpeg_manf(&mut self) -> MJPEG_MANF_W {
-        MJPEG_MANF_W { w: self }
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn mjpeg_mans(&mut self) -> MJPEG_MANS_W {
-        MJPEG_MANS_W { w: self }
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn mjpeg_flsh(&mut self) -> MJPEG_FLSH_W {
-        MJPEG_FLSH_W { w: self }
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn mjpeg_wait(&mut self) -> MJPEG_WAIT_W {
-        MJPEG_WAIT_W { w: self }
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn mjpeg_func(&mut self) -> MJPEG_FUNC_W {
-        MJPEG_FUNC_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn mjpeg_idle(&mut self) -> MJPEG_IDLE_W {
-        MJPEG_IDLE_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn sts_frame_int(&mut self) -> STS_FRAME_INT_W {
-        STS_FRAME_INT_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn sts_mem_int(&mut self) -> STS_MEM_INT_W {
-        STS_MEM_INT_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn sts_cam_int(&mut self) -> STS_CAM_INT_W {
-        STS_CAM_INT_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn sts_normal_int(&mut self) -> STS_NORMAL_INT_W {
-        STS_NORMAL_INT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W {
-        REG_INT_FRAME_EN_W { w: self }
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W {
-        REG_INT_MEM_EN_W { w: self }
+    pub fn reg_int_normal_en(&mut self) -> REG_INT_NORMAL_EN_W<0> {
+        REG_INT_NORMAL_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_int_cam_en(&mut self) -> REG_INT_CAM_EN_W {
-        REG_INT_CAM_EN_W { w: self }
+    pub fn reg_int_cam_en(&mut self) -> REG_INT_CAM_EN_W<1> {
+        REG_INT_CAM_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn reg_int_normal_en(&mut self) -> REG_INT_NORMAL_EN_W {
-        REG_INT_NORMAL_EN_W { w: self }
+    pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W<2> {
+        REG_INT_MEM_EN_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W<3> {
+        REG_INT_FRAME_EN_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn sts_normal_int(&mut self) -> STS_NORMAL_INT_W<4> {
+        STS_NORMAL_INT_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn sts_cam_int(&mut self) -> STS_CAM_INT_W<5> {
+        STS_CAM_INT_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn sts_mem_int(&mut self) -> STS_MEM_INT_W<6> {
+        STS_MEM_INT_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn sts_frame_int(&mut self) -> STS_FRAME_INT_W<7> {
+        STS_FRAME_INT_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn mjpeg_idle(&mut self) -> MJPEG_IDLE_W<8> {
+        MJPEG_IDLE_W::new(self)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn mjpeg_func(&mut self) -> MJPEG_FUNC_W<9> {
+        MJPEG_FUNC_W::new(self)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn mjpeg_wait(&mut self) -> MJPEG_WAIT_W<10> {
+        MJPEG_WAIT_W::new(self)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn mjpeg_flsh(&mut self) -> MJPEG_FLSH_W<11> {
+        MJPEG_FLSH_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn mjpeg_mans(&mut self) -> MJPEG_MANS_W<12> {
+        MJPEG_MANS_W::new(self)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn mjpeg_manf(&mut self) -> MJPEG_MANF_W<13> {
+        MJPEG_MANF_W::new(self)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn ahb_idle(&mut self) -> AHB_IDLE_W<14> {
+        AHB_IDLE_W::new(self)
+    }
+    #[doc = "Bits 16:20"]
+    #[inline(always)]
+    pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W<16> {
+        REG_FRAME_CNT_TRGR_INT_W::new(self)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn reg_int_idle_en(&mut self) -> REG_INT_IDLE_EN_W<21> {
+        REG_INT_IDLE_EN_W::new(self)
+    }
+    #[doc = "Bit 22"]
+    #[inline(always)]
+    pub fn sts_idle_int(&mut self) -> STS_IDLE_INT_W<22> {
+        STS_IDLE_INT_W::new(self)
+    }
+    #[doc = "Bits 24:28"]
+    #[inline(always)]
+    pub fn frame_valid_cnt(&mut self) -> FRAME_VALID_CNT_W<24> {
+        FRAME_VALID_CNT_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn reg_int_swap_en(&mut self) -> REG_INT_SWAP_EN_W<29> {
+        REG_INT_SWAP_EN_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn sts_swap_int(&mut self) -> STS_SWAP_INT_W<30> {
+        STS_SWAP_INT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

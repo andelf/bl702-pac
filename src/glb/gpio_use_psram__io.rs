@@ -35,31 +35,10 @@ impl From<crate::W<GPIO_USE_PSRAM__IO_SPEC>> for W {
     }
 }
 #[doc = "Field `cfg_gpio_use_psram_io` reader - "]
-pub struct CFG_GPIO_USE_PSRAM_IO_R(crate::FieldReader<u8, u8>);
-impl CFG_GPIO_USE_PSRAM_IO_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CFG_GPIO_USE_PSRAM_IO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CFG_GPIO_USE_PSRAM_IO_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CFG_GPIO_USE_PSRAM_IO_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cfg_gpio_use_psram_io` writer - "]
-pub struct CFG_GPIO_USE_PSRAM_IO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CFG_GPIO_USE_PSRAM_IO_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type CFG_GPIO_USE_PSRAM_IO_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPIO_USE_PSRAM__IO_SPEC, u8, u8, 6, O>;
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn cfg_gpio_use_psram_io(&mut self) -> CFG_GPIO_USE_PSRAM_IO_W {
-        CFG_GPIO_USE_PSRAM_IO_W { w: self }
+    pub fn cfg_gpio_use_psram_io(&mut self) -> CFG_GPIO_USE_PSRAM_IO_W<0> {
+        CFG_GPIO_USE_PSRAM_IO_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

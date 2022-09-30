@@ -35,43 +35,22 @@ impl From<crate::W<SE_AES_0_MDA_SPEC>> for W {
     }
 }
 #[doc = "Field `se_aes_0_mda` reader - "]
-pub struct SE_AES_0_MDA_R(crate::FieldReader<u32, u32>);
-impl SE_AES_0_MDA_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        SE_AES_0_MDA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_MDA_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SE_AES_0_MDA_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `se_aes_0_mda` writer - "]
-pub struct SE_AES_0_MDA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SE_AES_0_MDA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type SE_AES_0_MDA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SE_AES_0_MDA_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn se_aes_0_mda(&self) -> SE_AES_0_MDA_R {
-        SE_AES_0_MDA_R::new((self.bits & 0xffff_ffff) as u32)
+        SE_AES_0_MDA_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn se_aes_0_mda(&mut self) -> SE_AES_0_MDA_W {
-        SE_AES_0_MDA_W { w: self }
+    pub fn se_aes_0_mda(&mut self) -> SE_AES_0_MDA_W<0> {
+        SE_AES_0_MDA_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

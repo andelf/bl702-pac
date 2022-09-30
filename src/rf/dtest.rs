@@ -34,376 +34,120 @@ impl From<crate::W<DTEST_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `dtest_en_dtc_in` reader - "]
-pub struct DTEST_EN_DTC_IN_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_DTC_IN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_DTC_IN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_DTC_IN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_dtc_in` writer - "]
-pub struct DTEST_EN_DTC_IN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_DTC_IN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_dtc_out` reader - "]
-pub struct DTEST_EN_DTC_OUT_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_DTC_OUT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_DTC_OUT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_DTC_OUT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_dtc_out` writer - "]
-pub struct DTEST_EN_DTC_OUT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_DTC_OUT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_fref` reader - "]
-pub struct DTEST_EN_FREF_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_FREF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_FREF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_FREF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_fref` writer - "]
-pub struct DTEST_EN_FREF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_FREF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 27)) | ((value as u32 & 0x01) << 27);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_mod4` reader - "]
-pub struct DTEST_EN_MOD4_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_MOD4_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_MOD4_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_MOD4_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_mod4` writer - "]
-pub struct DTEST_EN_MOD4_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_MOD4_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 26)) | ((value as u32 & 0x01) << 26);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_adpll_adc` reader - "]
-pub struct DTEST_EN_ADPLL_ADC_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_ADPLL_ADC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_ADPLL_ADC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_ADPLL_ADC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_adpll_adc` writer - "]
-pub struct DTEST_EN_ADPLL_ADC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_ADPLL_ADC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 25)) | ((value as u32 & 0x01) << 25);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_rxadc_i` reader - "]
-pub struct DTEST_EN_RXADC_I_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_RXADC_I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_RXADC_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_RXADC_I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_rxadc_i` writer - "]
-pub struct DTEST_EN_RXADC_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_RXADC_I_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `dtest_en_rxadc_q` reader - "]
-pub struct DTEST_EN_RXADC_Q_R(crate::FieldReader<bool, bool>);
-impl DTEST_EN_RXADC_Q_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_EN_RXADC_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_EN_RXADC_Q_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dtest_en_rxadc_q` writer - "]
-pub struct DTEST_EN_RXADC_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_EN_RXADC_Q_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 23)) | ((value as u32 & 0x01) << 23);
-        self.w
-    }
-}
 #[doc = "Field `dtest_pulldown` reader - "]
-pub struct DTEST_PULLDOWN_R(crate::FieldReader<bool, bool>);
-impl DTEST_PULLDOWN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEST_PULLDOWN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEST_PULLDOWN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type DTEST_PULLDOWN_R = crate::BitReader<bool>;
 #[doc = "Field `dtest_pulldown` writer - "]
-pub struct DTEST_PULLDOWN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DTEST_PULLDOWN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type DTEST_PULLDOWN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_rxadc_q` reader - "]
+pub type DTEST_EN_RXADC_Q_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_rxadc_q` writer - "]
+pub type DTEST_EN_RXADC_Q_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_rxadc_i` reader - "]
+pub type DTEST_EN_RXADC_I_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_rxadc_i` writer - "]
+pub type DTEST_EN_RXADC_I_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_adpll_adc` reader - "]
+pub type DTEST_EN_ADPLL_ADC_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_adpll_adc` writer - "]
+pub type DTEST_EN_ADPLL_ADC_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_mod4` reader - "]
+pub type DTEST_EN_MOD4_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_mod4` writer - "]
+pub type DTEST_EN_MOD4_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_fref` reader - "]
+pub type DTEST_EN_FREF_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_fref` writer - "]
+pub type DTEST_EN_FREF_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_dtc_out` reader - "]
+pub type DTEST_EN_DTC_OUT_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_dtc_out` writer - "]
+pub type DTEST_EN_DTC_OUT_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
+#[doc = "Field `dtest_en_dtc_in` reader - "]
+pub type DTEST_EN_DTC_IN_R = crate::BitReader<bool>;
+#[doc = "Field `dtest_en_dtc_in` writer - "]
+pub type DTEST_EN_DTC_IN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DTEST_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 29"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn dtest_en_dtc_in(&self) -> DTEST_EN_DTC_IN_R {
-        DTEST_EN_DTC_IN_R::new(((self.bits >> 29) & 0x01) != 0)
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn dtest_en_dtc_out(&self) -> DTEST_EN_DTC_OUT_R {
-        DTEST_EN_DTC_OUT_R::new(((self.bits >> 28) & 0x01) != 0)
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn dtest_en_fref(&self) -> DTEST_EN_FREF_R {
-        DTEST_EN_FREF_R::new(((self.bits >> 27) & 0x01) != 0)
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn dtest_en_mod4(&self) -> DTEST_EN_MOD4_R {
-        DTEST_EN_MOD4_R::new(((self.bits >> 26) & 0x01) != 0)
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn dtest_en_adpll_adc(&self) -> DTEST_EN_ADPLL_ADC_R {
-        DTEST_EN_ADPLL_ADC_R::new(((self.bits >> 25) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn dtest_en_rxadc_i(&self) -> DTEST_EN_RXADC_I_R {
-        DTEST_EN_RXADC_I_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn dtest_pulldown(&self) -> DTEST_PULLDOWN_R {
+        DTEST_PULLDOWN_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
     pub fn dtest_en_rxadc_q(&self) -> DTEST_EN_RXADC_Q_R {
-        DTEST_EN_RXADC_Q_R::new(((self.bits >> 23) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn dtest_pulldown(&self) -> DTEST_PULLDOWN_R {
-        DTEST_PULLDOWN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn dtest_en_dtc_in(&mut self) -> DTEST_EN_DTC_IN_W {
-        DTEST_EN_DTC_IN_W { w: self }
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn dtest_en_dtc_out(&mut self) -> DTEST_EN_DTC_OUT_W {
-        DTEST_EN_DTC_OUT_W { w: self }
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn dtest_en_fref(&mut self) -> DTEST_EN_FREF_W {
-        DTEST_EN_FREF_W { w: self }
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn dtest_en_mod4(&mut self) -> DTEST_EN_MOD4_W {
-        DTEST_EN_MOD4_W { w: self }
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn dtest_en_adpll_adc(&mut self) -> DTEST_EN_ADPLL_ADC_W {
-        DTEST_EN_ADPLL_ADC_W { w: self }
+        DTEST_EN_RXADC_Q_R::new(((self.bits >> 23) & 1) != 0)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn dtest_en_rxadc_i(&mut self) -> DTEST_EN_RXADC_I_W {
-        DTEST_EN_RXADC_I_W { w: self }
+    pub fn dtest_en_rxadc_i(&self) -> DTEST_EN_RXADC_I_R {
+        DTEST_EN_RXADC_I_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn dtest_en_adpll_adc(&self) -> DTEST_EN_ADPLL_ADC_R {
+        DTEST_EN_ADPLL_ADC_R::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn dtest_en_mod4(&self) -> DTEST_EN_MOD4_R {
+        DTEST_EN_MOD4_R::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn dtest_en_fref(&self) -> DTEST_EN_FREF_R {
+        DTEST_EN_FREF_R::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn dtest_en_dtc_out(&self) -> DTEST_EN_DTC_OUT_R {
+        DTEST_EN_DTC_OUT_R::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn dtest_en_dtc_in(&self) -> DTEST_EN_DTC_IN_R {
+        DTEST_EN_DTC_IN_R::new(((self.bits >> 29) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn dtest_pulldown(&mut self) -> DTEST_PULLDOWN_W<0> {
+        DTEST_PULLDOWN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
-    pub fn dtest_en_rxadc_q(&mut self) -> DTEST_EN_RXADC_Q_W {
-        DTEST_EN_RXADC_Q_W { w: self }
+    pub fn dtest_en_rxadc_q(&mut self) -> DTEST_EN_RXADC_Q_W<23> {
+        DTEST_EN_RXADC_Q_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn dtest_pulldown(&mut self) -> DTEST_PULLDOWN_W {
-        DTEST_PULLDOWN_W { w: self }
+    pub fn dtest_en_rxadc_i(&mut self) -> DTEST_EN_RXADC_I_W<24> {
+        DTEST_EN_RXADC_I_W::new(self)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn dtest_en_adpll_adc(&mut self) -> DTEST_EN_ADPLL_ADC_W<25> {
+        DTEST_EN_ADPLL_ADC_W::new(self)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn dtest_en_mod4(&mut self) -> DTEST_EN_MOD4_W<26> {
+        DTEST_EN_MOD4_W::new(self)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn dtest_en_fref(&mut self) -> DTEST_EN_FREF_W<27> {
+        DTEST_EN_FREF_W::new(self)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn dtest_en_dtc_out(&mut self) -> DTEST_EN_DTC_OUT_W<28> {
+        DTEST_EN_DTC_OUT_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn dtest_en_dtc_in(&mut self) -> DTEST_EN_DTC_IN_W<29> {
+        DTEST_EN_DTC_IN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

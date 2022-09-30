@@ -34,714 +34,232 @@ impl From<crate::W<MODE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rsvd_23_18` reader - "]
-pub struct RSVD_23_18_R(crate::FieldReader<u8, u8>);
-impl RSVD_23_18_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RSVD_23_18_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_23_18_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_23_18` writer - "]
-pub struct RSVD_23_18_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RSVD_23_18_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 18)) | ((value as u32 & 0x3f) << 18);
-        self.w
-    }
-}
-#[doc = "Field `RMII_EN` reader - "]
-pub struct RMII_EN_R(crate::FieldReader<bool, bool>);
-impl RMII_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RMII_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RMII_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RMII_EN` writer - "]
-pub struct RMII_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RMII_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `RECSMALL` reader - "]
-pub struct RECSMALL_R(crate::FieldReader<bool, bool>);
-impl RECSMALL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RECSMALL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RECSMALL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RECSMALL` writer - "]
-pub struct RECSMALL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RECSMALL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `PAD` reader - "]
-pub struct PAD_R(crate::FieldReader<bool, bool>);
-impl PAD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PAD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PAD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `PAD` writer - "]
-pub struct PAD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PAD_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 15)) | ((value as u32 & 0x01) << 15);
-        self.w
-    }
-}
-#[doc = "Field `HUGEN` reader - "]
-pub struct HUGEN_R(crate::FieldReader<bool, bool>);
-impl HUGEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HUGEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HUGEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `HUGEN` writer - "]
-pub struct HUGEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HUGEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
-        self.w
-    }
-}
-#[doc = "Field `CRCEN` reader - "]
-pub struct CRCEN_R(crate::FieldReader<bool, bool>);
-impl CRCEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CRCEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CRCEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `CRCEN` writer - "]
-pub struct CRCEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CRCEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 13)) | ((value as u32 & 0x01) << 13);
-        self.w
-    }
-}
-#[doc = "Field `rsvd_12_11` reader - "]
-pub struct RSVD_12_11_R(crate::FieldReader<u8, u8>);
-impl RSVD_12_11_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RSVD_12_11_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_12_11_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_12_11` writer - "]
-pub struct RSVD_12_11_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RSVD_12_11_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 11)) | ((value as u32 & 0x03) << 11);
-        self.w
-    }
-}
-#[doc = "Field `FULLD` reader - "]
-pub struct FULLD_R(crate::FieldReader<bool, bool>);
-impl FULLD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FULLD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FULLD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `FULLD` writer - "]
-pub struct FULLD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FULLD_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
-        self.w
-    }
-}
-#[doc = "Field `rsvd_9_7` reader - "]
-pub struct RSVD_9_7_R(crate::FieldReader<u8, u8>);
-impl RSVD_9_7_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RSVD_9_7_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_9_7_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_9_7` writer - "]
-pub struct RSVD_9_7_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RSVD_9_7_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 7)) | ((value as u32 & 0x07) << 7);
-        self.w
-    }
-}
-#[doc = "Field `IFG` reader - "]
-pub struct IFG_R(crate::FieldReader<bool, bool>);
-impl IFG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IFG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IFG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `IFG` writer - "]
-pub struct IFG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IFG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `PRO` reader - "]
-pub struct PRO_R(crate::FieldReader<bool, bool>);
-impl PRO_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PRO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PRO_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `PRO` writer - "]
-pub struct PRO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PRO_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `rsvd_4` reader - "]
-pub struct RSVD_4_R(crate::FieldReader<bool, bool>);
-impl RSVD_4_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_4_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_4_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_4` writer - "]
-pub struct RSVD_4_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RSVD_4_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `BRO` reader - "]
-pub struct BRO_R(crate::FieldReader<bool, bool>);
-impl BRO_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BRO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BRO_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `BRO` writer - "]
-pub struct BRO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BRO_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `NOPRE` reader - "]
-pub struct NOPRE_R(crate::FieldReader<bool, bool>);
-impl NOPRE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        NOPRE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for NOPRE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `NOPRE` writer - "]
-pub struct NOPRE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> NOPRE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `TXEN` reader - "]
-pub struct TXEN_R(crate::FieldReader<bool, bool>);
-impl TXEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TXEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TXEN` writer - "]
-pub struct TXEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `RXEN` reader - "]
-pub struct RXEN_R(crate::FieldReader<bool, bool>);
-impl RXEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RXEN_R = crate::BitReader<bool>;
 #[doc = "Field `RXEN` writer - "]
-pub struct RXEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type RXEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `TXEN` reader - "]
+pub type TXEN_R = crate::BitReader<bool>;
+#[doc = "Field `TXEN` writer - "]
+pub type TXEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `NOPRE` reader - "]
+pub type NOPRE_R = crate::BitReader<bool>;
+#[doc = "Field `NOPRE` writer - "]
+pub type NOPRE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `BRO` reader - "]
+pub type BRO_R = crate::BitReader<bool>;
+#[doc = "Field `BRO` writer - "]
+pub type BRO_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `rsvd_4` reader - "]
+pub type RSVD_4_R = crate::BitReader<bool>;
+#[doc = "Field `rsvd_4` writer - "]
+pub type RSVD_4_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `PRO` reader - "]
+pub type PRO_R = crate::BitReader<bool>;
+#[doc = "Field `PRO` writer - "]
+pub type PRO_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `IFG` reader - "]
+pub type IFG_R = crate::BitReader<bool>;
+#[doc = "Field `IFG` writer - "]
+pub type IFG_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `rsvd_9_7` reader - "]
+pub type RSVD_9_7_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rsvd_9_7` writer - "]
+pub type RSVD_9_7_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MODE_SPEC, u8, u8, 3, O>;
+#[doc = "Field `FULLD` reader - "]
+pub type FULLD_R = crate::BitReader<bool>;
+#[doc = "Field `FULLD` writer - "]
+pub type FULLD_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `rsvd_12_11` reader - "]
+pub type RSVD_12_11_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rsvd_12_11` writer - "]
+pub type RSVD_12_11_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MODE_SPEC, u8, u8, 2, O>;
+#[doc = "Field `CRCEN` reader - "]
+pub type CRCEN_R = crate::BitReader<bool>;
+#[doc = "Field `CRCEN` writer - "]
+pub type CRCEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `HUGEN` reader - "]
+pub type HUGEN_R = crate::BitReader<bool>;
+#[doc = "Field `HUGEN` writer - "]
+pub type HUGEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `PAD` reader - "]
+pub type PAD_R = crate::BitReader<bool>;
+#[doc = "Field `PAD` writer - "]
+pub type PAD_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `RECSMALL` reader - "]
+pub type RECSMALL_R = crate::BitReader<bool>;
+#[doc = "Field `RECSMALL` writer - "]
+pub type RECSMALL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `RMII_EN` reader - "]
+pub type RMII_EN_R = crate::BitReader<bool>;
+#[doc = "Field `RMII_EN` writer - "]
+pub type RMII_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MODE_SPEC, bool, O>;
+#[doc = "Field `rsvd_23_18` reader - "]
+pub type RSVD_23_18_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rsvd_23_18` writer - "]
+pub type RSVD_23_18_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MODE_SPEC, u8, u8, 6, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn rxen(&self) -> RXEN_R {
+        RXEN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn txen(&self) -> TXEN_R {
+        TXEN_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2"]
+    #[inline(always)]
+    pub fn nopre(&self) -> NOPRE_R {
+        NOPRE_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn bro(&self) -> BRO_R {
+        BRO_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn rsvd_4(&self) -> RSVD_4_R {
+        RSVD_4_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn pro(&self) -> PRO_R {
+        PRO_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn ifg(&self) -> IFG_R {
+        IFG_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bits 7:9"]
+    #[inline(always)]
+    pub fn rsvd_9_7(&self) -> RSVD_9_7_R {
+        RSVD_9_7_R::new(((self.bits >> 7) & 7) as u8)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn fulld(&self) -> FULLD_R {
+        FULLD_R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bits 11:12"]
+    #[inline(always)]
+    pub fn rsvd_12_11(&self) -> RSVD_12_11_R {
+        RSVD_12_11_R::new(((self.bits >> 11) & 3) as u8)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn crcen(&self) -> CRCEN_R {
+        CRCEN_R::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn hugen(&self) -> HUGEN_R {
+        HUGEN_R::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn pad(&self) -> PAD_R {
+        PAD_R::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn recsmall(&self) -> RECSMALL_R {
+        RECSMALL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn rmii_en(&self) -> RMII_EN_R {
+        RMII_EN_R::new(((self.bits >> 17) & 1) != 0)
+    }
     #[doc = "Bits 18:23"]
     #[inline(always)]
     pub fn rsvd_23_18(&self) -> RSVD_23_18_R {
         RSVD_23_18_R::new(((self.bits >> 18) & 0x3f) as u8)
     }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn rmii_en(&self) -> RMII_EN_R {
-        RMII_EN_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn recsmall(&self) -> RECSMALL_R {
-        RECSMALL_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn pad(&self) -> PAD_R {
-        PAD_R::new(((self.bits >> 15) & 0x01) != 0)
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn hugen(&self) -> HUGEN_R {
-        HUGEN_R::new(((self.bits >> 14) & 0x01) != 0)
-    }
-    #[doc = "Bit 13"]
-    #[inline(always)]
-    pub fn crcen(&self) -> CRCEN_R {
-        CRCEN_R::new(((self.bits >> 13) & 0x01) != 0)
-    }
-    #[doc = "Bits 11:12"]
-    #[inline(always)]
-    pub fn rsvd_12_11(&self) -> RSVD_12_11_R {
-        RSVD_12_11_R::new(((self.bits >> 11) & 0x03) as u8)
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn fulld(&self) -> FULLD_R {
-        FULLD_R::new(((self.bits >> 10) & 0x01) != 0)
-    }
-    #[doc = "Bits 7:9"]
-    #[inline(always)]
-    pub fn rsvd_9_7(&self) -> RSVD_9_7_R {
-        RSVD_9_7_R::new(((self.bits >> 7) & 0x07) as u8)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn ifg(&self) -> IFG_R {
-        IFG_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn pro(&self) -> PRO_R {
-        PRO_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn rsvd_4(&self) -> RSVD_4_R {
-        RSVD_4_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn bro(&self) -> BRO_R {
-        BRO_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn nopre(&self) -> NOPRE_R {
-        NOPRE_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn txen(&self) -> TXEN_R {
-        TXEN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn rxen(&self) -> RXEN_R {
-        RXEN_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 18:23"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rsvd_23_18(&mut self) -> RSVD_23_18_W {
-        RSVD_23_18_W { w: self }
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn rmii_en(&mut self) -> RMII_EN_W {
-        RMII_EN_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn recsmall(&mut self) -> RECSMALL_W {
-        RECSMALL_W { w: self }
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn pad(&mut self) -> PAD_W {
-        PAD_W { w: self }
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn hugen(&mut self) -> HUGEN_W {
-        HUGEN_W { w: self }
-    }
-    #[doc = "Bit 13"]
-    #[inline(always)]
-    pub fn crcen(&mut self) -> CRCEN_W {
-        CRCEN_W { w: self }
-    }
-    #[doc = "Bits 11:12"]
-    #[inline(always)]
-    pub fn rsvd_12_11(&mut self) -> RSVD_12_11_W {
-        RSVD_12_11_W { w: self }
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn fulld(&mut self) -> FULLD_W {
-        FULLD_W { w: self }
-    }
-    #[doc = "Bits 7:9"]
-    #[inline(always)]
-    pub fn rsvd_9_7(&mut self) -> RSVD_9_7_W {
-        RSVD_9_7_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn ifg(&mut self) -> IFG_W {
-        IFG_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn pro(&mut self) -> PRO_W {
-        PRO_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn rsvd_4(&mut self) -> RSVD_4_W {
-        RSVD_4_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn bro(&mut self) -> BRO_W {
-        BRO_W { w: self }
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn nopre(&mut self) -> NOPRE_W {
-        NOPRE_W { w: self }
+    pub fn rxen(&mut self) -> RXEN_W<0> {
+        RXEN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn txen(&mut self) -> TXEN_W {
-        TXEN_W { w: self }
+    pub fn txen(&mut self) -> TXEN_W<1> {
+        TXEN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rxen(&mut self) -> RXEN_W {
-        RXEN_W { w: self }
+    pub fn nopre(&mut self) -> NOPRE_W<2> {
+        NOPRE_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn bro(&mut self) -> BRO_W<3> {
+        BRO_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn rsvd_4(&mut self) -> RSVD_4_W<4> {
+        RSVD_4_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn pro(&mut self) -> PRO_W<5> {
+        PRO_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn ifg(&mut self) -> IFG_W<6> {
+        IFG_W::new(self)
+    }
+    #[doc = "Bits 7:9"]
+    #[inline(always)]
+    pub fn rsvd_9_7(&mut self) -> RSVD_9_7_W<7> {
+        RSVD_9_7_W::new(self)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn fulld(&mut self) -> FULLD_W<10> {
+        FULLD_W::new(self)
+    }
+    #[doc = "Bits 11:12"]
+    #[inline(always)]
+    pub fn rsvd_12_11(&mut self) -> RSVD_12_11_W<11> {
+        RSVD_12_11_W::new(self)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn crcen(&mut self) -> CRCEN_W<13> {
+        CRCEN_W::new(self)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn hugen(&mut self) -> HUGEN_W<14> {
+        HUGEN_W::new(self)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn pad(&mut self) -> PAD_W<15> {
+        PAD_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn recsmall(&mut self) -> RECSMALL_W<16> {
+        RECSMALL_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn rmii_en(&mut self) -> RMII_EN_W<17> {
+        RMII_EN_W::new(self)
+    }
+    #[doc = "Bits 18:23"]
+    #[inline(always)]
+    pub fn rsvd_23_18(&mut self) -> RSVD_23_18_W<18> {
+        RSVD_23_18_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

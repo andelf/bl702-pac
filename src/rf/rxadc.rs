@@ -34,310 +34,106 @@ impl From<crate::W<RXADC_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rxadc_dly_ctrl` reader - "]
-pub struct RXADC_DLY_CTRL_R(crate::FieldReader<u8, u8>);
-impl RXADC_DLY_CTRL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RXADC_DLY_CTRL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_DLY_CTRL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_dly_ctrl` writer - "]
-pub struct RXADC_DLY_CTRL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_DLY_CTRL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 24)) | ((value as u32 & 0x03) << 24);
-        self.w
-    }
-}
-#[doc = "Field `rxadc_glitch_remove` reader - "]
-pub struct RXADC_GLITCH_REMOVE_R(crate::FieldReader<bool, bool>);
-impl RXADC_GLITCH_REMOVE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXADC_GLITCH_REMOVE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_GLITCH_REMOVE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_glitch_remove` writer - "]
-pub struct RXADC_GLITCH_REMOVE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_GLITCH_REMOVE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `rxadc_clk_div_sel` reader - "]
-pub struct RXADC_CLK_DIV_SEL_R(crate::FieldReader<bool, bool>);
-impl RXADC_CLK_DIV_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXADC_CLK_DIV_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_CLK_DIV_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_clk_div_sel` writer - "]
-pub struct RXADC_CLK_DIV_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_CLK_DIV_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `rxadc_clk_inv` reader - "]
-pub struct RXADC_CLK_INV_R(crate::FieldReader<bool, bool>);
-impl RXADC_CLK_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXADC_CLK_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_CLK_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_clk_inv` writer - "]
-pub struct RXADC_CLK_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_CLK_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `rxadc_clk_sync_inv` reader - "]
-pub struct RXADC_CLK_SYNC_INV_R(crate::FieldReader<bool, bool>);
-impl RXADC_CLK_SYNC_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXADC_CLK_SYNC_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_CLK_SYNC_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_clk_sync_inv` writer - "]
-pub struct RXADC_CLK_SYNC_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_CLK_SYNC_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `rxadc_vref_sel` reader - "]
-pub struct RXADC_VREF_SEL_R(crate::FieldReader<u8, u8>);
-impl RXADC_VREF_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RXADC_VREF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_VREF_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_vref_sel` writer - "]
-pub struct RXADC_VREF_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_VREF_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
 #[doc = "Field `rxadc_oscal_en` reader - "]
-pub struct RXADC_OSCAL_EN_R(crate::FieldReader<bool, bool>);
-impl RXADC_OSCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXADC_OSCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_OSCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RXADC_OSCAL_EN_R = crate::BitReader<bool>;
 #[doc = "Field `rxadc_oscal_en` writer - "]
-pub struct RXADC_OSCAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_OSCAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type RXADC_OSCAL_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RXADC_SPEC, bool, O>;
+#[doc = "Field `rxadc_vref_sel` reader - "]
+pub type RXADC_VREF_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rxadc_vref_sel` writer - "]
+pub type RXADC_VREF_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RXADC_SPEC, u8, u8, 2, O>;
+#[doc = "Field `rxadc_clk_sync_inv` reader - "]
+pub type RXADC_CLK_SYNC_INV_R = crate::BitReader<bool>;
+#[doc = "Field `rxadc_clk_sync_inv` writer - "]
+pub type RXADC_CLK_SYNC_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, RXADC_SPEC, bool, O>;
+#[doc = "Field `rxadc_clk_inv` reader - "]
+pub type RXADC_CLK_INV_R = crate::BitReader<bool>;
+#[doc = "Field `rxadc_clk_inv` writer - "]
+pub type RXADC_CLK_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, RXADC_SPEC, bool, O>;
+#[doc = "Field `rxadc_clk_div_sel` reader - "]
+pub type RXADC_CLK_DIV_SEL_R = crate::BitReader<bool>;
+#[doc = "Field `rxadc_clk_div_sel` writer - "]
+pub type RXADC_CLK_DIV_SEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, RXADC_SPEC, bool, O>;
+#[doc = "Field `rxadc_glitch_remove` reader - "]
+pub type RXADC_GLITCH_REMOVE_R = crate::BitReader<bool>;
+#[doc = "Field `rxadc_glitch_remove` writer - "]
+pub type RXADC_GLITCH_REMOVE_W<'a, const O: u8> = crate::BitWriter<'a, u32, RXADC_SPEC, bool, O>;
+#[doc = "Field `rxadc_dly_ctrl` reader - "]
+pub type RXADC_DLY_CTRL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rxadc_dly_ctrl` writer - "]
+pub type RXADC_DLY_CTRL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RXADC_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 24:25"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rxadc_dly_ctrl(&self) -> RXADC_DLY_CTRL_R {
-        RXADC_DLY_CTRL_R::new(((self.bits >> 24) & 0x03) as u8)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn rxadc_glitch_remove(&self) -> RXADC_GLITCH_REMOVE_R {
-        RXADC_GLITCH_REMOVE_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn rxadc_clk_div_sel(&self) -> RXADC_CLK_DIV_SEL_R {
-        RXADC_CLK_DIV_SEL_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn rxadc_clk_inv(&self) -> RXADC_CLK_INV_R {
-        RXADC_CLK_INV_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn rxadc_clk_sync_inv(&self) -> RXADC_CLK_SYNC_INV_R {
-        RXADC_CLK_SYNC_INV_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn rxadc_oscal_en(&self) -> RXADC_OSCAL_EN_R {
+        RXADC_OSCAL_EN_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
     pub fn rxadc_vref_sel(&self) -> RXADC_VREF_SEL_R {
-        RXADC_VREF_SEL_R::new(((self.bits >> 4) & 0x03) as u8)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn rxadc_oscal_en(&self) -> RXADC_OSCAL_EN_R {
-        RXADC_OSCAL_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bits 24:25"]
-    #[inline(always)]
-    pub fn rxadc_dly_ctrl(&mut self) -> RXADC_DLY_CTRL_W {
-        RXADC_DLY_CTRL_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn rxadc_glitch_remove(&mut self) -> RXADC_GLITCH_REMOVE_W {
-        RXADC_GLITCH_REMOVE_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn rxadc_clk_div_sel(&mut self) -> RXADC_CLK_DIV_SEL_W {
-        RXADC_CLK_DIV_SEL_W { w: self }
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn rxadc_clk_inv(&mut self) -> RXADC_CLK_INV_W {
-        RXADC_CLK_INV_W { w: self }
+        RXADC_VREF_SEL_R::new(((self.bits >> 4) & 3) as u8)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn rxadc_clk_sync_inv(&mut self) -> RXADC_CLK_SYNC_INV_W {
-        RXADC_CLK_SYNC_INV_W { w: self }
+    pub fn rxadc_clk_sync_inv(&self) -> RXADC_CLK_SYNC_INV_R {
+        RXADC_CLK_SYNC_INV_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn rxadc_clk_inv(&self) -> RXADC_CLK_INV_R {
+        RXADC_CLK_INV_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn rxadc_clk_div_sel(&self) -> RXADC_CLK_DIV_SEL_R {
+        RXADC_CLK_DIV_SEL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn rxadc_glitch_remove(&self) -> RXADC_GLITCH_REMOVE_R {
+        RXADC_GLITCH_REMOVE_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bits 24:25"]
+    #[inline(always)]
+    pub fn rxadc_dly_ctrl(&self) -> RXADC_DLY_CTRL_R {
+        RXADC_DLY_CTRL_R::new(((self.bits >> 24) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn rxadc_oscal_en(&mut self) -> RXADC_OSCAL_EN_W<0> {
+        RXADC_OSCAL_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn rxadc_vref_sel(&mut self) -> RXADC_VREF_SEL_W {
-        RXADC_VREF_SEL_W { w: self }
+    pub fn rxadc_vref_sel(&mut self) -> RXADC_VREF_SEL_W<4> {
+        RXADC_VREF_SEL_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn rxadc_oscal_en(&mut self) -> RXADC_OSCAL_EN_W {
-        RXADC_OSCAL_EN_W { w: self }
+    pub fn rxadc_clk_sync_inv(&mut self) -> RXADC_CLK_SYNC_INV_W<8> {
+        RXADC_CLK_SYNC_INV_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn rxadc_clk_inv(&mut self) -> RXADC_CLK_INV_W<12> {
+        RXADC_CLK_INV_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn rxadc_clk_div_sel(&mut self) -> RXADC_CLK_DIV_SEL_W<16> {
+        RXADC_CLK_DIV_SEL_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn rxadc_glitch_remove(&mut self) -> RXADC_GLITCH_REMOVE_W<20> {
+        RXADC_GLITCH_REMOVE_W::new(self)
+    }
+    #[doc = "Bits 24:25"]
+    #[inline(always)]
+    pub fn rxadc_dly_ctrl(&mut self) -> RXADC_DLY_CTRL_W<24> {
+        RXADC_DLY_CTRL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

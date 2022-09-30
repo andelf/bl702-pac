@@ -34,146 +34,50 @@ impl From<crate::W<TMSR3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `tmsr_2` reader - "]
-pub struct TMSR_2_R(crate::FieldReader<bool, bool>);
-impl TMSR_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmsr_2` writer - "]
-pub struct TMSR_2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TMSR_2_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `tmsr_1` reader - "]
-pub struct TMSR_1_R(crate::FieldReader<bool, bool>);
-impl TMSR_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmsr_1` writer - "]
-pub struct TMSR_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TMSR_1_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `tmsr_0` reader - "]
-pub struct TMSR_0_R(crate::FieldReader<bool, bool>);
-impl TMSR_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TMSR_0_R = crate::BitReader<bool>;
 #[doc = "Field `tmsr_0` writer - "]
-pub struct TMSR_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TMSR_0_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TMSR_0_W<'a, const O: u8> = crate::BitWriter<'a, u32, TMSR3_SPEC, bool, O>;
+#[doc = "Field `tmsr_1` reader - "]
+pub type TMSR_1_R = crate::BitReader<bool>;
+#[doc = "Field `tmsr_1` writer - "]
+pub type TMSR_1_W<'a, const O: u8> = crate::BitWriter<'a, u32, TMSR3_SPEC, bool, O>;
+#[doc = "Field `tmsr_2` reader - "]
+pub type TMSR_2_R = crate::BitReader<bool>;
+#[doc = "Field `tmsr_2` writer - "]
+pub type TMSR_2_W<'a, const O: u8> = crate::BitWriter<'a, u32, TMSR3_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tmsr_2(&self) -> TMSR_2_R {
-        TMSR_2_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn tmsr_0(&self) -> TMSR_0_R {
+        TMSR_0_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn tmsr_1(&self) -> TMSR_1_R {
-        TMSR_1_R::new(((self.bits >> 1) & 0x01) != 0)
+        TMSR_1_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tmsr_0(&self) -> TMSR_0_R {
-        TMSR_0_R::new((self.bits & 0x01) != 0)
+    pub fn tmsr_2(&self) -> TMSR_2_R {
+        TMSR_2_R::new(((self.bits >> 2) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tmsr_2(&mut self) -> TMSR_2_W {
-        TMSR_2_W { w: self }
+    pub fn tmsr_0(&mut self) -> TMSR_0_W<0> {
+        TMSR_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn tmsr_1(&mut self) -> TMSR_1_W {
-        TMSR_1_W { w: self }
+    pub fn tmsr_1(&mut self) -> TMSR_1_W<1> {
+        TMSR_1_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tmsr_0(&mut self) -> TMSR_0_W {
-        TMSR_0_W { w: self }
+    pub fn tmsr_2(&mut self) -> TMSR_2_W<2> {
+        TMSR_2_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

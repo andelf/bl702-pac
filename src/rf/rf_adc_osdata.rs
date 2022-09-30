@@ -34,80 +34,38 @@ impl From<crate::W<RF_ADC_OSDATA_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rxadc_os_i` reader - "]
-pub struct RXADC_OS_I_R(crate::FieldReader<u16, u16>);
-impl RXADC_OS_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RXADC_OS_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_OS_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxadc_os_i` writer - "]
-pub struct RXADC_OS_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_OS_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01ff << 16)) | ((value as u32 & 0x01ff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `rxadc_os_q` reader - "]
-pub struct RXADC_OS_Q_R(crate::FieldReader<u16, u16>);
-impl RXADC_OS_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RXADC_OS_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXADC_OS_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RXADC_OS_Q_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `rxadc_os_q` writer - "]
-pub struct RXADC_OS_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXADC_OS_Q_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01ff) | (value as u32 & 0x01ff);
-        self.w
-    }
-}
+pub type RXADC_OS_Q_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_ADC_OSDATA_SPEC, u16, u16, 9, O>;
+#[doc = "Field `rxadc_os_i` reader - "]
+pub type RXADC_OS_I_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `rxadc_os_i` writer - "]
+pub type RXADC_OS_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_ADC_OSDATA_SPEC, u16, u16, 9, O>;
 impl R {
-    #[doc = "Bits 16:24"]
-    #[inline(always)]
-    pub fn rxadc_os_i(&self) -> RXADC_OS_I_R {
-        RXADC_OS_I_R::new(((self.bits >> 16) & 0x01ff) as u16)
-    }
     #[doc = "Bits 0:8"]
     #[inline(always)]
     pub fn rxadc_os_q(&self) -> RXADC_OS_Q_R {
         RXADC_OS_Q_R::new((self.bits & 0x01ff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn rxadc_os_i(&mut self) -> RXADC_OS_I_W {
-        RXADC_OS_I_W { w: self }
+    pub fn rxadc_os_i(&self) -> RXADC_OS_I_R {
+        RXADC_OS_I_R::new(((self.bits >> 16) & 0x01ff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rxadc_os_q(&mut self) -> RXADC_OS_Q_W {
-        RXADC_OS_Q_W { w: self }
+    pub fn rxadc_os_q(&mut self) -> RXADC_OS_Q_W<0> {
+        RXADC_OS_Q_W::new(self)
+    }
+    #[doc = "Bits 16:24"]
+    #[inline(always)]
+    pub fn rxadc_os_i(&mut self) -> RXADC_OS_I_W<16> {
+        RXADC_OS_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

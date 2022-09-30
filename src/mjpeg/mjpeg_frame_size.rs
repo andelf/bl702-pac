@@ -34,80 +34,38 @@ impl From<crate::W<MJPEG_FRAME_SIZE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_frame_hblk` reader - "]
-pub struct REG_FRAME_HBLK_R(crate::FieldReader<u16, u16>);
-impl REG_FRAME_HBLK_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_FRAME_HBLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_FRAME_HBLK_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_frame_hblk` writer - "]
-pub struct REG_FRAME_HBLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_FRAME_HBLK_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0fff << 16)) | ((value as u32 & 0x0fff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `reg_frame_wblk` reader - "]
-pub struct REG_FRAME_WBLK_R(crate::FieldReader<u16, u16>);
-impl REG_FRAME_WBLK_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_FRAME_WBLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_FRAME_WBLK_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_FRAME_WBLK_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `reg_frame_wblk` writer - "]
-pub struct REG_FRAME_WBLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_FRAME_WBLK_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type REG_FRAME_WBLK_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_FRAME_SIZE_SPEC, u16, u16, 12, O>;
+#[doc = "Field `reg_frame_hblk` reader - "]
+pub type REG_FRAME_HBLK_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `reg_frame_hblk` writer - "]
+pub type REG_FRAME_HBLK_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_FRAME_SIZE_SPEC, u16, u16, 12, O>;
 impl R {
-    #[doc = "Bits 16:27"]
-    #[inline(always)]
-    pub fn reg_frame_hblk(&self) -> REG_FRAME_HBLK_R {
-        REG_FRAME_HBLK_R::new(((self.bits >> 16) & 0x0fff) as u16)
-    }
     #[doc = "Bits 0:11"]
     #[inline(always)]
     pub fn reg_frame_wblk(&self) -> REG_FRAME_WBLK_R {
         REG_FRAME_WBLK_R::new((self.bits & 0x0fff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn reg_frame_hblk(&mut self) -> REG_FRAME_HBLK_W {
-        REG_FRAME_HBLK_W { w: self }
+    pub fn reg_frame_hblk(&self) -> REG_FRAME_HBLK_R {
+        REG_FRAME_HBLK_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn reg_frame_wblk(&mut self) -> REG_FRAME_WBLK_W {
-        REG_FRAME_WBLK_W { w: self }
+    pub fn reg_frame_wblk(&mut self) -> REG_FRAME_WBLK_W<0> {
+        REG_FRAME_WBLK_W::new(self)
+    }
+    #[doc = "Bits 16:27"]
+    #[inline(always)]
+    pub fn reg_frame_hblk(&mut self) -> REG_FRAME_HBLK_W<16> {
+        REG_FRAME_HBLK_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

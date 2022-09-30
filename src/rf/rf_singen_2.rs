@@ -34,116 +34,53 @@ impl From<crate::W<RF_SINGEN_2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `singen_start_addr0_i` reader - "]
-pub struct SINGEN_START_ADDR0_I_R(crate::FieldReader<u16, u16>);
-impl SINGEN_START_ADDR0_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_START_ADDR0_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_START_ADDR0_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_start_addr0_i` writer - "]
-pub struct SINGEN_START_ADDR0_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_START_ADDR0_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03ff << 22)) | ((value as u32 & 0x03ff) << 22);
-        self.w
-    }
-}
-#[doc = "Field `singen_start_addr1_i` reader - "]
-pub struct SINGEN_START_ADDR1_I_R(crate::FieldReader<u16, u16>);
-impl SINGEN_START_ADDR1_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_START_ADDR1_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_START_ADDR1_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_start_addr1_i` writer - "]
-pub struct SINGEN_START_ADDR1_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_START_ADDR1_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03ff << 12)) | ((value as u32 & 0x03ff) << 12);
-        self.w
-    }
-}
 #[doc = "Field `singen_gain_i` reader - "]
-pub struct SINGEN_GAIN_I_R(crate::FieldReader<u16, u16>);
-impl SINGEN_GAIN_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_GAIN_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_GAIN_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SINGEN_GAIN_I_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `singen_gain_i` writer - "]
-pub struct SINGEN_GAIN_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_GAIN_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07ff) | (value as u32 & 0x07ff);
-        self.w
-    }
-}
+pub type SINGEN_GAIN_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SINGEN_2_SPEC, u16, u16, 11, O>;
+#[doc = "Field `singen_start_addr1_i` reader - "]
+pub type SINGEN_START_ADDR1_I_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `singen_start_addr1_i` writer - "]
+pub type SINGEN_START_ADDR1_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SINGEN_2_SPEC, u16, u16, 10, O>;
+#[doc = "Field `singen_start_addr0_i` reader - "]
+pub type SINGEN_START_ADDR0_I_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `singen_start_addr0_i` writer - "]
+pub type SINGEN_START_ADDR0_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SINGEN_2_SPEC, u16, u16, 10, O>;
 impl R {
-    #[doc = "Bits 22:31"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn singen_start_addr0_i(&self) -> SINGEN_START_ADDR0_I_R {
-        SINGEN_START_ADDR0_I_R::new(((self.bits >> 22) & 0x03ff) as u16)
+    pub fn singen_gain_i(&self) -> SINGEN_GAIN_I_R {
+        SINGEN_GAIN_I_R::new((self.bits & 0x07ff) as u16)
     }
     #[doc = "Bits 12:21"]
     #[inline(always)]
     pub fn singen_start_addr1_i(&self) -> SINGEN_START_ADDR1_I_R {
         SINGEN_START_ADDR1_I_R::new(((self.bits >> 12) & 0x03ff) as u16)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 22:31"]
     #[inline(always)]
-    pub fn singen_gain_i(&self) -> SINGEN_GAIN_I_R {
-        SINGEN_GAIN_I_R::new((self.bits & 0x07ff) as u16)
+    pub fn singen_start_addr0_i(&self) -> SINGEN_START_ADDR0_I_R {
+        SINGEN_START_ADDR0_I_R::new(((self.bits >> 22) & 0x03ff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 22:31"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn singen_start_addr0_i(&mut self) -> SINGEN_START_ADDR0_I_W {
-        SINGEN_START_ADDR0_I_W { w: self }
+    pub fn singen_gain_i(&mut self) -> SINGEN_GAIN_I_W<0> {
+        SINGEN_GAIN_I_W::new(self)
     }
     #[doc = "Bits 12:21"]
     #[inline(always)]
-    pub fn singen_start_addr1_i(&mut self) -> SINGEN_START_ADDR1_I_W {
-        SINGEN_START_ADDR1_I_W { w: self }
+    pub fn singen_start_addr1_i(&mut self) -> SINGEN_START_ADDR1_I_W<12> {
+        SINGEN_START_ADDR1_I_W::new(self)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 22:31"]
     #[inline(always)]
-    pub fn singen_gain_i(&mut self) -> SINGEN_GAIN_I_W {
-        SINGEN_GAIN_I_W { w: self }
+    pub fn singen_start_addr0_i(&mut self) -> SINGEN_START_ADDR0_I_W<22> {
+        SINGEN_START_ADDR0_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

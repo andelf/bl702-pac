@@ -34,90 +34,37 @@ impl From<crate::W<RTC_TIME_H_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rtc_time_latch` reader - "]
-pub struct RTC_TIME_LATCH_R(crate::FieldReader<bool, bool>);
-impl RTC_TIME_LATCH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RTC_TIME_LATCH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RTC_TIME_LATCH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rtc_time_latch` writer - "]
-pub struct RTC_TIME_LATCH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RTC_TIME_LATCH_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
 #[doc = "Field `rtc_time_latch_h` reader - "]
-pub struct RTC_TIME_LATCH_H_R(crate::FieldReader<u8, u8>);
-impl RTC_TIME_LATCH_H_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RTC_TIME_LATCH_H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RTC_TIME_LATCH_H_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RTC_TIME_LATCH_H_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rtc_time_latch_h` writer - "]
-pub struct RTC_TIME_LATCH_H_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RTC_TIME_LATCH_H_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type RTC_TIME_LATCH_H_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RTC_TIME_H_SPEC, u8, u8, 8, O>;
+#[doc = "Field `rtc_time_latch` reader - "]
+pub type RTC_TIME_LATCH_R = crate::BitReader<bool>;
+#[doc = "Field `rtc_time_latch` writer - "]
+pub type RTC_TIME_LATCH_W<'a, const O: u8> = crate::BitWriter<'a, u32, RTC_TIME_H_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn rtc_time_latch(&self) -> RTC_TIME_LATCH_R {
-        RTC_TIME_LATCH_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
     #[doc = "Bits 0:7"]
     #[inline(always)]
     pub fn rtc_time_latch_h(&self) -> RTC_TIME_LATCH_H_R {
         RTC_TIME_LATCH_H_R::new((self.bits & 0xff) as u8)
     }
-}
-impl W {
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn rtc_time_latch(&mut self) -> RTC_TIME_LATCH_W {
-        RTC_TIME_LATCH_W { w: self }
+    pub fn rtc_time_latch(&self) -> RTC_TIME_LATCH_R {
+        RTC_TIME_LATCH_R::new(((self.bits >> 31) & 1) != 0)
     }
+}
+impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn rtc_time_latch_h(&mut self) -> RTC_TIME_LATCH_H_W {
-        RTC_TIME_LATCH_H_W { w: self }
+    pub fn rtc_time_latch_h(&mut self) -> RTC_TIME_LATCH_H_W<0> {
+        RTC_TIME_LATCH_H_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn rtc_time_latch(&mut self) -> RTC_TIME_LATCH_W<31> {
+        RTC_TIME_LATCH_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

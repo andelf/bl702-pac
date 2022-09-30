@@ -34,192 +34,65 @@ impl From<crate::W<IRTX_INT_STS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_irtx_end_en` reader - "]
-pub struct CR_IRTX_END_EN_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_en` writer - "]
-pub struct CR_IRTX_END_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_END_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_irtx_end_clr` reader - "]
-pub struct CR_IRTX_END_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_clr` writer - "]
-pub struct CR_IRTX_END_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_END_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_irtx_end_mask` reader - "]
-pub struct CR_IRTX_END_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_mask` writer - "]
-pub struct CR_IRTX_END_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_END_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
 #[doc = "Field `irtx_end_int` reader - "]
-pub struct IRTX_END_INT_R(crate::FieldReader<bool, bool>);
-impl IRTX_END_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IRTX_END_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IRTX_END_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type IRTX_END_INT_R = crate::BitReader<bool>;
 #[doc = "Field `irtx_end_int` writer - "]
-pub struct IRTX_END_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IRTX_END_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type IRTX_END_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, IRTX_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_irtx_end_mask` reader - "]
+pub type CR_IRTX_END_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_irtx_end_mask` writer - "]
+pub type CR_IRTX_END_MASK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, IRTX_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_irtx_end_clr` reader - "]
+pub type CR_IRTX_END_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `cr_irtx_end_clr` writer - "]
+pub type CR_IRTX_END_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, IRTX_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_irtx_end_en` reader - "]
+pub type CR_IRTX_END_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_irtx_end_en` writer - "]
+pub type CR_IRTX_END_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, IRTX_INT_STS_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 24"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_irtx_end_en(&self) -> CR_IRTX_END_EN_R {
-        CR_IRTX_END_EN_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn cr_irtx_end_clr(&self) -> CR_IRTX_END_CLR_R {
-        CR_IRTX_END_CLR_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn irtx_end_int(&self) -> IRTX_END_INT_R {
+        IRTX_END_INT_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
     pub fn cr_irtx_end_mask(&self) -> CR_IRTX_END_MASK_R {
-        CR_IRTX_END_MASK_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn irtx_end_int(&self) -> IRTX_END_INT_R {
-        IRTX_END_INT_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn cr_irtx_end_en(&mut self) -> CR_IRTX_END_EN_W {
-        CR_IRTX_END_EN_W { w: self }
+        CR_IRTX_END_MASK_R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn cr_irtx_end_clr(&mut self) -> CR_IRTX_END_CLR_W {
-        CR_IRTX_END_CLR_W { w: self }
+    pub fn cr_irtx_end_clr(&self) -> CR_IRTX_END_CLR_R {
+        CR_IRTX_END_CLR_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_irtx_end_en(&self) -> CR_IRTX_END_EN_R {
+        CR_IRTX_END_EN_R::new(((self.bits >> 24) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn irtx_end_int(&mut self) -> IRTX_END_INT_W<0> {
+        IRTX_END_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn cr_irtx_end_mask(&mut self) -> CR_IRTX_END_MASK_W {
-        CR_IRTX_END_MASK_W { w: self }
+    pub fn cr_irtx_end_mask(&mut self) -> CR_IRTX_END_MASK_W<8> {
+        CR_IRTX_END_MASK_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn irtx_end_int(&mut self) -> IRTX_END_INT_W {
-        IRTX_END_INT_W { w: self }
+    pub fn cr_irtx_end_clr(&mut self) -> CR_IRTX_END_CLR_W<16> {
+        CR_IRTX_END_CLR_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_irtx_end_en(&mut self) -> CR_IRTX_END_EN_W<24> {
+        CR_IRTX_END_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

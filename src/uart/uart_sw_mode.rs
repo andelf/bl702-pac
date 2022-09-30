@@ -34,192 +34,68 @@ impl From<crate::W<UART_SW_MODE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_urx_rts_sw_val` reader - "]
-pub struct CR_URX_RTS_SW_VAL_R(crate::FieldReader<bool, bool>);
-impl CR_URX_RTS_SW_VAL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_RTS_SW_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_RTS_SW_VAL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_rts_sw_val` writer - "]
-pub struct CR_URX_RTS_SW_VAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_RTS_SW_VAL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_rts_sw_mode` reader - "]
-pub struct CR_URX_RTS_SW_MODE_R(crate::FieldReader<bool, bool>);
-impl CR_URX_RTS_SW_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_RTS_SW_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_RTS_SW_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_rts_sw_mode` writer - "]
-pub struct CR_URX_RTS_SW_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_RTS_SW_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `cr_utx_txd_sw_val` reader - "]
-pub struct CR_UTX_TXD_SW_VAL_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_TXD_SW_VAL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_TXD_SW_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_TXD_SW_VAL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_txd_sw_val` writer - "]
-pub struct CR_UTX_TXD_SW_VAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_UTX_TXD_SW_VAL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `cr_utx_txd_sw_mode` reader - "]
-pub struct CR_UTX_TXD_SW_MODE_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_TXD_SW_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_TXD_SW_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_TXD_SW_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_UTX_TXD_SW_MODE_R = crate::BitReader<bool>;
 #[doc = "Field `cr_utx_txd_sw_mode` writer - "]
-pub struct CR_UTX_TXD_SW_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_UTX_TXD_SW_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CR_UTX_TXD_SW_MODE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, UART_SW_MODE_SPEC, bool, O>;
+#[doc = "Field `cr_utx_txd_sw_val` reader - "]
+pub type CR_UTX_TXD_SW_VAL_R = crate::BitReader<bool>;
+#[doc = "Field `cr_utx_txd_sw_val` writer - "]
+pub type CR_UTX_TXD_SW_VAL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, UART_SW_MODE_SPEC, bool, O>;
+#[doc = "Field `cr_urx_rts_sw_mode` reader - "]
+pub type CR_URX_RTS_SW_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_rts_sw_mode` writer - "]
+pub type CR_URX_RTS_SW_MODE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, UART_SW_MODE_SPEC, bool, O>;
+#[doc = "Field `cr_urx_rts_sw_val` reader - "]
+pub type CR_URX_RTS_SW_VAL_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_rts_sw_val` writer - "]
+pub type CR_URX_RTS_SW_VAL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, UART_SW_MODE_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 3"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_urx_rts_sw_val(&self) -> CR_URX_RTS_SW_VAL_R {
-        CR_URX_RTS_SW_VAL_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn cr_urx_rts_sw_mode(&self) -> CR_URX_RTS_SW_MODE_R {
-        CR_URX_RTS_SW_MODE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cr_utx_txd_sw_mode(&self) -> CR_UTX_TXD_SW_MODE_R {
+        CR_UTX_TXD_SW_MODE_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn cr_utx_txd_sw_val(&self) -> CR_UTX_TXD_SW_VAL_R {
-        CR_UTX_TXD_SW_VAL_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn cr_utx_txd_sw_mode(&self) -> CR_UTX_TXD_SW_MODE_R {
-        CR_UTX_TXD_SW_MODE_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_urx_rts_sw_val(&mut self) -> CR_URX_RTS_SW_VAL_W {
-        CR_URX_RTS_SW_VAL_W { w: self }
+        CR_UTX_TXD_SW_VAL_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_urx_rts_sw_mode(&mut self) -> CR_URX_RTS_SW_MODE_W {
-        CR_URX_RTS_SW_MODE_W { w: self }
+    pub fn cr_urx_rts_sw_mode(&self) -> CR_URX_RTS_SW_MODE_R {
+        CR_URX_RTS_SW_MODE_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_urx_rts_sw_val(&self) -> CR_URX_RTS_SW_VAL_R {
+        CR_URX_RTS_SW_VAL_R::new(((self.bits >> 3) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn cr_utx_txd_sw_mode(&mut self) -> CR_UTX_TXD_SW_MODE_W<0> {
+        CR_UTX_TXD_SW_MODE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn cr_utx_txd_sw_val(&mut self) -> CR_UTX_TXD_SW_VAL_W {
-        CR_UTX_TXD_SW_VAL_W { w: self }
+    pub fn cr_utx_txd_sw_val(&mut self) -> CR_UTX_TXD_SW_VAL_W<1> {
+        CR_UTX_TXD_SW_VAL_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_utx_txd_sw_mode(&mut self) -> CR_UTX_TXD_SW_MODE_W {
-        CR_UTX_TXD_SW_MODE_W { w: self }
+    pub fn cr_urx_rts_sw_mode(&mut self) -> CR_URX_RTS_SW_MODE_W<2> {
+        CR_URX_RTS_SW_MODE_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_urx_rts_sw_val(&mut self) -> CR_URX_RTS_SW_VAL_W<3> {
+        CR_URX_RTS_SW_VAL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

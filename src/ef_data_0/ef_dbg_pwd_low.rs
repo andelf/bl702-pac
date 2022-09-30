@@ -35,43 +35,22 @@ impl From<crate::W<EF_DBG_PWD_LOW_SPEC>> for W {
     }
 }
 #[doc = "Field `ef_dbg_pwd_low` reader - "]
-pub struct EF_DBG_PWD_LOW_R(crate::FieldReader<u32, u32>);
-impl EF_DBG_PWD_LOW_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        EF_DBG_PWD_LOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_DBG_PWD_LOW_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EF_DBG_PWD_LOW_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `ef_dbg_pwd_low` writer - "]
-pub struct EF_DBG_PWD_LOW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EF_DBG_PWD_LOW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type EF_DBG_PWD_LOW_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EF_DBG_PWD_LOW_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn ef_dbg_pwd_low(&self) -> EF_DBG_PWD_LOW_R {
-        EF_DBG_PWD_LOW_R::new((self.bits & 0xffff_ffff) as u32)
+        EF_DBG_PWD_LOW_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn ef_dbg_pwd_low(&mut self) -> EF_DBG_PWD_LOW_W {
-        EF_DBG_PWD_LOW_W { w: self }
+    pub fn ef_dbg_pwd_low(&mut self) -> EF_DBG_PWD_LOW_W<0> {
+        EF_DBG_PWD_LOW_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

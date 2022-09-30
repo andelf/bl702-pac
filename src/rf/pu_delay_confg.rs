@@ -34,188 +34,83 @@ impl From<crate::W<PU_DELAY_CONFG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_reset_width` reader - "]
-pub struct ADPLL_RESET_WIDTH_R(crate::FieldReader<u8, u8>);
-impl ADPLL_RESET_WIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_RESET_WIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_RESET_WIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_reset_width` writer - "]
-pub struct ADPLL_RESET_WIDTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_RESET_WIDTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 20)) | ((value as u32 & 0x03) << 20);
-        self.w
-    }
-}
-#[doc = "Field `lo_reset_width` reader - "]
-pub struct LO_RESET_WIDTH_R(crate::FieldReader<u8, u8>);
-impl LO_RESET_WIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_RESET_WIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_RESET_WIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_reset_width` writer - "]
-pub struct LO_RESET_WIDTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LO_RESET_WIDTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 16)) | ((value as u32 & 0x03) << 16);
-        self.w
-    }
-}
-#[doc = "Field `lo_reset_delay` reader - "]
-pub struct LO_RESET_DELAY_R(crate::FieldReader<u8, u8>);
-impl LO_RESET_DELAY_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_RESET_DELAY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_RESET_DELAY_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_reset_delay` writer - "]
-pub struct LO_RESET_DELAY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LO_RESET_DELAY_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 12)) | ((value as u32 & 0x03) << 12);
-        self.w
-    }
-}
-#[doc = "Field `pud_delay` reader - "]
-pub struct PUD_DELAY_R(crate::FieldReader<u8, u8>);
-impl PUD_DELAY_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PUD_DELAY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PUD_DELAY_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pud_delay` writer - "]
-pub struct PUD_DELAY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PUD_DELAY_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
 #[doc = "Field `ppu_lead` reader - "]
-pub struct PPU_LEAD_R(crate::FieldReader<u8, u8>);
-impl PPU_LEAD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PPU_LEAD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PPU_LEAD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PPU_LEAD_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `ppu_lead` writer - "]
-pub struct PPU_LEAD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PPU_LEAD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type PPU_LEAD_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PU_DELAY_CONFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `pud_delay` reader - "]
+pub type PUD_DELAY_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pud_delay` writer - "]
+pub type PUD_DELAY_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PU_DELAY_CONFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lo_reset_delay` reader - "]
+pub type LO_RESET_DELAY_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lo_reset_delay` writer - "]
+pub type LO_RESET_DELAY_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PU_DELAY_CONFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lo_reset_width` reader - "]
+pub type LO_RESET_WIDTH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lo_reset_width` writer - "]
+pub type LO_RESET_WIDTH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PU_DELAY_CONFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_reset_width` reader - "]
+pub type ADPLL_RESET_WIDTH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_reset_width` writer - "]
+pub type ADPLL_RESET_WIDTH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PU_DELAY_CONFG_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 20:21"]
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn adpll_reset_width(&self) -> ADPLL_RESET_WIDTH_R {
-        ADPLL_RESET_WIDTH_R::new(((self.bits >> 20) & 0x03) as u8)
-    }
-    #[doc = "Bits 16:17"]
-    #[inline(always)]
-    pub fn lo_reset_width(&self) -> LO_RESET_WIDTH_R {
-        LO_RESET_WIDTH_R::new(((self.bits >> 16) & 0x03) as u8)
-    }
-    #[doc = "Bits 12:13"]
-    #[inline(always)]
-    pub fn lo_reset_delay(&self) -> LO_RESET_DELAY_R {
-        LO_RESET_DELAY_R::new(((self.bits >> 12) & 0x03) as u8)
+    pub fn ppu_lead(&self) -> PPU_LEAD_R {
+        PPU_LEAD_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
     pub fn pud_delay(&self) -> PUD_DELAY_R {
-        PUD_DELAY_R::new(((self.bits >> 4) & 0x03) as u8)
-    }
-    #[doc = "Bits 0:1"]
-    #[inline(always)]
-    pub fn ppu_lead(&self) -> PPU_LEAD_R {
-        PPU_LEAD_R::new((self.bits & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 20:21"]
-    #[inline(always)]
-    pub fn adpll_reset_width(&mut self) -> ADPLL_RESET_WIDTH_W {
-        ADPLL_RESET_WIDTH_W { w: self }
-    }
-    #[doc = "Bits 16:17"]
-    #[inline(always)]
-    pub fn lo_reset_width(&mut self) -> LO_RESET_WIDTH_W {
-        LO_RESET_WIDTH_W { w: self }
+        PUD_DELAY_R::new(((self.bits >> 4) & 3) as u8)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
-    pub fn lo_reset_delay(&mut self) -> LO_RESET_DELAY_W {
-        LO_RESET_DELAY_W { w: self }
+    pub fn lo_reset_delay(&self) -> LO_RESET_DELAY_R {
+        LO_RESET_DELAY_R::new(((self.bits >> 12) & 3) as u8)
+    }
+    #[doc = "Bits 16:17"]
+    #[inline(always)]
+    pub fn lo_reset_width(&self) -> LO_RESET_WIDTH_R {
+        LO_RESET_WIDTH_R::new(((self.bits >> 16) & 3) as u8)
+    }
+    #[doc = "Bits 20:21"]
+    #[inline(always)]
+    pub fn adpll_reset_width(&self) -> ADPLL_RESET_WIDTH_R {
+        ADPLL_RESET_WIDTH_R::new(((self.bits >> 20) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn ppu_lead(&mut self) -> PPU_LEAD_W<0> {
+        PPU_LEAD_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn pud_delay(&mut self) -> PUD_DELAY_W {
-        PUD_DELAY_W { w: self }
+    pub fn pud_delay(&mut self) -> PUD_DELAY_W<4> {
+        PUD_DELAY_W::new(self)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 12:13"]
     #[inline(always)]
-    pub fn ppu_lead(&mut self) -> PPU_LEAD_W {
-        PPU_LEAD_W { w: self }
+    pub fn lo_reset_delay(&mut self) -> LO_RESET_DELAY_W<12> {
+        LO_RESET_DELAY_W::new(self)
+    }
+    #[doc = "Bits 16:17"]
+    #[inline(always)]
+    pub fn lo_reset_width(&mut self) -> LO_RESET_WIDTH_W<16> {
+        LO_RESET_WIDTH_W::new(self)
+    }
+    #[doc = "Bits 20:21"]
+    #[inline(always)]
+    pub fn adpll_reset_width(&mut self) -> ADPLL_RESET_WIDTH_W<20> {
+        ADPLL_RESET_WIDTH_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

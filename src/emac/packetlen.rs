@@ -34,80 +34,36 @@ impl From<crate::W<PACKETLEN_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MINFL` reader - "]
-pub struct MINFL_R(crate::FieldReader<u16, u16>);
-impl MINFL_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        MINFL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MINFL_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `MINFL` writer - "]
-pub struct MINFL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MINFL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `MAXFL` reader - "]
-pub struct MAXFL_R(crate::FieldReader<u16, u16>);
-impl MAXFL_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        MAXFL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MAXFL_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type MAXFL_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `MAXFL` writer - "]
-pub struct MAXFL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MAXFL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type MAXFL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PACKETLEN_SPEC, u16, u16, 16, O>;
+#[doc = "Field `MINFL` reader - "]
+pub type MINFL_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `MINFL` writer - "]
+pub type MINFL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PACKETLEN_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn minfl(&self) -> MINFL_R {
-        MINFL_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn maxfl(&self) -> MAXFL_R {
         MAXFL_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn minfl(&mut self) -> MINFL_W {
-        MINFL_W { w: self }
+    pub fn minfl(&self) -> MINFL_R {
+        MINFL_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn maxfl(&mut self) -> MAXFL_W {
-        MAXFL_W { w: self }
+    pub fn maxfl(&mut self) -> MAXFL_W<0> {
+        MAXFL_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn minfl(&mut self) -> MINFL_W<16> {
+        MINFL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

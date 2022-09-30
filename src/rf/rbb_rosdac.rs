@@ -34,152 +34,66 @@ impl From<crate::W<RBB_ROSDAC_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rosdac_i` reader - "]
-pub struct ROSDAC_I_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_I_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_I_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_i` writer - "]
-pub struct ROSDAC_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 24)) | ((value as u32 & 0x3f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `rosdac_q` reader - "]
-pub struct ROSDAC_Q_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_Q_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_Q_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_q` writer - "]
-pub struct ROSDAC_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_Q_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 16)) | ((value as u32 & 0x3f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `rosdac_i_hw` reader - "]
-pub struct ROSDAC_I_HW_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_I_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_I_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_I_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_i_hw` writer - "]
-pub struct ROSDAC_I_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_I_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 8)) | ((value as u32 & 0x3f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `rosdac_q_hw` reader - "]
-pub struct ROSDAC_Q_HW_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_Q_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_Q_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_Q_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ROSDAC_Q_HW_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rosdac_q_hw` writer - "]
-pub struct ROSDAC_Q_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_Q_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type ROSDAC_Q_HW_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_ROSDAC_SPEC, u8, u8, 6, O>;
+#[doc = "Field `rosdac_i_hw` reader - "]
+pub type ROSDAC_I_HW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rosdac_i_hw` writer - "]
+pub type ROSDAC_I_HW_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_ROSDAC_SPEC, u8, u8, 6, O>;
+#[doc = "Field `rosdac_q` reader - "]
+pub type ROSDAC_Q_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rosdac_q` writer - "]
+pub type ROSDAC_Q_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_ROSDAC_SPEC, u8, u8, 6, O>;
+#[doc = "Field `rosdac_i` reader - "]
+pub type ROSDAC_I_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rosdac_i` writer - "]
+pub type ROSDAC_I_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_ROSDAC_SPEC, u8, u8, 6, O>;
 impl R {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn rosdac_i(&self) -> ROSDAC_I_R {
-        ROSDAC_I_R::new(((self.bits >> 24) & 0x3f) as u8)
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn rosdac_q(&self) -> ROSDAC_Q_R {
-        ROSDAC_Q_R::new(((self.bits >> 16) & 0x3f) as u8)
+    pub fn rosdac_q_hw(&self) -> ROSDAC_Q_HW_R {
+        ROSDAC_Q_HW_R::new((self.bits & 0x3f) as u8)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
     pub fn rosdac_i_hw(&self) -> ROSDAC_I_HW_R {
         ROSDAC_I_HW_R::new(((self.bits >> 8) & 0x3f) as u8)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn rosdac_q_hw(&self) -> ROSDAC_Q_HW_R {
-        ROSDAC_Q_HW_R::new((self.bits & 0x3f) as u8)
+    pub fn rosdac_q(&self) -> ROSDAC_Q_R {
+        ROSDAC_Q_R::new(((self.bits >> 16) & 0x3f) as u8)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn rosdac_i(&self) -> ROSDAC_I_R {
+        ROSDAC_I_R::new(((self.bits >> 24) & 0x3f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn rosdac_i(&mut self) -> ROSDAC_I_W {
-        ROSDAC_I_W { w: self }
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn rosdac_q(&mut self) -> ROSDAC_Q_W {
-        ROSDAC_Q_W { w: self }
+    pub fn rosdac_q_hw(&mut self) -> ROSDAC_Q_HW_W<0> {
+        ROSDAC_Q_HW_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
-    pub fn rosdac_i_hw(&mut self) -> ROSDAC_I_HW_W {
-        ROSDAC_I_HW_W { w: self }
+    pub fn rosdac_i_hw(&mut self) -> ROSDAC_I_HW_W<8> {
+        ROSDAC_I_HW_W::new(self)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn rosdac_q_hw(&mut self) -> ROSDAC_Q_HW_W {
-        ROSDAC_Q_HW_W { w: self }
+    pub fn rosdac_q(&mut self) -> ROSDAC_Q_W<16> {
+        ROSDAC_Q_W::new(self)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn rosdac_i(&mut self) -> ROSDAC_I_W<24> {
+        ROSDAC_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

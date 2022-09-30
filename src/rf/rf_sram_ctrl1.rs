@@ -34,80 +34,38 @@ impl From<crate::W<RF_SRAM_CTRL1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rf_sram_addr_start` reader - "]
-pub struct RF_SRAM_ADDR_START_R(crate::FieldReader<u16, u16>);
-impl RF_SRAM_ADDR_START_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RF_SRAM_ADDR_START_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_SRAM_ADDR_START_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_sram_addr_start` writer - "]
-pub struct RF_SRAM_ADDR_START_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_SRAM_ADDR_START_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `rf_sram_addr_end` reader - "]
-pub struct RF_SRAM_ADDR_END_R(crate::FieldReader<u16, u16>);
-impl RF_SRAM_ADDR_END_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        RF_SRAM_ADDR_END_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_SRAM_ADDR_END_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RF_SRAM_ADDR_END_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `rf_sram_addr_end` writer - "]
-pub struct RF_SRAM_ADDR_END_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_SRAM_ADDR_END_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type RF_SRAM_ADDR_END_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SRAM_CTRL1_SPEC, u16, u16, 16, O>;
+#[doc = "Field `rf_sram_addr_start` reader - "]
+pub type RF_SRAM_ADDR_START_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `rf_sram_addr_start` writer - "]
+pub type RF_SRAM_ADDR_START_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SRAM_CTRL1_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn rf_sram_addr_start(&self) -> RF_SRAM_ADDR_START_R {
-        RF_SRAM_ADDR_START_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn rf_sram_addr_end(&self) -> RF_SRAM_ADDR_END_R {
         RF_SRAM_ADDR_END_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn rf_sram_addr_start(&mut self) -> RF_SRAM_ADDR_START_W {
-        RF_SRAM_ADDR_START_W { w: self }
+    pub fn rf_sram_addr_start(&self) -> RF_SRAM_ADDR_START_R {
+        RF_SRAM_ADDR_START_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn rf_sram_addr_end(&mut self) -> RF_SRAM_ADDR_END_W {
-        RF_SRAM_ADDR_END_W { w: self }
+    pub fn rf_sram_addr_end(&mut self) -> RF_SRAM_ADDR_END_W<0> {
+        RF_SRAM_ADDR_END_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn rf_sram_addr_start(&mut self) -> RF_SRAM_ADDR_START_W<16> {
+        RF_SRAM_ADDR_START_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

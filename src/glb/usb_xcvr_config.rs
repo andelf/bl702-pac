@@ -34,424 +34,173 @@ impl From<crate::W<USB_XCVR_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `usb_slewrate_p_rise` reader - "]
-pub struct USB_SLEWRATE_P_RISE_R(crate::FieldReader<u8, u8>);
-impl USB_SLEWRATE_P_RISE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_SLEWRATE_P_RISE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_SLEWRATE_P_RISE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_slewrate_p_rise` writer - "]
-pub struct USB_SLEWRATE_P_RISE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_SLEWRATE_P_RISE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 28)) | ((value as u32 & 0x07) << 28);
-        self.w
-    }
-}
-#[doc = "Field `usb_slewrate_p_fall` reader - "]
-pub struct USB_SLEWRATE_P_FALL_R(crate::FieldReader<u8, u8>);
-impl USB_SLEWRATE_P_FALL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_SLEWRATE_P_FALL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_SLEWRATE_P_FALL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_slewrate_p_fall` writer - "]
-pub struct USB_SLEWRATE_P_FALL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_SLEWRATE_P_FALL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 24)) | ((value as u32 & 0x07) << 24);
-        self.w
-    }
-}
-#[doc = "Field `usb_slewrate_m_rise` reader - "]
-pub struct USB_SLEWRATE_M_RISE_R(crate::FieldReader<u8, u8>);
-impl USB_SLEWRATE_M_RISE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_SLEWRATE_M_RISE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_SLEWRATE_M_RISE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_slewrate_m_rise` writer - "]
-pub struct USB_SLEWRATE_M_RISE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_SLEWRATE_M_RISE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 20)) | ((value as u32 & 0x07) << 20);
-        self.w
-    }
-}
-#[doc = "Field `usb_slewrate_m_fall` reader - "]
-pub struct USB_SLEWRATE_M_FALL_R(crate::FieldReader<u8, u8>);
-impl USB_SLEWRATE_M_FALL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_SLEWRATE_M_FALL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_SLEWRATE_M_FALL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_slewrate_m_fall` writer - "]
-pub struct USB_SLEWRATE_M_FALL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_SLEWRATE_M_FALL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 16)) | ((value as u32 & 0x07) << 16);
-        self.w
-    }
-}
-#[doc = "Field `usb_res_pullup_tune` reader - "]
-pub struct USB_RES_PULLUP_TUNE_R(crate::FieldReader<u8, u8>);
-impl USB_RES_PULLUP_TUNE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_RES_PULLUP_TUNE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_RES_PULLUP_TUNE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_res_pullup_tune` writer - "]
-pub struct USB_RES_PULLUP_TUNE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_RES_PULLUP_TUNE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 12)) | ((value as u32 & 0x07) << 12);
-        self.w
-    }
-}
-#[doc = "Field `reg_usb_use_ctrl` reader - "]
-pub struct REG_USB_USE_CTRL_R(crate::FieldReader<bool, bool>);
-impl REG_USB_USE_CTRL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_USB_USE_CTRL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_USB_USE_CTRL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_usb_use_ctrl` writer - "]
-pub struct REG_USB_USE_CTRL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_USB_USE_CTRL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 11)) | ((value as u32 & 0x01) << 11);
-        self.w
-    }
-}
-#[doc = "Field `usb_str_drv` reader - "]
-pub struct USB_STR_DRV_R(crate::FieldReader<u8, u8>);
-impl USB_STR_DRV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_STR_DRV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_STR_DRV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_str_drv` writer - "]
-pub struct USB_STR_DRV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_STR_DRV_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 8)) | ((value as u32 & 0x07) << 8);
-        self.w
-    }
-}
-#[doc = "Field `reg_usb_use_xcvr` reader - "]
-pub struct REG_USB_USE_XCVR_R(crate::FieldReader<bool, bool>);
-impl REG_USB_USE_XCVR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_USB_USE_XCVR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_USB_USE_XCVR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_usb_use_xcvr` writer - "]
-pub struct REG_USB_USE_XCVR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_USB_USE_XCVR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `usb_bd_vth` reader - "]
-pub struct USB_BD_VTH_R(crate::FieldReader<u8, u8>);
-impl USB_BD_VTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_BD_VTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_BD_VTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_bd_vth` writer - "]
-pub struct USB_BD_VTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_BD_VTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
-#[doc = "Field `usb_v_hys_p` reader - "]
-pub struct USB_V_HYS_P_R(crate::FieldReader<u8, u8>);
-impl USB_V_HYS_P_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_V_HYS_P_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_V_HYS_P_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `usb_v_hys_p` writer - "]
-pub struct USB_V_HYS_P_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_V_HYS_P_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 2)) | ((value as u32 & 0x03) << 2);
-        self.w
-    }
-}
 #[doc = "Field `usb_v_hys_m` reader - "]
-pub struct USB_V_HYS_M_R(crate::FieldReader<u8, u8>);
-impl USB_V_HYS_M_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        USB_V_HYS_M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for USB_V_HYS_M_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type USB_V_HYS_M_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `usb_v_hys_m` writer - "]
-pub struct USB_V_HYS_M_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> USB_V_HYS_M_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type USB_V_HYS_M_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `usb_v_hys_p` reader - "]
+pub type USB_V_HYS_P_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_v_hys_p` writer - "]
+pub type USB_V_HYS_P_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `usb_bd_vth` reader - "]
+pub type USB_BD_VTH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_bd_vth` writer - "]
+pub type USB_BD_VTH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `reg_usb_use_xcvr` reader - "]
+pub type REG_USB_USE_XCVR_R = crate::BitReader<bool>;
+#[doc = "Field `reg_usb_use_xcvr` writer - "]
+pub type REG_USB_USE_XCVR_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, USB_XCVR_CONFIG_SPEC, bool, O>;
+#[doc = "Field `usb_str_drv` reader - "]
+pub type USB_STR_DRV_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_str_drv` writer - "]
+pub type USB_STR_DRV_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `reg_usb_use_ctrl` reader - "]
+pub type REG_USB_USE_CTRL_R = crate::BitReader<bool>;
+#[doc = "Field `reg_usb_use_ctrl` writer - "]
+pub type REG_USB_USE_CTRL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, USB_XCVR_CONFIG_SPEC, bool, O>;
+#[doc = "Field `usb_res_pullup_tune` reader - "]
+pub type USB_RES_PULLUP_TUNE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_res_pullup_tune` writer - "]
+pub type USB_RES_PULLUP_TUNE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `usb_slewrate_m_fall` reader - "]
+pub type USB_SLEWRATE_M_FALL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_slewrate_m_fall` writer - "]
+pub type USB_SLEWRATE_M_FALL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `usb_slewrate_m_rise` reader - "]
+pub type USB_SLEWRATE_M_RISE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_slewrate_m_rise` writer - "]
+pub type USB_SLEWRATE_M_RISE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `usb_slewrate_p_fall` reader - "]
+pub type USB_SLEWRATE_P_FALL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_slewrate_p_fall` writer - "]
+pub type USB_SLEWRATE_P_FALL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `usb_slewrate_p_rise` reader - "]
+pub type USB_SLEWRATE_P_RISE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `usb_slewrate_p_rise` writer - "]
+pub type USB_SLEWRATE_P_RISE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_XCVR_CONFIG_SPEC, u8, u8, 3, O>;
 impl R {
-    #[doc = "Bits 28:30"]
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn usb_slewrate_p_rise(&self) -> USB_SLEWRATE_P_RISE_R {
-        USB_SLEWRATE_P_RISE_R::new(((self.bits >> 28) & 0x07) as u8)
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn usb_slewrate_p_fall(&self) -> USB_SLEWRATE_P_FALL_R {
-        USB_SLEWRATE_P_FALL_R::new(((self.bits >> 24) & 0x07) as u8)
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn usb_slewrate_m_rise(&self) -> USB_SLEWRATE_M_RISE_R {
-        USB_SLEWRATE_M_RISE_R::new(((self.bits >> 20) & 0x07) as u8)
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn usb_slewrate_m_fall(&self) -> USB_SLEWRATE_M_FALL_R {
-        USB_SLEWRATE_M_FALL_R::new(((self.bits >> 16) & 0x07) as u8)
-    }
-    #[doc = "Bits 12:14"]
-    #[inline(always)]
-    pub fn usb_res_pullup_tune(&self) -> USB_RES_PULLUP_TUNE_R {
-        USB_RES_PULLUP_TUNE_R::new(((self.bits >> 12) & 0x07) as u8)
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn reg_usb_use_ctrl(&self) -> REG_USB_USE_CTRL_R {
-        REG_USB_USE_CTRL_R::new(((self.bits >> 11) & 0x01) != 0)
-    }
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn usb_str_drv(&self) -> USB_STR_DRV_R {
-        USB_STR_DRV_R::new(((self.bits >> 8) & 0x07) as u8)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn reg_usb_use_xcvr(&self) -> REG_USB_USE_XCVR_R {
-        REG_USB_USE_XCVR_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn usb_bd_vth(&self) -> USB_BD_VTH_R {
-        USB_BD_VTH_R::new(((self.bits >> 4) & 0x07) as u8)
+    pub fn usb_v_hys_m(&self) -> USB_V_HYS_M_R {
+        USB_V_HYS_M_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
     pub fn usb_v_hys_p(&self) -> USB_V_HYS_P_R {
-        USB_V_HYS_P_R::new(((self.bits >> 2) & 0x03) as u8)
-    }
-    #[doc = "Bits 0:1"]
-    #[inline(always)]
-    pub fn usb_v_hys_m(&self) -> USB_V_HYS_M_R {
-        USB_V_HYS_M_R::new((self.bits & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 28:30"]
-    #[inline(always)]
-    pub fn usb_slewrate_p_rise(&mut self) -> USB_SLEWRATE_P_RISE_W {
-        USB_SLEWRATE_P_RISE_W { w: self }
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn usb_slewrate_p_fall(&mut self) -> USB_SLEWRATE_P_FALL_W {
-        USB_SLEWRATE_P_FALL_W { w: self }
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn usb_slewrate_m_rise(&mut self) -> USB_SLEWRATE_M_RISE_W {
-        USB_SLEWRATE_M_RISE_W { w: self }
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn usb_slewrate_m_fall(&mut self) -> USB_SLEWRATE_M_FALL_W {
-        USB_SLEWRATE_M_FALL_W { w: self }
-    }
-    #[doc = "Bits 12:14"]
-    #[inline(always)]
-    pub fn usb_res_pullup_tune(&mut self) -> USB_RES_PULLUP_TUNE_W {
-        USB_RES_PULLUP_TUNE_W { w: self }
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn reg_usb_use_ctrl(&mut self) -> REG_USB_USE_CTRL_W {
-        REG_USB_USE_CTRL_W { w: self }
-    }
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn usb_str_drv(&mut self) -> USB_STR_DRV_W {
-        USB_STR_DRV_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn reg_usb_use_xcvr(&mut self) -> REG_USB_USE_XCVR_W {
-        REG_USB_USE_XCVR_W { w: self }
+        USB_V_HYS_P_R::new(((self.bits >> 2) & 3) as u8)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
-    pub fn usb_bd_vth(&mut self) -> USB_BD_VTH_W {
-        USB_BD_VTH_W { w: self }
+    pub fn usb_bd_vth(&self) -> USB_BD_VTH_R {
+        USB_BD_VTH_R::new(((self.bits >> 4) & 7) as u8)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn reg_usb_use_xcvr(&self) -> REG_USB_USE_XCVR_R {
+        REG_USB_USE_XCVR_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn usb_str_drv(&self) -> USB_STR_DRV_R {
+        USB_STR_DRV_R::new(((self.bits >> 8) & 7) as u8)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn reg_usb_use_ctrl(&self) -> REG_USB_USE_CTRL_R {
+        REG_USB_USE_CTRL_R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bits 12:14"]
+    #[inline(always)]
+    pub fn usb_res_pullup_tune(&self) -> USB_RES_PULLUP_TUNE_R {
+        USB_RES_PULLUP_TUNE_R::new(((self.bits >> 12) & 7) as u8)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn usb_slewrate_m_fall(&self) -> USB_SLEWRATE_M_FALL_R {
+        USB_SLEWRATE_M_FALL_R::new(((self.bits >> 16) & 7) as u8)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn usb_slewrate_m_rise(&self) -> USB_SLEWRATE_M_RISE_R {
+        USB_SLEWRATE_M_RISE_R::new(((self.bits >> 20) & 7) as u8)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn usb_slewrate_p_fall(&self) -> USB_SLEWRATE_P_FALL_R {
+        USB_SLEWRATE_P_FALL_R::new(((self.bits >> 24) & 7) as u8)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn usb_slewrate_p_rise(&self) -> USB_SLEWRATE_P_RISE_R {
+        USB_SLEWRATE_P_RISE_R::new(((self.bits >> 28) & 7) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn usb_v_hys_m(&mut self) -> USB_V_HYS_M_W<0> {
+        USB_V_HYS_M_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn usb_v_hys_p(&mut self) -> USB_V_HYS_P_W {
-        USB_V_HYS_P_W { w: self }
+    pub fn usb_v_hys_p(&mut self) -> USB_V_HYS_P_W<2> {
+        USB_V_HYS_P_W::new(self)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 4:6"]
     #[inline(always)]
-    pub fn usb_v_hys_m(&mut self) -> USB_V_HYS_M_W {
-        USB_V_HYS_M_W { w: self }
+    pub fn usb_bd_vth(&mut self) -> USB_BD_VTH_W<4> {
+        USB_BD_VTH_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn reg_usb_use_xcvr(&mut self) -> REG_USB_USE_XCVR_W<7> {
+        REG_USB_USE_XCVR_W::new(self)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn usb_str_drv(&mut self) -> USB_STR_DRV_W<8> {
+        USB_STR_DRV_W::new(self)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn reg_usb_use_ctrl(&mut self) -> REG_USB_USE_CTRL_W<11> {
+        REG_USB_USE_CTRL_W::new(self)
+    }
+    #[doc = "Bits 12:14"]
+    #[inline(always)]
+    pub fn usb_res_pullup_tune(&mut self) -> USB_RES_PULLUP_TUNE_W<12> {
+        USB_RES_PULLUP_TUNE_W::new(self)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn usb_slewrate_m_fall(&mut self) -> USB_SLEWRATE_M_FALL_W<16> {
+        USB_SLEWRATE_M_FALL_W::new(self)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn usb_slewrate_m_rise(&mut self) -> USB_SLEWRATE_M_RISE_W<20> {
+        USB_SLEWRATE_M_RISE_W::new(self)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn usb_slewrate_p_fall(&mut self) -> USB_SLEWRATE_P_FALL_W<24> {
+        USB_SLEWRATE_P_FALL_W::new(self)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn usb_slewrate_p_rise(&mut self) -> USB_SLEWRATE_P_RISE_W<28> {
+        USB_SLEWRATE_P_RISE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

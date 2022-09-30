@@ -34,116 +34,51 @@ impl From<crate::W<QDEC_VALUE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `spl_val` reader - "]
-pub struct SPL_VAL_R(crate::FieldReader<u8, u8>);
-impl SPL_VAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SPL_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SPL_VAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `spl_val` writer - "]
-pub struct SPL_VAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SPL_VAL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 28)) | ((value as u32 & 0x03) << 28);
-        self.w
-    }
-}
-#[doc = "Field `acc2_val` reader - "]
-pub struct ACC2_VAL_R(crate::FieldReader<u8, u8>);
-impl ACC2_VAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACC2_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACC2_VAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acc2_val` writer - "]
-pub struct ACC2_VAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ACC2_VAL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 16)) | ((value as u32 & 0x0f) << 16);
-        self.w
-    }
-}
 #[doc = "Field `acc1_val` reader - "]
-pub struct ACC1_VAL_R(crate::FieldReader<u16, u16>);
-impl ACC1_VAL_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        ACC1_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACC1_VAL_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ACC1_VAL_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `acc1_val` writer - "]
-pub struct ACC1_VAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ACC1_VAL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07ff) | (value as u32 & 0x07ff);
-        self.w
-    }
-}
+pub type ACC1_VAL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, QDEC_VALUE_SPEC, u16, u16, 11, O>;
+#[doc = "Field `acc2_val` reader - "]
+pub type ACC2_VAL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `acc2_val` writer - "]
+pub type ACC2_VAL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, QDEC_VALUE_SPEC, u8, u8, 4, O>;
+#[doc = "Field `spl_val` reader - "]
+pub type SPL_VAL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `spl_val` writer - "]
+pub type SPL_VAL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, QDEC_VALUE_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 28:29"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn spl_val(&self) -> SPL_VAL_R {
-        SPL_VAL_R::new(((self.bits >> 28) & 0x03) as u8)
+    pub fn acc1_val(&self) -> ACC1_VAL_R {
+        ACC1_VAL_R::new((self.bits & 0x07ff) as u16)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
     pub fn acc2_val(&self) -> ACC2_VAL_R {
         ACC2_VAL_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 28:29"]
     #[inline(always)]
-    pub fn acc1_val(&self) -> ACC1_VAL_R {
-        ACC1_VAL_R::new((self.bits & 0x07ff) as u16)
+    pub fn spl_val(&self) -> SPL_VAL_R {
+        SPL_VAL_R::new(((self.bits >> 28) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 28:29"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn spl_val(&mut self) -> SPL_VAL_W {
-        SPL_VAL_W { w: self }
+    pub fn acc1_val(&mut self) -> ACC1_VAL_W<0> {
+        ACC1_VAL_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn acc2_val(&mut self) -> ACC2_VAL_W {
-        ACC2_VAL_W { w: self }
+    pub fn acc2_val(&mut self) -> ACC2_VAL_W<16> {
+        ACC2_VAL_W::new(self)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 28:29"]
     #[inline(always)]
-    pub fn acc1_val(&mut self) -> ACC1_VAL_W {
-        ACC1_VAL_W { w: self }
+    pub fn spl_val(&mut self) -> SPL_VAL_W<28> {
+        SPL_VAL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

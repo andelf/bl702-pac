@@ -34,208 +34,81 @@ impl From<crate::W<LOTPM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `lotpm_hfp_mash1_sel` reader - "]
-pub struct LOTPM_HFP_MASH1_SEL_R(crate::FieldReader<bool, bool>);
-impl LOTPM_HFP_MASH1_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LOTPM_HFP_MASH1_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LOTPM_HFP_MASH1_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lotpm_hfp_mash1_sel` writer - "]
-pub struct LOTPM_HFP_MASH1_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LOTPM_HFP_MASH1_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `lotpm_hfp_polarity` reader - "]
-pub struct LOTPM_HFP_POLARITY_R(crate::FieldReader<bool, bool>);
-impl LOTPM_HFP_POLARITY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LOTPM_HFP_POLARITY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LOTPM_HFP_POLARITY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lotpm_hfp_polarity` writer - "]
-pub struct LOTPM_HFP_POLARITY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LOTPM_HFP_POLARITY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `lotpm_hfp_delay_fref` reader - "]
-pub struct LOTPM_HFP_DELAY_FREF_R(crate::FieldReader<u8, u8>);
-impl LOTPM_HFP_DELAY_FREF_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LOTPM_HFP_DELAY_FREF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LOTPM_HFP_DELAY_FREF_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lotpm_hfp_delay_fref` writer - "]
-pub struct LOTPM_HFP_DELAY_FREF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LOTPM_HFP_DELAY_FREF_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `lotpm_hfp_delay_fmash` reader - "]
-pub struct LOTPM_HFP_DELAY_FMASH_R(crate::FieldReader<u8, u8>);
-impl LOTPM_HFP_DELAY_FMASH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LOTPM_HFP_DELAY_FMASH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LOTPM_HFP_DELAY_FMASH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lotpm_hfp_delay_fmash` writer - "]
-pub struct LOTPM_HFP_DELAY_FMASH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LOTPM_HFP_DELAY_FMASH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 4)) | ((value as u32 & 0x0f) << 4);
-        self.w
-    }
-}
 #[doc = "Field `lotpm_lfp_delay_sel` reader - "]
-pub struct LOTPM_LFP_DELAY_SEL_R(crate::FieldReader<u8, u8>);
-impl LOTPM_LFP_DELAY_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LOTPM_LFP_DELAY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LOTPM_LFP_DELAY_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type LOTPM_LFP_DELAY_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `lotpm_lfp_delay_sel` writer - "]
-pub struct LOTPM_LFP_DELAY_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LOTPM_LFP_DELAY_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type LOTPM_LFP_DELAY_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LOTPM_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lotpm_hfp_delay_fmash` reader - "]
+pub type LOTPM_HFP_DELAY_FMASH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lotpm_hfp_delay_fmash` writer - "]
+pub type LOTPM_HFP_DELAY_FMASH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LOTPM_SPEC, u8, u8, 4, O>;
+#[doc = "Field `lotpm_hfp_delay_fref` reader - "]
+pub type LOTPM_HFP_DELAY_FREF_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lotpm_hfp_delay_fref` writer - "]
+pub type LOTPM_HFP_DELAY_FREF_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LOTPM_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lotpm_hfp_polarity` reader - "]
+pub type LOTPM_HFP_POLARITY_R = crate::BitReader<bool>;
+#[doc = "Field `lotpm_hfp_polarity` writer - "]
+pub type LOTPM_HFP_POLARITY_W<'a, const O: u8> = crate::BitWriter<'a, u32, LOTPM_SPEC, bool, O>;
+#[doc = "Field `lotpm_hfp_mash1_sel` reader - "]
+pub type LOTPM_HFP_MASH1_SEL_R = crate::BitReader<bool>;
+#[doc = "Field `lotpm_hfp_mash1_sel` writer - "]
+pub type LOTPM_HFP_MASH1_SEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, LOTPM_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 16"]
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn lotpm_hfp_mash1_sel(&self) -> LOTPM_HFP_MASH1_SEL_R {
-        LOTPM_HFP_MASH1_SEL_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn lotpm_hfp_polarity(&self) -> LOTPM_HFP_POLARITY_R {
-        LOTPM_HFP_POLARITY_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bits 8:9"]
-    #[inline(always)]
-    pub fn lotpm_hfp_delay_fref(&self) -> LOTPM_HFP_DELAY_FREF_R {
-        LOTPM_HFP_DELAY_FREF_R::new(((self.bits >> 8) & 0x03) as u8)
+    pub fn lotpm_lfp_delay_sel(&self) -> LOTPM_LFP_DELAY_SEL_R {
+        LOTPM_LFP_DELAY_SEL_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
     pub fn lotpm_hfp_delay_fmash(&self) -> LOTPM_HFP_DELAY_FMASH_R {
         LOTPM_HFP_DELAY_FMASH_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 8:9"]
     #[inline(always)]
-    pub fn lotpm_lfp_delay_sel(&self) -> LOTPM_LFP_DELAY_SEL_R {
-        LOTPM_LFP_DELAY_SEL_R::new((self.bits & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn lotpm_hfp_mash1_sel(&mut self) -> LOTPM_HFP_MASH1_SEL_W {
-        LOTPM_HFP_MASH1_SEL_W { w: self }
+    pub fn lotpm_hfp_delay_fref(&self) -> LOTPM_HFP_DELAY_FREF_R {
+        LOTPM_HFP_DELAY_FREF_R::new(((self.bits >> 8) & 3) as u8)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn lotpm_hfp_polarity(&mut self) -> LOTPM_HFP_POLARITY_W {
-        LOTPM_HFP_POLARITY_W { w: self }
+    pub fn lotpm_hfp_polarity(&self) -> LOTPM_HFP_POLARITY_R {
+        LOTPM_HFP_POLARITY_R::new(((self.bits >> 12) & 1) != 0)
     }
-    #[doc = "Bits 8:9"]
+    #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn lotpm_hfp_delay_fref(&mut self) -> LOTPM_HFP_DELAY_FREF_W {
-        LOTPM_HFP_DELAY_FREF_W { w: self }
+    pub fn lotpm_hfp_mash1_sel(&self) -> LOTPM_HFP_MASH1_SEL_R {
+        LOTPM_HFP_MASH1_SEL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn lotpm_lfp_delay_sel(&mut self) -> LOTPM_LFP_DELAY_SEL_W<0> {
+        LOTPM_LFP_DELAY_SEL_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
-    pub fn lotpm_hfp_delay_fmash(&mut self) -> LOTPM_HFP_DELAY_FMASH_W {
-        LOTPM_HFP_DELAY_FMASH_W { w: self }
+    pub fn lotpm_hfp_delay_fmash(&mut self) -> LOTPM_HFP_DELAY_FMASH_W<4> {
+        LOTPM_HFP_DELAY_FMASH_W::new(self)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 8:9"]
     #[inline(always)]
-    pub fn lotpm_lfp_delay_sel(&mut self) -> LOTPM_LFP_DELAY_SEL_W {
-        LOTPM_LFP_DELAY_SEL_W { w: self }
+    pub fn lotpm_hfp_delay_fref(&mut self) -> LOTPM_HFP_DELAY_FREF_W<8> {
+        LOTPM_HFP_DELAY_FREF_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn lotpm_hfp_polarity(&mut self) -> LOTPM_HFP_POLARITY_W<12> {
+        LOTPM_HFP_POLARITY_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn lotpm_hfp_mash1_sel(&mut self) -> LOTPM_HFP_MASH1_SEL_W<16> {
+        LOTPM_HFP_MASH1_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

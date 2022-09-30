@@ -34,80 +34,38 @@ impl From<crate::W<LO_FCW3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `tx_freq_mod_hp` reader - "]
-pub struct TX_FREQ_MOD_HP_R(crate::FieldReader<u16, u16>);
-impl TX_FREQ_MOD_HP_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TX_FREQ_MOD_HP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FREQ_MOD_HP_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_freq_mod_hp` writer - "]
-pub struct TX_FREQ_MOD_HP_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FREQ_MOD_HP_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03ff << 16)) | ((value as u32 & 0x03ff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `tx_freq_mod_lp` reader - "]
-pub struct TX_FREQ_MOD_LP_R(crate::FieldReader<u16, u16>);
-impl TX_FREQ_MOD_LP_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TX_FREQ_MOD_LP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FREQ_MOD_LP_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TX_FREQ_MOD_LP_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `tx_freq_mod_lp` writer - "]
-pub struct TX_FREQ_MOD_LP_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FREQ_MOD_LP_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type TX_FREQ_MOD_LP_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LO_FCW3_SPEC, u16, u16, 12, O>;
+#[doc = "Field `tx_freq_mod_hp` reader - "]
+pub type TX_FREQ_MOD_HP_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `tx_freq_mod_hp` writer - "]
+pub type TX_FREQ_MOD_HP_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LO_FCW3_SPEC, u16, u16, 10, O>;
 impl R {
-    #[doc = "Bits 16:25"]
-    #[inline(always)]
-    pub fn tx_freq_mod_hp(&self) -> TX_FREQ_MOD_HP_R {
-        TX_FREQ_MOD_HP_R::new(((self.bits >> 16) & 0x03ff) as u16)
-    }
     #[doc = "Bits 0:11"]
     #[inline(always)]
     pub fn tx_freq_mod_lp(&self) -> TX_FREQ_MOD_LP_R {
         TX_FREQ_MOD_LP_R::new((self.bits & 0x0fff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:25"]
     #[inline(always)]
-    pub fn tx_freq_mod_hp(&mut self) -> TX_FREQ_MOD_HP_W {
-        TX_FREQ_MOD_HP_W { w: self }
+    pub fn tx_freq_mod_hp(&self) -> TX_FREQ_MOD_HP_R {
+        TX_FREQ_MOD_HP_R::new(((self.bits >> 16) & 0x03ff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn tx_freq_mod_lp(&mut self) -> TX_FREQ_MOD_LP_W {
-        TX_FREQ_MOD_LP_W { w: self }
+    pub fn tx_freq_mod_lp(&mut self) -> TX_FREQ_MOD_LP_W<0> {
+        TX_FREQ_MOD_LP_W::new(self)
+    }
+    #[doc = "Bits 16:25"]
+    #[inline(always)]
+    pub fn tx_freq_mod_hp(&mut self) -> TX_FREQ_MOD_HP_W<16> {
+        TX_FREQ_MOD_HP_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,80 +34,38 @@ impl From<crate::W<MJPEG_YUV_MEM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_uv_mem_hblk` reader - "]
-pub struct REG_UV_MEM_HBLK_R(crate::FieldReader<u16, u16>);
-impl REG_UV_MEM_HBLK_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_UV_MEM_HBLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_UV_MEM_HBLK_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_uv_mem_hblk` writer - "]
-pub struct REG_UV_MEM_HBLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_UV_MEM_HBLK_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1fff << 16)) | ((value as u32 & 0x1fff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `reg_yy_mem_hblk` reader - "]
-pub struct REG_YY_MEM_HBLK_R(crate::FieldReader<u16, u16>);
-impl REG_YY_MEM_HBLK_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_YY_MEM_HBLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_YY_MEM_HBLK_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_YY_MEM_HBLK_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `reg_yy_mem_hblk` writer - "]
-pub struct REG_YY_MEM_HBLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_YY_MEM_HBLK_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1fff) | (value as u32 & 0x1fff);
-        self.w
-    }
-}
+pub type REG_YY_MEM_HBLK_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_YUV_MEM_SPEC, u16, u16, 13, O>;
+#[doc = "Field `reg_uv_mem_hblk` reader - "]
+pub type REG_UV_MEM_HBLK_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `reg_uv_mem_hblk` writer - "]
+pub type REG_UV_MEM_HBLK_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_YUV_MEM_SPEC, u16, u16, 13, O>;
 impl R {
-    #[doc = "Bits 16:28"]
-    #[inline(always)]
-    pub fn reg_uv_mem_hblk(&self) -> REG_UV_MEM_HBLK_R {
-        REG_UV_MEM_HBLK_R::new(((self.bits >> 16) & 0x1fff) as u16)
-    }
     #[doc = "Bits 0:12"]
     #[inline(always)]
     pub fn reg_yy_mem_hblk(&self) -> REG_YY_MEM_HBLK_R {
         REG_YY_MEM_HBLK_R::new((self.bits & 0x1fff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:28"]
     #[inline(always)]
-    pub fn reg_uv_mem_hblk(&mut self) -> REG_UV_MEM_HBLK_W {
-        REG_UV_MEM_HBLK_W { w: self }
+    pub fn reg_uv_mem_hblk(&self) -> REG_UV_MEM_HBLK_R {
+        REG_UV_MEM_HBLK_R::new(((self.bits >> 16) & 0x1fff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:12"]
     #[inline(always)]
-    pub fn reg_yy_mem_hblk(&mut self) -> REG_YY_MEM_HBLK_W {
-        REG_YY_MEM_HBLK_W { w: self }
+    pub fn reg_yy_mem_hblk(&mut self) -> REG_YY_MEM_HBLK_W<0> {
+        REG_YY_MEM_HBLK_W::new(self)
+    }
+    #[doc = "Bits 16:28"]
+    #[inline(always)]
+    pub fn reg_uv_mem_hblk(&mut self) -> REG_UV_MEM_HBLK_W<16> {
+        REG_UV_MEM_HBLK_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

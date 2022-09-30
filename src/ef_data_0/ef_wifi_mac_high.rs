@@ -35,43 +35,22 @@ impl From<crate::W<EF_WIFI_MAC_HIGH_SPEC>> for W {
     }
 }
 #[doc = "Field `ef_wifi_mac_high` reader - "]
-pub struct EF_WIFI_MAC_HIGH_R(crate::FieldReader<u32, u32>);
-impl EF_WIFI_MAC_HIGH_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        EF_WIFI_MAC_HIGH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_WIFI_MAC_HIGH_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EF_WIFI_MAC_HIGH_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `ef_wifi_mac_high` writer - "]
-pub struct EF_WIFI_MAC_HIGH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EF_WIFI_MAC_HIGH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type EF_WIFI_MAC_HIGH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EF_WIFI_MAC_HIGH_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn ef_wifi_mac_high(&self) -> EF_WIFI_MAC_HIGH_R {
-        EF_WIFI_MAC_HIGH_R::new((self.bits & 0xffff_ffff) as u32)
+        EF_WIFI_MAC_HIGH_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn ef_wifi_mac_high(&mut self) -> EF_WIFI_MAC_HIGH_W {
-        EF_WIFI_MAC_HIGH_W { w: self }
+    pub fn ef_wifi_mac_high(&mut self) -> EF_WIFI_MAC_HIGH_W<0> {
+        EF_WIFI_MAC_HIGH_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

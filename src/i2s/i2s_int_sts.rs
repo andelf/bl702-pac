@@ -34,422 +34,134 @@ impl From<crate::W<I2S_INT_STS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_i2s_fer_en` reader - "]
-pub struct CR_I2S_FER_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_FER_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_FER_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_FER_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_fer_en` writer - "]
-pub struct CR_I2S_FER_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_FER_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 26)) | ((value as u32 & 0x01) << 26);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_rxf_en` reader - "]
-pub struct CR_I2S_RXF_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_RXF_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_RXF_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_RXF_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_rxf_en` writer - "]
-pub struct CR_I2S_RXF_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_RXF_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 25)) | ((value as u32 & 0x01) << 25);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_txf_en` reader - "]
-pub struct CR_I2S_TXF_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_TXF_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_TXF_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_TXF_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_txf_en` writer - "]
-pub struct CR_I2S_TXF_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_TXF_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_fer_mask` reader - "]
-pub struct CR_I2S_FER_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_FER_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_FER_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_FER_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_fer_mask` writer - "]
-pub struct CR_I2S_FER_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_FER_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_rxf_mask` reader - "]
-pub struct CR_I2S_RXF_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_RXF_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_RXF_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_RXF_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_rxf_mask` writer - "]
-pub struct CR_I2S_RXF_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_RXF_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_txf_mask` reader - "]
-pub struct CR_I2S_TXF_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_TXF_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_TXF_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_TXF_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_txf_mask` writer - "]
-pub struct CR_I2S_TXF_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_TXF_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `i2s_fer_int` reader - "]
-pub struct I2S_FER_INT_R(crate::FieldReader<bool, bool>);
-impl I2S_FER_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2S_FER_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2S_FER_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2s_fer_int` writer - "]
-pub struct I2S_FER_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> I2S_FER_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `i2s_rxf_int` reader - "]
-pub struct I2S_RXF_INT_R(crate::FieldReader<bool, bool>);
-impl I2S_RXF_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2S_RXF_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2S_RXF_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2s_rxf_int` writer - "]
-pub struct I2S_RXF_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> I2S_RXF_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `i2s_txf_int` reader - "]
-pub struct I2S_TXF_INT_R(crate::FieldReader<bool, bool>);
-impl I2S_TXF_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2S_TXF_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2S_TXF_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type I2S_TXF_INT_R = crate::BitReader<bool>;
 #[doc = "Field `i2s_txf_int` writer - "]
-pub struct I2S_TXF_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> I2S_TXF_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type I2S_TXF_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `i2s_rxf_int` reader - "]
+pub type I2S_RXF_INT_R = crate::BitReader<bool>;
+#[doc = "Field `i2s_rxf_int` writer - "]
+pub type I2S_RXF_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `i2s_fer_int` reader - "]
+pub type I2S_FER_INT_R = crate::BitReader<bool>;
+#[doc = "Field `i2s_fer_int` writer - "]
+pub type I2S_FER_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_txf_mask` reader - "]
+pub type CR_I2S_TXF_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_txf_mask` writer - "]
+pub type CR_I2S_TXF_MASK_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_rxf_mask` reader - "]
+pub type CR_I2S_RXF_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_rxf_mask` writer - "]
+pub type CR_I2S_RXF_MASK_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_fer_mask` reader - "]
+pub type CR_I2S_FER_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_fer_mask` writer - "]
+pub type CR_I2S_FER_MASK_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_txf_en` reader - "]
+pub type CR_I2S_TXF_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_txf_en` writer - "]
+pub type CR_I2S_TXF_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_rxf_en` reader - "]
+pub type CR_I2S_RXF_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_rxf_en` writer - "]
+pub type CR_I2S_RXF_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_fer_en` reader - "]
+pub type CR_I2S_FER_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_fer_en` writer - "]
+pub type CR_I2S_FER_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_INT_STS_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 26"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_i2s_fer_en(&self) -> CR_I2S_FER_EN_R {
-        CR_I2S_FER_EN_R::new(((self.bits >> 26) & 0x01) != 0)
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn cr_i2s_rxf_en(&self) -> CR_I2S_RXF_EN_R {
-        CR_I2S_RXF_EN_R::new(((self.bits >> 25) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn cr_i2s_txf_en(&self) -> CR_I2S_TXF_EN_R {
-        CR_I2S_TXF_EN_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn cr_i2s_fer_mask(&self) -> CR_I2S_FER_MASK_R {
-        CR_I2S_FER_MASK_R::new(((self.bits >> 10) & 0x01) != 0)
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn cr_i2s_rxf_mask(&self) -> CR_I2S_RXF_MASK_R {
-        CR_I2S_RXF_MASK_R::new(((self.bits >> 9) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn cr_i2s_txf_mask(&self) -> CR_I2S_TXF_MASK_R {
-        CR_I2S_TXF_MASK_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn i2s_fer_int(&self) -> I2S_FER_INT_R {
-        I2S_FER_INT_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn i2s_txf_int(&self) -> I2S_TXF_INT_R {
+        I2S_TXF_INT_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn i2s_rxf_int(&self) -> I2S_RXF_INT_R {
-        I2S_RXF_INT_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn i2s_txf_int(&self) -> I2S_TXF_INT_R {
-        I2S_TXF_INT_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn cr_i2s_fer_en(&mut self) -> CR_I2S_FER_EN_W {
-        CR_I2S_FER_EN_W { w: self }
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn cr_i2s_rxf_en(&mut self) -> CR_I2S_RXF_EN_W {
-        CR_I2S_RXF_EN_W { w: self }
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn cr_i2s_txf_en(&mut self) -> CR_I2S_TXF_EN_W {
-        CR_I2S_TXF_EN_W { w: self }
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn cr_i2s_fer_mask(&mut self) -> CR_I2S_FER_MASK_W {
-        CR_I2S_FER_MASK_W { w: self }
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn cr_i2s_rxf_mask(&mut self) -> CR_I2S_RXF_MASK_W {
-        CR_I2S_RXF_MASK_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn cr_i2s_txf_mask(&mut self) -> CR_I2S_TXF_MASK_W {
-        CR_I2S_TXF_MASK_W { w: self }
+        I2S_RXF_INT_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_fer_int(&mut self) -> I2S_FER_INT_W {
-        I2S_FER_INT_W { w: self }
+    pub fn i2s_fer_int(&self) -> I2S_FER_INT_R {
+        I2S_FER_INT_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn cr_i2s_txf_mask(&self) -> CR_I2S_TXF_MASK_R {
+        CR_I2S_TXF_MASK_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn cr_i2s_rxf_mask(&self) -> CR_I2S_RXF_MASK_R {
+        CR_I2S_RXF_MASK_R::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn cr_i2s_fer_mask(&self) -> CR_I2S_FER_MASK_R {
+        CR_I2S_FER_MASK_R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_i2s_txf_en(&self) -> CR_I2S_TXF_EN_R {
+        CR_I2S_TXF_EN_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn cr_i2s_rxf_en(&self) -> CR_I2S_RXF_EN_R {
+        CR_I2S_RXF_EN_R::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn cr_i2s_fer_en(&self) -> CR_I2S_FER_EN_R {
+        CR_I2S_FER_EN_R::new(((self.bits >> 26) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn i2s_txf_int(&mut self) -> I2S_TXF_INT_W<0> {
+        I2S_TXF_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn i2s_rxf_int(&mut self) -> I2S_RXF_INT_W {
-        I2S_RXF_INT_W { w: self }
+    pub fn i2s_rxf_int(&mut self) -> I2S_RXF_INT_W<1> {
+        I2S_RXF_INT_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn i2s_txf_int(&mut self) -> I2S_TXF_INT_W {
-        I2S_TXF_INT_W { w: self }
+    pub fn i2s_fer_int(&mut self) -> I2S_FER_INT_W<2> {
+        I2S_FER_INT_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn cr_i2s_txf_mask(&mut self) -> CR_I2S_TXF_MASK_W<8> {
+        CR_I2S_TXF_MASK_W::new(self)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn cr_i2s_rxf_mask(&mut self) -> CR_I2S_RXF_MASK_W<9> {
+        CR_I2S_RXF_MASK_W::new(self)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn cr_i2s_fer_mask(&mut self) -> CR_I2S_FER_MASK_W<10> {
+        CR_I2S_FER_MASK_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_i2s_txf_en(&mut self) -> CR_I2S_TXF_EN_W<24> {
+        CR_I2S_TXF_EN_W::new(self)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn cr_i2s_rxf_en(&mut self) -> CR_I2S_RXF_EN_W<25> {
+        CR_I2S_RXF_EN_W::new(self)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn cr_i2s_fer_en(&mut self) -> CR_I2S_FER_EN_W<26> {
+        CR_I2S_FER_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

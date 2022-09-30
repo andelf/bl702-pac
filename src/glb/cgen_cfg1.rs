@@ -34,80 +34,36 @@ impl From<crate::W<CGEN_CFG1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cgen_s1a` reader - "]
-pub struct CGEN_S1A_R(crate::FieldReader<u16, u16>);
-impl CGEN_S1A_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CGEN_S1A_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S1A_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s1a` writer - "]
-pub struct CGEN_S1A_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S1A_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `cgen_s1` reader - "]
-pub struct CGEN_S1_R(crate::FieldReader<u16, u16>);
-impl CGEN_S1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CGEN_S1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CGEN_S1_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cgen_s1` writer - "]
-pub struct CGEN_S1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type CGEN_S1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CGEN_CFG1_SPEC, u16, u16, 16, O>;
+#[doc = "Field `cgen_s1a` reader - "]
+pub type CGEN_S1A_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `cgen_s1a` writer - "]
+pub type CGEN_S1A_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CGEN_CFG1_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn cgen_s1a(&self) -> CGEN_S1A_R {
-        CGEN_S1A_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn cgen_s1(&self) -> CGEN_S1_R {
         CGEN_S1_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn cgen_s1a(&mut self) -> CGEN_S1A_W {
-        CGEN_S1A_W { w: self }
+    pub fn cgen_s1a(&self) -> CGEN_S1A_R {
+        CGEN_S1A_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn cgen_s1(&mut self) -> CGEN_S1_W {
-        CGEN_S1_W { w: self }
+    pub fn cgen_s1(&mut self) -> CGEN_S1_W<0> {
+        CGEN_S1_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn cgen_s1a(&mut self) -> CGEN_S1A_W<16> {
+        CGEN_S1A_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,116 +34,52 @@ impl From<crate::W<PDS_STAT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ro_pds_pll_state` reader - "]
-pub struct RO_PDS_PLL_STATE_R(crate::FieldReader<u8, u8>);
-impl RO_PDS_PLL_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RO_PDS_PLL_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_PLL_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ro_pds_pll_state` writer - "]
-pub struct RO_PDS_PLL_STATE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_PLL_STATE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 16)) | ((value as u32 & 0x03) << 16);
-        self.w
-    }
-}
-#[doc = "Field `ro_pds_rf_state` reader - "]
-pub struct RO_PDS_RF_STATE_R(crate::FieldReader<u8, u8>);
-impl RO_PDS_RF_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RO_PDS_RF_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_RF_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ro_pds_rf_state` writer - "]
-pub struct RO_PDS_RF_STATE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_RF_STATE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `ro_pds_state` reader - "]
-pub struct RO_PDS_STATE_R(crate::FieldReader<u8, u8>);
-impl RO_PDS_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RO_PDS_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RO_PDS_STATE_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `ro_pds_state` writer - "]
-pub struct RO_PDS_STATE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_STATE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | (value as u32 & 0x0f);
-        self.w
-    }
-}
+pub type RO_PDS_STATE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PDS_STAT_SPEC, u8, u8, 4, O>;
+#[doc = "Field `ro_pds_rf_state` reader - "]
+pub type RO_PDS_RF_STATE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ro_pds_rf_state` writer - "]
+pub type RO_PDS_RF_STATE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_STAT_SPEC, u8, u8, 4, O>;
+#[doc = "Field `ro_pds_pll_state` reader - "]
+pub type RO_PDS_PLL_STATE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ro_pds_pll_state` writer - "]
+pub type RO_PDS_PLL_STATE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_STAT_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 16:17"]
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn ro_pds_pll_state(&self) -> RO_PDS_PLL_STATE_R {
-        RO_PDS_PLL_STATE_R::new(((self.bits >> 16) & 0x03) as u8)
+    pub fn ro_pds_state(&self) -> RO_PDS_STATE_R {
+        RO_PDS_STATE_R::new((self.bits & 0x0f) as u8)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
     pub fn ro_pds_rf_state(&self) -> RO_PDS_RF_STATE_R {
         RO_PDS_RF_STATE_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 16:17"]
     #[inline(always)]
-    pub fn ro_pds_state(&self) -> RO_PDS_STATE_R {
-        RO_PDS_STATE_R::new((self.bits & 0x0f) as u8)
+    pub fn ro_pds_pll_state(&self) -> RO_PDS_PLL_STATE_R {
+        RO_PDS_PLL_STATE_R::new(((self.bits >> 16) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 16:17"]
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn ro_pds_pll_state(&mut self) -> RO_PDS_PLL_STATE_W {
-        RO_PDS_PLL_STATE_W { w: self }
+    pub fn ro_pds_state(&mut self) -> RO_PDS_STATE_W<0> {
+        RO_PDS_STATE_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn ro_pds_rf_state(&mut self) -> RO_PDS_RF_STATE_W {
-        RO_PDS_RF_STATE_W { w: self }
+    pub fn ro_pds_rf_state(&mut self) -> RO_PDS_RF_STATE_W<8> {
+        RO_PDS_RF_STATE_W::new(self)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 16:17"]
     #[inline(always)]
-    pub fn ro_pds_state(&mut self) -> RO_PDS_STATE_W {
-        RO_PDS_STATE_W { w: self }
+    pub fn ro_pds_pll_state(&mut self) -> RO_PDS_PLL_STATE_W<16> {
+        RO_PDS_PLL_STATE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -35,43 +35,22 @@ impl From<crate::W<SE_AES_0_KEY_SEL_0_SPEC>> for W {
     }
 }
 #[doc = "Field `se_aes_0_key_sel_0` reader - "]
-pub struct SE_AES_0_KEY_SEL_0_R(crate::FieldReader<u8, u8>);
-impl SE_AES_0_KEY_SEL_0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_AES_0_KEY_SEL_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_KEY_SEL_0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SE_AES_0_KEY_SEL_0_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `se_aes_0_key_sel_0` writer - "]
-pub struct SE_AES_0_KEY_SEL_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SE_AES_0_KEY_SEL_0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type SE_AES_0_KEY_SEL_0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SE_AES_0_KEY_SEL_0_SPEC, u8, u8, 2, O>;
 impl R {
     #[doc = "Bits 0:1"]
     #[inline(always)]
     pub fn se_aes_0_key_sel_0(&self) -> SE_AES_0_KEY_SEL_0_R {
-        SE_AES_0_KEY_SEL_0_R::new((self.bits & 0x03) as u8)
+        SE_AES_0_KEY_SEL_0_R::new((self.bits & 3) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn se_aes_0_key_sel_0(&mut self) -> SE_AES_0_KEY_SEL_0_W {
-        SE_AES_0_KEY_SEL_0_W { w: self }
+    pub fn se_aes_0_key_sel_0(&mut self) -> SE_AES_0_KEY_SEL_0_W<0> {
+        SE_AES_0_KEY_SEL_0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

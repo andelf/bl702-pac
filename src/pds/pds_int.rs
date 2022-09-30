@@ -34,484 +34,167 @@ impl From<crate::W<PDS_INT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ro_pds_wakeup_event` reader - "]
-pub struct RO_PDS_WAKEUP_EVENT_R(crate::FieldReader<u8, u8>);
-impl RO_PDS_WAKEUP_EVENT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RO_PDS_WAKEUP_EVENT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_WAKEUP_EVENT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ro_pds_wakeup_event` writer - "]
-pub struct RO_PDS_WAKEUP_EVENT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_WAKEUP_EVENT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 24)) | ((value as u32 & 0xff) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_wakeup_src_en` reader - "]
-pub struct CR_PDS_WAKEUP_SRC_EN_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_WAKEUP_SRC_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_WAKEUP_SRC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_WAKEUP_SRC_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_wakeup_src_en` writer - "]
-pub struct CR_PDS_WAKEUP_SRC_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_WAKEUP_SRC_EN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_int_clr` reader - "]
-pub struct CR_PDS_INT_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_INT_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_INT_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_INT_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_int_clr` writer - "]
-pub struct CR_PDS_INT_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_INT_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 15)) | ((value as u32 & 0x01) << 15);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_pll_done_int_mask` reader - "]
-pub struct CR_PDS_PLL_DONE_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_PLL_DONE_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_PLL_DONE_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_PLL_DONE_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_pll_done_int_mask` writer - "]
-pub struct CR_PDS_PLL_DONE_INT_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_PLL_DONE_INT_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 11)) | ((value as u32 & 0x01) << 11);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_rf_done_int_mask` reader - "]
-pub struct CR_PDS_RF_DONE_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_RF_DONE_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_RF_DONE_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_RF_DONE_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_rf_done_int_mask` writer - "]
-pub struct CR_PDS_RF_DONE_INT_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_RF_DONE_INT_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_wake_int_mask` reader - "]
-pub struct CR_PDS_WAKE_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_WAKE_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_WAKE_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_WAKE_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_wake_int_mask` writer - "]
-pub struct CR_PDS_WAKE_INT_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_WAKE_INT_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `pds_clr_reset_event` reader - "]
-pub struct PDS_CLR_RESET_EVENT_R(crate::FieldReader<bool, bool>);
-impl PDS_CLR_RESET_EVENT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PDS_CLR_RESET_EVENT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_CLR_RESET_EVENT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_clr_reset_event` writer - "]
-pub struct PDS_CLR_RESET_EVENT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_CLR_RESET_EVENT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `pds_reset_event` reader - "]
-pub struct PDS_RESET_EVENT_R(crate::FieldReader<u8, u8>);
-impl PDS_RESET_EVENT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PDS_RESET_EVENT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_RESET_EVENT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_reset_event` writer - "]
-pub struct PDS_RESET_EVENT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_RESET_EVENT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
-#[doc = "Field `ro_pds_pll_done_int` reader - "]
-pub struct RO_PDS_PLL_DONE_INT_R(crate::FieldReader<bool, bool>);
-impl RO_PDS_PLL_DONE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RO_PDS_PLL_DONE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_PLL_DONE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ro_pds_pll_done_int` writer - "]
-pub struct RO_PDS_PLL_DONE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_PLL_DONE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `ro_pds_rf_done_int` reader - "]
-pub struct RO_PDS_RF_DONE_INT_R(crate::FieldReader<bool, bool>);
-impl RO_PDS_RF_DONE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RO_PDS_RF_DONE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_RF_DONE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ro_pds_rf_done_int` writer - "]
-pub struct RO_PDS_RF_DONE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_RF_DONE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
 #[doc = "Field `ro_pds_wake_int` reader - "]
-pub struct RO_PDS_WAKE_INT_R(crate::FieldReader<bool, bool>);
-impl RO_PDS_WAKE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RO_PDS_WAKE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RO_PDS_WAKE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RO_PDS_WAKE_INT_R = crate::BitReader<bool>;
 #[doc = "Field `ro_pds_wake_int` writer - "]
-pub struct RO_PDS_WAKE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RO_PDS_WAKE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type RO_PDS_WAKE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `ro_pds_rf_done_int` reader - "]
+pub type RO_PDS_RF_DONE_INT_R = crate::BitReader<bool>;
+#[doc = "Field `ro_pds_rf_done_int` writer - "]
+pub type RO_PDS_RF_DONE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `ro_pds_pll_done_int` reader - "]
+pub type RO_PDS_PLL_DONE_INT_R = crate::BitReader<bool>;
+#[doc = "Field `ro_pds_pll_done_int` writer - "]
+pub type RO_PDS_PLL_DONE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `pds_reset_event` reader - "]
+pub type PDS_RESET_EVENT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pds_reset_event` writer - "]
+pub type PDS_RESET_EVENT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_INT_SPEC, u8, u8, 3, O>;
+#[doc = "Field `pds_clr_reset_event` reader - "]
+pub type PDS_CLR_RESET_EVENT_R = crate::BitReader<bool>;
+#[doc = "Field `pds_clr_reset_event` writer - "]
+pub type PDS_CLR_RESET_EVENT_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `cr_pds_wake_int_mask` reader - "]
+pub type CR_PDS_WAKE_INT_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_wake_int_mask` writer - "]
+pub type CR_PDS_WAKE_INT_MASK_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `cr_pds_rf_done_int_mask` reader - "]
+pub type CR_PDS_RF_DONE_INT_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_rf_done_int_mask` writer - "]
+pub type CR_PDS_RF_DONE_INT_MASK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `cr_pds_pll_done_int_mask` reader - "]
+pub type CR_PDS_PLL_DONE_INT_MASK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_pll_done_int_mask` writer - "]
+pub type CR_PDS_PLL_DONE_INT_MASK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `cr_pds_int_clr` reader - "]
+pub type CR_PDS_INT_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_int_clr` writer - "]
+pub type CR_PDS_INT_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_INT_SPEC, bool, O>;
+#[doc = "Field `cr_pds_wakeup_src_en` reader - "]
+pub type CR_PDS_WAKEUP_SRC_EN_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_wakeup_src_en` writer - "]
+pub type CR_PDS_WAKEUP_SRC_EN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_INT_SPEC, u8, u8, 8, O>;
+#[doc = "Field `ro_pds_wakeup_event` reader - "]
+pub type RO_PDS_WAKEUP_EVENT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ro_pds_wakeup_event` writer - "]
+pub type RO_PDS_WAKEUP_EVENT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_INT_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn ro_pds_wakeup_event(&self) -> RO_PDS_WAKEUP_EVENT_R {
-        RO_PDS_WAKEUP_EVENT_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn ro_pds_wake_int(&self) -> RO_PDS_WAKE_INT_R {
+        RO_PDS_WAKE_INT_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 2"]
+    #[inline(always)]
+    pub fn ro_pds_rf_done_int(&self) -> RO_PDS_RF_DONE_INT_R {
+        RO_PDS_RF_DONE_INT_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn ro_pds_pll_done_int(&self) -> RO_PDS_PLL_DONE_INT_R {
+        RO_PDS_PLL_DONE_INT_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn pds_reset_event(&self) -> PDS_RESET_EVENT_R {
+        PDS_RESET_EVENT_R::new(((self.bits >> 4) & 7) as u8)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn pds_clr_reset_event(&self) -> PDS_CLR_RESET_EVENT_R {
+        PDS_CLR_RESET_EVENT_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn cr_pds_wake_int_mask(&self) -> CR_PDS_WAKE_INT_MASK_R {
+        CR_PDS_WAKE_INT_MASK_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn cr_pds_rf_done_int_mask(&self) -> CR_PDS_RF_DONE_INT_MASK_R {
+        CR_PDS_RF_DONE_INT_MASK_R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn cr_pds_pll_done_int_mask(&self) -> CR_PDS_PLL_DONE_INT_MASK_R {
+        CR_PDS_PLL_DONE_INT_MASK_R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn cr_pds_int_clr(&self) -> CR_PDS_INT_CLR_R {
+        CR_PDS_INT_CLR_R::new(((self.bits >> 15) & 1) != 0)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
     pub fn cr_pds_wakeup_src_en(&self) -> CR_PDS_WAKEUP_SRC_EN_R {
         CR_PDS_WAKEUP_SRC_EN_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bit 15"]
+    #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn cr_pds_int_clr(&self) -> CR_PDS_INT_CLR_R {
-        CR_PDS_INT_CLR_R::new(((self.bits >> 15) & 0x01) != 0)
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn cr_pds_pll_done_int_mask(&self) -> CR_PDS_PLL_DONE_INT_MASK_R {
-        CR_PDS_PLL_DONE_INT_MASK_R::new(((self.bits >> 11) & 0x01) != 0)
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn cr_pds_rf_done_int_mask(&self) -> CR_PDS_RF_DONE_INT_MASK_R {
-        CR_PDS_RF_DONE_INT_MASK_R::new(((self.bits >> 10) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn cr_pds_wake_int_mask(&self) -> CR_PDS_WAKE_INT_MASK_R {
-        CR_PDS_WAKE_INT_MASK_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn pds_clr_reset_event(&self) -> PDS_CLR_RESET_EVENT_R {
-        PDS_CLR_RESET_EVENT_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn pds_reset_event(&self) -> PDS_RESET_EVENT_R {
-        PDS_RESET_EVENT_R::new(((self.bits >> 4) & 0x07) as u8)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn ro_pds_pll_done_int(&self) -> RO_PDS_PLL_DONE_INT_R {
-        RO_PDS_PLL_DONE_INT_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn ro_pds_rf_done_int(&self) -> RO_PDS_RF_DONE_INT_R {
-        RO_PDS_RF_DONE_INT_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn ro_pds_wake_int(&self) -> RO_PDS_WAKE_INT_R {
-        RO_PDS_WAKE_INT_R::new((self.bits & 0x01) != 0)
+    pub fn ro_pds_wakeup_event(&self) -> RO_PDS_WAKEUP_EVENT_R {
+        RO_PDS_WAKEUP_EVENT_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn ro_pds_wakeup_event(&mut self) -> RO_PDS_WAKEUP_EVENT_W {
-        RO_PDS_WAKEUP_EVENT_W { w: self }
-    }
-    #[doc = "Bits 16:23"]
-    #[inline(always)]
-    pub fn cr_pds_wakeup_src_en(&mut self) -> CR_PDS_WAKEUP_SRC_EN_W {
-        CR_PDS_WAKEUP_SRC_EN_W { w: self }
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn cr_pds_int_clr(&mut self) -> CR_PDS_INT_CLR_W {
-        CR_PDS_INT_CLR_W { w: self }
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn cr_pds_pll_done_int_mask(&mut self) -> CR_PDS_PLL_DONE_INT_MASK_W {
-        CR_PDS_PLL_DONE_INT_MASK_W { w: self }
-    }
-    #[doc = "Bit 10"]
-    #[inline(always)]
-    pub fn cr_pds_rf_done_int_mask(&mut self) -> CR_PDS_RF_DONE_INT_MASK_W {
-        CR_PDS_RF_DONE_INT_MASK_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn cr_pds_wake_int_mask(&mut self) -> CR_PDS_WAKE_INT_MASK_W {
-        CR_PDS_WAKE_INT_MASK_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn pds_clr_reset_event(&mut self) -> PDS_CLR_RESET_EVENT_W {
-        PDS_CLR_RESET_EVENT_W { w: self }
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn pds_reset_event(&mut self) -> PDS_RESET_EVENT_W {
-        PDS_RESET_EVENT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn ro_pds_pll_done_int(&mut self) -> RO_PDS_PLL_DONE_INT_W {
-        RO_PDS_PLL_DONE_INT_W { w: self }
+    pub fn ro_pds_wake_int(&mut self) -> RO_PDS_WAKE_INT_W<0> {
+        RO_PDS_WAKE_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn ro_pds_rf_done_int(&mut self) -> RO_PDS_RF_DONE_INT_W {
-        RO_PDS_RF_DONE_INT_W { w: self }
+    pub fn ro_pds_rf_done_int(&mut self) -> RO_PDS_RF_DONE_INT_W<2> {
+        RO_PDS_RF_DONE_INT_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn ro_pds_wake_int(&mut self) -> RO_PDS_WAKE_INT_W {
-        RO_PDS_WAKE_INT_W { w: self }
+    pub fn ro_pds_pll_done_int(&mut self) -> RO_PDS_PLL_DONE_INT_W<3> {
+        RO_PDS_PLL_DONE_INT_W::new(self)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn pds_reset_event(&mut self) -> PDS_RESET_EVENT_W<4> {
+        PDS_RESET_EVENT_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn pds_clr_reset_event(&mut self) -> PDS_CLR_RESET_EVENT_W<7> {
+        PDS_CLR_RESET_EVENT_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn cr_pds_wake_int_mask(&mut self) -> CR_PDS_WAKE_INT_MASK_W<8> {
+        CR_PDS_WAKE_INT_MASK_W::new(self)
+    }
+    #[doc = "Bit 10"]
+    #[inline(always)]
+    pub fn cr_pds_rf_done_int_mask(&mut self) -> CR_PDS_RF_DONE_INT_MASK_W<10> {
+        CR_PDS_RF_DONE_INT_MASK_W::new(self)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn cr_pds_pll_done_int_mask(&mut self) -> CR_PDS_PLL_DONE_INT_MASK_W<11> {
+        CR_PDS_PLL_DONE_INT_MASK_W::new(self)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn cr_pds_int_clr(&mut self) -> CR_PDS_INT_CLR_W<15> {
+        CR_PDS_INT_CLR_W::new(self)
+    }
+    #[doc = "Bits 16:23"]
+    #[inline(always)]
+    pub fn cr_pds_wakeup_src_en(&mut self) -> CR_PDS_WAKEUP_SRC_EN_W<16> {
+        CR_PDS_WAKEUP_SRC_EN_W::new(self)
+    }
+    #[doc = "Bits 24:31"]
+    #[inline(always)]
+    pub fn ro_pds_wakeup_event(&mut self) -> RO_PDS_WAKEUP_EVENT_W<24> {
+        RO_PDS_WAKEUP_EVENT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

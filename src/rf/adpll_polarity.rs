@@ -34,192 +34,68 @@ impl From<crate::W<ADPLL_POLARITY_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_lp_polarity` reader - "]
-pub struct ADPLL_LP_POLARITY_R(crate::FieldReader<bool, bool>);
-impl ADPLL_LP_POLARITY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_LP_POLARITY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LP_POLARITY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lp_polarity` writer - "]
-pub struct ADPLL_LP_POLARITY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LP_POLARITY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `adpll_fcal_polarity` reader - "]
-pub struct ADPLL_FCAL_POLARITY_R(crate::FieldReader<bool, bool>);
-impl ADPLL_FCAL_POLARITY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_FCAL_POLARITY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_FCAL_POLARITY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_fcal_polarity` writer - "]
-pub struct ADPLL_FCAL_POLARITY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_FCAL_POLARITY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lms_polarity` reader - "]
-pub struct ADPLL_LMS_POLARITY_R(crate::FieldReader<bool, bool>);
-impl ADPLL_LMS_POLARITY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_LMS_POLARITY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LMS_POLARITY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lms_polarity` writer - "]
-pub struct ADPLL_LMS_POLARITY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LMS_POLARITY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
 #[doc = "Field `adpll_lp_mom_polarity` reader - "]
-pub struct ADPLL_LP_MOM_POLARITY_R(crate::FieldReader<bool, bool>);
-impl ADPLL_LP_MOM_POLARITY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_LP_MOM_POLARITY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LP_MOM_POLARITY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_LP_MOM_POLARITY_R = crate::BitReader<bool>;
 #[doc = "Field `adpll_lp_mom_polarity` writer - "]
-pub struct ADPLL_LP_MOM_POLARITY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LP_MOM_POLARITY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
+pub type ADPLL_LP_MOM_POLARITY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_POLARITY_SPEC, bool, O>;
+#[doc = "Field `adpll_lms_polarity` reader - "]
+pub type ADPLL_LMS_POLARITY_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_lms_polarity` writer - "]
+pub type ADPLL_LMS_POLARITY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_POLARITY_SPEC, bool, O>;
+#[doc = "Field `adpll_fcal_polarity` reader - "]
+pub type ADPLL_FCAL_POLARITY_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_fcal_polarity` writer - "]
+pub type ADPLL_FCAL_POLARITY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_POLARITY_SPEC, bool, O>;
+#[doc = "Field `adpll_lp_polarity` reader - "]
+pub type ADPLL_LP_POLARITY_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_lp_polarity` writer - "]
+pub type ADPLL_LP_POLARITY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_POLARITY_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 20"]
+    #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn adpll_lp_polarity(&self) -> ADPLL_LP_POLARITY_R {
-        ADPLL_LP_POLARITY_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn adpll_fcal_polarity(&self) -> ADPLL_FCAL_POLARITY_R {
-        ADPLL_FCAL_POLARITY_R::new(((self.bits >> 16) & 0x01) != 0)
+    pub fn adpll_lp_mom_polarity(&self) -> ADPLL_LP_MOM_POLARITY_R {
+        ADPLL_LP_MOM_POLARITY_R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
     pub fn adpll_lms_polarity(&self) -> ADPLL_LMS_POLARITY_R {
-        ADPLL_LMS_POLARITY_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn adpll_lp_mom_polarity(&self) -> ADPLL_LP_MOM_POLARITY_R {
-        ADPLL_LP_MOM_POLARITY_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn adpll_lp_polarity(&mut self) -> ADPLL_LP_POLARITY_W {
-        ADPLL_LP_POLARITY_W { w: self }
+        ADPLL_LMS_POLARITY_R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn adpll_fcal_polarity(&mut self) -> ADPLL_FCAL_POLARITY_W {
-        ADPLL_FCAL_POLARITY_W { w: self }
+    pub fn adpll_fcal_polarity(&self) -> ADPLL_FCAL_POLARITY_R {
+        ADPLL_FCAL_POLARITY_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn adpll_lp_polarity(&self) -> ADPLL_LP_POLARITY_R {
+        ADPLL_LP_POLARITY_R::new(((self.bits >> 20) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn adpll_lp_mom_polarity(&mut self) -> ADPLL_LP_MOM_POLARITY_W<8> {
+        ADPLL_LP_MOM_POLARITY_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn adpll_lms_polarity(&mut self) -> ADPLL_LMS_POLARITY_W {
-        ADPLL_LMS_POLARITY_W { w: self }
+    pub fn adpll_lms_polarity(&mut self) -> ADPLL_LMS_POLARITY_W<12> {
+        ADPLL_LMS_POLARITY_W::new(self)
     }
-    #[doc = "Bit 8"]
+    #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn adpll_lp_mom_polarity(&mut self) -> ADPLL_LP_MOM_POLARITY_W {
-        ADPLL_LP_MOM_POLARITY_W { w: self }
+    pub fn adpll_fcal_polarity(&mut self) -> ADPLL_FCAL_POLARITY_W<16> {
+        ADPLL_FCAL_POLARITY_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn adpll_lp_polarity(&mut self) -> ADPLL_LP_POLARITY_W<20> {
+        ADPLL_LP_POLARITY_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

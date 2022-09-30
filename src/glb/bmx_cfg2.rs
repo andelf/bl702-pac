@@ -34,254 +34,94 @@ impl From<crate::W<BMX_CFG2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `bmx_dbg_sel` reader - "]
-pub struct BMX_DBG_SEL_R(crate::FieldReader<u8, u8>);
-impl BMX_DBG_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        BMX_DBG_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_DBG_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_dbg_sel` writer - "]
-pub struct BMX_DBG_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BMX_DBG_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 28)) | ((value as u32 & 0x0f) << 28);
-        self.w
-    }
-}
-#[doc = "Field `reg_w_thre_l1c` reader - "]
-pub struct REG_W_THRE_L1C_R(crate::FieldReader<u8, u8>);
-impl REG_W_THRE_L1C_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_W_THRE_L1C_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_W_THRE_L1C_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_w_thre_l1c` writer - "]
-pub struct REG_W_THRE_L1C_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_W_THRE_L1C_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 10)) | ((value as u32 & 0x03) << 10);
-        self.w
-    }
-}
-#[doc = "Field `reg_w_thre_bmx` reader - "]
-pub struct REG_W_THRE_BMX_R(crate::FieldReader<u8, u8>);
-impl REG_W_THRE_BMX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_W_THRE_BMX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_W_THRE_BMX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_w_thre_bmx` writer - "]
-pub struct REG_W_THRE_BMX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_W_THRE_BMX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `bmx_err_tz` reader - "]
-pub struct BMX_ERR_TZ_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_TZ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_TZ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_TZ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_tz` writer - "]
-pub struct BMX_ERR_TZ_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BMX_ERR_TZ_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `bmx_err_dec` reader - "]
-pub struct BMX_ERR_DEC_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_DEC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_DEC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_DEC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_dec` writer - "]
-pub struct BMX_ERR_DEC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BMX_ERR_DEC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
 #[doc = "Field `bmx_err_addr_dis` reader - "]
-pub struct BMX_ERR_ADDR_DIS_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_ADDR_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_ADDR_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_ADDR_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type BMX_ERR_ADDR_DIS_R = crate::BitReader<bool>;
 #[doc = "Field `bmx_err_addr_dis` writer - "]
-pub struct BMX_ERR_ADDR_DIS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BMX_ERR_ADDR_DIS_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type BMX_ERR_ADDR_DIS_W<'a, const O: u8> = crate::BitWriter<'a, u32, BMX_CFG2_SPEC, bool, O>;
+#[doc = "Field `bmx_err_dec` reader - "]
+pub type BMX_ERR_DEC_R = crate::BitReader<bool>;
+#[doc = "Field `bmx_err_dec` writer - "]
+pub type BMX_ERR_DEC_W<'a, const O: u8> = crate::BitWriter<'a, u32, BMX_CFG2_SPEC, bool, O>;
+#[doc = "Field `bmx_err_tz` reader - "]
+pub type BMX_ERR_TZ_R = crate::BitReader<bool>;
+#[doc = "Field `bmx_err_tz` writer - "]
+pub type BMX_ERR_TZ_W<'a, const O: u8> = crate::BitWriter<'a, u32, BMX_CFG2_SPEC, bool, O>;
+#[doc = "Field `reg_w_thre_bmx` reader - "]
+pub type REG_W_THRE_BMX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `reg_w_thre_bmx` writer - "]
+pub type REG_W_THRE_BMX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, BMX_CFG2_SPEC, u8, u8, 2, O>;
+#[doc = "Field `reg_w_thre_l1c` reader - "]
+pub type REG_W_THRE_L1C_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `reg_w_thre_l1c` writer - "]
+pub type REG_W_THRE_L1C_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, BMX_CFG2_SPEC, u8, u8, 2, O>;
+#[doc = "Field `bmx_dbg_sel` reader - "]
+pub type BMX_DBG_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `bmx_dbg_sel` writer - "]
+pub type BMX_DBG_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, BMX_CFG2_SPEC, u8, u8, 4, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn bmx_err_addr_dis(&self) -> BMX_ERR_ADDR_DIS_R {
+        BMX_ERR_ADDR_DIS_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn bmx_err_dec(&self) -> BMX_ERR_DEC_R {
+        BMX_ERR_DEC_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn bmx_err_tz(&self) -> BMX_ERR_TZ_R {
+        BMX_ERR_TZ_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn reg_w_thre_bmx(&self) -> REG_W_THRE_BMX_R {
+        REG_W_THRE_BMX_R::new(((self.bits >> 8) & 3) as u8)
+    }
+    #[doc = "Bits 10:11"]
+    #[inline(always)]
+    pub fn reg_w_thre_l1c(&self) -> REG_W_THRE_L1C_R {
+        REG_W_THRE_L1C_R::new(((self.bits >> 10) & 3) as u8)
+    }
     #[doc = "Bits 28:31"]
     #[inline(always)]
     pub fn bmx_dbg_sel(&self) -> BMX_DBG_SEL_R {
         BMX_DBG_SEL_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
-    #[doc = "Bits 10:11"]
-    #[inline(always)]
-    pub fn reg_w_thre_l1c(&self) -> REG_W_THRE_L1C_R {
-        REG_W_THRE_L1C_R::new(((self.bits >> 10) & 0x03) as u8)
-    }
-    #[doc = "Bits 8:9"]
-    #[inline(always)]
-    pub fn reg_w_thre_bmx(&self) -> REG_W_THRE_BMX_R {
-        REG_W_THRE_BMX_R::new(((self.bits >> 8) & 0x03) as u8)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn bmx_err_tz(&self) -> BMX_ERR_TZ_R {
-        BMX_ERR_TZ_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn bmx_err_dec(&self) -> BMX_ERR_DEC_R {
-        BMX_ERR_DEC_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn bmx_err_addr_dis(&self) -> BMX_ERR_ADDR_DIS_R {
-        BMX_ERR_ADDR_DIS_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 28:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn bmx_dbg_sel(&mut self) -> BMX_DBG_SEL_W {
-        BMX_DBG_SEL_W { w: self }
-    }
-    #[doc = "Bits 10:11"]
-    #[inline(always)]
-    pub fn reg_w_thre_l1c(&mut self) -> REG_W_THRE_L1C_W {
-        REG_W_THRE_L1C_W { w: self }
-    }
-    #[doc = "Bits 8:9"]
-    #[inline(always)]
-    pub fn reg_w_thre_bmx(&mut self) -> REG_W_THRE_BMX_W {
-        REG_W_THRE_BMX_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn bmx_err_tz(&mut self) -> BMX_ERR_TZ_W {
-        BMX_ERR_TZ_W { w: self }
+    pub fn bmx_err_addr_dis(&mut self) -> BMX_ERR_ADDR_DIS_W<0> {
+        BMX_ERR_ADDR_DIS_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn bmx_err_dec(&mut self) -> BMX_ERR_DEC_W {
-        BMX_ERR_DEC_W { w: self }
+    pub fn bmx_err_dec(&mut self) -> BMX_ERR_DEC_W<4> {
+        BMX_ERR_DEC_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn bmx_err_addr_dis(&mut self) -> BMX_ERR_ADDR_DIS_W {
-        BMX_ERR_ADDR_DIS_W { w: self }
+    pub fn bmx_err_tz(&mut self) -> BMX_ERR_TZ_W<5> {
+        BMX_ERR_TZ_W::new(self)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn reg_w_thre_bmx(&mut self) -> REG_W_THRE_BMX_W<8> {
+        REG_W_THRE_BMX_W::new(self)
+    }
+    #[doc = "Bits 10:11"]
+    #[inline(always)]
+    pub fn reg_w_thre_l1c(&mut self) -> REG_W_THRE_L1C_W<10> {
+        REG_W_THRE_L1C_W::new(self)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn bmx_dbg_sel(&mut self) -> BMX_DBG_SEL_W<28> {
+        BMX_DBG_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

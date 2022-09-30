@@ -34,188 +34,83 @@ impl From<crate::W<RF_EXT_PA_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rf_ext_pa_rx` reader - "]
-pub struct RF_EXT_PA_RX_R(crate::FieldReader<u8, u8>);
-impl RF_EXT_PA_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_EXT_PA_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_EXT_PA_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_ext_pa_rx` writer - "]
-pub struct RF_EXT_PA_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_EXT_PA_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 20)) | ((value as u32 & 0x1f) << 20);
-        self.w
-    }
-}
-#[doc = "Field `rf_ext_pa_lorx` reader - "]
-pub struct RF_EXT_PA_LORX_R(crate::FieldReader<u8, u8>);
-impl RF_EXT_PA_LORX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_EXT_PA_LORX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_EXT_PA_LORX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_ext_pa_lorx` writer - "]
-pub struct RF_EXT_PA_LORX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_EXT_PA_LORX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 15)) | ((value as u32 & 0x1f) << 15);
-        self.w
-    }
-}
-#[doc = "Field `rf_ext_pa_tx` reader - "]
-pub struct RF_EXT_PA_TX_R(crate::FieldReader<u8, u8>);
-impl RF_EXT_PA_TX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_EXT_PA_TX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_EXT_PA_TX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_ext_pa_tx` writer - "]
-pub struct RF_EXT_PA_TX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_EXT_PA_TX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 10)) | ((value as u32 & 0x1f) << 10);
-        self.w
-    }
-}
-#[doc = "Field `rf_ext_pa_lotx` reader - "]
-pub struct RF_EXT_PA_LOTX_R(crate::FieldReader<u8, u8>);
-impl RF_EXT_PA_LOTX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_EXT_PA_LOTX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_EXT_PA_LOTX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_ext_pa_lotx` writer - "]
-pub struct RF_EXT_PA_LOTX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_EXT_PA_LOTX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 5)) | ((value as u32 & 0x1f) << 5);
-        self.w
-    }
-}
 #[doc = "Field `rf_ext_pa_sb` reader - "]
-pub struct RF_EXT_PA_SB_R(crate::FieldReader<u8, u8>);
-impl RF_EXT_PA_SB_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_EXT_PA_SB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_EXT_PA_SB_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RF_EXT_PA_SB_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rf_ext_pa_sb` writer - "]
-pub struct RF_EXT_PA_SB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_EXT_PA_SB_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1f) | (value as u32 & 0x1f);
-        self.w
-    }
-}
+pub type RF_EXT_PA_SB_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_EXT_PA_SPEC, u8, u8, 5, O>;
+#[doc = "Field `rf_ext_pa_lotx` reader - "]
+pub type RF_EXT_PA_LOTX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rf_ext_pa_lotx` writer - "]
+pub type RF_EXT_PA_LOTX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_EXT_PA_SPEC, u8, u8, 5, O>;
+#[doc = "Field `rf_ext_pa_tx` reader - "]
+pub type RF_EXT_PA_TX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rf_ext_pa_tx` writer - "]
+pub type RF_EXT_PA_TX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_EXT_PA_SPEC, u8, u8, 5, O>;
+#[doc = "Field `rf_ext_pa_lorx` reader - "]
+pub type RF_EXT_PA_LORX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rf_ext_pa_lorx` writer - "]
+pub type RF_EXT_PA_LORX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_EXT_PA_SPEC, u8, u8, 5, O>;
+#[doc = "Field `rf_ext_pa_rx` reader - "]
+pub type RF_EXT_PA_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rf_ext_pa_rx` writer - "]
+pub type RF_EXT_PA_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_EXT_PA_SPEC, u8, u8, 5, O>;
 impl R {
-    #[doc = "Bits 20:24"]
+    #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn rf_ext_pa_rx(&self) -> RF_EXT_PA_RX_R {
-        RF_EXT_PA_RX_R::new(((self.bits >> 20) & 0x1f) as u8)
-    }
-    #[doc = "Bits 15:19"]
-    #[inline(always)]
-    pub fn rf_ext_pa_lorx(&self) -> RF_EXT_PA_LORX_R {
-        RF_EXT_PA_LORX_R::new(((self.bits >> 15) & 0x1f) as u8)
-    }
-    #[doc = "Bits 10:14"]
-    #[inline(always)]
-    pub fn rf_ext_pa_tx(&self) -> RF_EXT_PA_TX_R {
-        RF_EXT_PA_TX_R::new(((self.bits >> 10) & 0x1f) as u8)
+    pub fn rf_ext_pa_sb(&self) -> RF_EXT_PA_SB_R {
+        RF_EXT_PA_SB_R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bits 5:9"]
     #[inline(always)]
     pub fn rf_ext_pa_lotx(&self) -> RF_EXT_PA_LOTX_R {
         RF_EXT_PA_LOTX_R::new(((self.bits >> 5) & 0x1f) as u8)
     }
-    #[doc = "Bits 0:4"]
+    #[doc = "Bits 10:14"]
     #[inline(always)]
-    pub fn rf_ext_pa_sb(&self) -> RF_EXT_PA_SB_R {
-        RF_EXT_PA_SB_R::new((self.bits & 0x1f) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 20:24"]
-    #[inline(always)]
-    pub fn rf_ext_pa_rx(&mut self) -> RF_EXT_PA_RX_W {
-        RF_EXT_PA_RX_W { w: self }
+    pub fn rf_ext_pa_tx(&self) -> RF_EXT_PA_TX_R {
+        RF_EXT_PA_TX_R::new(((self.bits >> 10) & 0x1f) as u8)
     }
     #[doc = "Bits 15:19"]
     #[inline(always)]
-    pub fn rf_ext_pa_lorx(&mut self) -> RF_EXT_PA_LORX_W {
-        RF_EXT_PA_LORX_W { w: self }
+    pub fn rf_ext_pa_lorx(&self) -> RF_EXT_PA_LORX_R {
+        RF_EXT_PA_LORX_R::new(((self.bits >> 15) & 0x1f) as u8)
     }
-    #[doc = "Bits 10:14"]
+    #[doc = "Bits 20:24"]
     #[inline(always)]
-    pub fn rf_ext_pa_tx(&mut self) -> RF_EXT_PA_TX_W {
-        RF_EXT_PA_TX_W { w: self }
+    pub fn rf_ext_pa_rx(&self) -> RF_EXT_PA_RX_R {
+        RF_EXT_PA_RX_R::new(((self.bits >> 20) & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4"]
+    #[inline(always)]
+    pub fn rf_ext_pa_sb(&mut self) -> RF_EXT_PA_SB_W<0> {
+        RF_EXT_PA_SB_W::new(self)
     }
     #[doc = "Bits 5:9"]
     #[inline(always)]
-    pub fn rf_ext_pa_lotx(&mut self) -> RF_EXT_PA_LOTX_W {
-        RF_EXT_PA_LOTX_W { w: self }
+    pub fn rf_ext_pa_lotx(&mut self) -> RF_EXT_PA_LOTX_W<5> {
+        RF_EXT_PA_LOTX_W::new(self)
     }
-    #[doc = "Bits 0:4"]
+    #[doc = "Bits 10:14"]
     #[inline(always)]
-    pub fn rf_ext_pa_sb(&mut self) -> RF_EXT_PA_SB_W {
-        RF_EXT_PA_SB_W { w: self }
+    pub fn rf_ext_pa_tx(&mut self) -> RF_EXT_PA_TX_W<10> {
+        RF_EXT_PA_TX_W::new(self)
+    }
+    #[doc = "Bits 15:19"]
+    #[inline(always)]
+    pub fn rf_ext_pa_lorx(&mut self) -> RF_EXT_PA_LORX_W<15> {
+        RF_EXT_PA_LORX_W::new(self)
+    }
+    #[doc = "Bits 20:24"]
+    #[inline(always)]
+    pub fn rf_ext_pa_rx(&mut self) -> RF_EXT_PA_RX_W<20> {
+        RF_EXT_PA_RX_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

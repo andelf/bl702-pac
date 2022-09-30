@@ -34,80 +34,38 @@ impl From<crate::W<FRAME_SIZE_CONTROL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_total_vcnt` reader - "]
-pub struct REG_TOTAL_VCNT_R(crate::FieldReader<u16, u16>);
-impl REG_TOTAL_VCNT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_TOTAL_VCNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_TOTAL_VCNT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_total_vcnt` writer - "]
-pub struct REG_TOTAL_VCNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_TOTAL_VCNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `reg_total_hcnt` reader - "]
-pub struct REG_TOTAL_HCNT_R(crate::FieldReader<u16, u16>);
-impl REG_TOTAL_HCNT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_TOTAL_HCNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_TOTAL_HCNT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_TOTAL_HCNT_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `reg_total_hcnt` writer - "]
-pub struct REG_TOTAL_HCNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_TOTAL_HCNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type REG_TOTAL_HCNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, FRAME_SIZE_CONTROL_SPEC, u16, u16, 16, O>;
+#[doc = "Field `reg_total_vcnt` reader - "]
+pub type REG_TOTAL_VCNT_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `reg_total_vcnt` writer - "]
+pub type REG_TOTAL_VCNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, FRAME_SIZE_CONTROL_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn reg_total_vcnt(&self) -> REG_TOTAL_VCNT_R {
-        REG_TOTAL_VCNT_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn reg_total_hcnt(&self) -> REG_TOTAL_HCNT_R {
         REG_TOTAL_HCNT_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn reg_total_vcnt(&mut self) -> REG_TOTAL_VCNT_W {
-        REG_TOTAL_VCNT_W { w: self }
+    pub fn reg_total_vcnt(&self) -> REG_TOTAL_VCNT_R {
+        REG_TOTAL_VCNT_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn reg_total_hcnt(&mut self) -> REG_TOTAL_HCNT_W {
-        REG_TOTAL_HCNT_W { w: self }
+    pub fn reg_total_hcnt(&mut self) -> REG_TOTAL_HCNT_W<0> {
+        REG_TOTAL_HCNT_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn reg_total_vcnt(&mut self) -> REG_TOTAL_VCNT_W<16> {
+        REG_TOTAL_VCNT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

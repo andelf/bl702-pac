@@ -34,126 +34,50 @@ impl From<crate::W<DG_PPUD_0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ppud_manaual_en` reader - "]
-pub struct PPUD_MANAUAL_EN_R(crate::FieldReader<bool, bool>);
-impl PPUD_MANAUAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PPUD_MANAUAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PPUD_MANAUAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ppud_manaual_en` writer - "]
-pub struct PPUD_MANAUAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PPUD_MANAUAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `ppud_cnt1` reader - "]
-pub struct PPUD_CNT1_R(crate::FieldReader<u8, u8>);
-impl PPUD_CNT1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PPUD_CNT1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PPUD_CNT1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ppud_cnt1` writer - "]
-pub struct PPUD_CNT1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PPUD_CNT1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 25)) | ((value as u32 & 0x1f) << 25);
-        self.w
-    }
-}
 #[doc = "Field `ppud_cnt2` reader - "]
-pub struct PPUD_CNT2_R(crate::FieldReader<u16, u16>);
-impl PPUD_CNT2_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PPUD_CNT2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PPUD_CNT2_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PPUD_CNT2_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `ppud_cnt2` writer - "]
-pub struct PPUD_CNT2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PPUD_CNT2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01ff << 16)) | ((value as u32 & 0x01ff) << 16);
-        self.w
-    }
-}
+pub type PPUD_CNT2_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DG_PPUD_0_SPEC, u16, u16, 9, O>;
+#[doc = "Field `ppud_cnt1` reader - "]
+pub type PPUD_CNT1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ppud_cnt1` writer - "]
+pub type PPUD_CNT1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DG_PPUD_0_SPEC, u8, u8, 5, O>;
+#[doc = "Field `ppud_manaual_en` reader - "]
+pub type PPUD_MANAUAL_EN_R = crate::BitReader<bool>;
+#[doc = "Field `ppud_manaual_en` writer - "]
+pub type PPUD_MANAUAL_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DG_PPUD_0_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 30"]
+    #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn ppud_manaual_en(&self) -> PPUD_MANAUAL_EN_R {
-        PPUD_MANAUAL_EN_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn ppud_cnt2(&self) -> PPUD_CNT2_R {
+        PPUD_CNT2_R::new(((self.bits >> 16) & 0x01ff) as u16)
     }
     #[doc = "Bits 25:29"]
     #[inline(always)]
     pub fn ppud_cnt1(&self) -> PPUD_CNT1_R {
         PPUD_CNT1_R::new(((self.bits >> 25) & 0x1f) as u8)
     }
-    #[doc = "Bits 16:24"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn ppud_cnt2(&self) -> PPUD_CNT2_R {
-        PPUD_CNT2_R::new(((self.bits >> 16) & 0x01ff) as u16)
+    pub fn ppud_manaual_en(&self) -> PPUD_MANAUAL_EN_R {
+        PPUD_MANAUAL_EN_R::new(((self.bits >> 30) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 30"]
+    #[doc = "Bits 16:24"]
     #[inline(always)]
-    pub fn ppud_manaual_en(&mut self) -> PPUD_MANAUAL_EN_W {
-        PPUD_MANAUAL_EN_W { w: self }
+    pub fn ppud_cnt2(&mut self) -> PPUD_CNT2_W<16> {
+        PPUD_CNT2_W::new(self)
     }
     #[doc = "Bits 25:29"]
     #[inline(always)]
-    pub fn ppud_cnt1(&mut self) -> PPUD_CNT1_W {
-        PPUD_CNT1_W { w: self }
+    pub fn ppud_cnt1(&mut self) -> PPUD_CNT1_W<25> {
+        PPUD_CNT1_W::new(self)
     }
-    #[doc = "Bits 16:24"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn ppud_cnt2(&mut self) -> PPUD_CNT2_W {
-        PPUD_CNT2_W { w: self }
+    pub fn ppud_manaual_en(&mut self) -> PPUD_MANAUAL_EN_W<30> {
+        PPUD_MANAUAL_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

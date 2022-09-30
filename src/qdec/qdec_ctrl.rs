@@ -34,474 +34,163 @@ impl From<crate::W<QDEC_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `input_swap` reader - "]
-pub struct INPUT_SWAP_R(crate::FieldReader<bool, bool>);
-impl INPUT_SWAP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INPUT_SWAP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INPUT_SWAP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `input_swap` writer - "]
-pub struct INPUT_SWAP_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INPUT_SWAP_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `rpt_mode` reader - "]
-pub struct RPT_MODE_R(crate::FieldReader<bool, bool>);
-impl RPT_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RPT_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RPT_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rpt_mode` writer - "]
-pub struct RPT_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RPT_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `spl_mode` reader - "]
-pub struct SPL_MODE_R(crate::FieldReader<bool, bool>);
-impl SPL_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SPL_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SPL_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `spl_mode` writer - "]
-pub struct SPL_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SPL_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `led_period` reader - "]
-pub struct LED_PERIOD_R(crate::FieldReader<u16, u16>);
-impl LED_PERIOD_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        LED_PERIOD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LED_PERIOD_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `led_period` writer - "]
-pub struct LED_PERIOD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LED_PERIOD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01ff << 20)) | ((value as u32 & 0x01ff) << 20);
-        self.w
-    }
-}
-#[doc = "Field `rpt_period` reader - "]
-pub struct RPT_PERIOD_R(crate::FieldReader<u8, u8>);
-impl RPT_PERIOD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RPT_PERIOD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RPT_PERIOD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rpt_period` writer - "]
-pub struct RPT_PERIOD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RPT_PERIOD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 12)) | ((value as u32 & 0xff) << 12);
-        self.w
-    }
-}
-#[doc = "Field `spl_period` reader - "]
-pub struct SPL_PERIOD_R(crate::FieldReader<u8, u8>);
-impl SPL_PERIOD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SPL_PERIOD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SPL_PERIOD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `spl_period` writer - "]
-pub struct SPL_PERIOD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SPL_PERIOD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `deg_cnt` reader - "]
-pub struct DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `deg_cnt` writer - "]
-pub struct DEG_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEG_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 4)) | ((value as u32 & 0x0f) << 4);
-        self.w
-    }
-}
-#[doc = "Field `deg_en` reader - "]
-pub struct DEG_EN_R(crate::FieldReader<bool, bool>);
-impl DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `deg_en` writer - "]
-pub struct DEG_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEG_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `led_pol` reader - "]
-pub struct LED_POL_R(crate::FieldReader<bool, bool>);
-impl LED_POL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LED_POL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LED_POL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `led_pol` writer - "]
-pub struct LED_POL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LED_POL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `led_en` reader - "]
-pub struct LED_EN_R(crate::FieldReader<bool, bool>);
-impl LED_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LED_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LED_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `led_en` writer - "]
-pub struct LED_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LED_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `qdec_en` reader - "]
-pub struct QDEC_EN_R(crate::FieldReader<bool, bool>);
-impl QDEC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        QDEC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for QDEC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type QDEC_EN_R = crate::BitReader<bool>;
 #[doc = "Field `qdec_en` writer - "]
-pub struct QDEC_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> QDEC_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type QDEC_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `led_en` reader - "]
+pub type LED_EN_R = crate::BitReader<bool>;
+#[doc = "Field `led_en` writer - "]
+pub type LED_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `led_pol` reader - "]
+pub type LED_POL_R = crate::BitReader<bool>;
+#[doc = "Field `led_pol` writer - "]
+pub type LED_POL_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `deg_en` reader - "]
+pub type DEG_EN_R = crate::BitReader<bool>;
+#[doc = "Field `deg_en` writer - "]
+pub type DEG_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `deg_cnt` reader - "]
+pub type DEG_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `deg_cnt` writer - "]
+pub type DEG_CNT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, QDEC_CTRL_SPEC, u8, u8, 4, O>;
+#[doc = "Field `spl_period` reader - "]
+pub type SPL_PERIOD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `spl_period` writer - "]
+pub type SPL_PERIOD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, QDEC_CTRL_SPEC, u8, u8, 4, O>;
+#[doc = "Field `rpt_period` reader - "]
+pub type RPT_PERIOD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rpt_period` writer - "]
+pub type RPT_PERIOD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, QDEC_CTRL_SPEC, u8, u8, 8, O>;
+#[doc = "Field `led_period` reader - "]
+pub type LED_PERIOD_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `led_period` writer - "]
+pub type LED_PERIOD_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, QDEC_CTRL_SPEC, u16, u16, 9, O>;
+#[doc = "Field `spl_mode` reader - "]
+pub type SPL_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `spl_mode` writer - "]
+pub type SPL_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `rpt_mode` reader - "]
+pub type RPT_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `rpt_mode` writer - "]
+pub type RPT_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
+#[doc = "Field `input_swap` reader - "]
+pub type INPUT_SWAP_R = crate::BitReader<bool>;
+#[doc = "Field `input_swap` writer - "]
+pub type INPUT_SWAP_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_CTRL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn input_swap(&self) -> INPUT_SWAP_R {
-        INPUT_SWAP_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn qdec_en(&self) -> QDEC_EN_R {
+        QDEC_EN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 30"]
+    #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn rpt_mode(&self) -> RPT_MODE_R {
-        RPT_MODE_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn led_en(&self) -> LED_EN_R {
+        LED_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 29"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn spl_mode(&self) -> SPL_MODE_R {
-        SPL_MODE_R::new(((self.bits >> 29) & 0x01) != 0)
+    pub fn led_pol(&self) -> LED_POL_R {
+        LED_POL_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bits 20:28"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn led_period(&self) -> LED_PERIOD_R {
-        LED_PERIOD_R::new(((self.bits >> 20) & 0x01ff) as u16)
-    }
-    #[doc = "Bits 12:19"]
-    #[inline(always)]
-    pub fn rpt_period(&self) -> RPT_PERIOD_R {
-        RPT_PERIOD_R::new(((self.bits >> 12) & 0xff) as u8)
-    }
-    #[doc = "Bits 8:11"]
-    #[inline(always)]
-    pub fn spl_period(&self) -> SPL_PERIOD_R {
-        SPL_PERIOD_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn deg_en(&self) -> DEG_EN_R {
+        DEG_EN_R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
     pub fn deg_cnt(&self) -> DEG_CNT_R {
         DEG_CNT_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bit 3"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn deg_en(&self) -> DEG_EN_R {
-        DEG_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn led_pol(&self) -> LED_POL_R {
-        LED_POL_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn led_en(&self) -> LED_EN_R {
-        LED_EN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn qdec_en(&self) -> QDEC_EN_R {
-        QDEC_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn input_swap(&mut self) -> INPUT_SWAP_W {
-        INPUT_SWAP_W { w: self }
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn rpt_mode(&mut self) -> RPT_MODE_W {
-        RPT_MODE_W { w: self }
-    }
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn spl_mode(&mut self) -> SPL_MODE_W {
-        SPL_MODE_W { w: self }
-    }
-    #[doc = "Bits 20:28"]
-    #[inline(always)]
-    pub fn led_period(&mut self) -> LED_PERIOD_W {
-        LED_PERIOD_W { w: self }
+    pub fn spl_period(&self) -> SPL_PERIOD_R {
+        SPL_PERIOD_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
     #[doc = "Bits 12:19"]
     #[inline(always)]
-    pub fn rpt_period(&mut self) -> RPT_PERIOD_W {
-        RPT_PERIOD_W { w: self }
+    pub fn rpt_period(&self) -> RPT_PERIOD_R {
+        RPT_PERIOD_R::new(((self.bits >> 12) & 0xff) as u8)
     }
-    #[doc = "Bits 8:11"]
+    #[doc = "Bits 20:28"]
     #[inline(always)]
-    pub fn spl_period(&mut self) -> SPL_PERIOD_W {
-        SPL_PERIOD_W { w: self }
+    pub fn led_period(&self) -> LED_PERIOD_R {
+        LED_PERIOD_R::new(((self.bits >> 20) & 0x01ff) as u16)
     }
-    #[doc = "Bits 4:7"]
+    #[doc = "Bit 29"]
     #[inline(always)]
-    pub fn deg_cnt(&mut self) -> DEG_CNT_W {
-        DEG_CNT_W { w: self }
+    pub fn spl_mode(&self) -> SPL_MODE_R {
+        SPL_MODE_R::new(((self.bits >> 29) & 1) != 0)
     }
-    #[doc = "Bit 3"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn deg_en(&mut self) -> DEG_EN_W {
-        DEG_EN_W { w: self }
+    pub fn rpt_mode(&self) -> RPT_MODE_R {
+        RPT_MODE_R::new(((self.bits >> 30) & 1) != 0)
     }
-    #[doc = "Bit 2"]
+    #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn led_pol(&mut self) -> LED_POL_W {
-        LED_POL_W { w: self }
+    pub fn input_swap(&self) -> INPUT_SWAP_R {
+        INPUT_SWAP_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn qdec_en(&mut self) -> QDEC_EN_W<0> {
+        QDEC_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn led_en(&mut self) -> LED_EN_W {
-        LED_EN_W { w: self }
+    pub fn led_en(&mut self) -> LED_EN_W<1> {
+        LED_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn qdec_en(&mut self) -> QDEC_EN_W {
-        QDEC_EN_W { w: self }
+    pub fn led_pol(&mut self) -> LED_POL_W<2> {
+        LED_POL_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn deg_en(&mut self) -> DEG_EN_W<3> {
+        DEG_EN_W::new(self)
+    }
+    #[doc = "Bits 4:7"]
+    #[inline(always)]
+    pub fn deg_cnt(&mut self) -> DEG_CNT_W<4> {
+        DEG_CNT_W::new(self)
+    }
+    #[doc = "Bits 8:11"]
+    #[inline(always)]
+    pub fn spl_period(&mut self) -> SPL_PERIOD_W<8> {
+        SPL_PERIOD_W::new(self)
+    }
+    #[doc = "Bits 12:19"]
+    #[inline(always)]
+    pub fn rpt_period(&mut self) -> RPT_PERIOD_W<12> {
+        RPT_PERIOD_W::new(self)
+    }
+    #[doc = "Bits 20:28"]
+    #[inline(always)]
+    pub fn led_period(&mut self) -> LED_PERIOD_W<20> {
+        LED_PERIOD_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn spl_mode(&mut self) -> SPL_MODE_W<29> {
+        SPL_MODE_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn rpt_mode(&mut self) -> RPT_MODE_W<30> {
+        RPT_MODE_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn input_swap(&mut self) -> INPUT_SWAP_W<31> {
+        INPUT_SWAP_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

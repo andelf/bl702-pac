@@ -34,116 +34,50 @@ impl From<crate::W<TX_BD_NUM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RXBDPTR` reader - "]
-pub struct RXBDPTR_R(crate::FieldReader<u8, u8>);
-impl RXBDPTR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RXBDPTR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXBDPTR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RXBDPTR` writer - "]
-pub struct RXBDPTR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXBDPTR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x7f << 24)) | ((value as u32 & 0x7f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `TXBDPTR` reader - "]
-pub struct TXBDPTR_R(crate::FieldReader<u8, u8>);
-impl TXBDPTR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TXBDPTR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXBDPTR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TXBDPTR` writer - "]
-pub struct TXBDPTR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXBDPTR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x7f << 16)) | ((value as u32 & 0x7f) << 16);
-        self.w
-    }
-}
 #[doc = "Field `TXBDNUM` reader - "]
-pub struct TXBDNUM_R(crate::FieldReader<u8, u8>);
-impl TXBDNUM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TXBDNUM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXBDNUM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TXBDNUM_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `TXBDNUM` writer - "]
-pub struct TXBDNUM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXBDNUM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type TXBDNUM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TX_BD_NUM_SPEC, u8, u8, 8, O>;
+#[doc = "Field `TXBDPTR` reader - "]
+pub type TXBDPTR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `TXBDPTR` writer - "]
+pub type TXBDPTR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TX_BD_NUM_SPEC, u8, u8, 7, O>;
+#[doc = "Field `RXBDPTR` reader - "]
+pub type RXBDPTR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `RXBDPTR` writer - "]
+pub type RXBDPTR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TX_BD_NUM_SPEC, u8, u8, 7, O>;
 impl R {
-    #[doc = "Bits 24:30"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn rxbdptr(&self) -> RXBDPTR_R {
-        RXBDPTR_R::new(((self.bits >> 24) & 0x7f) as u8)
+    pub fn txbdnum(&self) -> TXBDNUM_R {
+        TXBDNUM_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
     pub fn txbdptr(&self) -> TXBDPTR_R {
         TXBDPTR_R::new(((self.bits >> 16) & 0x7f) as u8)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 24:30"]
     #[inline(always)]
-    pub fn txbdnum(&self) -> TXBDNUM_R {
-        TXBDNUM_R::new((self.bits & 0xff) as u8)
+    pub fn rxbdptr(&self) -> RXBDPTR_R {
+        RXBDPTR_R::new(((self.bits >> 24) & 0x7f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:30"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn rxbdptr(&mut self) -> RXBDPTR_W {
-        RXBDPTR_W { w: self }
+    pub fn txbdnum(&mut self) -> TXBDNUM_W<0> {
+        TXBDNUM_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
-    pub fn txbdptr(&mut self) -> TXBDPTR_W {
-        TXBDPTR_W { w: self }
+    pub fn txbdptr(&mut self) -> TXBDPTR_W<16> {
+        TXBDPTR_W::new(self)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 24:30"]
     #[inline(always)]
-    pub fn txbdnum(&mut self) -> TXBDNUM_W {
-        TXBDNUM_W { w: self }
+    pub fn rxbdptr(&mut self) -> RXBDPTR_W<24> {
+        RXBDPTR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

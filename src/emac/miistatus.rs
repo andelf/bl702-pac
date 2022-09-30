@@ -34,100 +34,36 @@ impl From<crate::W<MIISTATUS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MIIM_BUSY` reader - "]
-pub struct MIIM_BUSY_R(crate::FieldReader<bool, bool>);
-impl MIIM_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MIIM_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MIIM_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `MIIM_BUSY` writer - "]
-pub struct MIIM_BUSY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MIIM_BUSY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `MIIM_LINKFAIL` reader - "]
-pub struct MIIM_LINKFAIL_R(crate::FieldReader<bool, bool>);
-impl MIIM_LINKFAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        MIIM_LINKFAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MIIM_LINKFAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type MIIM_LINKFAIL_R = crate::BitReader<bool>;
 #[doc = "Field `MIIM_LINKFAIL` writer - "]
-pub struct MIIM_LINKFAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MIIM_LINKFAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type MIIM_LINKFAIL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MIISTATUS_SPEC, bool, O>;
+#[doc = "Field `MIIM_BUSY` reader - "]
+pub type MIIM_BUSY_R = crate::BitReader<bool>;
+#[doc = "Field `MIIM_BUSY` writer - "]
+pub type MIIM_BUSY_W<'a, const O: u8> = crate::BitWriter<'a, u32, MIISTATUS_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn miim_busy(&self) -> MIIM_BUSY_R {
-        MIIM_BUSY_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn miim_linkfail(&self) -> MIIM_LINKFAIL_R {
-        MIIM_LINKFAIL_R::new((self.bits & 0x01) != 0)
+        MIIM_LINKFAIL_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn miim_busy(&self) -> MIIM_BUSY_R {
+        MIIM_BUSY_R::new(((self.bits >> 1) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn miim_busy(&mut self) -> MIIM_BUSY_W {
-        MIIM_BUSY_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn miim_linkfail(&mut self) -> MIIM_LINKFAIL_W {
-        MIIM_LINKFAIL_W { w: self }
+    pub fn miim_linkfail(&mut self) -> MIIM_LINKFAIL_W<0> {
+        MIIM_LINKFAIL_W::new(self)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn miim_busy(&mut self) -> MIIM_BUSY_W<1> {
+        MIIM_BUSY_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -35,43 +35,22 @@ impl From<crate::W<REG_KEY_SLOT_8_W0_SPEC>> for W {
     }
 }
 #[doc = "Field `reg_key_slot_8_w0` reader - "]
-pub struct REG_KEY_SLOT_8_W0_R(crate::FieldReader<u32, u32>);
-impl REG_KEY_SLOT_8_W0_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        REG_KEY_SLOT_8_W0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_KEY_SLOT_8_W0_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_KEY_SLOT_8_W0_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `reg_key_slot_8_w0` writer - "]
-pub struct REG_KEY_SLOT_8_W0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_KEY_SLOT_8_W0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type REG_KEY_SLOT_8_W0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, REG_KEY_SLOT_8_W0_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn reg_key_slot_8_w0(&self) -> REG_KEY_SLOT_8_W0_R {
-        REG_KEY_SLOT_8_W0_R::new((self.bits & 0xffff_ffff) as u32)
+        REG_KEY_SLOT_8_W0_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn reg_key_slot_8_w0(&mut self) -> REG_KEY_SLOT_8_W0_W {
-        REG_KEY_SLOT_8_W0_W { w: self }
+    pub fn reg_key_slot_8_w0(&mut self) -> REG_KEY_SLOT_8_W0_W<0> {
+        REG_KEY_SLOT_8_W0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

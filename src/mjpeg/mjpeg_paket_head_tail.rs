@@ -34,80 +34,38 @@ impl From<crate::W<MJPEG_PAKET_HEAD_TAIL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_pket_tail_byte` reader - "]
-pub struct REG_PKET_TAIL_BYTE_R(crate::FieldReader<u16, u16>);
-impl REG_PKET_TAIL_BYTE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_PKET_TAIL_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PKET_TAIL_BYTE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_pket_tail_byte` writer - "]
-pub struct REG_PKET_TAIL_BYTE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_PKET_TAIL_BYTE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0fff << 16)) | ((value as u32 & 0x0fff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `reg_pket_head_byte` reader - "]
-pub struct REG_PKET_HEAD_BYTE_R(crate::FieldReader<u16, u16>);
-impl REG_PKET_HEAD_BYTE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_PKET_HEAD_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PKET_HEAD_BYTE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_PKET_HEAD_BYTE_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `reg_pket_head_byte` writer - "]
-pub struct REG_PKET_HEAD_BYTE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_PKET_HEAD_BYTE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type REG_PKET_HEAD_BYTE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_PAKET_HEAD_TAIL_SPEC, u16, u16, 12, O>;
+#[doc = "Field `reg_pket_tail_byte` reader - "]
+pub type REG_PKET_TAIL_BYTE_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `reg_pket_tail_byte` writer - "]
+pub type REG_PKET_TAIL_BYTE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_PAKET_HEAD_TAIL_SPEC, u16, u16, 12, O>;
 impl R {
-    #[doc = "Bits 16:27"]
-    #[inline(always)]
-    pub fn reg_pket_tail_byte(&self) -> REG_PKET_TAIL_BYTE_R {
-        REG_PKET_TAIL_BYTE_R::new(((self.bits >> 16) & 0x0fff) as u16)
-    }
     #[doc = "Bits 0:11"]
     #[inline(always)]
     pub fn reg_pket_head_byte(&self) -> REG_PKET_HEAD_BYTE_R {
         REG_PKET_HEAD_BYTE_R::new((self.bits & 0x0fff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn reg_pket_tail_byte(&mut self) -> REG_PKET_TAIL_BYTE_W {
-        REG_PKET_TAIL_BYTE_W { w: self }
+    pub fn reg_pket_tail_byte(&self) -> REG_PKET_TAIL_BYTE_R {
+        REG_PKET_TAIL_BYTE_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn reg_pket_head_byte(&mut self) -> REG_PKET_HEAD_BYTE_W {
-        REG_PKET_HEAD_BYTE_W { w: self }
+    pub fn reg_pket_head_byte(&mut self) -> REG_PKET_HEAD_BYTE_W<0> {
+        REG_PKET_HEAD_BYTE_W::new(self)
+    }
+    #[doc = "Bits 16:27"]
+    #[inline(always)]
+    pub fn reg_pket_tail_byte(&mut self) -> REG_PKET_TAIL_BYTE_W<16> {
+        REG_PKET_TAIL_BYTE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

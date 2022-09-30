@@ -34,274 +34,94 @@ impl From<crate::W<I2S_IO_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_deg_en` reader - "]
-pub struct CR_DEG_EN_R(crate::FieldReader<bool, bool>);
-impl CR_DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_deg_en` writer - "]
-pub struct CR_DEG_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_DEG_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `cr_deg_cnt` reader - "]
-pub struct CR_DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl CR_DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_deg_cnt` writer - "]
-pub struct CR_DEG_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_DEG_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_bclk_inv` reader - "]
-pub struct CR_I2S_BCLK_INV_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_BCLK_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_BCLK_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_BCLK_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_bclk_inv` writer - "]
-pub struct CR_I2S_BCLK_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_BCLK_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_fs_inv` reader - "]
-pub struct CR_I2S_FS_INV_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_FS_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_FS_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_FS_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_fs_inv` writer - "]
-pub struct CR_I2S_FS_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_FS_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `cr_i2s_rxd_inv` reader - "]
-pub struct CR_I2S_RXD_INV_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_RXD_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_RXD_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_RXD_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2s_rxd_inv` writer - "]
-pub struct CR_I2S_RXD_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_RXD_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `cr_i2s_txd_inv` reader - "]
-pub struct CR_I2S_TXD_INV_R(crate::FieldReader<bool, bool>);
-impl CR_I2S_TXD_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2S_TXD_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2S_TXD_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_I2S_TXD_INV_R = crate::BitReader<bool>;
 #[doc = "Field `cr_i2s_txd_inv` writer - "]
-pub struct CR_I2S_TXD_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_I2S_TXD_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CR_I2S_TXD_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_IO_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_rxd_inv` reader - "]
+pub type CR_I2S_RXD_INV_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_rxd_inv` writer - "]
+pub type CR_I2S_RXD_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_IO_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_fs_inv` reader - "]
+pub type CR_I2S_FS_INV_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_fs_inv` writer - "]
+pub type CR_I2S_FS_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_IO_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_i2s_bclk_inv` reader - "]
+pub type CR_I2S_BCLK_INV_R = crate::BitReader<bool>;
+#[doc = "Field `cr_i2s_bclk_inv` writer - "]
+pub type CR_I2S_BCLK_INV_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, I2S_IO_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_deg_cnt` reader - "]
+pub type CR_DEG_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_deg_cnt` writer - "]
+pub type CR_DEG_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_IO_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `cr_deg_en` reader - "]
+pub type CR_DEG_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_deg_en` writer - "]
+pub type CR_DEG_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, I2S_IO_CONFIG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 7"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_deg_en(&self) -> CR_DEG_EN_R {
-        CR_DEG_EN_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn cr_deg_cnt(&self) -> CR_DEG_CNT_R {
-        CR_DEG_CNT_R::new(((self.bits >> 4) & 0x07) as u8)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_i2s_bclk_inv(&self) -> CR_I2S_BCLK_INV_R {
-        CR_I2S_BCLK_INV_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn cr_i2s_fs_inv(&self) -> CR_I2S_FS_INV_R {
-        CR_I2S_FS_INV_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cr_i2s_txd_inv(&self) -> CR_I2S_TXD_INV_R {
+        CR_I2S_TXD_INV_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn cr_i2s_rxd_inv(&self) -> CR_I2S_RXD_INV_R {
-        CR_I2S_RXD_INV_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn cr_i2s_txd_inv(&self) -> CR_I2S_TXD_INV_R {
-        CR_I2S_TXD_INV_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn cr_deg_en(&mut self) -> CR_DEG_EN_W {
-        CR_DEG_EN_W { w: self }
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn cr_deg_cnt(&mut self) -> CR_DEG_CNT_W {
-        CR_DEG_CNT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_i2s_bclk_inv(&mut self) -> CR_I2S_BCLK_INV_W {
-        CR_I2S_BCLK_INV_W { w: self }
+        CR_I2S_RXD_INV_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_i2s_fs_inv(&mut self) -> CR_I2S_FS_INV_W {
-        CR_I2S_FS_INV_W { w: self }
+    pub fn cr_i2s_fs_inv(&self) -> CR_I2S_FS_INV_R {
+        CR_I2S_FS_INV_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_i2s_bclk_inv(&self) -> CR_I2S_BCLK_INV_R {
+        CR_I2S_BCLK_INV_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn cr_deg_cnt(&self) -> CR_DEG_CNT_R {
+        CR_DEG_CNT_R::new(((self.bits >> 4) & 7) as u8)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn cr_deg_en(&self) -> CR_DEG_EN_R {
+        CR_DEG_EN_R::new(((self.bits >> 7) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn cr_i2s_txd_inv(&mut self) -> CR_I2S_TXD_INV_W<0> {
+        CR_I2S_TXD_INV_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn cr_i2s_rxd_inv(&mut self) -> CR_I2S_RXD_INV_W {
-        CR_I2S_RXD_INV_W { w: self }
+    pub fn cr_i2s_rxd_inv(&mut self) -> CR_I2S_RXD_INV_W<1> {
+        CR_I2S_RXD_INV_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_i2s_txd_inv(&mut self) -> CR_I2S_TXD_INV_W {
-        CR_I2S_TXD_INV_W { w: self }
+    pub fn cr_i2s_fs_inv(&mut self) -> CR_I2S_FS_INV_W<2> {
+        CR_I2S_FS_INV_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_i2s_bclk_inv(&mut self) -> CR_I2S_BCLK_INV_W<3> {
+        CR_I2S_BCLK_INV_W::new(self)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn cr_deg_cnt(&mut self) -> CR_DEG_CNT_W<4> {
+        CR_DEG_CNT_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn cr_deg_en(&mut self) -> CR_DEG_EN_W<7> {
+        CR_DEG_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

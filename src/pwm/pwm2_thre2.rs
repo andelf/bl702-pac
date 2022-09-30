@@ -35,31 +35,10 @@ impl From<crate::W<PWM2_THRE2_SPEC>> for W {
     }
 }
 #[doc = "Field `pwm_thre2` reader - "]
-pub struct PWM_THRE2_R(crate::FieldReader<u16, u16>);
-impl PWM_THRE2_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PWM_THRE2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_THRE2_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PWM_THRE2_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `pwm_thre2` writer - "]
-pub struct PWM_THRE2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PWM_THRE2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type PWM_THRE2_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PWM2_THRE2_SPEC, u16, u16, 16, O>;
 impl R {
     #[doc = "Bits 0:15"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn pwm_thre2(&mut self) -> PWM_THRE2_W {
-        PWM_THRE2_W { w: self }
+    pub fn pwm_thre2(&mut self) -> PWM_THRE2_W<0> {
+        PWM_THRE2_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -35,43 +35,22 @@ impl From<crate::W<RF_SRAM_CTRL2_SPEC>> for W {
     }
 }
 #[doc = "Field `rf_sram_sts` reader - "]
-pub struct RF_SRAM_STS_R(crate::FieldReader<u32, u32>);
-impl RF_SRAM_STS_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        RF_SRAM_STS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_SRAM_STS_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RF_SRAM_STS_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `rf_sram_sts` writer - "]
-pub struct RF_SRAM_STS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_SRAM_STS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type RF_SRAM_STS_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SRAM_CTRL2_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn rf_sram_sts(&self) -> RF_SRAM_STS_R {
-        RF_SRAM_STS_R::new((self.bits & 0xffff_ffff) as u32)
+        RF_SRAM_STS_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn rf_sram_sts(&mut self) -> RF_SRAM_STS_W {
-        RF_SRAM_STS_W { w: self }
+    pub fn rf_sram_sts(&mut self) -> RF_SRAM_STS_W<0> {
+        RF_SRAM_STS_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

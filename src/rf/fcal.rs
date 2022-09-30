@@ -34,244 +34,93 @@ impl From<crate::W<FCAL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `fcal_mom_ini_ext` reader - "]
-pub struct FCAL_MOM_INI_EXT_R(crate::FieldReader<u8, u8>);
-impl FCAL_MOM_INI_EXT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCAL_MOM_INI_EXT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_MOM_INI_EXT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_mom_ini_ext` writer - "]
-pub struct FCAL_MOM_INI_EXT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_MOM_INI_EXT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `fcal_mode` reader - "]
-pub struct FCAL_MODE_R(crate::FieldReader<u8, u8>);
-impl FCAL_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCAL_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_mode` writer - "]
-pub struct FCAL_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_MODE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 6)) | ((value as u32 & 0x03) << 6);
-        self.w
-    }
-}
-#[doc = "Field `fcal_clk_period` reader - "]
-pub struct FCAL_CLK_PERIOD_R(crate::FieldReader<u8, u8>);
-impl FCAL_CLK_PERIOD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCAL_CLK_PERIOD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_CLK_PERIOD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_clk_period` writer - "]
-pub struct FCAL_CLK_PERIOD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_CLK_PERIOD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
-#[doc = "Field `fcal_mom_toggle_cnt` reader - "]
-pub struct FCAL_MOM_TOGGLE_CNT_R(crate::FieldReader<bool, bool>);
-impl FCAL_MOM_TOGGLE_CNT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_MOM_TOGGLE_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_MOM_TOGGLE_CNT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_mom_toggle_cnt` writer - "]
-pub struct FCAL_MOM_TOGGLE_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_MOM_TOGGLE_CNT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `fcal_coarse_pha_threshold` reader - "]
-pub struct FCAL_COARSE_PHA_THRESHOLD_R(crate::FieldReader<u8, u8>);
-impl FCAL_COARSE_PHA_THRESHOLD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCAL_COARSE_PHA_THRESHOLD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_COARSE_PHA_THRESHOLD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_coarse_pha_threshold` writer - "]
-pub struct FCAL_COARSE_PHA_THRESHOLD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_COARSE_PHA_THRESHOLD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 1)) | ((value as u32 & 0x03) << 1);
-        self.w
-    }
-}
 #[doc = "Field `fcal_div_ratio_adj_en` reader - "]
-pub struct FCAL_DIV_RATIO_ADJ_EN_R(crate::FieldReader<bool, bool>);
-impl FCAL_DIV_RATIO_ADJ_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_DIV_RATIO_ADJ_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_DIV_RATIO_ADJ_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FCAL_DIV_RATIO_ADJ_EN_R = crate::BitReader<bool>;
 #[doc = "Field `fcal_div_ratio_adj_en` writer - "]
-pub struct FCAL_DIV_RATIO_ADJ_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_DIV_RATIO_ADJ_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type FCAL_DIV_RATIO_ADJ_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, FCAL_SPEC, bool, O>;
+#[doc = "Field `fcal_coarse_pha_threshold` reader - "]
+pub type FCAL_COARSE_PHA_THRESHOLD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fcal_coarse_pha_threshold` writer - "]
+pub type FCAL_COARSE_PHA_THRESHOLD_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, FCAL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `fcal_mom_toggle_cnt` reader - "]
+pub type FCAL_MOM_TOGGLE_CNT_R = crate::BitReader<bool>;
+#[doc = "Field `fcal_mom_toggle_cnt` writer - "]
+pub type FCAL_MOM_TOGGLE_CNT_W<'a, const O: u8> = crate::BitWriter<'a, u32, FCAL_SPEC, bool, O>;
+#[doc = "Field `fcal_clk_period` reader - "]
+pub type FCAL_CLK_PERIOD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fcal_clk_period` writer - "]
+pub type FCAL_CLK_PERIOD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FCAL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `fcal_mode` reader - "]
+pub type FCAL_MODE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fcal_mode` writer - "]
+pub type FCAL_MODE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FCAL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `fcal_mom_ini_ext` reader - "]
+pub type FCAL_MOM_INI_EXT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fcal_mom_ini_ext` writer - "]
+pub type FCAL_MOM_INI_EXT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, FCAL_SPEC, u8, u8, 8, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn fcal_div_ratio_adj_en(&self) -> FCAL_DIV_RATIO_ADJ_EN_R {
+        FCAL_DIV_RATIO_ADJ_EN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bits 1:2"]
+    #[inline(always)]
+    pub fn fcal_coarse_pha_threshold(&self) -> FCAL_COARSE_PHA_THRESHOLD_R {
+        FCAL_COARSE_PHA_THRESHOLD_R::new(((self.bits >> 1) & 3) as u8)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn fcal_mom_toggle_cnt(&self) -> FCAL_MOM_TOGGLE_CNT_R {
+        FCAL_MOM_TOGGLE_CNT_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bits 4:5"]
+    #[inline(always)]
+    pub fn fcal_clk_period(&self) -> FCAL_CLK_PERIOD_R {
+        FCAL_CLK_PERIOD_R::new(((self.bits >> 4) & 3) as u8)
+    }
+    #[doc = "Bits 6:7"]
+    #[inline(always)]
+    pub fn fcal_mode(&self) -> FCAL_MODE_R {
+        FCAL_MODE_R::new(((self.bits >> 6) & 3) as u8)
+    }
     #[doc = "Bits 16:23"]
     #[inline(always)]
     pub fn fcal_mom_ini_ext(&self) -> FCAL_MOM_INI_EXT_R {
         FCAL_MOM_INI_EXT_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 6:7"]
-    #[inline(always)]
-    pub fn fcal_mode(&self) -> FCAL_MODE_R {
-        FCAL_MODE_R::new(((self.bits >> 6) & 0x03) as u8)
-    }
-    #[doc = "Bits 4:5"]
-    #[inline(always)]
-    pub fn fcal_clk_period(&self) -> FCAL_CLK_PERIOD_R {
-        FCAL_CLK_PERIOD_R::new(((self.bits >> 4) & 0x03) as u8)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn fcal_mom_toggle_cnt(&self) -> FCAL_MOM_TOGGLE_CNT_R {
-        FCAL_MOM_TOGGLE_CNT_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bits 1:2"]
-    #[inline(always)]
-    pub fn fcal_coarse_pha_threshold(&self) -> FCAL_COARSE_PHA_THRESHOLD_R {
-        FCAL_COARSE_PHA_THRESHOLD_R::new(((self.bits >> 1) & 0x03) as u8)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn fcal_div_ratio_adj_en(&self) -> FCAL_DIV_RATIO_ADJ_EN_R {
-        FCAL_DIV_RATIO_ADJ_EN_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 16:23"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn fcal_mom_ini_ext(&mut self) -> FCAL_MOM_INI_EXT_W {
-        FCAL_MOM_INI_EXT_W { w: self }
-    }
-    #[doc = "Bits 6:7"]
-    #[inline(always)]
-    pub fn fcal_mode(&mut self) -> FCAL_MODE_W {
-        FCAL_MODE_W { w: self }
-    }
-    #[doc = "Bits 4:5"]
-    #[inline(always)]
-    pub fn fcal_clk_period(&mut self) -> FCAL_CLK_PERIOD_W {
-        FCAL_CLK_PERIOD_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn fcal_mom_toggle_cnt(&mut self) -> FCAL_MOM_TOGGLE_CNT_W {
-        FCAL_MOM_TOGGLE_CNT_W { w: self }
+    pub fn fcal_div_ratio_adj_en(&mut self) -> FCAL_DIV_RATIO_ADJ_EN_W<0> {
+        FCAL_DIV_RATIO_ADJ_EN_W::new(self)
     }
     #[doc = "Bits 1:2"]
     #[inline(always)]
-    pub fn fcal_coarse_pha_threshold(&mut self) -> FCAL_COARSE_PHA_THRESHOLD_W {
-        FCAL_COARSE_PHA_THRESHOLD_W { w: self }
+    pub fn fcal_coarse_pha_threshold(&mut self) -> FCAL_COARSE_PHA_THRESHOLD_W<1> {
+        FCAL_COARSE_PHA_THRESHOLD_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn fcal_div_ratio_adj_en(&mut self) -> FCAL_DIV_RATIO_ADJ_EN_W {
-        FCAL_DIV_RATIO_ADJ_EN_W { w: self }
+    pub fn fcal_mom_toggle_cnt(&mut self) -> FCAL_MOM_TOGGLE_CNT_W<3> {
+        FCAL_MOM_TOGGLE_CNT_W::new(self)
+    }
+    #[doc = "Bits 4:5"]
+    #[inline(always)]
+    pub fn fcal_clk_period(&mut self) -> FCAL_CLK_PERIOD_W<4> {
+        FCAL_CLK_PERIOD_W::new(self)
+    }
+    #[doc = "Bits 6:7"]
+    #[inline(always)]
+    pub fn fcal_mode(&mut self) -> FCAL_MODE_W<6> {
+        FCAL_MODE_W::new(self)
+    }
+    #[doc = "Bits 16:23"]
+    #[inline(always)]
+    pub fn fcal_mom_ini_ext(&mut self) -> FCAL_MOM_INI_EXT_W<16> {
+        FCAL_MOM_INI_EXT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

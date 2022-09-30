@@ -34,136 +34,53 @@ impl From<crate::W<USB_RESUME_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_res_force` reader - "]
-pub struct CR_RES_FORCE_R(crate::FieldReader<bool, bool>);
-impl CR_RES_FORCE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_RES_FORCE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_RES_FORCE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_res_force` writer - "]
-pub struct CR_RES_FORCE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_RES_FORCE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `cr_res_trig` reader - "]
-pub struct CR_RES_TRIG_R(crate::FieldReader<bool, bool>);
-impl CR_RES_TRIG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_RES_TRIG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_RES_TRIG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_res_trig` writer - "]
-pub struct CR_RES_TRIG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_RES_TRIG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
 #[doc = "Field `cr_res_width` reader - "]
-pub struct CR_RES_WIDTH_R(crate::FieldReader<u16, u16>);
-impl CR_RES_WIDTH_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_RES_WIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_RES_WIDTH_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_RES_WIDTH_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cr_res_width` writer - "]
-pub struct CR_RES_WIDTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_RES_WIDTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07ff) | (value as u32 & 0x07ff);
-        self.w
-    }
-}
+pub type CR_RES_WIDTH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_RESUME_CONFIG_SPEC, u16, u16, 11, O>;
+#[doc = "Field `cr_res_trig` reader - "]
+pub type CR_RES_TRIG_R = crate::BitReader<bool>;
+#[doc = "Field `cr_res_trig` writer - "]
+pub type CR_RES_TRIG_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, USB_RESUME_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_res_force` reader - "]
+pub type CR_RES_FORCE_R = crate::BitReader<bool>;
+#[doc = "Field `cr_res_force` writer - "]
+pub type CR_RES_FORCE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, USB_RESUME_CONFIG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn cr_res_force(&self) -> CR_RES_FORCE_R {
-        CR_RES_FORCE_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn cr_res_trig(&self) -> CR_RES_TRIG_R {
-        CR_RES_TRIG_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
     #[doc = "Bits 0:10"]
     #[inline(always)]
     pub fn cr_res_width(&self) -> CR_RES_WIDTH_R {
         CR_RES_WIDTH_R::new((self.bits & 0x07ff) as u16)
     }
-}
-impl W {
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn cr_res_trig(&self) -> CR_RES_TRIG_R {
+        CR_RES_TRIG_R::new(((self.bits >> 12) & 1) != 0)
+    }
     #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn cr_res_force(&mut self) -> CR_RES_FORCE_W {
-        CR_RES_FORCE_W { w: self }
+    pub fn cr_res_force(&self) -> CR_RES_FORCE_R {
+        CR_RES_FORCE_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:10"]
+    #[inline(always)]
+    pub fn cr_res_width(&mut self) -> CR_RES_WIDTH_W<0> {
+        CR_RES_WIDTH_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn cr_res_trig(&mut self) -> CR_RES_TRIG_W {
-        CR_RES_TRIG_W { w: self }
+    pub fn cr_res_trig(&mut self) -> CR_RES_TRIG_W<12> {
+        CR_RES_TRIG_W::new(self)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn cr_res_width(&mut self) -> CR_RES_WIDTH_W {
-        CR_RES_WIDTH_W { w: self }
+    pub fn cr_res_force(&mut self) -> CR_RES_FORCE_W<31> {
+        CR_RES_FORCE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

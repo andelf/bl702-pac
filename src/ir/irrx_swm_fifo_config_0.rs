@@ -34,182 +34,68 @@ impl From<crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rx_fifo_cnt` reader - "]
-pub struct RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl RX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_cnt` writer - "]
-pub struct RX_FIFO_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x7f << 4)) | ((value as u32 & 0x7f) << 4);
-        self.w
-    }
-}
-#[doc = "Field `rx_fifo_underflow` reader - "]
-pub struct RX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_UNDERFLOW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_UNDERFLOW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_underflow` writer - "]
-pub struct RX_FIFO_UNDERFLOW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_UNDERFLOW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `rx_fifo_overflow` reader - "]
-pub struct RX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_OVERFLOW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_OVERFLOW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_overflow` writer - "]
-pub struct RX_FIFO_OVERFLOW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_OVERFLOW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
 #[doc = "Field `rx_fifo_clr` reader - "]
-pub struct RX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RX_FIFO_CLR_R = crate::BitReader<bool>;
 #[doc = "Field `rx_fifo_clr` writer - "]
-pub struct RX_FIFO_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type RX_FIFO_CLR_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, IRRX_SWM_FIFO_CONFIG_0_SPEC, bool, O>;
+#[doc = "Field `rx_fifo_overflow` reader - "]
+pub type RX_FIFO_OVERFLOW_R = crate::BitReader<bool>;
+#[doc = "Field `rx_fifo_overflow` writer - "]
+pub type RX_FIFO_OVERFLOW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, IRRX_SWM_FIFO_CONFIG_0_SPEC, bool, O>;
+#[doc = "Field `rx_fifo_underflow` reader - "]
+pub type RX_FIFO_UNDERFLOW_R = crate::BitReader<bool>;
+#[doc = "Field `rx_fifo_underflow` writer - "]
+pub type RX_FIFO_UNDERFLOW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, IRRX_SWM_FIFO_CONFIG_0_SPEC, bool, O>;
+#[doc = "Field `rx_fifo_cnt` reader - "]
+pub type RX_FIFO_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rx_fifo_cnt` writer - "]
+pub type RX_FIFO_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, IRRX_SWM_FIFO_CONFIG_0_SPEC, u8, u8, 7, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn rx_fifo_clr(&self) -> RX_FIFO_CLR_R {
+        RX_FIFO_CLR_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 2"]
+    #[inline(always)]
+    pub fn rx_fifo_overflow(&self) -> RX_FIFO_OVERFLOW_R {
+        RX_FIFO_OVERFLOW_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn rx_fifo_underflow(&self) -> RX_FIFO_UNDERFLOW_R {
+        RX_FIFO_UNDERFLOW_R::new(((self.bits >> 3) & 1) != 0)
+    }
     #[doc = "Bits 4:10"]
     #[inline(always)]
     pub fn rx_fifo_cnt(&self) -> RX_FIFO_CNT_R {
         RX_FIFO_CNT_R::new(((self.bits >> 4) & 0x7f) as u8)
     }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn rx_fifo_underflow(&self) -> RX_FIFO_UNDERFLOW_R {
-        RX_FIFO_UNDERFLOW_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn rx_fifo_overflow(&self) -> RX_FIFO_OVERFLOW_R {
-        RX_FIFO_OVERFLOW_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn rx_fifo_clr(&self) -> RX_FIFO_CLR_R {
-        RX_FIFO_CLR_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 4:10"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rx_fifo_cnt(&mut self) -> RX_FIFO_CNT_W {
-        RX_FIFO_CNT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn rx_fifo_underflow(&mut self) -> RX_FIFO_UNDERFLOW_W {
-        RX_FIFO_UNDERFLOW_W { w: self }
+    pub fn rx_fifo_clr(&mut self) -> RX_FIFO_CLR_W<0> {
+        RX_FIFO_CLR_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rx_fifo_overflow(&mut self) -> RX_FIFO_OVERFLOW_W {
-        RX_FIFO_OVERFLOW_W { w: self }
+    pub fn rx_fifo_overflow(&mut self) -> RX_FIFO_OVERFLOW_W<2> {
+        RX_FIFO_OVERFLOW_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn rx_fifo_clr(&mut self) -> RX_FIFO_CLR_W {
-        RX_FIFO_CLR_W { w: self }
+    pub fn rx_fifo_underflow(&mut self) -> RX_FIFO_UNDERFLOW_W<3> {
+        RX_FIFO_UNDERFLOW_W::new(self)
+    }
+    #[doc = "Bits 4:10"]
+    #[inline(always)]
+    pub fn rx_fifo_cnt(&mut self) -> RX_FIFO_CNT_W<4> {
+        RX_FIFO_CNT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

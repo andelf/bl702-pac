@@ -34,80 +34,38 @@ impl From<crate::W<TZC_ROM0_R0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `tzc_rom0_r0_start` reader - "]
-pub struct TZC_ROM0_R0_START_R(crate::FieldReader<u16, u16>);
-impl TZC_ROM0_R0_START_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TZC_ROM0_R0_START_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_START_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r0_start` writer - "]
-pub struct TZC_ROM0_R0_START_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TZC_ROM0_R0_START_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `tzc_rom0_r0_end` reader - "]
-pub struct TZC_ROM0_R0_END_R(crate::FieldReader<u16, u16>);
-impl TZC_ROM0_R0_END_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TZC_ROM0_R0_END_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_END_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TZC_ROM0_R0_END_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `tzc_rom0_r0_end` writer - "]
-pub struct TZC_ROM0_R0_END_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TZC_ROM0_R0_END_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type TZC_ROM0_R0_END_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, TZC_ROM0_R0_SPEC, u16, u16, 16, O>;
+#[doc = "Field `tzc_rom0_r0_start` reader - "]
+pub type TZC_ROM0_R0_START_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `tzc_rom0_r0_start` writer - "]
+pub type TZC_ROM0_R0_START_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, TZC_ROM0_R0_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn tzc_rom0_r0_start(&self) -> TZC_ROM0_R0_START_R {
-        TZC_ROM0_R0_START_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn tzc_rom0_r0_end(&self) -> TZC_ROM0_R0_END_R {
         TZC_ROM0_R0_END_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn tzc_rom0_r0_start(&mut self) -> TZC_ROM0_R0_START_W {
-        TZC_ROM0_R0_START_W { w: self }
+    pub fn tzc_rom0_r0_start(&self) -> TZC_ROM0_R0_START_R {
+        TZC_ROM0_R0_START_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn tzc_rom0_r0_end(&mut self) -> TZC_ROM0_R0_END_W {
-        TZC_ROM0_R0_END_W { w: self }
+    pub fn tzc_rom0_r0_end(&mut self) -> TZC_ROM0_R0_END_W<0> {
+        TZC_ROM0_R0_END_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn tzc_rom0_r0_start(&mut self) -> TZC_ROM0_R0_START_W<16> {
+        TZC_ROM0_R0_START_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

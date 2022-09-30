@@ -35,43 +35,22 @@ impl From<crate::W<SE_GMAC_0_STATUS_SPEC>> for W {
     }
 }
 #[doc = "Field `se_gmac_0_status` reader - "]
-pub struct SE_GMAC_0_STATUS_R(crate::FieldReader<u32, u32>);
-impl SE_GMAC_0_STATUS_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        SE_GMAC_0_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_GMAC_0_STATUS_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SE_GMAC_0_STATUS_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `se_gmac_0_status` writer - "]
-pub struct SE_GMAC_0_STATUS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SE_GMAC_0_STATUS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type SE_GMAC_0_STATUS_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SE_GMAC_0_STATUS_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn se_gmac_0_status(&self) -> SE_GMAC_0_STATUS_R {
-        SE_GMAC_0_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
+        SE_GMAC_0_STATUS_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn se_gmac_0_status(&mut self) -> SE_GMAC_0_STATUS_W {
-        SE_GMAC_0_STATUS_W { w: self }
+    pub fn se_gmac_0_status(&mut self) -> SE_GMAC_0_STATUS_W<0> {
+        SE_GMAC_0_STATUS_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

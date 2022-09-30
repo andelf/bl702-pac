@@ -34,330 +34,106 @@ impl From<crate::W<INT_SOURCE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RXC` reader - "]
-pub struct RXC_R(crate::FieldReader<bool, bool>);
-impl RXC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RXC` writer - "]
-pub struct RXC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `TXC` reader - "]
-pub struct TXC_R(crate::FieldReader<bool, bool>);
-impl TXC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TXC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TXC` writer - "]
-pub struct TXC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `BUSY` reader - "]
-pub struct BUSY_R(crate::FieldReader<bool, bool>);
-impl BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `BUSY` writer - "]
-pub struct BUSY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BUSY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `RXE` reader - "]
-pub struct RXE_R(crate::FieldReader<bool, bool>);
-impl RXE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RXE` writer - "]
-pub struct RXE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `RXB` reader - "]
-pub struct RXB_R(crate::FieldReader<bool, bool>);
-impl RXB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RXB` writer - "]
-pub struct RXB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RXB_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `TXE` reader - "]
-pub struct TXE_R(crate::FieldReader<bool, bool>);
-impl TXE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TXE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TXE` writer - "]
-pub struct TXE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `TXB` reader - "]
-pub struct TXB_R(crate::FieldReader<bool, bool>);
-impl TXB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TXB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TXB_R = crate::BitReader<bool>;
 #[doc = "Field `TXB` writer - "]
-pub struct TXB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXB_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TXB_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `TXE` reader - "]
+pub type TXE_R = crate::BitReader<bool>;
+#[doc = "Field `TXE` writer - "]
+pub type TXE_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `RXB` reader - "]
+pub type RXB_R = crate::BitReader<bool>;
+#[doc = "Field `RXB` writer - "]
+pub type RXB_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `RXE` reader - "]
+pub type RXE_R = crate::BitReader<bool>;
+#[doc = "Field `RXE` writer - "]
+pub type RXE_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `BUSY` reader - "]
+pub type BUSY_R = crate::BitReader<bool>;
+#[doc = "Field `BUSY` writer - "]
+pub type BUSY_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `TXC` reader - "]
+pub type TXC_R = crate::BitReader<bool>;
+#[doc = "Field `TXC` writer - "]
+pub type TXC_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
+#[doc = "Field `RXC` reader - "]
+pub type RXC_R = crate::BitReader<bool>;
+#[doc = "Field `RXC` writer - "]
+pub type RXC_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_SOURCE_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 6"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn rxc(&self) -> RXC_R {
-        RXC_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn txc(&self) -> TXC_R {
-        TXC_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn busy(&self) -> BUSY_R {
-        BUSY_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn rxe(&self) -> RXE_R {
-        RXE_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn rxb(&self) -> RXB_R {
-        RXB_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn txb(&self) -> TXB_R {
+        TXB_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn txe(&self) -> TXE_R {
-        TXE_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn txb(&self) -> TXB_R {
-        TXB_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn rxc(&mut self) -> RXC_W {
-        RXC_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn txc(&mut self) -> TXC_W {
-        TXC_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn busy(&mut self) -> BUSY_W {
-        BUSY_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn rxe(&mut self) -> RXE_W {
-        RXE_W { w: self }
+        TXE_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rxb(&mut self) -> RXB_W {
-        RXB_W { w: self }
+    pub fn rxb(&self) -> RXB_R {
+        RXB_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn rxe(&self) -> RXE_R {
+        RXE_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn busy(&self) -> BUSY_R {
+        BUSY_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn txc(&self) -> TXC_R {
+        TXC_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn rxc(&self) -> RXC_R {
+        RXC_R::new(((self.bits >> 6) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn txb(&mut self) -> TXB_W<0> {
+        TXB_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn txe(&mut self) -> TXE_W {
-        TXE_W { w: self }
+    pub fn txe(&mut self) -> TXE_W<1> {
+        TXE_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn txb(&mut self) -> TXB_W {
-        TXB_W { w: self }
+    pub fn rxb(&mut self) -> RXB_W<2> {
+        RXB_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn rxe(&mut self) -> RXE_W<3> {
+        RXE_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn busy(&mut self) -> BUSY_W<4> {
+        BUSY_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn txc(&mut self) -> TXC_W<5> {
+        TXC_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn rxc(&mut self) -> RXC_W<6> {
+        RXC_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

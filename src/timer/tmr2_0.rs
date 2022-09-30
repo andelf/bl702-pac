@@ -35,43 +35,21 @@ impl From<crate::W<TMR2_0_SPEC>> for W {
     }
 }
 #[doc = "Field `tmr` reader - "]
-pub struct TMR_R(crate::FieldReader<u32, u32>);
-impl TMR_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        TMR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMR_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TMR_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `tmr` writer - "]
-pub struct TMR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TMR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type TMR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TMR2_0_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn tmr(&self) -> TMR_R {
-        TMR_R::new((self.bits & 0xffff_ffff) as u32)
+        TMR_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn tmr(&mut self) -> TMR_W {
-        TMR_W { w: self }
+    pub fn tmr(&mut self) -> TMR_W<0> {
+        TMR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

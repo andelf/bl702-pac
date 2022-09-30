@@ -34,90 +34,37 @@ impl From<crate::W<DVP_DEBUG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_dvp_dbg_sel` reader - "]
-pub struct REG_DVP_DBG_SEL_R(crate::FieldReader<u8, u8>);
-impl REG_DVP_DBG_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_DVP_DBG_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_DVP_DBG_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_dvp_dbg_sel` writer - "]
-pub struct REG_DVP_DBG_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_DVP_DBG_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 1)) | ((value as u32 & 0x07) << 1);
-        self.w
-    }
-}
 #[doc = "Field `reg_dvp_dbg_en` reader - "]
-pub struct REG_DVP_DBG_EN_R(crate::FieldReader<bool, bool>);
-impl REG_DVP_DBG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_DVP_DBG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_DVP_DBG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_DVP_DBG_EN_R = crate::BitReader<bool>;
 #[doc = "Field `reg_dvp_dbg_en` writer - "]
-pub struct REG_DVP_DBG_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_DVP_DBG_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type REG_DVP_DBG_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, DVP_DEBUG_SPEC, bool, O>;
+#[doc = "Field `reg_dvp_dbg_sel` reader - "]
+pub type REG_DVP_DBG_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `reg_dvp_dbg_sel` writer - "]
+pub type REG_DVP_DBG_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, DVP_DEBUG_SPEC, u8, u8, 3, O>;
 impl R {
-    #[doc = "Bits 1:3"]
-    #[inline(always)]
-    pub fn reg_dvp_dbg_sel(&self) -> REG_DVP_DBG_SEL_R {
-        REG_DVP_DBG_SEL_R::new(((self.bits >> 1) & 0x07) as u8)
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn reg_dvp_dbg_en(&self) -> REG_DVP_DBG_EN_R {
-        REG_DVP_DBG_EN_R::new((self.bits & 0x01) != 0)
+        REG_DVP_DBG_EN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bits 1:3"]
+    #[inline(always)]
+    pub fn reg_dvp_dbg_sel(&self) -> REG_DVP_DBG_SEL_R {
+        REG_DVP_DBG_SEL_R::new(((self.bits >> 1) & 7) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 1:3"]
-    #[inline(always)]
-    pub fn reg_dvp_dbg_sel(&mut self) -> REG_DVP_DBG_SEL_W {
-        REG_DVP_DBG_SEL_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_dvp_dbg_en(&mut self) -> REG_DVP_DBG_EN_W {
-        REG_DVP_DBG_EN_W { w: self }
+    pub fn reg_dvp_dbg_en(&mut self) -> REG_DVP_DBG_EN_W<0> {
+        REG_DVP_DBG_EN_W::new(self)
+    }
+    #[doc = "Bits 1:3"]
+    #[inline(always)]
+    pub fn reg_dvp_dbg_sel(&mut self) -> REG_DVP_DBG_SEL_W<1> {
+        REG_DVP_DBG_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

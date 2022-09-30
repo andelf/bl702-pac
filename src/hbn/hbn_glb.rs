@@ -34,398 +34,155 @@ impl From<crate::W<HBN_GLB_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sw_ldo11_aon_vout_sel` reader - "]
-pub struct SW_LDO11_AON_VOUT_SEL_R(crate::FieldReader<u8, u8>);
-impl SW_LDO11_AON_VOUT_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SW_LDO11_AON_VOUT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_LDO11_AON_VOUT_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_ldo11_aon_vout_sel` writer - "]
-pub struct SW_LDO11_AON_VOUT_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SW_LDO11_AON_VOUT_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 28)) | ((value as u32 & 0x0f) << 28);
-        self.w
-    }
-}
-#[doc = "Field `sw_ldo11_rt_vout_sel` reader - "]
-pub struct SW_LDO11_RT_VOUT_SEL_R(crate::FieldReader<u8, u8>);
-impl SW_LDO11_RT_VOUT_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SW_LDO11_RT_VOUT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_LDO11_RT_VOUT_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_ldo11_rt_vout_sel` writer - "]
-pub struct SW_LDO11_RT_VOUT_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SW_LDO11_RT_VOUT_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 24)) | ((value as u32 & 0x0f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `sw_ldo11soc_vout_sel_aon` reader - "]
-pub struct SW_LDO11SOC_VOUT_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl SW_LDO11SOC_VOUT_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SW_LDO11SOC_VOUT_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_LDO11SOC_VOUT_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_ldo11soc_vout_sel_aon` writer - "]
-pub struct SW_LDO11SOC_VOUT_SEL_AON_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SW_LDO11SOC_VOUT_SEL_AON_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 16)) | ((value as u32 & 0x0f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `hbn_clear_reset_event` reader - "]
-pub struct HBN_CLEAR_RESET_EVENT_R(crate::FieldReader<bool, bool>);
-impl HBN_CLEAR_RESET_EVENT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_CLEAR_RESET_EVENT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_CLEAR_RESET_EVENT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_clear_reset_event` writer - "]
-pub struct HBN_CLEAR_RESET_EVENT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_CLEAR_RESET_EVENT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 13)) | ((value as u32 & 0x01) << 13);
-        self.w
-    }
-}
-#[doc = "Field `hbn_reset_event` reader - "]
-pub struct HBN_RESET_EVENT_R(crate::FieldReader<u8, u8>);
-impl HBN_RESET_EVENT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_RESET_EVENT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_RESET_EVENT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_reset_event` writer - "]
-pub struct HBN_RESET_EVENT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_RESET_EVENT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 8)) | ((value as u32 & 0x1f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `ldo11_rt_iload_sel` reader - "]
-pub struct LDO11_RT_ILOAD_SEL_R(crate::FieldReader<u8, u8>);
-impl LDO11_RT_ILOAD_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LDO11_RT_ILOAD_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11_RT_ILOAD_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11_rt_iload_sel` writer - "]
-pub struct LDO11_RT_ILOAD_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LDO11_RT_ILOAD_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 6)) | ((value as u32 & 0x03) << 6);
-        self.w
-    }
-}
-#[doc = "Field `hbn_pu_rc32k` reader - "]
-pub struct HBN_PU_RC32K_R(crate::FieldReader<bool, bool>);
-impl HBN_PU_RC32K_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_PU_RC32K_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_PU_RC32K_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_pu_rc32k` writer - "]
-pub struct HBN_PU_RC32K_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_PU_RC32K_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `hbn_f32k_sel` reader - "]
-pub struct HBN_F32K_SEL_R(crate::FieldReader<u8, u8>);
-impl HBN_F32K_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_F32K_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_F32K_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_f32k_sel` writer - "]
-pub struct HBN_F32K_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_F32K_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 3)) | ((value as u32 & 0x03) << 3);
-        self.w
-    }
-}
-#[doc = "Field `hbn_uart_clk_sel` reader - "]
-pub struct HBN_UART_CLK_SEL_R(crate::FieldReader<bool, bool>);
-impl HBN_UART_CLK_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_UART_CLK_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_UART_CLK_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_uart_clk_sel` writer - "]
-pub struct HBN_UART_CLK_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_UART_CLK_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
 #[doc = "Field `hbn_root_clk_sel` reader - "]
-pub struct HBN_ROOT_CLK_SEL_R(crate::FieldReader<u8, u8>);
-impl HBN_ROOT_CLK_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_ROOT_CLK_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_ROOT_CLK_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type HBN_ROOT_CLK_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `hbn_root_clk_sel` writer - "]
-pub struct HBN_ROOT_CLK_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_ROOT_CLK_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type HBN_ROOT_CLK_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 2, O>;
+#[doc = "Field `hbn_uart_clk_sel` reader - "]
+pub type HBN_UART_CLK_SEL_R = crate::BitReader<bool>;
+#[doc = "Field `hbn_uart_clk_sel` writer - "]
+pub type HBN_UART_CLK_SEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_GLB_SPEC, bool, O>;
+#[doc = "Field `hbn_f32k_sel` reader - "]
+pub type HBN_F32K_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `hbn_f32k_sel` writer - "]
+pub type HBN_F32K_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 2, O>;
+#[doc = "Field `hbn_pu_rc32k` reader - "]
+pub type HBN_PU_RC32K_R = crate::BitReader<bool>;
+#[doc = "Field `hbn_pu_rc32k` writer - "]
+pub type HBN_PU_RC32K_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_GLB_SPEC, bool, O>;
+#[doc = "Field `ldo11_rt_iload_sel` reader - "]
+pub type LDO11_RT_ILOAD_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ldo11_rt_iload_sel` writer - "]
+pub type LDO11_RT_ILOAD_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 2, O>;
+#[doc = "Field `hbn_reset_event` reader - "]
+pub type HBN_RESET_EVENT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `hbn_reset_event` writer - "]
+pub type HBN_RESET_EVENT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 5, O>;
+#[doc = "Field `hbn_clear_reset_event` reader - "]
+pub type HBN_CLEAR_RESET_EVENT_R = crate::BitReader<bool>;
+#[doc = "Field `hbn_clear_reset_event` writer - "]
+pub type HBN_CLEAR_RESET_EVENT_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, HBN_GLB_SPEC, bool, O>;
+#[doc = "Field `sw_ldo11soc_vout_sel_aon` reader - "]
+pub type SW_LDO11SOC_VOUT_SEL_AON_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `sw_ldo11soc_vout_sel_aon` writer - "]
+pub type SW_LDO11SOC_VOUT_SEL_AON_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 4, O>;
+#[doc = "Field `sw_ldo11_rt_vout_sel` reader - "]
+pub type SW_LDO11_RT_VOUT_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `sw_ldo11_rt_vout_sel` writer - "]
+pub type SW_LDO11_RT_VOUT_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 4, O>;
+#[doc = "Field `sw_ldo11_aon_vout_sel` reader - "]
+pub type SW_LDO11_AON_VOUT_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `sw_ldo11_aon_vout_sel` writer - "]
+pub type SW_LDO11_AON_VOUT_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_GLB_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 28:31"]
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn sw_ldo11_aon_vout_sel(&self) -> SW_LDO11_AON_VOUT_SEL_R {
-        SW_LDO11_AON_VOUT_SEL_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn hbn_root_clk_sel(&self) -> HBN_ROOT_CLK_SEL_R {
+        HBN_ROOT_CLK_SEL_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 24:27"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn sw_ldo11_rt_vout_sel(&self) -> SW_LDO11_RT_VOUT_SEL_R {
-        SW_LDO11_RT_VOUT_SEL_R::new(((self.bits >> 24) & 0x0f) as u8)
+    pub fn hbn_uart_clk_sel(&self) -> HBN_UART_CLK_SEL_R {
+        HBN_UART_CLK_SEL_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bits 16:19"]
+    #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn sw_ldo11soc_vout_sel_aon(&self) -> SW_LDO11SOC_VOUT_SEL_AON_R {
-        SW_LDO11SOC_VOUT_SEL_AON_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn hbn_f32k_sel(&self) -> HBN_F32K_SEL_R {
+        HBN_F32K_SEL_R::new(((self.bits >> 3) & 3) as u8)
     }
-    #[doc = "Bit 13"]
+    #[doc = "Bit 5"]
     #[inline(always)]
-    pub fn hbn_clear_reset_event(&self) -> HBN_CLEAR_RESET_EVENT_R {
-        HBN_CLEAR_RESET_EVENT_R::new(((self.bits >> 13) & 0x01) != 0)
+    pub fn hbn_pu_rc32k(&self) -> HBN_PU_RC32K_R {
+        HBN_PU_RC32K_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bits 6:7"]
+    #[inline(always)]
+    pub fn ldo11_rt_iload_sel(&self) -> LDO11_RT_ILOAD_SEL_R {
+        LDO11_RT_ILOAD_SEL_R::new(((self.bits >> 6) & 3) as u8)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
     pub fn hbn_reset_event(&self) -> HBN_RESET_EVENT_R {
         HBN_RESET_EVENT_R::new(((self.bits >> 8) & 0x1f) as u8)
     }
-    #[doc = "Bits 6:7"]
+    #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn ldo11_rt_iload_sel(&self) -> LDO11_RT_ILOAD_SEL_R {
-        LDO11_RT_ILOAD_SEL_R::new(((self.bits >> 6) & 0x03) as u8)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn hbn_pu_rc32k(&self) -> HBN_PU_RC32K_R {
-        HBN_PU_RC32K_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bits 3:4"]
-    #[inline(always)]
-    pub fn hbn_f32k_sel(&self) -> HBN_F32K_SEL_R {
-        HBN_F32K_SEL_R::new(((self.bits >> 3) & 0x03) as u8)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn hbn_uart_clk_sel(&self) -> HBN_UART_CLK_SEL_R {
-        HBN_UART_CLK_SEL_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bits 0:1"]
-    #[inline(always)]
-    pub fn hbn_root_clk_sel(&self) -> HBN_ROOT_CLK_SEL_R {
-        HBN_ROOT_CLK_SEL_R::new((self.bits & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 28:31"]
-    #[inline(always)]
-    pub fn sw_ldo11_aon_vout_sel(&mut self) -> SW_LDO11_AON_VOUT_SEL_W {
-        SW_LDO11_AON_VOUT_SEL_W { w: self }
-    }
-    #[doc = "Bits 24:27"]
-    #[inline(always)]
-    pub fn sw_ldo11_rt_vout_sel(&mut self) -> SW_LDO11_RT_VOUT_SEL_W {
-        SW_LDO11_RT_VOUT_SEL_W { w: self }
+    pub fn hbn_clear_reset_event(&self) -> HBN_CLEAR_RESET_EVENT_R {
+        HBN_CLEAR_RESET_EVENT_R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn sw_ldo11soc_vout_sel_aon(&mut self) -> SW_LDO11SOC_VOUT_SEL_AON_W {
-        SW_LDO11SOC_VOUT_SEL_AON_W { w: self }
+    pub fn sw_ldo11soc_vout_sel_aon(&self) -> SW_LDO11SOC_VOUT_SEL_AON_R {
+        SW_LDO11SOC_VOUT_SEL_AON_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bit 13"]
+    #[doc = "Bits 24:27"]
     #[inline(always)]
-    pub fn hbn_clear_reset_event(&mut self) -> HBN_CLEAR_RESET_EVENT_W {
-        HBN_CLEAR_RESET_EVENT_W { w: self }
+    pub fn sw_ldo11_rt_vout_sel(&self) -> SW_LDO11_RT_VOUT_SEL_R {
+        SW_LDO11_RT_VOUT_SEL_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
-    #[doc = "Bits 8:12"]
+    #[doc = "Bits 28:31"]
     #[inline(always)]
-    pub fn hbn_reset_event(&mut self) -> HBN_RESET_EVENT_W {
-        HBN_RESET_EVENT_W { w: self }
+    pub fn sw_ldo11_aon_vout_sel(&self) -> SW_LDO11_AON_VOUT_SEL_R {
+        SW_LDO11_AON_VOUT_SEL_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
-    #[doc = "Bits 6:7"]
+}
+impl W {
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn ldo11_rt_iload_sel(&mut self) -> LDO11_RT_ILOAD_SEL_W {
-        LDO11_RT_ILOAD_SEL_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn hbn_pu_rc32k(&mut self) -> HBN_PU_RC32K_W {
-        HBN_PU_RC32K_W { w: self }
-    }
-    #[doc = "Bits 3:4"]
-    #[inline(always)]
-    pub fn hbn_f32k_sel(&mut self) -> HBN_F32K_SEL_W {
-        HBN_F32K_SEL_W { w: self }
+    pub fn hbn_root_clk_sel(&mut self) -> HBN_ROOT_CLK_SEL_W<0> {
+        HBN_ROOT_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn hbn_uart_clk_sel(&mut self) -> HBN_UART_CLK_SEL_W {
-        HBN_UART_CLK_SEL_W { w: self }
+    pub fn hbn_uart_clk_sel(&mut self) -> HBN_UART_CLK_SEL_W<2> {
+        HBN_UART_CLK_SEL_W::new(self)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn hbn_root_clk_sel(&mut self) -> HBN_ROOT_CLK_SEL_W {
-        HBN_ROOT_CLK_SEL_W { w: self }
+    pub fn hbn_f32k_sel(&mut self) -> HBN_F32K_SEL_W<3> {
+        HBN_F32K_SEL_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn hbn_pu_rc32k(&mut self) -> HBN_PU_RC32K_W<5> {
+        HBN_PU_RC32K_W::new(self)
+    }
+    #[doc = "Bits 6:7"]
+    #[inline(always)]
+    pub fn ldo11_rt_iload_sel(&mut self) -> LDO11_RT_ILOAD_SEL_W<6> {
+        LDO11_RT_ILOAD_SEL_W::new(self)
+    }
+    #[doc = "Bits 8:12"]
+    #[inline(always)]
+    pub fn hbn_reset_event(&mut self) -> HBN_RESET_EVENT_W<8> {
+        HBN_RESET_EVENT_W::new(self)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn hbn_clear_reset_event(&mut self) -> HBN_CLEAR_RESET_EVENT_W<13> {
+        HBN_CLEAR_RESET_EVENT_W::new(self)
+    }
+    #[doc = "Bits 16:19"]
+    #[inline(always)]
+    pub fn sw_ldo11soc_vout_sel_aon(&mut self) -> SW_LDO11SOC_VOUT_SEL_AON_W<16> {
+        SW_LDO11SOC_VOUT_SEL_AON_W::new(self)
+    }
+    #[doc = "Bits 24:27"]
+    #[inline(always)]
+    pub fn sw_ldo11_rt_vout_sel(&mut self) -> SW_LDO11_RT_VOUT_SEL_W<24> {
+        SW_LDO11_RT_VOUT_SEL_W::new(self)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn sw_ldo11_aon_vout_sel(&mut self) -> SW_LDO11_AON_VOUT_SEL_W<28> {
+        SW_LDO11_AON_VOUT_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

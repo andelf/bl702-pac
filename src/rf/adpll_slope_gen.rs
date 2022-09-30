@@ -34,126 +34,55 @@ impl From<crate::W<ADPLL_SLOPE_GEN_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_slope_gen_pulse_width_enhance` reader - "]
-pub struct ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R(crate::FieldReader<bool, bool>);
-impl ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_slope_gen_pulse_width_enhance` writer - "]
-pub struct ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `adpll_slope_gen_dc_corr` reader - "]
-pub struct ADPLL_SLOPE_GEN_DC_CORR_R(crate::FieldReader<u8, u8>);
-impl ADPLL_SLOPE_GEN_DC_CORR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_SLOPE_GEN_DC_CORR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_SLOPE_GEN_DC_CORR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_slope_gen_dc_corr` writer - "]
-pub struct ADPLL_SLOPE_GEN_DC_CORR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_SLOPE_GEN_DC_CORR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
 #[doc = "Field `adpll_slope_gen_r_sel` reader - "]
-pub struct ADPLL_SLOPE_GEN_R_SEL_R(crate::FieldReader<u8, u8>);
-impl ADPLL_SLOPE_GEN_R_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_SLOPE_GEN_R_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_SLOPE_GEN_R_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_SLOPE_GEN_R_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `adpll_slope_gen_r_sel` writer - "]
-pub struct ADPLL_SLOPE_GEN_R_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_SLOPE_GEN_R_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07) | (value as u32 & 0x07);
-        self.w
-    }
-}
+pub type ADPLL_SLOPE_GEN_R_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_SLOPE_GEN_SPEC, u8, u8, 3, O>;
+#[doc = "Field `adpll_slope_gen_dc_corr` reader - "]
+pub type ADPLL_SLOPE_GEN_DC_CORR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_slope_gen_dc_corr` writer - "]
+pub type ADPLL_SLOPE_GEN_DC_CORR_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_SLOPE_GEN_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_slope_gen_pulse_width_enhance` reader - "]
+pub type ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_slope_gen_pulse_width_enhance` writer - "]
+pub type ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_SLOPE_GEN_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 6"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn adpll_slope_gen_pulse_width_enhance(&self) -> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R {
-        ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn adpll_slope_gen_r_sel(&self) -> ADPLL_SLOPE_GEN_R_SEL_R {
+        ADPLL_SLOPE_GEN_R_SEL_R::new((self.bits & 7) as u8)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
     pub fn adpll_slope_gen_dc_corr(&self) -> ADPLL_SLOPE_GEN_DC_CORR_R {
-        ADPLL_SLOPE_GEN_DC_CORR_R::new(((self.bits >> 4) & 0x03) as u8)
+        ADPLL_SLOPE_GEN_DC_CORR_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn adpll_slope_gen_r_sel(&self) -> ADPLL_SLOPE_GEN_R_SEL_R {
-        ADPLL_SLOPE_GEN_R_SEL_R::new((self.bits & 0x07) as u8)
+    pub fn adpll_slope_gen_pulse_width_enhance(&self) -> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R {
+        ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_R::new(((self.bits >> 6) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 6"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn adpll_slope_gen_pulse_width_enhance(&mut self) -> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W {
-        ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W { w: self }
+    pub fn adpll_slope_gen_r_sel(&mut self) -> ADPLL_SLOPE_GEN_R_SEL_W<0> {
+        ADPLL_SLOPE_GEN_R_SEL_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn adpll_slope_gen_dc_corr(&mut self) -> ADPLL_SLOPE_GEN_DC_CORR_W {
-        ADPLL_SLOPE_GEN_DC_CORR_W { w: self }
+    pub fn adpll_slope_gen_dc_corr(&mut self) -> ADPLL_SLOPE_GEN_DC_CORR_W<4> {
+        ADPLL_SLOPE_GEN_DC_CORR_W::new(self)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn adpll_slope_gen_r_sel(&mut self) -> ADPLL_SLOPE_GEN_R_SEL_W {
-        ADPLL_SLOPE_GEN_R_SEL_W { w: self }
+    pub fn adpll_slope_gen_pulse_width_enhance(
+        &mut self,
+    ) -> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<6> {
+        ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

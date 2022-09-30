@@ -34,146 +34,50 @@ impl From<crate::W<TILR2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `tilr_2` reader - "]
-pub struct TILR_2_R(crate::FieldReader<bool, bool>);
-impl TILR_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TILR_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TILR_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tilr_2` writer - "]
-pub struct TILR_2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TILR_2_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `tilr_1` reader - "]
-pub struct TILR_1_R(crate::FieldReader<bool, bool>);
-impl TILR_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TILR_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TILR_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tilr_1` writer - "]
-pub struct TILR_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TILR_1_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `tilr_0` reader - "]
-pub struct TILR_0_R(crate::FieldReader<bool, bool>);
-impl TILR_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TILR_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TILR_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TILR_0_R = crate::BitReader<bool>;
 #[doc = "Field `tilr_0` writer - "]
-pub struct TILR_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TILR_0_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TILR_0_W<'a, const O: u8> = crate::BitWriter<'a, u32, TILR2_SPEC, bool, O>;
+#[doc = "Field `tilr_1` reader - "]
+pub type TILR_1_R = crate::BitReader<bool>;
+#[doc = "Field `tilr_1` writer - "]
+pub type TILR_1_W<'a, const O: u8> = crate::BitWriter<'a, u32, TILR2_SPEC, bool, O>;
+#[doc = "Field `tilr_2` reader - "]
+pub type TILR_2_R = crate::BitReader<bool>;
+#[doc = "Field `tilr_2` writer - "]
+pub type TILR_2_W<'a, const O: u8> = crate::BitWriter<'a, u32, TILR2_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tilr_2(&self) -> TILR_2_R {
-        TILR_2_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn tilr_0(&self) -> TILR_0_R {
+        TILR_0_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn tilr_1(&self) -> TILR_1_R {
-        TILR_1_R::new(((self.bits >> 1) & 0x01) != 0)
+        TILR_1_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tilr_0(&self) -> TILR_0_R {
-        TILR_0_R::new((self.bits & 0x01) != 0)
+    pub fn tilr_2(&self) -> TILR_2_R {
+        TILR_2_R::new(((self.bits >> 2) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tilr_2(&mut self) -> TILR_2_W {
-        TILR_2_W { w: self }
+    pub fn tilr_0(&mut self) -> TILR_0_W<0> {
+        TILR_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn tilr_1(&mut self) -> TILR_1_W {
-        TILR_1_W { w: self }
+    pub fn tilr_1(&mut self) -> TILR_1_W<1> {
+        TILR_1_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tilr_0(&mut self) -> TILR_0_W {
-        TILR_0_W { w: self }
+    pub fn tilr_2(&mut self) -> TILR_2_W<2> {
+        TILR_2_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

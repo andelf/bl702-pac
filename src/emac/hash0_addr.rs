@@ -35,43 +35,21 @@ impl From<crate::W<HASH0_ADDR_SPEC>> for W {
     }
 }
 #[doc = "Field `HASH0` reader - "]
-pub struct HASH0_R(crate::FieldReader<u32, u32>);
-impl HASH0_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        HASH0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HASH0_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type HASH0_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `HASH0` writer - "]
-pub struct HASH0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HASH0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type HASH0_W<'a, const O: u8> = crate::FieldWriter<'a, u32, HASH0_ADDR_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn hash0(&self) -> HASH0_R {
-        HASH0_R::new((self.bits & 0xffff_ffff) as u32)
+        HASH0_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn hash0(&mut self) -> HASH0_W {
-        HASH0_W { w: self }
+    pub fn hash0(&mut self) -> HASH0_W<0> {
+        HASH0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

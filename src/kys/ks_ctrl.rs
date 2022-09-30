@@ -34,290 +34,106 @@ impl From<crate::W<KS_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `col_num` reader - "]
-pub struct COL_NUM_R(crate::FieldReader<u8, u8>);
-impl COL_NUM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        COL_NUM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for COL_NUM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `col_num` writer - "]
-pub struct COL_NUM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> COL_NUM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 20)) | ((value as u32 & 0x1f) << 20);
-        self.w
-    }
-}
-#[doc = "Field `row_num` reader - "]
-pub struct ROW_NUM_R(crate::FieldReader<u8, u8>);
-impl ROW_NUM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROW_NUM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROW_NUM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `row_num` writer - "]
-pub struct ROW_NUM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROW_NUM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 16)) | ((value as u32 & 0x07) << 16);
-        self.w
-    }
-}
-#[doc = "Field `rc_ext` reader - "]
-pub struct RC_EXT_R(crate::FieldReader<u8, u8>);
-impl RC_EXT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RC_EXT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC_EXT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc_ext` writer - "]
-pub struct RC_EXT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RC_EXT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `deg_cnt` reader - "]
-pub struct DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `deg_cnt` writer - "]
-pub struct DEG_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEG_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 4)) | ((value as u32 & 0x0f) << 4);
-        self.w
-    }
-}
-#[doc = "Field `deg_en` reader - "]
-pub struct DEG_EN_R(crate::FieldReader<bool, bool>);
-impl DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `deg_en` writer - "]
-pub struct DEG_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEG_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `ghost_en` reader - "]
-pub struct GHOST_EN_R(crate::FieldReader<bool, bool>);
-impl GHOST_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GHOST_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GHOST_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ghost_en` writer - "]
-pub struct GHOST_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GHOST_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
 #[doc = "Field `ks_en` reader - "]
-pub struct KS_EN_R(crate::FieldReader<bool, bool>);
-impl KS_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        KS_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KS_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type KS_EN_R = crate::BitReader<bool>;
 #[doc = "Field `ks_en` writer - "]
-pub struct KS_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KS_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type KS_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, KS_CTRL_SPEC, bool, O>;
+#[doc = "Field `ghost_en` reader - "]
+pub type GHOST_EN_R = crate::BitReader<bool>;
+#[doc = "Field `ghost_en` writer - "]
+pub type GHOST_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, KS_CTRL_SPEC, bool, O>;
+#[doc = "Field `deg_en` reader - "]
+pub type DEG_EN_R = crate::BitReader<bool>;
+#[doc = "Field `deg_en` writer - "]
+pub type DEG_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, KS_CTRL_SPEC, bool, O>;
+#[doc = "Field `deg_cnt` reader - "]
+pub type DEG_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `deg_cnt` writer - "]
+pub type DEG_CNT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, KS_CTRL_SPEC, u8, u8, 4, O>;
+#[doc = "Field `rc_ext` reader - "]
+pub type RC_EXT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rc_ext` writer - "]
+pub type RC_EXT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, KS_CTRL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `row_num` reader - "]
+pub type ROW_NUM_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `row_num` writer - "]
+pub type ROW_NUM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, KS_CTRL_SPEC, u8, u8, 3, O>;
+#[doc = "Field `col_num` reader - "]
+pub type COL_NUM_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `col_num` writer - "]
+pub type COL_NUM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, KS_CTRL_SPEC, u8, u8, 5, O>;
 impl R {
-    #[doc = "Bits 20:24"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn col_num(&self) -> COL_NUM_R {
-        COL_NUM_R::new(((self.bits >> 20) & 0x1f) as u8)
+    pub fn ks_en(&self) -> KS_EN_R {
+        KS_EN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bits 16:18"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn row_num(&self) -> ROW_NUM_R {
-        ROW_NUM_R::new(((self.bits >> 16) & 0x07) as u8)
+    pub fn ghost_en(&self) -> GHOST_EN_R {
+        GHOST_EN_R::new(((self.bits >> 2) & 1) != 0)
     }
-    #[doc = "Bits 8:9"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn rc_ext(&self) -> RC_EXT_R {
-        RC_EXT_R::new(((self.bits >> 8) & 0x03) as u8)
+    pub fn deg_en(&self) -> DEG_EN_R {
+        DEG_EN_R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
     pub fn deg_cnt(&self) -> DEG_CNT_R {
         DEG_CNT_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bit 3"]
+    #[doc = "Bits 8:9"]
     #[inline(always)]
-    pub fn deg_en(&self) -> DEG_EN_R {
-        DEG_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn ghost_en(&self) -> GHOST_EN_R {
-        GHOST_EN_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn ks_en(&self) -> KS_EN_R {
-        KS_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bits 20:24"]
-    #[inline(always)]
-    pub fn col_num(&mut self) -> COL_NUM_W {
-        COL_NUM_W { w: self }
+    pub fn rc_ext(&self) -> RC_EXT_R {
+        RC_EXT_R::new(((self.bits >> 8) & 3) as u8)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
-    pub fn row_num(&mut self) -> ROW_NUM_W {
-        ROW_NUM_W { w: self }
+    pub fn row_num(&self) -> ROW_NUM_R {
+        ROW_NUM_R::new(((self.bits >> 16) & 7) as u8)
     }
-    #[doc = "Bits 8:9"]
+    #[doc = "Bits 20:24"]
     #[inline(always)]
-    pub fn rc_ext(&mut self) -> RC_EXT_W {
-        RC_EXT_W { w: self }
+    pub fn col_num(&self) -> COL_NUM_R {
+        COL_NUM_R::new(((self.bits >> 20) & 0x1f) as u8)
     }
-    #[doc = "Bits 4:7"]
+}
+impl W {
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn deg_cnt(&mut self) -> DEG_CNT_W {
-        DEG_CNT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn deg_en(&mut self) -> DEG_EN_W {
-        DEG_EN_W { w: self }
+    pub fn ks_en(&mut self) -> KS_EN_W<0> {
+        KS_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn ghost_en(&mut self) -> GHOST_EN_W {
-        GHOST_EN_W { w: self }
+    pub fn ghost_en(&mut self) -> GHOST_EN_W<2> {
+        GHOST_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn ks_en(&mut self) -> KS_EN_W {
-        KS_EN_W { w: self }
+    pub fn deg_en(&mut self) -> DEG_EN_W<3> {
+        DEG_EN_W::new(self)
+    }
+    #[doc = "Bits 4:7"]
+    #[inline(always)]
+    pub fn deg_cnt(&mut self) -> DEG_CNT_W<4> {
+        DEG_CNT_W::new(self)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn rc_ext(&mut self) -> RC_EXT_W<8> {
+        RC_EXT_W::new(self)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn row_num(&mut self) -> ROW_NUM_W<16> {
+        ROW_NUM_W::new(self)
+    }
+    #[doc = "Bits 20:24"]
+    #[inline(always)]
+    pub fn col_num(&mut self) -> COL_NUM_W<20> {
+        COL_NUM_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

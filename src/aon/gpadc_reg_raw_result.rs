@@ -35,31 +35,10 @@ impl From<crate::W<GPADC_REG_RAW_RESULT_SPEC>> for W {
     }
 }
 #[doc = "Field `gpadc_raw_data` reader - "]
-pub struct GPADC_RAW_DATA_R(crate::FieldReader<u16, u16>);
-impl GPADC_RAW_DATA_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        GPADC_RAW_DATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_RAW_DATA_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GPADC_RAW_DATA_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `gpadc_raw_data` writer - "]
-pub struct GPADC_RAW_DATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_RAW_DATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type GPADC_RAW_DATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPADC_REG_RAW_RESULT_SPEC, u16, u16, 12, O>;
 impl R {
     #[doc = "Bits 0:11"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn gpadc_raw_data(&mut self) -> GPADC_RAW_DATA_W {
-        GPADC_RAW_DATA_W { w: self }
+    pub fn gpadc_raw_data(&mut self) -> GPADC_RAW_DATA_W<0> {
+        GPADC_RAW_DATA_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

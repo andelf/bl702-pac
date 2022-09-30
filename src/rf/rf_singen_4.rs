@@ -34,172 +34,66 @@ impl From<crate::W<RF_SINGEN_4_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `singen_fix_en_i` reader - "]
-pub struct SINGEN_FIX_EN_I_R(crate::FieldReader<bool, bool>);
-impl SINGEN_FIX_EN_I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SINGEN_FIX_EN_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_EN_I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_en_i` writer - "]
-pub struct SINGEN_FIX_EN_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_FIX_EN_I_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `singen_fix_i` reader - "]
-pub struct SINGEN_FIX_I_R(crate::FieldReader<u16, u16>);
-impl SINGEN_FIX_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_FIX_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_i` writer - "]
-pub struct SINGEN_FIX_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_FIX_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0fff << 16)) | ((value as u32 & 0x0fff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `singen_fix_en_q` reader - "]
-pub struct SINGEN_FIX_EN_Q_R(crate::FieldReader<bool, bool>);
-impl SINGEN_FIX_EN_Q_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SINGEN_FIX_EN_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_EN_Q_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_en_q` writer - "]
-pub struct SINGEN_FIX_EN_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_FIX_EN_Q_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
 #[doc = "Field `singen_fix_q` reader - "]
-pub struct SINGEN_FIX_Q_R(crate::FieldReader<u16, u16>);
-impl SINGEN_FIX_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_FIX_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SINGEN_FIX_Q_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `singen_fix_q` writer - "]
-pub struct SINGEN_FIX_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SINGEN_FIX_Q_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type SINGEN_FIX_Q_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SINGEN_4_SPEC, u16, u16, 12, O>;
+#[doc = "Field `singen_fix_en_q` reader - "]
+pub type SINGEN_FIX_EN_Q_R = crate::BitReader<bool>;
+#[doc = "Field `singen_fix_en_q` writer - "]
+pub type SINGEN_FIX_EN_Q_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_SINGEN_4_SPEC, bool, O>;
+#[doc = "Field `singen_fix_i` reader - "]
+pub type SINGEN_FIX_I_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `singen_fix_i` writer - "]
+pub type SINGEN_FIX_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_SINGEN_4_SPEC, u16, u16, 12, O>;
+#[doc = "Field `singen_fix_en_i` reader - "]
+pub type SINGEN_FIX_EN_I_R = crate::BitReader<bool>;
+#[doc = "Field `singen_fix_en_i` writer - "]
+pub type SINGEN_FIX_EN_I_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_SINGEN_4_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 28"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn singen_fix_en_i(&self) -> SINGEN_FIX_EN_I_R {
-        SINGEN_FIX_EN_I_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn singen_fix_q(&self) -> SINGEN_FIX_Q_R {
+        SINGEN_FIX_Q_R::new((self.bits & 0x0fff) as u16)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn singen_fix_en_q(&self) -> SINGEN_FIX_EN_Q_R {
+        SINGEN_FIX_EN_Q_R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
     pub fn singen_fix_i(&self) -> SINGEN_FIX_I_R {
         SINGEN_FIX_I_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
-    #[doc = "Bit 12"]
+    #[doc = "Bit 28"]
     #[inline(always)]
-    pub fn singen_fix_en_q(&self) -> SINGEN_FIX_EN_Q_R {
-        SINGEN_FIX_EN_Q_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bits 0:11"]
-    #[inline(always)]
-    pub fn singen_fix_q(&self) -> SINGEN_FIX_Q_R {
-        SINGEN_FIX_Q_R::new((self.bits & 0x0fff) as u16)
+    pub fn singen_fix_en_i(&self) -> SINGEN_FIX_EN_I_R {
+        SINGEN_FIX_EN_I_R::new(((self.bits >> 28) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 28"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn singen_fix_en_i(&mut self) -> SINGEN_FIX_EN_I_W {
-        SINGEN_FIX_EN_I_W { w: self }
-    }
-    #[doc = "Bits 16:27"]
-    #[inline(always)]
-    pub fn singen_fix_i(&mut self) -> SINGEN_FIX_I_W {
-        SINGEN_FIX_I_W { w: self }
+    pub fn singen_fix_q(&mut self) -> SINGEN_FIX_Q_W<0> {
+        SINGEN_FIX_Q_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn singen_fix_en_q(&mut self) -> SINGEN_FIX_EN_Q_W {
-        SINGEN_FIX_EN_Q_W { w: self }
+    pub fn singen_fix_en_q(&mut self) -> SINGEN_FIX_EN_Q_W<12> {
+        SINGEN_FIX_EN_Q_W::new(self)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn singen_fix_q(&mut self) -> SINGEN_FIX_Q_W {
-        SINGEN_FIX_Q_W { w: self }
+    pub fn singen_fix_i(&mut self) -> SINGEN_FIX_I_W<16> {
+        SINGEN_FIX_I_W::new(self)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn singen_fix_en_i(&mut self) -> SINGEN_FIX_EN_I_W<28> {
+        SINGEN_FIX_EN_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

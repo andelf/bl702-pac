@@ -35,43 +35,22 @@ impl From<crate::W<MJPEG_DUMMY_REG_SPEC>> for W {
     }
 }
 #[doc = "Field `mjpeg_dummy_reg` reader - "]
-pub struct MJPEG_DUMMY_REG_R(crate::FieldReader<u32, u32>);
-impl MJPEG_DUMMY_REG_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        MJPEG_DUMMY_REG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MJPEG_DUMMY_REG_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type MJPEG_DUMMY_REG_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `mjpeg_dummy_reg` writer - "]
-pub struct MJPEG_DUMMY_REG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MJPEG_DUMMY_REG_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type MJPEG_DUMMY_REG_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_DUMMY_REG_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn mjpeg_dummy_reg(&self) -> MJPEG_DUMMY_REG_R {
-        MJPEG_DUMMY_REG_R::new((self.bits & 0xffff_ffff) as u32)
+        MJPEG_DUMMY_REG_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn mjpeg_dummy_reg(&mut self) -> MJPEG_DUMMY_REG_W {
-        MJPEG_DUMMY_REG_W { w: self }
+    pub fn mjpeg_dummy_reg(&mut self) -> MJPEG_DUMMY_REG_W<0> {
+        MJPEG_DUMMY_REG_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

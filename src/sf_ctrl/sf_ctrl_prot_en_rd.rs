@@ -34,238 +34,83 @@ impl From<crate::W<SF_CTRL_PROT_EN_RD_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sf_dbg_dis` reader - "]
-pub struct SF_DBG_DIS_R(crate::FieldReader<bool, bool>);
-impl SF_DBG_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_DBG_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_DBG_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_dbg_dis` writer - "]
-pub struct SF_DBG_DIS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_DBG_DIS_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `sf_if_0_trig_wr_lock` reader - "]
-pub struct SF_IF_0_TRIG_WR_LOCK_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_TRIG_WR_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_TRIG_WR_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_TRIG_WR_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_trig_wr_lock` writer - "]
-pub struct SF_IF_0_TRIG_WR_LOCK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_IF_0_TRIG_WR_LOCK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `sf_ctrl_id1_en_rd` reader - "]
-pub struct SF_CTRL_ID1_EN_RD_R(crate::FieldReader<bool, bool>);
-impl SF_CTRL_ID1_EN_RD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_CTRL_ID1_EN_RD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_CTRL_ID1_EN_RD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_ctrl_id1_en_rd` writer - "]
-pub struct SF_CTRL_ID1_EN_RD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_CTRL_ID1_EN_RD_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `sf_ctrl_id0_en_rd` reader - "]
-pub struct SF_CTRL_ID0_EN_RD_R(crate::FieldReader<bool, bool>);
-impl SF_CTRL_ID0_EN_RD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_CTRL_ID0_EN_RD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_CTRL_ID0_EN_RD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_ctrl_id0_en_rd` writer - "]
-pub struct SF_CTRL_ID0_EN_RD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_CTRL_ID0_EN_RD_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `sf_ctrl_prot_en_rd` reader - "]
-pub struct SF_CTRL_PROT_EN_RD_R(crate::FieldReader<bool, bool>);
-impl SF_CTRL_PROT_EN_RD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_CTRL_PROT_EN_RD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_CTRL_PROT_EN_RD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SF_CTRL_PROT_EN_RD_R = crate::BitReader<bool>;
 #[doc = "Field `sf_ctrl_prot_en_rd` writer - "]
-pub struct SF_CTRL_PROT_EN_RD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_CTRL_PROT_EN_RD_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type SF_CTRL_PROT_EN_RD_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SF_CTRL_PROT_EN_RD_SPEC, bool, O>;
+#[doc = "Field `sf_ctrl_id0_en_rd` reader - "]
+pub type SF_CTRL_ID0_EN_RD_R = crate::BitReader<bool>;
+#[doc = "Field `sf_ctrl_id0_en_rd` writer - "]
+pub type SF_CTRL_ID0_EN_RD_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SF_CTRL_PROT_EN_RD_SPEC, bool, O>;
+#[doc = "Field `sf_ctrl_id1_en_rd` reader - "]
+pub type SF_CTRL_ID1_EN_RD_R = crate::BitReader<bool>;
+#[doc = "Field `sf_ctrl_id1_en_rd` writer - "]
+pub type SF_CTRL_ID1_EN_RD_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SF_CTRL_PROT_EN_RD_SPEC, bool, O>;
+#[doc = "Field `sf_if_0_trig_wr_lock` reader - "]
+pub type SF_IF_0_TRIG_WR_LOCK_R = crate::BitReader<bool>;
+#[doc = "Field `sf_if_0_trig_wr_lock` writer - "]
+pub type SF_IF_0_TRIG_WR_LOCK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SF_CTRL_PROT_EN_RD_SPEC, bool, O>;
+#[doc = "Field `sf_dbg_dis` reader - "]
+pub type SF_DBG_DIS_R = crate::BitReader<bool>;
+#[doc = "Field `sf_dbg_dis` writer - "]
+pub type SF_DBG_DIS_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SF_CTRL_PROT_EN_RD_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn sf_dbg_dis(&self) -> SF_DBG_DIS_R {
-        SF_DBG_DIS_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn sf_if_0_trig_wr_lock(&self) -> SF_IF_0_TRIG_WR_LOCK_R {
-        SF_IF_0_TRIG_WR_LOCK_R::new(((self.bits >> 30) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn sf_ctrl_id1_en_rd(&self) -> SF_CTRL_ID1_EN_RD_R {
-        SF_CTRL_ID1_EN_RD_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn sf_ctrl_prot_en_rd(&self) -> SF_CTRL_PROT_EN_RD_R {
+        SF_CTRL_PROT_EN_RD_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn sf_ctrl_id0_en_rd(&self) -> SF_CTRL_ID0_EN_RD_R {
-        SF_CTRL_ID0_EN_RD_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn sf_ctrl_prot_en_rd(&self) -> SF_CTRL_PROT_EN_RD_R {
-        SF_CTRL_PROT_EN_RD_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn sf_dbg_dis(&mut self) -> SF_DBG_DIS_W {
-        SF_DBG_DIS_W { w: self }
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn sf_if_0_trig_wr_lock(&mut self) -> SF_IF_0_TRIG_WR_LOCK_W {
-        SF_IF_0_TRIG_WR_LOCK_W { w: self }
+        SF_CTRL_ID0_EN_RD_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn sf_ctrl_id1_en_rd(&mut self) -> SF_CTRL_ID1_EN_RD_W {
-        SF_CTRL_ID1_EN_RD_W { w: self }
+    pub fn sf_ctrl_id1_en_rd(&self) -> SF_CTRL_ID1_EN_RD_R {
+        SF_CTRL_ID1_EN_RD_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn sf_if_0_trig_wr_lock(&self) -> SF_IF_0_TRIG_WR_LOCK_R {
+        SF_IF_0_TRIG_WR_LOCK_R::new(((self.bits >> 30) & 1) != 0)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn sf_dbg_dis(&self) -> SF_DBG_DIS_R {
+        SF_DBG_DIS_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn sf_ctrl_prot_en_rd(&mut self) -> SF_CTRL_PROT_EN_RD_W<0> {
+        SF_CTRL_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn sf_ctrl_id0_en_rd(&mut self) -> SF_CTRL_ID0_EN_RD_W {
-        SF_CTRL_ID0_EN_RD_W { w: self }
+    pub fn sf_ctrl_id0_en_rd(&mut self) -> SF_CTRL_ID0_EN_RD_W<1> {
+        SF_CTRL_ID0_EN_RD_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn sf_ctrl_prot_en_rd(&mut self) -> SF_CTRL_PROT_EN_RD_W {
-        SF_CTRL_PROT_EN_RD_W { w: self }
+    pub fn sf_ctrl_id1_en_rd(&mut self) -> SF_CTRL_ID1_EN_RD_W<2> {
+        SF_CTRL_ID1_EN_RD_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn sf_if_0_trig_wr_lock(&mut self) -> SF_IF_0_TRIG_WR_LOCK_W<30> {
+        SF_IF_0_TRIG_WR_LOCK_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn sf_dbg_dis(&mut self) -> SF_DBG_DIS_W<31> {
+        SF_DBG_DIS_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

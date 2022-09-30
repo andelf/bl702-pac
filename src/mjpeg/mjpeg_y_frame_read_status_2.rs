@@ -34,116 +34,53 @@ impl From<crate::W<MJPEG_Y_FRAME_READ_STATUS_2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `yy_frm_cnt_r` reader - "]
-pub struct YY_FRM_CNT_R_R(crate::FieldReader<u8, u8>);
-impl YY_FRM_CNT_R_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        YY_FRM_CNT_R_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for YY_FRM_CNT_R_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `yy_frm_cnt_r` writer - "]
-pub struct YY_FRM_CNT_R_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> YY_FRM_CNT_R_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 24)) | ((value as u32 & 0xff) << 24);
-        self.w
-    }
-}
-#[doc = "Field `yy_mem_rnd_r` reader - "]
-pub struct YY_MEM_RND_R_R(crate::FieldReader<u8, u8>);
-impl YY_MEM_RND_R_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        YY_MEM_RND_R_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for YY_MEM_RND_R_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `yy_mem_rnd_r` writer - "]
-pub struct YY_MEM_RND_R_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> YY_MEM_RND_R_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `yy_wblk_r` reader - "]
-pub struct YY_WBLK_R_R(crate::FieldReader<u16, u16>);
-impl YY_WBLK_R_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        YY_WBLK_R_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for YY_WBLK_R_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type YY_WBLK_R_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `yy_wblk_r` writer - "]
-pub struct YY_WBLK_R_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> YY_WBLK_R_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1fff) | (value as u32 & 0x1fff);
-        self.w
-    }
-}
+pub type YY_WBLK_R_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_Y_FRAME_READ_STATUS_2_SPEC, u16, u16, 13, O>;
+#[doc = "Field `yy_mem_rnd_r` reader - "]
+pub type YY_MEM_RND_R_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `yy_mem_rnd_r` writer - "]
+pub type YY_MEM_RND_R_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_Y_FRAME_READ_STATUS_2_SPEC, u8, u8, 8, O>;
+#[doc = "Field `yy_frm_cnt_r` reader - "]
+pub type YY_FRM_CNT_R_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `yy_frm_cnt_r` writer - "]
+pub type YY_FRM_CNT_R_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_Y_FRAME_READ_STATUS_2_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:12"]
     #[inline(always)]
-    pub fn yy_frm_cnt_r(&self) -> YY_FRM_CNT_R_R {
-        YY_FRM_CNT_R_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn yy_wblk_r(&self) -> YY_WBLK_R_R {
+        YY_WBLK_R_R::new((self.bits & 0x1fff) as u16)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
     pub fn yy_mem_rnd_r(&self) -> YY_MEM_RND_R_R {
         YY_MEM_RND_R_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 0:12"]
+    #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn yy_wblk_r(&self) -> YY_WBLK_R_R {
-        YY_WBLK_R_R::new((self.bits & 0x1fff) as u16)
+    pub fn yy_frm_cnt_r(&self) -> YY_FRM_CNT_R_R {
+        YY_FRM_CNT_R_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:12"]
     #[inline(always)]
-    pub fn yy_frm_cnt_r(&mut self) -> YY_FRM_CNT_R_W {
-        YY_FRM_CNT_R_W { w: self }
+    pub fn yy_wblk_r(&mut self) -> YY_WBLK_R_W<0> {
+        YY_WBLK_R_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn yy_mem_rnd_r(&mut self) -> YY_MEM_RND_R_W {
-        YY_MEM_RND_R_W { w: self }
+    pub fn yy_mem_rnd_r(&mut self) -> YY_MEM_RND_R_W<16> {
+        YY_MEM_RND_R_W::new(self)
     }
-    #[doc = "Bits 0:12"]
+    #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn yy_wblk_r(&mut self) -> YY_WBLK_R_W {
-        YY_WBLK_R_W { w: self }
+    pub fn yy_frm_cnt_r(&mut self) -> YY_FRM_CNT_R_W<24> {
+        YY_FRM_CNT_R_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

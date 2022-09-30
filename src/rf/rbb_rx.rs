@@ -34,296 +34,120 @@ impl From<crate::W<RBB_RX_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rbb_rx1` reader - "]
-pub struct RBB_RX1_R(crate::FieldReader<u8, u8>);
-impl RBB_RX1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx1` writer - "]
-pub struct RBB_RX1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 28)) | ((value as u32 & 0x07) << 28);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx2` reader - "]
-pub struct RBB_RX2_R(crate::FieldReader<u8, u8>);
-impl RBB_RX2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx2` writer - "]
-pub struct RBB_RX2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 24)) | ((value as u32 & 0x07) << 24);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx1_hw` reader - "]
-pub struct RBB_RX1_HW_R(crate::FieldReader<u8, u8>);
-impl RBB_RX1_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX1_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX1_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx1_hw` writer - "]
-pub struct RBB_RX1_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX1_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 20)) | ((value as u32 & 0x07) << 20);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx2_hw` reader - "]
-pub struct RBB_RX2_HW_R(crate::FieldReader<u8, u8>);
-impl RBB_RX2_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX2_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX2_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx2_hw` writer - "]
-pub struct RBB_RX2_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX2_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 16)) | ((value as u32 & 0x07) << 16);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx1_bw0` reader - "]
-pub struct RBB_RX1_BW0_R(crate::FieldReader<u8, u8>);
-impl RBB_RX1_BW0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX1_BW0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX1_BW0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx1_bw0` writer - "]
-pub struct RBB_RX1_BW0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX1_BW0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 12)) | ((value as u32 & 0x07) << 12);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx2_bw0` reader - "]
-pub struct RBB_RX2_BW0_R(crate::FieldReader<u8, u8>);
-impl RBB_RX2_BW0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX2_BW0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX2_BW0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx2_bw0` writer - "]
-pub struct RBB_RX2_BW0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX2_BW0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 8)) | ((value as u32 & 0x07) << 8);
-        self.w
-    }
-}
-#[doc = "Field `rbb_rx1_bw1` reader - "]
-pub struct RBB_RX1_BW1_R(crate::FieldReader<u8, u8>);
-impl RBB_RX1_BW1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX1_BW1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX1_BW1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_rx1_bw1` writer - "]
-pub struct RBB_RX1_BW1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX1_BW1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
 #[doc = "Field `rbb_rx2_bw1` reader - "]
-pub struct RBB_RX2_BW1_R(crate::FieldReader<u8, u8>);
-impl RBB_RX2_BW1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_RX2_BW1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_RX2_BW1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RBB_RX2_BW1_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rbb_rx2_bw1` writer - "]
-pub struct RBB_RX2_BW1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_RX2_BW1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07) | (value as u32 & 0x07);
-        self.w
-    }
-}
+pub type RBB_RX2_BW1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx1_bw1` reader - "]
+pub type RBB_RX1_BW1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx1_bw1` writer - "]
+pub type RBB_RX1_BW1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx2_bw0` reader - "]
+pub type RBB_RX2_BW0_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx2_bw0` writer - "]
+pub type RBB_RX2_BW0_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx1_bw0` reader - "]
+pub type RBB_RX1_BW0_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx1_bw0` writer - "]
+pub type RBB_RX1_BW0_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx2_hw` reader - "]
+pub type RBB_RX2_HW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx2_hw` writer - "]
+pub type RBB_RX2_HW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx1_hw` reader - "]
+pub type RBB_RX1_HW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx1_hw` writer - "]
+pub type RBB_RX1_HW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx2` reader - "]
+pub type RBB_RX2_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx2` writer - "]
+pub type RBB_RX2_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_rx1` reader - "]
+pub type RBB_RX1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rbb_rx1` writer - "]
+pub type RBB_RX1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RBB_RX_SPEC, u8, u8, 3, O>;
 impl R {
-    #[doc = "Bits 28:30"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn rbb_rx1(&self) -> RBB_RX1_R {
-        RBB_RX1_R::new(((self.bits >> 28) & 0x07) as u8)
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn rbb_rx2(&self) -> RBB_RX2_R {
-        RBB_RX2_R::new(((self.bits >> 24) & 0x07) as u8)
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn rbb_rx1_hw(&self) -> RBB_RX1_HW_R {
-        RBB_RX1_HW_R::new(((self.bits >> 20) & 0x07) as u8)
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn rbb_rx2_hw(&self) -> RBB_RX2_HW_R {
-        RBB_RX2_HW_R::new(((self.bits >> 16) & 0x07) as u8)
-    }
-    #[doc = "Bits 12:14"]
-    #[inline(always)]
-    pub fn rbb_rx1_bw0(&self) -> RBB_RX1_BW0_R {
-        RBB_RX1_BW0_R::new(((self.bits >> 12) & 0x07) as u8)
-    }
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn rbb_rx2_bw0(&self) -> RBB_RX2_BW0_R {
-        RBB_RX2_BW0_R::new(((self.bits >> 8) & 0x07) as u8)
+    pub fn rbb_rx2_bw1(&self) -> RBB_RX2_BW1_R {
+        RBB_RX2_BW1_R::new((self.bits & 7) as u8)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
     pub fn rbb_rx1_bw1(&self) -> RBB_RX1_BW1_R {
-        RBB_RX1_BW1_R::new(((self.bits >> 4) & 0x07) as u8)
-    }
-    #[doc = "Bits 0:2"]
-    #[inline(always)]
-    pub fn rbb_rx2_bw1(&self) -> RBB_RX2_BW1_R {
-        RBB_RX2_BW1_R::new((self.bits & 0x07) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 28:30"]
-    #[inline(always)]
-    pub fn rbb_rx1(&mut self) -> RBB_RX1_W {
-        RBB_RX1_W { w: self }
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn rbb_rx2(&mut self) -> RBB_RX2_W {
-        RBB_RX2_W { w: self }
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn rbb_rx1_hw(&mut self) -> RBB_RX1_HW_W {
-        RBB_RX1_HW_W { w: self }
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn rbb_rx2_hw(&mut self) -> RBB_RX2_HW_W {
-        RBB_RX2_HW_W { w: self }
-    }
-    #[doc = "Bits 12:14"]
-    #[inline(always)]
-    pub fn rbb_rx1_bw0(&mut self) -> RBB_RX1_BW0_W {
-        RBB_RX1_BW0_W { w: self }
+        RBB_RX1_BW1_R::new(((self.bits >> 4) & 7) as u8)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
-    pub fn rbb_rx2_bw0(&mut self) -> RBB_RX2_BW0_W {
-        RBB_RX2_BW0_W { w: self }
+    pub fn rbb_rx2_bw0(&self) -> RBB_RX2_BW0_R {
+        RBB_RX2_BW0_R::new(((self.bits >> 8) & 7) as u8)
+    }
+    #[doc = "Bits 12:14"]
+    #[inline(always)]
+    pub fn rbb_rx1_bw0(&self) -> RBB_RX1_BW0_R {
+        RBB_RX1_BW0_R::new(((self.bits >> 12) & 7) as u8)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn rbb_rx2_hw(&self) -> RBB_RX2_HW_R {
+        RBB_RX2_HW_R::new(((self.bits >> 16) & 7) as u8)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn rbb_rx1_hw(&self) -> RBB_RX1_HW_R {
+        RBB_RX1_HW_R::new(((self.bits >> 20) & 7) as u8)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn rbb_rx2(&self) -> RBB_RX2_R {
+        RBB_RX2_R::new(((self.bits >> 24) & 7) as u8)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn rbb_rx1(&self) -> RBB_RX1_R {
+        RBB_RX1_R::new(((self.bits >> 28) & 7) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:2"]
+    #[inline(always)]
+    pub fn rbb_rx2_bw1(&mut self) -> RBB_RX2_BW1_W<0> {
+        RBB_RX2_BW1_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
-    pub fn rbb_rx1_bw1(&mut self) -> RBB_RX1_BW1_W {
-        RBB_RX1_BW1_W { w: self }
+    pub fn rbb_rx1_bw1(&mut self) -> RBB_RX1_BW1_W<4> {
+        RBB_RX1_BW1_W::new(self)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bits 8:10"]
     #[inline(always)]
-    pub fn rbb_rx2_bw1(&mut self) -> RBB_RX2_BW1_W {
-        RBB_RX2_BW1_W { w: self }
+    pub fn rbb_rx2_bw0(&mut self) -> RBB_RX2_BW0_W<8> {
+        RBB_RX2_BW0_W::new(self)
+    }
+    #[doc = "Bits 12:14"]
+    #[inline(always)]
+    pub fn rbb_rx1_bw0(&mut self) -> RBB_RX1_BW0_W<12> {
+        RBB_RX1_BW0_W::new(self)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn rbb_rx2_hw(&mut self) -> RBB_RX2_HW_W<16> {
+        RBB_RX2_HW_W::new(self)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn rbb_rx1_hw(&mut self) -> RBB_RX1_HW_W<20> {
+        RBB_RX1_HW_W::new(self)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn rbb_rx2(&mut self) -> RBB_RX2_W<24> {
+        RBB_RX2_W::new(self)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn rbb_rx1(&mut self) -> RBB_RX1_W<28> {
+        RBB_RX1_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,80 +34,36 @@ impl From<crate::W<MIIADDRESS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RGAD` reader - "]
-pub struct RGAD_R(crate::FieldReader<u8, u8>);
-impl RGAD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RGAD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RGAD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RGAD` writer - "]
-pub struct RGAD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RGAD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 8)) | ((value as u32 & 0x1f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `FIAD` reader - "]
-pub struct FIAD_R(crate::FieldReader<u8, u8>);
-impl FIAD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FIAD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FIAD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FIAD_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `FIAD` writer - "]
-pub struct FIAD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FIAD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1f) | (value as u32 & 0x1f);
-        self.w
-    }
-}
+pub type FIAD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MIIADDRESS_SPEC, u8, u8, 5, O>;
+#[doc = "Field `RGAD` reader - "]
+pub type RGAD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `RGAD` writer - "]
+pub type RGAD_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MIIADDRESS_SPEC, u8, u8, 5, O>;
 impl R {
-    #[doc = "Bits 8:12"]
-    #[inline(always)]
-    pub fn rgad(&self) -> RGAD_R {
-        RGAD_R::new(((self.bits >> 8) & 0x1f) as u8)
-    }
     #[doc = "Bits 0:4"]
     #[inline(always)]
     pub fn fiad(&self) -> FIAD_R {
         FIAD_R::new((self.bits & 0x1f) as u8)
     }
-}
-impl W {
     #[doc = "Bits 8:12"]
     #[inline(always)]
-    pub fn rgad(&mut self) -> RGAD_W {
-        RGAD_W { w: self }
+    pub fn rgad(&self) -> RGAD_R {
+        RGAD_R::new(((self.bits >> 8) & 0x1f) as u8)
     }
+}
+impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn fiad(&mut self) -> FIAD_W {
-        FIAD_W { w: self }
+    pub fn fiad(&mut self) -> FIAD_W<0> {
+        FIAD_W::new(self)
+    }
+    #[doc = "Bits 8:12"]
+    #[inline(always)]
+    pub fn rgad(&mut self) -> RGAD_W<8> {
+        RGAD_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

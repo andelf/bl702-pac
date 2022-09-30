@@ -34,264 +34,98 @@ impl From<crate::W<EP1_FIFO_STATUS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ep1_rx_fifo_full` reader - "]
-pub struct EP1_RX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
-impl EP1_RX_FIFO_FULL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EP1_RX_FIFO_FULL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_RX_FIFO_FULL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ep1_rx_fifo_full` writer - "]
-pub struct EP1_RX_FIFO_FULL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_RX_FIFO_FULL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `ep1_rx_fifo_empty` reader - "]
-pub struct EP1_RX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
-impl EP1_RX_FIFO_EMPTY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EP1_RX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_RX_FIFO_EMPTY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ep1_rx_fifo_empty` writer - "]
-pub struct EP1_RX_FIFO_EMPTY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_RX_FIFO_EMPTY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `ep1_rx_fifo_cnt` reader - "]
-pub struct EP1_RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl EP1_RX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EP1_RX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_RX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ep1_rx_fifo_cnt` writer - "]
-pub struct EP1_RX_FIFO_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_RX_FIFO_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x7f << 16)) | ((value as u32 & 0x7f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `ep1_tx_fifo_full` reader - "]
-pub struct EP1_TX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
-impl EP1_TX_FIFO_FULL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EP1_TX_FIFO_FULL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_TX_FIFO_FULL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ep1_tx_fifo_full` writer - "]
-pub struct EP1_TX_FIFO_FULL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_TX_FIFO_FULL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 15)) | ((value as u32 & 0x01) << 15);
-        self.w
-    }
-}
-#[doc = "Field `ep1_tx_fifo_empty` reader - "]
-pub struct EP1_TX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
-impl EP1_TX_FIFO_EMPTY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EP1_TX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_TX_FIFO_EMPTY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ep1_tx_fifo_empty` writer - "]
-pub struct EP1_TX_FIFO_EMPTY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_TX_FIFO_EMPTY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
-        self.w
-    }
-}
 #[doc = "Field `ep1_tx_fifo_cnt` reader - "]
-pub struct EP1_TX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl EP1_TX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EP1_TX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP1_TX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EP1_TX_FIFO_CNT_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `ep1_tx_fifo_cnt` writer - "]
-pub struct EP1_TX_FIFO_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP1_TX_FIFO_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x7f) | (value as u32 & 0x7f);
-        self.w
-    }
-}
+pub type EP1_TX_FIFO_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EP1_FIFO_STATUS_SPEC, u8, u8, 7, O>;
+#[doc = "Field `ep1_tx_fifo_empty` reader - "]
+pub type EP1_TX_FIFO_EMPTY_R = crate::BitReader<bool>;
+#[doc = "Field `ep1_tx_fifo_empty` writer - "]
+pub type EP1_TX_FIFO_EMPTY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, EP1_FIFO_STATUS_SPEC, bool, O>;
+#[doc = "Field `ep1_tx_fifo_full` reader - "]
+pub type EP1_TX_FIFO_FULL_R = crate::BitReader<bool>;
+#[doc = "Field `ep1_tx_fifo_full` writer - "]
+pub type EP1_TX_FIFO_FULL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, EP1_FIFO_STATUS_SPEC, bool, O>;
+#[doc = "Field `ep1_rx_fifo_cnt` reader - "]
+pub type EP1_RX_FIFO_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ep1_rx_fifo_cnt` writer - "]
+pub type EP1_RX_FIFO_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EP1_FIFO_STATUS_SPEC, u8, u8, 7, O>;
+#[doc = "Field `ep1_rx_fifo_empty` reader - "]
+pub type EP1_RX_FIFO_EMPTY_R = crate::BitReader<bool>;
+#[doc = "Field `ep1_rx_fifo_empty` writer - "]
+pub type EP1_RX_FIFO_EMPTY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, EP1_FIFO_STATUS_SPEC, bool, O>;
+#[doc = "Field `ep1_rx_fifo_full` reader - "]
+pub type EP1_RX_FIFO_FULL_R = crate::BitReader<bool>;
+#[doc = "Field `ep1_rx_fifo_full` writer - "]
+pub type EP1_RX_FIFO_FULL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, EP1_FIFO_STATUS_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn ep1_rx_fifo_full(&self) -> EP1_RX_FIFO_FULL_R {
-        EP1_RX_FIFO_FULL_R::new(((self.bits >> 31) & 0x01) != 0)
+    pub fn ep1_tx_fifo_cnt(&self) -> EP1_TX_FIFO_CNT_R {
+        EP1_TX_FIFO_CNT_R::new((self.bits & 0x7f) as u8)
     }
-    #[doc = "Bit 30"]
+    #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn ep1_rx_fifo_empty(&self) -> EP1_RX_FIFO_EMPTY_R {
-        EP1_RX_FIFO_EMPTY_R::new(((self.bits >> 30) & 0x01) != 0)
+    pub fn ep1_tx_fifo_empty(&self) -> EP1_TX_FIFO_EMPTY_R {
+        EP1_TX_FIFO_EMPTY_R::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn ep1_tx_fifo_full(&self) -> EP1_TX_FIFO_FULL_R {
+        EP1_TX_FIFO_FULL_R::new(((self.bits >> 15) & 1) != 0)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
     pub fn ep1_rx_fifo_cnt(&self) -> EP1_RX_FIFO_CNT_R {
         EP1_RX_FIFO_CNT_R::new(((self.bits >> 16) & 0x7f) as u8)
     }
-    #[doc = "Bit 15"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn ep1_tx_fifo_full(&self) -> EP1_TX_FIFO_FULL_R {
-        EP1_TX_FIFO_FULL_R::new(((self.bits >> 15) & 0x01) != 0)
+    pub fn ep1_rx_fifo_empty(&self) -> EP1_RX_FIFO_EMPTY_R {
+        EP1_RX_FIFO_EMPTY_R::new(((self.bits >> 30) & 1) != 0)
     }
-    #[doc = "Bit 14"]
+    #[doc = "Bit 31"]
     #[inline(always)]
-    pub fn ep1_tx_fifo_empty(&self) -> EP1_TX_FIFO_EMPTY_R {
-        EP1_TX_FIFO_EMPTY_R::new(((self.bits >> 14) & 0x01) != 0)
-    }
-    #[doc = "Bits 0:6"]
-    #[inline(always)]
-    pub fn ep1_tx_fifo_cnt(&self) -> EP1_TX_FIFO_CNT_R {
-        EP1_TX_FIFO_CNT_R::new((self.bits & 0x7f) as u8)
+    pub fn ep1_rx_fifo_full(&self) -> EP1_RX_FIFO_FULL_R {
+        EP1_RX_FIFO_FULL_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 31"]
+    #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn ep1_rx_fifo_full(&mut self) -> EP1_RX_FIFO_FULL_W {
-        EP1_RX_FIFO_FULL_W { w: self }
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn ep1_rx_fifo_empty(&mut self) -> EP1_RX_FIFO_EMPTY_W {
-        EP1_RX_FIFO_EMPTY_W { w: self }
-    }
-    #[doc = "Bits 16:22"]
-    #[inline(always)]
-    pub fn ep1_rx_fifo_cnt(&mut self) -> EP1_RX_FIFO_CNT_W {
-        EP1_RX_FIFO_CNT_W { w: self }
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn ep1_tx_fifo_full(&mut self) -> EP1_TX_FIFO_FULL_W {
-        EP1_TX_FIFO_FULL_W { w: self }
+    pub fn ep1_tx_fifo_cnt(&mut self) -> EP1_TX_FIFO_CNT_W<0> {
+        EP1_TX_FIFO_CNT_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn ep1_tx_fifo_empty(&mut self) -> EP1_TX_FIFO_EMPTY_W {
-        EP1_TX_FIFO_EMPTY_W { w: self }
+    pub fn ep1_tx_fifo_empty(&mut self) -> EP1_TX_FIFO_EMPTY_W<14> {
+        EP1_TX_FIFO_EMPTY_W::new(self)
     }
-    #[doc = "Bits 0:6"]
+    #[doc = "Bit 15"]
     #[inline(always)]
-    pub fn ep1_tx_fifo_cnt(&mut self) -> EP1_TX_FIFO_CNT_W {
-        EP1_TX_FIFO_CNT_W { w: self }
+    pub fn ep1_tx_fifo_full(&mut self) -> EP1_TX_FIFO_FULL_W<15> {
+        EP1_TX_FIFO_FULL_W::new(self)
+    }
+    #[doc = "Bits 16:22"]
+    #[inline(always)]
+    pub fn ep1_rx_fifo_cnt(&mut self) -> EP1_RX_FIFO_CNT_W<16> {
+        EP1_RX_FIFO_CNT_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn ep1_rx_fifo_empty(&mut self) -> EP1_RX_FIFO_EMPTY_W<30> {
+        EP1_RX_FIFO_EMPTY_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn ep1_rx_fifo_full(&mut self) -> EP1_RX_FIFO_FULL_W<31> {
+        EP1_RX_FIFO_FULL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

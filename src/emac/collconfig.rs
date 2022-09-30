@@ -34,80 +34,36 @@ impl From<crate::W<COLLCONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MAXRET` reader - "]
-pub struct MAXRET_R(crate::FieldReader<u8, u8>);
-impl MAXRET_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        MAXRET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MAXRET_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `MAXRET` writer - "]
-pub struct MAXRET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MAXRET_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 16)) | ((value as u32 & 0x0f) << 16);
-        self.w
-    }
-}
 #[doc = "Field `COLLVALID` reader - "]
-pub struct COLLVALID_R(crate::FieldReader<u8, u8>);
-impl COLLVALID_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        COLLVALID_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for COLLVALID_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type COLLVALID_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `COLLVALID` writer - "]
-pub struct COLLVALID_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> COLLVALID_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type COLLVALID_W<'a, const O: u8> = crate::FieldWriter<'a, u32, COLLCONFIG_SPEC, u8, u8, 6, O>;
+#[doc = "Field `MAXRET` reader - "]
+pub type MAXRET_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `MAXRET` writer - "]
+pub type MAXRET_W<'a, const O: u8> = crate::FieldWriter<'a, u32, COLLCONFIG_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 16:19"]
-    #[inline(always)]
-    pub fn maxret(&self) -> MAXRET_R {
-        MAXRET_R::new(((self.bits >> 16) & 0x0f) as u8)
-    }
     #[doc = "Bits 0:5"]
     #[inline(always)]
     pub fn collvalid(&self) -> COLLVALID_R {
         COLLVALID_R::new((self.bits & 0x3f) as u8)
     }
-}
-impl W {
     #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn maxret(&mut self) -> MAXRET_W {
-        MAXRET_W { w: self }
+    pub fn maxret(&self) -> MAXRET_R {
+        MAXRET_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
+}
+impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn collvalid(&mut self) -> COLLVALID_W {
-        COLLVALID_W { w: self }
+    pub fn collvalid(&mut self) -> COLLVALID_W<0> {
+        COLLVALID_W::new(self)
+    }
+    #[doc = "Bits 16:19"]
+    #[inline(always)]
+    pub fn maxret(&mut self) -> MAXRET_W<16> {
+        MAXRET_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

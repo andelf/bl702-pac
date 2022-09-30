@@ -35,31 +35,9 @@ impl From<crate::W<SEAM_MISC_SPEC>> for W {
     }
 }
 #[doc = "Field `em_sel` reader - "]
-pub struct EM_SEL_R(crate::FieldReader<u8, u8>);
-impl EM_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EM_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EM_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EM_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `em_sel` writer - "]
-pub struct EM_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EM_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | (value as u32 & 0x0f);
-        self.w
-    }
-}
+pub type EM_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, SEAM_MISC_SPEC, u8, u8, 4, O>;
 impl R {
     #[doc = "Bits 0:3"]
     #[inline(always)]
@@ -70,8 +48,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn em_sel(&mut self) -> EM_SEL_W {
-        EM_SEL_W { w: self }
+    pub fn em_sel(&mut self) -> EM_SEL_W<0> {
+        EM_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

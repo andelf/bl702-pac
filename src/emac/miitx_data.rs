@@ -35,31 +35,10 @@ impl From<crate::W<MIITX_DATA_SPEC>> for W {
     }
 }
 #[doc = "Field `CTRLDATA` reader - "]
-pub struct CTRLDATA_R(crate::FieldReader<u16, u16>);
-impl CTRLDATA_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CTRLDATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CTRLDATA_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CTRLDATA_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `CTRLDATA` writer - "]
-pub struct CTRLDATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CTRLDATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type CTRLDATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MIITX_DATA_SPEC, u16, u16, 16, O>;
 impl R {
     #[doc = "Bits 0:15"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn ctrldata(&mut self) -> CTRLDATA_W {
-        CTRLDATA_W { w: self }
+    pub fn ctrldata(&mut self) -> CTRLDATA_W<0> {
+        CTRLDATA_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

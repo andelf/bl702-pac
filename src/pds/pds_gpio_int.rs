@@ -34,218 +34,83 @@ impl From<crate::W<PDS_GPIO_INT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pds_gpio_int_select` reader - "]
-pub struct PDS_GPIO_INT_SELECT_R(crate::FieldReader<u8, u8>);
-impl PDS_GPIO_INT_SELECT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PDS_GPIO_INT_SELECT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_GPIO_INT_SELECT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_gpio_int_select` writer - "]
-pub struct PDS_GPIO_INT_SELECT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_GPIO_INT_SELECT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 8)) | ((value as u32 & 0x07) << 8);
-        self.w
-    }
-}
-#[doc = "Field `pds_gpio_int_mode` reader - "]
-pub struct PDS_GPIO_INT_MODE_R(crate::FieldReader<u8, u8>);
-impl PDS_GPIO_INT_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PDS_GPIO_INT_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_GPIO_INT_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_gpio_int_mode` writer - "]
-pub struct PDS_GPIO_INT_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_GPIO_INT_MODE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
-#[doc = "Field `pds_gpio_int_clr` reader - "]
-pub struct PDS_GPIO_INT_CLR_R(crate::FieldReader<bool, bool>);
-impl PDS_GPIO_INT_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PDS_GPIO_INT_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_GPIO_INT_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_gpio_int_clr` writer - "]
-pub struct PDS_GPIO_INT_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_GPIO_INT_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `pds_gpio_int_stat` reader - "]
-pub struct PDS_GPIO_INT_STAT_R(crate::FieldReader<bool, bool>);
-impl PDS_GPIO_INT_STAT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PDS_GPIO_INT_STAT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_GPIO_INT_STAT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_gpio_int_stat` writer - "]
-pub struct PDS_GPIO_INT_STAT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_GPIO_INT_STAT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `pds_gpio_int_mask` reader - "]
-pub struct PDS_GPIO_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl PDS_GPIO_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PDS_GPIO_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_GPIO_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PDS_GPIO_INT_MASK_R = crate::BitReader<bool>;
 #[doc = "Field `pds_gpio_int_mask` writer - "]
-pub struct PDS_GPIO_INT_MASK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PDS_GPIO_INT_MASK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type PDS_GPIO_INT_MASK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_GPIO_INT_SPEC, bool, O>;
+#[doc = "Field `pds_gpio_int_stat` reader - "]
+pub type PDS_GPIO_INT_STAT_R = crate::BitReader<bool>;
+#[doc = "Field `pds_gpio_int_stat` writer - "]
+pub type PDS_GPIO_INT_STAT_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_GPIO_INT_SPEC, bool, O>;
+#[doc = "Field `pds_gpio_int_clr` reader - "]
+pub type PDS_GPIO_INT_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `pds_gpio_int_clr` writer - "]
+pub type PDS_GPIO_INT_CLR_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_GPIO_INT_SPEC, bool, O>;
+#[doc = "Field `pds_gpio_int_mode` reader - "]
+pub type PDS_GPIO_INT_MODE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pds_gpio_int_mode` writer - "]
+pub type PDS_GPIO_INT_MODE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_INT_SPEC, u8, u8, 3, O>;
+#[doc = "Field `pds_gpio_int_select` reader - "]
+pub type PDS_GPIO_INT_SELECT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pds_gpio_int_select` writer - "]
+pub type PDS_GPIO_INT_SELECT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_INT_SPEC, u8, u8, 3, O>;
 impl R {
-    #[doc = "Bits 8:10"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn pds_gpio_int_select(&self) -> PDS_GPIO_INT_SELECT_R {
-        PDS_GPIO_INT_SELECT_R::new(((self.bits >> 8) & 0x07) as u8)
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn pds_gpio_int_mode(&self) -> PDS_GPIO_INT_MODE_R {
-        PDS_GPIO_INT_MODE_R::new(((self.bits >> 4) & 0x07) as u8)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn pds_gpio_int_clr(&self) -> PDS_GPIO_INT_CLR_R {
-        PDS_GPIO_INT_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn pds_gpio_int_mask(&self) -> PDS_GPIO_INT_MASK_R {
+        PDS_GPIO_INT_MASK_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn pds_gpio_int_stat(&self) -> PDS_GPIO_INT_STAT_R {
-        PDS_GPIO_INT_STAT_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn pds_gpio_int_mask(&self) -> PDS_GPIO_INT_MASK_R {
-        PDS_GPIO_INT_MASK_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn pds_gpio_int_select(&mut self) -> PDS_GPIO_INT_SELECT_W {
-        PDS_GPIO_INT_SELECT_W { w: self }
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn pds_gpio_int_mode(&mut self) -> PDS_GPIO_INT_MODE_W {
-        PDS_GPIO_INT_MODE_W { w: self }
+        PDS_GPIO_INT_STAT_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn pds_gpio_int_clr(&mut self) -> PDS_GPIO_INT_CLR_W {
-        PDS_GPIO_INT_CLR_W { w: self }
+    pub fn pds_gpio_int_clr(&self) -> PDS_GPIO_INT_CLR_R {
+        PDS_GPIO_INT_CLR_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn pds_gpio_int_mode(&self) -> PDS_GPIO_INT_MODE_R {
+        PDS_GPIO_INT_MODE_R::new(((self.bits >> 4) & 7) as u8)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn pds_gpio_int_select(&self) -> PDS_GPIO_INT_SELECT_R {
+        PDS_GPIO_INT_SELECT_R::new(((self.bits >> 8) & 7) as u8)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn pds_gpio_int_mask(&mut self) -> PDS_GPIO_INT_MASK_W<0> {
+        PDS_GPIO_INT_MASK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn pds_gpio_int_stat(&mut self) -> PDS_GPIO_INT_STAT_W {
-        PDS_GPIO_INT_STAT_W { w: self }
+    pub fn pds_gpio_int_stat(&mut self) -> PDS_GPIO_INT_STAT_W<1> {
+        PDS_GPIO_INT_STAT_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn pds_gpio_int_mask(&mut self) -> PDS_GPIO_INT_MASK_W {
-        PDS_GPIO_INT_MASK_W { w: self }
+    pub fn pds_gpio_int_clr(&mut self) -> PDS_GPIO_INT_CLR_W<2> {
+        PDS_GPIO_INT_CLR_W::new(self)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn pds_gpio_int_mode(&mut self) -> PDS_GPIO_INT_MODE_W<4> {
+        PDS_GPIO_INT_MODE_W::new(self)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn pds_gpio_int_select(&mut self) -> PDS_GPIO_INT_SELECT_W<8> {
+        PDS_GPIO_INT_SELECT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

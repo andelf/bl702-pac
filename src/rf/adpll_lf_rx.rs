@@ -34,280 +34,113 @@ impl From<crate::W<ADPLL_LF_RX_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_lf_alpha_base_rx` reader - "]
-pub struct ADPLL_LF_ALPHA_BASE_RX_R(crate::FieldReader<bool, bool>);
-impl ADPLL_LF_ALPHA_BASE_RX_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_LF_ALPHA_BASE_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_ALPHA_BASE_RX_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_alpha_base_rx` writer - "]
-pub struct ADPLL_LF_ALPHA_BASE_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_ALPHA_BASE_RX_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 27)) | ((value as u32 & 0x01) << 27);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lf_alpha_exp_rx` reader - "]
-pub struct ADPLL_LF_ALPHA_EXP_RX_R(crate::FieldReader<u8, u8>);
-impl ADPLL_LF_ALPHA_EXP_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_LF_ALPHA_EXP_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_ALPHA_EXP_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_alpha_exp_rx` writer - "]
-pub struct ADPLL_LF_ALPHA_EXP_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_ALPHA_EXP_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 24)) | ((value as u32 & 0x07) << 24);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lf_alpha_fast_rx` reader - "]
-pub struct ADPLL_LF_ALPHA_FAST_RX_R(crate::FieldReader<u8, u8>);
-impl ADPLL_LF_ALPHA_FAST_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_LF_ALPHA_FAST_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_ALPHA_FAST_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_alpha_fast_rx` writer - "]
-pub struct ADPLL_LF_ALPHA_FAST_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_ALPHA_FAST_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 20)) | ((value as u32 & 0x03) << 20);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lf_beta_base_rx` reader - "]
-pub struct ADPLL_LF_BETA_BASE_RX_R(crate::FieldReader<u8, u8>);
-impl ADPLL_LF_BETA_BASE_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_LF_BETA_BASE_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_BETA_BASE_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_beta_base_rx` writer - "]
-pub struct ADPLL_LF_BETA_BASE_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_BETA_BASE_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 17)) | ((value as u32 & 0x03) << 17);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lf_beta_exp_rx` reader - "]
-pub struct ADPLL_LF_BETA_EXP_RX_R(crate::FieldReader<u8, u8>);
-impl ADPLL_LF_BETA_EXP_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_LF_BETA_EXP_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_BETA_EXP_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_beta_exp_rx` writer - "]
-pub struct ADPLL_LF_BETA_EXP_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_BETA_EXP_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 14)) | ((value as u32 & 0x07) << 14);
-        self.w
-    }
-}
-#[doc = "Field `adpll_lf_beta_fast_rx` reader - "]
-pub struct ADPLL_LF_BETA_FAST_RX_R(crate::FieldReader<bool, bool>);
-impl ADPLL_LF_BETA_FAST_RX_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_LF_BETA_FAST_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_BETA_FAST_RX_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_lf_beta_fast_rx` writer - "]
-pub struct ADPLL_LF_BETA_FAST_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_BETA_FAST_RX_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 13)) | ((value as u32 & 0x01) << 13);
-        self.w
-    }
-}
 #[doc = "Field `adpll_lf_f_p3_rx` reader - "]
-pub struct ADPLL_LF_F_P3_RX_R(crate::FieldReader<u8, u8>);
-impl ADPLL_LF_F_P3_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_LF_F_P3_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_LF_F_P3_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_LF_F_P3_RX_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `adpll_lf_f_p3_rx` writer - "]
-pub struct ADPLL_LF_F_P3_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_LF_F_P3_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 10)) | ((value as u32 & 0x03) << 10);
-        self.w
-    }
-}
+pub type ADPLL_LF_F_P3_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_LF_RX_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_lf_beta_fast_rx` reader - "]
+pub type ADPLL_LF_BETA_FAST_RX_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_lf_beta_fast_rx` writer - "]
+pub type ADPLL_LF_BETA_FAST_RX_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_LF_RX_SPEC, bool, O>;
+#[doc = "Field `adpll_lf_beta_exp_rx` reader - "]
+pub type ADPLL_LF_BETA_EXP_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_lf_beta_exp_rx` writer - "]
+pub type ADPLL_LF_BETA_EXP_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_LF_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `adpll_lf_beta_base_rx` reader - "]
+pub type ADPLL_LF_BETA_BASE_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_lf_beta_base_rx` writer - "]
+pub type ADPLL_LF_BETA_BASE_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_LF_RX_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_lf_alpha_fast_rx` reader - "]
+pub type ADPLL_LF_ALPHA_FAST_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_lf_alpha_fast_rx` writer - "]
+pub type ADPLL_LF_ALPHA_FAST_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_LF_RX_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_lf_alpha_exp_rx` reader - "]
+pub type ADPLL_LF_ALPHA_EXP_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_lf_alpha_exp_rx` writer - "]
+pub type ADPLL_LF_ALPHA_EXP_RX_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_LF_RX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `adpll_lf_alpha_base_rx` reader - "]
+pub type ADPLL_LF_ALPHA_BASE_RX_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_lf_alpha_base_rx` writer - "]
+pub type ADPLL_LF_ALPHA_BASE_RX_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, ADPLL_LF_RX_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 27"]
+    #[doc = "Bits 10:11"]
     #[inline(always)]
-    pub fn adpll_lf_alpha_base_rx(&self) -> ADPLL_LF_ALPHA_BASE_RX_R {
-        ADPLL_LF_ALPHA_BASE_RX_R::new(((self.bits >> 27) & 0x01) != 0)
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn adpll_lf_alpha_exp_rx(&self) -> ADPLL_LF_ALPHA_EXP_RX_R {
-        ADPLL_LF_ALPHA_EXP_RX_R::new(((self.bits >> 24) & 0x07) as u8)
-    }
-    #[doc = "Bits 20:21"]
-    #[inline(always)]
-    pub fn adpll_lf_alpha_fast_rx(&self) -> ADPLL_LF_ALPHA_FAST_RX_R {
-        ADPLL_LF_ALPHA_FAST_RX_R::new(((self.bits >> 20) & 0x03) as u8)
-    }
-    #[doc = "Bits 17:18"]
-    #[inline(always)]
-    pub fn adpll_lf_beta_base_rx(&self) -> ADPLL_LF_BETA_BASE_RX_R {
-        ADPLL_LF_BETA_BASE_RX_R::new(((self.bits >> 17) & 0x03) as u8)
-    }
-    #[doc = "Bits 14:16"]
-    #[inline(always)]
-    pub fn adpll_lf_beta_exp_rx(&self) -> ADPLL_LF_BETA_EXP_RX_R {
-        ADPLL_LF_BETA_EXP_RX_R::new(((self.bits >> 14) & 0x07) as u8)
+    pub fn adpll_lf_f_p3_rx(&self) -> ADPLL_LF_F_P3_RX_R {
+        ADPLL_LF_F_P3_RX_R::new(((self.bits >> 10) & 3) as u8)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
     pub fn adpll_lf_beta_fast_rx(&self) -> ADPLL_LF_BETA_FAST_RX_R {
-        ADPLL_LF_BETA_FAST_RX_R::new(((self.bits >> 13) & 0x01) != 0)
-    }
-    #[doc = "Bits 10:11"]
-    #[inline(always)]
-    pub fn adpll_lf_f_p3_rx(&self) -> ADPLL_LF_F_P3_RX_R {
-        ADPLL_LF_F_P3_RX_R::new(((self.bits >> 10) & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn adpll_lf_alpha_base_rx(&mut self) -> ADPLL_LF_ALPHA_BASE_RX_W {
-        ADPLL_LF_ALPHA_BASE_RX_W { w: self }
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn adpll_lf_alpha_exp_rx(&mut self) -> ADPLL_LF_ALPHA_EXP_RX_W {
-        ADPLL_LF_ALPHA_EXP_RX_W { w: self }
-    }
-    #[doc = "Bits 20:21"]
-    #[inline(always)]
-    pub fn adpll_lf_alpha_fast_rx(&mut self) -> ADPLL_LF_ALPHA_FAST_RX_W {
-        ADPLL_LF_ALPHA_FAST_RX_W { w: self }
-    }
-    #[doc = "Bits 17:18"]
-    #[inline(always)]
-    pub fn adpll_lf_beta_base_rx(&mut self) -> ADPLL_LF_BETA_BASE_RX_W {
-        ADPLL_LF_BETA_BASE_RX_W { w: self }
+        ADPLL_LF_BETA_FAST_RX_R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bits 14:16"]
     #[inline(always)]
-    pub fn adpll_lf_beta_exp_rx(&mut self) -> ADPLL_LF_BETA_EXP_RX_W {
-        ADPLL_LF_BETA_EXP_RX_W { w: self }
+    pub fn adpll_lf_beta_exp_rx(&self) -> ADPLL_LF_BETA_EXP_RX_R {
+        ADPLL_LF_BETA_EXP_RX_R::new(((self.bits >> 14) & 7) as u8)
+    }
+    #[doc = "Bits 17:18"]
+    #[inline(always)]
+    pub fn adpll_lf_beta_base_rx(&self) -> ADPLL_LF_BETA_BASE_RX_R {
+        ADPLL_LF_BETA_BASE_RX_R::new(((self.bits >> 17) & 3) as u8)
+    }
+    #[doc = "Bits 20:21"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_fast_rx(&self) -> ADPLL_LF_ALPHA_FAST_RX_R {
+        ADPLL_LF_ALPHA_FAST_RX_R::new(((self.bits >> 20) & 3) as u8)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_exp_rx(&self) -> ADPLL_LF_ALPHA_EXP_RX_R {
+        ADPLL_LF_ALPHA_EXP_RX_R::new(((self.bits >> 24) & 7) as u8)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_base_rx(&self) -> ADPLL_LF_ALPHA_BASE_RX_R {
+        ADPLL_LF_ALPHA_BASE_RX_R::new(((self.bits >> 27) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 10:11"]
+    #[inline(always)]
+    pub fn adpll_lf_f_p3_rx(&mut self) -> ADPLL_LF_F_P3_RX_W<10> {
+        ADPLL_LF_F_P3_RX_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
-    pub fn adpll_lf_beta_fast_rx(&mut self) -> ADPLL_LF_BETA_FAST_RX_W {
-        ADPLL_LF_BETA_FAST_RX_W { w: self }
+    pub fn adpll_lf_beta_fast_rx(&mut self) -> ADPLL_LF_BETA_FAST_RX_W<13> {
+        ADPLL_LF_BETA_FAST_RX_W::new(self)
     }
-    #[doc = "Bits 10:11"]
+    #[doc = "Bits 14:16"]
     #[inline(always)]
-    pub fn adpll_lf_f_p3_rx(&mut self) -> ADPLL_LF_F_P3_RX_W {
-        ADPLL_LF_F_P3_RX_W { w: self }
+    pub fn adpll_lf_beta_exp_rx(&mut self) -> ADPLL_LF_BETA_EXP_RX_W<14> {
+        ADPLL_LF_BETA_EXP_RX_W::new(self)
+    }
+    #[doc = "Bits 17:18"]
+    #[inline(always)]
+    pub fn adpll_lf_beta_base_rx(&mut self) -> ADPLL_LF_BETA_BASE_RX_W<17> {
+        ADPLL_LF_BETA_BASE_RX_W::new(self)
+    }
+    #[doc = "Bits 20:21"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_fast_rx(&mut self) -> ADPLL_LF_ALPHA_FAST_RX_W<20> {
+        ADPLL_LF_ALPHA_FAST_RX_W::new(self)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_exp_rx(&mut self) -> ADPLL_LF_ALPHA_EXP_RX_W<24> {
+        ADPLL_LF_ALPHA_EXP_RX_W::new(self)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn adpll_lf_alpha_base_rx(&mut self) -> ADPLL_LF_ALPHA_BASE_RX_W<27> {
+        ADPLL_LF_ALPHA_BASE_RX_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

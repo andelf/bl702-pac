@@ -34,366 +34,123 @@ impl From<crate::W<INT_CONTROL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
-pub struct REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader<u8, u8>);
-impl REG_FRAME_CNT_TRGR_INT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_FRAME_CNT_TRGR_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_FRAME_CNT_TRGR_INT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_frame_cnt_trgr_int` writer - "]
-pub struct REG_FRAME_CNT_TRGR_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_FRAME_CNT_TRGR_INT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 28)) | ((value as u32 & 0x0f) << 28);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_vcnt_en` reader - "]
-pub struct REG_INT_VCNT_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_VCNT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_VCNT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_VCNT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_vcnt_en` writer - "]
-pub struct REG_INT_VCNT_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_VCNT_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_hcnt_en` reader - "]
-pub struct REG_INT_HCNT_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_HCNT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_HCNT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_HCNT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_hcnt_en` writer - "]
-pub struct REG_INT_HCNT_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_HCNT_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_fifo_en` reader - "]
-pub struct REG_INT_FIFO_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_FIFO_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_FIFO_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_FIFO_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_fifo_en` writer - "]
-pub struct REG_INT_FIFO_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_FIFO_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_frame_en` reader - "]
-pub struct REG_INT_FRAME_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_FRAME_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_FRAME_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_FRAME_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_frame_en` writer - "]
-pub struct REG_INT_FRAME_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_FRAME_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_mem_en` reader - "]
-pub struct REG_INT_MEM_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_MEM_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_MEM_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_MEM_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_mem_en` writer - "]
-pub struct REG_INT_MEM_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_MEM_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `reg_int_normal_1_en` reader - "]
-pub struct REG_INT_NORMAL_1_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_NORMAL_1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_NORMAL_1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_NORMAL_1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_int_normal_1_en` writer - "]
-pub struct REG_INT_NORMAL_1_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_NORMAL_1_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `reg_int_normal_0_en` reader - "]
-pub struct REG_INT_NORMAL_0_EN_R(crate::FieldReader<bool, bool>);
-impl REG_INT_NORMAL_0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_INT_NORMAL_0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_INT_NORMAL_0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_INT_NORMAL_0_EN_R = crate::BitReader<bool>;
 #[doc = "Field `reg_int_normal_0_en` writer - "]
-pub struct REG_INT_NORMAL_0_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_INT_NORMAL_0_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type REG_INT_NORMAL_0_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_normal_1_en` reader - "]
+pub type REG_INT_NORMAL_1_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_normal_1_en` writer - "]
+pub type REG_INT_NORMAL_1_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_mem_en` reader - "]
+pub type REG_INT_MEM_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_mem_en` writer - "]
+pub type REG_INT_MEM_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_frame_en` reader - "]
+pub type REG_INT_FRAME_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_frame_en` writer - "]
+pub type REG_INT_FRAME_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_fifo_en` reader - "]
+pub type REG_INT_FIFO_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_fifo_en` writer - "]
+pub type REG_INT_FIFO_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_hcnt_en` reader - "]
+pub type REG_INT_HCNT_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_hcnt_en` writer - "]
+pub type REG_INT_HCNT_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_int_vcnt_en` reader - "]
+pub type REG_INT_VCNT_EN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_int_vcnt_en` writer - "]
+pub type REG_INT_VCNT_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, INT_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_frame_cnt_trgr_int` reader - "]
+pub type REG_FRAME_CNT_TRGR_INT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `reg_frame_cnt_trgr_int` writer - "]
+pub type REG_FRAME_CNT_TRGR_INT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, INT_CONTROL_SPEC, u8, u8, 4, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn reg_int_normal_0_en(&self) -> REG_INT_NORMAL_0_EN_R {
+        REG_INT_NORMAL_0_EN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn reg_int_normal_1_en(&self) -> REG_INT_NORMAL_1_EN_R {
+        REG_INT_NORMAL_1_EN_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2"]
+    #[inline(always)]
+    pub fn reg_int_mem_en(&self) -> REG_INT_MEM_EN_R {
+        REG_INT_MEM_EN_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn reg_int_frame_en(&self) -> REG_INT_FRAME_EN_R {
+        REG_INT_FRAME_EN_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn reg_int_fifo_en(&self) -> REG_INT_FIFO_EN_R {
+        REG_INT_FIFO_EN_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn reg_int_hcnt_en(&self) -> REG_INT_HCNT_EN_R {
+        REG_INT_HCNT_EN_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn reg_int_vcnt_en(&self) -> REG_INT_VCNT_EN_R {
+        REG_INT_VCNT_EN_R::new(((self.bits >> 6) & 1) != 0)
+    }
     #[doc = "Bits 28:31"]
     #[inline(always)]
     pub fn reg_frame_cnt_trgr_int(&self) -> REG_FRAME_CNT_TRGR_INT_R {
         REG_FRAME_CNT_TRGR_INT_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn reg_int_vcnt_en(&self) -> REG_INT_VCNT_EN_R {
-        REG_INT_VCNT_EN_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn reg_int_hcnt_en(&self) -> REG_INT_HCNT_EN_R {
-        REG_INT_HCNT_EN_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn reg_int_fifo_en(&self) -> REG_INT_FIFO_EN_R {
-        REG_INT_FIFO_EN_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn reg_int_frame_en(&self) -> REG_INT_FRAME_EN_R {
-        REG_INT_FRAME_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn reg_int_mem_en(&self) -> REG_INT_MEM_EN_R {
-        REG_INT_MEM_EN_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn reg_int_normal_1_en(&self) -> REG_INT_NORMAL_1_EN_R {
-        REG_INT_NORMAL_1_EN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn reg_int_normal_0_en(&self) -> REG_INT_NORMAL_0_EN_R {
-        REG_INT_NORMAL_0_EN_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 28:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W {
-        REG_FRAME_CNT_TRGR_INT_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn reg_int_vcnt_en(&mut self) -> REG_INT_VCNT_EN_W {
-        REG_INT_VCNT_EN_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn reg_int_hcnt_en(&mut self) -> REG_INT_HCNT_EN_W {
-        REG_INT_HCNT_EN_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn reg_int_fifo_en(&mut self) -> REG_INT_FIFO_EN_W {
-        REG_INT_FIFO_EN_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W {
-        REG_INT_FRAME_EN_W { w: self }
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W {
-        REG_INT_MEM_EN_W { w: self }
+    pub fn reg_int_normal_0_en(&mut self) -> REG_INT_NORMAL_0_EN_W<0> {
+        REG_INT_NORMAL_0_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_int_normal_1_en(&mut self) -> REG_INT_NORMAL_1_EN_W {
-        REG_INT_NORMAL_1_EN_W { w: self }
+    pub fn reg_int_normal_1_en(&mut self) -> REG_INT_NORMAL_1_EN_W<1> {
+        REG_INT_NORMAL_1_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn reg_int_normal_0_en(&mut self) -> REG_INT_NORMAL_0_EN_W {
-        REG_INT_NORMAL_0_EN_W { w: self }
+    pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W<2> {
+        REG_INT_MEM_EN_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W<3> {
+        REG_INT_FRAME_EN_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn reg_int_fifo_en(&mut self) -> REG_INT_FIFO_EN_W<4> {
+        REG_INT_FIFO_EN_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn reg_int_hcnt_en(&mut self) -> REG_INT_HCNT_EN_W<5> {
+        REG_INT_HCNT_EN_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn reg_int_vcnt_en(&mut self) -> REG_INT_VCNT_EN_W<6> {
+        REG_INT_VCNT_EN_W::new(self)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W<28> {
+        REG_FRAME_CNT_TRGR_INT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

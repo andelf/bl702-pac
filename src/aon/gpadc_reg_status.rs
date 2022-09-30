@@ -34,90 +34,38 @@ impl From<crate::W<GPADC_REG_STATUS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `gpadc_reserved` reader - "]
-pub struct GPADC_RESERVED_R(crate::FieldReader<u16, u16>);
-impl GPADC_RESERVED_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        GPADC_RESERVED_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_RESERVED_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_reserved` writer - "]
-pub struct GPADC_RESERVED_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_RESERVED_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `gpadc_data_rdy` reader - "]
-pub struct GPADC_DATA_RDY_R(crate::FieldReader<bool, bool>);
-impl GPADC_DATA_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_DATA_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_DATA_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GPADC_DATA_RDY_R = crate::BitReader<bool>;
 #[doc = "Field `gpadc_data_rdy` writer - "]
-pub struct GPADC_DATA_RDY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_DATA_RDY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type GPADC_DATA_RDY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, GPADC_REG_STATUS_SPEC, bool, O>;
+#[doc = "Field `gpadc_reserved` reader - "]
+pub type GPADC_RESERVED_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `gpadc_reserved` writer - "]
+pub type GPADC_RESERVED_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPADC_REG_STATUS_SPEC, u16, u16, 16, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn gpadc_data_rdy(&self) -> GPADC_DATA_RDY_R {
+        GPADC_DATA_RDY_R::new((self.bits & 1) != 0)
+    }
     #[doc = "Bits 16:31"]
     #[inline(always)]
     pub fn gpadc_reserved(&self) -> GPADC_RESERVED_R {
         GPADC_RESERVED_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn gpadc_data_rdy(&self) -> GPADC_DATA_RDY_R {
-        GPADC_DATA_RDY_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn gpadc_reserved(&mut self) -> GPADC_RESERVED_W {
-        GPADC_RESERVED_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn gpadc_data_rdy(&mut self) -> GPADC_DATA_RDY_W {
-        GPADC_DATA_RDY_W { w: self }
+    pub fn gpadc_data_rdy(&mut self) -> GPADC_DATA_RDY_W<0> {
+        GPADC_DATA_RDY_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn gpadc_reserved(&mut self) -> GPADC_RESERVED_W<16> {
+        GPADC_RESERVED_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]
