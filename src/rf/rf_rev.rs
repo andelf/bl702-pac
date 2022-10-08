@@ -34,116 +34,50 @@ impl From<crate::W<RF_REV_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `hw_rev` reader - "]
-pub struct HW_REV_R(crate::FieldReader<u8, u8>);
-impl HW_REV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HW_REV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HW_REV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hw_rev` writer - "]
-pub struct HW_REV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HW_REV_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `fw_rev` reader - "]
-pub struct FW_REV_R(crate::FieldReader<u8, u8>);
-impl FW_REV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FW_REV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FW_REV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fw_rev` writer - "]
-pub struct FW_REV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FW_REV_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 8)) | ((value as u32 & 0xff) << 8);
-        self.w
-    }
-}
 #[doc = "Field `rf_rev` reader - "]
-pub struct RF_REV_R(crate::FieldReader<u8, u8>);
-impl RF_REV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_REV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_REV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RF_REV_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rf_rev` writer - "]
-pub struct RF_REV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_REV_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type RF_REV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RF_REV_SPEC, u8, u8, 8, O>;
+#[doc = "Field `fw_rev` reader - "]
+pub type FW_REV_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fw_rev` writer - "]
+pub type FW_REV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RF_REV_SPEC, u8, u8, 8, O>;
+#[doc = "Field `hw_rev` reader - "]
+pub type HW_REV_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `hw_rev` writer - "]
+pub type HW_REV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, RF_REV_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 16:23"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn hw_rev(&self) -> HW_REV_R {
-        HW_REV_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn rf_rev(&self) -> RF_REV_R {
+        RF_REV_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
     pub fn fw_rev(&self) -> FW_REV_R {
         FW_REV_R::new(((self.bits >> 8) & 0xff) as u8)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn rf_rev(&self) -> RF_REV_R {
-        RF_REV_R::new((self.bits & 0xff) as u8)
+    pub fn hw_rev(&self) -> HW_REV_R {
+        HW_REV_R::new(((self.bits >> 16) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 16:23"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn hw_rev(&mut self) -> HW_REV_W {
-        HW_REV_W { w: self }
+    pub fn rf_rev(&mut self) -> RF_REV_W<0> {
+        RF_REV_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn fw_rev(&mut self) -> FW_REV_W {
-        FW_REV_W { w: self }
+    pub fn fw_rev(&mut self) -> FW_REV_W<8> {
+        FW_REV_W::new(self)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn rf_rev(&mut self) -> RF_REV_W {
-        RF_REV_W { w: self }
+    pub fn hw_rev(&mut self) -> HW_REV_W<16> {
+        HW_REV_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

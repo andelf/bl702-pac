@@ -35,31 +35,10 @@ impl From<crate::W<EP7_RX_FIFO_RDATA_SPEC>> for W {
     }
 }
 #[doc = "Field `ep7_rx_fifo_rdata` reader - "]
-pub struct EP7_RX_FIFO_RDATA_R(crate::FieldReader<u8, u8>);
-impl EP7_RX_FIFO_RDATA_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EP7_RX_FIFO_RDATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EP7_RX_FIFO_RDATA_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EP7_RX_FIFO_RDATA_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `ep7_rx_fifo_rdata` writer - "]
-pub struct EP7_RX_FIFO_RDATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EP7_RX_FIFO_RDATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type EP7_RX_FIFO_RDATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EP7_RX_FIFO_RDATA_SPEC, u8, u8, 8, O>;
 impl R {
     #[doc = "Bits 0:7"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn ep7_rx_fifo_rdata(&mut self) -> EP7_RX_FIFO_RDATA_W {
-        EP7_RX_FIFO_RDATA_W { w: self }
+    pub fn ep7_rx_fifo_rdata(&mut self) -> EP7_RX_FIFO_RDATA_W<0> {
+        EP7_RX_FIFO_RDATA_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

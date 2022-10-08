@@ -34,468 +34,157 @@ impl From<crate::W<RF_CTRL_SOURCE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `vco_idac_ctrl_hw` reader - "]
-pub struct VCO_IDAC_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl VCO_IDAC_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        VCO_IDAC_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VCO_IDAC_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `vco_idac_ctrl_hw` writer - "]
-pub struct VCO_IDAC_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VCO_IDAC_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `inc_fcal_en_ctrl_hw` reader - "]
-pub struct INC_FCAL_EN_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl INC_FCAL_EN_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_FCAL_EN_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_EN_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_en_ctrl_hw` writer - "]
-pub struct INC_FCAL_EN_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_FCAL_EN_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `lo_fcw_ctrl_hw` reader - "]
-pub struct LO_FCW_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl LO_FCW_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_FCW_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_FCW_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_fcw_ctrl_hw` writer - "]
-pub struct LO_FCW_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LO_FCW_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `rbb_bw_ctrl_hw` reader - "]
-pub struct RBB_BW_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl RBB_BW_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_BW_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BW_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bw_ctrl_hw` writer - "]
-pub struct RBB_BW_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_BW_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `kcal_ratio_ctrl_hw` reader - "]
-pub struct KCAL_RATIO_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl KCAL_RATIO_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        KCAL_RATIO_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KCAL_RATIO_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `kcal_ratio_ctrl_hw` writer - "]
-pub struct KCAL_RATIO_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KCAL_RATIO_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `rosdac_ctrl_rccal` reader - "]
-pub struct ROSDAC_CTRL_RCCAL_R(crate::FieldReader<bool, bool>);
-impl ROSDAC_CTRL_RCCAL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSDAC_CTRL_RCCAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_CTRL_RCCAL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_ctrl_rccal` writer - "]
-pub struct ROSDAC_CTRL_RCCAL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_CTRL_RCCAL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
-        self.w
-    }
-}
-#[doc = "Field `rosdac_ctrl_hw` reader - "]
-pub struct ROSDAC_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl ROSDAC_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSDAC_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_ctrl_hw` writer - "]
-pub struct ROSDAC_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSDAC_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl_rx_hw` reader - "]
-pub struct GAIN_CTRL_RX_HW_R(crate::FieldReader<bool, bool>);
-impl GAIN_CTRL_RX_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GAIN_CTRL_RX_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL_RX_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl_rx_hw` writer - "]
-pub struct GAIN_CTRL_RX_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL_RX_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl_tx_hw` reader - "]
-pub struct GAIN_CTRL_TX_HW_R(crate::FieldReader<bool, bool>);
-impl GAIN_CTRL_TX_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GAIN_CTRL_TX_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL_TX_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl_tx_hw` writer - "]
-pub struct GAIN_CTRL_TX_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL_TX_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
 #[doc = "Field `pu_ctrl_hw` reader - "]
-pub struct PU_CTRL_HW_R(crate::FieldReader<bool, bool>);
-impl PU_CTRL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_CTRL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_CTRL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PU_CTRL_HW_R = crate::BitReader<bool>;
 #[doc = "Field `pu_ctrl_hw` writer - "]
-pub struct PU_CTRL_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PU_CTRL_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type PU_CTRL_HW_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `gain_ctrl_tx_hw` reader - "]
+pub type GAIN_CTRL_TX_HW_R = crate::BitReader<bool>;
+#[doc = "Field `gain_ctrl_tx_hw` writer - "]
+pub type GAIN_CTRL_TX_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `gain_ctrl_rx_hw` reader - "]
+pub type GAIN_CTRL_RX_HW_R = crate::BitReader<bool>;
+#[doc = "Field `gain_ctrl_rx_hw` writer - "]
+pub type GAIN_CTRL_RX_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `rosdac_ctrl_hw` reader - "]
+pub type ROSDAC_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `rosdac_ctrl_hw` writer - "]
+pub type ROSDAC_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `rosdac_ctrl_rccal` reader - "]
+pub type ROSDAC_CTRL_RCCAL_R = crate::BitReader<bool>;
+#[doc = "Field `rosdac_ctrl_rccal` writer - "]
+pub type ROSDAC_CTRL_RCCAL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `kcal_ratio_ctrl_hw` reader - "]
+pub type KCAL_RATIO_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `kcal_ratio_ctrl_hw` writer - "]
+pub type KCAL_RATIO_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `rbb_bw_ctrl_hw` reader - "]
+pub type RBB_BW_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `rbb_bw_ctrl_hw` writer - "]
+pub type RBB_BW_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `lo_fcw_ctrl_hw` reader - "]
+pub type LO_FCW_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `lo_fcw_ctrl_hw` writer - "]
+pub type LO_FCW_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `inc_fcal_en_ctrl_hw` reader - "]
+pub type INC_FCAL_EN_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `inc_fcal_en_ctrl_hw` writer - "]
+pub type INC_FCAL_EN_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
+#[doc = "Field `vco_idac_ctrl_hw` reader - "]
+pub type VCO_IDAC_CTRL_HW_R = crate::BitReader<bool>;
+#[doc = "Field `vco_idac_ctrl_hw` writer - "]
+pub type VCO_IDAC_CTRL_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CTRL_SOURCE_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 28"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn vco_idac_ctrl_hw(&self) -> VCO_IDAC_CTRL_HW_R {
-        VCO_IDAC_CTRL_HW_R::new(((self.bits >> 28) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn inc_fcal_en_ctrl_hw(&self) -> INC_FCAL_EN_CTRL_HW_R {
-        INC_FCAL_EN_CTRL_HW_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn lo_fcw_ctrl_hw(&self) -> LO_FCW_CTRL_HW_R {
-        LO_FCW_CTRL_HW_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn rbb_bw_ctrl_hw(&self) -> RBB_BW_CTRL_HW_R {
-        RBB_BW_CTRL_HW_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn kcal_ratio_ctrl_hw(&self) -> KCAL_RATIO_CTRL_HW_R {
-        KCAL_RATIO_CTRL_HW_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn rosdac_ctrl_rccal(&self) -> ROSDAC_CTRL_RCCAL_R {
-        ROSDAC_CTRL_RCCAL_R::new(((self.bits >> 9) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn rosdac_ctrl_hw(&self) -> ROSDAC_CTRL_HW_R {
-        ROSDAC_CTRL_HW_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn gain_ctrl_rx_hw(&self) -> GAIN_CTRL_RX_HW_R {
-        GAIN_CTRL_RX_HW_R::new(((self.bits >> 4) & 0x01) != 0)
+    pub fn pu_ctrl_hw(&self) -> PU_CTRL_HW_R {
+        PU_CTRL_HW_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
     pub fn gain_ctrl_tx_hw(&self) -> GAIN_CTRL_TX_HW_R {
-        GAIN_CTRL_TX_HW_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn pu_ctrl_hw(&self) -> PU_CTRL_HW_R {
-        PU_CTRL_HW_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn vco_idac_ctrl_hw(&mut self) -> VCO_IDAC_CTRL_HW_W {
-        VCO_IDAC_CTRL_HW_W { w: self }
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn inc_fcal_en_ctrl_hw(&mut self) -> INC_FCAL_EN_CTRL_HW_W {
-        INC_FCAL_EN_CTRL_HW_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn lo_fcw_ctrl_hw(&mut self) -> LO_FCW_CTRL_HW_W {
-        LO_FCW_CTRL_HW_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn rbb_bw_ctrl_hw(&mut self) -> RBB_BW_CTRL_HW_W {
-        RBB_BW_CTRL_HW_W { w: self }
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn kcal_ratio_ctrl_hw(&mut self) -> KCAL_RATIO_CTRL_HW_W {
-        KCAL_RATIO_CTRL_HW_W { w: self }
-    }
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn rosdac_ctrl_rccal(&mut self) -> ROSDAC_CTRL_RCCAL_W {
-        ROSDAC_CTRL_RCCAL_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn rosdac_ctrl_hw(&mut self) -> ROSDAC_CTRL_HW_W {
-        ROSDAC_CTRL_HW_W { w: self }
+        GAIN_CTRL_TX_HW_R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn gain_ctrl_rx_hw(&mut self) -> GAIN_CTRL_RX_HW_W {
-        GAIN_CTRL_RX_HW_W { w: self }
+    pub fn gain_ctrl_rx_hw(&self) -> GAIN_CTRL_RX_HW_R {
+        GAIN_CTRL_RX_HW_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn rosdac_ctrl_hw(&self) -> ROSDAC_CTRL_HW_R {
+        ROSDAC_CTRL_HW_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn rosdac_ctrl_rccal(&self) -> ROSDAC_CTRL_RCCAL_R {
+        ROSDAC_CTRL_RCCAL_R::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn kcal_ratio_ctrl_hw(&self) -> KCAL_RATIO_CTRL_HW_R {
+        KCAL_RATIO_CTRL_HW_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn rbb_bw_ctrl_hw(&self) -> RBB_BW_CTRL_HW_R {
+        RBB_BW_CTRL_HW_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn lo_fcw_ctrl_hw(&self) -> LO_FCW_CTRL_HW_R {
+        LO_FCW_CTRL_HW_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn inc_fcal_en_ctrl_hw(&self) -> INC_FCAL_EN_CTRL_HW_R {
+        INC_FCAL_EN_CTRL_HW_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn vco_idac_ctrl_hw(&self) -> VCO_IDAC_CTRL_HW_R {
+        VCO_IDAC_CTRL_HW_R::new(((self.bits >> 28) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn pu_ctrl_hw(&mut self) -> PU_CTRL_HW_W<0> {
+        PU_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn gain_ctrl_tx_hw(&mut self) -> GAIN_CTRL_TX_HW_W {
-        GAIN_CTRL_TX_HW_W { w: self }
+    pub fn gain_ctrl_tx_hw(&mut self) -> GAIN_CTRL_TX_HW_W<3> {
+        GAIN_CTRL_TX_HW_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn pu_ctrl_hw(&mut self) -> PU_CTRL_HW_W {
-        PU_CTRL_HW_W { w: self }
+    pub fn gain_ctrl_rx_hw(&mut self) -> GAIN_CTRL_RX_HW_W<4> {
+        GAIN_CTRL_RX_HW_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn rosdac_ctrl_hw(&mut self) -> ROSDAC_CTRL_HW_W<8> {
+        ROSDAC_CTRL_HW_W::new(self)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn rosdac_ctrl_rccal(&mut self) -> ROSDAC_CTRL_RCCAL_W<9> {
+        ROSDAC_CTRL_RCCAL_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn kcal_ratio_ctrl_hw(&mut self) -> KCAL_RATIO_CTRL_HW_W<12> {
+        KCAL_RATIO_CTRL_HW_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn rbb_bw_ctrl_hw(&mut self) -> RBB_BW_CTRL_HW_W<16> {
+        RBB_BW_CTRL_HW_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn lo_fcw_ctrl_hw(&mut self) -> LO_FCW_CTRL_HW_W<20> {
+        LO_FCW_CTRL_HW_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn inc_fcal_en_ctrl_hw(&mut self) -> INC_FCAL_EN_CTRL_HW_W<24> {
+        INC_FCAL_EN_CTRL_HW_W::new(self)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn vco_idac_ctrl_hw(&mut self) -> VCO_IDAC_CTRL_HW_W<28> {
+        VCO_IDAC_CTRL_HW_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

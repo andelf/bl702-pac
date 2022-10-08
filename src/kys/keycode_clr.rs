@@ -35,31 +35,10 @@ impl From<crate::W<KEYCODE_CLR_SPEC>> for W {
     }
 }
 #[doc = "Field `keycode_clr` reader - "]
-pub struct KEYCODE_CLR_R(crate::FieldReader<u8, u8>);
-impl KEYCODE_CLR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        KEYCODE_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KEYCODE_CLR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type KEYCODE_CLR_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `keycode_clr` writer - "]
-pub struct KEYCODE_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KEYCODE_CLR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | (value as u32 & 0x0f);
-        self.w
-    }
-}
+pub type KEYCODE_CLR_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, KEYCODE_CLR_SPEC, u8, u8, 4, O>;
 impl R {
     #[doc = "Bits 0:3"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn keycode_clr(&mut self) -> KEYCODE_CLR_W {
-        KEYCODE_CLR_W { w: self }
+    pub fn keycode_clr(&mut self) -> KEYCODE_CLR_W<0> {
+        KEYCODE_CLR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

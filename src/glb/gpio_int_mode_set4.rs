@@ -35,31 +35,10 @@ impl From<crate::W<GPIO_INT_MODE_SET4_SPEC>> for W {
     }
 }
 #[doc = "Field `reg_gpio_int_mode_set4` reader - "]
-pub struct REG_GPIO_INT_MODE_SET4_R(crate::FieldReader<u8, u8>);
-impl REG_GPIO_INT_MODE_SET4_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_GPIO_INT_MODE_SET4_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_GPIO_INT_MODE_SET4_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_GPIO_INT_MODE_SET4_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `reg_gpio_int_mode_set4` writer - "]
-pub struct REG_GPIO_INT_MODE_SET4_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_GPIO_INT_MODE_SET4_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type REG_GPIO_INT_MODE_SET4_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPIO_INT_MODE_SET4_SPEC, u8, u8, 6, O>;
 impl R {
     #[doc = "Bits 0:5"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn reg_gpio_int_mode_set4(&mut self) -> REG_GPIO_INT_MODE_SET4_W {
-        REG_GPIO_INT_MODE_SET4_W { w: self }
+    pub fn reg_gpio_int_mode_set4(&mut self) -> REG_GPIO_INT_MODE_SET4_W<0> {
+        REG_GPIO_INT_MODE_SET4_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

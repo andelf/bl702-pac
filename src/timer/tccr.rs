@@ -34,208 +34,78 @@ impl From<crate::W<TCCR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cs_wdt` reader - "]
-pub struct CS_WDT_R(crate::FieldReader<u8, u8>);
-impl CS_WDT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CS_WDT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CS_WDT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cs_wdt` writer - "]
-pub struct CS_WDT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CS_WDT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `RESERVED_7` reader - "]
-pub struct RESERVED_7_R(crate::FieldReader<bool, bool>);
-impl RESERVED_7_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RESERVED_7_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RESERVED_7_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RESERVED_7` writer - "]
-pub struct RESERVED_7_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RESERVED_7_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `cs_2` reader - "]
-pub struct CS_2_R(crate::FieldReader<u8, u8>);
-impl CS_2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CS_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CS_2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cs_2` writer - "]
-pub struct CS_2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CS_2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 5)) | ((value as u32 & 0x03) << 5);
-        self.w
-    }
-}
-#[doc = "Field `RESERVED_4` reader - "]
-pub struct RESERVED_4_R(crate::FieldReader<bool, bool>);
-impl RESERVED_4_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RESERVED_4_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RESERVED_4_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `RESERVED_4` writer - "]
-pub struct RESERVED_4_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RESERVED_4_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
 #[doc = "Field `cs_1` reader - "]
-pub struct CS_1_R(crate::FieldReader<u8, u8>);
-impl CS_1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CS_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CS_1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CS_1_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cs_1` writer - "]
-pub struct CS_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CS_1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 2)) | ((value as u32 & 0x03) << 2);
-        self.w
-    }
-}
+pub type CS_1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TCCR_SPEC, u8, u8, 2, O>;
+#[doc = "Field `RESERVED_4` reader - "]
+pub type RESERVED_4_R = crate::BitReader<bool>;
+#[doc = "Field `RESERVED_4` writer - "]
+pub type RESERVED_4_W<'a, const O: u8> = crate::BitWriter<'a, u32, TCCR_SPEC, bool, O>;
+#[doc = "Field `cs_2` reader - "]
+pub type CS_2_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cs_2` writer - "]
+pub type CS_2_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TCCR_SPEC, u8, u8, 2, O>;
+#[doc = "Field `RESERVED_7` reader - "]
+pub type RESERVED_7_R = crate::BitReader<bool>;
+#[doc = "Field `RESERVED_7` writer - "]
+pub type RESERVED_7_W<'a, const O: u8> = crate::BitWriter<'a, u32, TCCR_SPEC, bool, O>;
+#[doc = "Field `cs_wdt` reader - "]
+pub type CS_WDT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cs_wdt` writer - "]
+pub type CS_WDT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TCCR_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 8:9"]
+    #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn cs_wdt(&self) -> CS_WDT_R {
-        CS_WDT_R::new(((self.bits >> 8) & 0x03) as u8)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn reserved_7(&self) -> RESERVED_7_R {
-        RESERVED_7_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bits 5:6"]
-    #[inline(always)]
-    pub fn cs_2(&self) -> CS_2_R {
-        CS_2_R::new(((self.bits >> 5) & 0x03) as u8)
+    pub fn cs_1(&self) -> CS_1_R {
+        CS_1_R::new(((self.bits >> 2) & 3) as u8)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
     pub fn reserved_4(&self) -> RESERVED_4_R {
-        RESERVED_4_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bits 2:3"]
-    #[inline(always)]
-    pub fn cs_1(&self) -> CS_1_R {
-        CS_1_R::new(((self.bits >> 2) & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 8:9"]
-    #[inline(always)]
-    pub fn cs_wdt(&mut self) -> CS_WDT_W {
-        CS_WDT_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn reserved_7(&mut self) -> RESERVED_7_W {
-        RESERVED_7_W { w: self }
+        RESERVED_4_R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bits 5:6"]
     #[inline(always)]
-    pub fn cs_2(&mut self) -> CS_2_W {
-        CS_2_W { w: self }
+    pub fn cs_2(&self) -> CS_2_R {
+        CS_2_R::new(((self.bits >> 5) & 3) as u8)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn reserved_7(&self) -> RESERVED_7_R {
+        RESERVED_7_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn cs_wdt(&self) -> CS_WDT_R {
+        CS_WDT_R::new(((self.bits >> 8) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 2:3"]
+    #[inline(always)]
+    pub fn cs_1(&mut self) -> CS_1_W<2> {
+        CS_1_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn reserved_4(&mut self) -> RESERVED_4_W {
-        RESERVED_4_W { w: self }
+    pub fn reserved_4(&mut self) -> RESERVED_4_W<4> {
+        RESERVED_4_W::new(self)
     }
-    #[doc = "Bits 2:3"]
+    #[doc = "Bits 5:6"]
     #[inline(always)]
-    pub fn cs_1(&mut self) -> CS_1_W {
-        CS_1_W { w: self }
+    pub fn cs_2(&mut self) -> CS_2_W<5> {
+        CS_2_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn reserved_7(&mut self) -> RESERVED_7_W<7> {
+        RESERVED_7_W::new(self)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn cs_wdt(&mut self) -> CS_WDT_W<8> {
+        CS_WDT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

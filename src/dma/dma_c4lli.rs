@@ -35,31 +35,9 @@ impl From<crate::W<DMA_C4LLI_SPEC>> for W {
     }
 }
 #[doc = "Field `LLI` reader - "]
-pub struct LLI_R(crate::FieldReader<u32, u32>);
-impl LLI_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        LLI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LLI_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type LLI_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `LLI` writer - "]
-pub struct LLI_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LLI_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3fff_ffff << 2)) | ((value as u32 & 0x3fff_ffff) << 2);
-        self.w
-    }
-}
+pub type LLI_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C4LLI_SPEC, u32, u32, 30, O>;
 impl R {
     #[doc = "Bits 2:31"]
     #[inline(always)]
@@ -70,8 +48,8 @@ impl R {
 impl W {
     #[doc = "Bits 2:31"]
     #[inline(always)]
-    pub fn lli(&mut self) -> LLI_W {
-        LLI_W { w: self }
+    pub fn lli(&mut self) -> LLI_W<2> {
+        LLI_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

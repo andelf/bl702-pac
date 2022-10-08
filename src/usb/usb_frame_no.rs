@@ -34,116 +34,52 @@ impl From<crate::W<USB_FRAME_NO_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sts_ep_no` reader - "]
-pub struct STS_EP_NO_R(crate::FieldReader<u8, u8>);
-impl STS_EP_NO_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        STS_EP_NO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_EP_NO_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_ep_no` writer - "]
-pub struct STS_EP_NO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_EP_NO_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 16)) | ((value as u32 & 0x0f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `sts_pid` reader - "]
-pub struct STS_PID_R(crate::FieldReader<u8, u8>);
-impl STS_PID_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        STS_PID_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_PID_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_pid` writer - "]
-pub struct STS_PID_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_PID_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 12)) | ((value as u32 & 0x0f) << 12);
-        self.w
-    }
-}
 #[doc = "Field `sts_frame_no` reader - "]
-pub struct STS_FRAME_NO_R(crate::FieldReader<u16, u16>);
-impl STS_FRAME_NO_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        STS_FRAME_NO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_FRAME_NO_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type STS_FRAME_NO_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `sts_frame_no` writer - "]
-pub struct STS_FRAME_NO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_FRAME_NO_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07ff) | (value as u32 & 0x07ff);
-        self.w
-    }
-}
+pub type STS_FRAME_NO_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_FRAME_NO_SPEC, u16, u16, 11, O>;
+#[doc = "Field `sts_pid` reader - "]
+pub type STS_PID_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `sts_pid` writer - "]
+pub type STS_PID_W<'a, const O: u8> = crate::FieldWriter<'a, u32, USB_FRAME_NO_SPEC, u8, u8, 4, O>;
+#[doc = "Field `sts_ep_no` reader - "]
+pub type STS_EP_NO_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `sts_ep_no` writer - "]
+pub type STS_EP_NO_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, USB_FRAME_NO_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 16:19"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn sts_ep_no(&self) -> STS_EP_NO_R {
-        STS_EP_NO_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn sts_frame_no(&self) -> STS_FRAME_NO_R {
+        STS_FRAME_NO_R::new((self.bits & 0x07ff) as u16)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
     pub fn sts_pid(&self) -> STS_PID_R {
         STS_PID_R::new(((self.bits >> 12) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn sts_frame_no(&self) -> STS_FRAME_NO_R {
-        STS_FRAME_NO_R::new((self.bits & 0x07ff) as u16)
+    pub fn sts_ep_no(&self) -> STS_EP_NO_R {
+        STS_EP_NO_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 16:19"]
+    #[doc = "Bits 0:10"]
     #[inline(always)]
-    pub fn sts_ep_no(&mut self) -> STS_EP_NO_W {
-        STS_EP_NO_W { w: self }
+    pub fn sts_frame_no(&mut self) -> STS_FRAME_NO_W<0> {
+        STS_FRAME_NO_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
-    pub fn sts_pid(&mut self) -> STS_PID_W {
-        STS_PID_W { w: self }
+    pub fn sts_pid(&mut self) -> STS_PID_W<12> {
+        STS_PID_W::new(self)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn sts_frame_no(&mut self) -> STS_FRAME_NO_W {
-        STS_FRAME_NO_W { w: self }
+    pub fn sts_ep_no(&mut self) -> STS_EP_NO_W<16> {
+        STS_EP_NO_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

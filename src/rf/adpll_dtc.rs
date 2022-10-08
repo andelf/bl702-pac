@@ -34,126 +34,52 @@ impl From<crate::W<ADPLL_DTC_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_dtc_inv_vth_sel` reader - "]
-pub struct ADPLL_DTC_INV_VTH_SEL_R(crate::FieldReader<u8, u8>);
-impl ADPLL_DTC_INV_VTH_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_DTC_INV_VTH_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_DTC_INV_VTH_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_dtc_inv_vth_sel` writer - "]
-pub struct ADPLL_DTC_INV_VTH_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_DTC_INV_VTH_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `adpll_dtc_r_sel` reader - "]
-pub struct ADPLL_DTC_R_SEL_R(crate::FieldReader<u8, u8>);
-impl ADPLL_DTC_R_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_DTC_R_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_DTC_R_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_dtc_r_sel` writer - "]
-pub struct ADPLL_DTC_R_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_DTC_R_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
 #[doc = "Field `adpll_dtc_bypass` reader - "]
-pub struct ADPLL_DTC_BYPASS_R(crate::FieldReader<bool, bool>);
-impl ADPLL_DTC_BYPASS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_DTC_BYPASS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_DTC_BYPASS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_DTC_BYPASS_R = crate::BitReader<bool>;
 #[doc = "Field `adpll_dtc_bypass` writer - "]
-pub struct ADPLL_DTC_BYPASS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_DTC_BYPASS_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type ADPLL_DTC_BYPASS_W<'a, const O: u8> = crate::BitWriter<'a, u32, ADPLL_DTC_SPEC, bool, O>;
+#[doc = "Field `adpll_dtc_r_sel` reader - "]
+pub type ADPLL_DTC_R_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_dtc_r_sel` writer - "]
+pub type ADPLL_DTC_R_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_DTC_SPEC, u8, u8, 3, O>;
+#[doc = "Field `adpll_dtc_inv_vth_sel` reader - "]
+pub type ADPLL_DTC_INV_VTH_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_dtc_inv_vth_sel` writer - "]
+pub type ADPLL_DTC_INV_VTH_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_DTC_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 8:9"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn adpll_dtc_inv_vth_sel(&self) -> ADPLL_DTC_INV_VTH_SEL_R {
-        ADPLL_DTC_INV_VTH_SEL_R::new(((self.bits >> 8) & 0x03) as u8)
+    pub fn adpll_dtc_bypass(&self) -> ADPLL_DTC_BYPASS_R {
+        ADPLL_DTC_BYPASS_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
     pub fn adpll_dtc_r_sel(&self) -> ADPLL_DTC_R_SEL_R {
-        ADPLL_DTC_R_SEL_R::new(((self.bits >> 4) & 0x07) as u8)
+        ADPLL_DTC_R_SEL_R::new(((self.bits >> 4) & 7) as u8)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 8:9"]
     #[inline(always)]
-    pub fn adpll_dtc_bypass(&self) -> ADPLL_DTC_BYPASS_R {
-        ADPLL_DTC_BYPASS_R::new((self.bits & 0x01) != 0)
+    pub fn adpll_dtc_inv_vth_sel(&self) -> ADPLL_DTC_INV_VTH_SEL_R {
+        ADPLL_DTC_INV_VTH_SEL_R::new(((self.bits >> 8) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 8:9"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn adpll_dtc_inv_vth_sel(&mut self) -> ADPLL_DTC_INV_VTH_SEL_W {
-        ADPLL_DTC_INV_VTH_SEL_W { w: self }
+    pub fn adpll_dtc_bypass(&mut self) -> ADPLL_DTC_BYPASS_W<0> {
+        ADPLL_DTC_BYPASS_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
-    pub fn adpll_dtc_r_sel(&mut self) -> ADPLL_DTC_R_SEL_W {
-        ADPLL_DTC_R_SEL_W { w: self }
+    pub fn adpll_dtc_r_sel(&mut self) -> ADPLL_DTC_R_SEL_W<4> {
+        ADPLL_DTC_R_SEL_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 8:9"]
     #[inline(always)]
-    pub fn adpll_dtc_bypass(&mut self) -> ADPLL_DTC_BYPASS_W {
-        ADPLL_DTC_BYPASS_W { w: self }
+    pub fn adpll_dtc_inv_vth_sel(&mut self) -> ADPLL_DTC_INV_VTH_SEL_W<8> {
+        ADPLL_DTC_INV_VTH_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

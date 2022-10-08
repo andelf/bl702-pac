@@ -34,152 +34,68 @@ impl From<crate::W<PDS_GPIO_SET_PU_PD_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_pds_gpio_28_23_pu` reader - "]
-pub struct CR_PDS_GPIO_28_23_PU_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_GPIO_28_23_PU_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_GPIO_28_23_PU_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_GPIO_28_23_PU_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_gpio_28_23_pu` writer - "]
-pub struct CR_PDS_GPIO_28_23_PU_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_GPIO_28_23_PU_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 24)) | ((value as u32 & 0x3f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_gpio_28_23_pd` reader - "]
-pub struct CR_PDS_GPIO_28_23_PD_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_GPIO_28_23_PD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_GPIO_28_23_PD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_GPIO_28_23_PD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_gpio_28_23_pd` writer - "]
-pub struct CR_PDS_GPIO_28_23_PD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_GPIO_28_23_PD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 16)) | ((value as u32 & 0x3f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_gpio_22_17_pu` reader - "]
-pub struct CR_PDS_GPIO_22_17_PU_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_GPIO_22_17_PU_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_GPIO_22_17_PU_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_GPIO_22_17_PU_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_gpio_22_17_pu` writer - "]
-pub struct CR_PDS_GPIO_22_17_PU_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_GPIO_22_17_PU_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 8)) | ((value as u32 & 0x3f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `cr_pds_gpio_22_17_pd` reader - "]
-pub struct CR_PDS_GPIO_22_17_PD_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_GPIO_22_17_PD_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_GPIO_22_17_PD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_GPIO_22_17_PD_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_PDS_GPIO_22_17_PD_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cr_pds_gpio_22_17_pd` writer - "]
-pub struct CR_PDS_GPIO_22_17_PD_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_GPIO_22_17_PD_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type CR_PDS_GPIO_22_17_PD_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_SET_PU_PD_SPEC, u8, u8, 6, O>;
+#[doc = "Field `cr_pds_gpio_22_17_pu` reader - "]
+pub type CR_PDS_GPIO_22_17_PU_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_gpio_22_17_pu` writer - "]
+pub type CR_PDS_GPIO_22_17_PU_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_SET_PU_PD_SPEC, u8, u8, 6, O>;
+#[doc = "Field `cr_pds_gpio_28_23_pd` reader - "]
+pub type CR_PDS_GPIO_28_23_PD_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_gpio_28_23_pd` writer - "]
+pub type CR_PDS_GPIO_28_23_PD_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_SET_PU_PD_SPEC, u8, u8, 6, O>;
+#[doc = "Field `cr_pds_gpio_28_23_pu` reader - "]
+pub type CR_PDS_GPIO_28_23_PU_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_gpio_28_23_pu` writer - "]
+pub type CR_PDS_GPIO_28_23_PU_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_GPIO_SET_PU_PD_SPEC, u8, u8, 6, O>;
 impl R {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn cr_pds_gpio_28_23_pu(&self) -> CR_PDS_GPIO_28_23_PU_R {
-        CR_PDS_GPIO_28_23_PU_R::new(((self.bits >> 24) & 0x3f) as u8)
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn cr_pds_gpio_28_23_pd(&self) -> CR_PDS_GPIO_28_23_PD_R {
-        CR_PDS_GPIO_28_23_PD_R::new(((self.bits >> 16) & 0x3f) as u8)
+    pub fn cr_pds_gpio_22_17_pd(&self) -> CR_PDS_GPIO_22_17_PD_R {
+        CR_PDS_GPIO_22_17_PD_R::new((self.bits & 0x3f) as u8)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
     pub fn cr_pds_gpio_22_17_pu(&self) -> CR_PDS_GPIO_22_17_PU_R {
         CR_PDS_GPIO_22_17_PU_R::new(((self.bits >> 8) & 0x3f) as u8)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn cr_pds_gpio_22_17_pd(&self) -> CR_PDS_GPIO_22_17_PD_R {
-        CR_PDS_GPIO_22_17_PD_R::new((self.bits & 0x3f) as u8)
+    pub fn cr_pds_gpio_28_23_pd(&self) -> CR_PDS_GPIO_28_23_PD_R {
+        CR_PDS_GPIO_28_23_PD_R::new(((self.bits >> 16) & 0x3f) as u8)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn cr_pds_gpio_28_23_pu(&self) -> CR_PDS_GPIO_28_23_PU_R {
+        CR_PDS_GPIO_28_23_PU_R::new(((self.bits >> 24) & 0x3f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn cr_pds_gpio_28_23_pu(&mut self) -> CR_PDS_GPIO_28_23_PU_W {
-        CR_PDS_GPIO_28_23_PU_W { w: self }
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn cr_pds_gpio_28_23_pd(&mut self) -> CR_PDS_GPIO_28_23_PD_W {
-        CR_PDS_GPIO_28_23_PD_W { w: self }
+    pub fn cr_pds_gpio_22_17_pd(&mut self) -> CR_PDS_GPIO_22_17_PD_W<0> {
+        CR_PDS_GPIO_22_17_PD_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
-    pub fn cr_pds_gpio_22_17_pu(&mut self) -> CR_PDS_GPIO_22_17_PU_W {
-        CR_PDS_GPIO_22_17_PU_W { w: self }
+    pub fn cr_pds_gpio_22_17_pu(&mut self) -> CR_PDS_GPIO_22_17_PU_W<8> {
+        CR_PDS_GPIO_22_17_PU_W::new(self)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn cr_pds_gpio_22_17_pd(&mut self) -> CR_PDS_GPIO_22_17_PD_W {
-        CR_PDS_GPIO_22_17_PD_W { w: self }
+    pub fn cr_pds_gpio_28_23_pd(&mut self) -> CR_PDS_GPIO_28_23_PD_W<16> {
+        CR_PDS_GPIO_28_23_PD_W::new(self)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn cr_pds_gpio_28_23_pu(&mut self) -> CR_PDS_GPIO_28_23_PU_W<24> {
+        CR_PDS_GPIO_28_23_PU_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

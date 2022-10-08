@@ -34,218 +34,81 @@ impl From<crate::W<RF_TEST_MODE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rf_test_mode_en` reader - "]
-pub struct RF_TEST_MODE_EN_R(crate::FieldReader<bool, bool>);
-impl RF_TEST_MODE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_TEST_MODE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TEST_MODE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_test_mode_en` writer - "]
-pub struct RF_TEST_MODE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RF_TEST_MODE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `dacout_4s_sram_en` reader - "]
-pub struct DACOUT_4S_SRAM_EN_R(crate::FieldReader<bool, bool>);
-impl DACOUT_4S_SRAM_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DACOUT_4S_SRAM_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DACOUT_4S_SRAM_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dacout_4s_sram_en` writer - "]
-pub struct DACOUT_4S_SRAM_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DACOUT_4S_SRAM_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `dacout_4s_en` reader - "]
-pub struct DACOUT_4S_EN_R(crate::FieldReader<bool, bool>);
-impl DACOUT_4S_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DACOUT_4S_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DACOUT_4S_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dacout_4s_en` writer - "]
-pub struct DACOUT_4S_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DACOUT_4S_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `dacout_4s` reader - "]
-pub struct DACOUT_4S_R(crate::FieldReader<u16, u16>);
-impl DACOUT_4S_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        DACOUT_4S_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DACOUT_4S_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dacout_4s` writer - "]
-pub struct DACOUT_4S_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DACOUT_4S_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0fff << 16)) | ((value as u32 & 0x0fff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `dacout_hw` reader - "]
-pub struct DACOUT_HW_R(crate::FieldReader<u16, u16>);
-impl DACOUT_HW_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        DACOUT_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DACOUT_HW_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type DACOUT_HW_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `dacout_hw` writer - "]
-pub struct DACOUT_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DACOUT_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type DACOUT_HW_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_TEST_MODE_SPEC, u16, u16, 12, O>;
+#[doc = "Field `dacout_4s` reader - "]
+pub type DACOUT_4S_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `dacout_4s` writer - "]
+pub type DACOUT_4S_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_TEST_MODE_SPEC, u16, u16, 12, O>;
+#[doc = "Field `dacout_4s_en` reader - "]
+pub type DACOUT_4S_EN_R = crate::BitReader<bool>;
+#[doc = "Field `dacout_4s_en` writer - "]
+pub type DACOUT_4S_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_TEST_MODE_SPEC, bool, O>;
+#[doc = "Field `dacout_4s_sram_en` reader - "]
+pub type DACOUT_4S_SRAM_EN_R = crate::BitReader<bool>;
+#[doc = "Field `dacout_4s_sram_en` writer - "]
+pub type DACOUT_4S_SRAM_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_TEST_MODE_SPEC, bool, O>;
+#[doc = "Field `rf_test_mode_en` reader - "]
+pub type RF_TEST_MODE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `rf_test_mode_en` writer - "]
+pub type RF_TEST_MODE_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_TEST_MODE_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 30"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn rf_test_mode_en(&self) -> RF_TEST_MODE_EN_R {
-        RF_TEST_MODE_EN_R::new(((self.bits >> 30) & 0x01) != 0)
-    }
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn dacout_4s_sram_en(&self) -> DACOUT_4S_SRAM_EN_R {
-        DACOUT_4S_SRAM_EN_R::new(((self.bits >> 29) & 0x01) != 0)
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn dacout_4s_en(&self) -> DACOUT_4S_EN_R {
-        DACOUT_4S_EN_R::new(((self.bits >> 28) & 0x01) != 0)
+    pub fn dacout_hw(&self) -> DACOUT_HW_R {
+        DACOUT_HW_R::new((self.bits & 0x0fff) as u16)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
     pub fn dacout_4s(&self) -> DACOUT_4S_R {
         DACOUT_4S_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bit 28"]
     #[inline(always)]
-    pub fn dacout_hw(&self) -> DACOUT_HW_R {
-        DACOUT_HW_R::new((self.bits & 0x0fff) as u16)
-    }
-}
-impl W {
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn rf_test_mode_en(&mut self) -> RF_TEST_MODE_EN_W {
-        RF_TEST_MODE_EN_W { w: self }
+    pub fn dacout_4s_en(&self) -> DACOUT_4S_EN_R {
+        DACOUT_4S_EN_R::new(((self.bits >> 28) & 1) != 0)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
-    pub fn dacout_4s_sram_en(&mut self) -> DACOUT_4S_SRAM_EN_W {
-        DACOUT_4S_SRAM_EN_W { w: self }
+    pub fn dacout_4s_sram_en(&self) -> DACOUT_4S_SRAM_EN_R {
+        DACOUT_4S_SRAM_EN_R::new(((self.bits >> 29) & 1) != 0)
     }
-    #[doc = "Bit 28"]
+    #[doc = "Bit 30"]
     #[inline(always)]
-    pub fn dacout_4s_en(&mut self) -> DACOUT_4S_EN_W {
-        DACOUT_4S_EN_W { w: self }
+    pub fn rf_test_mode_en(&self) -> RF_TEST_MODE_EN_R {
+        RF_TEST_MODE_EN_R::new(((self.bits >> 30) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn dacout_hw(&mut self) -> DACOUT_HW_W<0> {
+        DACOUT_HW_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn dacout_4s(&mut self) -> DACOUT_4S_W {
-        DACOUT_4S_W { w: self }
+    pub fn dacout_4s(&mut self) -> DACOUT_4S_W<16> {
+        DACOUT_4S_W::new(self)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bit 28"]
     #[inline(always)]
-    pub fn dacout_hw(&mut self) -> DACOUT_HW_W {
-        DACOUT_HW_W { w: self }
+    pub fn dacout_4s_en(&mut self) -> DACOUT_4S_EN_W<28> {
+        DACOUT_4S_EN_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn dacout_4s_sram_en(&mut self) -> DACOUT_4S_SRAM_EN_W<29> {
+        DACOUT_4S_SRAM_EN_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn rf_test_mode_en(&mut self) -> RF_TEST_MODE_EN_W<30> {
+        RF_TEST_MODE_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

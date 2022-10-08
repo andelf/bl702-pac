@@ -34,146 +34,50 @@ impl From<crate::W<TIER3_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `tier_2` reader - "]
-pub struct TIER_2_R(crate::FieldReader<bool, bool>);
-impl TIER_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tier_2` writer - "]
-pub struct TIER_2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TIER_2_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `tier_1` reader - "]
-pub struct TIER_1_R(crate::FieldReader<bool, bool>);
-impl TIER_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tier_1` writer - "]
-pub struct TIER_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TIER_1_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `tier_0` reader - "]
-pub struct TIER_0_R(crate::FieldReader<bool, bool>);
-impl TIER_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TIER_0_R = crate::BitReader<bool>;
 #[doc = "Field `tier_0` writer - "]
-pub struct TIER_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TIER_0_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TIER_0_W<'a, const O: u8> = crate::BitWriter<'a, u32, TIER3_SPEC, bool, O>;
+#[doc = "Field `tier_1` reader - "]
+pub type TIER_1_R = crate::BitReader<bool>;
+#[doc = "Field `tier_1` writer - "]
+pub type TIER_1_W<'a, const O: u8> = crate::BitWriter<'a, u32, TIER3_SPEC, bool, O>;
+#[doc = "Field `tier_2` reader - "]
+pub type TIER_2_R = crate::BitReader<bool>;
+#[doc = "Field `tier_2` writer - "]
+pub type TIER_2_W<'a, const O: u8> = crate::BitWriter<'a, u32, TIER3_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tier_2(&self) -> TIER_2_R {
-        TIER_2_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn tier_0(&self) -> TIER_0_R {
+        TIER_0_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn tier_1(&self) -> TIER_1_R {
-        TIER_1_R::new(((self.bits >> 1) & 0x01) != 0)
+        TIER_1_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tier_0(&self) -> TIER_0_R {
-        TIER_0_R::new((self.bits & 0x01) != 0)
+    pub fn tier_2(&self) -> TIER_2_R {
+        TIER_2_R::new(((self.bits >> 2) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tier_2(&mut self) -> TIER_2_W {
-        TIER_2_W { w: self }
+    pub fn tier_0(&mut self) -> TIER_0_W<0> {
+        TIER_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn tier_1(&mut self) -> TIER_1_W {
-        TIER_1_W { w: self }
+    pub fn tier_1(&mut self) -> TIER_1_W<1> {
+        TIER_1_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn tier_0(&mut self) -> TIER_0_W {
-        TIER_0_W { w: self }
+    pub fn tier_2(&mut self) -> TIER_2_W<2> {
+        TIER_2_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

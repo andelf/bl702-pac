@@ -34,100 +34,36 @@ impl From<crate::W<AON_MISC_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sw_bz_en_aon` reader - "]
-pub struct SW_BZ_EN_AON_R(crate::FieldReader<bool, bool>);
-impl SW_BZ_EN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SW_BZ_EN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_BZ_EN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_bz_en_aon` writer - "]
-pub struct SW_BZ_EN_AON_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SW_BZ_EN_AON_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `sw_soc_en_aon` reader - "]
-pub struct SW_SOC_EN_AON_R(crate::FieldReader<bool, bool>);
-impl SW_SOC_EN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SW_SOC_EN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_SOC_EN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SW_SOC_EN_AON_R = crate::BitReader<bool>;
 #[doc = "Field `sw_soc_en_aon` writer - "]
-pub struct SW_SOC_EN_AON_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SW_SOC_EN_AON_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type SW_SOC_EN_AON_W<'a, const O: u8> = crate::BitWriter<'a, u32, AON_MISC_SPEC, bool, O>;
+#[doc = "Field `sw_bz_en_aon` reader - "]
+pub type SW_BZ_EN_AON_R = crate::BitReader<bool>;
+#[doc = "Field `sw_bz_en_aon` writer - "]
+pub type SW_BZ_EN_AON_W<'a, const O: u8> = crate::BitWriter<'a, u32, AON_MISC_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn sw_bz_en_aon(&self) -> SW_BZ_EN_AON_R {
-        SW_BZ_EN_AON_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn sw_soc_en_aon(&self) -> SW_SOC_EN_AON_R {
-        SW_SOC_EN_AON_R::new((self.bits & 0x01) != 0)
+        SW_SOC_EN_AON_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn sw_bz_en_aon(&self) -> SW_BZ_EN_AON_R {
+        SW_BZ_EN_AON_R::new(((self.bits >> 1) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn sw_bz_en_aon(&mut self) -> SW_BZ_EN_AON_W {
-        SW_BZ_EN_AON_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn sw_soc_en_aon(&mut self) -> SW_SOC_EN_AON_W {
-        SW_SOC_EN_AON_W { w: self }
+    pub fn sw_soc_en_aon(&mut self) -> SW_SOC_EN_AON_W<0> {
+        SW_SOC_EN_AON_W::new(self)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn sw_bz_en_aon(&mut self) -> SW_BZ_EN_AON_W<1> {
+        SW_BZ_EN_AON_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,152 +34,68 @@ impl From<crate::W<I2S_FIFO_CONFIG_1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rx_fifo_th` reader - "]
-pub struct RX_FIFO_TH_R(crate::FieldReader<u8, u8>);
-impl RX_FIFO_TH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RX_FIFO_TH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_TH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_th` writer - "]
-pub struct RX_FIFO_TH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_TH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 24)) | ((value as u32 & 0x0f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `tx_fifo_th` reader - "]
-pub struct TX_FIFO_TH_R(crate::FieldReader<u8, u8>);
-impl TX_FIFO_TH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TX_FIFO_TH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FIFO_TH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_fifo_th` writer - "]
-pub struct TX_FIFO_TH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FIFO_TH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 16)) | ((value as u32 & 0x0f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `rx_fifo_cnt` reader - "]
-pub struct RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl RX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_cnt` writer - "]
-pub struct RX_FIFO_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RX_FIFO_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 8)) | ((value as u32 & 0x1f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `tx_fifo_cnt` reader - "]
-pub struct TX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl TX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TX_FIFO_CNT_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `tx_fifo_cnt` writer - "]
-pub struct TX_FIFO_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FIFO_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1f) | (value as u32 & 0x1f);
-        self.w
-    }
-}
+pub type TX_FIFO_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_FIFO_CONFIG_1_SPEC, u8, u8, 5, O>;
+#[doc = "Field `rx_fifo_cnt` reader - "]
+pub type RX_FIFO_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rx_fifo_cnt` writer - "]
+pub type RX_FIFO_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_FIFO_CONFIG_1_SPEC, u8, u8, 5, O>;
+#[doc = "Field `tx_fifo_th` reader - "]
+pub type TX_FIFO_TH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `tx_fifo_th` writer - "]
+pub type TX_FIFO_TH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_FIFO_CONFIG_1_SPEC, u8, u8, 4, O>;
+#[doc = "Field `rx_fifo_th` reader - "]
+pub type RX_FIFO_TH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rx_fifo_th` writer - "]
+pub type RX_FIFO_TH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_FIFO_CONFIG_1_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 24:27"]
+    #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn rx_fifo_th(&self) -> RX_FIFO_TH_R {
-        RX_FIFO_TH_R::new(((self.bits >> 24) & 0x0f) as u8)
-    }
-    #[doc = "Bits 16:19"]
-    #[inline(always)]
-    pub fn tx_fifo_th(&self) -> TX_FIFO_TH_R {
-        TX_FIFO_TH_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn tx_fifo_cnt(&self) -> TX_FIFO_CNT_R {
+        TX_FIFO_CNT_R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
     pub fn rx_fifo_cnt(&self) -> RX_FIFO_CNT_R {
         RX_FIFO_CNT_R::new(((self.bits >> 8) & 0x1f) as u8)
     }
-    #[doc = "Bits 0:4"]
+    #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn tx_fifo_cnt(&self) -> TX_FIFO_CNT_R {
-        TX_FIFO_CNT_R::new((self.bits & 0x1f) as u8)
+    pub fn tx_fifo_th(&self) -> TX_FIFO_TH_R {
+        TX_FIFO_TH_R::new(((self.bits >> 16) & 0x0f) as u8)
+    }
+    #[doc = "Bits 24:27"]
+    #[inline(always)]
+    pub fn rx_fifo_th(&self) -> RX_FIFO_TH_R {
+        RX_FIFO_TH_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:27"]
+    #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn rx_fifo_th(&mut self) -> RX_FIFO_TH_W {
-        RX_FIFO_TH_W { w: self }
-    }
-    #[doc = "Bits 16:19"]
-    #[inline(always)]
-    pub fn tx_fifo_th(&mut self) -> TX_FIFO_TH_W {
-        TX_FIFO_TH_W { w: self }
+    pub fn tx_fifo_cnt(&mut self) -> TX_FIFO_CNT_W<0> {
+        TX_FIFO_CNT_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
-    pub fn rx_fifo_cnt(&mut self) -> RX_FIFO_CNT_W {
-        RX_FIFO_CNT_W { w: self }
+    pub fn rx_fifo_cnt(&mut self) -> RX_FIFO_CNT_W<8> {
+        RX_FIFO_CNT_W::new(self)
     }
-    #[doc = "Bits 0:4"]
+    #[doc = "Bits 16:19"]
     #[inline(always)]
-    pub fn tx_fifo_cnt(&mut self) -> TX_FIFO_CNT_W {
-        TX_FIFO_CNT_W { w: self }
+    pub fn tx_fifo_th(&mut self) -> TX_FIFO_TH_W<16> {
+        TX_FIFO_TH_W::new(self)
+    }
+    #[doc = "Bits 24:27"]
+    #[inline(always)]
+    pub fn rx_fifo_th(&mut self) -> RX_FIFO_TH_W<24> {
+        RX_FIFO_TH_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

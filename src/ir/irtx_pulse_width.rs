@@ -34,116 +34,53 @@ impl From<crate::W<IRTX_PULSE_WIDTH_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_irtx_mod_ph1_w` reader - "]
-pub struct CR_IRTX_MOD_PH1_W_R(crate::FieldReader<u8, u8>);
-impl CR_IRTX_MOD_PH1_W_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_IRTX_MOD_PH1_W_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_MOD_PH1_W_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_mod_ph1_w` writer - "]
-pub struct CR_IRTX_MOD_PH1_W_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_MOD_PH1_W_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 24)) | ((value as u32 & 0xff) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_irtx_mod_ph0_w` reader - "]
-pub struct CR_IRTX_MOD_PH0_W_R(crate::FieldReader<u8, u8>);
-impl CR_IRTX_MOD_PH0_W_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_IRTX_MOD_PH0_W_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_MOD_PH0_W_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_mod_ph0_w` writer - "]
-pub struct CR_IRTX_MOD_PH0_W_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_MOD_PH0_W_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `cr_irtx_pw_unit` reader - "]
-pub struct CR_IRTX_PW_UNIT_R(crate::FieldReader<u16, u16>);
-impl CR_IRTX_PW_UNIT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_IRTX_PW_UNIT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_PW_UNIT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_IRTX_PW_UNIT_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cr_irtx_pw_unit` writer - "]
-pub struct CR_IRTX_PW_UNIT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_IRTX_PW_UNIT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type CR_IRTX_PW_UNIT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, IRTX_PULSE_WIDTH_SPEC, u16, u16, 12, O>;
+#[doc = "Field `cr_irtx_mod_ph0_w` reader - "]
+pub type CR_IRTX_MOD_PH0_W_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_irtx_mod_ph0_w` writer - "]
+pub type CR_IRTX_MOD_PH0_W_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, IRTX_PULSE_WIDTH_SPEC, u8, u8, 8, O>;
+#[doc = "Field `cr_irtx_mod_ph1_w` reader - "]
+pub type CR_IRTX_MOD_PH1_W_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_irtx_mod_ph1_w` writer - "]
+pub type CR_IRTX_MOD_PH1_W_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, IRTX_PULSE_WIDTH_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn cr_irtx_mod_ph1_w(&self) -> CR_IRTX_MOD_PH1_W_R {
-        CR_IRTX_MOD_PH1_W_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn cr_irtx_pw_unit(&self) -> CR_IRTX_PW_UNIT_R {
+        CR_IRTX_PW_UNIT_R::new((self.bits & 0x0fff) as u16)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
     pub fn cr_irtx_mod_ph0_w(&self) -> CR_IRTX_MOD_PH0_W_R {
         CR_IRTX_MOD_PH0_W_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn cr_irtx_pw_unit(&self) -> CR_IRTX_PW_UNIT_R {
-        CR_IRTX_PW_UNIT_R::new((self.bits & 0x0fff) as u16)
+    pub fn cr_irtx_mod_ph1_w(&self) -> CR_IRTX_MOD_PH1_W_R {
+        CR_IRTX_MOD_PH1_W_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn cr_irtx_mod_ph1_w(&mut self) -> CR_IRTX_MOD_PH1_W_W {
-        CR_IRTX_MOD_PH1_W_W { w: self }
+    pub fn cr_irtx_pw_unit(&mut self) -> CR_IRTX_PW_UNIT_W<0> {
+        CR_IRTX_PW_UNIT_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn cr_irtx_mod_ph0_w(&mut self) -> CR_IRTX_MOD_PH0_W_W {
-        CR_IRTX_MOD_PH0_W_W { w: self }
+    pub fn cr_irtx_mod_ph0_w(&mut self) -> CR_IRTX_MOD_PH0_W_W<16> {
+        CR_IRTX_MOD_PH0_W_W::new(self)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bits 24:31"]
     #[inline(always)]
-    pub fn cr_irtx_pw_unit(&mut self) -> CR_IRTX_PW_UNIT_W {
-        CR_IRTX_PW_UNIT_W { w: self }
+    pub fn cr_irtx_mod_ph1_w(&mut self) -> CR_IRTX_MOD_PH1_W_W<24> {
+        CR_IRTX_MOD_PH1_W_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

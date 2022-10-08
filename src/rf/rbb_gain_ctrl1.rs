@@ -34,224 +34,98 @@ impl From<crate::W<RBB_GAIN_CTRL1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `gain_ctrl1_g_rbb1` reader - "]
-pub struct GAIN_CTRL1_G_RBB1_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_G_RBB1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_G_RBB1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_G_RBB1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl1_g_rbb1` writer - "]
-pub struct GAIN_CTRL1_G_RBB1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_G_RBB1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 28)) | ((value as u32 & 0x03) << 28);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl1_g_rbb2` reader - "]
-pub struct GAIN_CTRL1_G_RBB2_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_G_RBB2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_G_RBB2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_G_RBB2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl1_g_rbb2` writer - "]
-pub struct GAIN_CTRL1_G_RBB2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_G_RBB2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 24)) | ((value as u32 & 0x07) << 24);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_i_bw1` reader - "]
-pub struct GAIN_CTRL1_ROSDAC_I_BW1_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_ROSDAC_I_BW1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_ROSDAC_I_BW1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_ROSDAC_I_BW1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_i_bw1` writer - "]
-pub struct GAIN_CTRL1_ROSDAC_I_BW1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_ROSDAC_I_BW1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 18)) | ((value as u32 & 0x3f) << 18);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_q_bw1` reader - "]
-pub struct GAIN_CTRL1_ROSDAC_Q_BW1_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_ROSDAC_Q_BW1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_ROSDAC_Q_BW1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_ROSDAC_Q_BW1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_q_bw1` writer - "]
-pub struct GAIN_CTRL1_ROSDAC_Q_BW1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_ROSDAC_Q_BW1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 12)) | ((value as u32 & 0x3f) << 12);
-        self.w
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_i_bw0` reader - "]
-pub struct GAIN_CTRL1_ROSDAC_I_BW0_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_ROSDAC_I_BW0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_ROSDAC_I_BW0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_ROSDAC_I_BW0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gain_ctrl1_rosdac_i_bw0` writer - "]
-pub struct GAIN_CTRL1_ROSDAC_I_BW0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_ROSDAC_I_BW0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 6)) | ((value as u32 & 0x3f) << 6);
-        self.w
-    }
-}
 #[doc = "Field `gain_ctrl1_rosdac_q_bw0` reader - "]
-pub struct GAIN_CTRL1_ROSDAC_Q_BW0_R(crate::FieldReader<u8, u8>);
-impl GAIN_CTRL1_ROSDAC_Q_BW0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GAIN_CTRL1_ROSDAC_Q_BW0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GAIN_CTRL1_ROSDAC_Q_BW0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GAIN_CTRL1_ROSDAC_Q_BW0_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `gain_ctrl1_rosdac_q_bw0` writer - "]
-pub struct GAIN_CTRL1_ROSDAC_Q_BW0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GAIN_CTRL1_ROSDAC_Q_BW0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type GAIN_CTRL1_ROSDAC_Q_BW0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 6, O>;
+#[doc = "Field `gain_ctrl1_rosdac_i_bw0` reader - "]
+pub type GAIN_CTRL1_ROSDAC_I_BW0_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gain_ctrl1_rosdac_i_bw0` writer - "]
+pub type GAIN_CTRL1_ROSDAC_I_BW0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 6, O>;
+#[doc = "Field `gain_ctrl1_rosdac_q_bw1` reader - "]
+pub type GAIN_CTRL1_ROSDAC_Q_BW1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gain_ctrl1_rosdac_q_bw1` writer - "]
+pub type GAIN_CTRL1_ROSDAC_Q_BW1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 6, O>;
+#[doc = "Field `gain_ctrl1_rosdac_i_bw1` reader - "]
+pub type GAIN_CTRL1_ROSDAC_I_BW1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gain_ctrl1_rosdac_i_bw1` writer - "]
+pub type GAIN_CTRL1_ROSDAC_I_BW1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 6, O>;
+#[doc = "Field `gain_ctrl1_g_rbb2` reader - "]
+pub type GAIN_CTRL1_G_RBB2_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gain_ctrl1_g_rbb2` writer - "]
+pub type GAIN_CTRL1_G_RBB2_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 3, O>;
+#[doc = "Field `gain_ctrl1_g_rbb1` reader - "]
+pub type GAIN_CTRL1_G_RBB1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gain_ctrl1_g_rbb1` writer - "]
+pub type GAIN_CTRL1_G_RBB1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RBB_GAIN_CTRL1_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 28:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn gain_ctrl1_g_rbb1(&self) -> GAIN_CTRL1_G_RBB1_R {
-        GAIN_CTRL1_G_RBB1_R::new(((self.bits >> 28) & 0x03) as u8)
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn gain_ctrl1_g_rbb2(&self) -> GAIN_CTRL1_G_RBB2_R {
-        GAIN_CTRL1_G_RBB2_R::new(((self.bits >> 24) & 0x07) as u8)
-    }
-    #[doc = "Bits 18:23"]
-    #[inline(always)]
-    pub fn gain_ctrl1_rosdac_i_bw1(&self) -> GAIN_CTRL1_ROSDAC_I_BW1_R {
-        GAIN_CTRL1_ROSDAC_I_BW1_R::new(((self.bits >> 18) & 0x3f) as u8)
-    }
-    #[doc = "Bits 12:17"]
-    #[inline(always)]
-    pub fn gain_ctrl1_rosdac_q_bw1(&self) -> GAIN_CTRL1_ROSDAC_Q_BW1_R {
-        GAIN_CTRL1_ROSDAC_Q_BW1_R::new(((self.bits >> 12) & 0x3f) as u8)
+    pub fn gain_ctrl1_rosdac_q_bw0(&self) -> GAIN_CTRL1_ROSDAC_Q_BW0_R {
+        GAIN_CTRL1_ROSDAC_Q_BW0_R::new((self.bits & 0x3f) as u8)
     }
     #[doc = "Bits 6:11"]
     #[inline(always)]
     pub fn gain_ctrl1_rosdac_i_bw0(&self) -> GAIN_CTRL1_ROSDAC_I_BW0_R {
         GAIN_CTRL1_ROSDAC_I_BW0_R::new(((self.bits >> 6) & 0x3f) as u8)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 12:17"]
     #[inline(always)]
-    pub fn gain_ctrl1_rosdac_q_bw0(&self) -> GAIN_CTRL1_ROSDAC_Q_BW0_R {
-        GAIN_CTRL1_ROSDAC_Q_BW0_R::new((self.bits & 0x3f) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 28:29"]
-    #[inline(always)]
-    pub fn gain_ctrl1_g_rbb1(&mut self) -> GAIN_CTRL1_G_RBB1_W {
-        GAIN_CTRL1_G_RBB1_W { w: self }
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn gain_ctrl1_g_rbb2(&mut self) -> GAIN_CTRL1_G_RBB2_W {
-        GAIN_CTRL1_G_RBB2_W { w: self }
+    pub fn gain_ctrl1_rosdac_q_bw1(&self) -> GAIN_CTRL1_ROSDAC_Q_BW1_R {
+        GAIN_CTRL1_ROSDAC_Q_BW1_R::new(((self.bits >> 12) & 0x3f) as u8)
     }
     #[doc = "Bits 18:23"]
     #[inline(always)]
-    pub fn gain_ctrl1_rosdac_i_bw1(&mut self) -> GAIN_CTRL1_ROSDAC_I_BW1_W {
-        GAIN_CTRL1_ROSDAC_I_BW1_W { w: self }
+    pub fn gain_ctrl1_rosdac_i_bw1(&self) -> GAIN_CTRL1_ROSDAC_I_BW1_R {
+        GAIN_CTRL1_ROSDAC_I_BW1_R::new(((self.bits >> 18) & 0x3f) as u8)
     }
-    #[doc = "Bits 12:17"]
+    #[doc = "Bits 24:26"]
     #[inline(always)]
-    pub fn gain_ctrl1_rosdac_q_bw1(&mut self) -> GAIN_CTRL1_ROSDAC_Q_BW1_W {
-        GAIN_CTRL1_ROSDAC_Q_BW1_W { w: self }
+    pub fn gain_ctrl1_g_rbb2(&self) -> GAIN_CTRL1_G_RBB2_R {
+        GAIN_CTRL1_G_RBB2_R::new(((self.bits >> 24) & 7) as u8)
+    }
+    #[doc = "Bits 28:29"]
+    #[inline(always)]
+    pub fn gain_ctrl1_g_rbb1(&self) -> GAIN_CTRL1_G_RBB1_R {
+        GAIN_CTRL1_G_RBB1_R::new(((self.bits >> 28) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:5"]
+    #[inline(always)]
+    pub fn gain_ctrl1_rosdac_q_bw0(&mut self) -> GAIN_CTRL1_ROSDAC_Q_BW0_W<0> {
+        GAIN_CTRL1_ROSDAC_Q_BW0_W::new(self)
     }
     #[doc = "Bits 6:11"]
     #[inline(always)]
-    pub fn gain_ctrl1_rosdac_i_bw0(&mut self) -> GAIN_CTRL1_ROSDAC_I_BW0_W {
-        GAIN_CTRL1_ROSDAC_I_BW0_W { w: self }
+    pub fn gain_ctrl1_rosdac_i_bw0(&mut self) -> GAIN_CTRL1_ROSDAC_I_BW0_W<6> {
+        GAIN_CTRL1_ROSDAC_I_BW0_W::new(self)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 12:17"]
     #[inline(always)]
-    pub fn gain_ctrl1_rosdac_q_bw0(&mut self) -> GAIN_CTRL1_ROSDAC_Q_BW0_W {
-        GAIN_CTRL1_ROSDAC_Q_BW0_W { w: self }
+    pub fn gain_ctrl1_rosdac_q_bw1(&mut self) -> GAIN_CTRL1_ROSDAC_Q_BW1_W<12> {
+        GAIN_CTRL1_ROSDAC_Q_BW1_W::new(self)
+    }
+    #[doc = "Bits 18:23"]
+    #[inline(always)]
+    pub fn gain_ctrl1_rosdac_i_bw1(&mut self) -> GAIN_CTRL1_ROSDAC_I_BW1_W<18> {
+        GAIN_CTRL1_ROSDAC_I_BW1_W::new(self)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn gain_ctrl1_g_rbb2(&mut self) -> GAIN_CTRL1_G_RBB2_W<24> {
+        GAIN_CTRL1_G_RBB2_W::new(self)
+    }
+    #[doc = "Bits 28:29"]
+    #[inline(always)]
+    pub fn gain_ctrl1_g_rbb1(&mut self) -> GAIN_CTRL1_G_RBB1_W<28> {
+        GAIN_CTRL1_G_RBB1_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

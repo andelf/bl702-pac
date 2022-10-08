@@ -34,484 +34,165 @@ impl From<crate::W<URX_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_urx_len` reader - "]
-pub struct CR_URX_LEN_R(crate::FieldReader<u16, u16>);
-impl CR_URX_LEN_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_URX_LEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_LEN_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_len` writer - "]
-pub struct CR_URX_LEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_LEN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_deg_cnt` reader - "]
-pub struct CR_URX_DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl CR_URX_DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_URX_DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_deg_cnt` writer - "]
-pub struct CR_URX_DEG_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_DEG_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 12)) | ((value as u32 & 0x0f) << 12);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_deg_en` reader - "]
-pub struct CR_URX_DEG_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_deg_en` writer - "]
-pub struct CR_URX_DEG_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_DEG_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 11)) | ((value as u32 & 0x01) << 11);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_bit_cnt_d` reader - "]
-pub struct CR_URX_BIT_CNT_D_R(crate::FieldReader<u8, u8>);
-impl CR_URX_BIT_CNT_D_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_URX_BIT_CNT_D_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_BIT_CNT_D_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_bit_cnt_d` writer - "]
-pub struct CR_URX_BIT_CNT_D_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_BIT_CNT_D_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 8)) | ((value as u32 & 0x07) << 8);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_ir_inv` reader - "]
-pub struct CR_URX_IR_INV_R(crate::FieldReader<bool, bool>);
-impl CR_URX_IR_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_IR_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_IR_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_ir_inv` writer - "]
-pub struct CR_URX_IR_INV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_IR_INV_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_ir_en` reader - "]
-pub struct CR_URX_IR_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_IR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_IR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_IR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_ir_en` writer - "]
-pub struct CR_URX_IR_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_IR_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_prt_sel` reader - "]
-pub struct CR_URX_PRT_SEL_R(crate::FieldReader<bool, bool>);
-impl CR_URX_PRT_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_PRT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_PRT_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_prt_sel` writer - "]
-pub struct CR_URX_PRT_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_PRT_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_prt_en` reader - "]
-pub struct CR_URX_PRT_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_PRT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_PRT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_PRT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_prt_en` writer - "]
-pub struct CR_URX_PRT_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_PRT_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_lin_en` reader - "]
-pub struct CR_URX_LIN_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_LIN_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_LIN_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_LIN_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_lin_en` writer - "]
-pub struct CR_URX_LIN_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_LIN_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `cr_urx_abr_en` reader - "]
-pub struct CR_URX_ABR_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_ABR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_ABR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_ABR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_abr_en` writer - "]
-pub struct CR_URX_ABR_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_ABR_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `cr_urx_en` reader - "]
-pub struct CR_URX_EN_R(crate::FieldReader<bool, bool>);
-impl CR_URX_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_URX_EN_R = crate::BitReader<bool>;
 #[doc = "Field `cr_urx_en` writer - "]
-pub struct CR_URX_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_URX_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CR_URX_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_abr_en` reader - "]
+pub type CR_URX_ABR_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_abr_en` writer - "]
+pub type CR_URX_ABR_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_lin_en` reader - "]
+pub type CR_URX_LIN_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_lin_en` writer - "]
+pub type CR_URX_LIN_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_prt_en` reader - "]
+pub type CR_URX_PRT_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_prt_en` writer - "]
+pub type CR_URX_PRT_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_prt_sel` reader - "]
+pub type CR_URX_PRT_SEL_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_prt_sel` writer - "]
+pub type CR_URX_PRT_SEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_ir_en` reader - "]
+pub type CR_URX_IR_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_ir_en` writer - "]
+pub type CR_URX_IR_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_ir_inv` reader - "]
+pub type CR_URX_IR_INV_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_ir_inv` writer - "]
+pub type CR_URX_IR_INV_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_bit_cnt_d` reader - "]
+pub type CR_URX_BIT_CNT_D_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_urx_bit_cnt_d` writer - "]
+pub type CR_URX_BIT_CNT_D_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, URX_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `cr_urx_deg_en` reader - "]
+pub type CR_URX_DEG_EN_R = crate::BitReader<bool>;
+#[doc = "Field `cr_urx_deg_en` writer - "]
+pub type CR_URX_DEG_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, URX_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_urx_deg_cnt` reader - "]
+pub type CR_URX_DEG_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_urx_deg_cnt` writer - "]
+pub type CR_URX_DEG_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, URX_CONFIG_SPEC, u8, u8, 4, O>;
+#[doc = "Field `cr_urx_len` reader - "]
+pub type CR_URX_LEN_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `cr_urx_len` writer - "]
+pub type CR_URX_LEN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, URX_CONFIG_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_urx_len(&self) -> CR_URX_LEN_R {
-        CR_URX_LEN_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn cr_urx_en(&self) -> CR_URX_EN_R {
+        CR_URX_EN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn cr_urx_abr_en(&self) -> CR_URX_ABR_EN_R {
+        CR_URX_ABR_EN_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_urx_lin_en(&self) -> CR_URX_LIN_EN_R {
+        CR_URX_LIN_EN_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn cr_urx_prt_en(&self) -> CR_URX_PRT_EN_R {
+        CR_URX_PRT_EN_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn cr_urx_prt_sel(&self) -> CR_URX_PRT_SEL_R {
+        CR_URX_PRT_SEL_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn cr_urx_ir_en(&self) -> CR_URX_IR_EN_R {
+        CR_URX_IR_EN_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn cr_urx_ir_inv(&self) -> CR_URX_IR_INV_R {
+        CR_URX_IR_INV_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn cr_urx_bit_cnt_d(&self) -> CR_URX_BIT_CNT_D_R {
+        CR_URX_BIT_CNT_D_R::new(((self.bits >> 8) & 7) as u8)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn cr_urx_deg_en(&self) -> CR_URX_DEG_EN_R {
+        CR_URX_DEG_EN_R::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
     pub fn cr_urx_deg_cnt(&self) -> CR_URX_DEG_CNT_R {
         CR_URX_DEG_CNT_R::new(((self.bits >> 12) & 0x0f) as u8)
     }
-    #[doc = "Bit 11"]
+    #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn cr_urx_deg_en(&self) -> CR_URX_DEG_EN_R {
-        CR_URX_DEG_EN_R::new(((self.bits >> 11) & 0x01) != 0)
-    }
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn cr_urx_bit_cnt_d(&self) -> CR_URX_BIT_CNT_D_R {
-        CR_URX_BIT_CNT_D_R::new(((self.bits >> 8) & 0x07) as u8)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn cr_urx_ir_inv(&self) -> CR_URX_IR_INV_R {
-        CR_URX_IR_INV_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn cr_urx_ir_en(&self) -> CR_URX_IR_EN_R {
-        CR_URX_IR_EN_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn cr_urx_prt_sel(&self) -> CR_URX_PRT_SEL_R {
-        CR_URX_PRT_SEL_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn cr_urx_prt_en(&self) -> CR_URX_PRT_EN_R {
-        CR_URX_PRT_EN_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_urx_lin_en(&self) -> CR_URX_LIN_EN_R {
-        CR_URX_LIN_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn cr_urx_abr_en(&self) -> CR_URX_ABR_EN_R {
-        CR_URX_ABR_EN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn cr_urx_en(&self) -> CR_URX_EN_R {
-        CR_URX_EN_R::new((self.bits & 0x01) != 0)
+    pub fn cr_urx_len(&self) -> CR_URX_LEN_R {
+        CR_URX_LEN_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 16:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_urx_len(&mut self) -> CR_URX_LEN_W {
-        CR_URX_LEN_W { w: self }
-    }
-    #[doc = "Bits 12:15"]
-    #[inline(always)]
-    pub fn cr_urx_deg_cnt(&mut self) -> CR_URX_DEG_CNT_W {
-        CR_URX_DEG_CNT_W { w: self }
-    }
-    #[doc = "Bit 11"]
-    #[inline(always)]
-    pub fn cr_urx_deg_en(&mut self) -> CR_URX_DEG_EN_W {
-        CR_URX_DEG_EN_W { w: self }
-    }
-    #[doc = "Bits 8:10"]
-    #[inline(always)]
-    pub fn cr_urx_bit_cnt_d(&mut self) -> CR_URX_BIT_CNT_D_W {
-        CR_URX_BIT_CNT_D_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn cr_urx_ir_inv(&mut self) -> CR_URX_IR_INV_W {
-        CR_URX_IR_INV_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn cr_urx_ir_en(&mut self) -> CR_URX_IR_EN_W {
-        CR_URX_IR_EN_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn cr_urx_prt_sel(&mut self) -> CR_URX_PRT_SEL_W {
-        CR_URX_PRT_SEL_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn cr_urx_prt_en(&mut self) -> CR_URX_PRT_EN_W {
-        CR_URX_PRT_EN_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_urx_lin_en(&mut self) -> CR_URX_LIN_EN_W {
-        CR_URX_LIN_EN_W { w: self }
+    pub fn cr_urx_en(&mut self) -> CR_URX_EN_W<0> {
+        CR_URX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn cr_urx_abr_en(&mut self) -> CR_URX_ABR_EN_W {
-        CR_URX_ABR_EN_W { w: self }
+    pub fn cr_urx_abr_en(&mut self) -> CR_URX_ABR_EN_W<1> {
+        CR_URX_ABR_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn cr_urx_en(&mut self) -> CR_URX_EN_W {
-        CR_URX_EN_W { w: self }
+    pub fn cr_urx_lin_en(&mut self) -> CR_URX_LIN_EN_W<3> {
+        CR_URX_LIN_EN_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn cr_urx_prt_en(&mut self) -> CR_URX_PRT_EN_W<4> {
+        CR_URX_PRT_EN_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn cr_urx_prt_sel(&mut self) -> CR_URX_PRT_SEL_W<5> {
+        CR_URX_PRT_SEL_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn cr_urx_ir_en(&mut self) -> CR_URX_IR_EN_W<6> {
+        CR_URX_IR_EN_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn cr_urx_ir_inv(&mut self) -> CR_URX_IR_INV_W<7> {
+        CR_URX_IR_INV_W::new(self)
+    }
+    #[doc = "Bits 8:10"]
+    #[inline(always)]
+    pub fn cr_urx_bit_cnt_d(&mut self) -> CR_URX_BIT_CNT_D_W<8> {
+        CR_URX_BIT_CNT_D_W::new(self)
+    }
+    #[doc = "Bit 11"]
+    #[inline(always)]
+    pub fn cr_urx_deg_en(&mut self) -> CR_URX_DEG_EN_W<11> {
+        CR_URX_DEG_EN_W::new(self)
+    }
+    #[doc = "Bits 12:15"]
+    #[inline(always)]
+    pub fn cr_urx_deg_cnt(&mut self) -> CR_URX_DEG_CNT_W<12> {
+        CR_URX_DEG_CNT_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn cr_urx_len(&mut self) -> CR_URX_LEN_W<16> {
+        CR_URX_LEN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

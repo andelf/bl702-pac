@@ -34,80 +34,38 @@ impl From<crate::W<ADPLL_RESERVED_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_resv0` reader - "]
-pub struct ADPLL_RESV0_R(crate::FieldReader<u16, u16>);
-impl ADPLL_RESV0_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        ADPLL_RESV0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_RESV0_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_resv0` writer - "]
-pub struct ADPLL_RESV0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_RESV0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `adpll_resv1` reader - "]
-pub struct ADPLL_RESV1_R(crate::FieldReader<u16, u16>);
-impl ADPLL_RESV1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        ADPLL_RESV1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_RESV1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_RESV1_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `adpll_resv1` writer - "]
-pub struct ADPLL_RESV1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_RESV1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type ADPLL_RESV1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_RESERVED_SPEC, u16, u16, 16, O>;
+#[doc = "Field `adpll_resv0` reader - "]
+pub type ADPLL_RESV0_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `adpll_resv0` writer - "]
+pub type ADPLL_RESV0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_RESERVED_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn adpll_resv0(&self) -> ADPLL_RESV0_R {
-        ADPLL_RESV0_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn adpll_resv1(&self) -> ADPLL_RESV1_R {
         ADPLL_RESV1_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn adpll_resv0(&mut self) -> ADPLL_RESV0_W {
-        ADPLL_RESV0_W { w: self }
+    pub fn adpll_resv0(&self) -> ADPLL_RESV0_R {
+        ADPLL_RESV0_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn adpll_resv1(&mut self) -> ADPLL_RESV1_W {
-        ADPLL_RESV1_W { w: self }
+    pub fn adpll_resv1(&mut self) -> ADPLL_RESV1_W<0> {
+        ADPLL_RESV1_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn adpll_resv0(&mut self) -> ADPLL_RESV0_W<16> {
+        ADPLL_RESV0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

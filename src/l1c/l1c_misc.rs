@@ -35,43 +35,21 @@ impl From<crate::W<L1C_MISC_SPEC>> for W {
     }
 }
 #[doc = "Field `l1c_fsm` reader - "]
-pub struct L1C_FSM_R(crate::FieldReader<u8, u8>);
-impl L1C_FSM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        L1C_FSM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_FSM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type L1C_FSM_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `l1c_fsm` writer - "]
-pub struct L1C_FSM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> L1C_FSM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 28)) | ((value as u32 & 0x07) << 28);
-        self.w
-    }
-}
+pub type L1C_FSM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, L1C_MISC_SPEC, u8, u8, 3, O>;
 impl R {
     #[doc = "Bits 28:30"]
     #[inline(always)]
     pub fn l1c_fsm(&self) -> L1C_FSM_R {
-        L1C_FSM_R::new(((self.bits >> 28) & 0x07) as u8)
+        L1C_FSM_R::new(((self.bits >> 28) & 7) as u8)
     }
 }
 impl W {
     #[doc = "Bits 28:30"]
     #[inline(always)]
-    pub fn l1c_fsm(&mut self) -> L1C_FSM_W {
-        L1C_FSM_W { w: self }
+    pub fn l1c_fsm(&mut self) -> L1C_FSM_W<28> {
+        L1C_FSM_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

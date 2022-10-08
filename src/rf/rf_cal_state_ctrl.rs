@@ -34,376 +34,128 @@ impl From<crate::W<RF_CAL_STATE_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `inc_roscal_state_en` reader - "]
-pub struct INC_ROSCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl INC_ROSCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_ROSCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_ROSCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_roscal_state_en` writer - "]
-pub struct INC_ROSCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_ROSCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `inc_acal_state_en` reader - "]
-pub struct INC_ACAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl INC_ACAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_ACAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_ACAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_acal_state_en` writer - "]
-pub struct INC_ACAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_ACAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `inc_fcal_state_en` reader - "]
-pub struct INC_FCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl INC_FCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_FCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_state_en` writer - "]
-pub struct INC_FCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_FCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `rccal_state_en` reader - "]
-pub struct RCCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl RCCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rccal_state_en` writer - "]
-pub struct RCCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RCCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `roscal_state_en` reader - "]
-pub struct ROSCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl ROSCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `roscal_state_en` writer - "]
-pub struct ROSCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ROSCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `kcal_state_en` reader - "]
-pub struct KCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl KCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        KCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `kcal_state_en` writer - "]
-pub struct KCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `acal_state_en` reader - "]
-pub struct ACAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl ACAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_state_en` writer - "]
-pub struct ACAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ACAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `fcal_state_en` reader - "]
-pub struct FCAL_STATE_EN_R(crate::FieldReader<bool, bool>);
-impl FCAL_STATE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_STATE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_STATE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FCAL_STATE_EN_R = crate::BitReader<bool>;
 #[doc = "Field `fcal_state_en` writer - "]
-pub struct FCAL_STATE_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FCAL_STATE_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type FCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `acal_state_en` reader - "]
+pub type ACAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `acal_state_en` writer - "]
+pub type ACAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `kcal_state_en` reader - "]
+pub type KCAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `kcal_state_en` writer - "]
+pub type KCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `roscal_state_en` reader - "]
+pub type ROSCAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `roscal_state_en` writer - "]
+pub type ROSCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `rccal_state_en` reader - "]
+pub type RCCAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `rccal_state_en` writer - "]
+pub type RCCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_fcal_state_en` reader - "]
+pub type INC_FCAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `inc_fcal_state_en` writer - "]
+pub type INC_FCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_acal_state_en` reader - "]
+pub type INC_ACAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `inc_acal_state_en` writer - "]
+pub type INC_ACAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_roscal_state_en` reader - "]
+pub type INC_ROSCAL_STATE_EN_R = crate::BitReader<bool>;
+#[doc = "Field `inc_roscal_state_en` writer - "]
+pub type INC_ROSCAL_STATE_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_STATE_CTRL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 7"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn inc_roscal_state_en(&self) -> INC_ROSCAL_STATE_EN_R {
-        INC_ROSCAL_STATE_EN_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn inc_acal_state_en(&self) -> INC_ACAL_STATE_EN_R {
-        INC_ACAL_STATE_EN_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn inc_fcal_state_en(&self) -> INC_FCAL_STATE_EN_R {
-        INC_FCAL_STATE_EN_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn rccal_state_en(&self) -> RCCAL_STATE_EN_R {
-        RCCAL_STATE_EN_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn roscal_state_en(&self) -> ROSCAL_STATE_EN_R {
-        ROSCAL_STATE_EN_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn kcal_state_en(&self) -> KCAL_STATE_EN_R {
-        KCAL_STATE_EN_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn fcal_state_en(&self) -> FCAL_STATE_EN_R {
+        FCAL_STATE_EN_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn acal_state_en(&self) -> ACAL_STATE_EN_R {
-        ACAL_STATE_EN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn fcal_state_en(&self) -> FCAL_STATE_EN_R {
-        FCAL_STATE_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn inc_roscal_state_en(&mut self) -> INC_ROSCAL_STATE_EN_W {
-        INC_ROSCAL_STATE_EN_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn inc_acal_state_en(&mut self) -> INC_ACAL_STATE_EN_W {
-        INC_ACAL_STATE_EN_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn inc_fcal_state_en(&mut self) -> INC_FCAL_STATE_EN_W {
-        INC_FCAL_STATE_EN_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn rccal_state_en(&mut self) -> RCCAL_STATE_EN_W {
-        RCCAL_STATE_EN_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn roscal_state_en(&mut self) -> ROSCAL_STATE_EN_W {
-        ROSCAL_STATE_EN_W { w: self }
+        ACAL_STATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn kcal_state_en(&mut self) -> KCAL_STATE_EN_W {
-        KCAL_STATE_EN_W { w: self }
+    pub fn kcal_state_en(&self) -> KCAL_STATE_EN_R {
+        KCAL_STATE_EN_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn roscal_state_en(&self) -> ROSCAL_STATE_EN_R {
+        ROSCAL_STATE_EN_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn rccal_state_en(&self) -> RCCAL_STATE_EN_R {
+        RCCAL_STATE_EN_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn inc_fcal_state_en(&self) -> INC_FCAL_STATE_EN_R {
+        INC_FCAL_STATE_EN_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn inc_acal_state_en(&self) -> INC_ACAL_STATE_EN_R {
+        INC_ACAL_STATE_EN_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn inc_roscal_state_en(&self) -> INC_ROSCAL_STATE_EN_R {
+        INC_ROSCAL_STATE_EN_R::new(((self.bits >> 7) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn fcal_state_en(&mut self) -> FCAL_STATE_EN_W<0> {
+        FCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn acal_state_en(&mut self) -> ACAL_STATE_EN_W {
-        ACAL_STATE_EN_W { w: self }
+    pub fn acal_state_en(&mut self) -> ACAL_STATE_EN_W<1> {
+        ACAL_STATE_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn fcal_state_en(&mut self) -> FCAL_STATE_EN_W {
-        FCAL_STATE_EN_W { w: self }
+    pub fn kcal_state_en(&mut self) -> KCAL_STATE_EN_W<2> {
+        KCAL_STATE_EN_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn roscal_state_en(&mut self) -> ROSCAL_STATE_EN_W<3> {
+        ROSCAL_STATE_EN_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn rccal_state_en(&mut self) -> RCCAL_STATE_EN_W<4> {
+        RCCAL_STATE_EN_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn inc_fcal_state_en(&mut self) -> INC_FCAL_STATE_EN_W<5> {
+        INC_FCAL_STATE_EN_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn inc_acal_state_en(&mut self) -> INC_ACAL_STATE_EN_W<6> {
+        INC_ACAL_STATE_EN_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn inc_roscal_state_en(&mut self) -> INC_ROSCAL_STATE_EN_W<7> {
+        INC_ROSCAL_STATE_EN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

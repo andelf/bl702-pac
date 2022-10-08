@@ -34,136 +34,50 @@ impl From<crate::W<CCI_CTL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ahb_state` reader - "]
-pub struct AHB_STATE_R(crate::FieldReader<u8, u8>);
-impl AHB_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        AHB_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for AHB_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ahb_state` writer - "]
-pub struct AHB_STATE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> AHB_STATE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 2)) | ((value as u32 & 0x03) << 2);
-        self.w
-    }
-}
-#[doc = "Field `cci_read_flag` reader - "]
-pub struct CCI_READ_FLAG_R(crate::FieldReader<bool, bool>);
-impl CCI_READ_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_READ_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_READ_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_read_flag` writer - "]
-pub struct CCI_READ_FLAG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CCI_READ_FLAG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `cci_write_flag` reader - "]
-pub struct CCI_WRITE_FLAG_R(crate::FieldReader<bool, bool>);
-impl CCI_WRITE_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_WRITE_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_WRITE_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CCI_WRITE_FLAG_R = crate::BitReader<bool>;
 #[doc = "Field `cci_write_flag` writer - "]
-pub struct CCI_WRITE_FLAG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CCI_WRITE_FLAG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CCI_WRITE_FLAG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CCI_CTL_SPEC, bool, O>;
+#[doc = "Field `cci_read_flag` reader - "]
+pub type CCI_READ_FLAG_R = crate::BitReader<bool>;
+#[doc = "Field `cci_read_flag` writer - "]
+pub type CCI_READ_FLAG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CCI_CTL_SPEC, bool, O>;
+#[doc = "Field `ahb_state` reader - "]
+pub type AHB_STATE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `ahb_state` writer - "]
+pub type AHB_STATE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CCI_CTL_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 2:3"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn ahb_state(&self) -> AHB_STATE_R {
-        AHB_STATE_R::new(((self.bits >> 2) & 0x03) as u8)
+    pub fn cci_write_flag(&self) -> CCI_WRITE_FLAG_R {
+        CCI_WRITE_FLAG_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn cci_read_flag(&self) -> CCI_READ_FLAG_R {
-        CCI_READ_FLAG_R::new(((self.bits >> 1) & 0x01) != 0)
+        CCI_READ_FLAG_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn cci_write_flag(&self) -> CCI_WRITE_FLAG_R {
-        CCI_WRITE_FLAG_R::new((self.bits & 0x01) != 0)
+    pub fn ahb_state(&self) -> AHB_STATE_R {
+        AHB_STATE_R::new(((self.bits >> 2) & 3) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 2:3"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn ahb_state(&mut self) -> AHB_STATE_W {
-        AHB_STATE_W { w: self }
+    pub fn cci_write_flag(&mut self) -> CCI_WRITE_FLAG_W<0> {
+        CCI_WRITE_FLAG_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn cci_read_flag(&mut self) -> CCI_READ_FLAG_W {
-        CCI_READ_FLAG_W { w: self }
+    pub fn cci_read_flag(&mut self) -> CCI_READ_FLAG_W<1> {
+        CCI_READ_FLAG_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn cci_write_flag(&mut self) -> CCI_WRITE_FLAG_W {
-        CCI_WRITE_FLAG_W { w: self }
+    pub fn ahb_state(&mut self) -> AHB_STATE_W<2> {
+        AHB_STATE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

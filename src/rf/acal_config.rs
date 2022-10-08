@@ -34,152 +34,68 @@ impl From<crate::W<ACAL_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `vco_idac_hh` reader - "]
-pub struct VCO_IDAC_HH_R(crate::FieldReader<u8, u8>);
-impl VCO_IDAC_HH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        VCO_IDAC_HH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VCO_IDAC_HH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `vco_idac_hh` writer - "]
-pub struct VCO_IDAC_HH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VCO_IDAC_HH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 24)) | ((value as u32 & 0x3f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `vco_idac_hl` reader - "]
-pub struct VCO_IDAC_HL_R(crate::FieldReader<u8, u8>);
-impl VCO_IDAC_HL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        VCO_IDAC_HL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VCO_IDAC_HL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `vco_idac_hl` writer - "]
-pub struct VCO_IDAC_HL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VCO_IDAC_HL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 16)) | ((value as u32 & 0x3f) << 16);
-        self.w
-    }
-}
-#[doc = "Field `vco_idac_lh` reader - "]
-pub struct VCO_IDAC_LH_R(crate::FieldReader<u8, u8>);
-impl VCO_IDAC_LH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        VCO_IDAC_LH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VCO_IDAC_LH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `vco_idac_lh` writer - "]
-pub struct VCO_IDAC_LH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VCO_IDAC_LH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 8)) | ((value as u32 & 0x3f) << 8);
-        self.w
-    }
-}
 #[doc = "Field `vco_idac_ll` reader - "]
-pub struct VCO_IDAC_LL_R(crate::FieldReader<u8, u8>);
-impl VCO_IDAC_LL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        VCO_IDAC_LL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VCO_IDAC_LL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type VCO_IDAC_LL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `vco_idac_ll` writer - "]
-pub struct VCO_IDAC_LL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VCO_IDAC_LL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x3f) | (value as u32 & 0x3f);
-        self.w
-    }
-}
+pub type VCO_IDAC_LL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ACAL_CONFIG_SPEC, u8, u8, 6, O>;
+#[doc = "Field `vco_idac_lh` reader - "]
+pub type VCO_IDAC_LH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `vco_idac_lh` writer - "]
+pub type VCO_IDAC_LH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ACAL_CONFIG_SPEC, u8, u8, 6, O>;
+#[doc = "Field `vco_idac_hl` reader - "]
+pub type VCO_IDAC_HL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `vco_idac_hl` writer - "]
+pub type VCO_IDAC_HL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ACAL_CONFIG_SPEC, u8, u8, 6, O>;
+#[doc = "Field `vco_idac_hh` reader - "]
+pub type VCO_IDAC_HH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `vco_idac_hh` writer - "]
+pub type VCO_IDAC_HH_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ACAL_CONFIG_SPEC, u8, u8, 6, O>;
 impl R {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn vco_idac_hh(&self) -> VCO_IDAC_HH_R {
-        VCO_IDAC_HH_R::new(((self.bits >> 24) & 0x3f) as u8)
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn vco_idac_hl(&self) -> VCO_IDAC_HL_R {
-        VCO_IDAC_HL_R::new(((self.bits >> 16) & 0x3f) as u8)
+    pub fn vco_idac_ll(&self) -> VCO_IDAC_LL_R {
+        VCO_IDAC_LL_R::new((self.bits & 0x3f) as u8)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
     pub fn vco_idac_lh(&self) -> VCO_IDAC_LH_R {
         VCO_IDAC_LH_R::new(((self.bits >> 8) & 0x3f) as u8)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn vco_idac_ll(&self) -> VCO_IDAC_LL_R {
-        VCO_IDAC_LL_R::new((self.bits & 0x3f) as u8)
+    pub fn vco_idac_hl(&self) -> VCO_IDAC_HL_R {
+        VCO_IDAC_HL_R::new(((self.bits >> 16) & 0x3f) as u8)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn vco_idac_hh(&self) -> VCO_IDAC_HH_R {
+        VCO_IDAC_HH_R::new(((self.bits >> 24) & 0x3f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:29"]
+    #[doc = "Bits 0:5"]
     #[inline(always)]
-    pub fn vco_idac_hh(&mut self) -> VCO_IDAC_HH_W {
-        VCO_IDAC_HH_W { w: self }
-    }
-    #[doc = "Bits 16:21"]
-    #[inline(always)]
-    pub fn vco_idac_hl(&mut self) -> VCO_IDAC_HL_W {
-        VCO_IDAC_HL_W { w: self }
+    pub fn vco_idac_ll(&mut self) -> VCO_IDAC_LL_W<0> {
+        VCO_IDAC_LL_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
-    pub fn vco_idac_lh(&mut self) -> VCO_IDAC_LH_W {
-        VCO_IDAC_LH_W { w: self }
+    pub fn vco_idac_lh(&mut self) -> VCO_IDAC_LH_W<8> {
+        VCO_IDAC_LH_W::new(self)
     }
-    #[doc = "Bits 0:5"]
+    #[doc = "Bits 16:21"]
     #[inline(always)]
-    pub fn vco_idac_ll(&mut self) -> VCO_IDAC_LL_W {
-        VCO_IDAC_LL_W { w: self }
+    pub fn vco_idac_hl(&mut self) -> VCO_IDAC_HL_W<16> {
+        VCO_IDAC_HL_W::new(self)
+    }
+    #[doc = "Bits 24:29"]
+    #[inline(always)]
+    pub fn vco_idac_hh(&mut self) -> VCO_IDAC_HH_W<24> {
+        VCO_IDAC_HH_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

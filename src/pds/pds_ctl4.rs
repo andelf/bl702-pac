@@ -34,1020 +34,320 @@ impl From<crate::W<PDS_CTL4_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_pds_misc_dig_pwr_off` reader - "]
-pub struct CR_PDS_MISC_DIG_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_DIG_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_DIG_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_DIG_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_dig_pwr_off` writer - "]
-pub struct CR_PDS_MISC_DIG_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_DIG_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_misc_ana_pwr_off` reader - "]
-pub struct CR_PDS_MISC_ANA_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_ANA_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_ANA_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_ANA_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_ana_pwr_off` writer - "]
-pub struct CR_PDS_MISC_ANA_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_ANA_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_misc_gate_clk` reader - "]
-pub struct CR_PDS_MISC_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_gate_clk` writer - "]
-pub struct CR_PDS_MISC_GATE_CLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_GATE_CLK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 27)) | ((value as u32 & 0x01) << 27);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_misc_mem_stby` reader - "]
-pub struct CR_PDS_MISC_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_mem_stby` writer - "]
-pub struct CR_PDS_MISC_MEM_STBY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_MEM_STBY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 26)) | ((value as u32 & 0x01) << 26);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_misc_reset` reader - "]
-pub struct CR_PDS_MISC_RESET_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_RESET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_RESET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_RESET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_reset` writer - "]
-pub struct CR_PDS_MISC_RESET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_RESET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 25)) | ((value as u32 & 0x01) << 25);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_misc_pwr_off` reader - "]
-pub struct CR_PDS_MISC_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_pwr_off` writer - "]
-pub struct CR_PDS_MISC_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_MISC_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_usb_gate_clk` reader - "]
-pub struct CR_PDS_USB_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_USB_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_USB_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_USB_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_usb_gate_clk` writer - "]
-pub struct CR_PDS_USB_GATE_CLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_USB_GATE_CLK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 23)) | ((value as u32 & 0x01) << 23);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_usb_mem_stby` reader - "]
-pub struct CR_PDS_USB_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_USB_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_USB_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_USB_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_usb_mem_stby` writer - "]
-pub struct CR_PDS_USB_MEM_STBY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_USB_MEM_STBY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 22)) | ((value as u32 & 0x01) << 22);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_usb_reset` reader - "]
-pub struct CR_PDS_USB_RESET_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_USB_RESET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_USB_RESET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_USB_RESET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_usb_reset` writer - "]
-pub struct CR_PDS_USB_RESET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_USB_RESET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_usb_pwr_off` reader - "]
-pub struct CR_PDS_USB_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_USB_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_USB_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_USB_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_usb_pwr_off` writer - "]
-pub struct CR_PDS_USB_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_USB_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_ble_gate_clk` reader - "]
-pub struct CR_PDS_BLE_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BLE_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BLE_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BLE_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ble_gate_clk` writer - "]
-pub struct CR_PDS_BLE_GATE_CLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BLE_GATE_CLK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 19)) | ((value as u32 & 0x01) << 19);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_ble_mem_stby` reader - "]
-pub struct CR_PDS_BLE_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BLE_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BLE_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BLE_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ble_mem_stby` writer - "]
-pub struct CR_PDS_BLE_MEM_STBY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BLE_MEM_STBY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 18)) | ((value as u32 & 0x01) << 18);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_ble_reset` reader - "]
-pub struct CR_PDS_BLE_RESET_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BLE_RESET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BLE_RESET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BLE_RESET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ble_reset` writer - "]
-pub struct CR_PDS_BLE_RESET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BLE_RESET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_ble_pwr_off` reader - "]
-pub struct CR_PDS_BLE_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BLE_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BLE_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BLE_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ble_pwr_off` writer - "]
-pub struct CR_PDS_BLE_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BLE_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_bz_gate_clk` reader - "]
-pub struct CR_PDS_BZ_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BZ_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BZ_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BZ_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_bz_gate_clk` writer - "]
-pub struct CR_PDS_BZ_GATE_CLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BZ_GATE_CLK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 15)) | ((value as u32 & 0x01) << 15);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_bz_mem_stby` reader - "]
-pub struct CR_PDS_BZ_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BZ_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BZ_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BZ_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_bz_mem_stby` writer - "]
-pub struct CR_PDS_BZ_MEM_STBY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BZ_MEM_STBY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_bz_reset` reader - "]
-pub struct CR_PDS_BZ_RESET_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BZ_RESET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BZ_RESET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BZ_RESET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_bz_reset` writer - "]
-pub struct CR_PDS_BZ_RESET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BZ_RESET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 13)) | ((value as u32 & 0x01) << 13);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_bz_pwr_off` reader - "]
-pub struct CR_PDS_BZ_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_BZ_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_BZ_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_BZ_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_bz_pwr_off` writer - "]
-pub struct CR_PDS_BZ_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_BZ_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_np_gate_clk` reader - "]
-pub struct CR_PDS_NP_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_NP_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_NP_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_NP_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_np_gate_clk` writer - "]
-pub struct CR_PDS_NP_GATE_CLK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_NP_GATE_CLK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_np_mem_stby` reader - "]
-pub struct CR_PDS_NP_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_NP_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_NP_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_NP_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_np_mem_stby` writer - "]
-pub struct CR_PDS_NP_MEM_STBY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_NP_MEM_STBY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_np_reset` reader - "]
-pub struct CR_PDS_NP_RESET_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_NP_RESET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_NP_RESET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_NP_RESET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_np_reset` writer - "]
-pub struct CR_PDS_NP_RESET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_NP_RESET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `cr_pds_np_pwr_off` reader - "]
-pub struct CR_PDS_NP_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_NP_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_NP_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_NP_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_PDS_NP_PWR_OFF_R = crate::BitReader<bool>;
 #[doc = "Field `cr_pds_np_pwr_off` writer - "]
-pub struct CR_PDS_NP_PWR_OFF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_NP_PWR_OFF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CR_PDS_NP_PWR_OFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_np_reset` reader - "]
+pub type CR_PDS_NP_RESET_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_np_reset` writer - "]
+pub type CR_PDS_NP_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_np_mem_stby` reader - "]
+pub type CR_PDS_NP_MEM_STBY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_np_mem_stby` writer - "]
+pub type CR_PDS_NP_MEM_STBY_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_np_gate_clk` reader - "]
+pub type CR_PDS_NP_GATE_CLK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_np_gate_clk` writer - "]
+pub type CR_PDS_NP_GATE_CLK_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_bz_pwr_off` reader - "]
+pub type CR_PDS_BZ_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_bz_pwr_off` writer - "]
+pub type CR_PDS_BZ_PWR_OFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_bz_reset` reader - "]
+pub type CR_PDS_BZ_RESET_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_bz_reset` writer - "]
+pub type CR_PDS_BZ_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_bz_mem_stby` reader - "]
+pub type CR_PDS_BZ_MEM_STBY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_bz_mem_stby` writer - "]
+pub type CR_PDS_BZ_MEM_STBY_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_bz_gate_clk` reader - "]
+pub type CR_PDS_BZ_GATE_CLK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_bz_gate_clk` writer - "]
+pub type CR_PDS_BZ_GATE_CLK_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_ble_pwr_off` reader - "]
+pub type CR_PDS_BLE_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_ble_pwr_off` writer - "]
+pub type CR_PDS_BLE_PWR_OFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_ble_reset` reader - "]
+pub type CR_PDS_BLE_RESET_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_ble_reset` writer - "]
+pub type CR_PDS_BLE_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_ble_mem_stby` reader - "]
+pub type CR_PDS_BLE_MEM_STBY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_ble_mem_stby` writer - "]
+pub type CR_PDS_BLE_MEM_STBY_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_ble_gate_clk` reader - "]
+pub type CR_PDS_BLE_GATE_CLK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_ble_gate_clk` writer - "]
+pub type CR_PDS_BLE_GATE_CLK_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_usb_pwr_off` reader - "]
+pub type CR_PDS_USB_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_usb_pwr_off` writer - "]
+pub type CR_PDS_USB_PWR_OFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_usb_reset` reader - "]
+pub type CR_PDS_USB_RESET_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_usb_reset` writer - "]
+pub type CR_PDS_USB_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_usb_mem_stby` reader - "]
+pub type CR_PDS_USB_MEM_STBY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_usb_mem_stby` writer - "]
+pub type CR_PDS_USB_MEM_STBY_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_usb_gate_clk` reader - "]
+pub type CR_PDS_USB_GATE_CLK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_usb_gate_clk` writer - "]
+pub type CR_PDS_USB_GATE_CLK_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_pwr_off` reader - "]
+pub type CR_PDS_MISC_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_pwr_off` writer - "]
+pub type CR_PDS_MISC_PWR_OFF_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_reset` reader - "]
+pub type CR_PDS_MISC_RESET_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_reset` writer - "]
+pub type CR_PDS_MISC_RESET_W<'a, const O: u8> = crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_mem_stby` reader - "]
+pub type CR_PDS_MISC_MEM_STBY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_mem_stby` writer - "]
+pub type CR_PDS_MISC_MEM_STBY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_gate_clk` reader - "]
+pub type CR_PDS_MISC_GATE_CLK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_gate_clk` writer - "]
+pub type CR_PDS_MISC_GATE_CLK_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_ana_pwr_off` reader - "]
+pub type CR_PDS_MISC_ANA_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_ana_pwr_off` writer - "]
+pub type CR_PDS_MISC_ANA_PWR_OFF_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
+#[doc = "Field `cr_pds_misc_dig_pwr_off` reader - "]
+pub type CR_PDS_MISC_DIG_PWR_OFF_R = crate::BitReader<bool>;
+#[doc = "Field `cr_pds_misc_dig_pwr_off` writer - "]
+pub type CR_PDS_MISC_DIG_PWR_OFF_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PDS_CTL4_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cr_pds_misc_dig_pwr_off(&self) -> CR_PDS_MISC_DIG_PWR_OFF_R {
-        CR_PDS_MISC_DIG_PWR_OFF_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn cr_pds_misc_ana_pwr_off(&self) -> CR_PDS_MISC_ANA_PWR_OFF_R {
-        CR_PDS_MISC_ANA_PWR_OFF_R::new(((self.bits >> 30) & 0x01) != 0)
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn cr_pds_misc_gate_clk(&self) -> CR_PDS_MISC_GATE_CLK_R {
-        CR_PDS_MISC_GATE_CLK_R::new(((self.bits >> 27) & 0x01) != 0)
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn cr_pds_misc_mem_stby(&self) -> CR_PDS_MISC_MEM_STBY_R {
-        CR_PDS_MISC_MEM_STBY_R::new(((self.bits >> 26) & 0x01) != 0)
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn cr_pds_misc_reset(&self) -> CR_PDS_MISC_RESET_R {
-        CR_PDS_MISC_RESET_R::new(((self.bits >> 25) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn cr_pds_misc_pwr_off(&self) -> CR_PDS_MISC_PWR_OFF_R {
-        CR_PDS_MISC_PWR_OFF_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bit 23"]
-    #[inline(always)]
-    pub fn cr_pds_usb_gate_clk(&self) -> CR_PDS_USB_GATE_CLK_R {
-        CR_PDS_USB_GATE_CLK_R::new(((self.bits >> 23) & 0x01) != 0)
-    }
-    #[doc = "Bit 22"]
-    #[inline(always)]
-    pub fn cr_pds_usb_mem_stby(&self) -> CR_PDS_USB_MEM_STBY_R {
-        CR_PDS_USB_MEM_STBY_R::new(((self.bits >> 22) & 0x01) != 0)
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn cr_pds_usb_reset(&self) -> CR_PDS_USB_RESET_R {
-        CR_PDS_USB_RESET_R::new(((self.bits >> 21) & 0x01) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn cr_pds_usb_pwr_off(&self) -> CR_PDS_USB_PWR_OFF_R {
-        CR_PDS_USB_PWR_OFF_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn cr_pds_ble_gate_clk(&self) -> CR_PDS_BLE_GATE_CLK_R {
-        CR_PDS_BLE_GATE_CLK_R::new(((self.bits >> 19) & 0x01) != 0)
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn cr_pds_ble_mem_stby(&self) -> CR_PDS_BLE_MEM_STBY_R {
-        CR_PDS_BLE_MEM_STBY_R::new(((self.bits >> 18) & 0x01) != 0)
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn cr_pds_ble_reset(&self) -> CR_PDS_BLE_RESET_R {
-        CR_PDS_BLE_RESET_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn cr_pds_ble_pwr_off(&self) -> CR_PDS_BLE_PWR_OFF_R {
-        CR_PDS_BLE_PWR_OFF_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn cr_pds_bz_gate_clk(&self) -> CR_PDS_BZ_GATE_CLK_R {
-        CR_PDS_BZ_GATE_CLK_R::new(((self.bits >> 15) & 0x01) != 0)
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn cr_pds_bz_mem_stby(&self) -> CR_PDS_BZ_MEM_STBY_R {
-        CR_PDS_BZ_MEM_STBY_R::new(((self.bits >> 14) & 0x01) != 0)
-    }
-    #[doc = "Bit 13"]
-    #[inline(always)]
-    pub fn cr_pds_bz_reset(&self) -> CR_PDS_BZ_RESET_R {
-        CR_PDS_BZ_RESET_R::new(((self.bits >> 13) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn cr_pds_bz_pwr_off(&self) -> CR_PDS_BZ_PWR_OFF_R {
-        CR_PDS_BZ_PWR_OFF_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_pds_np_gate_clk(&self) -> CR_PDS_NP_GATE_CLK_R {
-        CR_PDS_NP_GATE_CLK_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn cr_pds_np_mem_stby(&self) -> CR_PDS_NP_MEM_STBY_R {
-        CR_PDS_NP_MEM_STBY_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn cr_pds_np_pwr_off(&self) -> CR_PDS_NP_PWR_OFF_R {
+        CR_PDS_NP_PWR_OFF_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn cr_pds_np_reset(&self) -> CR_PDS_NP_RESET_R {
-        CR_PDS_NP_RESET_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn cr_pds_np_pwr_off(&self) -> CR_PDS_NP_PWR_OFF_R {
-        CR_PDS_NP_PWR_OFF_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn cr_pds_misc_dig_pwr_off(&mut self) -> CR_PDS_MISC_DIG_PWR_OFF_W {
-        CR_PDS_MISC_DIG_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn cr_pds_misc_ana_pwr_off(&mut self) -> CR_PDS_MISC_ANA_PWR_OFF_W {
-        CR_PDS_MISC_ANA_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn cr_pds_misc_gate_clk(&mut self) -> CR_PDS_MISC_GATE_CLK_W {
-        CR_PDS_MISC_GATE_CLK_W { w: self }
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn cr_pds_misc_mem_stby(&mut self) -> CR_PDS_MISC_MEM_STBY_W {
-        CR_PDS_MISC_MEM_STBY_W { w: self }
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn cr_pds_misc_reset(&mut self) -> CR_PDS_MISC_RESET_W {
-        CR_PDS_MISC_RESET_W { w: self }
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn cr_pds_misc_pwr_off(&mut self) -> CR_PDS_MISC_PWR_OFF_W {
-        CR_PDS_MISC_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 23"]
-    #[inline(always)]
-    pub fn cr_pds_usb_gate_clk(&mut self) -> CR_PDS_USB_GATE_CLK_W {
-        CR_PDS_USB_GATE_CLK_W { w: self }
-    }
-    #[doc = "Bit 22"]
-    #[inline(always)]
-    pub fn cr_pds_usb_mem_stby(&mut self) -> CR_PDS_USB_MEM_STBY_W {
-        CR_PDS_USB_MEM_STBY_W { w: self }
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn cr_pds_usb_reset(&mut self) -> CR_PDS_USB_RESET_W {
-        CR_PDS_USB_RESET_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn cr_pds_usb_pwr_off(&mut self) -> CR_PDS_USB_PWR_OFF_W {
-        CR_PDS_USB_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn cr_pds_ble_gate_clk(&mut self) -> CR_PDS_BLE_GATE_CLK_W {
-        CR_PDS_BLE_GATE_CLK_W { w: self }
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn cr_pds_ble_mem_stby(&mut self) -> CR_PDS_BLE_MEM_STBY_W {
-        CR_PDS_BLE_MEM_STBY_W { w: self }
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn cr_pds_ble_reset(&mut self) -> CR_PDS_BLE_RESET_W {
-        CR_PDS_BLE_RESET_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn cr_pds_ble_pwr_off(&mut self) -> CR_PDS_BLE_PWR_OFF_W {
-        CR_PDS_BLE_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 15"]
-    #[inline(always)]
-    pub fn cr_pds_bz_gate_clk(&mut self) -> CR_PDS_BZ_GATE_CLK_W {
-        CR_PDS_BZ_GATE_CLK_W { w: self }
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn cr_pds_bz_mem_stby(&mut self) -> CR_PDS_BZ_MEM_STBY_W {
-        CR_PDS_BZ_MEM_STBY_W { w: self }
-    }
-    #[doc = "Bit 13"]
-    #[inline(always)]
-    pub fn cr_pds_bz_reset(&mut self) -> CR_PDS_BZ_RESET_W {
-        CR_PDS_BZ_RESET_W { w: self }
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn cr_pds_bz_pwr_off(&mut self) -> CR_PDS_BZ_PWR_OFF_W {
-        CR_PDS_BZ_PWR_OFF_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn cr_pds_np_gate_clk(&mut self) -> CR_PDS_NP_GATE_CLK_W {
-        CR_PDS_NP_GATE_CLK_W { w: self }
+        CR_PDS_NP_RESET_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_pds_np_mem_stby(&mut self) -> CR_PDS_NP_MEM_STBY_W {
-        CR_PDS_NP_MEM_STBY_W { w: self }
+    pub fn cr_pds_np_mem_stby(&self) -> CR_PDS_NP_MEM_STBY_R {
+        CR_PDS_NP_MEM_STBY_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_pds_np_gate_clk(&self) -> CR_PDS_NP_GATE_CLK_R {
+        CR_PDS_NP_GATE_CLK_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn cr_pds_bz_pwr_off(&self) -> CR_PDS_BZ_PWR_OFF_R {
+        CR_PDS_BZ_PWR_OFF_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn cr_pds_bz_reset(&self) -> CR_PDS_BZ_RESET_R {
+        CR_PDS_BZ_RESET_R::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn cr_pds_bz_mem_stby(&self) -> CR_PDS_BZ_MEM_STBY_R {
+        CR_PDS_BZ_MEM_STBY_R::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn cr_pds_bz_gate_clk(&self) -> CR_PDS_BZ_GATE_CLK_R {
+        CR_PDS_BZ_GATE_CLK_R::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn cr_pds_ble_pwr_off(&self) -> CR_PDS_BLE_PWR_OFF_R {
+        CR_PDS_BLE_PWR_OFF_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn cr_pds_ble_reset(&self) -> CR_PDS_BLE_RESET_R {
+        CR_PDS_BLE_RESET_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn cr_pds_ble_mem_stby(&self) -> CR_PDS_BLE_MEM_STBY_R {
+        CR_PDS_BLE_MEM_STBY_R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn cr_pds_ble_gate_clk(&self) -> CR_PDS_BLE_GATE_CLK_R {
+        CR_PDS_BLE_GATE_CLK_R::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn cr_pds_usb_pwr_off(&self) -> CR_PDS_USB_PWR_OFF_R {
+        CR_PDS_USB_PWR_OFF_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn cr_pds_usb_reset(&self) -> CR_PDS_USB_RESET_R {
+        CR_PDS_USB_RESET_R::new(((self.bits >> 21) & 1) != 0)
+    }
+    #[doc = "Bit 22"]
+    #[inline(always)]
+    pub fn cr_pds_usb_mem_stby(&self) -> CR_PDS_USB_MEM_STBY_R {
+        CR_PDS_USB_MEM_STBY_R::new(((self.bits >> 22) & 1) != 0)
+    }
+    #[doc = "Bit 23"]
+    #[inline(always)]
+    pub fn cr_pds_usb_gate_clk(&self) -> CR_PDS_USB_GATE_CLK_R {
+        CR_PDS_USB_GATE_CLK_R::new(((self.bits >> 23) & 1) != 0)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_pds_misc_pwr_off(&self) -> CR_PDS_MISC_PWR_OFF_R {
+        CR_PDS_MISC_PWR_OFF_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn cr_pds_misc_reset(&self) -> CR_PDS_MISC_RESET_R {
+        CR_PDS_MISC_RESET_R::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn cr_pds_misc_mem_stby(&self) -> CR_PDS_MISC_MEM_STBY_R {
+        CR_PDS_MISC_MEM_STBY_R::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn cr_pds_misc_gate_clk(&self) -> CR_PDS_MISC_GATE_CLK_R {
+        CR_PDS_MISC_GATE_CLK_R::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn cr_pds_misc_ana_pwr_off(&self) -> CR_PDS_MISC_ANA_PWR_OFF_R {
+        CR_PDS_MISC_ANA_PWR_OFF_R::new(((self.bits >> 30) & 1) != 0)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn cr_pds_misc_dig_pwr_off(&self) -> CR_PDS_MISC_DIG_PWR_OFF_R {
+        CR_PDS_MISC_DIG_PWR_OFF_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn cr_pds_np_pwr_off(&mut self) -> CR_PDS_NP_PWR_OFF_W<0> {
+        CR_PDS_NP_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn cr_pds_np_reset(&mut self) -> CR_PDS_NP_RESET_W {
-        CR_PDS_NP_RESET_W { w: self }
+    pub fn cr_pds_np_reset(&mut self) -> CR_PDS_NP_RESET_W<1> {
+        CR_PDS_NP_RESET_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn cr_pds_np_pwr_off(&mut self) -> CR_PDS_NP_PWR_OFF_W {
-        CR_PDS_NP_PWR_OFF_W { w: self }
+    pub fn cr_pds_np_mem_stby(&mut self) -> CR_PDS_NP_MEM_STBY_W<2> {
+        CR_PDS_NP_MEM_STBY_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn cr_pds_np_gate_clk(&mut self) -> CR_PDS_NP_GATE_CLK_W<3> {
+        CR_PDS_NP_GATE_CLK_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn cr_pds_bz_pwr_off(&mut self) -> CR_PDS_BZ_PWR_OFF_W<12> {
+        CR_PDS_BZ_PWR_OFF_W::new(self)
+    }
+    #[doc = "Bit 13"]
+    #[inline(always)]
+    pub fn cr_pds_bz_reset(&mut self) -> CR_PDS_BZ_RESET_W<13> {
+        CR_PDS_BZ_RESET_W::new(self)
+    }
+    #[doc = "Bit 14"]
+    #[inline(always)]
+    pub fn cr_pds_bz_mem_stby(&mut self) -> CR_PDS_BZ_MEM_STBY_W<14> {
+        CR_PDS_BZ_MEM_STBY_W::new(self)
+    }
+    #[doc = "Bit 15"]
+    #[inline(always)]
+    pub fn cr_pds_bz_gate_clk(&mut self) -> CR_PDS_BZ_GATE_CLK_W<15> {
+        CR_PDS_BZ_GATE_CLK_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn cr_pds_ble_pwr_off(&mut self) -> CR_PDS_BLE_PWR_OFF_W<16> {
+        CR_PDS_BLE_PWR_OFF_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn cr_pds_ble_reset(&mut self) -> CR_PDS_BLE_RESET_W<17> {
+        CR_PDS_BLE_RESET_W::new(self)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn cr_pds_ble_mem_stby(&mut self) -> CR_PDS_BLE_MEM_STBY_W<18> {
+        CR_PDS_BLE_MEM_STBY_W::new(self)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn cr_pds_ble_gate_clk(&mut self) -> CR_PDS_BLE_GATE_CLK_W<19> {
+        CR_PDS_BLE_GATE_CLK_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn cr_pds_usb_pwr_off(&mut self) -> CR_PDS_USB_PWR_OFF_W<20> {
+        CR_PDS_USB_PWR_OFF_W::new(self)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn cr_pds_usb_reset(&mut self) -> CR_PDS_USB_RESET_W<21> {
+        CR_PDS_USB_RESET_W::new(self)
+    }
+    #[doc = "Bit 22"]
+    #[inline(always)]
+    pub fn cr_pds_usb_mem_stby(&mut self) -> CR_PDS_USB_MEM_STBY_W<22> {
+        CR_PDS_USB_MEM_STBY_W::new(self)
+    }
+    #[doc = "Bit 23"]
+    #[inline(always)]
+    pub fn cr_pds_usb_gate_clk(&mut self) -> CR_PDS_USB_GATE_CLK_W<23> {
+        CR_PDS_USB_GATE_CLK_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn cr_pds_misc_pwr_off(&mut self) -> CR_PDS_MISC_PWR_OFF_W<24> {
+        CR_PDS_MISC_PWR_OFF_W::new(self)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn cr_pds_misc_reset(&mut self) -> CR_PDS_MISC_RESET_W<25> {
+        CR_PDS_MISC_RESET_W::new(self)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn cr_pds_misc_mem_stby(&mut self) -> CR_PDS_MISC_MEM_STBY_W<26> {
+        CR_PDS_MISC_MEM_STBY_W::new(self)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn cr_pds_misc_gate_clk(&mut self) -> CR_PDS_MISC_GATE_CLK_W<27> {
+        CR_PDS_MISC_GATE_CLK_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn cr_pds_misc_ana_pwr_off(&mut self) -> CR_PDS_MISC_ANA_PWR_OFF_W<30> {
+        CR_PDS_MISC_ANA_PWR_OFF_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn cr_pds_misc_dig_pwr_off(&mut self) -> CR_PDS_MISC_DIG_PWR_OFF_W<31> {
+        CR_PDS_MISC_DIG_PWR_OFF_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

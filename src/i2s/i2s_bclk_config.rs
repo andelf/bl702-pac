@@ -34,80 +34,38 @@ impl From<crate::W<I2S_BCLK_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_bclk_div_h` reader - "]
-pub struct CR_BCLK_DIV_H_R(crate::FieldReader<u16, u16>);
-impl CR_BCLK_DIV_H_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_BCLK_DIV_H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_BCLK_DIV_H_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_bclk_div_h` writer - "]
-pub struct CR_BCLK_DIV_H_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_BCLK_DIV_H_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0fff << 16)) | ((value as u32 & 0x0fff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `cr_bclk_div_l` reader - "]
-pub struct CR_BCLK_DIV_L_R(crate::FieldReader<u16, u16>);
-impl CR_BCLK_DIV_L_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_BCLK_DIV_L_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_BCLK_DIV_L_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_BCLK_DIV_L_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cr_bclk_div_l` writer - "]
-pub struct CR_BCLK_DIV_L_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_BCLK_DIV_L_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type CR_BCLK_DIV_L_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_BCLK_CONFIG_SPEC, u16, u16, 12, O>;
+#[doc = "Field `cr_bclk_div_h` reader - "]
+pub type CR_BCLK_DIV_H_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `cr_bclk_div_h` writer - "]
+pub type CR_BCLK_DIV_H_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, I2S_BCLK_CONFIG_SPEC, u16, u16, 12, O>;
 impl R {
-    #[doc = "Bits 16:27"]
-    #[inline(always)]
-    pub fn cr_bclk_div_h(&self) -> CR_BCLK_DIV_H_R {
-        CR_BCLK_DIV_H_R::new(((self.bits >> 16) & 0x0fff) as u16)
-    }
     #[doc = "Bits 0:11"]
     #[inline(always)]
     pub fn cr_bclk_div_l(&self) -> CR_BCLK_DIV_L_R {
         CR_BCLK_DIV_L_R::new((self.bits & 0x0fff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:27"]
     #[inline(always)]
-    pub fn cr_bclk_div_h(&mut self) -> CR_BCLK_DIV_H_W {
-        CR_BCLK_DIV_H_W { w: self }
+    pub fn cr_bclk_div_h(&self) -> CR_BCLK_DIV_H_R {
+        CR_BCLK_DIV_H_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn cr_bclk_div_l(&mut self) -> CR_BCLK_DIV_L_W {
-        CR_BCLK_DIV_L_W { w: self }
+    pub fn cr_bclk_div_l(&mut self) -> CR_BCLK_DIV_L_W<0> {
+        CR_BCLK_DIV_L_W::new(self)
+    }
+    #[doc = "Bits 16:27"]
+    #[inline(always)]
+    pub fn cr_bclk_div_h(&mut self) -> CR_BCLK_DIV_H_W<16> {
+        CR_BCLK_DIV_H_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

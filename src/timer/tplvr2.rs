@@ -35,43 +35,21 @@ impl From<crate::W<TPLVR2_SPEC>> for W {
     }
 }
 #[doc = "Field `tplvr` reader - "]
-pub struct TPLVR_R(crate::FieldReader<u32, u32>);
-impl TPLVR_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        TPLVR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TPLVR_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TPLVR_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `tplvr` writer - "]
-pub struct TPLVR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TPLVR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type TPLVR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TPLVR2_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn tplvr(&self) -> TPLVR_R {
-        TPLVR_R::new((self.bits & 0xffff_ffff) as u32)
+        TPLVR_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn tplvr(&mut self) -> TPLVR_W {
-        TPLVR_W { w: self }
+    pub fn tplvr(&mut self) -> TPLVR_W<0> {
+        TPLVR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

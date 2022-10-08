@@ -34,330 +34,106 @@ impl From<crate::W<USB_ERROR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `crc16_err` reader - "]
-pub struct CRC16_ERR_R(crate::FieldReader<bool, bool>);
-impl CRC16_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CRC16_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CRC16_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `crc16_err` writer - "]
-pub struct CRC16_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CRC16_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `crc5_err` reader - "]
-pub struct CRC5_ERR_R(crate::FieldReader<bool, bool>);
-impl CRC5_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CRC5_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CRC5_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `crc5_err` writer - "]
-pub struct CRC5_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CRC5_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `pid_cks_err` reader - "]
-pub struct PID_CKS_ERR_R(crate::FieldReader<bool, bool>);
-impl PID_CKS_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PID_CKS_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PID_CKS_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pid_cks_err` writer - "]
-pub struct PID_CKS_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PID_CKS_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `pid_seq_err` reader - "]
-pub struct PID_SEQ_ERR_R(crate::FieldReader<bool, bool>);
-impl PID_SEQ_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PID_SEQ_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PID_SEQ_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pid_seq_err` writer - "]
-pub struct PID_SEQ_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PID_SEQ_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `ivld_ep_err` reader - "]
-pub struct IVLD_EP_ERR_R(crate::FieldReader<bool, bool>);
-impl IVLD_EP_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IVLD_EP_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IVLD_EP_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ivld_ep_err` writer - "]
-pub struct IVLD_EP_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IVLD_EP_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `xfer_to_err` reader - "]
-pub struct XFER_TO_ERR_R(crate::FieldReader<bool, bool>);
-impl XFER_TO_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XFER_TO_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XFER_TO_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xfer_to_err` writer - "]
-pub struct XFER_TO_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> XFER_TO_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `utmi_rx_err` reader - "]
-pub struct UTMI_RX_ERR_R(crate::FieldReader<bool, bool>);
-impl UTMI_RX_ERR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        UTMI_RX_ERR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UTMI_RX_ERR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type UTMI_RX_ERR_R = crate::BitReader<bool>;
 #[doc = "Field `utmi_rx_err` writer - "]
-pub struct UTMI_RX_ERR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> UTMI_RX_ERR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type UTMI_RX_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `xfer_to_err` reader - "]
+pub type XFER_TO_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `xfer_to_err` writer - "]
+pub type XFER_TO_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `ivld_ep_err` reader - "]
+pub type IVLD_EP_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `ivld_ep_err` writer - "]
+pub type IVLD_EP_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `pid_seq_err` reader - "]
+pub type PID_SEQ_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `pid_seq_err` writer - "]
+pub type PID_SEQ_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `pid_cks_err` reader - "]
+pub type PID_CKS_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `pid_cks_err` writer - "]
+pub type PID_CKS_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `crc5_err` reader - "]
+pub type CRC5_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `crc5_err` writer - "]
+pub type CRC5_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
+#[doc = "Field `crc16_err` reader - "]
+pub type CRC16_ERR_R = crate::BitReader<bool>;
+#[doc = "Field `crc16_err` writer - "]
+pub type CRC16_ERR_W<'a, const O: u8> = crate::BitWriter<'a, u32, USB_ERROR_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 6"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn crc16_err(&self) -> CRC16_ERR_R {
-        CRC16_ERR_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn crc5_err(&self) -> CRC5_ERR_R {
-        CRC5_ERR_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn pid_cks_err(&self) -> PID_CKS_ERR_R {
-        PID_CKS_ERR_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn pid_seq_err(&self) -> PID_SEQ_ERR_R {
-        PID_SEQ_ERR_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn ivld_ep_err(&self) -> IVLD_EP_ERR_R {
-        IVLD_EP_ERR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn utmi_rx_err(&self) -> UTMI_RX_ERR_R {
+        UTMI_RX_ERR_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn xfer_to_err(&self) -> XFER_TO_ERR_R {
-        XFER_TO_ERR_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn utmi_rx_err(&self) -> UTMI_RX_ERR_R {
-        UTMI_RX_ERR_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn crc16_err(&mut self) -> CRC16_ERR_W {
-        CRC16_ERR_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn crc5_err(&mut self) -> CRC5_ERR_W {
-        CRC5_ERR_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn pid_cks_err(&mut self) -> PID_CKS_ERR_W {
-        PID_CKS_ERR_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn pid_seq_err(&mut self) -> PID_SEQ_ERR_W {
-        PID_SEQ_ERR_W { w: self }
+        XFER_TO_ERR_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn ivld_ep_err(&mut self) -> IVLD_EP_ERR_W {
-        IVLD_EP_ERR_W { w: self }
+    pub fn ivld_ep_err(&self) -> IVLD_EP_ERR_R {
+        IVLD_EP_ERR_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn pid_seq_err(&self) -> PID_SEQ_ERR_R {
+        PID_SEQ_ERR_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn pid_cks_err(&self) -> PID_CKS_ERR_R {
+        PID_CKS_ERR_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn crc5_err(&self) -> CRC5_ERR_R {
+        CRC5_ERR_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn crc16_err(&self) -> CRC16_ERR_R {
+        CRC16_ERR_R::new(((self.bits >> 6) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn utmi_rx_err(&mut self) -> UTMI_RX_ERR_W<0> {
+        UTMI_RX_ERR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn xfer_to_err(&mut self) -> XFER_TO_ERR_W {
-        XFER_TO_ERR_W { w: self }
+    pub fn xfer_to_err(&mut self) -> XFER_TO_ERR_W<1> {
+        XFER_TO_ERR_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn utmi_rx_err(&mut self) -> UTMI_RX_ERR_W {
-        UTMI_RX_ERR_W { w: self }
+    pub fn ivld_ep_err(&mut self) -> IVLD_EP_ERR_W<2> {
+        IVLD_EP_ERR_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn pid_seq_err(&mut self) -> PID_SEQ_ERR_W<3> {
+        PID_SEQ_ERR_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn pid_cks_err(&mut self) -> PID_CKS_ERR_W<4> {
+        PID_CKS_ERR_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn crc5_err(&mut self) -> CRC5_ERR_W<5> {
+        CRC5_ERR_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn crc16_err(&mut self) -> CRC16_ERR_W<6> {
+        CRC16_ERR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

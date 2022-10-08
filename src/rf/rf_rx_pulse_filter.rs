@@ -34,172 +34,66 @@ impl From<crate::W<RF_RX_PULSE_FILTER_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pf_en_i` reader - "]
-pub struct PF_EN_I_R(crate::FieldReader<bool, bool>);
-impl PF_EN_I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PF_EN_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PF_EN_I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pf_en_i` writer - "]
-pub struct PF_EN_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PF_EN_I_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
-        self.w
-    }
-}
-#[doc = "Field `pf_en_q` reader - "]
-pub struct PF_EN_Q_R(crate::FieldReader<bool, bool>);
-impl PF_EN_Q_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PF_EN_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PF_EN_Q_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pf_en_q` writer - "]
-pub struct PF_EN_Q_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PF_EN_Q_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `pf_th1` reader - "]
-pub struct PF_TH1_R(crate::FieldReader<u16, u16>);
-impl PF_TH1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PF_TH1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PF_TH1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pf_th1` writer - "]
-pub struct PF_TH1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PF_TH1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01ff << 10)) | ((value as u32 & 0x01ff) << 10);
-        self.w
-    }
-}
 #[doc = "Field `pf_th2` reader - "]
-pub struct PF_TH2_R(crate::FieldReader<u16, u16>);
-impl PF_TH2_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PF_TH2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PF_TH2_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PF_TH2_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `pf_th2` writer - "]
-pub struct PF_TH2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PF_TH2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01ff) | (value as u32 & 0x01ff);
-        self.w
-    }
-}
+pub type PF_TH2_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_RX_PULSE_FILTER_SPEC, u16, u16, 9, O>;
+#[doc = "Field `pf_th1` reader - "]
+pub type PF_TH1_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `pf_th1` writer - "]
+pub type PF_TH1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, RF_RX_PULSE_FILTER_SPEC, u16, u16, 9, O>;
+#[doc = "Field `pf_en_q` reader - "]
+pub type PF_EN_Q_R = crate::BitReader<bool>;
+#[doc = "Field `pf_en_q` writer - "]
+pub type PF_EN_Q_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_RX_PULSE_FILTER_SPEC, bool, O>;
+#[doc = "Field `pf_en_i` reader - "]
+pub type PF_EN_I_R = crate::BitReader<bool>;
+#[doc = "Field `pf_en_i` writer - "]
+pub type PF_EN_I_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_RX_PULSE_FILTER_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 21"]
+    #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn pf_en_i(&self) -> PF_EN_I_R {
-        PF_EN_I_R::new(((self.bits >> 21) & 0x01) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn pf_en_q(&self) -> PF_EN_Q_R {
-        PF_EN_Q_R::new(((self.bits >> 20) & 0x01) != 0)
+    pub fn pf_th2(&self) -> PF_TH2_R {
+        PF_TH2_R::new((self.bits & 0x01ff) as u16)
     }
     #[doc = "Bits 10:18"]
     #[inline(always)]
     pub fn pf_th1(&self) -> PF_TH1_R {
         PF_TH1_R::new(((self.bits >> 10) & 0x01ff) as u16)
     }
-    #[doc = "Bits 0:8"]
+    #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn pf_th2(&self) -> PF_TH2_R {
-        PF_TH2_R::new((self.bits & 0x01ff) as u16)
+    pub fn pf_en_q(&self) -> PF_EN_Q_R {
+        PF_EN_Q_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn pf_en_i(&self) -> PF_EN_I_R {
+        PF_EN_I_R::new(((self.bits >> 21) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 21"]
+    #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn pf_en_i(&mut self) -> PF_EN_I_W {
-        PF_EN_I_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn pf_en_q(&mut self) -> PF_EN_Q_W {
-        PF_EN_Q_W { w: self }
+    pub fn pf_th2(&mut self) -> PF_TH2_W<0> {
+        PF_TH2_W::new(self)
     }
     #[doc = "Bits 10:18"]
     #[inline(always)]
-    pub fn pf_th1(&mut self) -> PF_TH1_W {
-        PF_TH1_W { w: self }
+    pub fn pf_th1(&mut self) -> PF_TH1_W<10> {
+        PF_TH1_W::new(self)
     }
-    #[doc = "Bits 0:8"]
+    #[doc = "Bit 20"]
     #[inline(always)]
-    pub fn pf_th2(&mut self) -> PF_TH2_W {
-        PF_TH2_W { w: self }
+    pub fn pf_en_q(&mut self) -> PF_EN_Q_W<20> {
+        PF_EN_Q_W::new(self)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn pf_en_i(&mut self) -> PF_EN_I_W<21> {
+        PF_EN_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

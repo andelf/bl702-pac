@@ -34,136 +34,52 @@ impl From<crate::W<MJPEG_PAKET_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_pket_body_byte` reader - "]
-pub struct REG_PKET_BODY_BYTE_R(crate::FieldReader<u16, u16>);
-impl REG_PKET_BODY_BYTE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_PKET_BODY_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PKET_BODY_BYTE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_pket_body_byte` writer - "]
-pub struct REG_PKET_BODY_BYTE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_PKET_BODY_BYTE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `reg_jend_to_pend` reader - "]
-pub struct REG_JEND_TO_PEND_R(crate::FieldReader<bool, bool>);
-impl REG_JEND_TO_PEND_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_JEND_TO_PEND_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_JEND_TO_PEND_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_jend_to_pend` writer - "]
-pub struct REG_JEND_TO_PEND_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_JEND_TO_PEND_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `reg_pket_en` reader - "]
-pub struct REG_PKET_EN_R(crate::FieldReader<bool, bool>);
-impl REG_PKET_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_PKET_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PKET_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_PKET_EN_R = crate::BitReader<bool>;
 #[doc = "Field `reg_pket_en` writer - "]
-pub struct REG_PKET_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_PKET_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type REG_PKET_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, MJPEG_PAKET_CTRL_SPEC, bool, O>;
+#[doc = "Field `reg_jend_to_pend` reader - "]
+pub type REG_JEND_TO_PEND_R = crate::BitReader<bool>;
+#[doc = "Field `reg_jend_to_pend` writer - "]
+pub type REG_JEND_TO_PEND_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_PAKET_CTRL_SPEC, bool, O>;
+#[doc = "Field `reg_pket_body_byte` reader - "]
+pub type REG_PKET_BODY_BYTE_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `reg_pket_body_byte` writer - "]
+pub type REG_PKET_BODY_BYTE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_PAKET_CTRL_SPEC, u16, u16, 16, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn reg_pket_en(&self) -> REG_PKET_EN_R {
+        REG_PKET_EN_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn reg_jend_to_pend(&self) -> REG_JEND_TO_PEND_R {
+        REG_JEND_TO_PEND_R::new(((self.bits >> 1) & 1) != 0)
+    }
     #[doc = "Bits 16:31"]
     #[inline(always)]
     pub fn reg_pket_body_byte(&self) -> REG_PKET_BODY_BYTE_R {
         REG_PKET_BODY_BYTE_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn reg_jend_to_pend(&self) -> REG_JEND_TO_PEND_R {
-        REG_JEND_TO_PEND_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn reg_pket_en(&self) -> REG_PKET_EN_R {
-        REG_PKET_EN_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 16:31"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_pket_body_byte(&mut self) -> REG_PKET_BODY_BYTE_W {
-        REG_PKET_BODY_BYTE_W { w: self }
+    pub fn reg_pket_en(&mut self) -> REG_PKET_EN_W<0> {
+        REG_PKET_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn reg_jend_to_pend(&mut self) -> REG_JEND_TO_PEND_W {
-        REG_JEND_TO_PEND_W { w: self }
+    pub fn reg_jend_to_pend(&mut self) -> REG_JEND_TO_PEND_W<1> {
+        REG_JEND_TO_PEND_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn reg_pket_en(&mut self) -> REG_PKET_EN_W {
-        REG_PKET_EN_W { w: self }
+    pub fn reg_pket_body_byte(&mut self) -> REG_PKET_BODY_BYTE_W<16> {
+        REG_PKET_BODY_BYTE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

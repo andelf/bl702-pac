@@ -34,264 +34,93 @@ impl From<crate::W<HBN_PIR_CFG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `gpadc_nosync` reader - "]
-pub struct GPADC_NOSYNC_R(crate::FieldReader<bool, bool>);
-impl GPADC_NOSYNC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_NOSYNC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_NOSYNC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_nosync` writer - "]
-pub struct GPADC_NOSYNC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_NOSYNC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
-        self.w
-    }
-}
-#[doc = "Field `gpadc_cgen` reader - "]
-pub struct GPADC_CGEN_R(crate::FieldReader<bool, bool>);
-impl GPADC_CGEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_CGEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_CGEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_cgen` writer - "]
-pub struct GPADC_CGEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_CGEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `pir_en` reader - "]
-pub struct PIR_EN_R(crate::FieldReader<bool, bool>);
-impl PIR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PIR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_en` writer - "]
-pub struct PIR_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PIR_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `pir_dis` reader - "]
-pub struct PIR_DIS_R(crate::FieldReader<u8, u8>);
-impl PIR_DIS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PIR_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_DIS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_dis` writer - "]
-pub struct PIR_DIS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PIR_DIS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
-#[doc = "Field `pir_lpf_sel` reader - "]
-pub struct PIR_LPF_SEL_R(crate::FieldReader<bool, bool>);
-impl PIR_LPF_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PIR_LPF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_LPF_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_lpf_sel` writer - "]
-pub struct PIR_LPF_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PIR_LPF_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
 #[doc = "Field `pir_hpf_sel` reader - "]
-pub struct PIR_HPF_SEL_R(crate::FieldReader<u8, u8>);
-impl PIR_HPF_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PIR_HPF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_HPF_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PIR_HPF_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `pir_hpf_sel` writer - "]
-pub struct PIR_HPF_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PIR_HPF_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type PIR_HPF_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, HBN_PIR_CFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `pir_lpf_sel` reader - "]
+pub type PIR_LPF_SEL_R = crate::BitReader<bool>;
+#[doc = "Field `pir_lpf_sel` writer - "]
+pub type PIR_LPF_SEL_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_PIR_CFG_SPEC, bool, O>;
+#[doc = "Field `pir_dis` reader - "]
+pub type PIR_DIS_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pir_dis` writer - "]
+pub type PIR_DIS_W<'a, const O: u8> = crate::FieldWriter<'a, u32, HBN_PIR_CFG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `pir_en` reader - "]
+pub type PIR_EN_R = crate::BitReader<bool>;
+#[doc = "Field `pir_en` writer - "]
+pub type PIR_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_PIR_CFG_SPEC, bool, O>;
+#[doc = "Field `gpadc_cgen` reader - "]
+pub type GPADC_CGEN_R = crate::BitReader<bool>;
+#[doc = "Field `gpadc_cgen` writer - "]
+pub type GPADC_CGEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_PIR_CFG_SPEC, bool, O>;
+#[doc = "Field `gpadc_nosync` reader - "]
+pub type GPADC_NOSYNC_R = crate::BitReader<bool>;
+#[doc = "Field `gpadc_nosync` writer - "]
+pub type GPADC_NOSYNC_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_PIR_CFG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 9"]
+    #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn gpadc_nosync(&self) -> GPADC_NOSYNC_R {
-        GPADC_NOSYNC_R::new(((self.bits >> 9) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn gpadc_cgen(&self) -> GPADC_CGEN_R {
-        GPADC_CGEN_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn pir_en(&self) -> PIR_EN_R {
-        PIR_EN_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bits 4:5"]
-    #[inline(always)]
-    pub fn pir_dis(&self) -> PIR_DIS_R {
-        PIR_DIS_R::new(((self.bits >> 4) & 0x03) as u8)
+    pub fn pir_hpf_sel(&self) -> PIR_HPF_SEL_R {
+        PIR_HPF_SEL_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
     pub fn pir_lpf_sel(&self) -> PIR_LPF_SEL_R {
-        PIR_LPF_SEL_R::new(((self.bits >> 2) & 0x01) != 0)
-    }
-    #[doc = "Bits 0:1"]
-    #[inline(always)]
-    pub fn pir_hpf_sel(&self) -> PIR_HPF_SEL_R {
-        PIR_HPF_SEL_R::new((self.bits & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 9"]
-    #[inline(always)]
-    pub fn gpadc_nosync(&mut self) -> GPADC_NOSYNC_W {
-        GPADC_NOSYNC_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn gpadc_cgen(&mut self) -> GPADC_CGEN_W {
-        GPADC_CGEN_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn pir_en(&mut self) -> PIR_EN_W {
-        PIR_EN_W { w: self }
+        PIR_LPF_SEL_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn pir_dis(&mut self) -> PIR_DIS_W {
-        PIR_DIS_W { w: self }
+    pub fn pir_dis(&self) -> PIR_DIS_R {
+        PIR_DIS_R::new(((self.bits >> 4) & 3) as u8)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn pir_en(&self) -> PIR_EN_R {
+        PIR_EN_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn gpadc_cgen(&self) -> GPADC_CGEN_R {
+        GPADC_CGEN_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn gpadc_nosync(&self) -> GPADC_NOSYNC_R {
+        GPADC_NOSYNC_R::new(((self.bits >> 9) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn pir_hpf_sel(&mut self) -> PIR_HPF_SEL_W<0> {
+        PIR_HPF_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn pir_lpf_sel(&mut self) -> PIR_LPF_SEL_W {
-        PIR_LPF_SEL_W { w: self }
+    pub fn pir_lpf_sel(&mut self) -> PIR_LPF_SEL_W<2> {
+        PIR_LPF_SEL_W::new(self)
     }
-    #[doc = "Bits 0:1"]
+    #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn pir_hpf_sel(&mut self) -> PIR_HPF_SEL_W {
-        PIR_HPF_SEL_W { w: self }
+    pub fn pir_dis(&mut self) -> PIR_DIS_W<4> {
+        PIR_DIS_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn pir_en(&mut self) -> PIR_EN_W<7> {
+        PIR_EN_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn gpadc_cgen(&mut self) -> GPADC_CGEN_W<8> {
+        GPADC_CGEN_W::new(self)
+    }
+    #[doc = "Bit 9"]
+    #[inline(always)]
+    pub fn gpadc_nosync(&mut self) -> GPADC_NOSYNC_W<9> {
+        GPADC_NOSYNC_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

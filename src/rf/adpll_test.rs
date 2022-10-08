@@ -34,208 +34,81 @@ impl From<crate::W<ADPLL_TEST_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `adpll_test_start` reader - "]
-pub struct ADPLL_TEST_START_R(crate::FieldReader<bool, bool>);
-impl ADPLL_TEST_START_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_TEST_START_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_TEST_START_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_test_start` writer - "]
-pub struct ADPLL_TEST_START_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_TEST_START_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 25)) | ((value as u32 & 0x01) << 25);
-        self.w
-    }
-}
-#[doc = "Field `adpll_test_en` reader - "]
-pub struct ADPLL_TEST_EN_R(crate::FieldReader<bool, bool>);
-impl ADPLL_TEST_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADPLL_TEST_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_TEST_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_test_en` writer - "]
-pub struct ADPLL_TEST_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_TEST_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `adpll_test_start_sel` reader - "]
-pub struct ADPLL_TEST_START_SEL_R(crate::FieldReader<u8, u8>);
-impl ADPLL_TEST_START_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_TEST_START_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_TEST_START_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_test_start_sel` writer - "]
-pub struct ADPLL_TEST_START_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_TEST_START_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 20)) | ((value as u32 & 0x03) << 20);
-        self.w
-    }
-}
-#[doc = "Field `adpll_test_data_sel` reader - "]
-pub struct ADPLL_TEST_DATA_SEL_R(crate::FieldReader<u8, u8>);
-impl ADPLL_TEST_DATA_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADPLL_TEST_DATA_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_TEST_DATA_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adpll_test_data_sel` writer - "]
-pub struct ADPLL_TEST_DATA_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_TEST_DATA_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 16)) | ((value as u32 & 0x07) << 16);
-        self.w
-    }
-}
 #[doc = "Field `adpll_test_out` reader - "]
-pub struct ADPLL_TEST_OUT_R(crate::FieldReader<u16, u16>);
-impl ADPLL_TEST_OUT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        ADPLL_TEST_OUT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADPLL_TEST_OUT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ADPLL_TEST_OUT_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `adpll_test_out` writer - "]
-pub struct ADPLL_TEST_OUT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ADPLL_TEST_OUT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type ADPLL_TEST_OUT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_TEST_SPEC, u16, u16, 16, O>;
+#[doc = "Field `adpll_test_data_sel` reader - "]
+pub type ADPLL_TEST_DATA_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_test_data_sel` writer - "]
+pub type ADPLL_TEST_DATA_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_TEST_SPEC, u8, u8, 3, O>;
+#[doc = "Field `adpll_test_start_sel` reader - "]
+pub type ADPLL_TEST_START_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `adpll_test_start_sel` writer - "]
+pub type ADPLL_TEST_START_SEL_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, ADPLL_TEST_SPEC, u8, u8, 2, O>;
+#[doc = "Field `adpll_test_en` reader - "]
+pub type ADPLL_TEST_EN_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_test_en` writer - "]
+pub type ADPLL_TEST_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, ADPLL_TEST_SPEC, bool, O>;
+#[doc = "Field `adpll_test_start` reader - "]
+pub type ADPLL_TEST_START_R = crate::BitReader<bool>;
+#[doc = "Field `adpll_test_start` writer - "]
+pub type ADPLL_TEST_START_W<'a, const O: u8> = crate::BitWriter<'a, u32, ADPLL_TEST_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn adpll_test_start(&self) -> ADPLL_TEST_START_R {
-        ADPLL_TEST_START_R::new(((self.bits >> 25) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn adpll_test_en(&self) -> ADPLL_TEST_EN_R {
-        ADPLL_TEST_EN_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bits 20:21"]
-    #[inline(always)]
-    pub fn adpll_test_start_sel(&self) -> ADPLL_TEST_START_SEL_R {
-        ADPLL_TEST_START_SEL_R::new(((self.bits >> 20) & 0x03) as u8)
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn adpll_test_data_sel(&self) -> ADPLL_TEST_DATA_SEL_R {
-        ADPLL_TEST_DATA_SEL_R::new(((self.bits >> 16) & 0x07) as u8)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn adpll_test_out(&self) -> ADPLL_TEST_OUT_R {
         ADPLL_TEST_OUT_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
-    #[doc = "Bit 25"]
+    #[doc = "Bits 16:18"]
     #[inline(always)]
-    pub fn adpll_test_start(&mut self) -> ADPLL_TEST_START_W {
-        ADPLL_TEST_START_W { w: self }
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn adpll_test_en(&mut self) -> ADPLL_TEST_EN_W {
-        ADPLL_TEST_EN_W { w: self }
+    pub fn adpll_test_data_sel(&self) -> ADPLL_TEST_DATA_SEL_R {
+        ADPLL_TEST_DATA_SEL_R::new(((self.bits >> 16) & 7) as u8)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
-    pub fn adpll_test_start_sel(&mut self) -> ADPLL_TEST_START_SEL_W {
-        ADPLL_TEST_START_SEL_W { w: self }
+    pub fn adpll_test_start_sel(&self) -> ADPLL_TEST_START_SEL_R {
+        ADPLL_TEST_START_SEL_R::new(((self.bits >> 20) & 3) as u8)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn adpll_test_en(&self) -> ADPLL_TEST_EN_R {
+        ADPLL_TEST_EN_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn adpll_test_start(&self) -> ADPLL_TEST_START_R {
+        ADPLL_TEST_START_R::new(((self.bits >> 25) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:15"]
+    #[inline(always)]
+    pub fn adpll_test_out(&mut self) -> ADPLL_TEST_OUT_W<0> {
+        ADPLL_TEST_OUT_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
-    pub fn adpll_test_data_sel(&mut self) -> ADPLL_TEST_DATA_SEL_W {
-        ADPLL_TEST_DATA_SEL_W { w: self }
+    pub fn adpll_test_data_sel(&mut self) -> ADPLL_TEST_DATA_SEL_W<16> {
+        ADPLL_TEST_DATA_SEL_W::new(self)
     }
-    #[doc = "Bits 0:15"]
+    #[doc = "Bits 20:21"]
     #[inline(always)]
-    pub fn adpll_test_out(&mut self) -> ADPLL_TEST_OUT_W {
-        ADPLL_TEST_OUT_W { w: self }
+    pub fn adpll_test_start_sel(&mut self) -> ADPLL_TEST_START_SEL_W<20> {
+        ADPLL_TEST_START_SEL_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn adpll_test_en(&mut self) -> ADPLL_TEST_EN_W<24> {
+        ADPLL_TEST_EN_W::new(self)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn adpll_test_start(&mut self) -> ADPLL_TEST_START_W<25> {
+        ADPLL_TEST_START_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

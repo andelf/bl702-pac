@@ -34,300 +34,108 @@ impl From<crate::W<EP4_CONFIG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `sts_ep4_rdy` reader - "]
-pub struct STS_EP4_RDY_R(crate::FieldReader<bool, bool>);
-impl STS_EP4_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_EP4_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_EP4_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_ep4_rdy` writer - "]
-pub struct STS_EP4_RDY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_EP4_RDY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 19)) | ((value as u32 & 0x01) << 19);
-        self.w
-    }
-}
-#[doc = "Field `cr_ep4_rdy` reader - "]
-pub struct CR_EP4_RDY_R(crate::FieldReader<bool, bool>);
-impl CR_EP4_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_EP4_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_ep4_rdy` writer - "]
-pub struct CR_EP4_RDY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_RDY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 18)) | ((value as u32 & 0x01) << 18);
-        self.w
-    }
-}
-#[doc = "Field `cr_ep4_nack` reader - "]
-pub struct CR_EP4_NACK_R(crate::FieldReader<bool, bool>);
-impl CR_EP4_NACK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_EP4_NACK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_NACK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_ep4_nack` writer - "]
-pub struct CR_EP4_NACK_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_NACK_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `cr_ep4_stall` reader - "]
-pub struct CR_EP4_STALL_R(crate::FieldReader<bool, bool>);
-impl CR_EP4_STALL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_EP4_STALL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_STALL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_ep4_stall` writer - "]
-pub struct CR_EP4_STALL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_STALL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_ep4_type` reader - "]
-pub struct CR_EP4_TYPE_R(crate::FieldReader<u8, u8>);
-impl CR_EP4_TYPE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_EP4_TYPE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_TYPE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_ep4_type` writer - "]
-pub struct CR_EP4_TYPE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_TYPE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 13)) | ((value as u32 & 0x07) << 13);
-        self.w
-    }
-}
-#[doc = "Field `cr_ep4_dir` reader - "]
-pub struct CR_EP4_DIR_R(crate::FieldReader<u8, u8>);
-impl CR_EP4_DIR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_EP4_DIR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_DIR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_ep4_dir` writer - "]
-pub struct CR_EP4_DIR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_DIR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 11)) | ((value as u32 & 0x03) << 11);
-        self.w
-    }
-}
 #[doc = "Field `cr_ep4_size` reader - "]
-pub struct CR_EP4_SIZE_R(crate::FieldReader<u16, u16>);
-impl CR_EP4_SIZE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_EP4_SIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_EP4_SIZE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_EP4_SIZE_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cr_ep4_size` writer - "]
-pub struct CR_EP4_SIZE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_EP4_SIZE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07ff) | (value as u32 & 0x07ff);
-        self.w
-    }
-}
+pub type CR_EP4_SIZE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EP4_CONFIG_SPEC, u16, u16, 11, O>;
+#[doc = "Field `cr_ep4_dir` reader - "]
+pub type CR_EP4_DIR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_ep4_dir` writer - "]
+pub type CR_EP4_DIR_W<'a, const O: u8> = crate::FieldWriter<'a, u32, EP4_CONFIG_SPEC, u8, u8, 2, O>;
+#[doc = "Field `cr_ep4_type` reader - "]
+pub type CR_EP4_TYPE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_ep4_type` writer - "]
+pub type CR_EP4_TYPE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EP4_CONFIG_SPEC, u8, u8, 3, O>;
+#[doc = "Field `cr_ep4_stall` reader - "]
+pub type CR_EP4_STALL_R = crate::BitReader<bool>;
+#[doc = "Field `cr_ep4_stall` writer - "]
+pub type CR_EP4_STALL_W<'a, const O: u8> = crate::BitWriter<'a, u32, EP4_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_ep4_nack` reader - "]
+pub type CR_EP4_NACK_R = crate::BitReader<bool>;
+#[doc = "Field `cr_ep4_nack` writer - "]
+pub type CR_EP4_NACK_W<'a, const O: u8> = crate::BitWriter<'a, u32, EP4_CONFIG_SPEC, bool, O>;
+#[doc = "Field `cr_ep4_rdy` reader - "]
+pub type CR_EP4_RDY_R = crate::BitReader<bool>;
+#[doc = "Field `cr_ep4_rdy` writer - "]
+pub type CR_EP4_RDY_W<'a, const O: u8> = crate::BitWriter<'a, u32, EP4_CONFIG_SPEC, bool, O>;
+#[doc = "Field `sts_ep4_rdy` reader - "]
+pub type STS_EP4_RDY_R = crate::BitReader<bool>;
+#[doc = "Field `sts_ep4_rdy` writer - "]
+pub type STS_EP4_RDY_W<'a, const O: u8> = crate::BitWriter<'a, u32, EP4_CONFIG_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn sts_ep4_rdy(&self) -> STS_EP4_RDY_R {
-        STS_EP4_RDY_R::new(((self.bits >> 19) & 0x01) != 0)
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn cr_ep4_rdy(&self) -> CR_EP4_RDY_R {
-        CR_EP4_RDY_R::new(((self.bits >> 18) & 0x01) != 0)
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn cr_ep4_nack(&self) -> CR_EP4_NACK_R {
-        CR_EP4_NACK_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn cr_ep4_stall(&self) -> CR_EP4_STALL_R {
-        CR_EP4_STALL_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bits 13:15"]
-    #[inline(always)]
-    pub fn cr_ep4_type(&self) -> CR_EP4_TYPE_R {
-        CR_EP4_TYPE_R::new(((self.bits >> 13) & 0x07) as u8)
-    }
-    #[doc = "Bits 11:12"]
-    #[inline(always)]
-    pub fn cr_ep4_dir(&self) -> CR_EP4_DIR_R {
-        CR_EP4_DIR_R::new(((self.bits >> 11) & 0x03) as u8)
-    }
     #[doc = "Bits 0:10"]
     #[inline(always)]
     pub fn cr_ep4_size(&self) -> CR_EP4_SIZE_R {
         CR_EP4_SIZE_R::new((self.bits & 0x07ff) as u16)
     }
-}
-impl W {
-    #[doc = "Bit 19"]
+    #[doc = "Bits 11:12"]
     #[inline(always)]
-    pub fn sts_ep4_rdy(&mut self) -> STS_EP4_RDY_W {
-        STS_EP4_RDY_W { w: self }
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn cr_ep4_rdy(&mut self) -> CR_EP4_RDY_W {
-        CR_EP4_RDY_W { w: self }
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn cr_ep4_nack(&mut self) -> CR_EP4_NACK_W {
-        CR_EP4_NACK_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn cr_ep4_stall(&mut self) -> CR_EP4_STALL_W {
-        CR_EP4_STALL_W { w: self }
+    pub fn cr_ep4_dir(&self) -> CR_EP4_DIR_R {
+        CR_EP4_DIR_R::new(((self.bits >> 11) & 3) as u8)
     }
     #[doc = "Bits 13:15"]
     #[inline(always)]
-    pub fn cr_ep4_type(&mut self) -> CR_EP4_TYPE_W {
-        CR_EP4_TYPE_W { w: self }
+    pub fn cr_ep4_type(&self) -> CR_EP4_TYPE_R {
+        CR_EP4_TYPE_R::new(((self.bits >> 13) & 7) as u8)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn cr_ep4_stall(&self) -> CR_EP4_STALL_R {
+        CR_EP4_STALL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn cr_ep4_nack(&self) -> CR_EP4_NACK_R {
+        CR_EP4_NACK_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn cr_ep4_rdy(&self) -> CR_EP4_RDY_R {
+        CR_EP4_RDY_R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn sts_ep4_rdy(&self) -> STS_EP4_RDY_R {
+        STS_EP4_RDY_R::new(((self.bits >> 19) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:10"]
+    #[inline(always)]
+    pub fn cr_ep4_size(&mut self) -> CR_EP4_SIZE_W<0> {
+        CR_EP4_SIZE_W::new(self)
     }
     #[doc = "Bits 11:12"]
     #[inline(always)]
-    pub fn cr_ep4_dir(&mut self) -> CR_EP4_DIR_W {
-        CR_EP4_DIR_W { w: self }
+    pub fn cr_ep4_dir(&mut self) -> CR_EP4_DIR_W<11> {
+        CR_EP4_DIR_W::new(self)
     }
-    #[doc = "Bits 0:10"]
+    #[doc = "Bits 13:15"]
     #[inline(always)]
-    pub fn cr_ep4_size(&mut self) -> CR_EP4_SIZE_W {
-        CR_EP4_SIZE_W { w: self }
+    pub fn cr_ep4_type(&mut self) -> CR_EP4_TYPE_W<13> {
+        CR_EP4_TYPE_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn cr_ep4_stall(&mut self) -> CR_EP4_STALL_W<16> {
+        CR_EP4_STALL_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn cr_ep4_nack(&mut self) -> CR_EP4_NACK_W<17> {
+        CR_EP4_NACK_W::new(self)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn cr_ep4_rdy(&mut self) -> CR_EP4_RDY_W<18> {
+        CR_EP4_RDY_W::new(self)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn sts_ep4_rdy(&mut self) -> STS_EP4_RDY_W<19> {
+        STS_EP4_RDY_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

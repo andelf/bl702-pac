@@ -35,31 +35,10 @@ impl From<crate::W<SPI_PRD_1_SPEC>> for W {
     }
 }
 #[doc = "Field `cr_spi_prd_i` reader - "]
-pub struct CR_SPI_PRD_I_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_PRD_I_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_PRD_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_PRD_I_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_SPI_PRD_I_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cr_spi_prd_i` writer - "]
-pub struct CR_SPI_PRD_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_SPI_PRD_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type CR_SPI_PRD_I_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SPI_PRD_1_SPEC, u8, u8, 8, O>;
 impl R {
     #[doc = "Bits 0:7"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn cr_spi_prd_i(&mut self) -> CR_SPI_PRD_I_W {
-        CR_SPI_PRD_I_W { w: self }
+    pub fn cr_spi_prd_i(&mut self) -> CR_SPI_PRD_I_W<0> {
+        CR_SPI_PRD_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,80 +34,36 @@ impl From<crate::W<MAC_ADDR1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MAC_B0` reader - "]
-pub struct MAC_B0_R(crate::FieldReader<u8, u8>);
-impl MAC_B0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        MAC_B0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MAC_B0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `MAC_B0` writer - "]
-pub struct MAC_B0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MAC_B0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 8)) | ((value as u32 & 0xff) << 8);
-        self.w
-    }
-}
 #[doc = "Field `MAC_B1` reader - "]
-pub struct MAC_B1_R(crate::FieldReader<u8, u8>);
-impl MAC_B1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        MAC_B1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for MAC_B1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type MAC_B1_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `MAC_B1` writer - "]
-pub struct MAC_B1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> MAC_B1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type MAC_B1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MAC_ADDR1_SPEC, u8, u8, 8, O>;
+#[doc = "Field `MAC_B0` reader - "]
+pub type MAC_B0_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `MAC_B0` writer - "]
+pub type MAC_B0_W<'a, const O: u8> = crate::FieldWriter<'a, u32, MAC_ADDR1_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 8:15"]
-    #[inline(always)]
-    pub fn mac_b0(&self) -> MAC_B0_R {
-        MAC_B0_R::new(((self.bits >> 8) & 0xff) as u8)
-    }
     #[doc = "Bits 0:7"]
     #[inline(always)]
     pub fn mac_b1(&self) -> MAC_B1_R {
         MAC_B1_R::new((self.bits & 0xff) as u8)
     }
-}
-impl W {
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn mac_b0(&mut self) -> MAC_B0_W {
-        MAC_B0_W { w: self }
+    pub fn mac_b0(&self) -> MAC_B0_R {
+        MAC_B0_R::new(((self.bits >> 8) & 0xff) as u8)
     }
+}
+impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn mac_b1(&mut self) -> MAC_B1_W {
-        MAC_B1_W { w: self }
+    pub fn mac_b1(&mut self) -> MAC_B1_W<0> {
+        MAC_B1_W::new(self)
+    }
+    #[doc = "Bits 8:15"]
+    #[inline(always)]
+    pub fn mac_b0(&mut self) -> MAC_B0_W<8> {
+        MAC_B0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

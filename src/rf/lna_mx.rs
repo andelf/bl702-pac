@@ -34,368 +34,148 @@ impl From<crate::W<LNA_MX_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `lna_bm_hw` reader - "]
-pub struct LNA_BM_HW_R(crate::FieldReader<u8, u8>);
-impl LNA_BM_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_BM_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_BM_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_bm_hw` writer - "]
-pub struct LNA_BM_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_BM_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 28)) | ((value as u32 & 0x0f) << 28);
-        self.w
-    }
-}
-#[doc = "Field `lna_bm_hg` reader - "]
-pub struct LNA_BM_HG_R(crate::FieldReader<u8, u8>);
-impl LNA_BM_HG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_BM_HG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_BM_HG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_bm_hg` writer - "]
-pub struct LNA_BM_HG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_BM_HG_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 24)) | ((value as u32 & 0x0f) << 24);
-        self.w
-    }
-}
-#[doc = "Field `lna_bm_lg` reader - "]
-pub struct LNA_BM_LG_R(crate::FieldReader<u8, u8>);
-impl LNA_BM_LG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_BM_LG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_BM_LG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_bm_lg` writer - "]
-pub struct LNA_BM_LG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_BM_LG_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 20)) | ((value as u32 & 0x0f) << 20);
-        self.w
-    }
-}
-#[doc = "Field `lna_cap_lg` reader - "]
-pub struct LNA_CAP_LG_R(crate::FieldReader<u8, u8>);
-impl LNA_CAP_LG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_CAP_LG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_CAP_LG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_cap_lg` writer - "]
-pub struct LNA_CAP_LG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_CAP_LG_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 18)) | ((value as u32 & 0x03) << 18);
-        self.w
-    }
-}
-#[doc = "Field `lna_cap_match` reader - "]
-pub struct LNA_CAP_MATCH_R(crate::FieldReader<u8, u8>);
-impl LNA_CAP_MATCH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_CAP_MATCH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_CAP_MATCH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_cap_match` writer - "]
-pub struct LNA_CAP_MATCH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_CAP_MATCH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 15)) | ((value as u32 & 0x07) << 15);
-        self.w
-    }
-}
-#[doc = "Field `lna_lg_gsel` reader - "]
-pub struct LNA_LG_GSEL_R(crate::FieldReader<u8, u8>);
-impl LNA_LG_GSEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_LG_GSEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_LG_GSEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_lg_gsel` writer - "]
-pub struct LNA_LG_GSEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_LG_GSEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 12)) | ((value as u32 & 0x07) << 12);
-        self.w
-    }
-}
-#[doc = "Field `lna_load_csw` reader - "]
-pub struct LNA_LOAD_CSW_R(crate::FieldReader<u8, u8>);
-impl LNA_LOAD_CSW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_LOAD_CSW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_LOAD_CSW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_load_csw` writer - "]
-pub struct LNA_LOAD_CSW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_LOAD_CSW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `lna_vdd13_sel` reader - "]
-pub struct LNA_VDD13_SEL_R(crate::FieldReader<u8, u8>);
-impl LNA_VDD13_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_VDD13_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_VDD13_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_vdd13_sel` writer - "]
-pub struct LNA_VDD13_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_VDD13_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 6)) | ((value as u32 & 0x03) << 6);
-        self.w
-    }
-}
-#[doc = "Field `lna_rfb_match` reader - "]
-pub struct LNA_RFB_MATCH_R(crate::FieldReader<u8, u8>);
-impl LNA_RFB_MATCH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_RFB_MATCH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_RFB_MATCH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_rfb_match` writer - "]
-pub struct LNA_RFB_MATCH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LNA_RFB_MATCH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 3)) | ((value as u32 & 0x07) << 3);
-        self.w
-    }
-}
 #[doc = "Field `rmx_bm` reader - "]
-pub struct RMX_BM_R(crate::FieldReader<u8, u8>);
-impl RMX_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RMX_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RMX_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RMX_BM_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `rmx_bm` writer - "]
-pub struct RMX_BM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RMX_BM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07) | (value as u32 & 0x07);
-        self.w
-    }
-}
+pub type RMX_BM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `lna_rfb_match` reader - "]
+pub type LNA_RFB_MATCH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_rfb_match` writer - "]
+pub type LNA_RFB_MATCH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `lna_vdd13_sel` reader - "]
+pub type LNA_VDD13_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_vdd13_sel` writer - "]
+pub type LNA_VDD13_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lna_load_csw` reader - "]
+pub type LNA_LOAD_CSW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_load_csw` writer - "]
+pub type LNA_LOAD_CSW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 4, O>;
+#[doc = "Field `lna_lg_gsel` reader - "]
+pub type LNA_LG_GSEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_lg_gsel` writer - "]
+pub type LNA_LG_GSEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `lna_cap_match` reader - "]
+pub type LNA_CAP_MATCH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_cap_match` writer - "]
+pub type LNA_CAP_MATCH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 3, O>;
+#[doc = "Field `lna_cap_lg` reader - "]
+pub type LNA_CAP_LG_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_cap_lg` writer - "]
+pub type LNA_CAP_LG_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 2, O>;
+#[doc = "Field `lna_bm_lg` reader - "]
+pub type LNA_BM_LG_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_bm_lg` writer - "]
+pub type LNA_BM_LG_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 4, O>;
+#[doc = "Field `lna_bm_hg` reader - "]
+pub type LNA_BM_HG_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_bm_hg` writer - "]
+pub type LNA_BM_HG_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 4, O>;
+#[doc = "Field `lna_bm_hw` reader - "]
+pub type LNA_BM_HW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `lna_bm_hw` writer - "]
+pub type LNA_BM_HW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, LNA_MX_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 28:31"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn lna_bm_hw(&self) -> LNA_BM_HW_R {
-        LNA_BM_HW_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn rmx_bm(&self) -> RMX_BM_R {
+        RMX_BM_R::new((self.bits & 7) as u8)
     }
-    #[doc = "Bits 24:27"]
+    #[doc = "Bits 3:5"]
     #[inline(always)]
-    pub fn lna_bm_hg(&self) -> LNA_BM_HG_R {
-        LNA_BM_HG_R::new(((self.bits >> 24) & 0x0f) as u8)
+    pub fn lna_rfb_match(&self) -> LNA_RFB_MATCH_R {
+        LNA_RFB_MATCH_R::new(((self.bits >> 3) & 7) as u8)
     }
-    #[doc = "Bits 20:23"]
+    #[doc = "Bits 6:7"]
     #[inline(always)]
-    pub fn lna_bm_lg(&self) -> LNA_BM_LG_R {
-        LNA_BM_LG_R::new(((self.bits >> 20) & 0x0f) as u8)
-    }
-    #[doc = "Bits 18:19"]
-    #[inline(always)]
-    pub fn lna_cap_lg(&self) -> LNA_CAP_LG_R {
-        LNA_CAP_LG_R::new(((self.bits >> 18) & 0x03) as u8)
-    }
-    #[doc = "Bits 15:17"]
-    #[inline(always)]
-    pub fn lna_cap_match(&self) -> LNA_CAP_MATCH_R {
-        LNA_CAP_MATCH_R::new(((self.bits >> 15) & 0x07) as u8)
-    }
-    #[doc = "Bits 12:14"]
-    #[inline(always)]
-    pub fn lna_lg_gsel(&self) -> LNA_LG_GSEL_R {
-        LNA_LG_GSEL_R::new(((self.bits >> 12) & 0x07) as u8)
+    pub fn lna_vdd13_sel(&self) -> LNA_VDD13_SEL_R {
+        LNA_VDD13_SEL_R::new(((self.bits >> 6) & 3) as u8)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
     pub fn lna_load_csw(&self) -> LNA_LOAD_CSW_R {
         LNA_LOAD_CSW_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bits 6:7"]
+    #[doc = "Bits 12:14"]
     #[inline(always)]
-    pub fn lna_vdd13_sel(&self) -> LNA_VDD13_SEL_R {
-        LNA_VDD13_SEL_R::new(((self.bits >> 6) & 0x03) as u8)
-    }
-    #[doc = "Bits 3:5"]
-    #[inline(always)]
-    pub fn lna_rfb_match(&self) -> LNA_RFB_MATCH_R {
-        LNA_RFB_MATCH_R::new(((self.bits >> 3) & 0x07) as u8)
-    }
-    #[doc = "Bits 0:2"]
-    #[inline(always)]
-    pub fn rmx_bm(&self) -> RMX_BM_R {
-        RMX_BM_R::new((self.bits & 0x07) as u8)
-    }
-}
-impl W {
-    #[doc = "Bits 28:31"]
-    #[inline(always)]
-    pub fn lna_bm_hw(&mut self) -> LNA_BM_HW_W {
-        LNA_BM_HW_W { w: self }
-    }
-    #[doc = "Bits 24:27"]
-    #[inline(always)]
-    pub fn lna_bm_hg(&mut self) -> LNA_BM_HG_W {
-        LNA_BM_HG_W { w: self }
-    }
-    #[doc = "Bits 20:23"]
-    #[inline(always)]
-    pub fn lna_bm_lg(&mut self) -> LNA_BM_LG_W {
-        LNA_BM_LG_W { w: self }
-    }
-    #[doc = "Bits 18:19"]
-    #[inline(always)]
-    pub fn lna_cap_lg(&mut self) -> LNA_CAP_LG_W {
-        LNA_CAP_LG_W { w: self }
+    pub fn lna_lg_gsel(&self) -> LNA_LG_GSEL_R {
+        LNA_LG_GSEL_R::new(((self.bits >> 12) & 7) as u8)
     }
     #[doc = "Bits 15:17"]
     #[inline(always)]
-    pub fn lna_cap_match(&mut self) -> LNA_CAP_MATCH_W {
-        LNA_CAP_MATCH_W { w: self }
+    pub fn lna_cap_match(&self) -> LNA_CAP_MATCH_R {
+        LNA_CAP_MATCH_R::new(((self.bits >> 15) & 7) as u8)
     }
-    #[doc = "Bits 12:14"]
+    #[doc = "Bits 18:19"]
     #[inline(always)]
-    pub fn lna_lg_gsel(&mut self) -> LNA_LG_GSEL_W {
-        LNA_LG_GSEL_W { w: self }
+    pub fn lna_cap_lg(&self) -> LNA_CAP_LG_R {
+        LNA_CAP_LG_R::new(((self.bits >> 18) & 3) as u8)
     }
-    #[doc = "Bits 8:11"]
+    #[doc = "Bits 20:23"]
     #[inline(always)]
-    pub fn lna_load_csw(&mut self) -> LNA_LOAD_CSW_W {
-        LNA_LOAD_CSW_W { w: self }
+    pub fn lna_bm_lg(&self) -> LNA_BM_LG_R {
+        LNA_BM_LG_R::new(((self.bits >> 20) & 0x0f) as u8)
     }
-    #[doc = "Bits 6:7"]
+    #[doc = "Bits 24:27"]
     #[inline(always)]
-    pub fn lna_vdd13_sel(&mut self) -> LNA_VDD13_SEL_W {
-        LNA_VDD13_SEL_W { w: self }
+    pub fn lna_bm_hg(&self) -> LNA_BM_HG_R {
+        LNA_BM_HG_R::new(((self.bits >> 24) & 0x0f) as u8)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn lna_bm_hw(&self) -> LNA_BM_HW_R {
+        LNA_BM_HW_R::new(((self.bits >> 28) & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:2"]
+    #[inline(always)]
+    pub fn rmx_bm(&mut self) -> RMX_BM_W<0> {
+        RMX_BM_W::new(self)
     }
     #[doc = "Bits 3:5"]
     #[inline(always)]
-    pub fn lna_rfb_match(&mut self) -> LNA_RFB_MATCH_W {
-        LNA_RFB_MATCH_W { w: self }
+    pub fn lna_rfb_match(&mut self) -> LNA_RFB_MATCH_W<3> {
+        LNA_RFB_MATCH_W::new(self)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bits 6:7"]
     #[inline(always)]
-    pub fn rmx_bm(&mut self) -> RMX_BM_W {
-        RMX_BM_W { w: self }
+    pub fn lna_vdd13_sel(&mut self) -> LNA_VDD13_SEL_W<6> {
+        LNA_VDD13_SEL_W::new(self)
+    }
+    #[doc = "Bits 8:11"]
+    #[inline(always)]
+    pub fn lna_load_csw(&mut self) -> LNA_LOAD_CSW_W<8> {
+        LNA_LOAD_CSW_W::new(self)
+    }
+    #[doc = "Bits 12:14"]
+    #[inline(always)]
+    pub fn lna_lg_gsel(&mut self) -> LNA_LG_GSEL_W<12> {
+        LNA_LG_GSEL_W::new(self)
+    }
+    #[doc = "Bits 15:17"]
+    #[inline(always)]
+    pub fn lna_cap_match(&mut self) -> LNA_CAP_MATCH_W<15> {
+        LNA_CAP_MATCH_W::new(self)
+    }
+    #[doc = "Bits 18:19"]
+    #[inline(always)]
+    pub fn lna_cap_lg(&mut self) -> LNA_CAP_LG_W<18> {
+        LNA_CAP_LG_W::new(self)
+    }
+    #[doc = "Bits 20:23"]
+    #[inline(always)]
+    pub fn lna_bm_lg(&mut self) -> LNA_BM_LG_W<20> {
+        LNA_BM_LG_W::new(self)
+    }
+    #[doc = "Bits 24:27"]
+    #[inline(always)]
+    pub fn lna_bm_hg(&mut self) -> LNA_BM_HG_W<24> {
+        LNA_BM_HG_W::new(self)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn lna_bm_hw(&mut self) -> LNA_BM_HW_W<28> {
+        LNA_BM_HW_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

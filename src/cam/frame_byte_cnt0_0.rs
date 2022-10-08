@@ -35,43 +35,22 @@ impl From<crate::W<FRAME_BYTE_CNT0_0_SPEC>> for W {
     }
 }
 #[doc = "Field `frame_byte_cnt_0_0` reader - "]
-pub struct FRAME_BYTE_CNT_0_0_R(crate::FieldReader<u32, u32>);
-impl FRAME_BYTE_CNT_0_0_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        FRAME_BYTE_CNT_0_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FRAME_BYTE_CNT_0_0_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FRAME_BYTE_CNT_0_0_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `frame_byte_cnt_0_0` writer - "]
-pub struct FRAME_BYTE_CNT_0_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FRAME_BYTE_CNT_0_0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type FRAME_BYTE_CNT_0_0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, FRAME_BYTE_CNT0_0_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn frame_byte_cnt_0_0(&self) -> FRAME_BYTE_CNT_0_0_R {
-        FRAME_BYTE_CNT_0_0_R::new((self.bits & 0xffff_ffff) as u32)
+        FRAME_BYTE_CNT_0_0_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn frame_byte_cnt_0_0(&mut self) -> FRAME_BYTE_CNT_0_0_W {
-        FRAME_BYTE_CNT_0_0_W { w: self }
+    pub fn frame_byte_cnt_0_0(&mut self) -> FRAME_BYTE_CNT_0_0_W<0> {
+        FRAME_BYTE_CNT_0_0_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

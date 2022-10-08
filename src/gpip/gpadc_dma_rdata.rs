@@ -34,80 +34,38 @@ impl From<crate::W<GPADC_DMA_RDATA_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `rsvd_31_26` reader - "]
-pub struct RSVD_31_26_R(crate::FieldReader<u8, u8>);
-impl RSVD_31_26_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RSVD_31_26_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_31_26_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_31_26` writer - "]
-pub struct RSVD_31_26_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RSVD_31_26_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x3f << 26)) | ((value as u32 & 0x3f) << 26);
-        self.w
-    }
-}
 #[doc = "Field `gpadc_dma_rdata` reader - "]
-pub struct GPADC_DMA_RDATA_R(crate::FieldReader<u32, u32>);
-impl GPADC_DMA_RDATA_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        GPADC_DMA_RDATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_DMA_RDATA_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GPADC_DMA_RDATA_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `gpadc_dma_rdata` writer - "]
-pub struct GPADC_DMA_RDATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPADC_DMA_RDATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03ff_ffff) | (value as u32 & 0x03ff_ffff);
-        self.w
-    }
-}
+pub type GPADC_DMA_RDATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPADC_DMA_RDATA_SPEC, u32, u32, 26, O>;
+#[doc = "Field `rsvd_31_26` reader - "]
+pub type RSVD_31_26_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `rsvd_31_26` writer - "]
+pub type RSVD_31_26_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPADC_DMA_RDATA_SPEC, u8, u8, 6, O>;
 impl R {
-    #[doc = "Bits 26:31"]
-    #[inline(always)]
-    pub fn rsvd_31_26(&self) -> RSVD_31_26_R {
-        RSVD_31_26_R::new(((self.bits >> 26) & 0x3f) as u8)
-    }
     #[doc = "Bits 0:25"]
     #[inline(always)]
     pub fn gpadc_dma_rdata(&self) -> GPADC_DMA_RDATA_R {
         GPADC_DMA_RDATA_R::new((self.bits & 0x03ff_ffff) as u32)
     }
-}
-impl W {
     #[doc = "Bits 26:31"]
     #[inline(always)]
-    pub fn rsvd_31_26(&mut self) -> RSVD_31_26_W {
-        RSVD_31_26_W { w: self }
+    pub fn rsvd_31_26(&self) -> RSVD_31_26_R {
+        RSVD_31_26_R::new(((self.bits >> 26) & 0x3f) as u8)
     }
+}
+impl W {
     #[doc = "Bits 0:25"]
     #[inline(always)]
-    pub fn gpadc_dma_rdata(&mut self) -> GPADC_DMA_RDATA_W {
-        GPADC_DMA_RDATA_W { w: self }
+    pub fn gpadc_dma_rdata(&mut self) -> GPADC_DMA_RDATA_W<0> {
+        GPADC_DMA_RDATA_W::new(self)
+    }
+    #[doc = "Bits 26:31"]
+    #[inline(always)]
+    pub fn rsvd_31_26(&mut self) -> RSVD_31_26_W<26> {
+        RSVD_31_26_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

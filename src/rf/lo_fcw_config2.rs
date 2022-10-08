@@ -35,31 +35,10 @@ impl From<crate::W<LO_FCW_CONFIG2_SPEC>> for W {
     }
 }
 #[doc = "Field `lo_fcw_hw` reader - "]
-pub struct LO_FCW_HW_R(crate::FieldReader<u32, u32>);
-impl LO_FCW_HW_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        LO_FCW_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_FCW_HW_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type LO_FCW_HW_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `lo_fcw_hw` writer - "]
-pub struct LO_FCW_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> LO_FCW_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01ff_ffff) | (value as u32 & 0x01ff_ffff);
-        self.w
-    }
-}
+pub type LO_FCW_HW_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, LO_FCW_CONFIG2_SPEC, u32, u32, 25, O>;
 impl R {
     #[doc = "Bits 0:24"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:24"]
     #[inline(always)]
-    pub fn lo_fcw_hw(&mut self) -> LO_FCW_HW_W {
-        LO_FCW_HW_W { w: self }
+    pub fn lo_fcw_hw(&mut self) -> LO_FCW_HW_W<0> {
+        LO_FCW_HW_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,362 +34,134 @@ impl From<crate::W<PA_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pa_force_short_open` reader - "]
-pub struct PA_FORCE_SHORT_OPEN_R(crate::FieldReader<bool, bool>);
-impl PA_FORCE_SHORT_OPEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_FORCE_SHORT_OPEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_FORCE_SHORT_OPEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_force_short_open` writer - "]
-pub struct PA_FORCE_SHORT_OPEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_FORCE_SHORT_OPEN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 30)) | ((value as u32 & 0x01) << 30);
-        self.w
-    }
-}
-#[doc = "Field `pa_hp_en` reader - "]
-pub struct PA_HP_EN_R(crate::FieldReader<bool, bool>);
-impl PA_HP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_HP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_HP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_hp_en` writer - "]
-pub struct PA_HP_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_HP_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 29)) | ((value as u32 & 0x01) << 29);
-        self.w
-    }
-}
-#[doc = "Field `pa_lp_en` reader - "]
-pub struct PA_LP_EN_R(crate::FieldReader<bool, bool>);
-impl PA_LP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_LP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_LP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_lp_en` writer - "]
-pub struct PA_LP_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_LP_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `pa_ldo_bm` reader - "]
-pub struct PA_LDO_BM_R(crate::FieldReader<u8, u8>);
-impl PA_LDO_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_LDO_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_LDO_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_ldo_bm` writer - "]
-pub struct PA_LDO_BM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_LDO_BM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 24)) | ((value as u32 & 0x07) << 24);
-        self.w
-    }
-}
-#[doc = "Field `pa_vdd11_sel` reader - "]
-pub struct PA_VDD11_SEL_R(crate::FieldReader<u8, u8>);
-impl PA_VDD11_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_VDD11_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_VDD11_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_vdd11_sel` writer - "]
-pub struct PA_VDD11_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_VDD11_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 20)) | ((value as u32 & 0x07) << 20);
-        self.w
-    }
-}
-#[doc = "Field `pa_para_cs` reader - "]
-pub struct PA_PARA_CS_R(crate::FieldReader<u8, u8>);
-impl PA_PARA_CS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_PARA_CS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_PARA_CS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_para_cs` writer - "]
-pub struct PA_PARA_CS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_PARA_CS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 12)) | ((value as u32 & 0x0f) << 12);
-        self.w
-    }
-}
-#[doc = "Field `pa_seri_cs_hw` reader - "]
-pub struct PA_SERI_CS_HW_R(crate::FieldReader<u8, u8>);
-impl PA_SERI_CS_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_SERI_CS_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_SERI_CS_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_seri_cs_hw` writer - "]
-pub struct PA_SERI_CS_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_SERI_CS_HW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `pa_seri_cs_rx` reader - "]
-pub struct PA_SERI_CS_RX_R(crate::FieldReader<u8, u8>);
-impl PA_SERI_CS_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_SERI_CS_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_SERI_CS_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_seri_cs_rx` writer - "]
-pub struct PA_SERI_CS_RX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_SERI_CS_RX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 4)) | ((value as u32 & 0x0f) << 4);
-        self.w
-    }
-}
 #[doc = "Field `pa_seri_cs_tx` reader - "]
-pub struct PA_SERI_CS_TX_R(crate::FieldReader<u8, u8>);
-impl PA_SERI_CS_TX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_SERI_CS_TX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_SERI_CS_TX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PA_SERI_CS_TX_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `pa_seri_cs_tx` writer - "]
-pub struct PA_SERI_CS_TX_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_SERI_CS_TX_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | (value as u32 & 0x0f);
-        self.w
-    }
-}
+pub type PA_SERI_CS_TX_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 4, O>;
+#[doc = "Field `pa_seri_cs_rx` reader - "]
+pub type PA_SERI_CS_RX_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_seri_cs_rx` writer - "]
+pub type PA_SERI_CS_RX_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 4, O>;
+#[doc = "Field `pa_seri_cs_hw` reader - "]
+pub type PA_SERI_CS_HW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_seri_cs_hw` writer - "]
+pub type PA_SERI_CS_HW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 4, O>;
+#[doc = "Field `pa_para_cs` reader - "]
+pub type PA_PARA_CS_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_para_cs` writer - "]
+pub type PA_PARA_CS_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 4, O>;
+#[doc = "Field `pa_vdd11_sel` reader - "]
+pub type PA_VDD11_SEL_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_vdd11_sel` writer - "]
+pub type PA_VDD11_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 3, O>;
+#[doc = "Field `pa_ldo_bm` reader - "]
+pub type PA_LDO_BM_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_ldo_bm` writer - "]
+pub type PA_LDO_BM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, PA_SPEC, u8, u8, 3, O>;
+#[doc = "Field `pa_lp_en` reader - "]
+pub type PA_LP_EN_R = crate::BitReader<bool>;
+#[doc = "Field `pa_lp_en` writer - "]
+pub type PA_LP_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, PA_SPEC, bool, O>;
+#[doc = "Field `pa_hp_en` reader - "]
+pub type PA_HP_EN_R = crate::BitReader<bool>;
+#[doc = "Field `pa_hp_en` writer - "]
+pub type PA_HP_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, PA_SPEC, bool, O>;
+#[doc = "Field `pa_force_short_open` reader - "]
+pub type PA_FORCE_SHORT_OPEN_R = crate::BitReader<bool>;
+#[doc = "Field `pa_force_short_open` writer - "]
+pub type PA_FORCE_SHORT_OPEN_W<'a, const O: u8> = crate::BitWriter<'a, u32, PA_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 30"]
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn pa_force_short_open(&self) -> PA_FORCE_SHORT_OPEN_R {
-        PA_FORCE_SHORT_OPEN_R::new(((self.bits >> 30) & 0x01) != 0)
-    }
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn pa_hp_en(&self) -> PA_HP_EN_R {
-        PA_HP_EN_R::new(((self.bits >> 29) & 0x01) != 0)
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn pa_lp_en(&self) -> PA_LP_EN_R {
-        PA_LP_EN_R::new(((self.bits >> 28) & 0x01) != 0)
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn pa_ldo_bm(&self) -> PA_LDO_BM_R {
-        PA_LDO_BM_R::new(((self.bits >> 24) & 0x07) as u8)
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn pa_vdd11_sel(&self) -> PA_VDD11_SEL_R {
-        PA_VDD11_SEL_R::new(((self.bits >> 20) & 0x07) as u8)
-    }
-    #[doc = "Bits 12:15"]
-    #[inline(always)]
-    pub fn pa_para_cs(&self) -> PA_PARA_CS_R {
-        PA_PARA_CS_R::new(((self.bits >> 12) & 0x0f) as u8)
-    }
-    #[doc = "Bits 8:11"]
-    #[inline(always)]
-    pub fn pa_seri_cs_hw(&self) -> PA_SERI_CS_HW_R {
-        PA_SERI_CS_HW_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn pa_seri_cs_tx(&self) -> PA_SERI_CS_TX_R {
+        PA_SERI_CS_TX_R::new((self.bits & 0x0f) as u8)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
     pub fn pa_seri_cs_rx(&self) -> PA_SERI_CS_RX_R {
         PA_SERI_CS_RX_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn pa_seri_cs_tx(&self) -> PA_SERI_CS_TX_R {
-        PA_SERI_CS_TX_R::new((self.bits & 0x0f) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 30"]
-    #[inline(always)]
-    pub fn pa_force_short_open(&mut self) -> PA_FORCE_SHORT_OPEN_W {
-        PA_FORCE_SHORT_OPEN_W { w: self }
-    }
-    #[doc = "Bit 29"]
-    #[inline(always)]
-    pub fn pa_hp_en(&mut self) -> PA_HP_EN_W {
-        PA_HP_EN_W { w: self }
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn pa_lp_en(&mut self) -> PA_LP_EN_W {
-        PA_LP_EN_W { w: self }
-    }
-    #[doc = "Bits 24:26"]
-    #[inline(always)]
-    pub fn pa_ldo_bm(&mut self) -> PA_LDO_BM_W {
-        PA_LDO_BM_W { w: self }
-    }
-    #[doc = "Bits 20:22"]
-    #[inline(always)]
-    pub fn pa_vdd11_sel(&mut self) -> PA_VDD11_SEL_W {
-        PA_VDD11_SEL_W { w: self }
+    pub fn pa_seri_cs_hw(&self) -> PA_SERI_CS_HW_R {
+        PA_SERI_CS_HW_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
-    pub fn pa_para_cs(&mut self) -> PA_PARA_CS_W {
-        PA_PARA_CS_W { w: self }
+    pub fn pa_para_cs(&self) -> PA_PARA_CS_R {
+        PA_PARA_CS_R::new(((self.bits >> 12) & 0x0f) as u8)
     }
-    #[doc = "Bits 8:11"]
+    #[doc = "Bits 20:22"]
     #[inline(always)]
-    pub fn pa_seri_cs_hw(&mut self) -> PA_SERI_CS_HW_W {
-        PA_SERI_CS_HW_W { w: self }
+    pub fn pa_vdd11_sel(&self) -> PA_VDD11_SEL_R {
+        PA_VDD11_SEL_R::new(((self.bits >> 20) & 7) as u8)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn pa_ldo_bm(&self) -> PA_LDO_BM_R {
+        PA_LDO_BM_R::new(((self.bits >> 24) & 7) as u8)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn pa_lp_en(&self) -> PA_LP_EN_R {
+        PA_LP_EN_R::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn pa_hp_en(&self) -> PA_HP_EN_R {
+        PA_HP_EN_R::new(((self.bits >> 29) & 1) != 0)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn pa_force_short_open(&self) -> PA_FORCE_SHORT_OPEN_R {
+        PA_FORCE_SHORT_OPEN_R::new(((self.bits >> 30) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3"]
+    #[inline(always)]
+    pub fn pa_seri_cs_tx(&mut self) -> PA_SERI_CS_TX_W<0> {
+        PA_SERI_CS_TX_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
-    pub fn pa_seri_cs_rx(&mut self) -> PA_SERI_CS_RX_W {
-        PA_SERI_CS_RX_W { w: self }
+    pub fn pa_seri_cs_rx(&mut self) -> PA_SERI_CS_RX_W<4> {
+        PA_SERI_CS_RX_W::new(self)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn pa_seri_cs_tx(&mut self) -> PA_SERI_CS_TX_W {
-        PA_SERI_CS_TX_W { w: self }
+    pub fn pa_seri_cs_hw(&mut self) -> PA_SERI_CS_HW_W<8> {
+        PA_SERI_CS_HW_W::new(self)
+    }
+    #[doc = "Bits 12:15"]
+    #[inline(always)]
+    pub fn pa_para_cs(&mut self) -> PA_PARA_CS_W<12> {
+        PA_PARA_CS_W::new(self)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn pa_vdd11_sel(&mut self) -> PA_VDD11_SEL_W<20> {
+        PA_VDD11_SEL_W::new(self)
+    }
+    #[doc = "Bits 24:26"]
+    #[inline(always)]
+    pub fn pa_ldo_bm(&mut self) -> PA_LDO_BM_W<24> {
+        PA_LDO_BM_W::new(self)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn pa_lp_en(&mut self) -> PA_LP_EN_W<28> {
+        PA_LP_EN_W::new(self)
+    }
+    #[doc = "Bit 29"]
+    #[inline(always)]
+    pub fn pa_hp_en(&mut self) -> PA_HP_EN_W<29> {
+        PA_HP_EN_W::new(self)
+    }
+    #[doc = "Bit 30"]
+    #[inline(always)]
+    pub fn pa_force_short_open(&mut self) -> PA_FORCE_SHORT_OPEN_W<30> {
+        PA_FORCE_SHORT_OPEN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

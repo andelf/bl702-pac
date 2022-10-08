@@ -35,43 +35,22 @@ impl From<crate::W<MJPEG_START_ADDR_9_SPEC>> for W {
     }
 }
 #[doc = "Field `frame_start_addr_9` reader - "]
-pub struct FRAME_START_ADDR_9_R(crate::FieldReader<u32, u32>);
-impl FRAME_START_ADDR_9_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        FRAME_START_ADDR_9_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FRAME_START_ADDR_9_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FRAME_START_ADDR_9_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `frame_start_addr_9` writer - "]
-pub struct FRAME_START_ADDR_9_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FRAME_START_ADDR_9_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type FRAME_START_ADDR_9_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_START_ADDR_9_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn frame_start_addr_9(&self) -> FRAME_START_ADDR_9_R {
-        FRAME_START_ADDR_9_R::new((self.bits & 0xffff_ffff) as u32)
+        FRAME_START_ADDR_9_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn frame_start_addr_9(&mut self) -> FRAME_START_ADDR_9_W {
-        FRAME_START_ADDR_9_W { w: self }
+    pub fn frame_start_addr_9(&mut self) -> FRAME_START_ADDR_9_W<0> {
+        FRAME_START_ADDR_9_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

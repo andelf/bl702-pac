@@ -34,560 +34,180 @@ impl From<crate::W<MBIST_STAT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `em_ram_mbist_fail` reader - "]
-pub struct EM_RAM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl EM_RAM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EM_RAM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EM_RAM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `em_ram_mbist_fail` writer - "]
-pub struct EM_RAM_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EM_RAM_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
-        self.w
-    }
-}
-#[doc = "Field `ocram_mbist_fail` reader - "]
-pub struct OCRAM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_fail` writer - "]
-pub struct OCRAM_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> OCRAM_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `tag_mbist_fail` reader - "]
-pub struct TAG_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_fail` writer - "]
-pub struct TAG_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TAG_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 19)) | ((value as u32 & 0x01) << 19);
-        self.w
-    }
-}
-#[doc = "Field `hsram_cache_mbist_fail` reader - "]
-pub struct HSRAM_CACHE_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl HSRAM_CACHE_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_CACHE_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_CACHE_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_cache_mbist_fail` writer - "]
-pub struct HSRAM_CACHE_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_CACHE_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 18)) | ((value as u32 & 0x01) << 18);
-        self.w
-    }
-}
-#[doc = "Field `hsram_mem_mbist_fail` reader - "]
-pub struct HSRAM_MEM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MEM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MEM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MEM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mem_mbist_fail` writer - "]
-pub struct HSRAM_MEM_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_MEM_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `irom_mbist_fail` reader - "]
-pub struct IROM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irom_mbist_fail` writer - "]
-pub struct IROM_MBIST_FAIL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IROM_MBIST_FAIL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `em_ram_mbist_done` reader - "]
-pub struct EM_RAM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl EM_RAM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EM_RAM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EM_RAM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `em_ram_mbist_done` writer - "]
-pub struct EM_RAM_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EM_RAM_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `ocram_mbist_done` reader - "]
-pub struct OCRAM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_done` writer - "]
-pub struct OCRAM_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> OCRAM_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `tag_mbist_done` reader - "]
-pub struct TAG_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_done` writer - "]
-pub struct TAG_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TAG_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `hsram_cache_mbist_done` reader - "]
-pub struct HSRAM_CACHE_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_CACHE_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_CACHE_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_CACHE_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_cache_mbist_done` writer - "]
-pub struct HSRAM_CACHE_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_CACHE_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `hsram_mem_mbist_done` reader - "]
-pub struct HSRAM_MEM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MEM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MEM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MEM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mem_mbist_done` writer - "]
-pub struct HSRAM_MEM_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HSRAM_MEM_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `irom_mbist_done` reader - "]
-pub struct IROM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type IROM_MBIST_DONE_R = crate::BitReader<bool>;
 #[doc = "Field `irom_mbist_done` writer - "]
-pub struct IROM_MBIST_DONE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IROM_MBIST_DONE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type IROM_MBIST_DONE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `hsram_mem_mbist_done` reader - "]
+pub type HSRAM_MEM_MBIST_DONE_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_mem_mbist_done` writer - "]
+pub type HSRAM_MEM_MBIST_DONE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `hsram_cache_mbist_done` reader - "]
+pub type HSRAM_CACHE_MBIST_DONE_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_cache_mbist_done` writer - "]
+pub type HSRAM_CACHE_MBIST_DONE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `tag_mbist_done` reader - "]
+pub type TAG_MBIST_DONE_R = crate::BitReader<bool>;
+#[doc = "Field `tag_mbist_done` writer - "]
+pub type TAG_MBIST_DONE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `ocram_mbist_done` reader - "]
+pub type OCRAM_MBIST_DONE_R = crate::BitReader<bool>;
+#[doc = "Field `ocram_mbist_done` writer - "]
+pub type OCRAM_MBIST_DONE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `em_ram_mbist_done` reader - "]
+pub type EM_RAM_MBIST_DONE_R = crate::BitReader<bool>;
+#[doc = "Field `em_ram_mbist_done` writer - "]
+pub type EM_RAM_MBIST_DONE_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `irom_mbist_fail` reader - "]
+pub type IROM_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `irom_mbist_fail` writer - "]
+pub type IROM_MBIST_FAIL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `hsram_mem_mbist_fail` reader - "]
+pub type HSRAM_MEM_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_mem_mbist_fail` writer - "]
+pub type HSRAM_MEM_MBIST_FAIL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `hsram_cache_mbist_fail` reader - "]
+pub type HSRAM_CACHE_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `hsram_cache_mbist_fail` writer - "]
+pub type HSRAM_CACHE_MBIST_FAIL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `tag_mbist_fail` reader - "]
+pub type TAG_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `tag_mbist_fail` writer - "]
+pub type TAG_MBIST_FAIL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `ocram_mbist_fail` reader - "]
+pub type OCRAM_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `ocram_mbist_fail` writer - "]
+pub type OCRAM_MBIST_FAIL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
+#[doc = "Field `em_ram_mbist_fail` reader - "]
+pub type EM_RAM_MBIST_FAIL_R = crate::BitReader<bool>;
+#[doc = "Field `em_ram_mbist_fail` writer - "]
+pub type EM_RAM_MBIST_FAIL_W<'a, const O: u8> = crate::BitWriter<'a, u32, MBIST_STAT_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 21"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn em_ram_mbist_fail(&self) -> EM_RAM_MBIST_FAIL_R {
-        EM_RAM_MBIST_FAIL_R::new(((self.bits >> 21) & 0x01) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn ocram_mbist_fail(&self) -> OCRAM_MBIST_FAIL_R {
-        OCRAM_MBIST_FAIL_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn tag_mbist_fail(&self) -> TAG_MBIST_FAIL_R {
-        TAG_MBIST_FAIL_R::new(((self.bits >> 19) & 0x01) != 0)
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn hsram_cache_mbist_fail(&self) -> HSRAM_CACHE_MBIST_FAIL_R {
-        HSRAM_CACHE_MBIST_FAIL_R::new(((self.bits >> 18) & 0x01) != 0)
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn hsram_mem_mbist_fail(&self) -> HSRAM_MEM_MBIST_FAIL_R {
-        HSRAM_MEM_MBIST_FAIL_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn irom_mbist_fail(&self) -> IROM_MBIST_FAIL_R {
-        IROM_MBIST_FAIL_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn em_ram_mbist_done(&self) -> EM_RAM_MBIST_DONE_R {
-        EM_RAM_MBIST_DONE_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn ocram_mbist_done(&self) -> OCRAM_MBIST_DONE_R {
-        OCRAM_MBIST_DONE_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn tag_mbist_done(&self) -> TAG_MBIST_DONE_R {
-        TAG_MBIST_DONE_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn hsram_cache_mbist_done(&self) -> HSRAM_CACHE_MBIST_DONE_R {
-        HSRAM_CACHE_MBIST_DONE_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn irom_mbist_done(&self) -> IROM_MBIST_DONE_R {
+        IROM_MBIST_DONE_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn hsram_mem_mbist_done(&self) -> HSRAM_MEM_MBIST_DONE_R {
-        HSRAM_MEM_MBIST_DONE_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn irom_mbist_done(&self) -> IROM_MBIST_DONE_R {
-        IROM_MBIST_DONE_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn em_ram_mbist_fail(&mut self) -> EM_RAM_MBIST_FAIL_W {
-        EM_RAM_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn ocram_mbist_fail(&mut self) -> OCRAM_MBIST_FAIL_W {
-        OCRAM_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn tag_mbist_fail(&mut self) -> TAG_MBIST_FAIL_W {
-        TAG_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn hsram_cache_mbist_fail(&mut self) -> HSRAM_CACHE_MBIST_FAIL_W {
-        HSRAM_CACHE_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn hsram_mem_mbist_fail(&mut self) -> HSRAM_MEM_MBIST_FAIL_W {
-        HSRAM_MEM_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn irom_mbist_fail(&mut self) -> IROM_MBIST_FAIL_W {
-        IROM_MBIST_FAIL_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn em_ram_mbist_done(&mut self) -> EM_RAM_MBIST_DONE_W {
-        EM_RAM_MBIST_DONE_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn ocram_mbist_done(&mut self) -> OCRAM_MBIST_DONE_W {
-        OCRAM_MBIST_DONE_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn tag_mbist_done(&mut self) -> TAG_MBIST_DONE_W {
-        TAG_MBIST_DONE_W { w: self }
+        HSRAM_MEM_MBIST_DONE_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn hsram_cache_mbist_done(&mut self) -> HSRAM_CACHE_MBIST_DONE_W {
-        HSRAM_CACHE_MBIST_DONE_W { w: self }
+    pub fn hsram_cache_mbist_done(&self) -> HSRAM_CACHE_MBIST_DONE_R {
+        HSRAM_CACHE_MBIST_DONE_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn tag_mbist_done(&self) -> TAG_MBIST_DONE_R {
+        TAG_MBIST_DONE_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn ocram_mbist_done(&self) -> OCRAM_MBIST_DONE_R {
+        OCRAM_MBIST_DONE_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn em_ram_mbist_done(&self) -> EM_RAM_MBIST_DONE_R {
+        EM_RAM_MBIST_DONE_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn irom_mbist_fail(&self) -> IROM_MBIST_FAIL_R {
+        IROM_MBIST_FAIL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn hsram_mem_mbist_fail(&self) -> HSRAM_MEM_MBIST_FAIL_R {
+        HSRAM_MEM_MBIST_FAIL_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn hsram_cache_mbist_fail(&self) -> HSRAM_CACHE_MBIST_FAIL_R {
+        HSRAM_CACHE_MBIST_FAIL_R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn tag_mbist_fail(&self) -> TAG_MBIST_FAIL_R {
+        TAG_MBIST_FAIL_R::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn ocram_mbist_fail(&self) -> OCRAM_MBIST_FAIL_R {
+        OCRAM_MBIST_FAIL_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn em_ram_mbist_fail(&self) -> EM_RAM_MBIST_FAIL_R {
+        EM_RAM_MBIST_FAIL_R::new(((self.bits >> 21) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn irom_mbist_done(&mut self) -> IROM_MBIST_DONE_W<0> {
+        IROM_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn hsram_mem_mbist_done(&mut self) -> HSRAM_MEM_MBIST_DONE_W {
-        HSRAM_MEM_MBIST_DONE_W { w: self }
+    pub fn hsram_mem_mbist_done(&mut self) -> HSRAM_MEM_MBIST_DONE_W<1> {
+        HSRAM_MEM_MBIST_DONE_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn irom_mbist_done(&mut self) -> IROM_MBIST_DONE_W {
-        IROM_MBIST_DONE_W { w: self }
+    pub fn hsram_cache_mbist_done(&mut self) -> HSRAM_CACHE_MBIST_DONE_W<2> {
+        HSRAM_CACHE_MBIST_DONE_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn tag_mbist_done(&mut self) -> TAG_MBIST_DONE_W<3> {
+        TAG_MBIST_DONE_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn ocram_mbist_done(&mut self) -> OCRAM_MBIST_DONE_W<4> {
+        OCRAM_MBIST_DONE_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn em_ram_mbist_done(&mut self) -> EM_RAM_MBIST_DONE_W<5> {
+        EM_RAM_MBIST_DONE_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn irom_mbist_fail(&mut self) -> IROM_MBIST_FAIL_W<16> {
+        IROM_MBIST_FAIL_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn hsram_mem_mbist_fail(&mut self) -> HSRAM_MEM_MBIST_FAIL_W<17> {
+        HSRAM_MEM_MBIST_FAIL_W::new(self)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn hsram_cache_mbist_fail(&mut self) -> HSRAM_CACHE_MBIST_FAIL_W<18> {
+        HSRAM_CACHE_MBIST_FAIL_W::new(self)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn tag_mbist_fail(&mut self) -> TAG_MBIST_FAIL_W<19> {
+        TAG_MBIST_FAIL_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn ocram_mbist_fail(&mut self) -> OCRAM_MBIST_FAIL_W<20> {
+        OCRAM_MBIST_FAIL_W::new(self)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn em_ram_mbist_fail(&mut self) -> EM_RAM_MBIST_FAIL_W<21> {
+        EM_RAM_MBIST_FAIL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

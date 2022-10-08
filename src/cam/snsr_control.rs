@@ -34,100 +34,36 @@ impl From<crate::W<SNSR_CONTROL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_cam_pwdn` reader - "]
-pub struct REG_CAM_PWDN_R(crate::FieldReader<bool, bool>);
-impl REG_CAM_PWDN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_CAM_PWDN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_CAM_PWDN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_cam_pwdn` writer - "]
-pub struct REG_CAM_PWDN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_CAM_PWDN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `reg_cam_rst` reader - "]
-pub struct REG_CAM_RST_R(crate::FieldReader<bool, bool>);
-impl REG_CAM_RST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_CAM_RST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_CAM_RST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_CAM_RST_R = crate::BitReader<bool>;
 #[doc = "Field `reg_cam_rst` writer - "]
-pub struct REG_CAM_RST_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_CAM_RST_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type REG_CAM_RST_W<'a, const O: u8> = crate::BitWriter<'a, u32, SNSR_CONTROL_SPEC, bool, O>;
+#[doc = "Field `reg_cam_pwdn` reader - "]
+pub type REG_CAM_PWDN_R = crate::BitReader<bool>;
+#[doc = "Field `reg_cam_pwdn` writer - "]
+pub type REG_CAM_PWDN_W<'a, const O: u8> = crate::BitWriter<'a, u32, SNSR_CONTROL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn reg_cam_pwdn(&self) -> REG_CAM_PWDN_R {
-        REG_CAM_PWDN_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn reg_cam_rst(&self) -> REG_CAM_RST_R {
-        REG_CAM_RST_R::new((self.bits & 0x01) != 0)
+        REG_CAM_RST_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn reg_cam_pwdn(&self) -> REG_CAM_PWDN_R {
+        REG_CAM_PWDN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 1"]
-    #[inline(always)]
-    pub fn reg_cam_pwdn(&mut self) -> REG_CAM_PWDN_W {
-        REG_CAM_PWDN_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn reg_cam_rst(&mut self) -> REG_CAM_RST_W {
-        REG_CAM_RST_W { w: self }
+    pub fn reg_cam_rst(&mut self) -> REG_CAM_RST_W<0> {
+        REG_CAM_RST_W::new(self)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    pub fn reg_cam_pwdn(&mut self) -> REG_CAM_PWDN_W<1> {
+        REG_CAM_PWDN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

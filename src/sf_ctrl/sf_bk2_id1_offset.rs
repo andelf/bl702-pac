@@ -35,31 +35,10 @@ impl From<crate::W<SF_BK2_ID1_OFFSET_SPEC>> for W {
     }
 }
 #[doc = "Field `sf_bk2_id1_offset` reader - "]
-pub struct SF_BK2_ID1_OFFSET_R(crate::FieldReader<u32, u32>);
-impl SF_BK2_ID1_OFFSET_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        SF_BK2_ID1_OFFSET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_BK2_ID1_OFFSET_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SF_BK2_ID1_OFFSET_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `sf_bk2_id1_offset` writer - "]
-pub struct SF_BK2_ID1_OFFSET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SF_BK2_ID1_OFFSET_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x00ff_ffff) | (value as u32 & 0x00ff_ffff);
-        self.w
-    }
-}
+pub type SF_BK2_ID1_OFFSET_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SF_BK2_ID1_OFFSET_SPEC, u32, u32, 24, O>;
 impl R {
     #[doc = "Bits 0:23"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    pub fn sf_bk2_id1_offset(&mut self) -> SF_BK2_ID1_OFFSET_W {
-        SF_BK2_ID1_OFFSET_W { w: self }
+    pub fn sf_bk2_id1_offset(&mut self) -> SF_BK2_ID1_OFFSET_W<0> {
+        SF_BK2_ID1_OFFSET_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

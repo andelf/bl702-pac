@@ -34,234 +34,94 @@ impl From<crate::W<TRX_GAIN_BW_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pa_inbuf_unit` reader - "]
-pub struct PA_INBUF_UNIT_R(crate::FieldReader<u8, u8>);
-impl PA_INBUF_UNIT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_INBUF_UNIT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_INBUF_UNIT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_inbuf_unit` writer - "]
-pub struct PA_INBUF_UNIT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_INBUF_UNIT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 20)) | ((value as u32 & 0x07) << 20);
-        self.w
-    }
-}
-#[doc = "Field `pa_ref_dac` reader - "]
-pub struct PA_REF_DAC_R(crate::FieldReader<u8, u8>);
-impl PA_REF_DAC_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_REF_DAC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_REF_DAC_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_ref_dac` writer - "]
-pub struct PA_REF_DAC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PA_REF_DAC_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x1f << 12)) | ((value as u32 & 0x1f) << 12);
-        self.w
-    }
-}
-#[doc = "Field `rbb_bw` reader - "]
-pub struct RBB_BW_R(crate::FieldReader<bool, bool>);
-impl RBB_BW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_BW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bw` writer - "]
-pub struct RBB_BW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RBB_BW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `gc_rbb2` reader - "]
-pub struct GC_RBB2_R(crate::FieldReader<u8, u8>);
-impl GC_RBB2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_RBB2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_RBB2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_rbb2` writer - "]
-pub struct GC_RBB2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GC_RBB2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 5)) | ((value as u32 & 0x07) << 5);
-        self.w
-    }
-}
-#[doc = "Field `gc_rbb1` reader - "]
-pub struct GC_RBB1_R(crate::FieldReader<u8, u8>);
-impl GC_RBB1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_RBB1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_RBB1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_rbb1` writer - "]
-pub struct GC_RBB1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GC_RBB1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 3)) | ((value as u32 & 0x03) << 3);
-        self.w
-    }
-}
 #[doc = "Field `gc_lna` reader - "]
-pub struct GC_LNA_R(crate::FieldReader<u8, u8>);
-impl GC_LNA_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_LNA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_LNA_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GC_LNA_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `gc_lna` writer - "]
-pub struct GC_LNA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GC_LNA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07) | (value as u32 & 0x07);
-        self.w
-    }
-}
+pub type GC_LNA_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TRX_GAIN_BW_SPEC, u8, u8, 3, O>;
+#[doc = "Field `gc_rbb1` reader - "]
+pub type GC_RBB1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gc_rbb1` writer - "]
+pub type GC_RBB1_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TRX_GAIN_BW_SPEC, u8, u8, 2, O>;
+#[doc = "Field `gc_rbb2` reader - "]
+pub type GC_RBB2_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `gc_rbb2` writer - "]
+pub type GC_RBB2_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TRX_GAIN_BW_SPEC, u8, u8, 3, O>;
+#[doc = "Field `rbb_bw` reader - "]
+pub type RBB_BW_R = crate::BitReader<bool>;
+#[doc = "Field `rbb_bw` writer - "]
+pub type RBB_BW_W<'a, const O: u8> = crate::BitWriter<'a, u32, TRX_GAIN_BW_SPEC, bool, O>;
+#[doc = "Field `pa_ref_dac` reader - "]
+pub type PA_REF_DAC_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_ref_dac` writer - "]
+pub type PA_REF_DAC_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, TRX_GAIN_BW_SPEC, u8, u8, 5, O>;
+#[doc = "Field `pa_inbuf_unit` reader - "]
+pub type PA_INBUF_UNIT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `pa_inbuf_unit` writer - "]
+pub type PA_INBUF_UNIT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, TRX_GAIN_BW_SPEC, u8, u8, 3, O>;
 impl R {
-    #[doc = "Bits 20:22"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn pa_inbuf_unit(&self) -> PA_INBUF_UNIT_R {
-        PA_INBUF_UNIT_R::new(((self.bits >> 20) & 0x07) as u8)
+    pub fn gc_lna(&self) -> GC_LNA_R {
+        GC_LNA_R::new((self.bits & 7) as u8)
+    }
+    #[doc = "Bits 3:4"]
+    #[inline(always)]
+    pub fn gc_rbb1(&self) -> GC_RBB1_R {
+        GC_RBB1_R::new(((self.bits >> 3) & 3) as u8)
+    }
+    #[doc = "Bits 5:7"]
+    #[inline(always)]
+    pub fn gc_rbb2(&self) -> GC_RBB2_R {
+        GC_RBB2_R::new(((self.bits >> 5) & 7) as u8)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn rbb_bw(&self) -> RBB_BW_R {
+        RBB_BW_R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bits 12:16"]
     #[inline(always)]
     pub fn pa_ref_dac(&self) -> PA_REF_DAC_R {
         PA_REF_DAC_R::new(((self.bits >> 12) & 0x1f) as u8)
     }
-    #[doc = "Bit 8"]
+    #[doc = "Bits 20:22"]
     #[inline(always)]
-    pub fn rbb_bw(&self) -> RBB_BW_R {
-        RBB_BW_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bits 5:7"]
-    #[inline(always)]
-    pub fn gc_rbb2(&self) -> GC_RBB2_R {
-        GC_RBB2_R::new(((self.bits >> 5) & 0x07) as u8)
-    }
-    #[doc = "Bits 3:4"]
-    #[inline(always)]
-    pub fn gc_rbb1(&self) -> GC_RBB1_R {
-        GC_RBB1_R::new(((self.bits >> 3) & 0x03) as u8)
-    }
-    #[doc = "Bits 0:2"]
-    #[inline(always)]
-    pub fn gc_lna(&self) -> GC_LNA_R {
-        GC_LNA_R::new((self.bits & 0x07) as u8)
+    pub fn pa_inbuf_unit(&self) -> PA_INBUF_UNIT_R {
+        PA_INBUF_UNIT_R::new(((self.bits >> 20) & 7) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 20:22"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn pa_inbuf_unit(&mut self) -> PA_INBUF_UNIT_W {
-        PA_INBUF_UNIT_W { w: self }
-    }
-    #[doc = "Bits 12:16"]
-    #[inline(always)]
-    pub fn pa_ref_dac(&mut self) -> PA_REF_DAC_W {
-        PA_REF_DAC_W { w: self }
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn rbb_bw(&mut self) -> RBB_BW_W {
-        RBB_BW_W { w: self }
-    }
-    #[doc = "Bits 5:7"]
-    #[inline(always)]
-    pub fn gc_rbb2(&mut self) -> GC_RBB2_W {
-        GC_RBB2_W { w: self }
+    pub fn gc_lna(&mut self) -> GC_LNA_W<0> {
+        GC_LNA_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn gc_rbb1(&mut self) -> GC_RBB1_W {
-        GC_RBB1_W { w: self }
+    pub fn gc_rbb1(&mut self) -> GC_RBB1_W<3> {
+        GC_RBB1_W::new(self)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bits 5:7"]
     #[inline(always)]
-    pub fn gc_lna(&mut self) -> GC_LNA_W {
-        GC_LNA_W { w: self }
+    pub fn gc_rbb2(&mut self) -> GC_RBB2_W<5> {
+        GC_RBB2_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn rbb_bw(&mut self) -> RBB_BW_W<8> {
+        RBB_BW_W::new(self)
+    }
+    #[doc = "Bits 12:16"]
+    #[inline(always)]
+    pub fn pa_ref_dac(&mut self) -> PA_REF_DAC_W<12> {
+        PA_REF_DAC_W::new(self)
+    }
+    #[doc = "Bits 20:22"]
+    #[inline(always)]
+    pub fn pa_inbuf_unit(&mut self) -> PA_INBUF_UNIT_W<20> {
+        PA_INBUF_UNIT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

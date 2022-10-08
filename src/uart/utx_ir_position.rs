@@ -34,80 +34,38 @@ impl From<crate::W<UTX_IR_POSITION_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_utx_ir_pos_p` reader - "]
-pub struct CR_UTX_IR_POS_P_R(crate::FieldReader<u16, u16>);
-impl CR_UTX_IR_POS_P_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_UTX_IR_POS_P_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_IR_POS_P_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_ir_pos_p` writer - "]
-pub struct CR_UTX_IR_POS_P_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_UTX_IR_POS_P_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `cr_utx_ir_pos_s` reader - "]
-pub struct CR_UTX_IR_POS_S_R(crate::FieldReader<u16, u16>);
-impl CR_UTX_IR_POS_S_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_UTX_IR_POS_S_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_IR_POS_S_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_UTX_IR_POS_S_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `cr_utx_ir_pos_s` writer - "]
-pub struct CR_UTX_IR_POS_S_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_UTX_IR_POS_S_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type CR_UTX_IR_POS_S_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, UTX_IR_POSITION_SPEC, u16, u16, 16, O>;
+#[doc = "Field `cr_utx_ir_pos_p` reader - "]
+pub type CR_UTX_IR_POS_P_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `cr_utx_ir_pos_p` writer - "]
+pub type CR_UTX_IR_POS_P_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, UTX_IR_POSITION_SPEC, u16, u16, 16, O>;
 impl R {
-    #[doc = "Bits 16:31"]
-    #[inline(always)]
-    pub fn cr_utx_ir_pos_p(&self) -> CR_UTX_IR_POS_P_R {
-        CR_UTX_IR_POS_P_R::new(((self.bits >> 16) & 0xffff) as u16)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn cr_utx_ir_pos_s(&self) -> CR_UTX_IR_POS_S_R {
         CR_UTX_IR_POS_S_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn cr_utx_ir_pos_p(&mut self) -> CR_UTX_IR_POS_P_W {
-        CR_UTX_IR_POS_P_W { w: self }
+    pub fn cr_utx_ir_pos_p(&self) -> CR_UTX_IR_POS_P_R {
+        CR_UTX_IR_POS_P_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn cr_utx_ir_pos_s(&mut self) -> CR_UTX_IR_POS_S_W {
-        CR_UTX_IR_POS_S_W { w: self }
+    pub fn cr_utx_ir_pos_s(&mut self) -> CR_UTX_IR_POS_S_W<0> {
+        CR_UTX_IR_POS_S_W::new(self)
+    }
+    #[doc = "Bits 16:31"]
+    #[inline(always)]
+    pub fn cr_utx_ir_pos_p(&mut self) -> CR_UTX_IR_POS_P_W<16> {
+        CR_UTX_IR_POS_P_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

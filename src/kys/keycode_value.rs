@@ -34,152 +34,68 @@ impl From<crate::W<KEYCODE_VALUE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `keycode3` reader - "]
-pub struct KEYCODE3_R(crate::FieldReader<u8, u8>);
-impl KEYCODE3_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        KEYCODE3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KEYCODE3_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `keycode3` writer - "]
-pub struct KEYCODE3_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KEYCODE3_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 24)) | ((value as u32 & 0xff) << 24);
-        self.w
-    }
-}
-#[doc = "Field `keycode2` reader - "]
-pub struct KEYCODE2_R(crate::FieldReader<u8, u8>);
-impl KEYCODE2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        KEYCODE2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KEYCODE2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `keycode2` writer - "]
-pub struct KEYCODE2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KEYCODE2_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `keycode1` reader - "]
-pub struct KEYCODE1_R(crate::FieldReader<u8, u8>);
-impl KEYCODE1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        KEYCODE1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KEYCODE1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `keycode1` writer - "]
-pub struct KEYCODE1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KEYCODE1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 8)) | ((value as u32 & 0xff) << 8);
-        self.w
-    }
-}
 #[doc = "Field `keycode0` reader - "]
-pub struct KEYCODE0_R(crate::FieldReader<u8, u8>);
-impl KEYCODE0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        KEYCODE0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KEYCODE0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type KEYCODE0_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `keycode0` writer - "]
-pub struct KEYCODE0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KEYCODE0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type KEYCODE0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, KEYCODE_VALUE_SPEC, u8, u8, 8, O>;
+#[doc = "Field `keycode1` reader - "]
+pub type KEYCODE1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `keycode1` writer - "]
+pub type KEYCODE1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, KEYCODE_VALUE_SPEC, u8, u8, 8, O>;
+#[doc = "Field `keycode2` reader - "]
+pub type KEYCODE2_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `keycode2` writer - "]
+pub type KEYCODE2_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, KEYCODE_VALUE_SPEC, u8, u8, 8, O>;
+#[doc = "Field `keycode3` reader - "]
+pub type KEYCODE3_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `keycode3` writer - "]
+pub type KEYCODE3_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, KEYCODE_VALUE_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn keycode3(&self) -> KEYCODE3_R {
-        KEYCODE3_R::new(((self.bits >> 24) & 0xff) as u8)
-    }
-    #[doc = "Bits 16:23"]
-    #[inline(always)]
-    pub fn keycode2(&self) -> KEYCODE2_R {
-        KEYCODE2_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn keycode0(&self) -> KEYCODE0_R {
+        KEYCODE0_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
     pub fn keycode1(&self) -> KEYCODE1_R {
         KEYCODE1_R::new(((self.bits >> 8) & 0xff) as u8)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn keycode0(&self) -> KEYCODE0_R {
-        KEYCODE0_R::new((self.bits & 0xff) as u8)
+    pub fn keycode2(&self) -> KEYCODE2_R {
+        KEYCODE2_R::new(((self.bits >> 16) & 0xff) as u8)
+    }
+    #[doc = "Bits 24:31"]
+    #[inline(always)]
+    pub fn keycode3(&self) -> KEYCODE3_R {
+        KEYCODE3_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn keycode3(&mut self) -> KEYCODE3_W {
-        KEYCODE3_W { w: self }
-    }
-    #[doc = "Bits 16:23"]
-    #[inline(always)]
-    pub fn keycode2(&mut self) -> KEYCODE2_W {
-        KEYCODE2_W { w: self }
+    pub fn keycode0(&mut self) -> KEYCODE0_W<0> {
+        KEYCODE0_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn keycode1(&mut self) -> KEYCODE1_W {
-        KEYCODE1_W { w: self }
+    pub fn keycode1(&mut self) -> KEYCODE1_W<8> {
+        KEYCODE1_W::new(self)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn keycode0(&mut self) -> KEYCODE0_W {
-        KEYCODE0_W { w: self }
+    pub fn keycode2(&mut self) -> KEYCODE2_W<16> {
+        KEYCODE2_W::new(self)
+    }
+    #[doc = "Bits 24:31"]
+    #[inline(always)]
+    pub fn keycode3(&mut self) -> KEYCODE3_W<24> {
+        KEYCODE3_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

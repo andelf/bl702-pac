@@ -34,678 +34,220 @@ impl From<crate::W<DCTEST_ACTEST_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ten_mbg` reader - "]
-pub struct TEN_MBG_R(crate::FieldReader<bool, bool>);
-impl TEN_MBG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_MBG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_MBG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_mbg` writer - "]
-pub struct TEN_MBG_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_MBG_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `ten_dll` reader - "]
-pub struct TEN_DLL_R(crate::FieldReader<bool, bool>);
-impl TEN_DLL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_DLL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_DLL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_dll` writer - "]
-pub struct TEN_DLL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_DLL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 28)) | ((value as u32 & 0x01) << 28);
-        self.w
-    }
-}
-#[doc = "Field `ten_lodist` reader - "]
-pub struct TEN_LODIST_R(crate::FieldReader<bool, bool>);
-impl TEN_LODIST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_LODIST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_LODIST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_lodist` writer - "]
-pub struct TEN_LODIST_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_LODIST_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 27)) | ((value as u32 & 0x01) << 27);
-        self.w
-    }
-}
-#[doc = "Field `ten_pa_0` reader - "]
-pub struct TEN_PA_0_R(crate::FieldReader<bool, bool>);
-impl TEN_PA_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_PA_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_PA_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_pa_0` writer - "]
-pub struct TEN_PA_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_PA_0_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 26)) | ((value as u32 & 0x01) << 26);
-        self.w
-    }
-}
-#[doc = "Field `ten_pa_1` reader - "]
-pub struct TEN_PA_1_R(crate::FieldReader<bool, bool>);
-impl TEN_PA_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_PA_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_PA_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_pa_1` writer - "]
-pub struct TEN_PA_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_PA_1_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 25)) | ((value as u32 & 0x01) << 25);
-        self.w
-    }
-}
-#[doc = "Field `ten_rrf0` reader - "]
-pub struct TEN_RRF0_R(crate::FieldReader<bool, bool>);
-impl TEN_RRF0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_RRF0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_RRF0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_rrf0` writer - "]
-pub struct TEN_RRF0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_RRF0_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `ten_rrf1` reader - "]
-pub struct TEN_RRF1_R(crate::FieldReader<bool, bool>);
-impl TEN_RRF1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_RRF1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_RRF1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_rrf1` writer - "]
-pub struct TEN_RRF1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_RRF1_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 23)) | ((value as u32 & 0x01) << 23);
-        self.w
-    }
-}
-#[doc = "Field `ten_rxadc` reader - "]
-pub struct TEN_RXADC_R(crate::FieldReader<bool, bool>);
-impl TEN_RXADC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_RXADC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_RXADC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_rxadc` writer - "]
-pub struct TEN_RXADC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_RXADC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 22)) | ((value as u32 & 0x01) << 22);
-        self.w
-    }
-}
-#[doc = "Field `ten_vco` reader - "]
-pub struct TEN_VCO_R(crate::FieldReader<bool, bool>);
-impl TEN_VCO_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_VCO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_VCO_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_vco` writer - "]
-pub struct TEN_VCO_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_VCO_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
-        self.w
-    }
-}
-#[doc = "Field `ten_adpll_adc` reader - "]
-pub struct TEN_ADPLL_ADC_R(crate::FieldReader<bool, bool>);
-impl TEN_ADPLL_ADC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_ADPLL_ADC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_ADPLL_ADC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_adpll_adc` writer - "]
-pub struct TEN_ADPLL_ADC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_ADPLL_ADC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
-        self.w
-    }
-}
-#[doc = "Field `ten_rbb_actest` reader - "]
-pub struct TEN_RBB_ACTEST_R(crate::FieldReader<bool, bool>);
-impl TEN_RBB_ACTEST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_RBB_ACTEST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_RBB_ACTEST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_rbb_actest` writer - "]
-pub struct TEN_RBB_ACTEST_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_RBB_ACTEST_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 19)) | ((value as u32 & 0x01) << 19);
-        self.w
-    }
-}
-#[doc = "Field `ten_rbb` reader - "]
-pub struct TEN_RBB_R(crate::FieldReader<bool, bool>);
-impl TEN_RBB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_RBB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_RBB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_rbb` writer - "]
-pub struct TEN_RBB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_RBB_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 18)) | ((value as u32 & 0x01) << 18);
-        self.w
-    }
-}
-#[doc = "Field `ten_dtc` reader - "]
-pub struct TEN_DTC_R(crate::FieldReader<bool, bool>);
-impl TEN_DTC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_DTC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_DTC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_dtc` writer - "]
-pub struct TEN_DTC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TEN_DTC_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `atest_out_en` reader - "]
-pub struct ATEST_OUT_EN_R(crate::FieldReader<u8, u8>);
-impl ATEST_OUT_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ATEST_OUT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ATEST_OUT_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `atest_out_en` writer - "]
-pub struct ATEST_OUT_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ATEST_OUT_EN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 6)) | ((value as u32 & 0x03) << 6);
-        self.w
-    }
-}
 #[doc = "Field `dc_tp_out_en` reader - "]
-pub struct DC_TP_OUT_EN_R(crate::FieldReader<u8, u8>);
-impl DC_TP_OUT_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DC_TP_OUT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DC_TP_OUT_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type DC_TP_OUT_EN_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `dc_tp_out_en` writer - "]
-pub struct DC_TP_OUT_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DC_TP_OUT_EN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 4)) | ((value as u32 & 0x03) << 4);
-        self.w
-    }
-}
+pub type DC_TP_OUT_EN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, DCTEST_ACTEST_SPEC, u8, u8, 2, O>;
+#[doc = "Field `atest_out_en` reader - "]
+pub type ATEST_OUT_EN_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `atest_out_en` writer - "]
+pub type ATEST_OUT_EN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, DCTEST_ACTEST_SPEC, u8, u8, 2, O>;
+#[doc = "Field `ten_dtc` reader - "]
+pub type TEN_DTC_R = crate::BitReader<bool>;
+#[doc = "Field `ten_dtc` writer - "]
+pub type TEN_DTC_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_rbb` reader - "]
+pub type TEN_RBB_R = crate::BitReader<bool>;
+#[doc = "Field `ten_rbb` writer - "]
+pub type TEN_RBB_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_rbb_actest` reader - "]
+pub type TEN_RBB_ACTEST_R = crate::BitReader<bool>;
+#[doc = "Field `ten_rbb_actest` writer - "]
+pub type TEN_RBB_ACTEST_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_adpll_adc` reader - "]
+pub type TEN_ADPLL_ADC_R = crate::BitReader<bool>;
+#[doc = "Field `ten_adpll_adc` writer - "]
+pub type TEN_ADPLL_ADC_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_vco` reader - "]
+pub type TEN_VCO_R = crate::BitReader<bool>;
+#[doc = "Field `ten_vco` writer - "]
+pub type TEN_VCO_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_rxadc` reader - "]
+pub type TEN_RXADC_R = crate::BitReader<bool>;
+#[doc = "Field `ten_rxadc` writer - "]
+pub type TEN_RXADC_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_rrf1` reader - "]
+pub type TEN_RRF1_R = crate::BitReader<bool>;
+#[doc = "Field `ten_rrf1` writer - "]
+pub type TEN_RRF1_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_rrf0` reader - "]
+pub type TEN_RRF0_R = crate::BitReader<bool>;
+#[doc = "Field `ten_rrf0` writer - "]
+pub type TEN_RRF0_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_pa_1` reader - "]
+pub type TEN_PA_1_R = crate::BitReader<bool>;
+#[doc = "Field `ten_pa_1` writer - "]
+pub type TEN_PA_1_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_pa_0` reader - "]
+pub type TEN_PA_0_R = crate::BitReader<bool>;
+#[doc = "Field `ten_pa_0` writer - "]
+pub type TEN_PA_0_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_lodist` reader - "]
+pub type TEN_LODIST_R = crate::BitReader<bool>;
+#[doc = "Field `ten_lodist` writer - "]
+pub type TEN_LODIST_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_dll` reader - "]
+pub type TEN_DLL_R = crate::BitReader<bool>;
+#[doc = "Field `ten_dll` writer - "]
+pub type TEN_DLL_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
+#[doc = "Field `ten_mbg` reader - "]
+pub type TEN_MBG_R = crate::BitReader<bool>;
+#[doc = "Field `ten_mbg` writer - "]
+pub type TEN_MBG_W<'a, const O: u8> = crate::BitWriter<'a, u32, DCTEST_ACTEST_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bits 4:5"]
     #[inline(always)]
-    pub fn ten_mbg(&self) -> TEN_MBG_R {
-        TEN_MBG_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn ten_dll(&self) -> TEN_DLL_R {
-        TEN_DLL_R::new(((self.bits >> 28) & 0x01) != 0)
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn ten_lodist(&self) -> TEN_LODIST_R {
-        TEN_LODIST_R::new(((self.bits >> 27) & 0x01) != 0)
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn ten_pa_0(&self) -> TEN_PA_0_R {
-        TEN_PA_0_R::new(((self.bits >> 26) & 0x01) != 0)
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn ten_pa_1(&self) -> TEN_PA_1_R {
-        TEN_PA_1_R::new(((self.bits >> 25) & 0x01) != 0)
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn ten_rrf0(&self) -> TEN_RRF0_R {
-        TEN_RRF0_R::new(((self.bits >> 24) & 0x01) != 0)
-    }
-    #[doc = "Bit 23"]
-    #[inline(always)]
-    pub fn ten_rrf1(&self) -> TEN_RRF1_R {
-        TEN_RRF1_R::new(((self.bits >> 23) & 0x01) != 0)
-    }
-    #[doc = "Bit 22"]
-    #[inline(always)]
-    pub fn ten_rxadc(&self) -> TEN_RXADC_R {
-        TEN_RXADC_R::new(((self.bits >> 22) & 0x01) != 0)
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn ten_vco(&self) -> TEN_VCO_R {
-        TEN_VCO_R::new(((self.bits >> 21) & 0x01) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn ten_adpll_adc(&self) -> TEN_ADPLL_ADC_R {
-        TEN_ADPLL_ADC_R::new(((self.bits >> 20) & 0x01) != 0)
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn ten_rbb_actest(&self) -> TEN_RBB_ACTEST_R {
-        TEN_RBB_ACTEST_R::new(((self.bits >> 19) & 0x01) != 0)
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn ten_rbb(&self) -> TEN_RBB_R {
-        TEN_RBB_R::new(((self.bits >> 18) & 0x01) != 0)
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn ten_dtc(&self) -> TEN_DTC_R {
-        TEN_DTC_R::new(((self.bits >> 17) & 0x01) != 0)
+    pub fn dc_tp_out_en(&self) -> DC_TP_OUT_EN_R {
+        DC_TP_OUT_EN_R::new(((self.bits >> 4) & 3) as u8)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
     pub fn atest_out_en(&self) -> ATEST_OUT_EN_R {
-        ATEST_OUT_EN_R::new(((self.bits >> 6) & 0x03) as u8)
-    }
-    #[doc = "Bits 4:5"]
-    #[inline(always)]
-    pub fn dc_tp_out_en(&self) -> DC_TP_OUT_EN_R {
-        DC_TP_OUT_EN_R::new(((self.bits >> 4) & 0x03) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn ten_mbg(&mut self) -> TEN_MBG_W {
-        TEN_MBG_W { w: self }
-    }
-    #[doc = "Bit 28"]
-    #[inline(always)]
-    pub fn ten_dll(&mut self) -> TEN_DLL_W {
-        TEN_DLL_W { w: self }
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn ten_lodist(&mut self) -> TEN_LODIST_W {
-        TEN_LODIST_W { w: self }
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn ten_pa_0(&mut self) -> TEN_PA_0_W {
-        TEN_PA_0_W { w: self }
-    }
-    #[doc = "Bit 25"]
-    #[inline(always)]
-    pub fn ten_pa_1(&mut self) -> TEN_PA_1_W {
-        TEN_PA_1_W { w: self }
-    }
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn ten_rrf0(&mut self) -> TEN_RRF0_W {
-        TEN_RRF0_W { w: self }
-    }
-    #[doc = "Bit 23"]
-    #[inline(always)]
-    pub fn ten_rrf1(&mut self) -> TEN_RRF1_W {
-        TEN_RRF1_W { w: self }
-    }
-    #[doc = "Bit 22"]
-    #[inline(always)]
-    pub fn ten_rxadc(&mut self) -> TEN_RXADC_W {
-        TEN_RXADC_W { w: self }
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn ten_vco(&mut self) -> TEN_VCO_W {
-        TEN_VCO_W { w: self }
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn ten_adpll_adc(&mut self) -> TEN_ADPLL_ADC_W {
-        TEN_ADPLL_ADC_W { w: self }
-    }
-    #[doc = "Bit 19"]
-    #[inline(always)]
-    pub fn ten_rbb_actest(&mut self) -> TEN_RBB_ACTEST_W {
-        TEN_RBB_ACTEST_W { w: self }
-    }
-    #[doc = "Bit 18"]
-    #[inline(always)]
-    pub fn ten_rbb(&mut self) -> TEN_RBB_W {
-        TEN_RBB_W { w: self }
+        ATEST_OUT_EN_R::new(((self.bits >> 6) & 3) as u8)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn ten_dtc(&mut self) -> TEN_DTC_W {
-        TEN_DTC_W { w: self }
+    pub fn ten_dtc(&self) -> TEN_DTC_R {
+        TEN_DTC_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn ten_rbb(&self) -> TEN_RBB_R {
+        TEN_RBB_R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn ten_rbb_actest(&self) -> TEN_RBB_ACTEST_R {
+        TEN_RBB_ACTEST_R::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn ten_adpll_adc(&self) -> TEN_ADPLL_ADC_R {
+        TEN_ADPLL_ADC_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn ten_vco(&self) -> TEN_VCO_R {
+        TEN_VCO_R::new(((self.bits >> 21) & 1) != 0)
+    }
+    #[doc = "Bit 22"]
+    #[inline(always)]
+    pub fn ten_rxadc(&self) -> TEN_RXADC_R {
+        TEN_RXADC_R::new(((self.bits >> 22) & 1) != 0)
+    }
+    #[doc = "Bit 23"]
+    #[inline(always)]
+    pub fn ten_rrf1(&self) -> TEN_RRF1_R {
+        TEN_RRF1_R::new(((self.bits >> 23) & 1) != 0)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn ten_rrf0(&self) -> TEN_RRF0_R {
+        TEN_RRF0_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn ten_pa_1(&self) -> TEN_PA_1_R {
+        TEN_PA_1_R::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn ten_pa_0(&self) -> TEN_PA_0_R {
+        TEN_PA_0_R::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn ten_lodist(&self) -> TEN_LODIST_R {
+        TEN_LODIST_R::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn ten_dll(&self) -> TEN_DLL_R {
+        TEN_DLL_R::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn ten_mbg(&self) -> TEN_MBG_R {
+        TEN_MBG_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 4:5"]
+    #[inline(always)]
+    pub fn dc_tp_out_en(&mut self) -> DC_TP_OUT_EN_W<4> {
+        DC_TP_OUT_EN_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
-    pub fn atest_out_en(&mut self) -> ATEST_OUT_EN_W {
-        ATEST_OUT_EN_W { w: self }
+    pub fn atest_out_en(&mut self) -> ATEST_OUT_EN_W<6> {
+        ATEST_OUT_EN_W::new(self)
     }
-    #[doc = "Bits 4:5"]
+    #[doc = "Bit 17"]
     #[inline(always)]
-    pub fn dc_tp_out_en(&mut self) -> DC_TP_OUT_EN_W {
-        DC_TP_OUT_EN_W { w: self }
+    pub fn ten_dtc(&mut self) -> TEN_DTC_W<17> {
+        TEN_DTC_W::new(self)
+    }
+    #[doc = "Bit 18"]
+    #[inline(always)]
+    pub fn ten_rbb(&mut self) -> TEN_RBB_W<18> {
+        TEN_RBB_W::new(self)
+    }
+    #[doc = "Bit 19"]
+    #[inline(always)]
+    pub fn ten_rbb_actest(&mut self) -> TEN_RBB_ACTEST_W<19> {
+        TEN_RBB_ACTEST_W::new(self)
+    }
+    #[doc = "Bit 20"]
+    #[inline(always)]
+    pub fn ten_adpll_adc(&mut self) -> TEN_ADPLL_ADC_W<20> {
+        TEN_ADPLL_ADC_W::new(self)
+    }
+    #[doc = "Bit 21"]
+    #[inline(always)]
+    pub fn ten_vco(&mut self) -> TEN_VCO_W<21> {
+        TEN_VCO_W::new(self)
+    }
+    #[doc = "Bit 22"]
+    #[inline(always)]
+    pub fn ten_rxadc(&mut self) -> TEN_RXADC_W<22> {
+        TEN_RXADC_W::new(self)
+    }
+    #[doc = "Bit 23"]
+    #[inline(always)]
+    pub fn ten_rrf1(&mut self) -> TEN_RRF1_W<23> {
+        TEN_RRF1_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn ten_rrf0(&mut self) -> TEN_RRF0_W<24> {
+        TEN_RRF0_W::new(self)
+    }
+    #[doc = "Bit 25"]
+    #[inline(always)]
+    pub fn ten_pa_1(&mut self) -> TEN_PA_1_W<25> {
+        TEN_PA_1_W::new(self)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn ten_pa_0(&mut self) -> TEN_PA_0_W<26> {
+        TEN_PA_0_W::new(self)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn ten_lodist(&mut self) -> TEN_LODIST_W<27> {
+        TEN_LODIST_W::new(self)
+    }
+    #[doc = "Bit 28"]
+    #[inline(always)]
+    pub fn ten_dll(&mut self) -> TEN_DLL_W<28> {
+        TEN_DLL_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn ten_mbg(&mut self) -> TEN_MBG_W<31> {
+        TEN_MBG_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

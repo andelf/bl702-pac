@@ -35,43 +35,22 @@ impl From<crate::W<EF_IF_0_STATUS_SPEC>> for W {
     }
 }
 #[doc = "Field `ef_if_0_status` reader - "]
-pub struct EF_IF_0_STATUS_R(crate::FieldReader<u32, u32>);
-impl EF_IF_0_STATUS_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        EF_IF_0_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_0_STATUS_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type EF_IF_0_STATUS_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `ef_if_0_status` writer - "]
-pub struct EF_IF_0_STATUS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> EF_IF_0_STATUS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type EF_IF_0_STATUS_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, EF_IF_0_STATUS_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn ef_if_0_status(&self) -> EF_IF_0_STATUS_R {
-        EF_IF_0_STATUS_R::new((self.bits & 0xffff_ffff) as u32)
+        EF_IF_0_STATUS_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn ef_if_0_status(&mut self) -> EF_IF_0_STATUS_W {
-        EF_IF_0_STATUS_W { w: self }
+    pub fn ef_if_0_status(&mut self) -> EF_IF_0_STATUS_W<0> {
+        EF_IF_0_STATUS_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

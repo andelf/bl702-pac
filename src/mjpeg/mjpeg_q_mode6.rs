@@ -35,31 +35,10 @@ impl From<crate::W<MJPEG_Q_MODE6_SPEC>> for W {
     }
 }
 #[doc = "Field `frame_q_mode_6` reader - "]
-pub struct FRAME_Q_MODE_6_R(crate::FieldReader<u8, u8>);
-impl FRAME_Q_MODE_6_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FRAME_Q_MODE_6_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FRAME_Q_MODE_6_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type FRAME_Q_MODE_6_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `frame_q_mode_6` writer - "]
-pub struct FRAME_Q_MODE_6_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FRAME_Q_MODE_6_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x7f) | (value as u32 & 0x7f);
-        self.w
-    }
-}
+pub type FRAME_Q_MODE_6_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_Q_MODE6_SPEC, u8, u8, 7, O>;
 impl R {
     #[doc = "Bits 0:6"]
     #[inline(always)]
@@ -70,8 +49,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn frame_q_mode_6(&mut self) -> FRAME_Q_MODE_6_W {
-        FRAME_Q_MODE_6_W { w: self }
+    pub fn frame_q_mode_6(&mut self) -> FRAME_Q_MODE_6_W<0> {
+        FRAME_Q_MODE_6_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

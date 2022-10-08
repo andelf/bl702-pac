@@ -34,90 +34,36 @@ impl From<crate::W<TXCTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TXPAUSERQ` reader - "]
-pub struct TXPAUSERQ_R(crate::FieldReader<bool, bool>);
-impl TXPAUSERQ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TXPAUSERQ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXPAUSERQ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TXPAUSERQ` writer - "]
-pub struct TXPAUSERQ_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXPAUSERQ_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
 #[doc = "Field `TXPAUSETV` reader - "]
-pub struct TXPAUSETV_R(crate::FieldReader<u16, u16>);
-impl TXPAUSETV_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TXPAUSETV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXPAUSETV_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TXPAUSETV_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `TXPAUSETV` writer - "]
-pub struct TXPAUSETV_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXPAUSETV_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type TXPAUSETV_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TXCTRL_SPEC, u16, u16, 16, O>;
+#[doc = "Field `TXPAUSERQ` reader - "]
+pub type TXPAUSERQ_R = crate::BitReader<bool>;
+#[doc = "Field `TXPAUSERQ` writer - "]
+pub type TXPAUSERQ_W<'a, const O: u8> = crate::BitWriter<'a, u32, TXCTRL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn txpauserq(&self) -> TXPAUSERQ_R {
-        TXPAUSERQ_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn txpausetv(&self) -> TXPAUSETV_R {
         TXPAUSETV_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn txpauserq(&mut self) -> TXPAUSERQ_W {
-        TXPAUSERQ_W { w: self }
+    pub fn txpauserq(&self) -> TXPAUSERQ_R {
+        TXPAUSERQ_R::new(((self.bits >> 16) & 1) != 0)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn txpausetv(&mut self) -> TXPAUSETV_W {
-        TXPAUSETV_W { w: self }
+    pub fn txpausetv(&mut self) -> TXPAUSETV_W<0> {
+        TXPAUSETV_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn txpauserq(&mut self) -> TXPAUSERQ_W<16> {
+        TXPAUSERQ_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

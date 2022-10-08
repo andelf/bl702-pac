@@ -34,90 +34,36 @@ impl From<crate::W<DEBUG_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `debug_i` reader - "]
-pub struct DEBUG_I_R(crate::FieldReader<u32, u32>);
-impl DEBUG_I_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        DEBUG_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEBUG_I_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `debug_i` writer - "]
-pub struct DEBUG_I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEBUG_I_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x7fff_ffff << 1)) | ((value as u32 & 0x7fff_ffff) << 1);
-        self.w
-    }
-}
 #[doc = "Field `debug_oe` reader - "]
-pub struct DEBUG_OE_R(crate::FieldReader<bool, bool>);
-impl DEBUG_OE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DEBUG_OE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEBUG_OE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type DEBUG_OE_R = crate::BitReader<bool>;
 #[doc = "Field `debug_oe` writer - "]
-pub struct DEBUG_OE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DEBUG_OE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type DEBUG_OE_W<'a, const O: u8> = crate::BitWriter<'a, u32, DEBUG_SPEC, bool, O>;
+#[doc = "Field `debug_i` reader - "]
+pub type DEBUG_I_R = crate::FieldReader<u32, u32>;
+#[doc = "Field `debug_i` writer - "]
+pub type DEBUG_I_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DEBUG_SPEC, u32, u32, 31, O>;
 impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn debug_oe(&self) -> DEBUG_OE_R {
+        DEBUG_OE_R::new((self.bits & 1) != 0)
+    }
     #[doc = "Bits 1:31"]
     #[inline(always)]
     pub fn debug_i(&self) -> DEBUG_I_R {
         DEBUG_I_R::new(((self.bits >> 1) & 0x7fff_ffff) as u32)
     }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn debug_oe(&self) -> DEBUG_OE_R {
-        DEBUG_OE_R::new((self.bits & 0x01) != 0)
-    }
 }
 impl W {
-    #[doc = "Bits 1:31"]
-    #[inline(always)]
-    pub fn debug_i(&mut self) -> DEBUG_I_W {
-        DEBUG_I_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn debug_oe(&mut self) -> DEBUG_OE_W {
-        DEBUG_OE_W { w: self }
+    pub fn debug_oe(&mut self) -> DEBUG_OE_W<0> {
+        DEBUG_OE_W::new(self)
+    }
+    #[doc = "Bits 1:31"]
+    #[inline(always)]
+    pub fn debug_i(&mut self) -> DEBUG_I_W<1> {
+        DEBUG_I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

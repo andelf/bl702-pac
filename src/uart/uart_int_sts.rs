@@ -34,422 +34,134 @@ impl From<crate::W<UART_INT_STS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `urx_lse_int` reader - "]
-pub struct URX_LSE_INT_R(crate::FieldReader<bool, bool>);
-impl URX_LSE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_LSE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_LSE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_lse_int` writer - "]
-pub struct URX_LSE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_LSE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `urx_fer_int` reader - "]
-pub struct URX_FER_INT_R(crate::FieldReader<bool, bool>);
-impl URX_FER_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_FER_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_FER_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_fer_int` writer - "]
-pub struct URX_FER_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_FER_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `utx_fer_int` reader - "]
-pub struct UTX_FER_INT_R(crate::FieldReader<bool, bool>);
-impl UTX_FER_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        UTX_FER_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UTX_FER_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `utx_fer_int` writer - "]
-pub struct UTX_FER_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> UTX_FER_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `urx_pce_int` reader - "]
-pub struct URX_PCE_INT_R(crate::FieldReader<bool, bool>);
-impl URX_PCE_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_PCE_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_PCE_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_pce_int` writer - "]
-pub struct URX_PCE_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_PCE_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
-        self.w
-    }
-}
-#[doc = "Field `urx_rto_int` reader - "]
-pub struct URX_RTO_INT_R(crate::FieldReader<bool, bool>);
-impl URX_RTO_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_RTO_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_RTO_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_rto_int` writer - "]
-pub struct URX_RTO_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_RTO_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
-#[doc = "Field `urx_fifo_int` reader - "]
-pub struct URX_FIFO_INT_R(crate::FieldReader<bool, bool>);
-impl URX_FIFO_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_FIFO_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_FIFO_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_fifo_int` writer - "]
-pub struct URX_FIFO_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_FIFO_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `utx_fifo_int` reader - "]
-pub struct UTX_FIFO_INT_R(crate::FieldReader<bool, bool>);
-impl UTX_FIFO_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        UTX_FIFO_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UTX_FIFO_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `utx_fifo_int` writer - "]
-pub struct UTX_FIFO_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> UTX_FIFO_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `urx_end_int` reader - "]
-pub struct URX_END_INT_R(crate::FieldReader<bool, bool>);
-impl URX_END_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        URX_END_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for URX_END_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `urx_end_int` writer - "]
-pub struct URX_END_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> URX_END_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `utx_end_int` reader - "]
-pub struct UTX_END_INT_R(crate::FieldReader<bool, bool>);
-impl UTX_END_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        UTX_END_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UTX_END_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type UTX_END_INT_R = crate::BitReader<bool>;
 #[doc = "Field `utx_end_int` writer - "]
-pub struct UTX_END_INT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> UTX_END_INT_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type UTX_END_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_end_int` reader - "]
+pub type URX_END_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_end_int` writer - "]
+pub type URX_END_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `utx_fifo_int` reader - "]
+pub type UTX_FIFO_INT_R = crate::BitReader<bool>;
+#[doc = "Field `utx_fifo_int` writer - "]
+pub type UTX_FIFO_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_fifo_int` reader - "]
+pub type URX_FIFO_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_fifo_int` writer - "]
+pub type URX_FIFO_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_rto_int` reader - "]
+pub type URX_RTO_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_rto_int` writer - "]
+pub type URX_RTO_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_pce_int` reader - "]
+pub type URX_PCE_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_pce_int` writer - "]
+pub type URX_PCE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `utx_fer_int` reader - "]
+pub type UTX_FER_INT_R = crate::BitReader<bool>;
+#[doc = "Field `utx_fer_int` writer - "]
+pub type UTX_FER_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_fer_int` reader - "]
+pub type URX_FER_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_fer_int` writer - "]
+pub type URX_FER_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
+#[doc = "Field `urx_lse_int` reader - "]
+pub type URX_LSE_INT_R = crate::BitReader<bool>;
+#[doc = "Field `urx_lse_int` writer - "]
+pub type URX_LSE_INT_W<'a, const O: u8> = crate::BitWriter<'a, u32, UART_INT_STS_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 8"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn urx_lse_int(&self) -> URX_LSE_INT_R {
-        URX_LSE_INT_R::new(((self.bits >> 8) & 0x01) != 0)
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn urx_fer_int(&self) -> URX_FER_INT_R {
-        URX_FER_INT_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn utx_fer_int(&self) -> UTX_FER_INT_R {
-        UTX_FER_INT_R::new(((self.bits >> 6) & 0x01) != 0)
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn urx_pce_int(&self) -> URX_PCE_INT_R {
-        URX_PCE_INT_R::new(((self.bits >> 5) & 0x01) != 0)
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn urx_rto_int(&self) -> URX_RTO_INT_R {
-        URX_RTO_INT_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn urx_fifo_int(&self) -> URX_FIFO_INT_R {
-        URX_FIFO_INT_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn utx_fifo_int(&self) -> UTX_FIFO_INT_R {
-        UTX_FIFO_INT_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn utx_end_int(&self) -> UTX_END_INT_R {
+        UTX_END_INT_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn urx_end_int(&self) -> URX_END_INT_R {
-        URX_END_INT_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn utx_end_int(&self) -> UTX_END_INT_R {
-        UTX_END_INT_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn urx_lse_int(&mut self) -> URX_LSE_INT_W {
-        URX_LSE_INT_W { w: self }
-    }
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn urx_fer_int(&mut self) -> URX_FER_INT_W {
-        URX_FER_INT_W { w: self }
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn utx_fer_int(&mut self) -> UTX_FER_INT_W {
-        UTX_FER_INT_W { w: self }
-    }
-    #[doc = "Bit 5"]
-    #[inline(always)]
-    pub fn urx_pce_int(&mut self) -> URX_PCE_INT_W {
-        URX_PCE_INT_W { w: self }
-    }
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn urx_rto_int(&mut self) -> URX_RTO_INT_W {
-        URX_RTO_INT_W { w: self }
-    }
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn urx_fifo_int(&mut self) -> URX_FIFO_INT_W {
-        URX_FIFO_INT_W { w: self }
+        URX_END_INT_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn utx_fifo_int(&mut self) -> UTX_FIFO_INT_W {
-        UTX_FIFO_INT_W { w: self }
+    pub fn utx_fifo_int(&self) -> UTX_FIFO_INT_R {
+        UTX_FIFO_INT_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn urx_fifo_int(&self) -> URX_FIFO_INT_R {
+        URX_FIFO_INT_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn urx_rto_int(&self) -> URX_RTO_INT_R {
+        URX_RTO_INT_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn urx_pce_int(&self) -> URX_PCE_INT_R {
+        URX_PCE_INT_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn utx_fer_int(&self) -> UTX_FER_INT_R {
+        UTX_FER_INT_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn urx_fer_int(&self) -> URX_FER_INT_R {
+        URX_FER_INT_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn urx_lse_int(&self) -> URX_LSE_INT_R {
+        URX_LSE_INT_R::new(((self.bits >> 8) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn utx_end_int(&mut self) -> UTX_END_INT_W<0> {
+        UTX_END_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn urx_end_int(&mut self) -> URX_END_INT_W {
-        URX_END_INT_W { w: self }
+    pub fn urx_end_int(&mut self) -> URX_END_INT_W<1> {
+        URX_END_INT_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn utx_end_int(&mut self) -> UTX_END_INT_W {
-        UTX_END_INT_W { w: self }
+    pub fn utx_fifo_int(&mut self) -> UTX_FIFO_INT_W<2> {
+        UTX_FIFO_INT_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn urx_fifo_int(&mut self) -> URX_FIFO_INT_W<3> {
+        URX_FIFO_INT_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn urx_rto_int(&mut self) -> URX_RTO_INT_W<4> {
+        URX_RTO_INT_W::new(self)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    pub fn urx_pce_int(&mut self) -> URX_PCE_INT_W<5> {
+        URX_PCE_INT_W::new(self)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    pub fn utx_fer_int(&mut self) -> UTX_FER_INT_W<6> {
+        UTX_FER_INT_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn urx_fer_int(&mut self) -> URX_FER_INT_W<7> {
+        URX_FER_INT_W::new(self)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    pub fn urx_lse_int(&mut self) -> URX_LSE_INT_W<8> {
+        URX_LSE_INT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

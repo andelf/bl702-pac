@@ -35,43 +35,22 @@ impl From<crate::W<BMX_ERR_ADDR_SPEC>> for W {
     }
 }
 #[doc = "Field `bmx_err_addr` reader - "]
-pub struct BMX_ERR_ADDR_R(crate::FieldReader<u32, u32>);
-impl BMX_ERR_ADDR_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        BMX_ERR_ADDR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_ADDR_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type BMX_ERR_ADDR_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `bmx_err_addr` writer - "]
-pub struct BMX_ERR_ADDR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> BMX_ERR_ADDR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type BMX_ERR_ADDR_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, BMX_ERR_ADDR_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn bmx_err_addr(&self) -> BMX_ERR_ADDR_R {
-        BMX_ERR_ADDR_R::new((self.bits & 0xffff_ffff) as u32)
+        BMX_ERR_ADDR_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn bmx_err_addr(&mut self) -> BMX_ERR_ADDR_W {
-        BMX_ERR_ADDR_W { w: self }
+    pub fn bmx_err_addr(&mut self) -> BMX_ERR_ADDR_W<0> {
+        BMX_ERR_ADDR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

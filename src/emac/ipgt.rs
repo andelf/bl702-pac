@@ -35,31 +35,9 @@ impl From<crate::W<IPGT_SPEC>> for W {
     }
 }
 #[doc = "Field `IPGT` reader - "]
-pub struct IPGT_R(crate::FieldReader<u8, u8>);
-impl IPGT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        IPGT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IPGT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type IPGT_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `IPGT` writer - "]
-pub struct IPGT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> IPGT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x7f) | (value as u32 & 0x7f);
-        self.w
-    }
-}
+pub type IPGT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, IPGT_SPEC, u8, u8, 7, O>;
 impl R {
     #[doc = "Bits 0:6"]
     #[inline(always)]
@@ -70,8 +48,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
-    pub fn ipgt(&mut self) -> IPGT_W {
-        IPGT_W { w: self }
+    pub fn ipgt(&mut self) -> IPGT_W<0> {
+        IPGT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

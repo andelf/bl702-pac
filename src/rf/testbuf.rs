@@ -34,300 +34,106 @@ impl From<crate::W<TESTBUF_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pu_testbuf` reader - "]
-pub struct PU_TESTBUF_R(crate::FieldReader<bool, bool>);
-impl PU_TESTBUF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_TESTBUF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_TESTBUF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_testbuf` writer - "]
-pub struct PU_TESTBUF_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PU_TESTBUF_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 24)) | ((value as u32 & 0x01) << 24);
-        self.w
-    }
-}
-#[doc = "Field `testbuf_vcm` reader - "]
-pub struct TESTBUF_VCM_R(crate::FieldReader<u8, u8>);
-impl TESTBUF_VCM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TESTBUF_VCM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_VCM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `testbuf_vcm` writer - "]
-pub struct TESTBUF_VCM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_VCM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 20)) | ((value as u32 & 0x03) << 20);
-        self.w
-    }
-}
-#[doc = "Field `testbuf_bm` reader - "]
-pub struct TESTBUF_BM_R(crate::FieldReader<u8, u8>);
-impl TESTBUF_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TESTBUF_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `testbuf_bm` writer - "]
-pub struct TESTBUF_BM_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_BM_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 16)) | ((value as u32 & 0x07) << 16);
-        self.w
-    }
-}
-#[doc = "Field `testbuf_boost` reader - "]
-pub struct TESTBUF_BOOST_R(crate::FieldReader<bool, bool>);
-impl TESTBUF_BOOST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TESTBUF_BOOST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_BOOST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `testbuf_boost` writer - "]
-pub struct TESTBUF_BOOST_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_BOOST_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `testbuf_op_cc` reader - "]
-pub struct TESTBUF_OP_CC_R(crate::FieldReader<u8, u8>);
-impl TESTBUF_OP_CC_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TESTBUF_OP_CC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_OP_CC_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `testbuf_op_cc` writer - "]
-pub struct TESTBUF_OP_CC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_OP_CC_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `testbuf_rfb` reader - "]
-pub struct TESTBUF_RFB_R(crate::FieldReader<bool, bool>);
-impl TESTBUF_RFB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TESTBUF_RFB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_RFB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `testbuf_rfb` writer - "]
-pub struct TESTBUF_RFB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_RFB_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
 #[doc = "Field `testbuf_rin` reader - "]
-pub struct TESTBUF_RIN_R(crate::FieldReader<bool, bool>);
-impl TESTBUF_RIN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TESTBUF_RIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TESTBUF_RIN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TESTBUF_RIN_R = crate::BitReader<bool>;
 #[doc = "Field `testbuf_rin` writer - "]
-pub struct TESTBUF_RIN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TESTBUF_RIN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TESTBUF_RIN_W<'a, const O: u8> = crate::BitWriter<'a, u32, TESTBUF_SPEC, bool, O>;
+#[doc = "Field `testbuf_rfb` reader - "]
+pub type TESTBUF_RFB_R = crate::BitReader<bool>;
+#[doc = "Field `testbuf_rfb` writer - "]
+pub type TESTBUF_RFB_W<'a, const O: u8> = crate::BitWriter<'a, u32, TESTBUF_SPEC, bool, O>;
+#[doc = "Field `testbuf_op_cc` reader - "]
+pub type TESTBUF_OP_CC_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `testbuf_op_cc` writer - "]
+pub type TESTBUF_OP_CC_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TESTBUF_SPEC, u8, u8, 4, O>;
+#[doc = "Field `testbuf_boost` reader - "]
+pub type TESTBUF_BOOST_R = crate::BitReader<bool>;
+#[doc = "Field `testbuf_boost` writer - "]
+pub type TESTBUF_BOOST_W<'a, const O: u8> = crate::BitWriter<'a, u32, TESTBUF_SPEC, bool, O>;
+#[doc = "Field `testbuf_bm` reader - "]
+pub type TESTBUF_BM_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `testbuf_bm` writer - "]
+pub type TESTBUF_BM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TESTBUF_SPEC, u8, u8, 3, O>;
+#[doc = "Field `testbuf_vcm` reader - "]
+pub type TESTBUF_VCM_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `testbuf_vcm` writer - "]
+pub type TESTBUF_VCM_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TESTBUF_SPEC, u8, u8, 2, O>;
+#[doc = "Field `pu_testbuf` reader - "]
+pub type PU_TESTBUF_R = crate::BitReader<bool>;
+#[doc = "Field `pu_testbuf` writer - "]
+pub type PU_TESTBUF_W<'a, const O: u8> = crate::BitWriter<'a, u32, TESTBUF_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 24"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn pu_testbuf(&self) -> PU_TESTBUF_R {
-        PU_TESTBUF_R::new(((self.bits >> 24) & 0x01) != 0)
+    pub fn testbuf_rin(&self) -> TESTBUF_RIN_R {
+        TESTBUF_RIN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bits 20:21"]
+    #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn testbuf_vcm(&self) -> TESTBUF_VCM_R {
-        TESTBUF_VCM_R::new(((self.bits >> 20) & 0x03) as u8)
-    }
-    #[doc = "Bits 16:18"]
-    #[inline(always)]
-    pub fn testbuf_bm(&self) -> TESTBUF_BM_R {
-        TESTBUF_BM_R::new(((self.bits >> 16) & 0x07) as u8)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn testbuf_boost(&self) -> TESTBUF_BOOST_R {
-        TESTBUF_BOOST_R::new(((self.bits >> 12) & 0x01) != 0)
+    pub fn testbuf_rfb(&self) -> TESTBUF_RFB_R {
+        TESTBUF_RFB_R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
     pub fn testbuf_op_cc(&self) -> TESTBUF_OP_CC_R {
         TESTBUF_OP_CC_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bit 4"]
+    #[doc = "Bit 12"]
     #[inline(always)]
-    pub fn testbuf_rfb(&self) -> TESTBUF_RFB_R {
-        TESTBUF_RFB_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn testbuf_rin(&self) -> TESTBUF_RIN_R {
-        TESTBUF_RIN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 24"]
-    #[inline(always)]
-    pub fn pu_testbuf(&mut self) -> PU_TESTBUF_W {
-        PU_TESTBUF_W { w: self }
-    }
-    #[doc = "Bits 20:21"]
-    #[inline(always)]
-    pub fn testbuf_vcm(&mut self) -> TESTBUF_VCM_W {
-        TESTBUF_VCM_W { w: self }
+    pub fn testbuf_boost(&self) -> TESTBUF_BOOST_R {
+        TESTBUF_BOOST_R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
-    pub fn testbuf_bm(&mut self) -> TESTBUF_BM_W {
-        TESTBUF_BM_W { w: self }
+    pub fn testbuf_bm(&self) -> TESTBUF_BM_R {
+        TESTBUF_BM_R::new(((self.bits >> 16) & 7) as u8)
     }
-    #[doc = "Bit 12"]
+    #[doc = "Bits 20:21"]
     #[inline(always)]
-    pub fn testbuf_boost(&mut self) -> TESTBUF_BOOST_W {
-        TESTBUF_BOOST_W { w: self }
+    pub fn testbuf_vcm(&self) -> TESTBUF_VCM_R {
+        TESTBUF_VCM_R::new(((self.bits >> 20) & 3) as u8)
     }
-    #[doc = "Bits 8:11"]
+    #[doc = "Bit 24"]
     #[inline(always)]
-    pub fn testbuf_op_cc(&mut self) -> TESTBUF_OP_CC_W {
-        TESTBUF_OP_CC_W { w: self }
+    pub fn pu_testbuf(&self) -> PU_TESTBUF_R {
+        PU_TESTBUF_R::new(((self.bits >> 24) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn testbuf_rin(&mut self) -> TESTBUF_RIN_W<0> {
+        TESTBUF_RIN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn testbuf_rfb(&mut self) -> TESTBUF_RFB_W {
-        TESTBUF_RFB_W { w: self }
+    pub fn testbuf_rfb(&mut self) -> TESTBUF_RFB_W<4> {
+        TESTBUF_RFB_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn testbuf_rin(&mut self) -> TESTBUF_RIN_W {
-        TESTBUF_RIN_W { w: self }
+    pub fn testbuf_op_cc(&mut self) -> TESTBUF_OP_CC_W<8> {
+        TESTBUF_OP_CC_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn testbuf_boost(&mut self) -> TESTBUF_BOOST_W<12> {
+        TESTBUF_BOOST_W::new(self)
+    }
+    #[doc = "Bits 16:18"]
+    #[inline(always)]
+    pub fn testbuf_bm(&mut self) -> TESTBUF_BM_W<16> {
+        TESTBUF_BM_W::new(self)
+    }
+    #[doc = "Bits 20:21"]
+    #[inline(always)]
+    pub fn testbuf_vcm(&mut self) -> TESTBUF_VCM_W<20> {
+        TESTBUF_VCM_W::new(self)
+    }
+    #[doc = "Bit 24"]
+    #[inline(always)]
+    pub fn pu_testbuf(&mut self) -> PU_TESTBUF_W<24> {
+        PU_TESTBUF_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

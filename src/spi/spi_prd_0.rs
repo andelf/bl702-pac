@@ -34,152 +34,68 @@ impl From<crate::W<SPI_PRD_0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_spi_prd_d_ph_1` reader - "]
-pub struct CR_SPI_PRD_D_PH_1_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_PRD_D_PH_1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_PRD_D_PH_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_PRD_D_PH_1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_prd_d_ph_1` writer - "]
-pub struct CR_SPI_PRD_D_PH_1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_SPI_PRD_D_PH_1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 24)) | ((value as u32 & 0xff) << 24);
-        self.w
-    }
-}
-#[doc = "Field `cr_spi_prd_d_ph_0` reader - "]
-pub struct CR_SPI_PRD_D_PH_0_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_PRD_D_PH_0_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_PRD_D_PH_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_PRD_D_PH_0_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_prd_d_ph_0` writer - "]
-pub struct CR_SPI_PRD_D_PH_0_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_SPI_PRD_D_PH_0_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 16)) | ((value as u32 & 0xff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cr_spi_prd_p` reader - "]
-pub struct CR_SPI_PRD_P_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_PRD_P_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_PRD_P_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_PRD_P_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_prd_p` writer - "]
-pub struct CR_SPI_PRD_P_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_SPI_PRD_P_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xff << 8)) | ((value as u32 & 0xff) << 8);
-        self.w
-    }
-}
 #[doc = "Field `cr_spi_prd_s` reader - "]
-pub struct CR_SPI_PRD_S_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_PRD_S_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_PRD_S_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_PRD_S_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_SPI_PRD_S_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cr_spi_prd_s` writer - "]
-pub struct CR_SPI_PRD_S_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_SPI_PRD_S_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xff) | (value as u32 & 0xff);
-        self.w
-    }
-}
+pub type CR_SPI_PRD_S_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SPI_PRD_0_SPEC, u8, u8, 8, O>;
+#[doc = "Field `cr_spi_prd_p` reader - "]
+pub type CR_SPI_PRD_P_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_spi_prd_p` writer - "]
+pub type CR_SPI_PRD_P_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SPI_PRD_0_SPEC, u8, u8, 8, O>;
+#[doc = "Field `cr_spi_prd_d_ph_0` reader - "]
+pub type CR_SPI_PRD_D_PH_0_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_spi_prd_d_ph_0` writer - "]
+pub type CR_SPI_PRD_D_PH_0_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SPI_PRD_0_SPEC, u8, u8, 8, O>;
+#[doc = "Field `cr_spi_prd_d_ph_1` reader - "]
+pub type CR_SPI_PRD_D_PH_1_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_spi_prd_d_ph_1` writer - "]
+pub type CR_SPI_PRD_D_PH_1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SPI_PRD_0_SPEC, u8, u8, 8, O>;
 impl R {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn cr_spi_prd_d_ph_1(&self) -> CR_SPI_PRD_D_PH_1_R {
-        CR_SPI_PRD_D_PH_1_R::new(((self.bits >> 24) & 0xff) as u8)
-    }
-    #[doc = "Bits 16:23"]
-    #[inline(always)]
-    pub fn cr_spi_prd_d_ph_0(&self) -> CR_SPI_PRD_D_PH_0_R {
-        CR_SPI_PRD_D_PH_0_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn cr_spi_prd_s(&self) -> CR_SPI_PRD_S_R {
+        CR_SPI_PRD_S_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
     pub fn cr_spi_prd_p(&self) -> CR_SPI_PRD_P_R {
         CR_SPI_PRD_P_R::new(((self.bits >> 8) & 0xff) as u8)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn cr_spi_prd_s(&self) -> CR_SPI_PRD_S_R {
-        CR_SPI_PRD_S_R::new((self.bits & 0xff) as u8)
+    pub fn cr_spi_prd_d_ph_0(&self) -> CR_SPI_PRD_D_PH_0_R {
+        CR_SPI_PRD_D_PH_0_R::new(((self.bits >> 16) & 0xff) as u8)
+    }
+    #[doc = "Bits 24:31"]
+    #[inline(always)]
+    pub fn cr_spi_prd_d_ph_1(&self) -> CR_SPI_PRD_D_PH_1_R {
+        CR_SPI_PRD_D_PH_1_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 24:31"]
+    #[doc = "Bits 0:7"]
     #[inline(always)]
-    pub fn cr_spi_prd_d_ph_1(&mut self) -> CR_SPI_PRD_D_PH_1_W {
-        CR_SPI_PRD_D_PH_1_W { w: self }
-    }
-    #[doc = "Bits 16:23"]
-    #[inline(always)]
-    pub fn cr_spi_prd_d_ph_0(&mut self) -> CR_SPI_PRD_D_PH_0_W {
-        CR_SPI_PRD_D_PH_0_W { w: self }
+    pub fn cr_spi_prd_s(&mut self) -> CR_SPI_PRD_S_W<0> {
+        CR_SPI_PRD_S_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    pub fn cr_spi_prd_p(&mut self) -> CR_SPI_PRD_P_W {
-        CR_SPI_PRD_P_W { w: self }
+    pub fn cr_spi_prd_p(&mut self) -> CR_SPI_PRD_P_W<8> {
+        CR_SPI_PRD_P_W::new(self)
     }
-    #[doc = "Bits 0:7"]
+    #[doc = "Bits 16:23"]
     #[inline(always)]
-    pub fn cr_spi_prd_s(&mut self) -> CR_SPI_PRD_S_W {
-        CR_SPI_PRD_S_W { w: self }
+    pub fn cr_spi_prd_d_ph_0(&mut self) -> CR_SPI_PRD_D_PH_0_W<16> {
+        CR_SPI_PRD_D_PH_0_W::new(self)
+    }
+    #[doc = "Bits 24:31"]
+    #[inline(always)]
+    pub fn cr_spi_prd_d_ph_1(&mut self) -> CR_SPI_PRD_D_PH_1_W<24> {
+        CR_SPI_PRD_D_PH_1_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

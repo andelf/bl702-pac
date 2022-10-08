@@ -1,0 +1,177 @@
+_svd: "./bl702.svd"
+
+glb:
+  cgen_cfg1:
+    _delete:
+        - cgen_s1a
+        - cgen_s1
+    _add:
+      GLB:
+        description: GLB
+        bitOffset: 0
+        bitWidth: 1
+        access: read-write
+      MIX:
+        description: MIX
+        bitOffset: 1
+        bitWidth: 1
+        access: read-write
+      GPIP:
+        description: gpip (gpadc, gpdac) clock ungate enable
+        bitOffset: 2
+        bitWidth: 1
+        access: read-write
+      SEC_DBG:
+        description: sec_dbg clock ungate enable
+        bitOffset: 3
+        bitWidth: 1
+        access: read-write
+      SEC:
+        description: sec_eng clock ungate enable
+        bitOffset: 4
+        bitWidth: 1
+        access: read-write
+      TZ1:
+        description: TZC clock ungate enable
+        bitOffset: 5
+        bitWidth: 1
+        access: read-write
+      TZ2:
+        description: TZC2 clock ungate enable
+        bitOffset: 6
+        bitWidth: 1
+        access: read-write
+      EFUSE:
+        description: ef_ctrl clock ungate enable
+        bitOffset: 7
+        bitWidth: 1
+        access: read-write
+      CCI:
+        description: CCI (efuse?)
+        bitOffset: 8
+        bitWidth: 1
+        access: read-write
+      L1C:
+        description: L1C (efuse?)
+        bitOffset: 9
+        bitWidth: 1
+        access: read-write
+      S1A_ALL:
+        description: S1A_ALL (efuse?)
+        bitOffset: 10
+        bitWidth: 1
+        access: read-write
+      SFC:
+        description: sf_ctrl clock ungate enable
+        bitOffset: 11
+        bitWidth: 1
+        access: read-write
+      DMA:
+        description: DMA clock ungate enable
+        bitOffset: 12
+        bitWidth: 1
+        access: read-write
+      EMAC:
+        description: EMAC clock ungate enable
+        bitOffset: 13
+        bitWidth: 1
+        access: read-write
+      PDS_HBN_AON_HBNRAM:
+        description: DS_HBN_AON_HBNRAM
+        bitOffset: 14
+        bitWidth: 1
+        access: read-write
+      RSVD0F:
+        description: RSVD0F
+        bitOffset: 15
+        bitWidth: 1
+        access: read-write
+      UART0:
+        description: uart0 clock ungate enable
+        bitOffset: 16
+        bitWidth: 1
+        access: read-write
+      UART1:
+        description: uart1 clock ungate enable
+        bitOffset: 17
+        bitWidth: 1
+        access: read-write
+      SPI:
+        description: spi clock ungate enable
+        bitOffset: 18
+        bitWidth: 1
+        access: read-write
+      I2C:
+        description: i2c clock ungate enable
+        bitOffset: 19
+        bitWidth: 1
+        access: read-write
+      PWM:
+        description: pwm clock ungate enable
+        bitOffset: 20
+        bitWidth: 1
+        access: read-write
+      TMR:
+        description: timer clock ungate enable
+        bitOffset: 21
+        bitWidth: 1
+        access: read-write
+      IRR:
+        description: ir_remote clock ungate enable
+        bitOffset: 22
+        bitWidth: 1
+        access: read-write
+      CKS:
+        description: checksum clock ungate enable
+        bitOffset: 23
+        bitWidth: 1
+        access: read-write
+      QDEC:
+        description: qdec0 clock ungate enable
+        bitOffset: 24
+        bitWidth: 1
+        access: read-write
+      KYS:
+        description: KYS
+        bitOffset: 25
+        bitWidth: 1
+        access: read-write
+      I2S:
+        description: i2s and qdec2 clock ungate enable
+        bitOffset: 26
+        bitWidth: 1
+        access: read-write
+      RSVD1B:
+        description: RSVD1B
+        bitOffset: 27
+        bitWidth: 1
+        access: read-write
+      USB:
+        description: usb clock ungate enable
+        bitOffset: 28
+        bitWidth: 1 
+        access: read-write
+      CAM:
+        description: CAM
+        bitOffset: 29
+        bitWidth: 1 
+        access: read-write
+      MJPEG:
+        description: MJPEG
+        bitOffset: 30
+        bitWidth: 1
+        access: read-write
+      MAX:
+        description: MAX
+        bitOffset: 31
+        bitWidth: 1
+        access: read-write
+# Disabling this patch for now for compatibility with bl602-hal
+#  _array:
+    # as far as i can see 0-18 should work, maybe we need to patch 678?
+    # "GPIO_CFGCTL[0123456789],GPIO_CFGCTL1[012345]":
+    #   _start_from_zero: true
+    #   name: GPIO_PINMODE%s
+    # "GPIO_CFGCTL1[678]":
+    #   _start_from_zero: true
+    #   name: GPIO_PINMODE2%s

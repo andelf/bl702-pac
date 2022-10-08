@@ -35,43 +35,22 @@ impl From<crate::W<SE_TRNG_0_CTRL_1_SPEC>> for W {
     }
 }
 #[doc = "Field `se_trng_0_reseed_n_lsb` reader - "]
-pub struct SE_TRNG_0_RESEED_N_LSB_R(crate::FieldReader<u32, u32>);
-impl SE_TRNG_0_RESEED_N_LSB_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        SE_TRNG_0_RESEED_N_LSB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_RESEED_N_LSB_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SE_TRNG_0_RESEED_N_LSB_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `se_trng_0_reseed_n_lsb` writer - "]
-pub struct SE_TRNG_0_RESEED_N_LSB_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SE_TRNG_0_RESEED_N_LSB_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type SE_TRNG_0_RESEED_N_LSB_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, SE_TRNG_0_CTRL_1_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn se_trng_0_reseed_n_lsb(&self) -> SE_TRNG_0_RESEED_N_LSB_R {
-        SE_TRNG_0_RESEED_N_LSB_R::new((self.bits & 0xffff_ffff) as u32)
+        SE_TRNG_0_RESEED_N_LSB_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn se_trng_0_reseed_n_lsb(&mut self) -> SE_TRNG_0_RESEED_N_LSB_W {
-        SE_TRNG_0_RESEED_N_LSB_W { w: self }
+    pub fn se_trng_0_reseed_n_lsb(&mut self) -> SE_TRNG_0_RESEED_N_LSB_W<0> {
+        SE_TRNG_0_RESEED_N_LSB_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,172 +34,64 @@ impl From<crate::W<HBN_SRAM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `retram_slp` reader - "]
-pub struct RETRAM_SLP_R(crate::FieldReader<bool, bool>);
-impl RETRAM_SLP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RETRAM_SLP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RETRAM_SLP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `retram_slp` writer - "]
-pub struct RETRAM_SLP_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RETRAM_SLP_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
-        self.w
-    }
-}
-#[doc = "Field `retram_ret` reader - "]
-pub struct RETRAM_RET_R(crate::FieldReader<bool, bool>);
-impl RETRAM_RET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RETRAM_RET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RETRAM_RET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `retram_ret` writer - "]
-pub struct RETRAM_RET_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RETRAM_RET_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
-        self.w
-    }
-}
-#[doc = "Field `retram_emaw` reader - "]
-pub struct RETRAM_EMAW_R(crate::FieldReader<u8, u8>);
-impl RETRAM_EMAW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RETRAM_EMAW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RETRAM_EMAW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `retram_emaw` writer - "]
-pub struct RETRAM_EMAW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RETRAM_EMAW_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 3)) | ((value as u32 & 0x03) << 3);
-        self.w
-    }
-}
 #[doc = "Field `retram_ema` reader - "]
-pub struct RETRAM_EMA_R(crate::FieldReader<u8, u8>);
-impl RETRAM_EMA_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RETRAM_EMA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RETRAM_EMA_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RETRAM_EMA_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `retram_ema` writer - "]
-pub struct RETRAM_EMA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RETRAM_EMA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x07) | (value as u32 & 0x07);
-        self.w
-    }
-}
+pub type RETRAM_EMA_W<'a, const O: u8> = crate::FieldWriter<'a, u32, HBN_SRAM_SPEC, u8, u8, 3, O>;
+#[doc = "Field `retram_emaw` reader - "]
+pub type RETRAM_EMAW_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `retram_emaw` writer - "]
+pub type RETRAM_EMAW_W<'a, const O: u8> = crate::FieldWriter<'a, u32, HBN_SRAM_SPEC, u8, u8, 2, O>;
+#[doc = "Field `retram_ret` reader - "]
+pub type RETRAM_RET_R = crate::BitReader<bool>;
+#[doc = "Field `retram_ret` writer - "]
+pub type RETRAM_RET_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_SRAM_SPEC, bool, O>;
+#[doc = "Field `retram_slp` reader - "]
+pub type RETRAM_SLP_R = crate::BitReader<bool>;
+#[doc = "Field `retram_slp` writer - "]
+pub type RETRAM_SLP_W<'a, const O: u8> = crate::BitWriter<'a, u32, HBN_SRAM_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 7"]
+    #[doc = "Bits 0:2"]
     #[inline(always)]
-    pub fn retram_slp(&self) -> RETRAM_SLP_R {
-        RETRAM_SLP_R::new(((self.bits >> 7) & 0x01) != 0)
-    }
-    #[doc = "Bit 6"]
-    #[inline(always)]
-    pub fn retram_ret(&self) -> RETRAM_RET_R {
-        RETRAM_RET_R::new(((self.bits >> 6) & 0x01) != 0)
+    pub fn retram_ema(&self) -> RETRAM_EMA_R {
+        RETRAM_EMA_R::new((self.bits & 7) as u8)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
     pub fn retram_emaw(&self) -> RETRAM_EMAW_R {
-        RETRAM_EMAW_R::new(((self.bits >> 3) & 0x03) as u8)
-    }
-    #[doc = "Bits 0:2"]
-    #[inline(always)]
-    pub fn retram_ema(&self) -> RETRAM_EMA_R {
-        RETRAM_EMA_R::new((self.bits & 0x07) as u8)
-    }
-}
-impl W {
-    #[doc = "Bit 7"]
-    #[inline(always)]
-    pub fn retram_slp(&mut self) -> RETRAM_SLP_W {
-        RETRAM_SLP_W { w: self }
+        RETRAM_EMAW_R::new(((self.bits >> 3) & 3) as u8)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn retram_ret(&mut self) -> RETRAM_RET_W {
-        RETRAM_RET_W { w: self }
+    pub fn retram_ret(&self) -> RETRAM_RET_R {
+        RETRAM_RET_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn retram_slp(&self) -> RETRAM_SLP_R {
+        RETRAM_SLP_R::new(((self.bits >> 7) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:2"]
+    #[inline(always)]
+    pub fn retram_ema(&mut self) -> RETRAM_EMA_W<0> {
+        RETRAM_EMA_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
-    pub fn retram_emaw(&mut self) -> RETRAM_EMAW_W {
-        RETRAM_EMAW_W { w: self }
+    pub fn retram_emaw(&mut self) -> RETRAM_EMAW_W<3> {
+        RETRAM_EMAW_W::new(self)
     }
-    #[doc = "Bits 0:2"]
+    #[doc = "Bit 6"]
     #[inline(always)]
-    pub fn retram_ema(&mut self) -> RETRAM_EMA_W {
-        RETRAM_EMA_W { w: self }
+    pub fn retram_ret(&mut self) -> RETRAM_RET_W<6> {
+        RETRAM_RET_W::new(self)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    pub fn retram_slp(&mut self) -> RETRAM_SLP_W<7> {
+        RETRAM_SLP_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,192 +34,64 @@ impl From<crate::W<QDEC_INT_CLR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `overflow_clr` reader - "]
-pub struct OVERFLOW_CLR_R(crate::FieldReader<bool, bool>);
-impl OVERFLOW_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OVERFLOW_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OVERFLOW_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `overflow_clr` writer - "]
-pub struct OVERFLOW_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> OVERFLOW_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
-        self.w
-    }
-}
-#[doc = "Field `dbl_rdy_clr` reader - "]
-pub struct DBL_RDY_CLR_R(crate::FieldReader<bool, bool>);
-impl DBL_RDY_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DBL_RDY_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DBL_RDY_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dbl_rdy_clr` writer - "]
-pub struct DBL_RDY_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DBL_RDY_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
-        self.w
-    }
-}
-#[doc = "Field `spl_rdy_clr` reader - "]
-pub struct SPL_RDY_CLR_R(crate::FieldReader<bool, bool>);
-impl SPL_RDY_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SPL_RDY_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SPL_RDY_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `spl_rdy_clr` writer - "]
-pub struct SPL_RDY_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SPL_RDY_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `rpt_rdy_clr` reader - "]
-pub struct RPT_RDY_CLR_R(crate::FieldReader<bool, bool>);
-impl RPT_RDY_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RPT_RDY_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RPT_RDY_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type RPT_RDY_CLR_R = crate::BitReader<bool>;
 #[doc = "Field `rpt_rdy_clr` writer - "]
-pub struct RPT_RDY_CLR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RPT_RDY_CLR_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type RPT_RDY_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_INT_CLR_SPEC, bool, O>;
+#[doc = "Field `spl_rdy_clr` reader - "]
+pub type SPL_RDY_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `spl_rdy_clr` writer - "]
+pub type SPL_RDY_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_INT_CLR_SPEC, bool, O>;
+#[doc = "Field `dbl_rdy_clr` reader - "]
+pub type DBL_RDY_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `dbl_rdy_clr` writer - "]
+pub type DBL_RDY_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_INT_CLR_SPEC, bool, O>;
+#[doc = "Field `overflow_clr` reader - "]
+pub type OVERFLOW_CLR_R = crate::BitReader<bool>;
+#[doc = "Field `overflow_clr` writer - "]
+pub type OVERFLOW_CLR_W<'a, const O: u8> = crate::BitWriter<'a, u32, QDEC_INT_CLR_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 3"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn overflow_clr(&self) -> OVERFLOW_CLR_R {
-        OVERFLOW_CLR_R::new(((self.bits >> 3) & 0x01) != 0)
-    }
-    #[doc = "Bit 2"]
-    #[inline(always)]
-    pub fn dbl_rdy_clr(&self) -> DBL_RDY_CLR_R {
-        DBL_RDY_CLR_R::new(((self.bits >> 2) & 0x01) != 0)
+    pub fn rpt_rdy_clr(&self) -> RPT_RDY_CLR_R {
+        RPT_RDY_CLR_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn spl_rdy_clr(&self) -> SPL_RDY_CLR_R {
-        SPL_RDY_CLR_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn rpt_rdy_clr(&self) -> RPT_RDY_CLR_R {
-        RPT_RDY_CLR_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 3"]
-    #[inline(always)]
-    pub fn overflow_clr(&mut self) -> OVERFLOW_CLR_W {
-        OVERFLOW_CLR_W { w: self }
+        SPL_RDY_CLR_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn dbl_rdy_clr(&mut self) -> DBL_RDY_CLR_W {
-        DBL_RDY_CLR_W { w: self }
+    pub fn dbl_rdy_clr(&self) -> DBL_RDY_CLR_R {
+        DBL_RDY_CLR_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn overflow_clr(&self) -> OVERFLOW_CLR_R {
+        OVERFLOW_CLR_R::new(((self.bits >> 3) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn rpt_rdy_clr(&mut self) -> RPT_RDY_CLR_W<0> {
+        RPT_RDY_CLR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn spl_rdy_clr(&mut self) -> SPL_RDY_CLR_W {
-        SPL_RDY_CLR_W { w: self }
+    pub fn spl_rdy_clr(&mut self) -> SPL_RDY_CLR_W<1> {
+        SPL_RDY_CLR_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 2"]
     #[inline(always)]
-    pub fn rpt_rdy_clr(&mut self) -> RPT_RDY_CLR_W {
-        RPT_RDY_CLR_W { w: self }
+    pub fn dbl_rdy_clr(&mut self) -> DBL_RDY_CLR_W<2> {
+        DBL_RDY_CLR_W::new(self)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    pub fn overflow_clr(&mut self) -> OVERFLOW_CLR_W<3> {
+        OVERFLOW_CLR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

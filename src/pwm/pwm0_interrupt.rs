@@ -34,90 +34,38 @@ impl From<crate::W<PWM0_INTERRUPT_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `pwm_int_enable` reader - "]
-pub struct PWM_INT_ENABLE_R(crate::FieldReader<bool, bool>);
-impl PWM_INT_ENABLE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_INT_ENABLE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_INT_ENABLE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_int_enable` writer - "]
-pub struct PWM_INT_ENABLE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PWM_INT_ENABLE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
 #[doc = "Field `pwm_int_period_cnt` reader - "]
-pub struct PWM_INT_PERIOD_CNT_R(crate::FieldReader<u16, u16>);
-impl PWM_INT_PERIOD_CNT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PWM_INT_PERIOD_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_INT_PERIOD_CNT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PWM_INT_PERIOD_CNT_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `pwm_int_period_cnt` writer - "]
-pub struct PWM_INT_PERIOD_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PWM_INT_PERIOD_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+pub type PWM_INT_PERIOD_CNT_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PWM0_INTERRUPT_SPEC, u16, u16, 16, O>;
+#[doc = "Field `pwm_int_enable` reader - "]
+pub type PWM_INT_ENABLE_R = crate::BitReader<bool>;
+#[doc = "Field `pwm_int_enable` writer - "]
+pub type PWM_INT_ENABLE_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, PWM0_INTERRUPT_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn pwm_int_enable(&self) -> PWM_INT_ENABLE_R {
-        PWM_INT_ENABLE_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
     #[doc = "Bits 0:15"]
     #[inline(always)]
     pub fn pwm_int_period_cnt(&self) -> PWM_INT_PERIOD_CNT_R {
         PWM_INT_PERIOD_CNT_R::new((self.bits & 0xffff) as u16)
     }
-}
-impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn pwm_int_enable(&mut self) -> PWM_INT_ENABLE_W {
-        PWM_INT_ENABLE_W { w: self }
+    pub fn pwm_int_enable(&self) -> PWM_INT_ENABLE_R {
+        PWM_INT_ENABLE_R::new(((self.bits >> 16) & 1) != 0)
     }
+}
+impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn pwm_int_period_cnt(&mut self) -> PWM_INT_PERIOD_CNT_W {
-        PWM_INT_PERIOD_CNT_W { w: self }
+    pub fn pwm_int_period_cnt(&mut self) -> PWM_INT_PERIOD_CNT_W<0> {
+        PWM_INT_PERIOD_CNT_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn pwm_int_enable(&mut self) -> PWM_INT_ENABLE_W<16> {
+        PWM_INT_ENABLE_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

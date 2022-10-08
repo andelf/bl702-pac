@@ -34,208 +34,83 @@ impl From<crate::W<GPDAC_TX_FIFO_STATUS_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TxFifoWrPtr` reader - "]
-pub struct TXFIFOWRPTR_R(crate::FieldReader<u8, u8>);
-impl TXFIFOWRPTR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TXFIFOWRPTR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXFIFOWRPTR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TxFifoWrPtr` writer - "]
-pub struct TXFIFOWRPTR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXFIFOWRPTR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 8)) | ((value as u32 & 0x03) << 8);
-        self.w
-    }
-}
-#[doc = "Field `TxFifoRdPtr` reader - "]
-pub struct TXFIFORDPTR_R(crate::FieldReader<u8, u8>);
-impl TXFIFORDPTR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TXFIFORDPTR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TXFIFORDPTR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TxFifoRdPtr` writer - "]
-pub struct TXFIFORDPTR_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TXFIFORDPTR_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 4)) | ((value as u32 & 0x07) << 4);
-        self.w
-    }
-}
-#[doc = "Field `tx_cs` reader - "]
-pub struct TX_CS_R(crate::FieldReader<u8, u8>);
-impl TX_CS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TX_CS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_CS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_cs` writer - "]
-pub struct TX_CS_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_CS_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 2)) | ((value as u32 & 0x03) << 2);
-        self.w
-    }
-}
-#[doc = "Field `tx_fifo_full` reader - "]
-pub struct TX_FIFO_FULL_R(crate::FieldReader<bool, bool>);
-impl TX_FIFO_FULL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TX_FIFO_FULL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FIFO_FULL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_fifo_full` writer - "]
-pub struct TX_FIFO_FULL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FIFO_FULL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
-        self.w
-    }
-}
 #[doc = "Field `tx_fifo_empty` reader - "]
-pub struct TX_FIFO_EMPTY_R(crate::FieldReader<bool, bool>);
-impl TX_FIFO_EMPTY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TX_FIFO_EMPTY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_FIFO_EMPTY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TX_FIFO_EMPTY_R = crate::BitReader<bool>;
 #[doc = "Field `tx_fifo_empty` writer - "]
-pub struct TX_FIFO_EMPTY_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TX_FIFO_EMPTY_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type TX_FIFO_EMPTY_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, GPDAC_TX_FIFO_STATUS_SPEC, bool, O>;
+#[doc = "Field `tx_fifo_full` reader - "]
+pub type TX_FIFO_FULL_R = crate::BitReader<bool>;
+#[doc = "Field `tx_fifo_full` writer - "]
+pub type TX_FIFO_FULL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, GPDAC_TX_FIFO_STATUS_SPEC, bool, O>;
+#[doc = "Field `tx_cs` reader - "]
+pub type TX_CS_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `tx_cs` writer - "]
+pub type TX_CS_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPDAC_TX_FIFO_STATUS_SPEC, u8, u8, 2, O>;
+#[doc = "Field `TxFifoRdPtr` reader - "]
+pub type TX_FIFO_RD_PTR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `TxFifoRdPtr` writer - "]
+pub type TX_FIFO_RD_PTR_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPDAC_TX_FIFO_STATUS_SPEC, u8, u8, 3, O>;
+#[doc = "Field `TxFifoWrPtr` reader - "]
+pub type TX_FIFO_WR_PTR_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `TxFifoWrPtr` writer - "]
+pub type TX_FIFO_WR_PTR_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPDAC_TX_FIFO_STATUS_SPEC, u8, u8, 2, O>;
 impl R {
-    #[doc = "Bits 8:9"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn tx_fifo_wr_ptr(&self) -> TXFIFOWRPTR_R {
-        TXFIFOWRPTR_R::new(((self.bits >> 8) & 0x03) as u8)
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn tx_fifo_rd_ptr(&self) -> TXFIFORDPTR_R {
-        TXFIFORDPTR_R::new(((self.bits >> 4) & 0x07) as u8)
-    }
-    #[doc = "Bits 2:3"]
-    #[inline(always)]
-    pub fn tx_cs(&self) -> TX_CS_R {
-        TX_CS_R::new(((self.bits >> 2) & 0x03) as u8)
+    pub fn tx_fifo_empty(&self) -> TX_FIFO_EMPTY_R {
+        TX_FIFO_EMPTY_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
     pub fn tx_fifo_full(&self) -> TX_FIFO_FULL_R {
-        TX_FIFO_FULL_R::new(((self.bits >> 1) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn tx_fifo_empty(&self) -> TX_FIFO_EMPTY_R {
-        TX_FIFO_EMPTY_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bits 8:9"]
-    #[inline(always)]
-    pub fn tx_fifo_wr_ptr(&mut self) -> TXFIFOWRPTR_W {
-        TXFIFOWRPTR_W { w: self }
-    }
-    #[doc = "Bits 4:6"]
-    #[inline(always)]
-    pub fn tx_fifo_rd_ptr(&mut self) -> TXFIFORDPTR_W {
-        TXFIFORDPTR_W { w: self }
+        TX_FIFO_FULL_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn tx_cs(&mut self) -> TX_CS_W {
-        TX_CS_W { w: self }
+    pub fn tx_cs(&self) -> TX_CS_R {
+        TX_CS_R::new(((self.bits >> 2) & 3) as u8)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn tx_fifo_rd_ptr(&self) -> TX_FIFO_RD_PTR_R {
+        TX_FIFO_RD_PTR_R::new(((self.bits >> 4) & 7) as u8)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn tx_fifo_wr_ptr(&self) -> TX_FIFO_WR_PTR_R {
+        TX_FIFO_WR_PTR_R::new(((self.bits >> 8) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn tx_fifo_empty(&mut self) -> TX_FIFO_EMPTY_W<0> {
+        TX_FIFO_EMPTY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    pub fn tx_fifo_full(&mut self) -> TX_FIFO_FULL_W {
-        TX_FIFO_FULL_W { w: self }
+    pub fn tx_fifo_full(&mut self) -> TX_FIFO_FULL_W<1> {
+        TX_FIFO_FULL_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bits 2:3"]
     #[inline(always)]
-    pub fn tx_fifo_empty(&mut self) -> TX_FIFO_EMPTY_W {
-        TX_FIFO_EMPTY_W { w: self }
+    pub fn tx_cs(&mut self) -> TX_CS_W<2> {
+        TX_CS_W::new(self)
+    }
+    #[doc = "Bits 4:6"]
+    #[inline(always)]
+    pub fn tx_fifo_rd_ptr(&mut self) -> TX_FIFO_RD_PTR_W<4> {
+        TX_FIFO_RD_PTR_W::new(self)
+    }
+    #[doc = "Bits 8:9"]
+    #[inline(always)]
+    pub fn tx_fifo_wr_ptr(&mut self) -> TX_FIFO_WR_PTR_W<8> {
+        TX_FIFO_WR_PTR_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

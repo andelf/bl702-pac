@@ -35,43 +35,21 @@ impl From<crate::W<DMA_SYNC_SPEC>> for W {
     }
 }
 #[doc = "Field `DMA_Sync` reader - "]
-pub struct DMA_SYNC_R(crate::FieldReader<u32, u32>);
-impl DMA_SYNC_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        DMA_SYNC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DMA_SYNC_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type DMA_SYNC_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `DMA_Sync` writer - "]
-pub struct DMA_SYNC_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DMA_SYNC_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type DMA_SYNC_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_SYNC_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn dma_sync(&self) -> DMA_SYNC_R {
-        DMA_SYNC_R::new((self.bits & 0xffff_ffff) as u32)
+        DMA_SYNC_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn dma_sync(&mut self) -> DMA_SYNC_W {
-        DMA_SYNC_W { w: self }
+    pub fn dma_sync(&mut self) -> DMA_SYNC_W<0> {
+        DMA_SYNC_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

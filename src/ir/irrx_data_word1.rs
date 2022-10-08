@@ -35,43 +35,22 @@ impl From<crate::W<IRRX_DATA_WORD1_SPEC>> for W {
     }
 }
 #[doc = "Field `sts_irrx_data_word1` reader - "]
-pub struct STS_IRRX_DATA_WORD1_R(crate::FieldReader<u32, u32>);
-impl STS_IRRX_DATA_WORD1_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        STS_IRRX_DATA_WORD1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_IRRX_DATA_WORD1_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type STS_IRRX_DATA_WORD1_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `sts_irrx_data_word1` writer - "]
-pub struct STS_IRRX_DATA_WORD1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> STS_IRRX_DATA_WORD1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type STS_IRRX_DATA_WORD1_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, IRRX_DATA_WORD1_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn sts_irrx_data_word1(&self) -> STS_IRRX_DATA_WORD1_R {
-        STS_IRRX_DATA_WORD1_R::new((self.bits & 0xffff_ffff) as u32)
+        STS_IRRX_DATA_WORD1_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn sts_irrx_data_word1(&mut self) -> STS_IRRX_DATA_WORD1_W {
-        STS_IRRX_DATA_WORD1_W { w: self }
+    pub fn sts_irrx_data_word1(&mut self) -> STS_IRRX_DATA_WORD1_W<0> {
+        STS_IRRX_DATA_WORD1_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

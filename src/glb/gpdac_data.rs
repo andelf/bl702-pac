@@ -34,80 +34,38 @@ impl From<crate::W<GPDAC_DATA_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `gpdac_a_data` reader - "]
-pub struct GPDAC_A_DATA_R(crate::FieldReader<u16, u16>);
-impl GPDAC_A_DATA_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        GPDAC_A_DATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_A_DATA_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdac_a_data` writer - "]
-pub struct GPDAC_A_DATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPDAC_A_DATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03ff << 16)) | ((value as u32 & 0x03ff) << 16);
-        self.w
-    }
-}
 #[doc = "Field `gpdac_b_data` reader - "]
-pub struct GPDAC_B_DATA_R(crate::FieldReader<u16, u16>);
-impl GPDAC_B_DATA_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        GPDAC_B_DATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_B_DATA_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type GPDAC_B_DATA_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `gpdac_b_data` writer - "]
-pub struct GPDAC_B_DATA_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GPDAC_B_DATA_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03ff) | (value as u32 & 0x03ff);
-        self.w
-    }
-}
+pub type GPDAC_B_DATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPDAC_DATA_SPEC, u16, u16, 10, O>;
+#[doc = "Field `gpdac_a_data` reader - "]
+pub type GPDAC_A_DATA_R = crate::FieldReader<u16, u16>;
+#[doc = "Field `gpdac_a_data` writer - "]
+pub type GPDAC_A_DATA_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, GPDAC_DATA_SPEC, u16, u16, 10, O>;
 impl R {
-    #[doc = "Bits 16:25"]
-    #[inline(always)]
-    pub fn gpdac_a_data(&self) -> GPDAC_A_DATA_R {
-        GPDAC_A_DATA_R::new(((self.bits >> 16) & 0x03ff) as u16)
-    }
     #[doc = "Bits 0:9"]
     #[inline(always)]
     pub fn gpdac_b_data(&self) -> GPDAC_B_DATA_R {
         GPDAC_B_DATA_R::new((self.bits & 0x03ff) as u16)
     }
-}
-impl W {
     #[doc = "Bits 16:25"]
     #[inline(always)]
-    pub fn gpdac_a_data(&mut self) -> GPDAC_A_DATA_W {
-        GPDAC_A_DATA_W { w: self }
+    pub fn gpdac_a_data(&self) -> GPDAC_A_DATA_R {
+        GPDAC_A_DATA_R::new(((self.bits >> 16) & 0x03ff) as u16)
     }
+}
+impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
-    pub fn gpdac_b_data(&mut self) -> GPDAC_B_DATA_W {
-        GPDAC_B_DATA_W { w: self }
+    pub fn gpdac_b_data(&mut self) -> GPDAC_B_DATA_W<0> {
+        GPDAC_B_DATA_W::new(self)
+    }
+    #[doc = "Bits 16:25"]
+    #[inline(always)]
+    pub fn gpdac_a_data(&mut self) -> GPDAC_A_DATA_W<16> {
+        GPDAC_A_DATA_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

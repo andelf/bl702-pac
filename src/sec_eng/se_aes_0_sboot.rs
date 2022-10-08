@@ -35,53 +35,22 @@ impl From<crate::W<SE_AES_0_SBOOT_SPEC>> for W {
     }
 }
 #[doc = "Field `se_aes_0_sboot_key_sel` reader - "]
-pub struct SE_AES_0_SBOOT_KEY_SEL_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_SBOOT_KEY_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_SBOOT_KEY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_SBOOT_KEY_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type SE_AES_0_SBOOT_KEY_SEL_R = crate::BitReader<bool>;
 #[doc = "Field `se_aes_0_sboot_key_sel` writer - "]
-pub struct SE_AES_0_SBOOT_KEY_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SE_AES_0_SBOOT_KEY_SEL_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type SE_AES_0_SBOOT_KEY_SEL_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, SE_AES_0_SBOOT_SPEC, bool, O>;
 impl R {
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn se_aes_0_sboot_key_sel(&self) -> SE_AES_0_SBOOT_KEY_SEL_R {
-        SE_AES_0_SBOOT_KEY_SEL_R::new((self.bits & 0x01) != 0)
+        SE_AES_0_SBOOT_KEY_SEL_R::new((self.bits & 1) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn se_aes_0_sboot_key_sel(&mut self) -> SE_AES_0_SBOOT_KEY_SEL_W {
-        SE_AES_0_SBOOT_KEY_SEL_W { w: self }
+    pub fn se_aes_0_sboot_key_sel(&mut self) -> SE_AES_0_SBOOT_KEY_SEL_W<0> {
+        SE_AES_0_SBOOT_KEY_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

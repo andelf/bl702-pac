@@ -34,490 +34,177 @@ impl From<crate::W<DMA_C1CONTROL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `I` reader - "]
-pub struct I_R(crate::FieldReader<bool, bool>);
-impl I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `I` writer - "]
-pub struct I_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> I_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 31)) | ((value as u32 & 0x01) << 31);
-        self.w
-    }
-}
-#[doc = "Field `Prot` reader - "]
-pub struct PROT_R(crate::FieldReader<u8, u8>);
-impl PROT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PROT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PROT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `Prot` writer - "]
-pub struct PROT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> PROT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 28)) | ((value as u32 & 0x07) << 28);
-        self.w
-    }
-}
-#[doc = "Field `DI` reader - "]
-pub struct DI_R(crate::FieldReader<bool, bool>);
-impl DI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DI` writer - "]
-pub struct DI_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DI_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 27)) | ((value as u32 & 0x01) << 27);
-        self.w
-    }
-}
-#[doc = "Field `SI` reader - "]
-pub struct SI_R(crate::FieldReader<bool, bool>);
-impl SI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SI` writer - "]
-pub struct SI_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SI_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 26)) | ((value as u32 & 0x01) << 26);
-        self.w
-    }
-}
-#[doc = "Field `fix_cnt` reader - "]
-pub struct FIX_CNT_R(crate::FieldReader<u8, u8>);
-impl FIX_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FIX_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FIX_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fix_cnt` writer - "]
-pub struct FIX_CNT_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> FIX_CNT_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 23)) | ((value as u32 & 0x03) << 23);
-        self.w
-    }
-}
-#[doc = "Field `DWidth` reader - "]
-pub struct DWIDTH_R(crate::FieldReader<u8, u8>);
-impl DWIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DWIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DWIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DWidth` writer - "]
-pub struct DWIDTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DWIDTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 21)) | ((value as u32 & 0x07) << 21);
-        self.w
-    }
-}
-#[doc = "Field `SWidth` reader - "]
-pub struct SWIDTH_R(crate::FieldReader<u8, u8>);
-impl SWIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SWIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SWIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SWidth` writer - "]
-pub struct SWIDTH_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SWIDTH_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x07 << 18)) | ((value as u32 & 0x07) << 18);
-        self.w
-    }
-}
-#[doc = "Field `dst_add_mode` reader - "]
-pub struct DST_ADD_MODE_R(crate::FieldReader<bool, bool>);
-impl DST_ADD_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DST_ADD_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DST_ADD_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dst_add_mode` writer - "]
-pub struct DST_ADD_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DST_ADD_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `DBSize` reader - "]
-pub struct DBSIZE_R(crate::FieldReader<u8, u8>);
-impl DBSIZE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DBSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DBSIZE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DBSize` writer - "]
-pub struct DBSIZE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DBSIZE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 15)) | ((value as u32 & 0x03) << 15);
-        self.w
-    }
-}
-#[doc = "Field `dst_min_mode` reader - "]
-pub struct DST_MIN_MODE_R(crate::FieldReader<bool, bool>);
-impl DST_MIN_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DST_MIN_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DST_MIN_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dst_min_mode` writer - "]
-pub struct DST_MIN_MODE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> DST_MIN_MODE_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
-        self.w
-    }
-}
-#[doc = "Field `SBSize` reader - "]
-pub struct SBSIZE_R(crate::FieldReader<u8, u8>);
-impl SBSIZE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SBSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SBSIZE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SBSize` writer - "]
-pub struct SBSIZE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> SBSIZE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 12)) | ((value as u32 & 0x03) << 12);
-        self.w
-    }
-}
 #[doc = "Field `TransferSize` reader - "]
-pub struct TRANSFERSIZE_R(crate::FieldReader<u16, u16>);
-impl TRANSFERSIZE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TRANSFERSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TRANSFERSIZE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TRANSFER_SIZE_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `TransferSize` writer - "]
-pub struct TRANSFERSIZE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TRANSFERSIZE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type TRANSFER_SIZE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u16, u16, 12, O>;
+#[doc = "Field `SBSize` reader - "]
+pub type SBSIZE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `SBSize` writer - "]
+pub type SBSIZE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `dst_min_mode` reader - "]
+pub type DST_MIN_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `dst_min_mode` writer - "]
+pub type DST_MIN_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, DMA_C1CONTROL_SPEC, bool, O>;
+#[doc = "Field `DBSize` reader - "]
+pub type DBSIZE_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `DBSize` writer - "]
+pub type DBSIZE_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `dst_add_mode` reader - "]
+pub type DST_ADD_MODE_R = crate::BitReader<bool>;
+#[doc = "Field `dst_add_mode` writer - "]
+pub type DST_ADD_MODE_W<'a, const O: u8> = crate::BitWriter<'a, u32, DMA_C1CONTROL_SPEC, bool, O>;
+#[doc = "Field `SWidth` reader - "]
+pub type SWIDTH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `SWidth` writer - "]
+pub type SWIDTH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 3, O>;
+#[doc = "Field `DWidth` reader - "]
+pub type DWIDTH_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `DWidth` writer - "]
+pub type DWIDTH_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 3, O>;
+#[doc = "Field `fix_cnt` reader - "]
+pub type FIX_CNT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `fix_cnt` writer - "]
+pub type FIX_CNT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 2, O>;
+#[doc = "Field `SI` reader - "]
+pub type SI_R = crate::BitReader<bool>;
+#[doc = "Field `SI` writer - "]
+pub type SI_W<'a, const O: u8> = crate::BitWriter<'a, u32, DMA_C1CONTROL_SPEC, bool, O>;
+#[doc = "Field `DI` reader - "]
+pub type DI_R = crate::BitReader<bool>;
+#[doc = "Field `DI` writer - "]
+pub type DI_W<'a, const O: u8> = crate::BitWriter<'a, u32, DMA_C1CONTROL_SPEC, bool, O>;
+#[doc = "Field `Prot` reader - "]
+pub type PROT_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `Prot` writer - "]
+pub type PROT_W<'a, const O: u8> = crate::FieldWriter<'a, u32, DMA_C1CONTROL_SPEC, u8, u8, 3, O>;
+#[doc = "Field `I` reader - "]
+pub type I_R = crate::BitReader<bool>;
+#[doc = "Field `I` writer - "]
+pub type I_W<'a, const O: u8> = crate::BitWriter<'a, u32, DMA_C1CONTROL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 31"]
+    #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn i(&self) -> I_R {
-        I_R::new(((self.bits >> 31) & 0x01) != 0)
-    }
-    #[doc = "Bits 28:30"]
-    #[inline(always)]
-    pub fn prot(&self) -> PROT_R {
-        PROT_R::new(((self.bits >> 28) & 0x07) as u8)
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn di(&self) -> DI_R {
-        DI_R::new(((self.bits >> 27) & 0x01) != 0)
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn si(&self) -> SI_R {
-        SI_R::new(((self.bits >> 26) & 0x01) != 0)
-    }
-    #[doc = "Bits 23:24"]
-    #[inline(always)]
-    pub fn fix_cnt(&self) -> FIX_CNT_R {
-        FIX_CNT_R::new(((self.bits >> 23) & 0x03) as u8)
-    }
-    #[doc = "Bits 21:23"]
-    #[inline(always)]
-    pub fn dwidth(&self) -> DWIDTH_R {
-        DWIDTH_R::new(((self.bits >> 21) & 0x07) as u8)
-    }
-    #[doc = "Bits 18:20"]
-    #[inline(always)]
-    pub fn swidth(&self) -> SWIDTH_R {
-        SWIDTH_R::new(((self.bits >> 18) & 0x07) as u8)
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn dst_add_mode(&self) -> DST_ADD_MODE_R {
-        DST_ADD_MODE_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bits 15:16"]
-    #[inline(always)]
-    pub fn dbsize(&self) -> DBSIZE_R {
-        DBSIZE_R::new(((self.bits >> 15) & 0x03) as u8)
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn dst_min_mode(&self) -> DST_MIN_MODE_R {
-        DST_MIN_MODE_R::new(((self.bits >> 14) & 0x01) != 0)
+    pub fn transfer_size(&self) -> TRANSFER_SIZE_R {
+        TRANSFER_SIZE_R::new((self.bits & 0x0fff) as u16)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
     pub fn sbsize(&self) -> SBSIZE_R {
-        SBSIZE_R::new(((self.bits >> 12) & 0x03) as u8)
-    }
-    #[doc = "Bits 0:11"]
-    #[inline(always)]
-    pub fn transfer_size(&self) -> TRANSFERSIZE_R {
-        TRANSFERSIZE_R::new((self.bits & 0x0fff) as u16)
-    }
-}
-impl W {
-    #[doc = "Bit 31"]
-    #[inline(always)]
-    pub fn i(&mut self) -> I_W {
-        I_W { w: self }
-    }
-    #[doc = "Bits 28:30"]
-    #[inline(always)]
-    pub fn prot(&mut self) -> PROT_W {
-        PROT_W { w: self }
-    }
-    #[doc = "Bit 27"]
-    #[inline(always)]
-    pub fn di(&mut self) -> DI_W {
-        DI_W { w: self }
-    }
-    #[doc = "Bit 26"]
-    #[inline(always)]
-    pub fn si(&mut self) -> SI_W {
-        SI_W { w: self }
-    }
-    #[doc = "Bits 23:24"]
-    #[inline(always)]
-    pub fn fix_cnt(&mut self) -> FIX_CNT_W {
-        FIX_CNT_W { w: self }
-    }
-    #[doc = "Bits 21:23"]
-    #[inline(always)]
-    pub fn dwidth(&mut self) -> DWIDTH_W {
-        DWIDTH_W { w: self }
-    }
-    #[doc = "Bits 18:20"]
-    #[inline(always)]
-    pub fn swidth(&mut self) -> SWIDTH_W {
-        SWIDTH_W { w: self }
-    }
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn dst_add_mode(&mut self) -> DST_ADD_MODE_W {
-        DST_ADD_MODE_W { w: self }
-    }
-    #[doc = "Bits 15:16"]
-    #[inline(always)]
-    pub fn dbsize(&mut self) -> DBSIZE_W {
-        DBSIZE_W { w: self }
+        SBSIZE_R::new(((self.bits >> 12) & 3) as u8)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn dst_min_mode(&mut self) -> DST_MIN_MODE_W {
-        DST_MIN_MODE_W { w: self }
+    pub fn dst_min_mode(&self) -> DST_MIN_MODE_R {
+        DST_MIN_MODE_R::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bits 15:16"]
+    #[inline(always)]
+    pub fn dbsize(&self) -> DBSIZE_R {
+        DBSIZE_R::new(((self.bits >> 15) & 3) as u8)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn dst_add_mode(&self) -> DST_ADD_MODE_R {
+        DST_ADD_MODE_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bits 18:20"]
+    #[inline(always)]
+    pub fn swidth(&self) -> SWIDTH_R {
+        SWIDTH_R::new(((self.bits >> 18) & 7) as u8)
+    }
+    #[doc = "Bits 21:23"]
+    #[inline(always)]
+    pub fn dwidth(&self) -> DWIDTH_R {
+        DWIDTH_R::new(((self.bits >> 21) & 7) as u8)
+    }
+    #[doc = "Bits 23:24"]
+    #[inline(always)]
+    pub fn fix_cnt(&self) -> FIX_CNT_R {
+        FIX_CNT_R::new(((self.bits >> 23) & 3) as u8)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn si(&self) -> SI_R {
+        SI_R::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn di(&self) -> DI_R {
+        DI_R::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn prot(&self) -> PROT_R {
+        PROT_R::new(((self.bits >> 28) & 7) as u8)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn i(&self) -> I_R {
+        I_R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn transfer_size(&mut self) -> TRANSFER_SIZE_W<0> {
+        TRANSFER_SIZE_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
-    pub fn sbsize(&mut self) -> SBSIZE_W {
-        SBSIZE_W { w: self }
+    pub fn sbsize(&mut self) -> SBSIZE_W<12> {
+        SBSIZE_W::new(self)
     }
-    #[doc = "Bits 0:11"]
+    #[doc = "Bit 14"]
     #[inline(always)]
-    pub fn transfer_size(&mut self) -> TRANSFERSIZE_W {
-        TRANSFERSIZE_W { w: self }
+    pub fn dst_min_mode(&mut self) -> DST_MIN_MODE_W<14> {
+        DST_MIN_MODE_W::new(self)
+    }
+    #[doc = "Bits 15:16"]
+    #[inline(always)]
+    pub fn dbsize(&mut self) -> DBSIZE_W<15> {
+        DBSIZE_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn dst_add_mode(&mut self) -> DST_ADD_MODE_W<17> {
+        DST_ADD_MODE_W::new(self)
+    }
+    #[doc = "Bits 18:20"]
+    #[inline(always)]
+    pub fn swidth(&mut self) -> SWIDTH_W<18> {
+        SWIDTH_W::new(self)
+    }
+    #[doc = "Bits 21:23"]
+    #[inline(always)]
+    pub fn dwidth(&mut self) -> DWIDTH_W<21> {
+        DWIDTH_W::new(self)
+    }
+    #[doc = "Bits 23:24"]
+    #[inline(always)]
+    pub fn fix_cnt(&mut self) -> FIX_CNT_W<23> {
+        FIX_CNT_W::new(self)
+    }
+    #[doc = "Bit 26"]
+    #[inline(always)]
+    pub fn si(&mut self) -> SI_W<26> {
+        SI_W::new(self)
+    }
+    #[doc = "Bit 27"]
+    #[inline(always)]
+    pub fn di(&mut self) -> DI_W<27> {
+        DI_W::new(self)
+    }
+    #[doc = "Bits 28:30"]
+    #[inline(always)]
+    pub fn prot(&mut self) -> PROT_W<28> {
+        PROT_W::new(self)
+    }
+    #[doc = "Bit 31"]
+    #[inline(always)]
+    pub fn i(&mut self) -> I_W<31> {
+        I_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

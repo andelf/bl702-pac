@@ -34,284 +34,95 @@ impl From<crate::W<RF_CAL_SWITCH_CTRL_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `inc_fcal_en_hw` reader - "]
-pub struct INC_FCAL_EN_HW_R(crate::FieldReader<bool, bool>);
-impl INC_FCAL_EN_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_FCAL_EN_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_EN_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_en_hw` writer - "]
-pub struct INC_FCAL_EN_HW_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_FCAL_EN_HW_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
-        self.w
-    }
-}
-#[doc = "Field `inc_fcal_en` reader - "]
-pub struct INC_FCAL_EN_R(crate::FieldReader<bool, bool>);
-impl INC_FCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_FCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_en` writer - "]
-pub struct INC_FCAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_FCAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
-#[doc = "Field `inc_acal_en` reader - "]
-pub struct INC_ACAL_EN_R(crate::FieldReader<bool, bool>);
-impl INC_ACAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_ACAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_ACAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_acal_en` writer - "]
-pub struct INC_ACAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> INC_ACAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
-        self.w
-    }
-}
-#[doc = "Field `rccal_en` reader - "]
-pub struct RCCAL_EN_R(crate::FieldReader<bool, bool>);
-impl RCCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rccal_en` writer - "]
-pub struct RCCAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> RCCAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
-        self.w
-    }
-}
-#[doc = "Field `kcal_en` reader - "]
-pub struct KCAL_EN_R(crate::FieldReader<bool, bool>);
-impl KCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        KCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for KCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `kcal_en` writer - "]
-pub struct KCAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> KCAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
 #[doc = "Field `acal_en` reader - "]
-pub struct ACAL_EN_R(crate::FieldReader<bool, bool>);
-impl ACAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type ACAL_EN_R = crate::BitReader<bool>;
 #[doc = "Field `acal_en` writer - "]
-pub struct ACAL_EN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> ACAL_EN_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type ACAL_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
+#[doc = "Field `kcal_en` reader - "]
+pub type KCAL_EN_R = crate::BitReader<bool>;
+#[doc = "Field `kcal_en` writer - "]
+pub type KCAL_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
+#[doc = "Field `rccal_en` reader - "]
+pub type RCCAL_EN_R = crate::BitReader<bool>;
+#[doc = "Field `rccal_en` writer - "]
+pub type RCCAL_EN_W<'a, const O: u8> = crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_acal_en` reader - "]
+pub type INC_ACAL_EN_R = crate::BitReader<bool>;
+#[doc = "Field `inc_acal_en` writer - "]
+pub type INC_ACAL_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_fcal_en` reader - "]
+pub type INC_FCAL_EN_R = crate::BitReader<bool>;
+#[doc = "Field `inc_fcal_en` writer - "]
+pub type INC_FCAL_EN_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
+#[doc = "Field `inc_fcal_en_hw` reader - "]
+pub type INC_FCAL_EN_HW_R = crate::BitReader<bool>;
+#[doc = "Field `inc_fcal_en_hw` writer - "]
+pub type INC_FCAL_EN_HW_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, RF_CAL_SWITCH_CTRL_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 17"]
+    #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn inc_fcal_en_hw(&self) -> INC_FCAL_EN_HW_R {
-        INC_FCAL_EN_HW_R::new(((self.bits >> 17) & 0x01) != 0)
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn inc_fcal_en(&self) -> INC_FCAL_EN_R {
-        INC_FCAL_EN_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn inc_acal_en(&self) -> INC_ACAL_EN_R {
-        INC_ACAL_EN_R::new(((self.bits >> 12) & 0x01) != 0)
-    }
-    #[doc = "Bit 8"]
-    #[inline(always)]
-    pub fn rccal_en(&self) -> RCCAL_EN_R {
-        RCCAL_EN_R::new(((self.bits >> 8) & 0x01) != 0)
+    pub fn acal_en(&self) -> ACAL_EN_R {
+        ACAL_EN_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
     pub fn kcal_en(&self) -> KCAL_EN_R {
-        KCAL_EN_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
-    #[doc = "Bit 0"]
-    #[inline(always)]
-    pub fn acal_en(&self) -> ACAL_EN_R {
-        ACAL_EN_R::new((self.bits & 0x01) != 0)
-    }
-}
-impl W {
-    #[doc = "Bit 17"]
-    #[inline(always)]
-    pub fn inc_fcal_en_hw(&mut self) -> INC_FCAL_EN_HW_W {
-        INC_FCAL_EN_HW_W { w: self }
-    }
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn inc_fcal_en(&mut self) -> INC_FCAL_EN_W {
-        INC_FCAL_EN_W { w: self }
-    }
-    #[doc = "Bit 12"]
-    #[inline(always)]
-    pub fn inc_acal_en(&mut self) -> INC_ACAL_EN_W {
-        INC_ACAL_EN_W { w: self }
+        KCAL_EN_R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn rccal_en(&mut self) -> RCCAL_EN_W {
-        RCCAL_EN_W { w: self }
+    pub fn rccal_en(&self) -> RCCAL_EN_R {
+        RCCAL_EN_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn inc_acal_en(&self) -> INC_ACAL_EN_R {
+        INC_ACAL_EN_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn inc_fcal_en(&self) -> INC_FCAL_EN_R {
+        INC_FCAL_EN_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn inc_fcal_en_hw(&self) -> INC_FCAL_EN_HW_R {
+        INC_FCAL_EN_HW_R::new(((self.bits >> 17) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn acal_en(&mut self) -> ACAL_EN_W<0> {
+        ACAL_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    pub fn kcal_en(&mut self) -> KCAL_EN_W {
-        KCAL_EN_W { w: self }
+    pub fn kcal_en(&mut self) -> KCAL_EN_W<4> {
+        KCAL_EN_W::new(self)
     }
-    #[doc = "Bit 0"]
+    #[doc = "Bit 8"]
     #[inline(always)]
-    pub fn acal_en(&mut self) -> ACAL_EN_W {
-        ACAL_EN_W { w: self }
+    pub fn rccal_en(&mut self) -> RCCAL_EN_W<8> {
+        RCCAL_EN_W::new(self)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn inc_acal_en(&mut self) -> INC_ACAL_EN_W<12> {
+        INC_ACAL_EN_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn inc_fcal_en(&mut self) -> INC_FCAL_EN_W<16> {
+        INC_FCAL_EN_W::new(self)
+    }
+    #[doc = "Bit 17"]
+    #[inline(always)]
+    pub fn inc_fcal_en_hw(&mut self) -> INC_FCAL_EN_HW_W<17> {
+        INC_FCAL_EN_HW_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

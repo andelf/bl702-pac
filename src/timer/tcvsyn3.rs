@@ -35,43 +35,21 @@ impl From<crate::W<TCVSYN3_SPEC>> for W {
     }
 }
 #[doc = "Field `tcvsyn3` reader - "]
-pub struct TCVSYN3_R(crate::FieldReader<u32, u32>);
-impl TCVSYN3_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        TCVSYN3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TCVSYN3_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type TCVSYN3_R = crate::FieldReader<u32, u32>;
 #[doc = "Field `tcvsyn3` writer - "]
-pub struct TCVSYN3_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> TCVSYN3_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff_ffff) | (value as u32 & 0xffff_ffff);
-        self.w
-    }
-}
+pub type TCVSYN3_W<'a, const O: u8> = crate::FieldWriter<'a, u32, TCVSYN3_SPEC, u32, u32, 32, O>;
 impl R {
     #[doc = "Bits 0:31"]
     #[inline(always)]
     pub fn tcvsyn3(&self) -> TCVSYN3_R {
-        TCVSYN3_R::new((self.bits & 0xffff_ffff) as u32)
+        TCVSYN3_R::new(self.bits)
     }
 }
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    pub fn tcvsyn3(&mut self) -> TCVSYN3_W {
-        TCVSYN3_W { w: self }
+    pub fn tcvsyn3(&mut self) -> TCVSYN3_W<0> {
+        TCVSYN3_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

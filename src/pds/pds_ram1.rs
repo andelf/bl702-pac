@@ -34,116 +34,53 @@ impl From<crate::W<PDS_RAM1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cr_pds_ram_pgen` reader - "]
-pub struct CR_PDS_RAM_PGEN_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_RAM_PGEN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_RAM_PGEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_RAM_PGEN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ram_pgen` writer - "]
-pub struct CR_PDS_RAM_PGEN_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_RAM_PGEN_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 8)) | ((value as u32 & 0x0f) << 8);
-        self.w
-    }
-}
-#[doc = "Field `cr_pds_ram_ret2n` reader - "]
-pub struct CR_PDS_RAM_RET2N_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_RAM_RET2N_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_RAM_RET2N_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_RAM_RET2N_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_ram_ret2n` writer - "]
-pub struct CR_PDS_RAM_RET2N_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_RAM_RET2N_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 4)) | ((value as u32 & 0x0f) << 4);
-        self.w
-    }
-}
 #[doc = "Field `cr_pds_ram_ret1n` reader - "]
-pub struct CR_PDS_RAM_RET1N_R(crate::FieldReader<u8, u8>);
-impl CR_PDS_RAM_RET1N_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_PDS_RAM_RET1N_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_RAM_RET1N_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CR_PDS_RAM_RET1N_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `cr_pds_ram_ret1n` writer - "]
-pub struct CR_PDS_RAM_RET1N_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CR_PDS_RAM_RET1N_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0f) | (value as u32 & 0x0f);
-        self.w
-    }
-}
+pub type CR_PDS_RAM_RET1N_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_RAM1_SPEC, u8, u8, 4, O>;
+#[doc = "Field `cr_pds_ram_ret2n` reader - "]
+pub type CR_PDS_RAM_RET2N_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_ram_ret2n` writer - "]
+pub type CR_PDS_RAM_RET2N_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_RAM1_SPEC, u8, u8, 4, O>;
+#[doc = "Field `cr_pds_ram_pgen` reader - "]
+pub type CR_PDS_RAM_PGEN_R = crate::FieldReader<u8, u8>;
+#[doc = "Field `cr_pds_ram_pgen` writer - "]
+pub type CR_PDS_RAM_PGEN_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, PDS_RAM1_SPEC, u8, u8, 4, O>;
 impl R {
-    #[doc = "Bits 8:11"]
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn cr_pds_ram_pgen(&self) -> CR_PDS_RAM_PGEN_R {
-        CR_PDS_RAM_PGEN_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn cr_pds_ram_ret1n(&self) -> CR_PDS_RAM_RET1N_R {
+        CR_PDS_RAM_RET1N_R::new((self.bits & 0x0f) as u8)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
     pub fn cr_pds_ram_ret2n(&self) -> CR_PDS_RAM_RET2N_R {
         CR_PDS_RAM_RET2N_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn cr_pds_ram_ret1n(&self) -> CR_PDS_RAM_RET1N_R {
-        CR_PDS_RAM_RET1N_R::new((self.bits & 0x0f) as u8)
+    pub fn cr_pds_ram_pgen(&self) -> CR_PDS_RAM_PGEN_R {
+        CR_PDS_RAM_PGEN_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 8:11"]
+    #[doc = "Bits 0:3"]
     #[inline(always)]
-    pub fn cr_pds_ram_pgen(&mut self) -> CR_PDS_RAM_PGEN_W {
-        CR_PDS_RAM_PGEN_W { w: self }
+    pub fn cr_pds_ram_ret1n(&mut self) -> CR_PDS_RAM_RET1N_W<0> {
+        CR_PDS_RAM_RET1N_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
-    pub fn cr_pds_ram_ret2n(&mut self) -> CR_PDS_RAM_RET2N_W {
-        CR_PDS_RAM_RET2N_W { w: self }
+    pub fn cr_pds_ram_ret2n(&mut self) -> CR_PDS_RAM_RET2N_W<4> {
+        CR_PDS_RAM_RET2N_W::new(self)
     }
-    #[doc = "Bits 0:3"]
+    #[doc = "Bits 8:11"]
     #[inline(always)]
-    pub fn cr_pds_ram_ret1n(&mut self) -> CR_PDS_RAM_RET1N_W {
-        CR_PDS_RAM_RET1N_W { w: self }
+    pub fn cr_pds_ram_pgen(&mut self) -> CR_PDS_RAM_PGEN_W<8> {
+        CR_PDS_RAM_PGEN_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

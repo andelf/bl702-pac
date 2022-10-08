@@ -35,43 +35,21 @@ impl From<crate::W<CIP_LDO15_SPEC>> for W {
     }
 }
 #[doc = "Field `vg11_sel` reader - "]
-pub struct VG11_SEL_R(crate::FieldReader<u8, u8>);
-impl VG11_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        VG11_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for VG11_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type VG11_SEL_R = crate::FieldReader<u8, u8>;
 #[doc = "Field `vg11_sel` writer - "]
-pub struct VG11_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> VG11_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
-        self.w
-    }
-}
+pub type VG11_SEL_W<'a, const O: u8> = crate::FieldWriter<'a, u32, CIP_LDO15_SPEC, u8, u8, 2, O>;
 impl R {
     #[doc = "Bits 0:1"]
     #[inline(always)]
     pub fn vg11_sel(&self) -> VG11_SEL_R {
-        VG11_SEL_R::new((self.bits & 0x03) as u8)
+        VG11_SEL_R::new((self.bits & 3) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    pub fn vg11_sel(&mut self) -> VG11_SEL_W {
-        VG11_SEL_W { w: self }
+    pub fn vg11_sel(&mut self) -> VG11_SEL_W<0> {
+        VG11_SEL_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

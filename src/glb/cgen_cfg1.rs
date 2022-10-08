@@ -34,80 +34,456 @@ impl From<crate::W<CGEN_CFG1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cgen_s1a` reader - "]
-pub struct CGEN_S1A_R(crate::FieldReader<u16, u16>);
-impl CGEN_S1A_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CGEN_S1A_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S1A_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s1a` writer - "]
-pub struct CGEN_S1A_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S1A_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0xffff << 16)) | ((value as u32 & 0xffff) << 16);
-        self.w
-    }
-}
-#[doc = "Field `cgen_s1` reader - "]
-pub struct CGEN_S1_R(crate::FieldReader<u16, u16>);
-impl CGEN_S1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CGEN_S1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s1` writer - "]
-pub struct CGEN_S1_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S1_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0xffff) | (value as u32 & 0xffff);
-        self.w
-    }
-}
+#[doc = "Field `GLB` reader - GLB"]
+pub type GLB_R = crate::BitReader<bool>;
+#[doc = "Field `GLB` writer - GLB"]
+pub type GLB_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `MIX` reader - MIX"]
+pub type MIX_R = crate::BitReader<bool>;
+#[doc = "Field `MIX` writer - MIX"]
+pub type MIX_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `GPIP` reader - gpip (gpadc, gpdac) clock ungate enable"]
+pub type GPIP_R = crate::BitReader<bool>;
+#[doc = "Field `GPIP` writer - gpip (gpadc, gpdac) clock ungate enable"]
+pub type GPIP_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `SEC_DBG` reader - sec_dbg clock ungate enable"]
+pub type SEC_DBG_R = crate::BitReader<bool>;
+#[doc = "Field `SEC_DBG` writer - sec_dbg clock ungate enable"]
+pub type SEC_DBG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `SEC` reader - sec_eng clock ungate enable"]
+pub type SEC_R = crate::BitReader<bool>;
+#[doc = "Field `SEC` writer - sec_eng clock ungate enable"]
+pub type SEC_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `TZ1` reader - TZC clock ungate enable"]
+pub type TZ1_R = crate::BitReader<bool>;
+#[doc = "Field `TZ1` writer - TZC clock ungate enable"]
+pub type TZ1_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `TZ2` reader - TZC2 clock ungate enable"]
+pub type TZ2_R = crate::BitReader<bool>;
+#[doc = "Field `TZ2` writer - TZC2 clock ungate enable"]
+pub type TZ2_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `EFUSE` reader - ef_ctrl clock ungate enable"]
+pub type EFUSE_R = crate::BitReader<bool>;
+#[doc = "Field `EFUSE` writer - ef_ctrl clock ungate enable"]
+pub type EFUSE_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `CCI` reader - CCI (efuse?)"]
+pub type CCI_R = crate::BitReader<bool>;
+#[doc = "Field `CCI` writer - CCI (efuse?)"]
+pub type CCI_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `L1C` reader - L1C (efuse?)"]
+pub type L1C_R = crate::BitReader<bool>;
+#[doc = "Field `L1C` writer - L1C (efuse?)"]
+pub type L1C_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `S1A_ALL` reader - S1A_ALL (efuse?)"]
+pub type S1A_ALL_R = crate::BitReader<bool>;
+#[doc = "Field `S1A_ALL` writer - S1A_ALL (efuse?)"]
+pub type S1A_ALL_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `SFC` reader - sf_ctrl clock ungate enable"]
+pub type SFC_R = crate::BitReader<bool>;
+#[doc = "Field `SFC` writer - sf_ctrl clock ungate enable"]
+pub type SFC_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `DMA` reader - DMA clock ungate enable"]
+pub type DMA_R = crate::BitReader<bool>;
+#[doc = "Field `DMA` writer - DMA clock ungate enable"]
+pub type DMA_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `EMAC` reader - EMAC clock ungate enable"]
+pub type EMAC_R = crate::BitReader<bool>;
+#[doc = "Field `EMAC` writer - EMAC clock ungate enable"]
+pub type EMAC_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `PDS_HBN_AON_HBNRAM` reader - DS_HBN_AON_HBNRAM"]
+pub type PDS_HBN_AON_HBNRAM_R = crate::BitReader<bool>;
+#[doc = "Field `PDS_HBN_AON_HBNRAM` writer - DS_HBN_AON_HBNRAM"]
+pub type PDS_HBN_AON_HBNRAM_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `RSVD0F` reader - RSVD0F"]
+pub type RSVD0F_R = crate::BitReader<bool>;
+#[doc = "Field `RSVD0F` writer - RSVD0F"]
+pub type RSVD0F_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `UART0` reader - uart0 clock ungate enable"]
+pub type UART0_R = crate::BitReader<bool>;
+#[doc = "Field `UART0` writer - uart0 clock ungate enable"]
+pub type UART0_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `UART1` reader - uart1 clock ungate enable"]
+pub type UART1_R = crate::BitReader<bool>;
+#[doc = "Field `UART1` writer - uart1 clock ungate enable"]
+pub type UART1_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `SPI` reader - spi clock ungate enable"]
+pub type SPI_R = crate::BitReader<bool>;
+#[doc = "Field `SPI` writer - spi clock ungate enable"]
+pub type SPI_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `I2C` reader - i2c clock ungate enable"]
+pub type I2C_R = crate::BitReader<bool>;
+#[doc = "Field `I2C` writer - i2c clock ungate enable"]
+pub type I2C_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `PWM` reader - pwm clock ungate enable"]
+pub type PWM_R = crate::BitReader<bool>;
+#[doc = "Field `PWM` writer - pwm clock ungate enable"]
+pub type PWM_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `TMR` reader - timer clock ungate enable"]
+pub type TMR_R = crate::BitReader<bool>;
+#[doc = "Field `TMR` writer - timer clock ungate enable"]
+pub type TMR_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `IRR` reader - ir_remote clock ungate enable"]
+pub type IRR_R = crate::BitReader<bool>;
+#[doc = "Field `IRR` writer - ir_remote clock ungate enable"]
+pub type IRR_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `CKS` reader - checksum clock ungate enable"]
+pub type CKS_R = crate::BitReader<bool>;
+#[doc = "Field `CKS` writer - checksum clock ungate enable"]
+pub type CKS_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `QDEC` reader - qdec0 clock ungate enable"]
+pub type QDEC_R = crate::BitReader<bool>;
+#[doc = "Field `QDEC` writer - qdec0 clock ungate enable"]
+pub type QDEC_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `KYS` reader - KYS"]
+pub type KYS_R = crate::BitReader<bool>;
+#[doc = "Field `KYS` writer - KYS"]
+pub type KYS_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `I2S` reader - i2s and qdec2 clock ungate enable"]
+pub type I2S_R = crate::BitReader<bool>;
+#[doc = "Field `I2S` writer - i2s and qdec2 clock ungate enable"]
+pub type I2S_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `RSVD1B` reader - RSVD1B"]
+pub type RSVD1B_R = crate::BitReader<bool>;
+#[doc = "Field `RSVD1B` writer - RSVD1B"]
+pub type RSVD1B_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `USB` reader - usb clock ungate enable"]
+pub type USB_R = crate::BitReader<bool>;
+#[doc = "Field `USB` writer - usb clock ungate enable"]
+pub type USB_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `CAM` reader - CAM"]
+pub type CAM_R = crate::BitReader<bool>;
+#[doc = "Field `CAM` writer - CAM"]
+pub type CAM_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `MJPEG` reader - MJPEG"]
+pub type MJPEG_R = crate::BitReader<bool>;
+#[doc = "Field `MJPEG` writer - MJPEG"]
+pub type MJPEG_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
+#[doc = "Field `MAX` reader - MAX"]
+pub type MAX_R = crate::BitReader<bool>;
+#[doc = "Field `MAX` writer - MAX"]
+pub type MAX_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG1_SPEC, bool, O>;
 impl R {
-    #[doc = "Bits 16:31"]
+    #[doc = "Bit 0 - GLB"]
     #[inline(always)]
-    pub fn cgen_s1a(&self) -> CGEN_S1A_R {
-        CGEN_S1A_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn glb(&self) -> GLB_R {
+        GLB_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bits 0:15"]
+    #[doc = "Bit 1 - MIX"]
     #[inline(always)]
-    pub fn cgen_s1(&self) -> CGEN_S1_R {
-        CGEN_S1_R::new((self.bits & 0xffff) as u16)
+    pub fn mix(&self) -> MIX_R {
+        MIX_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - gpip (gpadc, gpdac) clock ungate enable"]
+    #[inline(always)]
+    pub fn gpip(&self) -> GPIP_R {
+        GPIP_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - sec_dbg clock ungate enable"]
+    #[inline(always)]
+    pub fn sec_dbg(&self) -> SEC_DBG_R {
+        SEC_DBG_R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - sec_eng clock ungate enable"]
+    #[inline(always)]
+    pub fn sec(&self) -> SEC_R {
+        SEC_R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5 - TZC clock ungate enable"]
+    #[inline(always)]
+    pub fn tz1(&self) -> TZ1_R {
+        TZ1_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6 - TZC2 clock ungate enable"]
+    #[inline(always)]
+    pub fn tz2(&self) -> TZ2_R {
+        TZ2_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7 - ef_ctrl clock ungate enable"]
+    #[inline(always)]
+    pub fn efuse(&self) -> EFUSE_R {
+        EFUSE_R::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8 - CCI (efuse?)"]
+    #[inline(always)]
+    pub fn cci(&self) -> CCI_R {
+        CCI_R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - L1C (efuse?)"]
+    #[inline(always)]
+    pub fn l1c(&self) -> L1C_R {
+        L1C_R::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10 - S1A_ALL (efuse?)"]
+    #[inline(always)]
+    pub fn s1a_all(&self) -> S1A_ALL_R {
+        S1A_ALL_R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - sf_ctrl clock ungate enable"]
+    #[inline(always)]
+    pub fn sfc(&self) -> SFC_R {
+        SFC_R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - DMA clock ungate enable"]
+    #[inline(always)]
+    pub fn dma(&self) -> DMA_R {
+        DMA_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13 - EMAC clock ungate enable"]
+    #[inline(always)]
+    pub fn emac(&self) -> EMAC_R {
+        EMAC_R::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14 - DS_HBN_AON_HBNRAM"]
+    #[inline(always)]
+    pub fn pds_hbn_aon_hbnram(&self) -> PDS_HBN_AON_HBNRAM_R {
+        PDS_HBN_AON_HBNRAM_R::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15 - RSVD0F"]
+    #[inline(always)]
+    pub fn rsvd0f(&self) -> RSVD0F_R {
+        RSVD0F_R::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bit 16 - uart0 clock ungate enable"]
+    #[inline(always)]
+    pub fn uart0(&self) -> UART0_R {
+        UART0_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17 - uart1 clock ungate enable"]
+    #[inline(always)]
+    pub fn uart1(&self) -> UART1_R {
+        UART1_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18 - spi clock ungate enable"]
+    #[inline(always)]
+    pub fn spi(&self) -> SPI_R {
+        SPI_R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19 - i2c clock ungate enable"]
+    #[inline(always)]
+    pub fn i2c(&self) -> I2C_R {
+        I2C_R::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20 - pwm clock ungate enable"]
+    #[inline(always)]
+    pub fn pwm(&self) -> PWM_R {
+        PWM_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21 - timer clock ungate enable"]
+    #[inline(always)]
+    pub fn tmr(&self) -> TMR_R {
+        TMR_R::new(((self.bits >> 21) & 1) != 0)
+    }
+    #[doc = "Bit 22 - ir_remote clock ungate enable"]
+    #[inline(always)]
+    pub fn irr(&self) -> IRR_R {
+        IRR_R::new(((self.bits >> 22) & 1) != 0)
+    }
+    #[doc = "Bit 23 - checksum clock ungate enable"]
+    #[inline(always)]
+    pub fn cks(&self) -> CKS_R {
+        CKS_R::new(((self.bits >> 23) & 1) != 0)
+    }
+    #[doc = "Bit 24 - qdec0 clock ungate enable"]
+    #[inline(always)]
+    pub fn qdec(&self) -> QDEC_R {
+        QDEC_R::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25 - KYS"]
+    #[inline(always)]
+    pub fn kys(&self) -> KYS_R {
+        KYS_R::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26 - i2s and qdec2 clock ungate enable"]
+    #[inline(always)]
+    pub fn i2s(&self) -> I2S_R {
+        I2S_R::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27 - RSVD1B"]
+    #[inline(always)]
+    pub fn rsvd1b(&self) -> RSVD1B_R {
+        RSVD1B_R::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bit 28 - usb clock ungate enable"]
+    #[inline(always)]
+    pub fn usb(&self) -> USB_R {
+        USB_R::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 29 - CAM"]
+    #[inline(always)]
+    pub fn cam(&self) -> CAM_R {
+        CAM_R::new(((self.bits >> 29) & 1) != 0)
+    }
+    #[doc = "Bit 30 - MJPEG"]
+    #[inline(always)]
+    pub fn mjpeg(&self) -> MJPEG_R {
+        MJPEG_R::new(((self.bits >> 30) & 1) != 0)
+    }
+    #[doc = "Bit 31 - MAX"]
+    #[inline(always)]
+    pub fn max(&self) -> MAX_R {
+        MAX_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 16:31"]
+    #[doc = "Bit 0 - GLB"]
     #[inline(always)]
-    pub fn cgen_s1a(&mut self) -> CGEN_S1A_W {
-        CGEN_S1A_W { w: self }
+    pub fn glb(&mut self) -> GLB_W<0> {
+        GLB_W::new(self)
     }
-    #[doc = "Bits 0:15"]
+    #[doc = "Bit 1 - MIX"]
     #[inline(always)]
-    pub fn cgen_s1(&mut self) -> CGEN_S1_W {
-        CGEN_S1_W { w: self }
+    pub fn mix(&mut self) -> MIX_W<1> {
+        MIX_W::new(self)
+    }
+    #[doc = "Bit 2 - gpip (gpadc, gpdac) clock ungate enable"]
+    #[inline(always)]
+    pub fn gpip(&mut self) -> GPIP_W<2> {
+        GPIP_W::new(self)
+    }
+    #[doc = "Bit 3 - sec_dbg clock ungate enable"]
+    #[inline(always)]
+    pub fn sec_dbg(&mut self) -> SEC_DBG_W<3> {
+        SEC_DBG_W::new(self)
+    }
+    #[doc = "Bit 4 - sec_eng clock ungate enable"]
+    #[inline(always)]
+    pub fn sec(&mut self) -> SEC_W<4> {
+        SEC_W::new(self)
+    }
+    #[doc = "Bit 5 - TZC clock ungate enable"]
+    #[inline(always)]
+    pub fn tz1(&mut self) -> TZ1_W<5> {
+        TZ1_W::new(self)
+    }
+    #[doc = "Bit 6 - TZC2 clock ungate enable"]
+    #[inline(always)]
+    pub fn tz2(&mut self) -> TZ2_W<6> {
+        TZ2_W::new(self)
+    }
+    #[doc = "Bit 7 - ef_ctrl clock ungate enable"]
+    #[inline(always)]
+    pub fn efuse(&mut self) -> EFUSE_W<7> {
+        EFUSE_W::new(self)
+    }
+    #[doc = "Bit 8 - CCI (efuse?)"]
+    #[inline(always)]
+    pub fn cci(&mut self) -> CCI_W<8> {
+        CCI_W::new(self)
+    }
+    #[doc = "Bit 9 - L1C (efuse?)"]
+    #[inline(always)]
+    pub fn l1c(&mut self) -> L1C_W<9> {
+        L1C_W::new(self)
+    }
+    #[doc = "Bit 10 - S1A_ALL (efuse?)"]
+    #[inline(always)]
+    pub fn s1a_all(&mut self) -> S1A_ALL_W<10> {
+        S1A_ALL_W::new(self)
+    }
+    #[doc = "Bit 11 - sf_ctrl clock ungate enable"]
+    #[inline(always)]
+    pub fn sfc(&mut self) -> SFC_W<11> {
+        SFC_W::new(self)
+    }
+    #[doc = "Bit 12 - DMA clock ungate enable"]
+    #[inline(always)]
+    pub fn dma(&mut self) -> DMA_W<12> {
+        DMA_W::new(self)
+    }
+    #[doc = "Bit 13 - EMAC clock ungate enable"]
+    #[inline(always)]
+    pub fn emac(&mut self) -> EMAC_W<13> {
+        EMAC_W::new(self)
+    }
+    #[doc = "Bit 14 - DS_HBN_AON_HBNRAM"]
+    #[inline(always)]
+    pub fn pds_hbn_aon_hbnram(&mut self) -> PDS_HBN_AON_HBNRAM_W<14> {
+        PDS_HBN_AON_HBNRAM_W::new(self)
+    }
+    #[doc = "Bit 15 - RSVD0F"]
+    #[inline(always)]
+    pub fn rsvd0f(&mut self) -> RSVD0F_W<15> {
+        RSVD0F_W::new(self)
+    }
+    #[doc = "Bit 16 - uart0 clock ungate enable"]
+    #[inline(always)]
+    pub fn uart0(&mut self) -> UART0_W<16> {
+        UART0_W::new(self)
+    }
+    #[doc = "Bit 17 - uart1 clock ungate enable"]
+    #[inline(always)]
+    pub fn uart1(&mut self) -> UART1_W<17> {
+        UART1_W::new(self)
+    }
+    #[doc = "Bit 18 - spi clock ungate enable"]
+    #[inline(always)]
+    pub fn spi(&mut self) -> SPI_W<18> {
+        SPI_W::new(self)
+    }
+    #[doc = "Bit 19 - i2c clock ungate enable"]
+    #[inline(always)]
+    pub fn i2c(&mut self) -> I2C_W<19> {
+        I2C_W::new(self)
+    }
+    #[doc = "Bit 20 - pwm clock ungate enable"]
+    #[inline(always)]
+    pub fn pwm(&mut self) -> PWM_W<20> {
+        PWM_W::new(self)
+    }
+    #[doc = "Bit 21 - timer clock ungate enable"]
+    #[inline(always)]
+    pub fn tmr(&mut self) -> TMR_W<21> {
+        TMR_W::new(self)
+    }
+    #[doc = "Bit 22 - ir_remote clock ungate enable"]
+    #[inline(always)]
+    pub fn irr(&mut self) -> IRR_W<22> {
+        IRR_W::new(self)
+    }
+    #[doc = "Bit 23 - checksum clock ungate enable"]
+    #[inline(always)]
+    pub fn cks(&mut self) -> CKS_W<23> {
+        CKS_W::new(self)
+    }
+    #[doc = "Bit 24 - qdec0 clock ungate enable"]
+    #[inline(always)]
+    pub fn qdec(&mut self) -> QDEC_W<24> {
+        QDEC_W::new(self)
+    }
+    #[doc = "Bit 25 - KYS"]
+    #[inline(always)]
+    pub fn kys(&mut self) -> KYS_W<25> {
+        KYS_W::new(self)
+    }
+    #[doc = "Bit 26 - i2s and qdec2 clock ungate enable"]
+    #[inline(always)]
+    pub fn i2s(&mut self) -> I2S_W<26> {
+        I2S_W::new(self)
+    }
+    #[doc = "Bit 27 - RSVD1B"]
+    #[inline(always)]
+    pub fn rsvd1b(&mut self) -> RSVD1B_W<27> {
+        RSVD1B_W::new(self)
+    }
+    #[doc = "Bit 28 - usb clock ungate enable"]
+    #[inline(always)]
+    pub fn usb(&mut self) -> USB_W<28> {
+        USB_W::new(self)
+    }
+    #[doc = "Bit 29 - CAM"]
+    #[inline(always)]
+    pub fn cam(&mut self) -> CAM_W<29> {
+        CAM_W::new(self)
+    }
+    #[doc = "Bit 30 - MJPEG"]
+    #[inline(always)]
+    pub fn mjpeg(&mut self) -> MJPEG_W<30> {
+        MJPEG_W::new(self)
+    }
+    #[doc = "Bit 31 - MAX"]
+    #[inline(always)]
+    pub fn max(&mut self) -> MAX_W<31> {
+        MAX_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

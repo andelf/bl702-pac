@@ -34,100 +34,36 @@ impl From<crate::W<CGEN_CFG2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `cgen_s3` reader - "]
-pub struct CGEN_S3_R(crate::FieldReader<bool, bool>);
-impl CGEN_S3_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CGEN_S3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S3_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s3` writer - "]
-pub struct CGEN_S3_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S3_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
-        self.w
-    }
-}
 #[doc = "Field `cgen_s2` reader - "]
-pub struct CGEN_S2_R(crate::FieldReader<bool, bool>);
-impl CGEN_S2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CGEN_S2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type CGEN_S2_R = crate::BitReader<bool>;
 #[doc = "Field `cgen_s2` writer - "]
-pub struct CGEN_S2_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> CGEN_S2_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
-        self.w
-    }
-}
+pub type CGEN_S2_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG2_SPEC, bool, O>;
+#[doc = "Field `cgen_s3` reader - "]
+pub type CGEN_S3_R = crate::BitReader<bool>;
+#[doc = "Field `cgen_s3` writer - "]
+pub type CGEN_S3_W<'a, const O: u8> = crate::BitWriter<'a, u32, CGEN_CFG2_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn cgen_s3(&self) -> CGEN_S3_R {
-        CGEN_S3_R::new(((self.bits >> 4) & 0x01) != 0)
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
     pub fn cgen_s2(&self) -> CGEN_S2_R {
-        CGEN_S2_R::new((self.bits & 0x01) != 0)
+        CGEN_S2_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn cgen_s3(&self) -> CGEN_S3_R {
+        CGEN_S3_R::new(((self.bits >> 4) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 4"]
-    #[inline(always)]
-    pub fn cgen_s3(&mut self) -> CGEN_S3_W {
-        CGEN_S3_W { w: self }
-    }
     #[doc = "Bit 0"]
     #[inline(always)]
-    pub fn cgen_s2(&mut self) -> CGEN_S2_W {
-        CGEN_S2_W { w: self }
+    pub fn cgen_s2(&mut self) -> CGEN_S2_W<0> {
+        CGEN_S2_W::new(self)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    pub fn cgen_s3(&mut self) -> CGEN_S3_W<4> {
+        CGEN_S3_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

@@ -34,90 +34,38 @@ impl From<crate::W<MJPEG_HEADER_BYTE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `reg_tail_exp` reader - "]
-pub struct REG_TAIL_EXP_R(crate::FieldReader<bool, bool>);
-impl REG_TAIL_EXP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_TAIL_EXP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_TAIL_EXP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_tail_exp` writer - "]
-pub struct REG_TAIL_EXP_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_TAIL_EXP_W<'a> {
-    #[doc = r"Sets the field bit"]
-    #[inline(always)]
-    pub fn set_bit(self) -> &'a mut W {
-        self.bit(true)
-    }
-    #[doc = r"Clears the field bit"]
-    #[inline(always)]
-    pub fn clear_bit(self) -> &'a mut W {
-        self.bit(false)
-    }
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
-        self.w
-    }
-}
 #[doc = "Field `reg_head_byte` reader - "]
-pub struct REG_HEAD_BYTE_R(crate::FieldReader<u16, u16>);
-impl REG_HEAD_BYTE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        REG_HEAD_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_HEAD_BYTE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type REG_HEAD_BYTE_R = crate::FieldReader<u16, u16>;
 #[doc = "Field `reg_head_byte` writer - "]
-pub struct REG_HEAD_BYTE_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> REG_HEAD_BYTE_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u16) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x0fff) | (value as u32 & 0x0fff);
-        self.w
-    }
-}
+pub type REG_HEAD_BYTE_W<'a, const O: u8> =
+    crate::FieldWriter<'a, u32, MJPEG_HEADER_BYTE_SPEC, u16, u16, 12, O>;
+#[doc = "Field `reg_tail_exp` reader - "]
+pub type REG_TAIL_EXP_R = crate::BitReader<bool>;
+#[doc = "Field `reg_tail_exp` writer - "]
+pub type REG_TAIL_EXP_W<'a, const O: u8> =
+    crate::BitWriter<'a, u32, MJPEG_HEADER_BYTE_SPEC, bool, O>;
 impl R {
-    #[doc = "Bit 16"]
-    #[inline(always)]
-    pub fn reg_tail_exp(&self) -> REG_TAIL_EXP_R {
-        REG_TAIL_EXP_R::new(((self.bits >> 16) & 0x01) != 0)
-    }
     #[doc = "Bits 0:11"]
     #[inline(always)]
     pub fn reg_head_byte(&self) -> REG_HEAD_BYTE_R {
         REG_HEAD_BYTE_R::new((self.bits & 0x0fff) as u16)
     }
-}
-impl W {
     #[doc = "Bit 16"]
     #[inline(always)]
-    pub fn reg_tail_exp(&mut self) -> REG_TAIL_EXP_W {
-        REG_TAIL_EXP_W { w: self }
+    pub fn reg_tail_exp(&self) -> REG_TAIL_EXP_R {
+        REG_TAIL_EXP_R::new(((self.bits >> 16) & 1) != 0)
     }
+}
+impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
-    pub fn reg_head_byte(&mut self) -> REG_HEAD_BYTE_W {
-        REG_HEAD_BYTE_W { w: self }
+    pub fn reg_head_byte(&mut self) -> REG_HEAD_BYTE_W<0> {
+        REG_HEAD_BYTE_W::new(self)
+    }
+    #[doc = "Bit 16"]
+    #[inline(always)]
+    pub fn reg_tail_exp(&mut self) -> REG_TAIL_EXP_W<16> {
+        REG_TAIL_EXP_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]
