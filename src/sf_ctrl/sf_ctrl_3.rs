@@ -114,41 +114,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_wrap_len(&mut self) -> SF_CMDS_WRAP_LEN_W<0> {
         SF_CMDS_WRAP_LEN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_en(&mut self) -> SF_CMDS_EN_W<4> {
         SF_CMDS_EN_W::new(self)
     }
     #[doc = "Bits 5:7"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_bt_dly(&mut self) -> SF_CMDS_BT_DLY_W<5> {
         SF_CMDS_BT_DLY_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_bt_en(&mut self) -> SF_CMDS_BT_EN_W<8> {
         SF_CMDS_BT_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_wrap_q_ini(&mut self) -> SF_CMDS_WRAP_Q_INI_W<9> {
         SF_CMDS_WRAP_Q_INI_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_wrap_mode(&mut self) -> SF_CMDS_WRAP_MODE_W<10> {
         SF_CMDS_WRAP_MODE_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cmds_wrap_q(&mut self) -> SF_CMDS_WRAP_Q_W<11> {
         SF_CMDS_WRAP_Q_W::new(self)
     }
     #[doc = "Bits 29:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_ack_lat(&mut self) -> SF_IF_1_ACK_LAT_W<29> {
         SF_IF_1_ACK_LAT_W::new(self)
     }
@@ -171,11 +179,10 @@ impl crate::Readable for SF_CTRL_3_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_ctrl_3::W](W) writer structure"]
 impl crate::Writable for SF_CTRL_3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_ctrl_3 to value 0"]
 impl crate::Resettable for SF_CTRL_3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

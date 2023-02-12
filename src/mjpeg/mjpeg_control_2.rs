@@ -119,41 +119,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_sw_frame(&mut self) -> REG_SW_FRAME_W<0> {
         REG_SW_FRAME_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mjpeg_sw_mode(&mut self) -> REG_MJPEG_SW_MODE_W<8> {
         REG_MJPEG_SW_MODE_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mjpeg_sw_run(&mut self) -> REG_MJPEG_SW_RUN_W<9> {
         REG_MJPEG_SW_RUN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_yy_dvp2ahb_lsel(&mut self) -> REG_YY_DVP2AHB_LSEL_W<12> {
         REG_YY_DVP2AHB_LSEL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_yy_dvp2ahb_fsel(&mut self) -> REG_YY_DVP2AHB_FSEL_W<13> {
         REG_YY_DVP2AHB_FSEL_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_uv_dvp2ahb_lsel(&mut self) -> REG_UV_DVP2AHB_LSEL_W<14> {
         REG_UV_DVP2AHB_LSEL_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_uv_dvp2ahb_fsel(&mut self) -> REG_UV_DVP2AHB_FSEL_W<15> {
         REG_UV_DVP2AHB_FSEL_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mjpeg_wait_cycle(&mut self) -> REG_MJPEG_WAIT_CYCLE_W<16> {
         REG_MJPEG_WAIT_CYCLE_W::new(self)
     }
@@ -176,11 +184,10 @@ impl crate::Readable for MJPEG_CONTROL_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_control_2::W](W) writer structure"]
 impl crate::Writable for MJPEG_CONTROL_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_control_2 to value 0"]
 impl crate::Resettable for MJPEG_CONTROL_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

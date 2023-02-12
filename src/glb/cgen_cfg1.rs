@@ -327,161 +327,193 @@ impl R {
 impl W {
     #[doc = "Bit 0 - GLB"]
     #[inline(always)]
+    #[must_use]
     pub fn glb(&mut self) -> GLB_W<0> {
         GLB_W::new(self)
     }
     #[doc = "Bit 1 - MIX"]
     #[inline(always)]
+    #[must_use]
     pub fn mix(&mut self) -> MIX_W<1> {
         MIX_W::new(self)
     }
     #[doc = "Bit 2 - gpip (gpadc, gpdac) clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn gpip(&mut self) -> GPIP_W<2> {
         GPIP_W::new(self)
     }
     #[doc = "Bit 3 - sec_dbg clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn sec_dbg(&mut self) -> SEC_DBG_W<3> {
         SEC_DBG_W::new(self)
     }
     #[doc = "Bit 4 - sec_eng clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn sec(&mut self) -> SEC_W<4> {
         SEC_W::new(self)
     }
     #[doc = "Bit 5 - TZC clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn tz1(&mut self) -> TZ1_W<5> {
         TZ1_W::new(self)
     }
     #[doc = "Bit 6 - TZC2 clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn tz2(&mut self) -> TZ2_W<6> {
         TZ2_W::new(self)
     }
     #[doc = "Bit 7 - ef_ctrl clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn efuse(&mut self) -> EFUSE_W<7> {
         EFUSE_W::new(self)
     }
     #[doc = "Bit 8 - CCI (efuse?)"]
     #[inline(always)]
+    #[must_use]
     pub fn cci(&mut self) -> CCI_W<8> {
         CCI_W::new(self)
     }
     #[doc = "Bit 9 - L1C (efuse?)"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c(&mut self) -> L1C_W<9> {
         L1C_W::new(self)
     }
     #[doc = "Bit 10 - S1A_ALL (efuse?)"]
     #[inline(always)]
+    #[must_use]
     pub fn s1a_all(&mut self) -> S1A_ALL_W<10> {
         S1A_ALL_W::new(self)
     }
     #[doc = "Bit 11 - sf_ctrl clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn sfc(&mut self) -> SFC_W<11> {
         SFC_W::new(self)
     }
     #[doc = "Bit 12 - DMA clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn dma(&mut self) -> DMA_W<12> {
         DMA_W::new(self)
     }
     #[doc = "Bit 13 - EMAC clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn emac(&mut self) -> EMAC_W<13> {
         EMAC_W::new(self)
     }
     #[doc = "Bit 14 - DS_HBN_AON_HBNRAM"]
     #[inline(always)]
+    #[must_use]
     pub fn pds_hbn_aon_hbnram(&mut self) -> PDS_HBN_AON_HBNRAM_W<14> {
         PDS_HBN_AON_HBNRAM_W::new(self)
     }
     #[doc = "Bit 15 - RSVD0F"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd0f(&mut self) -> RSVD0F_W<15> {
         RSVD0F_W::new(self)
     }
     #[doc = "Bit 16 - uart0 clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn uart0(&mut self) -> UART0_W<16> {
         UART0_W::new(self)
     }
     #[doc = "Bit 17 - uart1 clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn uart1(&mut self) -> UART1_W<17> {
         UART1_W::new(self)
     }
     #[doc = "Bit 18 - spi clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn spi(&mut self) -> SPI_W<18> {
         SPI_W::new(self)
     }
     #[doc = "Bit 19 - i2c clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c(&mut self) -> I2C_W<19> {
         I2C_W::new(self)
     }
     #[doc = "Bit 20 - pwm clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm(&mut self) -> PWM_W<20> {
         PWM_W::new(self)
     }
     #[doc = "Bit 21 - timer clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn tmr(&mut self) -> TMR_W<21> {
         TMR_W::new(self)
     }
     #[doc = "Bit 22 - ir_remote clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn irr(&mut self) -> IRR_W<22> {
         IRR_W::new(self)
     }
     #[doc = "Bit 23 - checksum clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn cks(&mut self) -> CKS_W<23> {
         CKS_W::new(self)
     }
     #[doc = "Bit 24 - qdec0 clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn qdec(&mut self) -> QDEC_W<24> {
         QDEC_W::new(self)
     }
     #[doc = "Bit 25 - KYS"]
     #[inline(always)]
+    #[must_use]
     pub fn kys(&mut self) -> KYS_W<25> {
         KYS_W::new(self)
     }
     #[doc = "Bit 26 - i2s and qdec2 clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s(&mut self) -> I2S_W<26> {
         I2S_W::new(self)
     }
     #[doc = "Bit 27 - RSVD1B"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd1b(&mut self) -> RSVD1B_W<27> {
         RSVD1B_W::new(self)
     }
     #[doc = "Bit 28 - usb clock ungate enable"]
     #[inline(always)]
+    #[must_use]
     pub fn usb(&mut self) -> USB_W<28> {
         USB_W::new(self)
     }
     #[doc = "Bit 29 - CAM"]
     #[inline(always)]
+    #[must_use]
     pub fn cam(&mut self) -> CAM_W<29> {
         CAM_W::new(self)
     }
     #[doc = "Bit 30 - MJPEG"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg(&mut self) -> MJPEG_W<30> {
         MJPEG_W::new(self)
     }
     #[doc = "Bit 31 - MAX"]
     #[inline(always)]
+    #[must_use]
     pub fn max(&mut self) -> MAX_W<31> {
         MAX_W::new(self)
     }
@@ -504,11 +536,10 @@ impl crate::Readable for CGEN_CFG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [cgen_cfg1::W](W) writer structure"]
 impl crate::Writable for CGEN_CFG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cgen_cfg1 to value 0"]
 impl crate::Resettable for CGEN_CFG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

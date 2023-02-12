@@ -129,51 +129,61 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_clk_div(&mut self) -> UART_CLK_DIV_W<0> {
         UART_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_clk_en(&mut self) -> UART_CLK_EN_W<4> {
         UART_CLK_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_uart_clk_sel(&mut self) -> HBN_UART_CLK_SEL_W<7> {
         HBN_UART_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_div(&mut self) -> SF_CLK_DIV_W<8> {
         SF_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_en(&mut self) -> SF_CLK_EN_W<11> {
         SF_CLK_EN_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_sel(&mut self) -> SF_CLK_SEL_W<12> {
         SF_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 14:15"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_sel2(&mut self) -> SF_CLK_SEL2_W<14> {
         SF_CLK_SEL2_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn ir_clk_div(&mut self) -> IR_CLK_DIV_W<16> {
         IR_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn ir_clk_en(&mut self) -> IR_CLK_EN_W<23> {
         IR_CLK_EN_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn dma_clk_en(&mut self) -> DMA_CLK_EN_W<24> {
         DMA_CLK_EN_W::new(self)
     }
@@ -196,11 +206,10 @@ impl crate::Readable for CLK_CFG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [clk_cfg2::W](W) writer structure"]
 impl crate::Writable for CLK_CFG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clk_cfg2 to value 0"]
 impl crate::Resettable for CLK_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

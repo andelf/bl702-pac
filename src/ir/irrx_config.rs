@@ -86,26 +86,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_en(&mut self) -> CR_IRRX_EN_W<0> {
         CR_IRRX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_in_inv(&mut self) -> CR_IRRX_IN_INV_W<1> {
         CR_IRRX_IN_INV_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_mode(&mut self) -> CR_IRRX_MODE_W<2> {
         CR_IRRX_MODE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_deg_en(&mut self) -> CR_IRRX_DEG_EN_W<4> {
         CR_IRRX_DEG_EN_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_deg_cnt(&mut self) -> CR_IRRX_DEG_CNT_W<8> {
         CR_IRRX_DEG_CNT_W::new(self)
     }
@@ -128,11 +133,10 @@ impl crate::Readable for IRRX_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [irrx_config::W](W) writer structure"]
 impl crate::Writable for IRRX_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets irrx_config to value 0"]
 impl crate::Resettable for IRRX_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

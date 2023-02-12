@@ -186,76 +186,91 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_busy(&mut self) -> SE_AES_0_BUSY_W<0> {
         SE_AES_0_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_trig_1t(&mut self) -> SE_AES_0_TRIG_1T_W<1> {
         SE_AES_0_TRIG_1T_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_en(&mut self) -> SE_AES_0_EN_W<2> {
         SE_AES_0_EN_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_mode(&mut self) -> SE_AES_0_MODE_W<3> {
         SE_AES_0_MODE_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_dec_en(&mut self) -> SE_AES_0_DEC_EN_W<5> {
         SE_AES_0_DEC_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_dec_key_sel(&mut self) -> SE_AES_0_DEC_KEY_SEL_W<6> {
         SE_AES_0_DEC_KEY_SEL_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_hw_key_en(&mut self) -> SE_AES_0_HW_KEY_EN_W<7> {
         SE_AES_0_HW_KEY_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_int(&mut self) -> SE_AES_0_INT_W<8> {
         SE_AES_0_INT_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_int_clr_1t(&mut self) -> SE_AES_0_INT_CLR_1T_W<9> {
         SE_AES_0_INT_CLR_1T_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_int_set_1t(&mut self) -> SE_AES_0_INT_SET_1T_W<10> {
         SE_AES_0_INT_SET_1T_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_int_mask(&mut self) -> SE_AES_0_INT_MASK_W<11> {
         SE_AES_0_INT_MASK_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_block_mode(&mut self) -> SE_AES_0_BLOCK_MODE_W<12> {
         SE_AES_0_BLOCK_MODE_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_iv_sel(&mut self) -> SE_AES_0_IV_SEL_W<14> {
         SE_AES_0_IV_SEL_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_link_mode(&mut self) -> SE_AES_0_LINK_MODE_W<15> {
         SE_AES_0_LINK_MODE_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_msg_len(&mut self) -> SE_AES_0_MSG_LEN_W<16> {
         SE_AES_0_MSG_LEN_W::new(self)
     }
@@ -278,11 +293,10 @@ impl crate::Readable for SE_AES_0_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_aes_0_ctrl::W](W) writer structure"]
 impl crate::Writable for SE_AES_0_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_aes_0_ctrl to value 0"]
 impl crate::Resettable for SE_AES_0_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

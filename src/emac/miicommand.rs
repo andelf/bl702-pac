@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn scanstat(&mut self) -> SCANSTAT_W<0> {
         SCANSTAT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rstat(&mut self) -> RSTAT_W<1> {
         RSTAT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn wctrldata(&mut self) -> WCTRLDATA_W<2> {
         WCTRLDATA_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for MIICOMMAND_SPEC {
 #[doc = "`write(|w| ..)` method takes [miicommand::W](W) writer structure"]
 impl crate::Writable for MIICOMMAND_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets MIICOMMAND to value 0"]
 impl crate::Resettable for MIICOMMAND_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sel_sample_clk(&mut self) -> CLKPLL_SEL_SAMPLE_CLK_W<0> {
         CLKPLL_SEL_SAMPLE_CLK_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sel_fb_clk(&mut self) -> CLKPLL_SEL_FB_CLK_W<2> {
         CLKPLL_SEL_FB_CLK_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for CLKPLL_FBDV_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_fbdv::W](W) writer structure"]
 impl crate::Writable for CLKPLL_FBDV_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_fbdv to value 0"]
 impl crate::Resettable for CLKPLL_FBDV_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

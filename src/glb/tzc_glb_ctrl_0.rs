@@ -179,71 +179,85 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s00_lock(&mut self) -> TZC_GLB_SWRST_S00_LOCK_W<0> {
         TZC_GLB_SWRST_S00_LOCK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s01_lock(&mut self) -> TZC_GLB_SWRST_S01_LOCK_W<1> {
         TZC_GLB_SWRST_S01_LOCK_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s30_lock(&mut self) -> TZC_GLB_SWRST_S30_LOCK_W<8> {
         TZC_GLB_SWRST_S30_LOCK_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_ctrl_pwron_rst_lock(&mut self) -> TZC_GLB_CTRL_PWRON_RST_LOCK_W<12> {
         TZC_GLB_CTRL_PWRON_RST_LOCK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_ctrl_cpu_reset_lock(&mut self) -> TZC_GLB_CTRL_CPU_RESET_LOCK_W<13> {
         TZC_GLB_CTRL_CPU_RESET_LOCK_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_ctrl_sys_reset_lock(&mut self) -> TZC_GLB_CTRL_SYS_RESET_LOCK_W<14> {
         TZC_GLB_CTRL_SYS_RESET_LOCK_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_ctrl_ungated_ap_lock(&mut self) -> TZC_GLB_CTRL_UNGATED_AP_LOCK_W<15> {
         TZC_GLB_CTRL_UNGATED_AP_LOCK_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_misc_lock(&mut self) -> TZC_GLB_MISC_LOCK_W<25> {
         TZC_GLB_MISC_LOCK_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_sram_lock(&mut self) -> TZC_GLB_SRAM_LOCK_W<26> {
         TZC_GLB_SRAM_LOCK_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_l2c_lock(&mut self) -> TZC_GLB_L2C_LOCK_W<27> {
         TZC_GLB_L2C_LOCK_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_bmx_lock(&mut self) -> TZC_GLB_BMX_LOCK_W<28> {
         TZC_GLB_BMX_LOCK_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_dbg_lock(&mut self) -> TZC_GLB_DBG_LOCK_W<29> {
         TZC_GLB_DBG_LOCK_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_mbist_lock(&mut self) -> TZC_GLB_MBIST_LOCK_W<30> {
         TZC_GLB_MBIST_LOCK_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_clk_lock(&mut self) -> TZC_GLB_CLK_LOCK_W<31> {
         TZC_GLB_CLK_LOCK_W::new(self)
     }
@@ -266,11 +280,10 @@ impl crate::Readable for TZC_GLB_CTRL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [tzc_glb_ctrl_0::W](W) writer structure"]
 impl crate::Writable for TZC_GLB_CTRL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets tzc_glb_ctrl_0 to value 0"]
 impl crate::Resettable for TZC_GLB_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

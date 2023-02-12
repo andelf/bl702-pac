@@ -160,66 +160,79 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_busy(&mut self) -> EF_CRC_BUSY_W<0> {
         EF_CRC_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_trig(&mut self) -> EF_CRC_TRIG_W<1> {
         EF_CRC_TRIG_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_en(&mut self) -> EF_CRC_EN_W<2> {
         EF_CRC_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_mode(&mut self) -> EF_CRC_MODE_W<3> {
         EF_CRC_MODE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_error(&mut self) -> EF_CRC_ERROR_W<4> {
         EF_CRC_ERROR_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_dout_inv_en(&mut self) -> EF_CRC_DOUT_INV_EN_W<5> {
         EF_CRC_DOUT_INV_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_dout_endian(&mut self) -> EF_CRC_DOUT_ENDIAN_W<6> {
         EF_CRC_DOUT_ENDIAN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_din_endian(&mut self) -> EF_CRC_DIN_ENDIAN_W<7> {
         EF_CRC_DIN_ENDIAN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_int(&mut self) -> EF_CRC_INT_W<8> {
         EF_CRC_INT_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_int_clr(&mut self) -> EF_CRC_INT_CLR_W<9> {
         EF_CRC_INT_CLR_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_int_set(&mut self) -> EF_CRC_INT_SET_W<10> {
         EF_CRC_INT_SET_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_lock(&mut self) -> EF_CRC_LOCK_W<11> {
         EF_CRC_LOCK_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_crc_slp_n(&mut self) -> EF_CRC_SLP_N_W<16> {
         EF_CRC_SLP_N_W::new(self)
     }
@@ -242,11 +255,10 @@ impl crate::Readable for EF_CRC_CTRL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_crc_ctrl_0::W](W) writer structure"]
 impl crate::Writable for EF_CRC_CTRL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_crc_ctrl_0 to value 0"]
 impl crate::Resettable for EF_CRC_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

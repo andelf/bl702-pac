@@ -166,71 +166,85 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn pkdet_out_latch(&mut self) -> PKDET_OUT_LATCH_W<0> {
         PKDET_OUT_LATCH_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn pkdet_out_raw(&mut self) -> PKDET_OUT_RAW_W<1> {
         PKDET_OUT_RAW_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_out_rstn_ctrl_hw(&mut self) -> RBB_PKDET_OUT_RSTN_CTRL_HW_W<4> {
         RBB_PKDET_OUT_RSTN_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_out_rstn_hw(&mut self) -> RBB_PKDET_OUT_RSTN_HW_W<5> {
         RBB_PKDET_OUT_RSTN_HW_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_out_rstn(&mut self) -> RBB_PKDET_OUT_RSTN_W<6> {
         RBB_PKDET_OUT_RSTN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_en_ctrl_hw(&mut self) -> RBB_PKDET_EN_CTRL_HW_W<8> {
         RBB_PKDET_EN_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_en_hw(&mut self) -> RBB_PKDET_EN_HW_W<9> {
         RBB_PKDET_EN_HW_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_en(&mut self) -> RBB_PKDET_EN_W<10> {
         RBB_PKDET_EN_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_pkdet_vth(&mut self) -> RBB_PKDET_VTH_W<12> {
         RBB_PKDET_VTH_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_range(&mut self) -> ROSDAC_RANGE_W<16> {
         ROSDAC_RANGE_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_lpf_en(&mut self) -> RBB_LPF_EN_W<19> {
         RBB_LPF_EN_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_deq(&mut self) -> RBB_DEQ_W<20> {
         RBB_DEQ_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_vcm(&mut self) -> RBB_VCM_W<24> {
         RBB_VCM_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bm_op(&mut self) -> RBB_BM_OP_W<28> {
         RBB_BM_OP_W::new(self)
     }
@@ -253,11 +267,10 @@ impl crate::Readable for RBB_SPEC {
 #[doc = "`write(|w| ..)` method takes [rbb::W](W) writer structure"]
 impl crate::Writable for RBB_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rbb to value 0"]
 impl crate::Resettable for RBB_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

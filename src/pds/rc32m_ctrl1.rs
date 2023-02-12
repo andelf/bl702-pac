@@ -96,31 +96,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_test_en(&mut self) -> RC32M_TEST_EN_W<0> {
         RC32M_TEST_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_soft_rst(&mut self) -> RC32M_SOFT_RST_W<1> {
         RC32M_SOFT_RST_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_clk_soft_rst(&mut self) -> RC32M_CLK_SOFT_RST_W<2> {
         RC32M_CLK_SOFT_RST_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_clk_inv(&mut self) -> RC32M_CLK_INV_W<3> {
         RC32M_CLK_INV_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_clk_force_on(&mut self) -> RC32M_CLK_FORCE_ON_W<4> {
         RC32M_CLK_FORCE_ON_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_reserved(&mut self) -> RC32M_RESERVED_W<24> {
         RC32M_RESERVED_W::new(self)
     }
@@ -143,11 +149,10 @@ impl crate::Readable for RC32M_CTRL1_SPEC {
 #[doc = "`write(|w| ..)` method takes [rc32m_ctrl1::W](W) writer structure"]
 impl crate::Writable for RC32M_CTRL1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rc32m_ctrl1 to value 0"]
 impl crate::Resettable for RC32M_CTRL1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

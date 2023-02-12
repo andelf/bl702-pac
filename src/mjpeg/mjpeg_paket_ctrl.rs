@@ -68,16 +68,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pket_en(&mut self) -> REG_PKET_EN_W<0> {
         REG_PKET_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_jend_to_pend(&mut self) -> REG_JEND_TO_PEND_W<1> {
         REG_JEND_TO_PEND_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pket_body_byte(&mut self) -> REG_PKET_BODY_BYTE_W<16> {
         REG_PKET_BODY_BYTE_W::new(self)
     }
@@ -100,11 +103,10 @@ impl crate::Readable for MJPEG_PAKET_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_paket_ctrl::W](W) writer structure"]
 impl crate::Writable for MJPEG_PAKET_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_paket_ctrl to value 0"]
 impl crate::Resettable for MJPEG_PAKET_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -134,51 +134,61 @@ impl R {
 impl W {
     #[doc = "Bits 12:16"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_dmy_byte(&mut self) -> SF_IF_1_DMY_BYTE_W<12> {
         SF_IF_1_DMY_BYTE_W::new(self)
     }
     #[doc = "Bits 17:19"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_adr_byte(&mut self) -> SF_IF_1_ADR_BYTE_W<17> {
         SF_IF_1_ADR_BYTE_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_cmd_byte(&mut self) -> SF_IF_1_CMD_BYTE_W<20> {
         SF_IF_1_CMD_BYTE_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_dat_rw(&mut self) -> SF_IF_1_DAT_RW_W<23> {
         SF_IF_1_DAT_RW_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_dat_en(&mut self) -> SF_IF_1_DAT_EN_W<24> {
         SF_IF_1_DAT_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_dmy_en(&mut self) -> SF_IF_1_DMY_EN_W<25> {
         SF_IF_1_DMY_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_adr_en(&mut self) -> SF_IF_1_ADR_EN_W<26> {
         SF_IF_1_ADR_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_cmd_en(&mut self) -> SF_IF_1_CMD_EN_W<27> {
         SF_IF_1_CMD_EN_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_spi_mode(&mut self) -> SF_IF_1_SPI_MODE_W<28> {
         SF_IF_1_SPI_MODE_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_1_qpi_mode_en(&mut self) -> SF_IF_1_QPI_MODE_EN_W<31> {
         SF_IF_1_QPI_MODE_EN_W::new(self)
     }
@@ -201,11 +211,10 @@ impl crate::Readable for SF_IF_IAHB_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_iahb_0::W](W) writer structure"]
 impl crate::Writable for SF_IF_IAHB_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_iahb_0 to value 0"]
 impl crate::Resettable for SF_IF_IAHB_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

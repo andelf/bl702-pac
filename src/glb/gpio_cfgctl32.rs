@@ -327,161 +327,193 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_0_o(&mut self) -> REG_GPIO_0_O_W<0> {
         REG_GPIO_0_O_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_1_o(&mut self) -> REG_GPIO_1_O_W<1> {
         REG_GPIO_1_O_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_2_o(&mut self) -> REG_GPIO_2_O_W<2> {
         REG_GPIO_2_O_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_3_o(&mut self) -> REG_GPIO_3_O_W<3> {
         REG_GPIO_3_O_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_4_o(&mut self) -> REG_GPIO_4_O_W<4> {
         REG_GPIO_4_O_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_5_o(&mut self) -> REG_GPIO_5_O_W<5> {
         REG_GPIO_5_O_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_6_o(&mut self) -> REG_GPIO_6_O_W<6> {
         REG_GPIO_6_O_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_7_o(&mut self) -> REG_GPIO_7_O_W<7> {
         REG_GPIO_7_O_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_8_o(&mut self) -> REG_GPIO_8_O_W<8> {
         REG_GPIO_8_O_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_9_o(&mut self) -> REG_GPIO_9_O_W<9> {
         REG_GPIO_9_O_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_o(&mut self) -> REG_GPIO_10_O_W<10> {
         REG_GPIO_10_O_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_o(&mut self) -> REG_GPIO_11_O_W<11> {
         REG_GPIO_11_O_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_12_o(&mut self) -> REG_GPIO_12_O_W<12> {
         REG_GPIO_12_O_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_13_o(&mut self) -> REG_GPIO_13_O_W<13> {
         REG_GPIO_13_O_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_14_o(&mut self) -> REG_GPIO_14_O_W<14> {
         REG_GPIO_14_O_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_15_o(&mut self) -> REG_GPIO_15_O_W<15> {
         REG_GPIO_15_O_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_16_o(&mut self) -> REG_GPIO_16_O_W<16> {
         REG_GPIO_16_O_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_17_o(&mut self) -> REG_GPIO_17_O_W<17> {
         REG_GPIO_17_O_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_18_o(&mut self) -> REG_GPIO_18_O_W<18> {
         REG_GPIO_18_O_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_19_o(&mut self) -> REG_GPIO_19_O_W<19> {
         REG_GPIO_19_O_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_20_o(&mut self) -> REG_GPIO_20_O_W<20> {
         REG_GPIO_20_O_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_21_o(&mut self) -> REG_GPIO_21_O_W<21> {
         REG_GPIO_21_O_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_22_o(&mut self) -> REG_GPIO_22_O_W<22> {
         REG_GPIO_22_O_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_23_o(&mut self) -> REG_GPIO_23_O_W<23> {
         REG_GPIO_23_O_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_24_o(&mut self) -> REG_GPIO_24_O_W<24> {
         REG_GPIO_24_O_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_25_o(&mut self) -> REG_GPIO_25_O_W<25> {
         REG_GPIO_25_O_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_26_o(&mut self) -> REG_GPIO_26_O_W<26> {
         REG_GPIO_26_O_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_27_o(&mut self) -> REG_GPIO_27_O_W<27> {
         REG_GPIO_27_O_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_28_o(&mut self) -> REG_GPIO_28_O_W<28> {
         REG_GPIO_28_O_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_29_o(&mut self) -> REG_GPIO_29_O_W<29> {
         REG_GPIO_29_O_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_30_o(&mut self) -> REG_GPIO_30_O_W<30> {
         REG_GPIO_30_O_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_31_o(&mut self) -> REG_GPIO_31_O_W<31> {
         REG_GPIO_31_O_W::new(self)
     }
@@ -504,11 +536,10 @@ impl crate::Readable for GPIO_CFGCTL32_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_cfgctl32::W](W) writer structure"]
 impl crate::Writable for GPIO_CFGCTL32_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_CFGCTL32 to value 0"]
 impl crate::Resettable for GPIO_CFGCTL32_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

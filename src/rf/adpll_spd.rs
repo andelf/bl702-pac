@@ -219,91 +219,109 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_in_range_delay(&mut self) -> ADPLL_SPD_IN_RANGE_DELAY_W<0> {
         ADPLL_SPD_IN_RANGE_DELAY_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_out_range_delay(&mut self) -> ADPLL_SPD_OUT_RANGE_DELAY_W<4> {
         ADPLL_SPD_OUT_RANGE_DELAY_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_in_range_cons(&mut self) -> ADPLL_SPD_IN_RANGE_CONS_W<8> {
         ADPLL_SPD_IN_RANGE_CONS_W::new(self)
     }
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarse_path_turnoff(&mut self) -> ADPLL_COARSE_PATH_TURNOFF_W<10> {
         ADPLL_COARSE_PATH_TURNOFF_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_threshold(&mut self) -> ADPLL_SPD_THRESHOLD_W<12> {
         ADPLL_SPD_THRESHOLD_W::new(self)
     }
     #[doc = "Bits 14:15"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarse_in_range_cons(&mut self) -> ADPLL_COARSE_IN_RANGE_CONS_W<14> {
         ADPLL_COARSE_IN_RANGE_CONS_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_gain(&mut self) -> ADPLL_SPD_GAIN_W<16> {
         ADPLL_SPD_GAIN_W::new(self)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarse_gain(&mut self) -> ADPLL_COARSE_GAIN_W<18> {
         ADPLL_COARSE_GAIN_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_lf_fast_mode_ctrl_hw(&mut self) -> ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_W<20> {
         ADPLL_FORCE_LF_FAST_MODE_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_lf_fast_mode(&mut self) -> ADPLL_FORCE_LF_FAST_MODE_W<21> {
         ADPLL_FORCE_LF_FAST_MODE_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_lf_fast_mode_hw(&mut self) -> ADPLL_FORCE_LF_FAST_MODE_HW_W<22> {
         ADPLL_FORCE_LF_FAST_MODE_HW_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarse_phaerr_en(&mut self) -> ADPLL_COARSE_PHAERR_EN_W<23> {
         ADPLL_COARSE_PHAERR_EN_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarse_path_offtime_sel(&mut self) -> ADPLL_COARSE_PATH_OFFTIME_SEL_W<24> {
         ADPLL_COARSE_PATH_OFFTIME_SEL_W::new(self)
     }
     #[doc = "Bits 25:26"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_outrange_dly_sel_ext(&mut self) -> ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_W<25> {
         ADPLL_SPD_OUTRANGE_DLY_SEL_EXT_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_lms_sstp_win_sel(&mut self) -> ADPLL_SPD_LMS_SSTP_WIN_SEL_W<27> {
         ADPLL_SPD_LMS_SSTP_WIN_SEL_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_coarse_path_on(&mut self) -> ADPLL_FORCE_COARSE_PATH_ON_W<28> {
         ADPLL_FORCE_COARSE_PATH_ON_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_coarsepha_dly_sel(&mut self) -> ADPLL_COARSEPHA_DLY_SEL_W<29> {
         ADPLL_COARSEPHA_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_in_range_delay_1(&mut self) -> ADPLL_SPD_IN_RANGE_DELAY_1_W<30> {
         ADPLL_SPD_IN_RANGE_DELAY_1_W::new(self)
     }
@@ -326,11 +344,10 @@ impl crate::Readable for ADPLL_SPD_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_spd::W](W) writer structure"]
 impl crate::Writable for ADPLL_SPD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_spd to value 0"]
 impl crate::Resettable for ADPLL_SPD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

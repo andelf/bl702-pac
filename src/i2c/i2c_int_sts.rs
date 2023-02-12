@@ -255,121 +255,145 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_end_int(&mut self) -> I2C_END_INT_W<0> {
         I2C_END_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_txf_int(&mut self) -> I2C_TXF_INT_W<1> {
         I2C_TXF_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_rxf_int(&mut self) -> I2C_RXF_INT_W<2> {
         I2C_RXF_INT_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_nak_int(&mut self) -> I2C_NAK_INT_W<3> {
         I2C_NAK_INT_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_arb_int(&mut self) -> I2C_ARB_INT_W<4> {
         I2C_ARB_INT_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_fer_int(&mut self) -> I2C_FER_INT_W<5> {
         I2C_FER_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_end_mask(&mut self) -> CR_I2C_END_MASK_W<8> {
         CR_I2C_END_MASK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_txf_mask(&mut self) -> CR_I2C_TXF_MASK_W<9> {
         CR_I2C_TXF_MASK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_rxf_mask(&mut self) -> CR_I2C_RXF_MASK_W<10> {
         CR_I2C_RXF_MASK_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_nak_mask(&mut self) -> CR_I2C_NAK_MASK_W<11> {
         CR_I2C_NAK_MASK_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_arb_mask(&mut self) -> CR_I2C_ARB_MASK_W<12> {
         CR_I2C_ARB_MASK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_fer_mask(&mut self) -> CR_I2C_FER_MASK_W<13> {
         CR_I2C_FER_MASK_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_end_clr(&mut self) -> CR_I2C_END_CLR_W<16> {
         CR_I2C_END_CLR_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_17(&mut self) -> RSVD_17_W<17> {
         RSVD_17_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_18(&mut self) -> RSVD_18_W<18> {
         RSVD_18_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_nak_clr(&mut self) -> CR_I2C_NAK_CLR_W<19> {
         CR_I2C_NAK_CLR_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_arb_clr(&mut self) -> CR_I2C_ARB_CLR_W<20> {
         CR_I2C_ARB_CLR_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_21(&mut self) -> RSVD_21_W<21> {
         RSVD_21_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_end_en(&mut self) -> CR_I2C_END_EN_W<24> {
         CR_I2C_END_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_txf_en(&mut self) -> CR_I2C_TXF_EN_W<25> {
         CR_I2C_TXF_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_rxf_en(&mut self) -> CR_I2C_RXF_EN_W<26> {
         CR_I2C_RXF_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_nak_en(&mut self) -> CR_I2C_NAK_EN_W<27> {
         CR_I2C_NAK_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_arb_en(&mut self) -> CR_I2C_ARB_EN_W<28> {
         CR_I2C_ARB_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_fer_en(&mut self) -> CR_I2C_FER_EN_W<29> {
         CR_I2C_FER_EN_W::new(self)
     }
@@ -392,11 +416,10 @@ impl crate::Readable for I2C_INT_STS_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2c_int_sts::W](W) writer structure"]
 impl crate::Writable for I2C_INT_STS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2c_int_sts to value 0"]
 impl crate::Resettable for I2C_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

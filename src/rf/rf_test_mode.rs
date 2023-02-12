@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn dacout_hw(&mut self) -> DACOUT_HW_W<0> {
         DACOUT_HW_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn dacout_4s(&mut self) -> DACOUT_4S_W<16> {
         DACOUT_4S_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn dacout_4s_en(&mut self) -> DACOUT_4S_EN_W<28> {
         DACOUT_4S_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn dacout_4s_sram_en(&mut self) -> DACOUT_4S_SRAM_EN_W<29> {
         DACOUT_4S_SRAM_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_test_mode_en(&mut self) -> RF_TEST_MODE_EN_W<30> {
         RF_TEST_MODE_EN_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for RF_TEST_MODE_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_test_mode::W](W) writer structure"]
 impl crate::Writable for RF_TEST_MODE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_test_mode to value 0"]
 impl crate::Resettable for RF_TEST_MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

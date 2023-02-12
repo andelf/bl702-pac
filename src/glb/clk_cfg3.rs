@@ -143,56 +143,67 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_clk_div(&mut self) -> SPI_CLK_DIV_W<0> {
         SPI_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_sel_eth_ref_clk_o(&mut self) -> CFG_SEL_ETH_REF_CLK_O_W<5> {
         CFG_SEL_ETH_REF_CLK_O_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_inv_eth_ref_clk_o(&mut self) -> CFG_INV_ETH_REF_CLK_O_W<6> {
         CFG_INV_ETH_REF_CLK_O_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_inv_eth_tx_clk(&mut self) -> CFG_INV_ETH_TX_CLK_W<7> {
         CFG_INV_ETH_TX_CLK_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_clk_en(&mut self) -> SPI_CLK_EN_W<8> {
         SPI_CLK_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_inv_rf_test_clk_o(&mut self) -> CFG_INV_RF_TEST_CLK_O_W<9> {
         CFG_INV_RF_TEST_CLK_O_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_inv_eth_rx_clk(&mut self) -> CFG_INV_ETH_RX_CLK_W<10> {
         CFG_INV_ETH_RX_CLK_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_clk_div(&mut self) -> I2C_CLK_DIV_W<16> {
         I2C_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn i2c_clk_en(&mut self) -> I2C_CLK_EN_W<24> {
         I2C_CLK_EN_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn chip_clk_out_0_sel(&mut self) -> CHIP_CLK_OUT_0_SEL_W<28> {
         CHIP_CLK_OUT_0_SEL_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn chip_clk_out_1_sel(&mut self) -> CHIP_CLK_OUT_1_SEL_W<30> {
         CHIP_CLK_OUT_1_SEL_W::new(self)
     }
@@ -215,11 +226,10 @@ impl crate::Readable for CLK_CFG3_SPEC {
 #[doc = "`write(|w| ..)` method takes [clk_cfg3::W](W) writer structure"]
 impl crate::Writable for CLK_CFG3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clk_cfg3 to value 0"]
 impl crate::Resettable for CLK_CFG3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

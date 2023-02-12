@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_gpio_use_psram_io(&mut self) -> CFG_GPIO_USE_PSRAM_IO_W<0> {
         CFG_GPIO_USE_PSRAM_IO_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for GPIO_USE_PSRAM__IO_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_use_psram__io::W](W) writer structure"]
 impl crate::Writable for GPIO_USE_PSRAM__IO_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_USE_PSRAM__IO to value 0"]
 impl crate::Resettable for GPIO_USE_PSRAM__IO_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

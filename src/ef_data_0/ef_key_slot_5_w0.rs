@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_key_slot_5_w0(&mut self) -> EF_KEY_SLOT_5_W0_W<0> {
         EF_KEY_SLOT_5_W0_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for EF_KEY_SLOT_5_W0_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_key_slot_5_w0::W](W) writer structure"]
 impl crate::Writable for EF_KEY_SLOT_5_W0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_key_slot_5_w0 to value 0"]
 impl crate::Resettable for EF_KEY_SLOT_5_W0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

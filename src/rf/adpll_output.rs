@@ -208,86 +208,103 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_unlock_intrpt(&mut self) -> ADPLL_UNLOCK_INTRPT_W<0> {
         ADPLL_UNLOCK_INTRPT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_lock(&mut self) -> ADPLL_LO_LOCK_W<1> {
         ADPLL_LO_LOCK_W::new(self)
     }
     #[doc = "Bits 3:6"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fsm_state(&mut self) -> ADPLL_FSM_STATE_W<3> {
         ADPLL_FSM_STATE_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_unlock_sign(&mut self) -> ADPLL_SPD_UNLOCK_SIGN_W<7> {
         ADPLL_SPD_UNLOCK_SIGN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_out_range_fsm(&mut self) -> ADPLL_VCTRL_OUT_RANGE_FSM_W<8> {
         ADPLL_VCTRL_OUT_RANGE_FSM_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_update_fail_fsm(&mut self) -> ADPLL_MOM_UPDATE_FAIL_FSM_W<9> {
         ADPLL_MOM_UPDATE_FAIL_FSM_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_update_ou_fsm(&mut self) -> ADPLL_MOM_UPDATE_OU_FSM_W<10> {
         ADPLL_MOM_UPDATE_OU_FSM_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_unlock_fsm(&mut self) -> ADPLL_SPD_UNLOCK_FSM_W<11> {
         ADPLL_SPD_UNLOCK_FSM_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_spd_lock_fsm(&mut self) -> ADPLL_SPD_LOCK_FSM_W<12> {
         ADPLL_SPD_LOCK_FSM_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fcal_done_fsm(&mut self) -> ADPLL_FCAL_DONE_FSM_W<13> {
         ADPLL_FCAL_DONE_FSM_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_capcode_out_range(&mut self) -> ADPLL_CAPCODE_OUT_RANGE_W<14> {
         ADPLL_CAPCODE_OUT_RANGE_W::new(self)
     }
     #[doc = "Bits 15:16"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_update_total_ou(&mut self) -> ADPLL_MOM_UPDATE_TOTAL_OU_W<15> {
         ADPLL_MOM_UPDATE_TOTAL_OU_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_capcode_ud(&mut self) -> ADPLL_CAPCODE_UD_W<17> {
         ADPLL_CAPCODE_UD_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_det_done(&mut self) -> ADPLL_VCTRL_DET_DONE_W<18> {
         ADPLL_VCTRL_DET_DONE_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_freqerr_sign(&mut self) -> ADPLL_FREQERR_SIGN_W<19> {
         ADPLL_FREQERR_SIGN_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_freqerr_ou(&mut self) -> ADPLL_FREQERR_OU_W<20> {
         ADPLL_FREQERR_OU_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_freqerr_det_done(&mut self) -> ADPLL_FREQERR_DET_DONE_W<21> {
         ADPLL_FREQERR_DET_DONE_W::new(self)
     }
@@ -310,11 +327,10 @@ impl crate::Readable for ADPLL_OUTPUT_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_output::W](W) writer structure"]
 impl crate::Writable for ADPLL_OUTPUT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_output to value 0"]
 impl crate::Resettable for ADPLL_OUTPUT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

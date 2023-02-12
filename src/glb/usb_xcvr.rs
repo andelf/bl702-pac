@@ -185,81 +185,97 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_ldo_vfb(&mut self) -> USB_LDO_VFB_W<0> {
         USB_LDO_VFB_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_usb_ldo(&mut self) -> PU_USB_LDO_W<3> {
         PU_USB_LDO_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_rout_nmos(&mut self) -> USB_ROUT_NMOS_W<4> {
         USB_ROUT_NMOS_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_rout_pmos(&mut self) -> USB_ROUT_PMOS_W<8> {
         USB_ROUT_PMOS_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_oeb_sel(&mut self) -> USB_OEB_SEL_W<12> {
         USB_OEB_SEL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_oeb_reg(&mut self) -> USB_OEB_REG_W<13> {
         USB_OEB_REG_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_oeb(&mut self) -> USB_OEB_W<14> {
         USB_OEB_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_data_convert(&mut self) -> USB_DATA_CONVERT_W<16> {
         USB_DATA_CONVERT_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_enum(&mut self) -> USB_ENUM_W<20> {
         USB_ENUM_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_spd(&mut self) -> USB_SPD_W<21> {
         USB_SPD_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_sus(&mut self) -> USB_SUS_W<22> {
         USB_SUS_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_usb(&mut self) -> PU_USB_W<23> {
         PU_USB_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_bd(&mut self) -> USB_BD_W<24> {
         USB_BD_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_vim(&mut self) -> USB_VIM_W<25> {
         USB_VIM_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_vip(&mut self) -> USB_VIP_W<26> {
         USB_VIP_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_rcv(&mut self) -> USB_RCV_W<27> {
         USB_RCV_W::new(self)
     }
@@ -282,11 +298,10 @@ impl crate::Readable for USB_XCVR_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_xcvr::W](W) writer structure"]
 impl crate::Writable for USB_XCVR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_xcvr to value 0"]
 impl crate::Resettable for USB_XCVR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

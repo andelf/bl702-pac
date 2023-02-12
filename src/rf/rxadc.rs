@@ -102,36 +102,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_oscal_en(&mut self) -> RXADC_OSCAL_EN_W<0> {
         RXADC_OSCAL_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_vref_sel(&mut self) -> RXADC_VREF_SEL_W<4> {
         RXADC_VREF_SEL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_clk_sync_inv(&mut self) -> RXADC_CLK_SYNC_INV_W<8> {
         RXADC_CLK_SYNC_INV_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_clk_inv(&mut self) -> RXADC_CLK_INV_W<12> {
         RXADC_CLK_INV_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_clk_div_sel(&mut self) -> RXADC_CLK_DIV_SEL_W<16> {
         RXADC_CLK_DIV_SEL_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_glitch_remove(&mut self) -> RXADC_GLITCH_REMOVE_W<20> {
         RXADC_GLITCH_REMOVE_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_dly_ctrl(&mut self) -> RXADC_DLY_CTRL_W<24> {
         RXADC_DLY_CTRL_W::new(self)
     }
@@ -154,11 +161,10 @@ impl crate::Readable for RXADC_SPEC {
 #[doc = "`write(|w| ..)` method takes [rxadc::W](W) writer structure"]
 impl crate::Writable for RXADC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rxadc to value 0"]
 impl crate::Resettable for RXADC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

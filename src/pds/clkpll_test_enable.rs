@@ -129,46 +129,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clkpll_postdiv_clk(&mut self) -> DTEN_CLKPLL_POSTDIV_CLK_W<0> {
         DTEN_CLKPLL_POSTDIV_CLK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clk96m(&mut self) -> DTEN_CLK96M_W<1> {
         DTEN_CLK96M_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clk32m(&mut self) -> DTEN_CLK32M_W<2> {
         DTEN_CLK32M_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clkpll_fsdm(&mut self) -> DTEN_CLKPLL_FSDM_W<3> {
         DTEN_CLKPLL_FSDM_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clkpll_fref(&mut self) -> DTEN_CLKPLL_FREF_W<4> {
         DTEN_CLKPLL_FREF_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_clkpll_fin(&mut self) -> DTEN_CLKPLL_FIN_W<5> {
         DTEN_CLKPLL_FIN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_clkpll_sfreg(&mut self) -> TEN_CLKPLL_SFREG_W<6> {
         TEN_CLKPLL_SFREG_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_clkpll(&mut self) -> TEN_CLKPLL_W<7> {
         TEN_CLKPLL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_dc_tp_out_en(&mut self) -> CLKPLL_DC_TP_OUT_EN_W<8> {
         CLKPLL_DC_TP_OUT_EN_W::new(self)
     }
@@ -191,11 +200,10 @@ impl crate::Readable for CLKPLL_TEST_ENABLE_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_test_enable::W](W) writer structure"]
 impl crate::Writable for CLKPLL_TEST_ENABLE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_test_enable to value 0"]
 impl crate::Resettable for CLKPLL_TEST_ENABLE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

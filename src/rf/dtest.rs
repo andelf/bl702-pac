@@ -111,41 +111,49 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_pulldown(&mut self) -> DTEST_PULLDOWN_W<0> {
         DTEST_PULLDOWN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_rxadc_q(&mut self) -> DTEST_EN_RXADC_Q_W<23> {
         DTEST_EN_RXADC_Q_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_rxadc_i(&mut self) -> DTEST_EN_RXADC_I_W<24> {
         DTEST_EN_RXADC_I_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_adpll_adc(&mut self) -> DTEST_EN_ADPLL_ADC_W<25> {
         DTEST_EN_ADPLL_ADC_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_mod4(&mut self) -> DTEST_EN_MOD4_W<26> {
         DTEST_EN_MOD4_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_fref(&mut self) -> DTEST_EN_FREF_W<27> {
         DTEST_EN_FREF_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_dtc_out(&mut self) -> DTEST_EN_DTC_OUT_W<28> {
         DTEST_EN_DTC_OUT_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_dtc_in(&mut self) -> DTEST_EN_DTC_IN_W<29> {
         DTEST_EN_DTC_IN_W::new(self)
     }
@@ -168,11 +176,10 @@ impl crate::Readable for DTEST_SPEC {
 #[doc = "`write(|w| ..)` method takes [dtest::W](W) writer structure"]
 impl crate::Writable for DTEST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dtest to value 0"]
 impl crate::Resettable for DTEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

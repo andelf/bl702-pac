@@ -138,51 +138,61 @@ impl R {
 impl W {
     #[doc = "Bits 1:5"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_vout_sel_aon(&mut self) -> DCDC18_VOUT_SEL_AON_W<1> {
         DCDC18_VOUT_SEL_AON_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_vpfm_aon(&mut self) -> DCDC18_VPFM_AON_W<8> {
         DCDC18_VPFM_AON_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_osc_2m_mode_aon(&mut self) -> DCDC18_OSC_2M_MODE_AON_W<12> {
         DCDC18_OSC_2M_MODE_AON_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_osc_freq_trim_aon(&mut self) -> DCDC18_OSC_FREQ_TRIM_AON_W<16> {
         DCDC18_OSC_FREQ_TRIM_AON_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_slope_curr_sel_aon(&mut self) -> DCDC18_SLOPE_CURR_SEL_AON_W<20> {
         DCDC18_SLOPE_CURR_SEL_AON_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_stop_osc_aon(&mut self) -> DCDC18_STOP_OSC_AON_W<25> {
         DCDC18_STOP_OSC_AON_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_slow_osc_aon(&mut self) -> DCDC18_SLOW_OSC_AON_W<26> {
         DCDC18_SLOW_OSC_AON_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_osc_inhibit_t2_aon(&mut self) -> DCDC18_OSC_INHIBIT_T2_AON_W<27> {
         DCDC18_OSC_INHIBIT_T2_AON_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_sstart_time_aon(&mut self) -> DCDC18_SSTART_TIME_AON_W<28> {
         DCDC18_SSTART_TIME_AON_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_rdy_aon(&mut self) -> DCDC18_RDY_AON_W<31> {
         DCDC18_RDY_AON_W::new(self)
     }
@@ -205,11 +215,10 @@ impl crate::Readable for DCDC18_TOP_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [dcdc18_top_0::W](W) writer structure"]
 impl crate::Writable for DCDC18_TOP_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dcdc18_top_0 to value 0"]
 impl crate::Resettable for DCDC18_TOP_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

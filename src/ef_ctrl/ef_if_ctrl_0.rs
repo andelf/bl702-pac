@@ -202,86 +202,103 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_autoload_p1_done(&mut self) -> EF_IF_0_AUTOLOAD_P1_DONE_W<0> {
         EF_IF_0_AUTOLOAD_P1_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_autoload_done(&mut self) -> EF_IF_0_AUTOLOAD_DONE_W<1> {
         EF_IF_0_AUTOLOAD_DONE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_busy(&mut self) -> EF_IF_0_BUSY_W<2> {
         EF_IF_0_BUSY_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_rw(&mut self) -> EF_IF_0_RW_W<3> {
         EF_IF_0_RW_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_trig(&mut self) -> EF_IF_0_TRIG_W<4> {
         EF_IF_0_TRIG_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_manual_en(&mut self) -> EF_IF_0_MANUAL_EN_W<5> {
         EF_IF_0_MANUAL_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_cyc_modify(&mut self) -> EF_IF_0_CYC_MODIFY_W<6> {
         EF_IF_0_CYC_MODIFY_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_clk_sahb_data_sel(&mut self) -> EF_CLK_SAHB_DATA_SEL_W<7> {
         EF_CLK_SAHB_DATA_SEL_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_prot_code_ctrl(&mut self) -> EF_IF_PROT_CODE_CTRL_W<8> {
         EF_IF_PROT_CODE_CTRL_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_por_dig(&mut self) -> EF_IF_POR_DIG_W<16> {
         EF_IF_POR_DIG_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_clk_sahb_data_gate(&mut self) -> EF_CLK_SAHB_DATA_GATE_W<17> {
         EF_CLK_SAHB_DATA_GATE_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_auto_rd_en(&mut self) -> EF_IF_AUTO_RD_EN_W<18> {
         EF_IF_AUTO_RD_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_modify_lock(&mut self) -> EF_IF_CYC_MODIFY_LOCK_W<19> {
         EF_IF_CYC_MODIFY_LOCK_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_int(&mut self) -> EF_IF_0_INT_W<20> {
         EF_IF_0_INT_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_int_clr(&mut self) -> EF_IF_0_INT_CLR_W<21> {
         EF_IF_0_INT_CLR_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_int_set(&mut self) -> EF_IF_0_INT_SET_W<22> {
         EF_IF_0_INT_SET_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_prot_code_cyc(&mut self) -> EF_IF_PROT_CODE_CYC_W<24> {
         EF_IF_PROT_CODE_CYC_W::new(self)
     }
@@ -304,11 +321,10 @@ impl crate::Readable for EF_IF_CTRL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_if_ctrl_0::W](W) writer structure"]
 impl crate::Writable for EF_IF_CTRL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_if_ctrl_0 to value 0"]
 impl crate::Resettable for EF_IF_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

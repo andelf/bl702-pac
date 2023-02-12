@@ -43,12 +43,13 @@ impl R {
     #[doc = "Bits 0:25"]
     #[inline(always)]
     pub fn gpadc_data_out(&self) -> GPADC_DATA_OUT_R {
-        GPADC_DATA_OUT_R::new((self.bits & 0x03ff_ffff) as u32)
+        GPADC_DATA_OUT_R::new(self.bits & 0x03ff_ffff)
     }
 }
 impl W {
     #[doc = "Bits 0:25"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_data_out(&mut self) -> GPADC_DATA_OUT_W<0> {
         GPADC_DATA_OUT_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for GPADC_REG_RESULT_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_result::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_RESULT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_result to value 0"]
 impl crate::Resettable for GPADC_REG_RESULT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

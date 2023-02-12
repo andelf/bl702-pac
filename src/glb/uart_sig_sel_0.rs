@@ -119,41 +119,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_0_sel(&mut self) -> UART_SIG_0_SEL_W<0> {
         UART_SIG_0_SEL_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_1_sel(&mut self) -> UART_SIG_1_SEL_W<4> {
         UART_SIG_1_SEL_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_2_sel(&mut self) -> UART_SIG_2_SEL_W<8> {
         UART_SIG_2_SEL_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_3_sel(&mut self) -> UART_SIG_3_SEL_W<12> {
         UART_SIG_3_SEL_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_4_sel(&mut self) -> UART_SIG_4_SEL_W<16> {
         UART_SIG_4_SEL_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_5_sel(&mut self) -> UART_SIG_5_SEL_W<20> {
         UART_SIG_5_SEL_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_6_sel(&mut self) -> UART_SIG_6_SEL_W<24> {
         UART_SIG_6_SEL_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_sig_7_sel(&mut self) -> UART_SIG_7_SEL_W<28> {
         UART_SIG_7_SEL_W::new(self)
     }
@@ -176,11 +184,10 @@ impl crate::Readable for UART_SIG_SEL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_sig_sel_0::W](W) writer structure"]
 impl crate::Writable for UART_SIG_SEL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets UART_SIG_SEL_0 to value 0"]
 impl crate::Resettable for UART_SIG_SEL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

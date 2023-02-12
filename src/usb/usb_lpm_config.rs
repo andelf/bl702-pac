@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_lpm_en(&mut self) -> CR_LPM_EN_W<0> {
         CR_LPM_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_lpm_resp_upd(&mut self) -> CR_LPM_RESP_UPD_W<1> {
         CR_LPM_RESP_UPD_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_lpm_resp(&mut self) -> CR_LPM_RESP_W<2> {
         CR_LPM_RESP_W::new(self)
     }
     #[doc = "Bits 20:30"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_lpm_attr(&mut self) -> STS_LPM_ATTR_W<20> {
         STS_LPM_ATTR_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_lpm(&mut self) -> STS_LPM_W<31> {
         STS_LPM_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for USB_LPM_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_lpm_config::W](W) writer structure"]
 impl crate::Writable for USB_LPM_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_lpm_config to value 0"]
 impl crate::Resettable for USB_LPM_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -270,126 +270,151 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_tx_en_lotx(&mut self) -> LODIST_TX_EN_LOTX_W<0> {
         LODIST_TX_EN_LOTX_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_txbuf_lotx(&mut self) -> PU_TXBUF_LOTX_W<1> {
         PU_TXBUF_LOTX_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rxbuf_lotx(&mut self) -> PU_RXBUF_LOTX_W<2> {
         PU_RXBUF_LOTX_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_dtc_lotx(&mut self) -> PU_DTC_LOTX_W<3> {
         PU_DTC_LOTX_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_adpll_sfreg_lotx(&mut self) -> PU_ADPLL_SFREG_LOTX_W<4> {
         PU_ADPLL_SFREG_LOTX_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_adpll_adc_lotx(&mut self) -> PU_ADPLL_ADC_LOTX_W<5> {
         PU_ADPLL_ADC_LOTX_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_clk_en_lotx(&mut self) -> ADPLL_CLK_EN_LOTX_W<6> {
         ADPLL_CLK_EN_LOTX_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_bypass_lotx(&mut self) -> LOTPM_HFP_BYPASS_LOTX_W<7> {
         LOTPM_HFP_BYPASS_LOTX_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_lfp_bypass_lotx(&mut self) -> LOTPM_LFP_BYPASS_LOTX_W<8> {
         LOTPM_LFP_BYPASS_LOTX_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_clk_en_lotx(&mut self) -> LOTPM_HFP_CLK_EN_LOTX_W<9> {
         LOTPM_HFP_CLK_EN_LOTX_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_fbdv_buf_lotx(&mut self) -> PU_FBDV_BUF_LOTX_W<10> {
         PU_FBDV_BUF_LOTX_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_fbdv_lotx(&mut self) -> PU_FBDV_LOTX_W<11> {
         PU_FBDV_LOTX_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_vco_lotx(&mut self) -> PU_VCO_LOTX_W<12> {
         PU_VCO_LOTX_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_vco_ldo_lotx(&mut self) -> PU_VCO_LDO_LOTX_W<13> {
         PU_VCO_LDO_LOTX_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_lodist_body_bias_lotx(&mut self) -> PU_LODIST_BODY_BIAS_LOTX_W<14> {
         PU_LODIST_BODY_BIAS_LOTX_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_clk_en_lotx(&mut self) -> RXADC_CLK_EN_LOTX_W<15> {
         RXADC_CLK_EN_LOTX_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rxadc_lotx(&mut self) -> PU_RXADC_LOTX_W<16> {
         PU_RXADC_LOTX_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rosdac_lotx(&mut self) -> PU_ROSDAC_LOTX_W<17> {
         PU_ROSDAC_LOTX_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rbb_pkdet_lotx(&mut self) -> PU_RBB_PKDET_LOTX_W<18> {
         PU_RBB_PKDET_LOTX_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rbb_lotx(&mut self) -> PU_RBB_LOTX_W<19> {
         PU_RBB_LOTX_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_rmx_lotx(&mut self) -> PU_RMX_LOTX_W<20> {
         PU_RMX_LOTX_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_lna_lotx(&mut self) -> PU_LNA_LOTX_W<21> {
         PU_LNA_LOTX_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_pa_lotx(&mut self) -> PU_PA_LOTX_W<22> {
         PU_PA_LOTX_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_bypass_en_lotx(&mut self) -> RX_BYPASS_EN_LOTX_W<23> {
         RX_BYPASS_EN_LOTX_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_seri_cap_en_lotx(&mut self) -> PA_SERI_CAP_EN_LOTX_W<24> {
         PA_SERI_CAP_EN_LOTX_W::new(self)
     }
@@ -412,11 +437,10 @@ impl crate::Readable for PUCR_LOTX_SPEC {
 #[doc = "`write(|w| ..)` method takes [pucr_lotx::W](W) writer structure"]
 impl crate::Writable for PUCR_LOTX_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pucr_lotx to value 0"]
 impl crate::Resettable for PUCR_LOTX_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

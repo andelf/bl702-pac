@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_io_0_oe_dly_sel(&mut self) -> SF2_IO_0_OE_DLY_SEL_W<0> {
         SF2_IO_0_OE_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_io_0_di_dly_sel(&mut self) -> SF2_IO_0_DI_DLY_SEL_W<8> {
         SF2_IO_0_DI_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_io_0_do_dly_sel(&mut self) -> SF2_IO_0_DO_DLY_SEL_W<16> {
         SF2_IO_0_DO_DLY_SEL_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for SF2_IF_IO_DLY_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf2_if_io_dly_1::W](W) writer structure"]
 impl crate::Writable for SF2_IF_IO_DLY_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf2_if_io_dly_1 to value 0"]
 impl crate::Resettable for SF2_IF_IO_DLY_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

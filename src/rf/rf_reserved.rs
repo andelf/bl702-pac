@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_resv1(&mut self) -> RF_RESV1_W<0> {
         RF_RESV1_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_resv0(&mut self) -> RF_RESV0_W<16> {
         RF_RESV0_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for RF_RESERVED_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_reserved::W](W) writer structure"]
 impl crate::Writable for RF_RESERVED_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_reserved to value 0"]
 impl crate::Resettable for RF_RESERVED_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

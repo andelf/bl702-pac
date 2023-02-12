@@ -119,41 +119,49 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_state_en(&mut self) -> FCAL_STATE_EN_W<0> {
         FCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn acal_state_en(&mut self) -> ACAL_STATE_EN_W<1> {
         ACAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_state_en(&mut self) -> KCAL_STATE_EN_W<2> {
         KCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn roscal_state_en(&mut self) -> ROSCAL_STATE_EN_W<3> {
         ROSCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn rccal_state_en(&mut self) -> RCCAL_STATE_EN_W<4> {
         RCCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_fcal_state_en(&mut self) -> INC_FCAL_STATE_EN_W<5> {
         INC_FCAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_acal_state_en(&mut self) -> INC_ACAL_STATE_EN_W<6> {
         INC_ACAL_STATE_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_roscal_state_en(&mut self) -> INC_ROSCAL_STATE_EN_W<7> {
         INC_ROSCAL_STATE_EN_W::new(self)
     }
@@ -176,11 +184,10 @@ impl crate::Readable for RF_CAL_STATE_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_cal_state_ctrl::W](W) writer structure"]
 impl crate::Writable for RF_CAL_STATE_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_cal_state_ctrl to value 0"]
 impl crate::Resettable for RF_CAL_STATE_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

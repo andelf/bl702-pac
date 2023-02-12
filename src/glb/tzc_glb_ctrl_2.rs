@@ -359,161 +359,193 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_0_lock(&mut self) -> TZC_GLB_GPIO_0_LOCK_W<0> {
         TZC_GLB_GPIO_0_LOCK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_1_lock(&mut self) -> TZC_GLB_GPIO_1_LOCK_W<1> {
         TZC_GLB_GPIO_1_LOCK_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_2_lock(&mut self) -> TZC_GLB_GPIO_2_LOCK_W<2> {
         TZC_GLB_GPIO_2_LOCK_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_3_lock(&mut self) -> TZC_GLB_GPIO_3_LOCK_W<3> {
         TZC_GLB_GPIO_3_LOCK_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_4_lock(&mut self) -> TZC_GLB_GPIO_4_LOCK_W<4> {
         TZC_GLB_GPIO_4_LOCK_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_5_lock(&mut self) -> TZC_GLB_GPIO_5_LOCK_W<5> {
         TZC_GLB_GPIO_5_LOCK_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_6_lock(&mut self) -> TZC_GLB_GPIO_6_LOCK_W<6> {
         TZC_GLB_GPIO_6_LOCK_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_7_lock(&mut self) -> TZC_GLB_GPIO_7_LOCK_W<7> {
         TZC_GLB_GPIO_7_LOCK_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_8_lock(&mut self) -> TZC_GLB_GPIO_8_LOCK_W<8> {
         TZC_GLB_GPIO_8_LOCK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_9_lock(&mut self) -> TZC_GLB_GPIO_9_LOCK_W<9> {
         TZC_GLB_GPIO_9_LOCK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_10_lock(&mut self) -> TZC_GLB_GPIO_10_LOCK_W<10> {
         TZC_GLB_GPIO_10_LOCK_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_11_lock(&mut self) -> TZC_GLB_GPIO_11_LOCK_W<11> {
         TZC_GLB_GPIO_11_LOCK_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_12_lock(&mut self) -> TZC_GLB_GPIO_12_LOCK_W<12> {
         TZC_GLB_GPIO_12_LOCK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_13_lock(&mut self) -> TZC_GLB_GPIO_13_LOCK_W<13> {
         TZC_GLB_GPIO_13_LOCK_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_14_lock(&mut self) -> TZC_GLB_GPIO_14_LOCK_W<14> {
         TZC_GLB_GPIO_14_LOCK_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_15_lock(&mut self) -> TZC_GLB_GPIO_15_LOCK_W<15> {
         TZC_GLB_GPIO_15_LOCK_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_16_lock(&mut self) -> TZC_GLB_GPIO_16_LOCK_W<16> {
         TZC_GLB_GPIO_16_LOCK_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_17_lock(&mut self) -> TZC_GLB_GPIO_17_LOCK_W<17> {
         TZC_GLB_GPIO_17_LOCK_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_18_lock(&mut self) -> TZC_GLB_GPIO_18_LOCK_W<18> {
         TZC_GLB_GPIO_18_LOCK_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_19_lock(&mut self) -> TZC_GLB_GPIO_19_LOCK_W<19> {
         TZC_GLB_GPIO_19_LOCK_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_20_lock(&mut self) -> TZC_GLB_GPIO_20_LOCK_W<20> {
         TZC_GLB_GPIO_20_LOCK_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_21_lock(&mut self) -> TZC_GLB_GPIO_21_LOCK_W<21> {
         TZC_GLB_GPIO_21_LOCK_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_22_lock(&mut self) -> TZC_GLB_GPIO_22_LOCK_W<22> {
         TZC_GLB_GPIO_22_LOCK_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_23_lock(&mut self) -> TZC_GLB_GPIO_23_LOCK_W<23> {
         TZC_GLB_GPIO_23_LOCK_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_24_lock(&mut self) -> TZC_GLB_GPIO_24_LOCK_W<24> {
         TZC_GLB_GPIO_24_LOCK_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_25_lock(&mut self) -> TZC_GLB_GPIO_25_LOCK_W<25> {
         TZC_GLB_GPIO_25_LOCK_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_26_lock(&mut self) -> TZC_GLB_GPIO_26_LOCK_W<26> {
         TZC_GLB_GPIO_26_LOCK_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_27_lock(&mut self) -> TZC_GLB_GPIO_27_LOCK_W<27> {
         TZC_GLB_GPIO_27_LOCK_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_28_lock(&mut self) -> TZC_GLB_GPIO_28_LOCK_W<28> {
         TZC_GLB_GPIO_28_LOCK_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_29_lock(&mut self) -> TZC_GLB_GPIO_29_LOCK_W<29> {
         TZC_GLB_GPIO_29_LOCK_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_30_lock(&mut self) -> TZC_GLB_GPIO_30_LOCK_W<30> {
         TZC_GLB_GPIO_30_LOCK_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_gpio_31_lock(&mut self) -> TZC_GLB_GPIO_31_LOCK_W<31> {
         TZC_GLB_GPIO_31_LOCK_W::new(self)
     }
@@ -536,11 +568,10 @@ impl crate::Readable for TZC_GLB_CTRL_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [tzc_glb_ctrl_2::W](W) writer structure"]
 impl crate::Writable for TZC_GLB_CTRL_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets tzc_glb_ctrl_2 to value 0"]
 impl crate::Resettable for TZC_GLB_CTRL_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

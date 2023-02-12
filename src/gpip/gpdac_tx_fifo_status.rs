@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_empty(&mut self) -> TX_FIFO_EMPTY_W<0> {
         TX_FIFO_EMPTY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_full(&mut self) -> TX_FIFO_FULL_W<1> {
         TX_FIFO_FULL_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_cs(&mut self) -> TX_CS_W<2> {
         TX_CS_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_rd_ptr(&mut self) -> TX_FIFO_RD_PTR_W<4> {
         TX_FIFO_RD_PTR_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_wr_ptr(&mut self) -> TX_FIFO_WR_PTR_W<8> {
         TX_FIFO_WR_PTR_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for GPDAC_TX_FIFO_STATUS_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpdac_tx_fifo_status::W](W) writer structure"]
 impl crate::Writable for GPDAC_TX_FIFO_STATUS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpdac_tx_fifo_status to value 0"]
 impl crate::Resettable for GPDAC_TX_FIFO_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

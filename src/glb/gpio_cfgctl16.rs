@@ -133,51 +133,61 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_32_ie(&mut self) -> REG_GPIO_32_IE_W<0> {
         REG_GPIO_32_IE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_32_smt(&mut self) -> REG_GPIO_32_SMT_W<1> {
         REG_GPIO_32_SMT_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_32_drv(&mut self) -> REG_GPIO_32_DRV_W<2> {
         REG_GPIO_32_DRV_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_32_pu(&mut self) -> REG_GPIO_32_PU_W<4> {
         REG_GPIO_32_PU_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_32_pd(&mut self) -> REG_GPIO_32_PD_W<5> {
         REG_GPIO_32_PD_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_33_ie(&mut self) -> REG_GPIO_33_IE_W<16> {
         REG_GPIO_33_IE_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_33_smt(&mut self) -> REG_GPIO_33_SMT_W<17> {
         REG_GPIO_33_SMT_W::new(self)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_33_drv(&mut self) -> REG_GPIO_33_DRV_W<18> {
         REG_GPIO_33_DRV_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_33_pu(&mut self) -> REG_GPIO_33_PU_W<20> {
         REG_GPIO_33_PU_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_33_pd(&mut self) -> REG_GPIO_33_PD_W<21> {
         REG_GPIO_33_PD_W::new(self)
     }
@@ -200,11 +210,10 @@ impl crate::Readable for GPIO_CFGCTL16_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_cfgctl16::W](W) writer structure"]
 impl crate::Writable for GPIO_CFGCTL16_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_CFGCTL16 to value 0"]
 impl crate::Resettable for GPIO_CFGCTL16_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

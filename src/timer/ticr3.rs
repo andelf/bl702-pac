@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tclr_0(&mut self) -> TCLR_0_W<0> {
         TCLR_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tclr_1(&mut self) -> TCLR_1_W<1> {
         TCLR_1_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tclr_2(&mut self) -> TCLR_2_W<2> {
         TCLR_2_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for TICR3_SPEC {
 #[doc = "`write(|w| ..)` method takes [ticr3::W](W) writer structure"]
 impl crate::Writable for TICR3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TICR3 to value 0"]
 impl crate::Resettable for TICR3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

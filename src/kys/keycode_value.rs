@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn keycode0(&mut self) -> KEYCODE0_W<0> {
         KEYCODE0_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn keycode1(&mut self) -> KEYCODE1_W<8> {
         KEYCODE1_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn keycode2(&mut self) -> KEYCODE2_W<16> {
         KEYCODE2_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn keycode3(&mut self) -> KEYCODE3_W<24> {
         KEYCODE3_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for KEYCODE_VALUE_SPEC {
 #[doc = "`write(|w| ..)` method takes [keycode_value::W](W) writer structure"]
 impl crate::Writable for KEYCODE_VALUE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets keycode_value to value 0"]
 impl crate::Resettable for KEYCODE_VALUE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

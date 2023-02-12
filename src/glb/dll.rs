@@ -228,106 +228,127 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_dll_refclk(&mut self) -> DTEST_EN_DLL_REFCLK_W<0> {
         DTEST_EN_DLL_REFCLK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn dtest_en_dll_outclk(&mut self) -> DTEST_EN_DLL_OUTCLK_W<1> {
         DTEST_EN_DLL_OUTCLK_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_dll(&mut self) -> TEN_DLL_W<2> {
         TEN_DLL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_clk_mmdiv_en(&mut self) -> DLL_CLK_MMDIV_EN_W<3> {
         DLL_CLK_MMDIV_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_clk_288m_en(&mut self) -> DLL_CLK_288M_EN_W<4> {
         DLL_CLK_288M_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_clk_144m_en(&mut self) -> DLL_CLK_144M_EN_W<5> {
         DLL_CLK_144M_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_clk_96m_en(&mut self) -> DLL_CLK_96M_EN_W<6> {
         DLL_CLK_96M_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_clk_57p6m_en(&mut self) -> DLL_CLK_57P6M_EN_W<7> {
         DLL_CLK_57P6M_EN_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_vctrl_sel(&mut self) -> DLL_VCTRL_SEL_W<8> {
         DLL_VCTRL_SEL_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_prechg_sel(&mut self) -> DLL_PRECHG_SEL_W<12> {
         DLL_PRECHG_SEL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_prechg_reg(&mut self) -> DLL_PRECHG_REG_W<13> {
         DLL_PRECHG_REG_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_prechg_en(&mut self) -> DLL_PRECHG_EN_W<14> {
         DLL_PRECHG_EN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_vctrl_force_en(&mut self) -> DLL_VCTRL_FORCE_EN_W<15> {
         DLL_VCTRL_FORCE_EN_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_post_div(&mut self) -> DLL_POST_DIV_W<16> {
         DLL_POST_DIV_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_delay_sel(&mut self) -> DLL_DELAY_SEL_W<20> {
         DLL_DELAY_SEL_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_cp_op_en(&mut self) -> DLL_CP_OP_EN_W<22> {
         DLL_CP_OP_EN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_cp_hiz(&mut self) -> DLL_CP_HIZ_W<23> {
         DLL_CP_HIZ_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_refclk_sel(&mut self) -> DLL_REFCLK_SEL_W<28> {
         DLL_REFCLK_SEL_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_reset(&mut self) -> DLL_RESET_W<29> {
         DLL_RESET_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_dll(&mut self) -> PU_DLL_W<30> {
         PU_DLL_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_dll(&mut self) -> PPU_DLL_W<31> {
         PPU_DLL_W::new(self)
     }
@@ -350,11 +371,10 @@ impl crate::Readable for DLL_SPEC {
 #[doc = "`write(|w| ..)` method takes [dll::W](W) writer structure"]
 impl crate::Writable for DLL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dll to value 0"]
 impl crate::Resettable for DLL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

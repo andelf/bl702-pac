@@ -159,61 +159,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rfifo_pop_0(&mut self) -> RFIFO_POP_0_W<0> {
         RFIFO_POP_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rfifo_pop_1(&mut self) -> RFIFO_POP_1_W<1> {
         RFIFO_POP_1_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_normal_clr_0(&mut self) -> REG_INT_NORMAL_CLR_0_W<4> {
         REG_INT_NORMAL_CLR_0_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_mem_clr_0(&mut self) -> REG_INT_MEM_CLR_0_W<5> {
         REG_INT_MEM_CLR_0_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_frame_clr_0(&mut self) -> REG_INT_FRAME_CLR_0_W<6> {
         REG_INT_FRAME_CLR_0_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_fifo_clr_0(&mut self) -> REG_INT_FIFO_CLR_0_W<7> {
         REG_INT_FIFO_CLR_0_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_hcnt_clr_0(&mut self) -> REG_INT_HCNT_CLR_0_W<8> {
         REG_INT_HCNT_CLR_0_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_vcnt_clr_0(&mut self) -> REG_INT_VCNT_CLR_0_W<9> {
         REG_INT_VCNT_CLR_0_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_normal_clr_1(&mut self) -> REG_INT_NORMAL_CLR_1_W<16> {
         REG_INT_NORMAL_CLR_1_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_mem_clr_1(&mut self) -> REG_INT_MEM_CLR_1_W<17> {
         REG_INT_MEM_CLR_1_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_frame_clr_1(&mut self) -> REG_INT_FRAME_CLR_1_W<18> {
         REG_INT_FRAME_CLR_1_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_fifo_clr_1(&mut self) -> REG_INT_FIFO_CLR_1_W<19> {
         REG_INT_FIFO_CLR_1_W::new(self)
     }
@@ -236,11 +248,10 @@ impl crate::Readable for DVP_FRAME_FIFO_POP_SPEC {
 #[doc = "`write(|w| ..)` method takes [dvp_frame_fifo_pop::W](W) writer structure"]
 impl crate::Writable for DVP_FRAME_FIFO_POP_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dvp_frame_fifo_pop to value 0"]
 impl crate::Resettable for DVP_FRAME_FIFO_POP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

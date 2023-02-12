@@ -151,61 +151,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_en(&mut self) -> CR_UTX_EN_W<0> {
         CR_UTX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_cts_en(&mut self) -> CR_UTX_CTS_EN_W<1> {
         CR_UTX_CTS_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_frm_en(&mut self) -> CR_UTX_FRM_EN_W<2> {
         CR_UTX_FRM_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_lin_en(&mut self) -> CR_UTX_LIN_EN_W<3> {
         CR_UTX_LIN_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_prt_en(&mut self) -> CR_UTX_PRT_EN_W<4> {
         CR_UTX_PRT_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_prt_sel(&mut self) -> CR_UTX_PRT_SEL_W<5> {
         CR_UTX_PRT_SEL_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_ir_en(&mut self) -> CR_UTX_IR_EN_W<6> {
         CR_UTX_IR_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_ir_inv(&mut self) -> CR_UTX_IR_INV_W<7> {
         CR_UTX_IR_INV_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_bit_cnt_d(&mut self) -> CR_UTX_BIT_CNT_D_W<8> {
         CR_UTX_BIT_CNT_D_W::new(self)
     }
     #[doc = "Bits 11:12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_bit_cnt_p(&mut self) -> CR_UTX_BIT_CNT_P_W<11> {
         CR_UTX_BIT_CNT_P_W::new(self)
     }
     #[doc = "Bits 13:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_bit_cnt_b(&mut self) -> CR_UTX_BIT_CNT_B_W<13> {
         CR_UTX_BIT_CNT_B_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_len(&mut self) -> CR_UTX_LEN_W<16> {
         CR_UTX_LEN_W::new(self)
     }
@@ -228,11 +240,10 @@ impl crate::Readable for UTX_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [utx_config::W](W) writer structure"]
 impl crate::Writable for UTX_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets utx_config to value 0"]
 impl crate::Resettable for UTX_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

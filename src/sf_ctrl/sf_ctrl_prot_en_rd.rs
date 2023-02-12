@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ctrl_prot_en_rd(&mut self) -> SF_CTRL_PROT_EN_RD_W<0> {
         SF_CTRL_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ctrl_id0_en_rd(&mut self) -> SF_CTRL_ID0_EN_RD_W<1> {
         SF_CTRL_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ctrl_id1_en_rd(&mut self) -> SF_CTRL_ID1_EN_RD_W<2> {
         SF_CTRL_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_trig_wr_lock(&mut self) -> SF_IF_0_TRIG_WR_LOCK_W<30> {
         SF_IF_0_TRIG_WR_LOCK_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_dbg_dis(&mut self) -> SF_DBG_DIS_W<31> {
         SF_DBG_DIS_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for SF_CTRL_PROT_EN_RD_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_ctrl_prot_en_rd::W](W) writer structure"]
 impl crate::Writable for SF_CTRL_PROT_EN_RD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_ctrl_prot_en_rd to value 0"]
 impl crate::Resettable for SF_CTRL_PROT_EN_RD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

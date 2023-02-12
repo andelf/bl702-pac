@@ -120,46 +120,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn utx_end_int(&mut self) -> UTX_END_INT_W<0> {
         UTX_END_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_end_int(&mut self) -> URX_END_INT_W<1> {
         URX_END_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn utx_fifo_int(&mut self) -> UTX_FIFO_INT_W<2> {
         UTX_FIFO_INT_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_fifo_int(&mut self) -> URX_FIFO_INT_W<3> {
         URX_FIFO_INT_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_rto_int(&mut self) -> URX_RTO_INT_W<4> {
         URX_RTO_INT_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_pce_int(&mut self) -> URX_PCE_INT_W<5> {
         URX_PCE_INT_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn utx_fer_int(&mut self) -> UTX_FER_INT_W<6> {
         UTX_FER_INT_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_fer_int(&mut self) -> URX_FER_INT_W<7> {
         URX_FER_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn urx_lse_int(&mut self) -> URX_LSE_INT_W<8> {
         URX_LSE_INT_W::new(self)
     }
@@ -182,11 +191,10 @@ impl crate::Readable for UART_INT_STS_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_int_sts::W](W) writer structure"]
 impl crate::Writable for UART_INT_STS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_int_sts to value 0"]
 impl crate::Resettable for UART_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

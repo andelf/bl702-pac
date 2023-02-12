@@ -104,36 +104,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn irom_mbist_mode(&mut self) -> IROM_MBIST_MODE_W<0> {
         IROM_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_mem_mbist_mode(&mut self) -> HSRAM_MEM_MBIST_MODE_W<1> {
         HSRAM_MEM_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_cache_mbist_mode(&mut self) -> HSRAM_CACHE_MBIST_MODE_W<2> {
         HSRAM_CACHE_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn tag_mbist_mode(&mut self) -> TAG_MBIST_MODE_W<3> {
         TAG_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ocram_mbist_mode(&mut self) -> OCRAM_MBIST_MODE_W<4> {
         OCRAM_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn em_ram_mbist_mode(&mut self) -> EM_RAM_MBIST_MODE_W<5> {
         EM_RAM_MBIST_MODE_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mbist_rst_n(&mut self) -> REG_MBIST_RST_N_W<31> {
         REG_MBIST_RST_N_W::new(self)
     }
@@ -156,11 +163,10 @@ impl crate::Readable for MBIST_CTL_SPEC {
 #[doc = "`write(|w| ..)` method takes [mbist_ctl::W](W) writer structure"]
 impl crate::Writable for MBIST_CTL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets MBIST_CTL to value 0"]
 impl crate::Resettable for MBIST_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

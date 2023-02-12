@@ -58,11 +58,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_dbg_en(&mut self) -> REG_DVP_DBG_EN_W<0> {
         REG_DVP_DBG_EN_W::new(self)
     }
     #[doc = "Bits 1:3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_dbg_sel(&mut self) -> REG_DVP_DBG_SEL_W<1> {
         REG_DVP_DBG_SEL_W::new(self)
     }
@@ -85,11 +87,10 @@ impl crate::Readable for DVP_DEBUG_SPEC {
 #[doc = "`write(|w| ..)` method takes [dvp_debug::W](W) writer structure"]
 impl crate::Writable for DVP_DEBUG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dvp_debug to value 0"]
 impl crate::Resettable for DVP_DEBUG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

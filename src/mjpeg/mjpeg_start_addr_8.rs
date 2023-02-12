@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn frame_start_addr_8(&mut self) -> FRAME_START_ADDR_8_W<0> {
         FRAME_START_ADDR_8_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for MJPEG_START_ADDR_8_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_start_addr_8::W](W) writer structure"]
 impl crate::Writable for MJPEG_START_ADDR_8_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_start_addr_8 to value 0"]
 impl crate::Resettable for MJPEG_START_ADDR_8_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

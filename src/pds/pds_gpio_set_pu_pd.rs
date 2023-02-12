@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_gpio_22_17_pd(&mut self) -> CR_PDS_GPIO_22_17_PD_W<0> {
         CR_PDS_GPIO_22_17_PD_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_gpio_22_17_pu(&mut self) -> CR_PDS_GPIO_22_17_PU_W<8> {
         CR_PDS_GPIO_22_17_PU_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_gpio_28_23_pd(&mut self) -> CR_PDS_GPIO_28_23_PD_W<16> {
         CR_PDS_GPIO_28_23_PD_W::new(self)
     }
     #[doc = "Bits 24:29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_gpio_28_23_pu(&mut self) -> CR_PDS_GPIO_28_23_PU_W<24> {
         CR_PDS_GPIO_28_23_PU_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for PDS_GPIO_SET_PU_PD_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_gpio_set_pu_pd::W](W) writer structure"]
 impl crate::Writable for PDS_GPIO_SET_PU_PD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pds_gpio_set_pu_pd to value 0"]
 impl crate::Resettable for PDS_GPIO_SET_PU_PD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

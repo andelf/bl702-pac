@@ -75,21 +75,25 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rpt_rdy_clr(&mut self) -> RPT_RDY_CLR_W<0> {
         RPT_RDY_CLR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn spl_rdy_clr(&mut self) -> SPL_RDY_CLR_W<1> {
         SPL_RDY_CLR_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn dbl_rdy_clr(&mut self) -> DBL_RDY_CLR_W<2> {
         DBL_RDY_CLR_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn overflow_clr(&mut self) -> OVERFLOW_CLR_W<3> {
         OVERFLOW_CLR_W::new(self)
     }
@@ -112,11 +116,10 @@ impl crate::Readable for QDEC_INT_CLR_SPEC {
 #[doc = "`write(|w| ..)` method takes [qdec_int_clr::W](W) writer structure"]
 impl crate::Writable for QDEC_INT_CLR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets qdec_int_clr to value 0"]
 impl crate::Resettable for QDEC_INT_CLR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

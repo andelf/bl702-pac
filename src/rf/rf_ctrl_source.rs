@@ -138,51 +138,61 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_ctrl_hw(&mut self) -> PU_CTRL_HW_W<0> {
         PU_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl_tx_hw(&mut self) -> GAIN_CTRL_TX_HW_W<3> {
         GAIN_CTRL_TX_HW_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl_rx_hw(&mut self) -> GAIN_CTRL_RX_HW_W<4> {
         GAIN_CTRL_RX_HW_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_ctrl_hw(&mut self) -> ROSDAC_CTRL_HW_W<8> {
         ROSDAC_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_ctrl_rccal(&mut self) -> ROSDAC_CTRL_RCCAL_W<9> {
         ROSDAC_CTRL_RCCAL_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_ratio_ctrl_hw(&mut self) -> KCAL_RATIO_CTRL_HW_W<12> {
         KCAL_RATIO_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bw_ctrl_hw(&mut self) -> RBB_BW_CTRL_HW_W<16> {
         RBB_BW_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn lo_fcw_ctrl_hw(&mut self) -> LO_FCW_CTRL_HW_W<20> {
         LO_FCW_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_fcal_en_ctrl_hw(&mut self) -> INC_FCAL_EN_CTRL_HW_W<24> {
         INC_FCAL_EN_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_ctrl_hw(&mut self) -> VCO_IDAC_CTRL_HW_W<28> {
         VCO_IDAC_CTRL_HW_W::new(self)
     }
@@ -205,11 +215,10 @@ impl crate::Readable for RF_CTRL_SOURCE_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_ctrl_source::W](W) writer structure"]
 impl crate::Writable for RF_CTRL_SOURCE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_ctrl_source to value 0"]
 impl crate::Resettable for RF_CTRL_SOURCE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

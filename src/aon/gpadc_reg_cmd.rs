@@ -206,86 +206,103 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_global_en(&mut self) -> GPADC_GLOBAL_EN_W<0> {
         GPADC_GLOBAL_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_conv_start(&mut self) -> GPADC_CONV_START_W<1> {
         GPADC_CONV_START_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_soft_rst(&mut self) -> GPADC_SOFT_RST_W<2> {
         GPADC_SOFT_RST_W::new(self)
     }
     #[doc = "Bits 3:7"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_neg_sel(&mut self) -> GPADC_NEG_SEL_W<3> {
         GPADC_NEG_SEL_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pos_sel(&mut self) -> GPADC_POS_SEL_W<8> {
         GPADC_POS_SEL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_neg_gnd(&mut self) -> GPADC_NEG_GND_W<13> {
         GPADC_NEG_GND_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_micbias_en(&mut self) -> GPADC_MICBIAS_EN_W<14> {
         GPADC_MICBIAS_EN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_micpga_en(&mut self) -> GPADC_MICPGA_EN_W<15> {
         GPADC_MICPGA_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_byp_micboost(&mut self) -> GPADC_BYP_MICBOOST_W<16> {
         GPADC_BYP_MICBOOST_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_dwa_en(&mut self) -> GPADC_DWA_EN_W<18> {
         GPADC_DWA_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_mic2_diff(&mut self) -> GPADC_MIC2_DIFF_W<19> {
         GPADC_MIC2_DIFF_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_mic1_diff(&mut self) -> GPADC_MIC1_DIFF_W<20> {
         GPADC_MIC1_DIFF_W::new(self)
     }
     #[doc = "Bits 21:22"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_mic_pga2_gain(&mut self) -> GPADC_MIC_PGA2_GAIN_W<21> {
         GPADC_MIC_PGA2_GAIN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_micboost_32db_en(&mut self) -> GPADC_MICBOOST_32DB_EN_W<23> {
         GPADC_MICBOOST_32DB_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_chip_sen_pu(&mut self) -> GPADC_CHIP_SEN_PU_W<27> {
         GPADC_CHIP_SEN_PU_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_sen_sel(&mut self) -> GPADC_SEN_SEL_W<28> {
         GPADC_SEN_SEL_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_sen_test_en(&mut self) -> GPADC_SEN_TEST_EN_W<30> {
         GPADC_SEN_TEST_EN_W::new(self)
     }
@@ -308,11 +325,10 @@ impl crate::Readable for GPADC_REG_CMD_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_cmd::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_CMD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_cmd to value 0"]
 impl crate::Resettable for GPADC_REG_CMD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

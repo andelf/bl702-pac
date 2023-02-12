@@ -168,71 +168,85 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_sr_pat_mask(&mut self) -> SF_IF_SR_PAT_MASK_W<0> {
         SF_IF_SR_PAT_MASK_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_sr_pat(&mut self) -> SF_IF_SR_PAT_W<8> {
         SF_IF_SR_PAT_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_sr_int(&mut self) -> SF_IF_SR_INT_W<16> {
         SF_IF_SR_INT_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_sr_int_en(&mut self) -> SF_IF_SR_INT_EN_W<17> {
         SF_IF_SR_INT_EN_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_sr_int_set(&mut self) -> SF_IF_SR_INT_SET_W<18> {
         SF_IF_SR_INT_SET_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_ack_lat(&mut self) -> SF_IF_0_ACK_LAT_W<20> {
         SF_IF_0_ACK_LAT_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_reg_hold(&mut self) -> SF_IF_REG_HOLD_W<24> {
         SF_IF_REG_HOLD_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_reg_wp(&mut self) -> SF_IF_REG_WP_W<25> {
         SF_IF_REG_WP_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ahb2sif_stopped(&mut self) -> SF_AHB2SIF_STOPPED_W<26> {
         SF_AHB2SIF_STOPPED_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ahb2sif_stop(&mut self) -> SF_AHB2SIF_STOP_W<27> {
         SF_AHB2SIF_STOP_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_fn_sel(&mut self) -> SF_IF_FN_SEL_W<28> {
         SF_IF_FN_SEL_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_en(&mut self) -> SF_IF_EN_W<29> {
         SF_IF_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ahb2sif_en(&mut self) -> SF_AHB2SIF_EN_W<30> {
         SF_AHB2SIF_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_ahb2sram_en(&mut self) -> SF_AHB2SRAM_EN_W<31> {
         SF_AHB2SRAM_EN_W::new(self)
     }
@@ -255,11 +269,10 @@ impl crate::Readable for SF_CTRL_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_ctrl_1::W](W) writer structure"]
 impl crate::Writable for SF_CTRL_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_ctrl_1 to value 0"]
 impl crate::Resettable for SF_CTRL_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

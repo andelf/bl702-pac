@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cgen_s2(&mut self) -> CGEN_S2_W<0> {
         CGEN_S2_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cgen_s3(&mut self) -> CGEN_S3_W<4> {
         CGEN_S3_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for CGEN_CFG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [cgen_cfg2::W](W) writer structure"]
 impl crate::Writable for CGEN_CFG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cgen_cfg2 to value 0"]
 impl crate::Resettable for CGEN_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

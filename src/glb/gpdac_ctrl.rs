@@ -95,31 +95,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdaca_rstn_ana(&mut self) -> GPDACA_RSTN_ANA_W<0> {
         GPDACA_RSTN_ANA_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdacb_rstn_ana(&mut self) -> GPDACB_RSTN_ANA_W<1> {
         GPDACB_RSTN_ANA_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_test_en(&mut self) -> GPDAC_TEST_EN_W<7> {
         GPDAC_TEST_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_ref_sel(&mut self) -> GPDAC_REF_SEL_W<8> {
         GPDAC_REF_SEL_W::new(self)
     }
     #[doc = "Bits 9:11"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_test_sel(&mut self) -> GPDAC_TEST_SEL_W<9> {
         GPDAC_TEST_SEL_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_reserved(&mut self) -> GPDAC_RESERVED_W<24> {
         GPDAC_RESERVED_W::new(self)
     }
@@ -142,11 +148,10 @@ impl crate::Readable for GPDAC_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpdac_ctrl::W](W) writer structure"]
 impl crate::Writable for GPDAC_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpdac_ctrl to value 0"]
 impl crate::Resettable for GPDAC_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

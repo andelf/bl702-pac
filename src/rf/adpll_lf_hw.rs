@@ -109,36 +109,43 @@ impl R {
 impl W {
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_f_p3_hw(&mut self) -> ADPLL_LF_F_P3_HW_W<10> {
         ADPLL_LF_F_P3_HW_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_beta_fast_hw(&mut self) -> ADPLL_LF_BETA_FAST_HW_W<13> {
         ADPLL_LF_BETA_FAST_HW_W::new(self)
     }
     #[doc = "Bits 14:16"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_beta_exp_hw(&mut self) -> ADPLL_LF_BETA_EXP_HW_W<14> {
         ADPLL_LF_BETA_EXP_HW_W::new(self)
     }
     #[doc = "Bits 17:18"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_beta_base_hw(&mut self) -> ADPLL_LF_BETA_BASE_HW_W<17> {
         ADPLL_LF_BETA_BASE_HW_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_alpha_fast_hw(&mut self) -> ADPLL_LF_ALPHA_FAST_HW_W<20> {
         ADPLL_LF_ALPHA_FAST_HW_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_alpha_exp_hw(&mut self) -> ADPLL_LF_ALPHA_EXP_HW_W<24> {
         ADPLL_LF_ALPHA_EXP_HW_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lf_alpha_base_hw(&mut self) -> ADPLL_LF_ALPHA_BASE_HW_W<27> {
         ADPLL_LF_ALPHA_BASE_HW_W::new(self)
     }
@@ -161,11 +168,10 @@ impl crate::Readable for ADPLL_LF_HW_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_lf_hw::W](W) writer structure"]
 impl crate::Writable for ADPLL_LF_HW_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_lf_hw to value 0"]
 impl crate::Resettable for ADPLL_LF_HW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

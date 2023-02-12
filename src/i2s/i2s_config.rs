@@ -186,81 +186,97 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_m_en(&mut self) -> CR_I2S_M_EN_W<0> {
         CR_I2S_M_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_s_en(&mut self) -> CR_I2S_S_EN_W<1> {
         CR_I2S_S_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_txd_en(&mut self) -> CR_I2S_TXD_EN_W<2> {
         CR_I2S_TXD_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_rxd_en(&mut self) -> CR_I2S_RXD_EN_W<3> {
         CR_I2S_RXD_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_mono_mode(&mut self) -> CR_MONO_MODE_W<4> {
         CR_MONO_MODE_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_mute_mode(&mut self) -> CR_MUTE_MODE_W<5> {
         CR_MUTE_MODE_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fs_1t_mode(&mut self) -> CR_FS_1T_MODE_W<6> {
         CR_FS_1T_MODE_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fs_4ch_mode(&mut self) -> CR_FS_4CH_MODE_W<7> {
         CR_FS_4CH_MODE_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fs_3ch_mode(&mut self) -> CR_FS_3CH_MODE_W<8> {
         CR_FS_3CH_MODE_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_frame_size(&mut self) -> CR_FRAME_SIZE_W<12> {
         CR_FRAME_SIZE_W::new(self)
     }
     #[doc = "Bits 14:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_data_size(&mut self) -> CR_DATA_SIZE_W<14> {
         CR_DATA_SIZE_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_mode(&mut self) -> CR_I2S_MODE_W<16> {
         CR_I2S_MODE_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_endian(&mut self) -> CR_ENDIAN_W<18> {
         CR_ENDIAN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_mono_rx_ch(&mut self) -> CR_MONO_RX_CH_W<19> {
         CR_MONO_RX_CH_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ofs_cnt(&mut self) -> CR_OFS_CNT_W<20> {
         CR_OFS_CNT_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ofs_en(&mut self) -> CR_OFS_EN_W<25> {
         CR_OFS_EN_W::new(self)
     }
@@ -283,11 +299,10 @@ impl crate::Readable for I2S_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2s_config::W](W) writer structure"]
 impl crate::Writable for I2S_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2s_config to value 0"]
 impl crate::Resettable for I2S_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

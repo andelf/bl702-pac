@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn tsen_refcode_corner(&mut self) -> TSEN_REFCODE_CORNER_W<0> {
         TSEN_REFCODE_CORNER_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn tsen_refcode_rfcal(&mut self) -> TSEN_REFCODE_RFCAL_W<16> {
         TSEN_REFCODE_RFCAL_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_rdy(&mut self) -> XTAL_RDY_W<28> {
         XTAL_RDY_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_inn_cfg_en_aon(&mut self) -> XTAL_INN_CFG_EN_AON_W<29> {
         XTAL_INN_CFG_EN_AON_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_rdy_int_sel_aon(&mut self) -> XTAL_RDY_INT_SEL_AON_W<30> {
         XTAL_RDY_INT_SEL_AON_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for TSEN_SPEC {
 #[doc = "`write(|w| ..)` method takes [tsen::W](W) writer structure"]
 impl crate::Writable for TSEN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets tsen to value 0"]
 impl crate::Resettable for TSEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_clkdiv_q(&mut self) -> SINGEN_CLKDIV_Q_W<0> {
         SINGEN_CLKDIV_Q_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_mode_q(&mut self) -> SINGEN_MODE_Q_W<12> {
         SINGEN_MODE_Q_W::new(self)
     }
     #[doc = "Bits 16:25"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_clkdiv_i(&mut self) -> SINGEN_CLKDIV_I_W<16> {
         SINGEN_CLKDIV_I_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_mode_i(&mut self) -> SINGEN_MODE_I_W<28> {
         SINGEN_MODE_I_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for RF_SINGEN_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_singen_1::W](W) writer structure"]
 impl crate::Writable for RF_SINGEN_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_singen_1 to value 0"]
 impl crate::Resettable for RF_SINGEN_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -141,56 +141,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_en(&mut self) -> CR_URX_EN_W<0> {
         CR_URX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_abr_en(&mut self) -> CR_URX_ABR_EN_W<1> {
         CR_URX_ABR_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_lin_en(&mut self) -> CR_URX_LIN_EN_W<3> {
         CR_URX_LIN_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_prt_en(&mut self) -> CR_URX_PRT_EN_W<4> {
         CR_URX_PRT_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_prt_sel(&mut self) -> CR_URX_PRT_SEL_W<5> {
         CR_URX_PRT_SEL_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_ir_en(&mut self) -> CR_URX_IR_EN_W<6> {
         CR_URX_IR_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_ir_inv(&mut self) -> CR_URX_IR_INV_W<7> {
         CR_URX_IR_INV_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_bit_cnt_d(&mut self) -> CR_URX_BIT_CNT_D_W<8> {
         CR_URX_BIT_CNT_D_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_deg_en(&mut self) -> CR_URX_DEG_EN_W<11> {
         CR_URX_DEG_EN_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_deg_cnt(&mut self) -> CR_URX_DEG_CNT_W<12> {
         CR_URX_DEG_CNT_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_len(&mut self) -> CR_URX_LEN_W<16> {
         CR_URX_LEN_W::new(self)
     }
@@ -213,11 +224,10 @@ impl crate::Readable for URX_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [urx_config::W](W) writer structure"]
 impl crate::Writable for URX_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets urx_config to value 0"]
 impl crate::Resettable for URX_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn e(&mut self) -> E_W<0> {
         E_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn m(&mut self) -> M_W<1> {
         M_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for DMA_TOP_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [dma_top_config::W](W) writer structure"]
 impl crate::Writable for DMA_TOP_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DMA_Top_Config to value 0"]
 impl crate::Resettable for DMA_TOP_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

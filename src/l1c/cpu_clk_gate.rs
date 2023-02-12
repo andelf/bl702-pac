@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn force_e21_clock_on_0(&mut self) -> FORCE_E21_CLOCK_ON_0_W<0> {
         FORCE_E21_CLOCK_ON_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn force_e21_clock_on_1(&mut self) -> FORCE_E21_CLOCK_ON_1_W<1> {
         FORCE_E21_CLOCK_ON_1_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn force_e21_clock_on_2(&mut self) -> FORCE_E21_CLOCK_ON_2_W<2> {
         FORCE_E21_CLOCK_ON_2_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for CPU_CLK_GATE_SPEC {
 #[doc = "`write(|w| ..)` method takes [cpu_clk_gate::W](W) writer structure"]
 impl crate::Writable for CPU_CLK_GATE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cpu_clk_gate to value 0"]
 impl crate::Resettable for CPU_CLK_GATE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

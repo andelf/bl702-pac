@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_div(&mut self) -> KCAL_DIV_W<0> {
         KCAL_DIV_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_cnt_start(&mut self) -> KCAL_CNT_START_W<16> {
         KCAL_CNT_START_W::new(self)
     }
     #[doc = "Bits 20:29"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_ratio(&mut self) -> KCAL_RATIO_W<20> {
         KCAL_RATIO_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for KCAL1_SPEC {
 #[doc = "`write(|w| ..)` method takes [kcal1::W](W) writer structure"]
 impl crate::Writable for KCAL1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets kcal1 to value 0"]
 impl crate::Resettable for KCAL1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

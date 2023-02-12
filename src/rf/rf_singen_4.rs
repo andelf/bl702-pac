@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_fix_q(&mut self) -> SINGEN_FIX_Q_W<0> {
         SINGEN_FIX_Q_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_fix_en_q(&mut self) -> SINGEN_FIX_EN_Q_W<12> {
         SINGEN_FIX_EN_Q_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_fix_i(&mut self) -> SINGEN_FIX_I_W<16> {
         SINGEN_FIX_I_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_fix_en_i(&mut self) -> SINGEN_FIX_EN_I_W<28> {
         SINGEN_FIX_EN_I_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for RF_SINGEN_4_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_singen_4::W](W) writer structure"]
 impl crate::Writable for RF_SINGEN_4_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_singen_4 to value 0"]
 impl crate::Resettable for RF_SINGEN_4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

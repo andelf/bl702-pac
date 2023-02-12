@@ -154,61 +154,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_mbg_aon(&mut self) -> PU_MBG_AON_W<0> {
         PU_MBG_AON_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_ldo15rf_aon(&mut self) -> PU_LDO15RF_AON_W<1> {
         PU_LDO15RF_AON_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_sfreg_aon(&mut self) -> PU_SFREG_AON_W<2> {
         PU_SFREG_AON_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_xtal_buf_aon(&mut self) -> PU_XTAL_BUF_AON_W<4> {
         PU_XTAL_BUF_AON_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_xtal_aon(&mut self) -> PU_XTAL_AON_W<5> {
         PU_XTAL_AON_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_sstart_sel_aon(&mut self) -> LDO15RF_SSTART_SEL_AON_W<8> {
         LDO15RF_SSTART_SEL_AON_W::new(self)
     }
     #[doc = "Bits 9:10"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_sstart_delay_aon(&mut self) -> LDO15RF_SSTART_DELAY_AON_W<9> {
         LDO15RF_SSTART_DELAY_AON_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_pulldown_aon(&mut self) -> LDO15RF_PULLDOWN_AON_W<12> {
         LDO15RF_PULLDOWN_AON_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_pulldown_sel_aon(&mut self) -> LDO15RF_PULLDOWN_SEL_AON_W<13> {
         LDO15RF_PULLDOWN_SEL_AON_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_vout_sel_aon(&mut self) -> LDO15RF_VOUT_SEL_AON_W<16> {
         LDO15RF_VOUT_SEL_AON_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_cc_aon(&mut self) -> LDO15RF_CC_AON_W<24> {
         LDO15RF_CC_AON_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo15rf_bypass_aon(&mut self) -> LDO15RF_BYPASS_AON_W<28> {
         LDO15RF_BYPASS_AON_W::new(self)
     }
@@ -231,11 +243,10 @@ impl crate::Readable for RF_TOP_AON_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_top_aon::W](W) writer structure"]
 impl crate::Writable for RF_TOP_AON_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_top_aon to value 0"]
 impl crate::Resettable for RF_TOP_AON_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

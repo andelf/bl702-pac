@@ -1,7 +1,7 @@
 [package]
 name = "bl702-pac"
 description = "Embedded Rust's Peripheral Access Crate for BL702/BL704/BL706 RISC-V BLE + Zigbee microcontroller"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2018"
 authors = ["Andelf <andelf@gmail.com>"]
 repository = "https://github.com/andelf/bl702-pac"
@@ -13,4 +13,5 @@ categories = ["embedded", "hardware-support", "no-std"]
 
 [dependencies]
 vcell = "0.1"
-riscv = "0.8.0"
+riscv = "0.10.1"
+critical-section = { version = "1.1.1", optional = true }

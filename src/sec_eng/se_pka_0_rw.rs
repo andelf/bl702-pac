@@ -54,11 +54,10 @@ impl crate::Readable for SE_PKA_0_RW_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_pka_0_rw::W](W) writer structure"]
 impl crate::Writable for SE_PKA_0_RW_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_pka_0_rw to value 0"]
 impl crate::Resettable for SE_PKA_0_RW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

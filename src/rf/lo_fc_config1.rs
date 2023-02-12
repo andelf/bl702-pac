@@ -43,12 +43,13 @@ impl R {
     #[doc = "Bits 0:24"]
     #[inline(always)]
     pub fn lo_fcw(&self) -> LO_FCW_R {
-        LO_FCW_R::new((self.bits & 0x01ff_ffff) as u32)
+        LO_FCW_R::new(self.bits & 0x01ff_ffff)
     }
 }
 impl W {
     #[doc = "Bits 0:24"]
     #[inline(always)]
+    #[must_use]
     pub fn lo_fcw(&mut self) -> LO_FCW_W<0> {
         LO_FCW_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for LO_FC_CONFIG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [lo_fc_config1::W](W) writer structure"]
 impl crate::Writable for LO_FC_CONFIG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets lo_fc_config1 to value 0"]
 impl crate::Resettable for LO_FC_CONFIG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

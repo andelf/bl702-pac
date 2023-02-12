@@ -76,21 +76,25 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn irrx_end_int(&mut self) -> IRRX_END_INT_W<0> {
         IRRX_END_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_end_mask(&mut self) -> CR_IRRX_END_MASK_W<8> {
         CR_IRRX_END_MASK_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_end_clr(&mut self) -> CR_IRRX_END_CLR_W<16> {
         CR_IRRX_END_CLR_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irrx_end_en(&mut self) -> CR_IRRX_END_EN_W<24> {
         CR_IRRX_END_EN_W::new(self)
     }
@@ -113,11 +117,10 @@ impl crate::Readable for IRRX_INT_STS_SPEC {
 #[doc = "`write(|w| ..)` method takes [irrx_int_sts::W](W) writer structure"]
 impl crate::Writable for IRRX_INT_STS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets irrx_int_sts to value 0"]
 impl crate::Resettable for IRRX_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

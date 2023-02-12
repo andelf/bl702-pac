@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_dbg_out(&mut self) -> BMX_DBG_OUT_W<0> {
         BMX_DBG_OUT_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for BMX_DBG_OUT_SPEC {
 #[doc = "`write(|w| ..)` method takes [bmx_dbg_out::W](W) writer structure"]
 impl crate::Writable for BMX_DBG_OUT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets bmx_dbg_out to value 0"]
 impl crate::Resettable for BMX_DBG_OUT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

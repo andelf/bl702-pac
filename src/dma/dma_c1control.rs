@@ -148,61 +148,73 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn transfer_size(&mut self) -> TRANSFER_SIZE_W<0> {
         TRANSFER_SIZE_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn sbsize(&mut self) -> SBSIZE_W<12> {
         SBSIZE_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn dst_min_mode(&mut self) -> DST_MIN_MODE_W<14> {
         DST_MIN_MODE_W::new(self)
     }
     #[doc = "Bits 15:16"]
     #[inline(always)]
+    #[must_use]
     pub fn dbsize(&mut self) -> DBSIZE_W<15> {
         DBSIZE_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn dst_add_mode(&mut self) -> DST_ADD_MODE_W<17> {
         DST_ADD_MODE_W::new(self)
     }
     #[doc = "Bits 18:20"]
     #[inline(always)]
+    #[must_use]
     pub fn swidth(&mut self) -> SWIDTH_W<18> {
         SWIDTH_W::new(self)
     }
     #[doc = "Bits 21:23"]
     #[inline(always)]
+    #[must_use]
     pub fn dwidth(&mut self) -> DWIDTH_W<21> {
         DWIDTH_W::new(self)
     }
     #[doc = "Bits 23:24"]
     #[inline(always)]
+    #[must_use]
     pub fn fix_cnt(&mut self) -> FIX_CNT_W<23> {
         FIX_CNT_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn si(&mut self) -> SI_W<26> {
         SI_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn di(&mut self) -> DI_W<27> {
         DI_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn prot(&mut self) -> PROT_W<28> {
         PROT_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn i(&mut self) -> I_W<31> {
         I_W::new(self)
     }
@@ -225,11 +237,10 @@ impl crate::Readable for DMA_C1CONTROL_SPEC {
 #[doc = "`write(|w| ..)` method takes [dma_c1control::W](W) writer structure"]
 impl crate::Writable for DMA_C1CONTROL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DMA_C1Control to value 0"]
 impl crate::Resettable for DMA_C1CONTROL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

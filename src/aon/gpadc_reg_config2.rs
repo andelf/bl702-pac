@@ -209,86 +209,103 @@ impl R {
 impl W {
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_diff_mode(&mut self) -> GPADC_DIFF_MODE_W<2> {
         GPADC_DIFF_MODE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_vref_sel(&mut self) -> GPADC_VREF_SEL_W<3> {
         GPADC_VREF_SEL_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_vbat_en(&mut self) -> GPADC_VBAT_EN_W<4> {
         GPADC_VBAT_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_tsext_sel(&mut self) -> GPADC_TSEXT_SEL_W<5> {
         GPADC_TSEXT_SEL_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_ts_en(&mut self) -> GPADC_TS_EN_W<6> {
         GPADC_TS_EN_W::new(self)
     }
     #[doc = "Bits 7:8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga_vcm(&mut self) -> GPADC_PGA_VCM_W<7> {
         GPADC_PGA_VCM_W::new(self)
     }
     #[doc = "Bits 9:12"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga_os_cal(&mut self) -> GPADC_PGA_OS_CAL_W<9> {
         GPADC_PGA_OS_CAL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga_en(&mut self) -> GPADC_PGA_EN_W<13> {
         GPADC_PGA_EN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga_vcmi_en(&mut self) -> GPADC_PGA_VCMI_EN_W<14> {
         GPADC_PGA_VCMI_EN_W::new(self)
     }
     #[doc = "Bits 15:16"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_chop_mode(&mut self) -> GPADC_CHOP_MODE_W<15> {
         GPADC_CHOP_MODE_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_bias_sel(&mut self) -> GPADC_BIAS_SEL_W<17> {
         GPADC_BIAS_SEL_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_test_en(&mut self) -> GPADC_TEST_EN_W<18> {
         GPADC_TEST_EN_W::new(self)
     }
     #[doc = "Bits 19:21"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_test_sel(&mut self) -> GPADC_TEST_SEL_W<19> {
         GPADC_TEST_SEL_W::new(self)
     }
     #[doc = "Bits 22:24"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga2_gain(&mut self) -> GPADC_PGA2_GAIN_W<22> {
         GPADC_PGA2_GAIN_W::new(self)
     }
     #[doc = "Bits 25:27"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pga1_gain(&mut self) -> GPADC_PGA1_GAIN_W<25> {
         GPADC_PGA1_GAIN_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_dly_sel(&mut self) -> GPADC_DLY_SEL_W<28> {
         GPADC_DLY_SEL_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_tsvbe_low(&mut self) -> GPADC_TSVBE_LOW_W<31> {
         GPADC_TSVBE_LOW_W::new(self)
     }
@@ -311,11 +328,10 @@ impl crate::Readable for GPADC_REG_CONFIG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_config2::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_CONFIG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_config2 to value 0"]
 impl crate::Resettable for GPADC_REG_CONFIG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

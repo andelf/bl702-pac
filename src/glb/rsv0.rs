@@ -48,6 +48,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_31_0(&mut self) -> RSVD_31_0_W<0> {
         RSVD_31_0_W::new(self)
     }
@@ -70,11 +71,10 @@ impl crate::Readable for RSV0_SPEC {
 #[doc = "`write(|w| ..)` method takes [rsv0::W](W) writer structure"]
 impl crate::Writable for RSV0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rsv0 to value 0"]
 impl crate::Resettable for RSV0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

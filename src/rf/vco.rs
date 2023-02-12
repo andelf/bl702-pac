@@ -138,56 +138,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_short_vbias_filter(&mut self) -> VCO_SHORT_VBIAS_FILTER_W<0> {
         VCO_SHORT_VBIAS_FILTER_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_short_idac_filter(&mut self) -> VCO_SHORT_IDAC_FILTER_W<1> {
         VCO_SHORT_IDAC_FILTER_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_modcap_sel(&mut self) -> VCO_MODCAP_SEL_W<2> {
         VCO_MODCAP_SEL_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_acal_vref(&mut self) -> VCO_ACAL_VREF_W<4> {
         VCO_ACAL_VREF_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_vbias(&mut self) -> VCO_VBIAS_W<8> {
         VCO_VBIAS_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_boost(&mut self) -> VCO_IDAC_BOOST_W<12> {
         VCO_IDAC_BOOST_W::new(self)
     }
     #[doc = "Bits 13:14"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_ldo_vsel(&mut self) -> VCO_LDO_VSEL_W<13> {
         VCO_LDO_VSEL_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_ldo_bypass(&mut self) -> VCO_LDO_BYPASS_W<15> {
         VCO_LDO_BYPASS_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac(&mut self) -> VCO_IDAC_W<16> {
         VCO_IDAC_W::new(self)
     }
     #[doc = "Bits 24:29"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_hw(&mut self) -> VCO_IDAC_HW_W<24> {
         VCO_IDAC_HW_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_acal_ud(&mut self) -> VCO_ACAL_UD_W<31> {
         VCO_ACAL_UD_W::new(self)
     }
@@ -210,11 +221,10 @@ impl crate::Readable for VCO_SPEC {
 #[doc = "`write(|w| ..)` method takes [vco::W](W) writer structure"]
 impl crate::Writable for VCO_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets vco to value 0"]
 impl crate::Resettable for VCO_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

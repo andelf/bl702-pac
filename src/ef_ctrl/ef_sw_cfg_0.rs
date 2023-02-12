@@ -222,96 +222,115 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sf_aes_mode(&mut self) -> EF_SW_SF_AES_MODE_W<0> {
         EF_SW_SF_AES_MODE_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sboot_sign_mode(&mut self) -> EF_SW_SBOOT_SIGN_MODE_W<2> {
         EF_SW_SBOOT_SIGN_MODE_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sboot_en(&mut self) -> EF_SW_SBOOT_EN_W<4> {
         EF_SW_SBOOT_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_cpu1_enc_en(&mut self) -> EF_SW_CPU1_ENC_EN_W<6> {
         EF_SW_CPU1_ENC_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_cpu0_enc_en(&mut self) -> EF_SW_CPU0_ENC_EN_W<7> {
         EF_SW_CPU0_ENC_EN_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sf_key_0_sel(&mut self) -> EF_SW_SF_KEY_0_SEL_W<12> {
         EF_SW_SF_KEY_0_SEL_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sdu_dis(&mut self) -> EF_SW_SDU_DIS_W<14> {
         EF_SW_SDU_DIS_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_ble_dis(&mut self) -> EF_SW_BLE_DIS_W<15> {
         EF_SW_BLE_DIS_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_wifi_dis(&mut self) -> EF_SW_WIFI_DIS_W<16> {
         EF_SW_WIFI_DIS_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_0_key_enc_en(&mut self) -> EF_SW_0_KEY_ENC_EN_W<17> {
         EF_SW_0_KEY_ENC_EN_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_cam_dis(&mut self) -> EF_SW_CAM_DIS_W<18> {
         EF_SW_CAM_DIS_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_sf_dis(&mut self) -> EF_SW_SF_DIS_W<19> {
         EF_SW_SF_DIS_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_cpu1_dis(&mut self) -> EF_SW_CPU1_DIS_W<20> {
         EF_SW_CPU1_DIS_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_cpu_rst_dbg_dis(&mut self) -> EF_SW_CPU_RST_DBG_DIS_W<21> {
         EF_SW_CPU_RST_DBG_DIS_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_se_dbg_dis(&mut self) -> EF_SW_SE_DBG_DIS_W<22> {
         EF_SW_SE_DBG_DIS_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_efuse_dbg_dis(&mut self) -> EF_SW_EFUSE_DBG_DIS_W<23> {
         EF_SW_EFUSE_DBG_DIS_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_dbg_jtag_1_dis(&mut self) -> EF_SW_DBG_JTAG_1_DIS_W<24> {
         EF_SW_DBG_JTAG_1_DIS_W::new(self)
     }
     #[doc = "Bits 26:27"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_dbg_jtag_0_dis(&mut self) -> EF_SW_DBG_JTAG_0_DIS_W<26> {
         EF_SW_DBG_JTAG_0_DIS_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_sw_dbg_mode(&mut self) -> EF_SW_DBG_MODE_W<28> {
         EF_SW_DBG_MODE_W::new(self)
     }
@@ -334,11 +353,10 @@ impl crate::Readable for EF_SW_CFG_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_sw_cfg_0::W](W) writer structure"]
 impl crate::Writable for EF_SW_CFG_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_sw_cfg_0 to value 0"]
 impl crate::Resettable for EF_SW_CFG_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -174,71 +174,85 @@ impl R {
 impl W {
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_misc_pwr_off(&mut self) -> CR_PDS_FORCE_MISC_PWR_OFF_W<1> {
         CR_PDS_FORCE_MISC_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ble_pwr_off(&mut self) -> CR_PDS_FORCE_BLE_PWR_OFF_W<2> {
         CR_PDS_FORCE_BLE_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ble_iso_en(&mut self) -> CR_PDS_FORCE_BLE_ISO_EN_W<5> {
         CR_PDS_FORCE_BLE_ISO_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_misc_pds_rst(&mut self) -> CR_PDS_FORCE_MISC_PDS_RST_W<7> {
         CR_PDS_FORCE_MISC_PDS_RST_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ble_pds_rst(&mut self) -> CR_PDS_FORCE_BLE_PDS_RST_W<8> {
         CR_PDS_FORCE_BLE_PDS_RST_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_misc_mem_stby(&mut self) -> CR_PDS_FORCE_MISC_MEM_STBY_W<10> {
         CR_PDS_FORCE_MISC_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ble_mem_stby(&mut self) -> CR_PDS_FORCE_BLE_MEM_STBY_W<11> {
         CR_PDS_FORCE_BLE_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_misc_gate_clk(&mut self) -> CR_PDS_FORCE_MISC_GATE_CLK_W<13> {
         CR_PDS_FORCE_MISC_GATE_CLK_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ble_gate_clk(&mut self) -> CR_PDS_FORCE_BLE_GATE_CLK_W<14> {
         CR_PDS_FORCE_BLE_GATE_CLK_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_np_iso_en(&mut self) -> CR_PDS_NP_ISO_EN_W<24> {
         CR_PDS_NP_ISO_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_bz_iso_en(&mut self) -> CR_PDS_BZ_ISO_EN_W<27> {
         CR_PDS_BZ_ISO_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ble_iso_en(&mut self) -> CR_PDS_BLE_ISO_EN_W<28> {
         CR_PDS_BLE_ISO_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_usb_iso_en(&mut self) -> CR_PDS_USB_ISO_EN_W<29> {
         CR_PDS_USB_ISO_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_misc_iso_en(&mut self) -> CR_PDS_MISC_ISO_EN_W<30> {
         CR_PDS_MISC_ISO_EN_W::new(self)
     }
@@ -261,11 +275,10 @@ impl crate::Readable for PDS_CTL3_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_ctl3::W](W) writer structure"]
 impl crate::Writable for PDS_CTL3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PDS_CTL3 to value 0"]
 impl crate::Resettable for PDS_CTL3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

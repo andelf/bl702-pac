@@ -78,21 +78,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_bt_channel(&mut self) -> COEX_BT_CHANNEL_W<0> {
         COEX_BT_CHANNEL_W::new(self)
     }
     #[doc = "Bits 7:10"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_bt_pti(&mut self) -> COEX_BT_PTI_W<7> {
         COEX_BT_PTI_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_bt_bw(&mut self) -> COEX_BT_BW_W<11> {
         COEX_BT_BW_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn en_gpio_bt_coex(&mut self) -> EN_GPIO_BT_COEX_W<12> {
         EN_GPIO_BT_COEX_W::new(self)
     }
@@ -115,11 +119,10 @@ impl crate::Readable for WIFI_BT_COEX_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [wifi_bt_coex_ctrl::W](W) writer structure"]
 impl crate::Writable for WIFI_BT_COEX_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets WIFI_BT_COEX_CTRL to value 0"]
 impl crate::Resettable for WIFI_BT_COEX_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

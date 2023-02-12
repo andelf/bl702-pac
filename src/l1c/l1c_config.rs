@@ -215,96 +215,115 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_cacheable(&mut self) -> L1C_CACHEABLE_W<0> {
         L1C_CACHEABLE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_cnt_en(&mut self) -> L1C_CNT_EN_W<1> {
         L1C_CNT_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_invalid_en(&mut self) -> L1C_INVALID_EN_W<2> {
         L1C_INVALID_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_invalid_done(&mut self) -> L1C_INVALID_DONE_W<3> {
         L1C_INVALID_DONE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_wt_en(&mut self) -> L1C_WT_EN_W<4> {
         L1C_WT_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_wb_en(&mut self) -> L1C_WB_EN_W<5> {
         L1C_WB_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_wa_en(&mut self) -> L1C_WA_EN_W<6> {
         L1C_WA_EN_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_way_dis(&mut self) -> L1C_WAY_DIS_W<8> {
         L1C_WAY_DIS_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn irom_2t_access(&mut self) -> IROM_2T_ACCESS_W<12> {
         IROM_2T_ACCESS_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bypass(&mut self) -> L1C_BYPASS_W<14> {
         L1C_BYPASS_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_err_en(&mut self) -> L1C_BMX_ERR_EN_W<15> {
         L1C_BMX_ERR_EN_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_arb_mode(&mut self) -> L1C_BMX_ARB_MODE_W<16> {
         L1C_BMX_ARB_MODE_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_timeout_en(&mut self) -> L1C_BMX_TIMEOUT_EN_W<20> {
         L1C_BMX_TIMEOUT_EN_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_busy_option_dis(&mut self) -> L1C_BMX_BUSY_OPTION_DIS_W<24> {
         L1C_BMX_BUSY_OPTION_DIS_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn early_resp_dis(&mut self) -> EARLY_RESP_DIS_W<25> {
         EARLY_RESP_DIS_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn wrap_dis(&mut self) -> WRAP_DIS_W<26> {
         WRAP_DIS_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_flush_en(&mut self) -> L1C_FLUSH_EN_W<28> {
         L1C_FLUSH_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_flush_done(&mut self) -> L1C_FLUSH_DONE_W<29> {
         L1C_FLUSH_DONE_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reserved_31_30(&mut self) -> RESERVED_31_30_W<30> {
         RESERVED_31_30_W::new(self)
     }
@@ -327,11 +346,10 @@ impl crate::Readable for L1C_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [l1c_config::W](W) writer structure"]
 impl crate::Writable for L1C_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets l1c_config to value 0"]
 impl crate::Resettable for L1C_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

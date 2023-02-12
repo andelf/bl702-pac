@@ -119,41 +119,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_32k_div(&mut self) -> DIG_32K_DIV_W<0> {
         DIG_32K_DIV_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_32k_en(&mut self) -> DIG_32K_EN_W<12> {
         DIG_32K_EN_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_32k_comp(&mut self) -> DIG_32K_COMP_W<13> {
         DIG_32K_COMP_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_512k_div(&mut self) -> DIG_512K_DIV_W<16> {
         DIG_512K_DIV_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_512k_en(&mut self) -> DIG_512K_EN_W<24> {
         DIG_512K_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_512k_comp(&mut self) -> DIG_512K_COMP_W<25> {
         DIG_512K_COMP_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn dig_clk_src_sel(&mut self) -> DIG_CLK_SRC_SEL_W<28> {
         DIG_CLK_SRC_SEL_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_en_platform_wakeup(&mut self) -> REG_EN_PLATFORM_WAKEUP_W<31> {
         REG_EN_PLATFORM_WAKEUP_W::new(self)
     }
@@ -176,11 +184,10 @@ impl crate::Readable for DIG32K_WAKEUP_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [dig32k_wakeup_ctrl::W](W) writer structure"]
 impl crate::Writable for DIG32K_WAKEUP_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DIG32K_WAKEUP_CTRL to value 0"]
 impl crate::Resettable for DIG32K_WAKEUP_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

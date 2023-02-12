@@ -135,51 +135,61 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_vth_bias_mode(&mut self) -> ADPLL_ADC_VTH_BIAS_MODE_W<0> {
         ADPLL_ADC_VTH_BIAS_MODE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_vth_en(&mut self) -> ADPLL_ADC_VTH_EN_W<1> {
         ADPLL_ADC_VTH_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_data_sign_sel(&mut self) -> ADPLL_ADC_DATA_SIGN_SEL_W<2> {
         ADPLL_ADC_DATA_SIGN_SEL_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_vref_fine(&mut self) -> ADPLL_ADC_VREF_FINE_W<4> {
         ADPLL_ADC_VREF_FINE_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_vref_coarse(&mut self) -> ADPLL_ADC_VREF_COARSE_W<8> {
         ADPLL_ADC_VREF_COARSE_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_oscal_en(&mut self) -> ADPLL_ADC_OSCAL_EN_W<12> {
         ADPLL_ADC_OSCAL_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_clk_sync_inv(&mut self) -> ADPLL_ADC_CLK_SYNC_INV_W<16> {
         ADPLL_ADC_CLK_SYNC_INV_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_clk_div_sel(&mut self) -> ADPLL_ADC_CLK_DIV_SEL_W<24> {
         ADPLL_ADC_CLK_DIV_SEL_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_clk_inv(&mut self) -> ADPLL_ADC_CLK_INV_W<28> {
         ADPLL_ADC_CLK_INV_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_adc_clk_en(&mut self) -> ADPLL_ADC_CLK_EN_W<29> {
         ADPLL_ADC_CLK_EN_W::new(self)
     }
@@ -202,11 +212,10 @@ impl crate::Readable for ADPLL_ADC_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_adc::W](W) writer structure"]
 impl crate::Writable for ADPLL_ADC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_adc to value 0"]
 impl crate::Resettable for ADPLL_ADC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_addr_end(&mut self) -> RF_SRAM_ADDR_END_W<0> {
         RF_SRAM_ADDR_END_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_addr_start(&mut self) -> RF_SRAM_ADDR_START_W<16> {
         RF_SRAM_ADDR_START_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for RF_SRAM_CTRL1_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_sram_ctrl1::W](W) writer structure"]
 impl crate::Writable for RF_SRAM_CTRL1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_sram_ctrl1 to value 0"]
 impl crate::Resettable for RF_SRAM_CTRL1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

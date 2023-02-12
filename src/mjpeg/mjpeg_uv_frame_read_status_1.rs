@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:12"]
     #[inline(always)]
+    #[must_use]
     pub fn uv_mem_hblk_r(&mut self) -> UV_MEM_HBLK_R_W<0> {
         UV_MEM_HBLK_R_W::new(self)
     }
     #[doc = "Bits 16:28"]
     #[inline(always)]
+    #[must_use]
     pub fn uv_frm_hblk_r(&mut self) -> UV_FRM_HBLK_R_W<16> {
         UV_FRM_HBLK_R_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for MJPEG_UV_FRAME_READ_STATUS_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_uv_frame_read_status_1::W](W) writer structure"]
 impl crate::Writable for MJPEG_UV_FRAME_READ_STATUS_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_UV_frame_read_status_1 to value 0"]
 impl crate::Resettable for MJPEG_UV_FRAME_READ_STATUS_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

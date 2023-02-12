@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_postdiv(&mut self) -> CLKPLL_POSTDIV_W<0> {
         CLKPLL_POSTDIV_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_refdiv_ratio(&mut self) -> CLKPLL_REFDIV_RATIO_W<8> {
         CLKPLL_REFDIV_RATIO_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_xtal_rc32m_sel(&mut self) -> CLKPLL_XTAL_RC32M_SEL_W<12> {
         CLKPLL_XTAL_RC32M_SEL_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_refclk_sel(&mut self) -> CLKPLL_REFCLK_SEL_W<16> {
         CLKPLL_REFCLK_SEL_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_vg11_sel(&mut self) -> CLKPLL_VG11_SEL_W<20> {
         CLKPLL_VG11_SEL_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_resv(&mut self) -> CLKPLL_RESV_W<24> {
         CLKPLL_RESV_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for CLKPLL_TOP_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_top_ctrl::W](W) writer structure"]
 impl crate::Writable for CLKPLL_TOP_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_top_ctrl to value 0"]
 impl crate::Resettable for CLKPLL_TOP_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

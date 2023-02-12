@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn ep0_tx_fifo_wdata(&mut self) -> EP0_TX_FIFO_WDATA_W<0> {
         EP0_TX_FIFO_WDATA_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for EP0_TX_FIFO_WDATA_SPEC {
 #[doc = "`write(|w| ..)` method takes [ep0_tx_fifo_wdata::W](W) writer structure"]
 impl crate::Writable for EP0_TX_FIFO_WDATA_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ep0_tx_fifo_wdata to value 0"]
 impl crate::Resettable for EP0_TX_FIFO_WDATA_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_txd_sw_mode(&mut self) -> CR_UTX_TXD_SW_MODE_W<0> {
         CR_UTX_TXD_SW_MODE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_txd_sw_val(&mut self) -> CR_UTX_TXD_SW_VAL_W<1> {
         CR_UTX_TXD_SW_VAL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_rts_sw_mode(&mut self) -> CR_URX_RTS_SW_MODE_W<2> {
         CR_URX_RTS_SW_MODE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_rts_sw_val(&mut self) -> CR_URX_RTS_SW_VAL_W<3> {
         CR_URX_RTS_SW_VAL_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for UART_SW_MODE_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_sw_mode::W](W) writer structure"]
 impl crate::Writable for UART_SW_MODE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_sw_mode to value 0"]
 impl crate::Resettable for UART_SW_MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

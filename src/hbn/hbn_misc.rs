@@ -95,31 +95,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn bor_sel(&mut self) -> BOR_SEL_W<0> {
         BOR_SEL_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn bor_vth(&mut self) -> BOR_VTH_W<1> {
         BOR_VTH_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_bor(&mut self) -> PU_BOR_W<2> {
         PU_BOR_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn r_bor_out(&mut self) -> R_BOR_OUT_W<3> {
         R_BOR_OUT_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_flash_pullup_aon(&mut self) -> HBN_FLASH_PULLUP_AON_W<16> {
         HBN_FLASH_PULLUP_AON_W::new(self)
     }
     #[doc = "Bits 24:29"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_flash_pulldown_aon(&mut self) -> HBN_FLASH_PULLDOWN_AON_W<24> {
         HBN_FLASH_PULLDOWN_AON_W::new(self)
     }
@@ -142,11 +148,10 @@ impl crate::Readable for HBN_MISC_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_misc::W](W) writer structure"]
 impl crate::Writable for HBN_MISC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_MISC to value 0"]
 impl crate::Resettable for HBN_MISC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

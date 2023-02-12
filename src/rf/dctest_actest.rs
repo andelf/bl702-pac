@@ -176,76 +176,91 @@ impl R {
 impl W {
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn dc_tp_out_en(&mut self) -> DC_TP_OUT_EN_W<4> {
         DC_TP_OUT_EN_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn atest_out_en(&mut self) -> ATEST_OUT_EN_W<6> {
         ATEST_OUT_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_dtc(&mut self) -> TEN_DTC_W<17> {
         TEN_DTC_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_rbb(&mut self) -> TEN_RBB_W<18> {
         TEN_RBB_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_rbb_actest(&mut self) -> TEN_RBB_ACTEST_W<19> {
         TEN_RBB_ACTEST_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_adpll_adc(&mut self) -> TEN_ADPLL_ADC_W<20> {
         TEN_ADPLL_ADC_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_vco(&mut self) -> TEN_VCO_W<21> {
         TEN_VCO_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_rxadc(&mut self) -> TEN_RXADC_W<22> {
         TEN_RXADC_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_rrf1(&mut self) -> TEN_RRF1_W<23> {
         TEN_RRF1_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_rrf0(&mut self) -> TEN_RRF0_W<24> {
         TEN_RRF0_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_pa_1(&mut self) -> TEN_PA_1_W<25> {
         TEN_PA_1_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_pa_0(&mut self) -> TEN_PA_0_W<26> {
         TEN_PA_0_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_lodist(&mut self) -> TEN_LODIST_W<27> {
         TEN_LODIST_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_dll(&mut self) -> TEN_DLL_W<28> {
         TEN_DLL_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_mbg(&mut self) -> TEN_MBG_W<31> {
         TEN_MBG_W::new(self)
     }
@@ -268,11 +283,10 @@ impl crate::Readable for DCTEST_ACTEST_SPEC {
 #[doc = "`write(|w| ..)` method takes [dctest_actest::W](W) writer structure"]
 impl crate::Writable for DCTEST_ACTEST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dctest_actest to value 0"]
 impl crate::Resettable for DCTEST_ACTEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

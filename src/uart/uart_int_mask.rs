@@ -129,46 +129,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_end_mask(&mut self) -> CR_UTX_END_MASK_W<0> {
         CR_UTX_END_MASK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_end_mask(&mut self) -> CR_URX_END_MASK_W<1> {
         CR_URX_END_MASK_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_fifo_mask(&mut self) -> CR_UTX_FIFO_MASK_W<2> {
         CR_UTX_FIFO_MASK_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_fifo_mask(&mut self) -> CR_URX_FIFO_MASK_W<3> {
         CR_URX_FIFO_MASK_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_rto_mask(&mut self) -> CR_URX_RTO_MASK_W<4> {
         CR_URX_RTO_MASK_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_pce_mask(&mut self) -> CR_URX_PCE_MASK_W<5> {
         CR_URX_PCE_MASK_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_fer_mask(&mut self) -> CR_UTX_FER_MASK_W<6> {
         CR_UTX_FER_MASK_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_fer_mask(&mut self) -> CR_URX_FER_MASK_W<7> {
         CR_URX_FER_MASK_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_lse_mask(&mut self) -> CR_URX_LSE_MASK_W<8> {
         CR_URX_LSE_MASK_W::new(self)
     }
@@ -191,11 +200,10 @@ impl crate::Readable for UART_INT_MASK_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_int_mask::W](W) writer structure"]
 impl crate::Writable for UART_INT_MASK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_int_mask to value 0"]
 impl crate::Resettable for UART_INT_MASK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

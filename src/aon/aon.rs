@@ -84,26 +84,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn aon_resv(&mut self) -> AON_RESV_W<0> {
         AON_RESV_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_aon_dc_tbuf(&mut self) -> PU_AON_DC_TBUF_W<12> {
         PU_AON_DC_TBUF_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11_rt_pulldown(&mut self) -> LDO11_RT_PULLDOWN_W<20> {
         LDO11_RT_PULLDOWN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11_rt_pulldown_sel(&mut self) -> LDO11_RT_PULLDOWN_SEL_W<21> {
         LDO11_RT_PULLDOWN_SEL_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_pu_ldo11_rt(&mut self) -> SW_PU_LDO11_RT_W<22> {
         SW_PU_LDO11_RT_W::new(self)
     }
@@ -126,11 +131,10 @@ impl crate::Readable for AON_SPEC {
 #[doc = "`write(|w| ..)` method takes [aon::W](W) writer structure"]
 impl crate::Writable for AON_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets aon to value 0"]
 impl crate::Resettable for AON_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

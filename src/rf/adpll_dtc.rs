@@ -68,16 +68,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_dtc_bypass(&mut self) -> ADPLL_DTC_BYPASS_W<0> {
         ADPLL_DTC_BYPASS_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_dtc_r_sel(&mut self) -> ADPLL_DTC_R_SEL_W<4> {
         ADPLL_DTC_R_SEL_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_dtc_inv_vth_sel(&mut self) -> ADPLL_DTC_INV_VTH_SEL_W<8> {
         ADPLL_DTC_INV_VTH_SEL_W::new(self)
     }
@@ -100,11 +103,10 @@ impl crate::Readable for ADPLL_DTC_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_dtc::W](W) writer structure"]
 impl crate::Writable for ADPLL_DTC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_dtc to value 0"]
 impl crate::Resettable for ADPLL_DTC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

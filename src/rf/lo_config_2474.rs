@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_ratio_2474(&mut self) -> KCAL_RATIO_2474_W<0> {
         KCAL_RATIO_2474_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_sdm_dither_en_2474(&mut self) -> ADPLL_SDM_DITHER_EN_2474_W<12> {
         ADPLL_SDM_DITHER_EN_2474_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for LO_CONFIG_2474_SPEC {
 #[doc = "`write(|w| ..)` method takes [lo_config_2474::W](W) writer structure"]
 impl crate::Writable for LO_CONFIG_2474_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets lo_config_2474 to value 0"]
 impl crate::Resettable for LO_CONFIG_2474_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_slope_gen_r_sel(&mut self) -> ADPLL_SLOPE_GEN_R_SEL_W<0> {
         ADPLL_SLOPE_GEN_R_SEL_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_slope_gen_dc_corr(&mut self) -> ADPLL_SLOPE_GEN_DC_CORR_W<4> {
         ADPLL_SLOPE_GEN_DC_CORR_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_slope_gen_pulse_width_enhance(
         &mut self,
     ) -> ADPLL_SLOPE_GEN_PULSE_WIDTH_ENHANCE_W<6> {
@@ -103,11 +106,10 @@ impl crate::Readable for ADPLL_SLOPE_GEN_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_slope_gen::W](W) writer structure"]
 impl crate::Writable for ADPLL_SLOPE_GEN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_slope_gen to value 0"]
 impl crate::Resettable for ADPLL_SLOPE_GEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

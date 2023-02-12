@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_6(&mut self) -> GPADC_SCAN_POS_6_W<0> {
         GPADC_SCAN_POS_6_W::new(self)
     }
     #[doc = "Bits 5:9"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_7(&mut self) -> GPADC_SCAN_POS_7_W<5> {
         GPADC_SCAN_POS_7_W::new(self)
     }
     #[doc = "Bits 10:14"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_8(&mut self) -> GPADC_SCAN_POS_8_W<10> {
         GPADC_SCAN_POS_8_W::new(self)
     }
     #[doc = "Bits 15:19"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_9(&mut self) -> GPADC_SCAN_POS_9_W<15> {
         GPADC_SCAN_POS_9_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_10(&mut self) -> GPADC_SCAN_POS_10_W<20> {
         GPADC_SCAN_POS_10_W::new(self)
     }
     #[doc = "Bits 25:29"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_pos_11(&mut self) -> GPADC_SCAN_POS_11_W<25> {
         GPADC_SCAN_POS_11_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for GPADC_REG_SCN_POS2_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_scn_pos2::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_SCN_POS2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_scn_pos2 to value 0"]
 impl crate::Resettable for GPADC_REG_SCN_POS2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

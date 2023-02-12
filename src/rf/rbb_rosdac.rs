@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_q_hw(&mut self) -> ROSDAC_Q_HW_W<0> {
         ROSDAC_Q_HW_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_i_hw(&mut self) -> ROSDAC_I_HW_W<8> {
         ROSDAC_I_HW_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_q(&mut self) -> ROSDAC_Q_W<16> {
         ROSDAC_Q_W::new(self)
     }
     #[doc = "Bits 24:29"]
     #[inline(always)]
+    #[must_use]
     pub fn rosdac_i(&mut self) -> ROSDAC_I_W<24> {
         ROSDAC_I_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for RBB_ROSDAC_SPEC {
 #[doc = "`write(|w| ..)` method takes [rbb_rosdac::W](W) writer structure"]
 impl crate::Writable for RBB_ROSDAC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rbb_rosdac to value 0"]
 impl crate::Resettable for RBB_ROSDAC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

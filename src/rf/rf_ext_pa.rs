@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_ext_pa_sb(&mut self) -> RF_EXT_PA_SB_W<0> {
         RF_EXT_PA_SB_W::new(self)
     }
     #[doc = "Bits 5:9"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_ext_pa_lotx(&mut self) -> RF_EXT_PA_LOTX_W<5> {
         RF_EXT_PA_LOTX_W::new(self)
     }
     #[doc = "Bits 10:14"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_ext_pa_tx(&mut self) -> RF_EXT_PA_TX_W<10> {
         RF_EXT_PA_TX_W::new(self)
     }
     #[doc = "Bits 15:19"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_ext_pa_lorx(&mut self) -> RF_EXT_PA_LORX_W<15> {
         RF_EXT_PA_LORX_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_ext_pa_rx(&mut self) -> RF_EXT_PA_RX_W<20> {
         RF_EXT_PA_RX_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for RF_EXT_PA_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_ext_pa::W](W) writer structure"]
 impl crate::Writable for RF_EXT_PA_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_ext_pa to value 0"]
 impl crate::Resettable for RF_EXT_PA_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

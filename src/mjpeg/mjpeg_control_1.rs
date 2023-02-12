@@ -179,71 +179,85 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mjpeg_enable(&mut self) -> REG_MJPEG_ENABLE_W<0> {
         REG_MJPEG_ENABLE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mjpeg_bit_order(&mut self) -> REG_MJPEG_BIT_ORDER_W<1> {
         REG_MJPEG_BIT_ORDER_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_order_u_even(&mut self) -> REG_ORDER_U_EVEN_W<2> {
         REG_ORDER_U_EVEN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_wr_over_stop(&mut self) -> REG_WR_OVER_STOP_W<3> {
         REG_WR_OVER_STOP_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_last_hf_wblk_dmy(&mut self) -> REG_LAST_HF_WBLK_DMY_W<4> {
         REG_LAST_HF_WBLK_DMY_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_last_hf_hblk_dmy(&mut self) -> REG_LAST_HF_HBLK_DMY_W<5> {
         REG_LAST_HF_HBLK_DMY_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_reflect_dmy(&mut self) -> REG_REFLECT_DMY_W<6> {
         REG_REFLECT_DMY_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_h_bust(&mut self) -> REG_H_BUST_W<8> {
         REG_H_BUST_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_yuv_mode(&mut self) -> REG_YUV_MODE_W<12> {
         REG_YUV_MODE_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_q_mode(&mut self) -> REG_Q_MODE_W<16> {
         REG_Q_MODE_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_y0_order(&mut self) -> REG_Y0_ORDER_W<24> {
         REG_Y0_ORDER_W::new(self)
     }
     #[doc = "Bits 26:27"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_u0_order(&mut self) -> REG_U0_ORDER_W<26> {
         REG_U0_ORDER_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_y1_order(&mut self) -> REG_Y1_ORDER_W<28> {
         REG_Y1_ORDER_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_v0_order(&mut self) -> REG_V0_ORDER_W<30> {
         REG_V0_ORDER_W::new(self)
     }
@@ -266,11 +280,10 @@ impl crate::Readable for MJPEG_CONTROL_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_control_1::W](W) writer structure"]
 impl crate::Writable for MJPEG_CONTROL_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_control_1 to value 0"]
 impl crate::Resettable for MJPEG_CONTROL_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

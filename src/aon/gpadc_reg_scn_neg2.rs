@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_6(&mut self) -> GPADC_SCAN_NEG_6_W<0> {
         GPADC_SCAN_NEG_6_W::new(self)
     }
     #[doc = "Bits 5:9"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_7(&mut self) -> GPADC_SCAN_NEG_7_W<5> {
         GPADC_SCAN_NEG_7_W::new(self)
     }
     #[doc = "Bits 10:14"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_8(&mut self) -> GPADC_SCAN_NEG_8_W<10> {
         GPADC_SCAN_NEG_8_W::new(self)
     }
     #[doc = "Bits 15:19"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_9(&mut self) -> GPADC_SCAN_NEG_9_W<15> {
         GPADC_SCAN_NEG_9_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_10(&mut self) -> GPADC_SCAN_NEG_10_W<20> {
         GPADC_SCAN_NEG_10_W::new(self)
     }
     #[doc = "Bits 25:29"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_neg_11(&mut self) -> GPADC_SCAN_NEG_11_W<25> {
         GPADC_SCAN_NEG_11_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for GPADC_REG_SCN_NEG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_scn_neg2::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_SCN_NEG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_scn_neg2 to value 0"]
 impl crate::Resettable for GPADC_REG_SCN_NEG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

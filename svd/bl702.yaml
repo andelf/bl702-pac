@@ -1,5 +1,31 @@
 _svd: "./bl702.svd"
 
+
+_modify:
+  kys:
+    description: Key Scan
+  glb:
+    description: Global Register
+  aon:
+    description: Always On
+  cam:
+    description: Camera
+  emac:
+    description: Ethernet MAC
+  gpip:
+    description: General purpose DAC/ADC/ACOMP interface control
+  hbn:
+    description: Deep sleep control (Hibernate)
+  l1c:
+    description: L1 Cache control
+  pds:
+    description: Sleep control (Power Down Sleep)
+  qdec:
+    description: Quadrature decoder control
+  ef_ctrl:
+    description: eFuse memory control
+
+
 glb:
   cgen_cfg1:
     _delete:
@@ -149,12 +175,12 @@ glb:
       USB:
         description: usb clock ungate enable
         bitOffset: 28
-        bitWidth: 1 
+        bitWidth: 1
         access: read-write
       CAM:
         description: CAM
         bitOffset: 29
-        bitWidth: 1 
+        bitWidth: 1
         access: read-write
       MJPEG:
         description: MJPEG

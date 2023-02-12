@@ -48,6 +48,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn tcvsyn3(&mut self) -> TCVSYN3_W<0> {
         TCVSYN3_W::new(self)
     }
@@ -70,11 +71,10 @@ impl crate::Readable for TCVSYN3_SPEC {
 #[doc = "`write(|w| ..)` method takes [tcvsyn3::W](W) writer structure"]
 impl crate::Writable for TCVSYN3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TCVSYN3 to value 0"]
 impl crate::Resettable for TCVSYN3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

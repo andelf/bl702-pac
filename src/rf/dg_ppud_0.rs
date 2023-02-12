@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bits 16:24"]
     #[inline(always)]
+    #[must_use]
     pub fn ppud_cnt2(&mut self) -> PPUD_CNT2_W<16> {
         PPUD_CNT2_W::new(self)
     }
     #[doc = "Bits 25:29"]
     #[inline(always)]
+    #[must_use]
     pub fn ppud_cnt1(&mut self) -> PPUD_CNT1_W<25> {
         PPUD_CNT1_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn ppud_manaual_en(&mut self) -> PPUD_MANAUAL_EN_W<30> {
         PPUD_MANAUAL_EN_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for DG_PPUD_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [dg_ppud_0::W](W) writer structure"]
 impl crate::Writable for DG_PPUD_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dg_ppud_0 to value 0"]
 impl crate::Resettable for DG_PPUD_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

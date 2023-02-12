@@ -122,46 +122,55 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_tpm_clk_sel(&mut self) -> FBDV_TPM_CLK_SEL_W<0> {
         FBDV_TPM_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_adpll_clk_sel(&mut self) -> FBDV_ADPLL_CLK_SEL_W<4> {
         FBDV_ADPLL_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_dco_dither_clk_sel(&mut self) -> FBDV_DCO_DITHER_CLK_SEL_W<8> {
         FBDV_DCO_DITHER_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_fb_clk_sel(&mut self) -> FBDV_FB_CLK_SEL_W<12> {
         FBDV_FB_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_sample_clk_sel(&mut self) -> FBDV_SAMPLE_CLK_SEL_W<16> {
         FBDV_SAMPLE_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn fbdv_stg_sel(&mut self) -> FBDV_STG_SEL_W<20> {
         FBDV_STG_SEL_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn rst_mmdiv(&mut self) -> RST_MMDIV_W<24> {
         RST_MMDIV_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_fmash_clk_polarity(&mut self) -> LOTPM_FMASH_CLK_POLARITY_W<28> {
         LOTPM_FMASH_CLK_POLARITY_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn dco_dither_clk_polarity(&mut self) -> DCO_DITHER_CLK_POLARITY_W<29> {
         DCO_DITHER_CLK_POLARITY_W::new(self)
     }
@@ -184,11 +193,10 @@ impl crate::Readable for FBDV_SPEC {
 #[doc = "`write(|w| ..)` method takes [fbdv::W](W) writer structure"]
 impl crate::Writable for FBDV_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets fbdv to value 0"]
 impl crate::Resettable for FBDV_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

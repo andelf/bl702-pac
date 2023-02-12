@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_int2_mode_set4(&mut self) -> REG_GPIO_INT2_MODE_SET4_W<0> {
         REG_GPIO_INT2_MODE_SET4_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for GPIO_INT2_MODE_SET4_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_int2_mode_set4::W](W) writer structure"]
 impl crate::Writable for GPIO_INT2_MODE_SET4_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_INT2_MODE_SET4 to value 0"]
 impl crate::Resettable for GPIO_INT2_MODE_SET4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

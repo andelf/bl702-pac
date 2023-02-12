@@ -68,16 +68,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_frame_no(&mut self) -> STS_FRAME_NO_W<0> {
         STS_FRAME_NO_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_pid(&mut self) -> STS_PID_W<12> {
         STS_PID_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_ep_no(&mut self) -> STS_EP_NO_W<16> {
         STS_EP_NO_W::new(self)
     }
@@ -100,11 +103,10 @@ impl crate::Readable for USB_FRAME_NO_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_frame_no::W](W) writer structure"]
 impl crate::Writable for USB_FRAME_NO_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_frame_no to value 0"]
 impl crate::Resettable for USB_FRAME_NO_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

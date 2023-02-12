@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_inc_step1(&mut self) -> SINGEN_INC_STEP1_W<0> {
         SINGEN_INC_STEP1_W::new(self)
     }
     #[doc = "Bits 16:25"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_inc_step0(&mut self) -> SINGEN_INC_STEP0_W<16> {
         SINGEN_INC_STEP0_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_unsign_en(&mut self) -> SINGEN_UNSIGN_EN_W<28> {
         SINGEN_UNSIGN_EN_W::new(self)
     }
     #[doc = "Bits 29:30"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_clkdiv_n(&mut self) -> SINGEN_CLKDIV_N_W<29> {
         SINGEN_CLKDIV_N_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_en(&mut self) -> SINGEN_EN_W<31> {
         SINGEN_EN_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for RF_SINGEN_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_singen_0::W](W) writer structure"]
 impl crate::Writable for RF_SINGEN_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_singen_0 to value 0"]
 impl crate::Resettable for RF_SINGEN_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

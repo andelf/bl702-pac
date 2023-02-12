@@ -98,31 +98,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_txbuf_supply_mode(&mut self) -> LODIST_TXBUF_SUPPLY_MODE_W<0> {
         LODIST_TXBUF_SUPPLY_MODE_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_rxbuf_supply_mode(&mut self) -> LODIST_RXBUF_SUPPLY_MODE_W<4> {
         LODIST_RXBUF_SUPPLY_MODE_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_rxbuf_supply_boost(&mut self) -> LODIST_RXBUF_SUPPLY_BOOST_W<6> {
         LODIST_RXBUF_SUPPLY_BOOST_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_rwell_bias(&mut self) -> LODIST_RWELL_BIAS_W<8> {
         LODIST_RWELL_BIAS_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_nwell_bias(&mut self) -> LODIST_NWELL_BIAS_W<12> {
         LODIST_NWELL_BIAS_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn lodist_75dc_sel(&mut self) -> LODIST_75DC_SEL_W<16> {
         LODIST_75DC_SEL_W::new(self)
     }
@@ -145,11 +151,10 @@ impl crate::Readable for LODIST_SPEC {
 #[doc = "`write(|w| ..)` method takes [lodist::W](W) writer structure"]
 impl crate::Writable for LODIST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets lodist to value 0"]
 impl crate::Resettable for LODIST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_sleep_duration(&mut self) -> CR_SLEEP_DURATION_W<0> {
         CR_SLEEP_DURATION_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for PDS_TIME1_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_time1::W](W) writer structure"]
 impl crate::Writable for PDS_TIME1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PDS_TIME1 to value 0"]
 impl crate::Resettable for PDS_TIME1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

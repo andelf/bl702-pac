@@ -58,11 +58,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_vco_speed(&mut self) -> CLKPLL_VCO_SPEED_W<0> {
         CLKPLL_VCO_SPEED_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_shrtr(&mut self) -> CLKPLL_SHRTR_W<3> {
         CLKPLL_SHRTR_W::new(self)
     }
@@ -85,11 +87,10 @@ impl crate::Readable for CLKPLL_VCO_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_vco::W](W) writer structure"]
 impl crate::Writable for CLKPLL_VCO_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_vco to value 0"]
 impl crate::Resettable for CLKPLL_VCO_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

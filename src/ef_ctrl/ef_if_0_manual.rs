@@ -123,46 +123,55 @@ impl R {
 impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_a(&mut self) -> EF_IF_A_W<0> {
         EF_IF_A_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_pd(&mut self) -> EF_IF_PD_W<10> {
         EF_IF_PD_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_ps(&mut self) -> EF_IF_PS_W<11> {
         EF_IF_PS_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_strobe(&mut self) -> EF_IF_STROBE_W<12> {
         EF_IF_STROBE_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_pgenb(&mut self) -> EF_IF_PGENB_W<13> {
         EF_IF_PGENB_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_load(&mut self) -> EF_IF_LOAD_W<14> {
         EF_IF_LOAD_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_csb(&mut self) -> EF_IF_CSB_W<15> {
         EF_IF_CSB_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_q(&mut self) -> EF_IF_0_Q_W<16> {
         EF_IF_0_Q_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_prot_code_manual(&mut self) -> EF_IF_PROT_CODE_MANUAL_W<24> {
         EF_IF_PROT_CODE_MANUAL_W::new(self)
     }
@@ -185,11 +194,10 @@ impl crate::Readable for EF_IF_0_MANUAL_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_if_0_manual::W](W) writer structure"]
 impl crate::Writable for EF_IF_0_MANUAL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_if_0_manual to value 0"]
 impl crate::Resettable for EF_IF_0_MANUAL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

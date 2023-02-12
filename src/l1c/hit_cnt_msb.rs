@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn hit_cnt_msb(&mut self) -> HIT_CNT_MSB_W<0> {
         HIT_CNT_MSB_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for HIT_CNT_MSB_SPEC {
 #[doc = "`write(|w| ..)` method takes [hit_cnt_msb::W](W) writer structure"]
 impl crate::Writable for HIT_CNT_MSB_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets hit_cnt_msb to value 0"]
 impl crate::Resettable for HIT_CNT_MSB_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -43,12 +43,13 @@ impl R {
     #[doc = "Bits 0:29"]
     #[inline(always)]
     pub fn reg_gpio_int_mode_set3(&self) -> REG_GPIO_INT_MODE_SET3_R {
-        REG_GPIO_INT_MODE_SET3_R::new((self.bits & 0x3fff_ffff) as u32)
+        REG_GPIO_INT_MODE_SET3_R::new(self.bits & 0x3fff_ffff)
     }
 }
 impl W {
     #[doc = "Bits 0:29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_int_mode_set3(&mut self) -> REG_GPIO_INT_MODE_SET3_W<0> {
         REG_GPIO_INT_MODE_SET3_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for GPIO_INT_MODE_SET3_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_int_mode_set3::W](W) writer structure"]
 impl crate::Writable for GPIO_INT_MODE_SET3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_INT_MODE_SET3 to value 0"]
 impl crate::Resettable for GPIO_INT_MODE_SET3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

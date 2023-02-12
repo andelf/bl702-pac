@@ -165,71 +165,85 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn tmux_aon(&mut self) -> TMUX_AON_W<0> {
         TMUX_AON_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_aon(&mut self) -> TEN_AON_W<4> {
         TEN_AON_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_xtal32k(&mut self) -> DTEN_XTAL32K_W<5> {
         DTEN_XTAL32K_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_xtal32k(&mut self) -> TEN_XTAL32K_W<6> {
         TEN_XTAL32K_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_vddcore_aon(&mut self) -> TEN_VDDCORE_AON_W<8> {
         TEN_VDDCORE_AON_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_ldo11soc_aon(&mut self) -> TEN_LDO11SOC_AON_W<9> {
         TEN_LDO11SOC_AON_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_dcdc18_0_aon(&mut self) -> TEN_DCDC18_0_AON_W<10> {
         TEN_DCDC18_0_AON_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_dcdc18_1_aon(&mut self) -> TEN_DCDC18_1_AON_W<11> {
         TEN_DCDC18_1_AON_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_bg_sys_aon(&mut self) -> TEN_BG_SYS_AON_W<12> {
         TEN_BG_SYS_AON_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_ldo15rf_aon(&mut self) -> TEN_LDO15RF_AON_W<16> {
         TEN_LDO15RF_AON_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_xtal_aon(&mut self) -> TEN_XTAL_AON_W<17> {
         TEN_XTAL_AON_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn dten_xtal_aon(&mut self) -> DTEN_XTAL_AON_W<18> {
         DTEN_XTAL_AON_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_mbg_aon(&mut self) -> TEN_MBG_AON_W<19> {
         TEN_MBG_AON_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ten_cip_misc_aon(&mut self) -> TEN_CIP_MISC_AON_W<20> {
         TEN_CIP_MISC_AON_W::new(self)
     }
@@ -252,11 +266,10 @@ impl crate::Readable for AON_COMMON_SPEC {
 #[doc = "`write(|w| ..)` method takes [aon_common::W](W) writer structure"]
 impl crate::Writable for AON_COMMON_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets aon_common to value 0"]
 impl crate::Resettable for AON_COMMON_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

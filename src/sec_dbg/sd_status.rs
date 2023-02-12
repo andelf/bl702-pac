@@ -87,7 +87,7 @@ impl R {
     #[doc = "Bits 4:23"]
     #[inline(always)]
     pub fn sd_dbg_pwd_cnt(&self) -> SD_DBG_PWD_CNT_R {
-        SD_DBG_PWD_CNT_R::new(((self.bits >> 4) & 0x000f_ffff) as u32)
+        SD_DBG_PWD_CNT_R::new((self.bits >> 4) & 0x000f_ffff)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
@@ -103,36 +103,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_pwd_busy(&mut self) -> SD_DBG_PWD_BUSY_W<0> {
         SD_DBG_PWD_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_pwd_trig(&mut self) -> SD_DBG_PWD_TRIG_W<1> {
         SD_DBG_PWD_TRIG_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_cci_read_en(&mut self) -> SD_DBG_CCI_READ_EN_W<2> {
         SD_DBG_CCI_READ_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_cci_clk_sel(&mut self) -> SD_DBG_CCI_CLK_SEL_W<3> {
         SD_DBG_CCI_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 4:23"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_pwd_cnt(&mut self) -> SD_DBG_PWD_CNT_W<4> {
         SD_DBG_PWD_CNT_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_mode(&mut self) -> SD_DBG_MODE_W<24> {
         SD_DBG_MODE_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sd_dbg_ena(&mut self) -> SD_DBG_ENA_W<28> {
         SD_DBG_ENA_W::new(self)
     }
@@ -155,11 +162,10 @@ impl crate::Readable for SD_STATUS_SPEC {
 #[doc = "`write(|w| ..)` method takes [sd_status::W](W) writer structure"]
 impl crate::Writable for SD_STATUS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sd_status to value 0"]
 impl crate::Resettable for SD_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

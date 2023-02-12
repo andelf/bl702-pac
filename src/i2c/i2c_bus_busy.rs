@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_i2c_bus_busy(&mut self) -> STS_I2C_BUS_BUSY_W<0> {
         STS_I2C_BUS_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_bus_busy_clr(&mut self) -> CR_I2C_BUS_BUSY_CLR_W<1> {
         CR_I2C_BUS_BUSY_CLR_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for I2C_BUS_BUSY_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2c_bus_busy::W](W) writer structure"]
 impl crate::Writable for I2C_BUS_BUSY_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2c_bus_busy to value 0"]
 impl crate::Resettable for I2C_BUS_BUSY_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

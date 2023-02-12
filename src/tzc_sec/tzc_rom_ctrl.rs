@@ -205,86 +205,103 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r0_id0_en(&mut self) -> TZC_ROM0_R0_ID0_EN_W<0> {
         TZC_ROM0_R0_ID0_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r1_id0_en(&mut self) -> TZC_ROM0_R1_ID0_EN_W<1> {
         TZC_ROM0_R1_ID0_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r0_id0_en(&mut self) -> TZC_ROM1_R0_ID0_EN_W<2> {
         TZC_ROM1_R0_ID0_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r1_id0_en(&mut self) -> TZC_ROM1_R1_ID0_EN_W<3> {
         TZC_ROM1_R1_ID0_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r0_id1_en(&mut self) -> TZC_ROM0_R0_ID1_EN_W<8> {
         TZC_ROM0_R0_ID1_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r1_id1_en(&mut self) -> TZC_ROM0_R1_ID1_EN_W<9> {
         TZC_ROM0_R1_ID1_EN_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r0_id1_en(&mut self) -> TZC_ROM1_R0_ID1_EN_W<10> {
         TZC_ROM1_R0_ID1_EN_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r1_id1_en(&mut self) -> TZC_ROM1_R1_ID1_EN_W<11> {
         TZC_ROM1_R1_ID1_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r0_en(&mut self) -> TZC_ROM0_R0_EN_W<16> {
         TZC_ROM0_R0_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r1_en(&mut self) -> TZC_ROM0_R1_EN_W<17> {
         TZC_ROM0_R1_EN_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r0_en(&mut self) -> TZC_ROM1_R0_EN_W<18> {
         TZC_ROM1_R0_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r1_en(&mut self) -> TZC_ROM1_R1_EN_W<19> {
         TZC_ROM1_R1_EN_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r0_lock(&mut self) -> TZC_ROM0_R0_LOCK_W<24> {
         TZC_ROM0_R0_LOCK_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom0_r1_lock(&mut self) -> TZC_ROM0_R1_LOCK_W<25> {
         TZC_ROM0_R1_LOCK_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r0_lock(&mut self) -> TZC_ROM1_R0_LOCK_W<26> {
         TZC_ROM1_R0_LOCK_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_rom1_r1_lock(&mut self) -> TZC_ROM1_R1_LOCK_W<27> {
         TZC_ROM1_R1_LOCK_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_sboot_done(&mut self) -> TZC_SBOOT_DONE_W<28> {
         TZC_SBOOT_DONE_W::new(self)
     }
@@ -307,11 +324,10 @@ impl crate::Readable for TZC_ROM_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [tzc_rom_ctrl::W](W) writer structure"]
 impl crate::Writable for TZC_ROM_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets tzc_rom_ctrl to value 0"]
 impl crate::Resettable for TZC_ROM_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

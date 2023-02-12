@@ -84,26 +84,31 @@ impl R {
 impl W {
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn cs_1(&mut self) -> CS_1_W<2> {
         CS_1_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reserved_4(&mut self) -> RESERVED_4_W<4> {
         RESERVED_4_W::new(self)
     }
     #[doc = "Bits 5:6"]
     #[inline(always)]
+    #[must_use]
     pub fn cs_2(&mut self) -> CS_2_W<5> {
         CS_2_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn reserved_7(&mut self) -> RESERVED_7_W<7> {
         RESERVED_7_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn cs_wdt(&mut self) -> CS_WDT_W<8> {
         CS_WDT_W::new(self)
     }
@@ -126,11 +131,10 @@ impl crate::Readable for TCCR_SPEC {
 #[doc = "`write(|w| ..)` method takes [tccr::W](W) writer structure"]
 impl crate::Writable for TCCR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TCCR to value 0"]
 impl crate::Resettable for TCCR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

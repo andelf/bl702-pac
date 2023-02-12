@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_a_en(&mut self) -> GPDAC_A_EN_W<0> {
         GPDAC_A_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_ioa_en(&mut self) -> GPDAC_IOA_EN_W<1> {
         GPDAC_IOA_EN_W::new(self)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_a_rng(&mut self) -> GPDAC_A_RNG_W<18> {
         GPDAC_A_RNG_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_a_outmux(&mut self) -> GPDAC_A_OUTMUX_W<20> {
         GPDAC_A_OUTMUX_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for GPDAC_ACTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpdac_actrl::W](W) writer structure"]
 impl crate::Writable for GPDAC_ACTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpdac_actrl to value 0"]
 impl crate::Resettable for GPDAC_ACTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

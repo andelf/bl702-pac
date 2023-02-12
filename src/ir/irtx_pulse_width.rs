@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_pw_unit(&mut self) -> CR_IRTX_PW_UNIT_W<0> {
         CR_IRTX_PW_UNIT_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_mod_ph0_w(&mut self) -> CR_IRTX_MOD_PH0_W_W<16> {
         CR_IRTX_MOD_PH0_W_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_mod_ph1_w(&mut self) -> CR_IRTX_MOD_PH1_W_W<24> {
         CR_IRTX_MOD_PH1_W_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for IRTX_PULSE_WIDTH_SPEC {
 #[doc = "`write(|w| ..)` method takes [irtx_pulse_width::W](W) writer structure"]
 impl crate::Writable for IRTX_PULSE_WIDTH_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets irtx_pulse_width to value 0"]
 impl crate::Resettable for IRTX_PULSE_WIDTH_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

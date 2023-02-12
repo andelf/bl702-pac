@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn pir_interval(&mut self) -> PIR_INTERVAL_W<0> {
         PIR_INTERVAL_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for HBN_PIR_INTERVAL_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_pir_interval::W](W) writer structure"]
 impl crate::Writable for HBN_PIR_INTERVAL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_PIR_INTERVAL to value 0"]
 impl crate::Resettable for HBN_PIR_INTERVAL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

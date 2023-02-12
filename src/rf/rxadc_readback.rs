@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:8"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_dout_q(&mut self) -> RXADC_DOUT_Q_W<0> {
         RXADC_DOUT_Q_W::new(self)
     }
     #[doc = "Bits 16:24"]
     #[inline(always)]
+    #[must_use]
     pub fn rxadc_dout_i(&mut self) -> RXADC_DOUT_I_W<16> {
         RXADC_DOUT_I_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for RXADC_READBACK_SPEC {
 #[doc = "`write(|w| ..)` method takes [rxadc_readback::W](W) writer structure"]
 impl crate::Writable for RXADC_READBACK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rxadc_readback to value 0"]
 impl crate::Resettable for RXADC_READBACK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

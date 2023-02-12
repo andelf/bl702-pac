@@ -154,61 +154,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_cal_done(&mut self) -> RC32M_CAL_DONE_W<0> {
         RC32M_CAL_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_rdy(&mut self) -> RC32M_RDY_W<1> {
         RC32M_RDY_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_cal_inprogress(&mut self) -> RC32M_CAL_INPROGRESS_W<2> {
         RC32M_CAL_INPROGRESS_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_cal_div(&mut self) -> RC32M_CAL_DIV_W<3> {
         RC32M_CAL_DIV_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_cal_precharge(&mut self) -> RC32M_CAL_PRECHARGE_W<5> {
         RC32M_CAL_PRECHARGE_W::new(self)
     }
     #[doc = "Bits 6:13"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_dig_code_fr_cal(&mut self) -> RC32M_DIG_CODE_FR_CAL_W<6> {
         RC32M_DIG_CODE_FR_CAL_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_allow_cal(&mut self) -> RC32M_ALLOW_CAL_W<17> {
         RC32M_ALLOW_CAL_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_refclk_half(&mut self) -> RC32M_REFCLK_HALF_W<18> {
         RC32M_REFCLK_HALF_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_ext_code_en(&mut self) -> RC32M_EXT_CODE_EN_W<19> {
         RC32M_EXT_CODE_EN_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_cal_en(&mut self) -> RC32M_CAL_EN_W<20> {
         RC32M_CAL_EN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_pd(&mut self) -> RC32M_PD_W<21> {
         RC32M_PD_W::new(self)
     }
     #[doc = "Bits 22:29"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32m_code_fr_ext(&mut self) -> RC32M_CODE_FR_EXT_W<22> {
         RC32M_CODE_FR_EXT_W::new(self)
     }
@@ -231,11 +243,10 @@ impl crate::Readable for RC32M_CTRL0_SPEC {
 #[doc = "`write(|w| ..)` method takes [rc32m_ctrl0::W](W) writer structure"]
 impl crate::Writable for RC32M_CTRL0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rc32m_ctrl0 to value 0"]
 impl crate::Resettable for RC32M_CTRL0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

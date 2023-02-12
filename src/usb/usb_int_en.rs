@@ -303,146 +303,175 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_sof_en(&mut self) -> CR_SOF_EN_W<0> {
         CR_SOF_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_reset_en(&mut self) -> CR_USB_RESET_EN_W<1> {
         CR_USB_RESET_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_vbus_tgl_en(&mut self) -> CR_VBUS_TGL_EN_W<2> {
         CR_VBUS_TGL_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_get_dct_cmd_en(&mut self) -> CR_GET_DCT_CMD_EN_W<3> {
         CR_GET_DCT_CMD_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_setup_cmd_en(&mut self) -> CR_EP0_SETUP_CMD_EN_W<4> {
         CR_EP0_SETUP_CMD_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_setup_done_en(&mut self) -> CR_EP0_SETUP_DONE_EN_W<5> {
         CR_EP0_SETUP_DONE_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_in_cmd_en(&mut self) -> CR_EP0_IN_CMD_EN_W<6> {
         CR_EP0_IN_CMD_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_in_done_en(&mut self) -> CR_EP0_IN_DONE_EN_W<7> {
         CR_EP0_IN_DONE_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_out_cmd_en(&mut self) -> CR_EP0_OUT_CMD_EN_W<8> {
         CR_EP0_OUT_CMD_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep0_out_done_en(&mut self) -> CR_EP0_OUT_DONE_EN_W<9> {
         CR_EP0_OUT_DONE_EN_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep1_cmd_en(&mut self) -> CR_EP1_CMD_EN_W<10> {
         CR_EP1_CMD_EN_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep1_done_en(&mut self) -> CR_EP1_DONE_EN_W<11> {
         CR_EP1_DONE_EN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_cmd_en(&mut self) -> CR_EP2_CMD_EN_W<12> {
         CR_EP2_CMD_EN_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_done_en(&mut self) -> CR_EP2_DONE_EN_W<13> {
         CR_EP2_DONE_EN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep3_cmd_en(&mut self) -> CR_EP3_CMD_EN_W<14> {
         CR_EP3_CMD_EN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep3_done_en(&mut self) -> CR_EP3_DONE_EN_W<15> {
         CR_EP3_DONE_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep4_cmd_en(&mut self) -> CR_EP4_CMD_EN_W<16> {
         CR_EP4_CMD_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep4_done_en(&mut self) -> CR_EP4_DONE_EN_W<17> {
         CR_EP4_DONE_EN_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep5_cmd_en(&mut self) -> CR_EP5_CMD_EN_W<18> {
         CR_EP5_CMD_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep5_done_en(&mut self) -> CR_EP5_DONE_EN_W<19> {
         CR_EP5_DONE_EN_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep6_cmd_en(&mut self) -> CR_EP6_CMD_EN_W<20> {
         CR_EP6_CMD_EN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep6_done_en(&mut self) -> CR_EP6_DONE_EN_W<21> {
         CR_EP6_DONE_EN_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep7_cmd_en(&mut self) -> CR_EP7_CMD_EN_W<22> {
         CR_EP7_CMD_EN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep7_done_en(&mut self) -> CR_EP7_DONE_EN_W<23> {
         CR_EP7_DONE_EN_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_27_24(&mut self) -> RSVD_27_24_W<24> {
         RSVD_27_24_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_lpm_wkup_en(&mut self) -> CR_LPM_WKUP_EN_W<28> {
         CR_LPM_WKUP_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_lpm_pkt_en(&mut self) -> CR_LPM_PKT_EN_W<29> {
         CR_LPM_PKT_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_sof_3ms_en(&mut self) -> CR_SOF_3MS_EN_W<30> {
         CR_SOF_3MS_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_err_en(&mut self) -> CR_USB_ERR_EN_W<31> {
         CR_USB_ERR_EN_W::new(self)
     }
@@ -465,11 +494,10 @@ impl crate::Readable for USB_INT_EN_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_int_en::W](W) writer structure"]
 impl crate::Writable for USB_INT_EN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_int_en to value 0"]
 impl crate::Resettable for USB_INT_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_test_en(&mut self) -> SE_TRNG_0_TEST_EN_W<0> {
         SE_TRNG_0_TEST_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_cp_test_en(&mut self) -> SE_TRNG_0_CP_TEST_EN_W<1> {
         SE_TRNG_0_CP_TEST_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_cp_bypass(&mut self) -> SE_TRNG_0_CP_BYPASS_W<2> {
         SE_TRNG_0_CP_BYPASS_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_dis(&mut self) -> SE_TRNG_0_HT_DIS_W<3> {
         SE_TRNG_0_HT_DIS_W::new(self)
     }
     #[doc = "Bits 4:11"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_alarm_n(&mut self) -> SE_TRNG_0_HT_ALARM_N_W<4> {
         SE_TRNG_0_HT_ALARM_N_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for SE_TRNG_0_TEST_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_trng_0_test::W](W) writer structure"]
 impl crate::Writable for SE_TRNG_0_TEST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_trng_0_test to value 0"]
 impl crate::Resettable for SE_TRNG_0_TEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

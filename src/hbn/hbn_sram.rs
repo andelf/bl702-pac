@@ -75,21 +75,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn retram_ema(&mut self) -> RETRAM_EMA_W<0> {
         RETRAM_EMA_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn retram_emaw(&mut self) -> RETRAM_EMAW_W<3> {
         RETRAM_EMAW_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn retram_ret(&mut self) -> RETRAM_RET_W<6> {
         RETRAM_RET_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn retram_slp(&mut self) -> RETRAM_SLP_W<7> {
         RETRAM_SLP_W::new(self)
     }
@@ -112,11 +116,10 @@ impl crate::Readable for HBN_SRAM_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_sram::W](W) writer structure"]
 impl crate::Writable for HBN_SRAM_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_SRAM to value 0"]
 impl crate::Resettable for HBN_SRAM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

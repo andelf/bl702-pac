@@ -204,86 +204,103 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn jtag_swap_set(&mut self) -> JTAG_SWAP_SET_W<0> {
         JTAG_SWAP_SET_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_sflash2_swap_io0_io3(&mut self) -> CFG_SFLASH2_SWAP_IO0_IO3_W<8> {
         CFG_SFLASH2_SWAP_IO0_IO3_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_sflash2_swap_cs_io2(&mut self) -> CFG_SFLASH2_SWAP_CS_IO2_W<9> {
         CFG_SFLASH2_SWAP_CS_IO2_W::new(self)
     }
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_flash_scenario(&mut self) -> CFG_FLASH_SCENARIO_W<10> {
         CFG_FLASH_SCENARIO_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_spi_0_master_mode(&mut self) -> REG_SPI_0_MASTER_MODE_W<12> {
         REG_SPI_0_MASTER_MODE_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_spi_0_swap(&mut self) -> REG_SPI_0_SWAP_W<13> {
         REG_SPI_0_SWAP_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cci_use_jtag_pin(&mut self) -> REG_CCI_USE_JTAG_PIN_W<16> {
         REG_CCI_USE_JTAG_PIN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn p1_adc_test_with_cci(&mut self) -> P1_ADC_TEST_WITH_CCI_W<17> {
         P1_ADC_TEST_WITH_CCI_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn p2_dac_test_with_cci(&mut self) -> P2_DAC_TEST_WITH_CCI_W<18> {
         P2_DAC_TEST_WITH_CCI_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn p3_cci_use_io_0_2_7(&mut self) -> P3_CCI_USE_IO_0_2_7_W<19> {
         P3_CCI_USE_IO_0_2_7_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn p4_adc_test_with_jtag(&mut self) -> P4_ADC_TEST_WITH_JTAG_W<20> {
         P4_ADC_TEST_WITH_JTAG_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn p5_dac_test_with_jtag(&mut self) -> P5_DAC_TEST_WITH_JTAG_W<21> {
         P5_DAC_TEST_WITH_JTAG_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn p6_jtag_use_io_0_2_7(&mut self) -> P6_JTAG_USE_IO_0_2_7_W<23> {
         P6_JTAG_USE_IO_0_2_7_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn uart_swap_set(&mut self) -> UART_SWAP_SET_W<24> {
         UART_SWAP_SET_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_kys_drv_val(&mut self) -> REG_KYS_DRV_VAL_W<29> {
         REG_KYS_DRV_VAL_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_ext_rst_smt(&mut self) -> REG_EXT_RST_SMT_W<30> {
         REG_EXT_RST_SMT_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn pin_sel_emac_cam(&mut self) -> PIN_SEL_EMAC_CAM_W<31> {
         PIN_SEL_EMAC_CAM_W::new(self)
     }
@@ -306,11 +323,10 @@ impl crate::Readable for GLB_PARM_SPEC {
 #[doc = "`write(|w| ..)` method takes [glb_parm::W](W) writer structure"]
 impl crate::Writable for GLB_PARM_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets glb_parm to value 0"]
 impl crate::Resettable for GLB_PARM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

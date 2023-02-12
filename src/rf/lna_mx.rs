@@ -129,51 +129,61 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn rmx_bm(&mut self) -> RMX_BM_W<0> {
         RMX_BM_W::new(self)
     }
     #[doc = "Bits 3:5"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_rfb_match(&mut self) -> LNA_RFB_MATCH_W<3> {
         LNA_RFB_MATCH_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_vdd13_sel(&mut self) -> LNA_VDD13_SEL_W<6> {
         LNA_VDD13_SEL_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_load_csw(&mut self) -> LNA_LOAD_CSW_W<8> {
         LNA_LOAD_CSW_W::new(self)
     }
     #[doc = "Bits 12:14"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_lg_gsel(&mut self) -> LNA_LG_GSEL_W<12> {
         LNA_LG_GSEL_W::new(self)
     }
     #[doc = "Bits 15:17"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_cap_match(&mut self) -> LNA_CAP_MATCH_W<15> {
         LNA_CAP_MATCH_W::new(self)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_cap_lg(&mut self) -> LNA_CAP_LG_W<18> {
         LNA_CAP_LG_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_bm_lg(&mut self) -> LNA_BM_LG_W<20> {
         LNA_BM_LG_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_bm_hg(&mut self) -> LNA_BM_HG_W<24> {
         LNA_BM_HG_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn lna_bm_hw(&mut self) -> LNA_BM_HW_W<28> {
         LNA_BM_HW_W::new(self)
     }
@@ -196,11 +206,10 @@ impl crate::Readable for LNA_MX_SPEC {
 #[doc = "`write(|w| ..)` method takes [lna_mx::W](W) writer structure"]
 impl crate::Writable for LNA_MX_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets lna_mx to value 0"]
 impl crate::Resettable for LNA_MX_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

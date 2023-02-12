@@ -121,46 +121,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_en(&mut self) -> CCI_EN_W<0> {
         CCI_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_slv_sel_cci2(&mut self) -> CCI_SLV_SEL_CCI2_W<1> {
         CCI_SLV_SEL_CCI2_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_mas_sel_cci2(&mut self) -> CCI_MAS_SEL_CCI2_W<2> {
         CCI_MAS_SEL_CCI2_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_mas_hw_mode(&mut self) -> CCI_MAS_HW_MODE_W<3> {
         CCI_MAS_HW_MODE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_m_cci_sclk_en(&mut self) -> REG_M_CCI_SCLK_EN_W<4> {
         REG_M_CCI_SCLK_EN_W::new(self)
     }
     #[doc = "Bits 5:6"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_div_m_cci_sclk(&mut self) -> REG_DIV_M_CCI_SCLK_W<5> {
         REG_DIV_M_CCI_SCLK_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cfg_cci1_pre_read(&mut self) -> CFG_CCI1_PRE_READ_W<7> {
         CFG_CCI1_PRE_READ_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_scci_clk_inv(&mut self) -> REG_SCCI_CLK_INV_W<8> {
         REG_SCCI_CLK_INV_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_mcci_clk_inv(&mut self) -> REG_MCCI_CLK_INV_W<9> {
         REG_MCCI_CLK_INV_W::new(self)
     }
@@ -183,11 +192,10 @@ impl crate::Readable for CCI_CFG_SPEC {
 #[doc = "`write(|w| ..)` method takes [cci_cfg::W](W) writer structure"]
 impl crate::Writable for CCI_CFG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cci_cfg to value 0"]
 impl crate::Resettable for CCI_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn irq_clr(&mut self) -> IRQ_CLR_W<0> {
         IRQ_CLR_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for HBN_IRQ_CLR_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_irq_clr::W](W) writer structure"]
 impl crate::Writable for HBN_IRQ_CLR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_IRQ_CLR to value 0"]
 impl crate::Resettable for HBN_IRQ_CLR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

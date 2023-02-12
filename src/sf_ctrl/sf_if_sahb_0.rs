@@ -162,66 +162,79 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_busy(&mut self) -> SF_IF_BUSY_W<0> {
         SF_IF_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_trig(&mut self) -> SF_IF_0_TRIG_W<1> {
         SF_IF_0_TRIG_W::new(self)
     }
     #[doc = "Bits 2:11"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_dat_byte(&mut self) -> SF_IF_0_DAT_BYTE_W<2> {
         SF_IF_0_DAT_BYTE_W::new(self)
     }
     #[doc = "Bits 12:16"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_dmy_byte(&mut self) -> SF_IF_0_DMY_BYTE_W<12> {
         SF_IF_0_DMY_BYTE_W::new(self)
     }
     #[doc = "Bits 17:19"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_adr_byte(&mut self) -> SF_IF_0_ADR_BYTE_W<17> {
         SF_IF_0_ADR_BYTE_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_cmd_byte(&mut self) -> SF_IF_0_CMD_BYTE_W<20> {
         SF_IF_0_CMD_BYTE_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_dat_rw(&mut self) -> SF_IF_0_DAT_RW_W<23> {
         SF_IF_0_DAT_RW_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_dat_en(&mut self) -> SF_IF_0_DAT_EN_W<24> {
         SF_IF_0_DAT_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_dmy_en(&mut self) -> SF_IF_0_DMY_EN_W<25> {
         SF_IF_0_DMY_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_adr_en(&mut self) -> SF_IF_0_ADR_EN_W<26> {
         SF_IF_0_ADR_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_cmd_en(&mut self) -> SF_IF_0_CMD_EN_W<27> {
         SF_IF_0_CMD_EN_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_spi_mode(&mut self) -> SF_IF_0_SPI_MODE_W<28> {
         SF_IF_0_SPI_MODE_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_qpi_mode_en(&mut self) -> SF_IF_0_QPI_MODE_EN_W<31> {
         SF_IF_0_QPI_MODE_EN_W::new(self)
     }
@@ -244,11 +257,10 @@ impl crate::Readable for SF_IF_SAHB_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_sahb_0::W](W) writer structure"]
 impl crate::Writable for SF_IF_SAHB_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_sahb_0 to value 0"]
 impl crate::Resettable for SF_IF_SAHB_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

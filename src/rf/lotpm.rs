@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_lfp_delay_sel(&mut self) -> LOTPM_LFP_DELAY_SEL_W<0> {
         LOTPM_LFP_DELAY_SEL_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_delay_fmash(&mut self) -> LOTPM_HFP_DELAY_FMASH_W<4> {
         LOTPM_HFP_DELAY_FMASH_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_delay_fref(&mut self) -> LOTPM_HFP_DELAY_FREF_W<8> {
         LOTPM_HFP_DELAY_FREF_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_polarity(&mut self) -> LOTPM_HFP_POLARITY_W<12> {
         LOTPM_HFP_POLARITY_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn lotpm_hfp_mash1_sel(&mut self) -> LOTPM_HFP_MASH1_SEL_W<16> {
         LOTPM_HFP_MASH1_SEL_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for LOTPM_SPEC {
 #[doc = "`write(|w| ..)` method takes [lotpm::W](W) writer structure"]
 impl crate::Writable for LOTPM_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets lotpm to value 0"]
 impl crate::Resettable for LOTPM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

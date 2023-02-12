@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_32m_clk_div(&mut self) -> GPADC_32M_CLK_DIV_W<0> {
         GPADC_32M_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_32m_clk_sel(&mut self) -> GPADC_32M_CLK_SEL_W<7> {
         GPADC_32M_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_32m_div_en(&mut self) -> GPADC_32M_DIV_EN_W<8> {
         GPADC_32M_DIV_EN_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for GPADC_32M_SRC_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_32m_src_ctrl::W](W) writer structure"]
 impl crate::Writable for GPADC_32M_SRC_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPADC_32M_SRC_CTRL to value 0"]
 impl crate::Resettable for GPADC_32M_SRC_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_neg_satur(&mut self) -> GPADC_NEG_SATUR_W<0> {
         GPADC_NEG_SATUR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pos_satur(&mut self) -> GPADC_POS_SATUR_W<1> {
         GPADC_POS_SATUR_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_neg_satur_clr(&mut self) -> GPADC_NEG_SATUR_CLR_W<4> {
         GPADC_NEG_SATUR_CLR_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pos_satur_clr(&mut self) -> GPADC_POS_SATUR_CLR_W<5> {
         GPADC_POS_SATUR_CLR_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_neg_satur_mask(&mut self) -> GPADC_NEG_SATUR_MASK_W<8> {
         GPADC_NEG_SATUR_MASK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_pos_satur_mask(&mut self) -> GPADC_POS_SATUR_MASK_W<9> {
         GPADC_POS_SATUR_MASK_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for GPADC_REG_ISR_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_isr::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_ISR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_isr to value 0"]
 impl crate::Resettable for GPADC_REG_ISR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

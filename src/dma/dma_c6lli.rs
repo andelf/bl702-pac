@@ -42,12 +42,13 @@ impl R {
     #[doc = "Bits 2:31"]
     #[inline(always)]
     pub fn lli(&self) -> LLI_R {
-        LLI_R::new(((self.bits >> 2) & 0x3fff_ffff) as u32)
+        LLI_R::new((self.bits >> 2) & 0x3fff_ffff)
     }
 }
 impl W {
     #[doc = "Bits 2:31"]
     #[inline(always)]
+    #[must_use]
     pub fn lli(&mut self) -> LLI_W<2> {
         LLI_W::new(self)
     }
@@ -70,11 +71,10 @@ impl crate::Readable for DMA_C6LLI_SPEC {
 #[doc = "`write(|w| ..)` method takes [dma_c6lli::W](W) writer structure"]
 impl crate::Writable for DMA_C6LLI_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DMA_C6LLI to value 0"]
 impl crate::Resettable for DMA_C6LLI_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_iv_r1_w1(&mut self) -> SF_AES_IV_R1_W1_W<0> {
         SF_AES_IV_R1_W1_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for SF_AES_IV_R1_W1_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_aes_iv_r1_w1::W](W) writer structure"]
 impl crate::Writable for SF_AES_IV_R1_W1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_aes_iv_r1_w1 to value 0"]
 impl crate::Resettable for SF_AES_IV_R1_W1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

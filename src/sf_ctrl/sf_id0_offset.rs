@@ -43,12 +43,13 @@ impl R {
     #[doc = "Bits 0:23"]
     #[inline(always)]
     pub fn sf_id0_offset(&self) -> SF_ID0_OFFSET_R {
-        SF_ID0_OFFSET_R::new((self.bits & 0x00ff_ffff) as u32)
+        SF_ID0_OFFSET_R::new(self.bits & 0x00ff_ffff)
     }
 }
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_id0_offset(&mut self) -> SF_ID0_OFFSET_W<0> {
         SF_ID0_OFFSET_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for SF_ID0_OFFSET_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_id0_offset::W](W) writer structure"]
 impl crate::Writable for SF_ID0_OFFSET_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_id0_offset to value 0"]
 impl crate::Resettable for SF_ID0_OFFSET_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

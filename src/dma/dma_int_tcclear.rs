@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn int_tcclear(&mut self) -> INT_TCCLEAR_W<0> {
         INT_TCCLEAR_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for DMA_INT_TCCLEAR_SPEC {
 #[doc = "`write(|w| ..)` method takes [dma_int_tcclear::W](W) writer structure"]
 impl crate::Writable for DMA_INT_TCCLEAR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DMA_IntTCClear to value 0"]
 impl crate::Resettable for DMA_INT_TCCLEAR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

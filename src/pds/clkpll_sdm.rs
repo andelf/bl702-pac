@@ -56,7 +56,7 @@ impl R {
     #[doc = "Bits 0:23"]
     #[inline(always)]
     pub fn clkpll_sdmin(&self) -> CLKPLL_SDMIN_R {
-        CLKPLL_SDMIN_R::new((self.bits & 0x00ff_ffff) as u32)
+        CLKPLL_SDMIN_R::new(self.bits & 0x00ff_ffff)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sdmin(&mut self) -> CLKPLL_SDMIN_W<0> {
         CLKPLL_SDMIN_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_dither_sel(&mut self) -> CLKPLL_DITHER_SEL_W<24> {
         CLKPLL_DITHER_SEL_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sdm_flag(&mut self) -> CLKPLL_SDM_FLAG_W<28> {
         CLKPLL_SDM_FLAG_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sdm_bypass(&mut self) -> CLKPLL_SDM_BYPASS_W<29> {
         CLKPLL_SDM_BYPASS_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for CLKPLL_SDM_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_sdm::W](W) writer structure"]
 impl crate::Writable for CLKPLL_SDM_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_sdm to value 0"]
 impl crate::Resettable for CLKPLL_SDM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

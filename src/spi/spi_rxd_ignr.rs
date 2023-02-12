@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_rxd_ignr_p(&mut self) -> CR_SPI_RXD_IGNR_P_W<0> {
         CR_SPI_RXD_IGNR_P_W::new(self)
     }
     #[doc = "Bits 16:20"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_rxd_ignr_s(&mut self) -> CR_SPI_RXD_IGNR_S_W<16> {
         CR_SPI_RXD_IGNR_S_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for SPI_RXD_IGNR_SPEC {
 #[doc = "`write(|w| ..)` method takes [spi_rxd_ignr::W](W) writer structure"]
 impl crate::Writable for SPI_RXD_IGNR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets spi_rxd_ignr to value 0"]
 impl crate::Resettable for SPI_RXD_IGNR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

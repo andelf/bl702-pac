@@ -183,81 +183,97 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rxen(&mut self) -> RXEN_W<0> {
         RXEN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn txen(&mut self) -> TXEN_W<1> {
         TXEN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn nopre(&mut self) -> NOPRE_W<2> {
         NOPRE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn bro(&mut self) -> BRO_W<3> {
         BRO_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_4(&mut self) -> RSVD_4_W<4> {
         RSVD_4_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn pro(&mut self) -> PRO_W<5> {
         PRO_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ifg(&mut self) -> IFG_W<6> {
         IFG_W::new(self)
     }
     #[doc = "Bits 7:9"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_9_7(&mut self) -> RSVD_9_7_W<7> {
         RSVD_9_7_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn fulld(&mut self) -> FULLD_W<10> {
         FULLD_W::new(self)
     }
     #[doc = "Bits 11:12"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_12_11(&mut self) -> RSVD_12_11_W<11> {
         RSVD_12_11_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn crcen(&mut self) -> CRCEN_W<13> {
         CRCEN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn hugen(&mut self) -> HUGEN_W<14> {
         HUGEN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn pad(&mut self) -> PAD_W<15> {
         PAD_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn recsmall(&mut self) -> RECSMALL_W<16> {
         RECSMALL_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn rmii_en(&mut self) -> RMII_EN_W<17> {
         RMII_EN_W::new(self)
     }
     #[doc = "Bits 18:23"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_23_18(&mut self) -> RSVD_23_18_W<18> {
         RSVD_23_18_W::new(self)
     }
@@ -280,11 +296,10 @@ impl crate::Readable for MODE_SPEC {
 #[doc = "`write(|w| ..)` method takes [mode::W](W) writer structure"]
 impl crate::Writable for MODE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets MODE to value 0"]
 impl crate::Resettable for MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

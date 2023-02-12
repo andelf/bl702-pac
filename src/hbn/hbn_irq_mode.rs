@@ -126,46 +126,55 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_pin_wakeup_mode(&mut self) -> HBN_PIN_WAKEUP_MODE_W<0> {
         HBN_PIN_WAKEUP_MODE_W::new(self)
     }
     #[doc = "Bits 3:7"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_pin_wakeup_mask(&mut self) -> HBN_PIN_WAKEUP_MASK_W<3> {
         HBN_PIN_WAKEUP_MASK_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_aon_pad_ie_smt(&mut self) -> REG_AON_PAD_IE_SMT_W<8> {
         REG_AON_PAD_IE_SMT_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_en_hw_pu_pd(&mut self) -> REG_EN_HW_PU_PD_W<16> {
         REG_EN_HW_PU_PD_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn irq_bor_en(&mut self) -> IRQ_BOR_EN_W<18> {
         IRQ_BOR_EN_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn irq_acomp0_en(&mut self) -> IRQ_ACOMP0_EN_W<20> {
         IRQ_ACOMP0_EN_W::new(self)
     }
     #[doc = "Bits 22:23"]
     #[inline(always)]
+    #[must_use]
     pub fn irq_acomp1_en(&mut self) -> IRQ_ACOMP1_EN_W<22> {
         IRQ_ACOMP1_EN_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn pin_wakeup_sel(&mut self) -> PIN_WAKEUP_SEL_W<24> {
         PIN_WAKEUP_SEL_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn pin_wakeup_en(&mut self) -> PIN_WAKEUP_EN_W<27> {
         PIN_WAKEUP_EN_W::new(self)
     }
@@ -188,11 +197,10 @@ impl crate::Readable for HBN_IRQ_MODE_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_irq_mode::W](W) writer structure"]
 impl crate::Writable for HBN_IRQ_MODE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_IRQ_MODE to value 0"]
 impl crate::Resettable for HBN_IRQ_MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -149,56 +149,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s_dma_tx_en(&mut self) -> I2S_DMA_TX_EN_W<0> {
         I2S_DMA_TX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s_dma_rx_en(&mut self) -> I2S_DMA_RX_EN_W<1> {
         I2S_DMA_RX_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_clr(&mut self) -> TX_FIFO_CLR_W<2> {
         TX_FIFO_CLR_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_fifo_clr(&mut self) -> RX_FIFO_CLR_W<3> {
         RX_FIFO_CLR_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_overflow(&mut self) -> TX_FIFO_OVERFLOW_W<4> {
         TX_FIFO_OVERFLOW_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_underflow(&mut self) -> TX_FIFO_UNDERFLOW_W<5> {
         TX_FIFO_UNDERFLOW_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_fifo_overflow(&mut self) -> RX_FIFO_OVERFLOW_W<6> {
         RX_FIFO_OVERFLOW_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_fifo_underflow(&mut self) -> RX_FIFO_UNDERFLOW_W<7> {
         RX_FIFO_UNDERFLOW_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fifo_lr_merge(&mut self) -> CR_FIFO_LR_MERGE_W<8> {
         CR_FIFO_LR_MERGE_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fifo_lr_exchg(&mut self) -> CR_FIFO_LR_EXCHG_W<9> {
         CR_FIFO_LR_EXCHG_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_fifo_24b_lj(&mut self) -> CR_FIFO_24B_LJ_W<10> {
         CR_FIFO_24B_LJ_W::new(self)
     }
@@ -221,11 +232,10 @@ impl crate::Readable for I2S_FIFO_CONFIG_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2s_fifo_config_0::W](W) writer structure"]
 impl crate::Writable for I2S_FIFO_CONFIG_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2s_fifo_config_0 to value 0"]
 impl crate::Resettable for I2S_FIFO_CONFIG_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

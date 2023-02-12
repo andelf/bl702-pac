@@ -145,56 +145,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sdm_reset(&mut self) -> CLKPLL_SDM_RESET_W<0> {
         CLKPLL_SDM_RESET_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_reset_postdiv(&mut self) -> CLKPLL_RESET_POSTDIV_W<1> {
         CLKPLL_RESET_POSTDIV_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_reset_fbdv(&mut self) -> CLKPLL_RESET_FBDV_W<2> {
         CLKPLL_RESET_FBDV_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_reset_refdiv(&mut self) -> CLKPLL_RESET_REFDIV_W<3> {
         CLKPLL_RESET_REFDIV_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_pu_postdiv(&mut self) -> CLKPLL_PU_POSTDIV_W<4> {
         CLKPLL_PU_POSTDIV_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_pu_fbdv(&mut self) -> CLKPLL_PU_FBDV_W<5> {
         CLKPLL_PU_FBDV_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_pu_clamp_op(&mut self) -> CLKPLL_PU_CLAMP_OP_W<6> {
         CLKPLL_PU_CLAMP_OP_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_pu_pfd(&mut self) -> CLKPLL_PU_PFD_W<7> {
         CLKPLL_PU_PFD_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_pu_cp(&mut self) -> CLKPLL_PU_CP_W<8> {
         CLKPLL_PU_CP_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_clkpll_sfreg(&mut self) -> PU_CLKPLL_SFREG_W<9> {
         PU_CLKPLL_SFREG_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_clkpll(&mut self) -> PU_CLKPLL_W<10> {
         PU_CLKPLL_W::new(self)
     }
@@ -217,11 +228,10 @@ impl crate::Readable for PU_RST_CLKPLL_SPEC {
 #[doc = "`write(|w| ..)` method takes [pu_rst_clkpll::W](W) writer structure"]
 impl crate::Writable for PU_RST_CLKPLL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pu_rst_clkpll to value 0"]
 impl crate::Resettable for PU_RST_CLKPLL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

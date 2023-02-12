@@ -318,156 +318,187 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s10(&mut self) -> SWRST_S10_W<0> {
         SWRST_S10_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s11(&mut self) -> SWRST_S11_W<1> {
         SWRST_S11_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s12(&mut self) -> SWRST_S12_W<2> {
         SWRST_S12_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s13(&mut self) -> SWRST_S13_W<3> {
         SWRST_S13_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s14(&mut self) -> SWRST_S14_W<4> {
         SWRST_S14_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s15(&mut self) -> SWRST_S15_W<5> {
         SWRST_S15_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s16(&mut self) -> SWRST_S16_W<6> {
         SWRST_S16_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s17(&mut self) -> SWRST_S17_W<7> {
         SWRST_S17_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s18(&mut self) -> SWRST_S18_W<8> {
         SWRST_S18_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s19(&mut self) -> SWRST_S19_W<9> {
         SWRST_S19_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a(&mut self) -> SWRST_S1A_W<10> {
         SWRST_S1A_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1b(&mut self) -> SWRST_S1B_W<11> {
         SWRST_S1B_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1c(&mut self) -> SWRST_S1C_W<12> {
         SWRST_S1C_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1d(&mut self) -> SWRST_S1D_W<13> {
         SWRST_S1D_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1e(&mut self) -> SWRST_S1E_W<14> {
         SWRST_S1E_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1f(&mut self) -> SWRST_S1F_W<15> {
         SWRST_S1F_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a0(&mut self) -> SWRST_S1A0_W<16> {
         SWRST_S1A0_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a1(&mut self) -> SWRST_S1A1_W<17> {
         SWRST_S1A1_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a2(&mut self) -> SWRST_S1A2_W<18> {
         SWRST_S1A2_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a3(&mut self) -> SWRST_S1A3_W<19> {
         SWRST_S1A3_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a4(&mut self) -> SWRST_S1A4_W<20> {
         SWRST_S1A4_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a5(&mut self) -> SWRST_S1A5_W<21> {
         SWRST_S1A5_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a6(&mut self) -> SWRST_S1A6_W<22> {
         SWRST_S1A6_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a7(&mut self) -> SWRST_S1A7_W<23> {
         SWRST_S1A7_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a8(&mut self) -> SWRST_S1A8_W<24> {
         SWRST_S1A8_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1a9(&mut self) -> SWRST_S1A9_W<25> {
         SWRST_S1A9_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1aa(&mut self) -> SWRST_S1AA_W<26> {
         SWRST_S1AA_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1ab(&mut self) -> SWRST_S1AB_W<27> {
         SWRST_S1AB_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1ac(&mut self) -> SWRST_S1AC_W<28> {
         SWRST_S1AC_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1ad(&mut self) -> SWRST_S1AD_W<29> {
         SWRST_S1AD_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn swrst_s1ae(&mut self) -> SWRST_S1AE_W<30> {
         SWRST_S1AE_W::new(self)
     }
@@ -490,11 +521,10 @@ impl crate::Readable for SWRST_CFG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [swrst_cfg1::W](W) writer structure"]
 impl crate::Writable for SWRST_CFG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets swrst_cfg1 to value 0"]
 impl crate::Resettable for SWRST_CFG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

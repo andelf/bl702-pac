@@ -152,61 +152,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_en(&mut self) -> CR_IRTX_EN_W<0> {
         CR_IRTX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_out_inv(&mut self) -> CR_IRTX_OUT_INV_W<1> {
         CR_IRTX_OUT_INV_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_mod_en(&mut self) -> CR_IRTX_MOD_EN_W<2> {
         CR_IRTX_MOD_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_swm_en(&mut self) -> CR_IRTX_SWM_EN_W<3> {
         CR_IRTX_SWM_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_data_en(&mut self) -> CR_IRTX_DATA_EN_W<4> {
         CR_IRTX_DATA_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_logic0_hl_inv(&mut self) -> CR_IRTX_LOGIC0_HL_INV_W<5> {
         CR_IRTX_LOGIC0_HL_INV_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_logic1_hl_inv(&mut self) -> CR_IRTX_LOGIC1_HL_INV_W<6> {
         CR_IRTX_LOGIC1_HL_INV_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_head_en(&mut self) -> CR_IRTX_HEAD_EN_W<8> {
         CR_IRTX_HEAD_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_head_hl_inv(&mut self) -> CR_IRTX_HEAD_HL_INV_W<9> {
         CR_IRTX_HEAD_HL_INV_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_tail_en(&mut self) -> CR_IRTX_TAIL_EN_W<10> {
         CR_IRTX_TAIL_EN_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_tail_hl_inv(&mut self) -> CR_IRTX_TAIL_HL_INV_W<11> {
         CR_IRTX_TAIL_HL_INV_W::new(self)
     }
     #[doc = "Bits 12:17"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_data_num(&mut self) -> CR_IRTX_DATA_NUM_W<12> {
         CR_IRTX_DATA_NUM_W::new(self)
     }
@@ -229,11 +241,10 @@ impl crate::Readable for IRTX_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [irtx_config::W](W) writer structure"]
 impl crate::Writable for IRTX_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets irtx_config to value 0"]
 impl crate::Resettable for IRTX_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

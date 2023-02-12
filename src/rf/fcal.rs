@@ -94,31 +94,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_div_ratio_adj_en(&mut self) -> FCAL_DIV_RATIO_ADJ_EN_W<0> {
         FCAL_DIV_RATIO_ADJ_EN_W::new(self)
     }
     #[doc = "Bits 1:2"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_coarse_pha_threshold(&mut self) -> FCAL_COARSE_PHA_THRESHOLD_W<1> {
         FCAL_COARSE_PHA_THRESHOLD_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_mom_toggle_cnt(&mut self) -> FCAL_MOM_TOGGLE_CNT_W<3> {
         FCAL_MOM_TOGGLE_CNT_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_clk_period(&mut self) -> FCAL_CLK_PERIOD_W<4> {
         FCAL_CLK_PERIOD_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_mode(&mut self) -> FCAL_MODE_W<6> {
         FCAL_MODE_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn fcal_mom_ini_ext(&mut self) -> FCAL_MOM_INI_EXT_W<16> {
         FCAL_MOM_INI_EXT_W::new(self)
     }
@@ -141,11 +147,10 @@ impl crate::Readable for FCAL_SPEC {
 #[doc = "`write(|w| ..)` method takes [fcal::W](W) writer structure"]
 impl crate::Writable for FCAL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets fcal to value 0"]
 impl crate::Resettable for FCAL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

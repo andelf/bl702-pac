@@ -125,46 +125,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_end_clr(&mut self) -> CR_UTX_END_CLR_W<0> {
         CR_UTX_END_CLR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_end_clr(&mut self) -> CR_URX_END_CLR_W<1> {
         CR_URX_END_CLR_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_2(&mut self) -> RSVD_2_W<2> {
         RSVD_2_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_3(&mut self) -> RSVD_3_W<3> {
         RSVD_3_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_rto_clr(&mut self) -> CR_URX_RTO_CLR_W<4> {
         CR_URX_RTO_CLR_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_pce_clr(&mut self) -> CR_URX_PCE_CLR_W<5> {
         CR_URX_PCE_CLR_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_6(&mut self) -> RSVD_6_W<6> {
         RSVD_6_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_7(&mut self) -> RSVD_7_W<7> {
         RSVD_7_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_lse_clr(&mut self) -> CR_URX_LSE_CLR_W<8> {
         CR_URX_LSE_CLR_W::new(self)
     }
@@ -187,11 +196,10 @@ impl crate::Readable for UART_INT_CLEAR_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_int_clear::W](W) writer structure"]
 impl crate::Writable for UART_INT_CLEAR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_int_clear to value 0"]
 impl crate::Resettable for UART_INT_CLEAR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

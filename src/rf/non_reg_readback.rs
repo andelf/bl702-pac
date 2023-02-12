@@ -144,56 +144,67 @@ impl R {
 impl W {
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_testbuf_hw(&mut self) -> PPU_TESTBUF_HW_W<5> {
         PPU_TESTBUF_HW_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_txbuf_hw(&mut self) -> PPU_TXBUF_HW_W<6> {
         PPU_TXBUF_HW_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_rxbuf_hw(&mut self) -> PPU_RXBUF_HW_W<7> {
         PPU_RXBUF_HW_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_adpll_sfreg_hw(&mut self) -> PPU_ADPLL_SFREG_HW_W<8> {
         PPU_ADPLL_SFREG_HW_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_fbdv_hw(&mut self) -> PPU_FBDV_HW_W<9> {
         PPU_FBDV_HW_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn pud_vco_hw(&mut self) -> PUD_VCO_HW_W<10> {
         PUD_VCO_HW_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_vco_hw(&mut self) -> PPU_VCO_HW_W<11> {
         PPU_VCO_HW_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_vco_ldo_hw(&mut self) -> PPU_VCO_LDO_HW_W<12> {
         PPU_VCO_LDO_HW_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_lodist_body_bias_hw(&mut self) -> PPU_LODIST_BODY_BIAS_HW_W<13> {
         PPU_LODIST_BODY_BIAS_HW_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_rbb_hw(&mut self) -> PPU_RBB_HW_W<15> {
         PPU_RBB_HW_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ppu_lna_hw(&mut self) -> PPU_LNA_HW_W<16> {
         PPU_LNA_HW_W::new(self)
     }
@@ -216,11 +227,10 @@ impl crate::Readable for NON_REG_READBACK_SPEC {
 #[doc = "`write(|w| ..)` method takes [non_reg_readback::W](W) writer structure"]
 impl crate::Writable for NON_REG_READBACK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets non_reg_readback to value 0"]
 impl crate::Resettable for NON_REG_READBACK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

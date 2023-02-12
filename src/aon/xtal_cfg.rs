@@ -156,61 +156,73 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_bk_aon(&mut self) -> XTAL_BK_AON_W<0> {
         XTAL_BK_AON_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_capcode_extra_aon(&mut self) -> XTAL_CAPCODE_EXTRA_AON_W<2> {
         XTAL_CAPCODE_EXTRA_AON_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_ext_sel_aon(&mut self) -> XTAL_EXT_SEL_AON_W<3> {
         XTAL_EXT_SEL_AON_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_buf_en_aon(&mut self) -> XTAL_BUF_EN_AON_W<4> {
         XTAL_BUF_EN_AON_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_buf_hp_aon(&mut self) -> XTAL_BUF_HP_AON_W<8> {
         XTAL_BUF_HP_AON_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_fast_startup_aon(&mut self) -> XTAL_FAST_STARTUP_AON_W<12> {
         XTAL_FAST_STARTUP_AON_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_sleep_aon(&mut self) -> XTAL_SLEEP_AON_W<13> {
         XTAL_SLEEP_AON_W::new(self)
     }
     #[doc = "Bits 14:15"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_amp_ctrl_aon(&mut self) -> XTAL_AMP_CTRL_AON_W<14> {
         XTAL_AMP_CTRL_AON_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_capcode_out_aon(&mut self) -> XTAL_CAPCODE_OUT_AON_W<16> {
         XTAL_CAPCODE_OUT_AON_W::new(self)
     }
     #[doc = "Bits 22:27"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_capcode_in_aon(&mut self) -> XTAL_CAPCODE_IN_AON_W<22> {
         XTAL_CAPCODE_IN_AON_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_gm_boost_aon(&mut self) -> XTAL_GM_BOOST_AON_W<28> {
         XTAL_GM_BOOST_AON_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal_rdy_sel_aon(&mut self) -> XTAL_RDY_SEL_AON_W<30> {
         XTAL_RDY_SEL_AON_W::new(self)
     }
@@ -233,11 +245,10 @@ impl crate::Readable for XTAL_CFG_SPEC {
 #[doc = "`write(|w| ..)` method takes [xtal_cfg::W](W) writer structure"]
 impl crate::Writable for XTAL_CFG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets xtal_cfg to value 0"]
 impl crate::Resettable for XTAL_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

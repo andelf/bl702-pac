@@ -157,61 +157,73 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn sdmout_dly_sel(&mut self) -> SDMOUT_DLY_SEL_W<0> {
         SDMOUT_DLY_SEL_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sdm_bypass(&mut self) -> SDM_BYPASS_W<4> {
         SDM_BYPASS_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn sdm_dither(&mut self) -> SDM_DITHER_W<8> {
         SDM_DITHER_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn sdm_order(&mut self) -> SDM_ORDER_W<12> {
         SDM_ORDER_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_capcode_bypass(&mut self) -> ADPLL_CAPCODE_BYPASS_W<14> {
         ADPLL_CAPCODE_BYPASS_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_dco_mash_bypass(&mut self) -> ADPLL_DCO_MASH_BYPASS_W<15> {
         ADPLL_DCO_MASH_BYPASS_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_mom_hold(&mut self) -> ADPLL_FORCE_MOM_HOLD_W<16> {
         ADPLL_FORCE_MOM_HOLD_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_update_period(&mut self) -> ADPLL_MOM_UPDATE_PERIOD_W<20> {
         ADPLL_MOM_UPDATE_PERIOD_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_det_cons_en(&mut self) -> ADPLL_VCTRL_DET_CONS_EN_W<24> {
         ADPLL_VCTRL_DET_CONS_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_moni_win_sel(&mut self) -> ADPLL_VCTRL_MONI_WIN_SEL_W<25> {
         ADPLL_VCTRL_MONI_WIN_SEL_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_lock_win_sel(&mut self) -> ADPLL_VCTRL_LOCK_WIN_SEL_W<26> {
         ADPLL_VCTRL_LOCK_WIN_SEL_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_range_sel_ext_en(&mut self) -> ADPLL_VCTRL_RANGE_SEL_EXT_EN_W<27> {
         ADPLL_VCTRL_RANGE_SEL_EXT_EN_W::new(self)
     }
@@ -234,11 +246,10 @@ impl crate::Readable for ADPLL_VCTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_vctrl::W](W) writer structure"]
 impl crate::Writable for ADPLL_VCTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_vctrl to value 0"]
 impl crate::Resettable for ADPLL_VCTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ram_ret1n(&mut self) -> CR_PDS_RAM_RET1N_W<0> {
         CR_PDS_RAM_RET1N_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ram_ret2n(&mut self) -> CR_PDS_RAM_RET2N_W<4> {
         CR_PDS_RAM_RET2N_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ram_pgen(&mut self) -> CR_PDS_RAM_PGEN_W<8> {
         CR_PDS_RAM_PGEN_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for PDS_RAM1_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_ram1::W](W) writer structure"]
 impl crate::Writable for PDS_RAM1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pds_ram1 to value 0"]
 impl crate::Resettable for PDS_RAM1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

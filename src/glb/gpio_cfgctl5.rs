@@ -151,61 +151,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_ie(&mut self) -> REG_GPIO_10_IE_W<0> {
         REG_GPIO_10_IE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_smt(&mut self) -> REG_GPIO_10_SMT_W<1> {
         REG_GPIO_10_SMT_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_drv(&mut self) -> REG_GPIO_10_DRV_W<2> {
         REG_GPIO_10_DRV_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_pu(&mut self) -> REG_GPIO_10_PU_W<4> {
         REG_GPIO_10_PU_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_pd(&mut self) -> REG_GPIO_10_PD_W<5> {
         REG_GPIO_10_PD_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_10_func_sel(&mut self) -> REG_GPIO_10_FUNC_SEL_W<8> {
         REG_GPIO_10_FUNC_SEL_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_ie(&mut self) -> REG_GPIO_11_IE_W<16> {
         REG_GPIO_11_IE_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_smt(&mut self) -> REG_GPIO_11_SMT_W<17> {
         REG_GPIO_11_SMT_W::new(self)
     }
     #[doc = "Bits 18:19"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_drv(&mut self) -> REG_GPIO_11_DRV_W<18> {
         REG_GPIO_11_DRV_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_pu(&mut self) -> REG_GPIO_11_PU_W<20> {
         REG_GPIO_11_PU_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_pd(&mut self) -> REG_GPIO_11_PD_W<21> {
         REG_GPIO_11_PD_W::new(self)
     }
     #[doc = "Bits 24:28"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_gpio_11_func_sel(&mut self) -> REG_GPIO_11_FUNC_SEL_W<24> {
         REG_GPIO_11_FUNC_SEL_W::new(self)
     }
@@ -228,11 +240,10 @@ impl crate::Readable for GPIO_CFGCTL5_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpio_cfgctl5::W](W) writer structure"]
 impl crate::Writable for GPIO_CFGCTL5_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets GPIO_CFGCTL5 to value 0"]
 impl crate::Resettable for GPIO_CFGCTL5_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

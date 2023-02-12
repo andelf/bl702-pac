@@ -48,6 +48,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn wvr(&mut self) -> WVR_W<0> {
         WVR_W::new(self)
     }
@@ -70,11 +71,10 @@ impl crate::Readable for WVR_SPEC {
 #[doc = "`write(|w| ..)` method takes [wvr::W](W) writer structure"]
 impl crate::Writable for WVR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets WVR to value 0"]
 impl crate::Resettable for WVR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

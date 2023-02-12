@@ -151,61 +151,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn irom_mbist_done(&mut self) -> IROM_MBIST_DONE_W<0> {
         IROM_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_mem_mbist_done(&mut self) -> HSRAM_MEM_MBIST_DONE_W<1> {
         HSRAM_MEM_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_cache_mbist_done(&mut self) -> HSRAM_CACHE_MBIST_DONE_W<2> {
         HSRAM_CACHE_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn tag_mbist_done(&mut self) -> TAG_MBIST_DONE_W<3> {
         TAG_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ocram_mbist_done(&mut self) -> OCRAM_MBIST_DONE_W<4> {
         OCRAM_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn em_ram_mbist_done(&mut self) -> EM_RAM_MBIST_DONE_W<5> {
         EM_RAM_MBIST_DONE_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn irom_mbist_fail(&mut self) -> IROM_MBIST_FAIL_W<16> {
         IROM_MBIST_FAIL_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_mem_mbist_fail(&mut self) -> HSRAM_MEM_MBIST_FAIL_W<17> {
         HSRAM_MEM_MBIST_FAIL_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn hsram_cache_mbist_fail(&mut self) -> HSRAM_CACHE_MBIST_FAIL_W<18> {
         HSRAM_CACHE_MBIST_FAIL_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn tag_mbist_fail(&mut self) -> TAG_MBIST_FAIL_W<19> {
         TAG_MBIST_FAIL_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ocram_mbist_fail(&mut self) -> OCRAM_MBIST_FAIL_W<20> {
         OCRAM_MBIST_FAIL_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn em_ram_mbist_fail(&mut self) -> EM_RAM_MBIST_FAIL_W<21> {
         EM_RAM_MBIST_FAIL_W::new(self)
     }
@@ -228,11 +240,10 @@ impl crate::Readable for MBIST_STAT_SPEC {
 #[doc = "`write(|w| ..)` method takes [mbist_stat::W](W) writer structure"]
 impl crate::Writable for MBIST_STAT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets MBIST_STAT to value 0"]
 impl crate::Resettable for MBIST_STAT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

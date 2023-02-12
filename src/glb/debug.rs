@@ -51,17 +51,19 @@ impl R {
     #[doc = "Bits 1:31"]
     #[inline(always)]
     pub fn debug_i(&self) -> DEBUG_I_R {
-        DEBUG_I_R::new(((self.bits >> 1) & 0x7fff_ffff) as u32)
+        DEBUG_I_R::new((self.bits >> 1) & 0x7fff_ffff)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn debug_oe(&mut self) -> DEBUG_OE_W<0> {
         DEBUG_OE_W::new(self)
     }
     #[doc = "Bits 1:31"]
     #[inline(always)]
+    #[must_use]
     pub fn debug_i(&mut self) -> DEBUG_I_W<1> {
         DEBUG_I_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for DEBUG_SPEC {
 #[doc = "`write(|w| ..)` method takes [debug::W](W) writer structure"]
 impl crate::Writable for DEBUG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets debug to value 0"]
 impl crate::Resettable for DEBUG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

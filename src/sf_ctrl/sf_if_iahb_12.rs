@@ -109,36 +109,43 @@ impl R {
 impl W {
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_clk_sf_rx_inv_sel(&mut self) -> SF2_CLK_SF_RX_INV_SEL_W<2> {
         SF2_CLK_SF_RX_INV_SEL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_clk_sf_rx_inv_src(&mut self) -> SF2_CLK_SF_RX_INV_SRC_W<3> {
         SF2_CLK_SF_RX_INV_SRC_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_clk_out_inv_sel(&mut self) -> SF2_CLK_OUT_INV_SEL_W<4> {
         SF2_CLK_OUT_INV_SEL_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn sf3_clk_out_inv_sel(&mut self) -> SF3_CLK_OUT_INV_SEL_W<5> {
         SF3_CLK_OUT_INV_SEL_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_if_read_dly_n(&mut self) -> SF2_IF_READ_DLY_N_W<8> {
         SF2_IF_READ_DLY_N_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_if_read_dly_en(&mut self) -> SF2_IF_READ_DLY_EN_W<11> {
         SF2_IF_READ_DLY_EN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn sf2_if_read_dly_src(&mut self) -> SF2_IF_READ_DLY_SRC_W<12> {
         SF2_IF_READ_DLY_SRC_W::new(self)
     }
@@ -161,11 +168,10 @@ impl crate::Readable for SF_IF_IAHB_12_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_iahb_12::W](W) writer structure"]
 impl crate::Writable for SF_IF_IAHB_12_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_iahb_12 to value 0"]
 impl crate::Resettable for SF_IF_IAHB_12_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

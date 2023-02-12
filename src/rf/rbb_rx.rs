@@ -111,41 +111,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx2_bw1(&mut self) -> RBB_RX2_BW1_W<0> {
         RBB_RX2_BW1_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx1_bw1(&mut self) -> RBB_RX1_BW1_W<4> {
         RBB_RX1_BW1_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx2_bw0(&mut self) -> RBB_RX2_BW0_W<8> {
         RBB_RX2_BW0_W::new(self)
     }
     #[doc = "Bits 12:14"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx1_bw0(&mut self) -> RBB_RX1_BW0_W<12> {
         RBB_RX1_BW0_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx2_hw(&mut self) -> RBB_RX2_HW_W<16> {
         RBB_RX2_HW_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx1_hw(&mut self) -> RBB_RX1_HW_W<20> {
         RBB_RX1_HW_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx2(&mut self) -> RBB_RX2_W<24> {
         RBB_RX2_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_rx1(&mut self) -> RBB_RX1_W<28> {
         RBB_RX1_W::new(self)
     }
@@ -168,11 +176,10 @@ impl crate::Readable for RBB_RX_SPEC {
 #[doc = "`write(|w| ..)` method takes [rbb_rx::W](W) writer structure"]
 impl crate::Writable for RBB_RX_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rbb_rx to value 0"]
 impl crate::Resettable for RBB_RX_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

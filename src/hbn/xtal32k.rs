@@ -150,61 +150,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_hiz_en(&mut self) -> XTAL32K_HIZ_EN_W<0> {
         XTAL32K_HIZ_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_lowv_en(&mut self) -> XTAL32K_LOWV_EN_W<1> {
         XTAL32K_LOWV_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_ext_sel(&mut self) -> XTAL32K_EXT_SEL_W<2> {
         XTAL32K_EXT_SEL_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_amp_ctrl(&mut self) -> XTAL32K_AMP_CTRL_W<3> {
         XTAL32K_AMP_CTRL_W::new(self)
     }
     #[doc = "Bits 5:6"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_reg(&mut self) -> XTAL32K_REG_W<5> {
         XTAL32K_REG_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_outbuf_stre(&mut self) -> XTAL32K_OUTBUF_STRE_W<7> {
         XTAL32K_OUTBUF_STRE_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_otf_short(&mut self) -> XTAL32K_OTF_SHORT_W<8> {
         XTAL32K_OTF_SHORT_W::new(self)
     }
     #[doc = "Bits 9:10"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_inv_stre(&mut self) -> XTAL32K_INV_STRE_W<9> {
         XTAL32K_INV_STRE_W::new(self)
     }
     #[doc = "Bits 11:16"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_capbank(&mut self) -> XTAL32K_CAPBANK_W<11> {
         XTAL32K_CAPBANK_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn xtal32k_ac_cap_short(&mut self) -> XTAL32K_AC_CAP_SHORT_W<17> {
         XTAL32K_AC_CAP_SHORT_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_xtal32k_buf(&mut self) -> PU_XTAL32K_BUF_W<18> {
         PU_XTAL32K_BUF_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_xtal32k(&mut self) -> PU_XTAL32K_W<19> {
         PU_XTAL32K_W::new(self)
     }
@@ -227,11 +239,10 @@ impl crate::Readable for XTAL32K_SPEC {
 #[doc = "`write(|w| ..)` method takes [xtal32k::W](W) writer structure"]
 impl crate::Writable for XTAL32K_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets xtal32k to value 0"]
 impl crate::Resettable for XTAL32K_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

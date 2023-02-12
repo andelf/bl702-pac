@@ -67,16 +67,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn pmip_resv(&mut self) -> PMIP_RESV_W<0> {
         PMIP_RESV_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_bg_sys_aon(&mut self) -> PU_BG_SYS_AON_W<8> {
         PU_BG_SYS_AON_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn bg_sys_start_ctrl_aon(&mut self) -> BG_SYS_START_CTRL_AON_W<12> {
         BG_SYS_START_CTRL_AON_W::new(self)
     }
@@ -99,11 +102,10 @@ impl crate::Readable for BG_SYS_TOP_SPEC {
 #[doc = "`write(|w| ..)` method takes [bg_sys_top::W](W) writer structure"]
 impl crate::Writable for BG_SYS_TOP_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets bg_sys_top to value 0"]
 impl crate::Resettable for BG_SYS_TOP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn collvalid(&mut self) -> COLLVALID_W<0> {
         COLLVALID_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn maxret(&mut self) -> MAXRET_W<16> {
         MAXRET_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for COLLCONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [collconfig::W](W) writer structure"]
 impl crate::Writable for COLLCONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets COLLCONFIG to value 0"]
 impl crate::Resettable for COLLCONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

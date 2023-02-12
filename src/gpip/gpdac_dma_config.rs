@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_dma_tx_en(&mut self) -> GPDAC_DMA_TX_EN_W<0> {
         GPDAC_DMA_TX_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_dma_format(&mut self) -> GPDAC_DMA_FORMAT_W<4> {
         GPDAC_DMA_FORMAT_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for GPDAC_DMA_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpdac_dma_config::W](W) writer structure"]
 impl crate::Writable for GPDAC_DMA_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpdac_dma_config to value 0"]
 impl crate::Resettable for GPDAC_DMA_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -95,31 +95,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn gc_lna(&mut self) -> GC_LNA_W<0> {
         GC_LNA_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn gc_rbb1(&mut self) -> GC_RBB1_W<3> {
         GC_RBB1_W::new(self)
     }
     #[doc = "Bits 5:7"]
     #[inline(always)]
+    #[must_use]
     pub fn gc_rbb2(&mut self) -> GC_RBB2_W<5> {
         GC_RBB2_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bw(&mut self) -> RBB_BW_W<8> {
         RBB_BW_W::new(self)
     }
     #[doc = "Bits 12:16"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_ref_dac(&mut self) -> PA_REF_DAC_W<12> {
         PA_REF_DAC_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_inbuf_unit(&mut self) -> PA_INBUF_UNIT_W<20> {
         PA_INBUF_UNIT_W::new(self)
     }
@@ -142,11 +148,10 @@ impl crate::Readable for TRX_GAIN_BW_SPEC {
 #[doc = "`write(|w| ..)` method takes [trx_gain_bw::W](W) writer structure"]
 impl crate::Writable for TRX_GAIN_BW_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets trx_gain_bw to value 0"]
 impl crate::Resettable for TRX_GAIN_BW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

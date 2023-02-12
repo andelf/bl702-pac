@@ -177,71 +177,85 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_enable(&mut self) -> REG_DVP_ENABLE_W<0> {
         REG_DVP_ENABLE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_sw_mode(&mut self) -> REG_SW_MODE_W<1> {
         REG_SW_MODE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_fram_vld_pol(&mut self) -> REG_FRAM_VLD_POL_W<2> {
         REG_FRAM_VLD_POL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_line_vld_pol(&mut self) -> REG_LINE_VLD_POL_W<3> {
         REG_LINE_VLD_POL_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_hburst(&mut self) -> REG_HBURST_W<4> {
         REG_HBURST_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_mode(&mut self) -> REG_DVP_MODE_W<8> {
         REG_DVP_MODE_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_hw_mode_fwrap(&mut self) -> REG_HW_MODE_FWRAP_W<11> {
         REG_HW_MODE_FWRAP_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_drop_en(&mut self) -> REG_DROP_EN_W<12> {
         REG_DROP_EN_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_drop_even(&mut self) -> REG_DROP_EVEN_W<13> {
         REG_DROP_EVEN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_subsample_en(&mut self) -> REG_SUBSAMPLE_EN_W<14> {
         REG_SUBSAMPLE_EN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_subsample_even(&mut self) -> REG_SUBSAMPLE_EVEN_W<15> {
         REG_SUBSAMPLE_EVEN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_interlv_mode(&mut self) -> REG_INTERLV_MODE_W<16> {
         REG_INTERLV_MODE_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_pix_clk_cg(&mut self) -> REG_DVP_PIX_CLK_CG_W<20> {
         REG_DVP_PIX_CLK_CG_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_dvp_wait_cycle(&mut self) -> REG_DVP_WAIT_CYCLE_W<24> {
         REG_DVP_WAIT_CYCLE_W::new(self)
     }
@@ -264,11 +278,10 @@ impl crate::Readable for DVP2AXI_CONFIGUE_SPEC {
 #[doc = "`write(|w| ..)` method takes [dvp2axi_configue::W](W) writer structure"]
 impl crate::Writable for DVP2AXI_CONFIGUE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dvp2axi_configue to value 0"]
 impl crate::Resettable for DVP2AXI_CONFIGUE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

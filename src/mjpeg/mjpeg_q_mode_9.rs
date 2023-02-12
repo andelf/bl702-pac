@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
+    #[must_use]
     pub fn frame_q_mode_9(&mut self) -> FRAME_Q_MODE_9_W<0> {
         FRAME_Q_MODE_9_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for MJPEG_Q_MODE_9_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_q_mode_9::W](W) writer structure"]
 impl crate::Writable for MJPEG_Q_MODE_9_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_q_mode_9 to value 0"]
 impl crate::Resettable for MJPEG_Q_MODE_9_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

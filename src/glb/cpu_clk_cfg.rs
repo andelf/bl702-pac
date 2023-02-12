@@ -56,7 +56,7 @@ impl R {
     #[doc = "Bits 0:16"]
     #[inline(always)]
     pub fn cpu_rtc_div(&self) -> CPU_RTC_DIV_R {
-        CPU_RTC_DIV_R::new((self.bits & 0x0001_ffff) as u32)
+        CPU_RTC_DIV_R::new(self.bits & 0x0001_ffff)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:16"]
     #[inline(always)]
+    #[must_use]
     pub fn cpu_rtc_div(&mut self) -> CPU_RTC_DIV_W<0> {
         CPU_RTC_DIV_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cpu_rtc_en(&mut self) -> CPU_RTC_EN_W<18> {
         CPU_RTC_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cpu_rtc_sel(&mut self) -> CPU_RTC_SEL_W<19> {
         CPU_RTC_SEL_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn debug_ndreset_gate(&mut self) -> DEBUG_NDRESET_GATE_W<20> {
         DEBUG_NDRESET_GATE_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for CPU_CLK_CFG_SPEC {
 #[doc = "`write(|w| ..)` method takes [cpu_clk_cfg::W](W) writer structure"]
 impl crate::Writable for CPU_CLK_CFG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets CPU_CLK_CFG to value 0"]
 impl crate::Resettable for CPU_CLK_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

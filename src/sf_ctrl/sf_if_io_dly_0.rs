@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cs_dly_sel(&mut self) -> SF_CS_DLY_SEL_W<0> {
         SF_CS_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_cs2_dly_sel(&mut self) -> SF_CS2_DLY_SEL_W<2> {
         SF_CS2_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_out_dly_sel(&mut self) -> SF_CLK_OUT_DLY_SEL_W<8> {
         SF_CLK_OUT_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 26:27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_dqs_oe_dly_sel(&mut self) -> SF_DQS_OE_DLY_SEL_W<26> {
         SF_DQS_OE_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_dqs_di_dly_sel(&mut self) -> SF_DQS_DI_DLY_SEL_W<28> {
         SF_DQS_DI_DLY_SEL_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_dqs_do_dly_sel(&mut self) -> SF_DQS_DO_DLY_SEL_W<30> {
         SF_DQS_DO_DLY_SEL_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for SF_IF_IO_DLY_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_io_dly_0::W](W) writer structure"]
 impl crate::Writable for SF_IF_IO_DLY_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_io_dly_0 to value 0"]
 impl crate::Resettable for SF_IF_IO_DLY_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

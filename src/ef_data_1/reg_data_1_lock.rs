@@ -139,51 +139,61 @@ impl R {
 impl W {
     #[doc = "Bits 0:9"]
     #[inline(always)]
+    #[must_use]
     pub fn reserved_9_0(&mut self) -> RESERVED_9_0_W<0> {
         RESERVED_9_0_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_6(&mut self) -> WR_LOCK_KEY_SLOT_6_W<10> {
         WR_LOCK_KEY_SLOT_6_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_7(&mut self) -> WR_LOCK_KEY_SLOT_7_W<11> {
         WR_LOCK_KEY_SLOT_7_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_8(&mut self) -> WR_LOCK_KEY_SLOT_8_W<12> {
         WR_LOCK_KEY_SLOT_8_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_9(&mut self) -> WR_LOCK_KEY_SLOT_9_W<13> {
         WR_LOCK_KEY_SLOT_9_W::new(self)
     }
     #[doc = "Bits 16:25"]
     #[inline(always)]
+    #[must_use]
     pub fn reserved_25_16(&mut self) -> RESERVED_25_16_W<16> {
         RESERVED_25_16_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_6(&mut self) -> RD_LOCK_KEY_SLOT_6_W<26> {
         RD_LOCK_KEY_SLOT_6_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_7(&mut self) -> RD_LOCK_KEY_SLOT_7_W<27> {
         RD_LOCK_KEY_SLOT_7_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_8(&mut self) -> RD_LOCK_KEY_SLOT_8_W<28> {
         RD_LOCK_KEY_SLOT_8_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_9(&mut self) -> RD_LOCK_KEY_SLOT_9_W<29> {
         RD_LOCK_KEY_SLOT_9_W::new(self)
     }
@@ -206,11 +216,10 @@ impl crate::Readable for REG_DATA_1_LOCK_SPEC {
 #[doc = "`write(|w| ..)` method takes [reg_data_1_lock::W](W) writer structure"]
 impl crate::Writable for REG_DATA_1_LOCK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets reg_data_1_lock to value 0"]
 impl crate::Resettable for REG_DATA_1_LOCK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

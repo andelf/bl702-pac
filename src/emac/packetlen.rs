@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn maxfl(&mut self) -> MAXFL_W<0> {
         MAXFL_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn minfl(&mut self) -> MINFL_W<16> {
         MINFL_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for PACKETLEN_SPEC {
 #[doc = "`write(|w| ..)` method takes [packetlen::W](W) writer structure"]
 impl crate::Writable for PACKETLEN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PACKETLEN to value 0"]
 impl crate::Resettable for PACKETLEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

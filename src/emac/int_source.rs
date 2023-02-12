@@ -102,36 +102,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn txb(&mut self) -> TXB_W<0> {
         TXB_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn txe(&mut self) -> TXE_W<1> {
         TXE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rxb(&mut self) -> RXB_W<2> {
         RXB_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn rxe(&mut self) -> RXE_W<3> {
         RXE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn busy(&mut self) -> BUSY_W<4> {
         BUSY_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn txc(&mut self) -> TXC_W<5> {
         TXC_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn rxc(&mut self) -> RXC_W<6> {
         RXC_W::new(self)
     }
@@ -154,11 +161,10 @@ impl crate::Readable for INT_SOURCE_SPEC {
 #[doc = "`write(|w| ..)` method takes [int_source::W](W) writer structure"]
 impl crate::Writable for INT_SOURCE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets INT_SOURCE to value 0"]
 impl crate::Resettable for INT_SOURCE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

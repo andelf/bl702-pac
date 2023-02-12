@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_0_sboot_key_sel(&mut self) -> SE_AES_0_SBOOT_KEY_SEL_W<0> {
         SE_AES_0_SBOOT_KEY_SEL_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for SE_AES_0_SBOOT_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_aes_0_sboot::W](W) writer structure"]
 impl crate::Writable for SE_AES_0_SBOOT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_aes_0_sboot to value 0"]
 impl crate::Resettable for SE_AES_0_SBOOT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

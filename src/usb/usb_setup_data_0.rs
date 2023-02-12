@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_setup_data_b0(&mut self) -> STS_SETUP_DATA_B0_W<0> {
         STS_SETUP_DATA_B0_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_setup_data_b1(&mut self) -> STS_SETUP_DATA_B1_W<8> {
         STS_SETUP_DATA_B1_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_setup_data_b2(&mut self) -> STS_SETUP_DATA_B2_W<16> {
         STS_SETUP_DATA_B2_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_setup_data_b3(&mut self) -> STS_SETUP_DATA_B3_W<24> {
         STS_SETUP_DATA_B3_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for USB_SETUP_DATA_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_setup_data_0::W](W) writer structure"]
 impl crate::Writable for USB_SETUP_DATA_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_setup_data_0 to value 0"]
 impl crate::Resettable for USB_SETUP_DATA_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

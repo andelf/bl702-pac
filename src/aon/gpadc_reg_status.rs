@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_data_rdy(&mut self) -> GPADC_DATA_RDY_W<0> {
         GPADC_DATA_RDY_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_reserved(&mut self) -> GPADC_RESERVED_W<16> {
         GPADC_RESERVED_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for GPADC_REG_STATUS_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_status::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_STATUS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_status to value 0"]
 impl crate::Resettable for GPADC_REG_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

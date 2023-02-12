@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_prot_en(&mut self) -> SE_AES_PROT_EN_W<0> {
         SE_AES_PROT_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_id0_en(&mut self) -> SE_AES_ID0_EN_W<1> {
         SE_AES_ID0_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_id1_en(&mut self) -> SE_AES_ID1_EN_W<2> {
         SE_AES_ID1_EN_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for SE_AES_0_CTRL_PROT_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_aes_0_ctrl_prot::W](W) writer structure"]
 impl crate::Writable for SE_AES_0_CTRL_PROT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_aes_0_ctrl_prot to value 0"]
 impl crate::Resettable for SE_AES_0_CTRL_PROT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

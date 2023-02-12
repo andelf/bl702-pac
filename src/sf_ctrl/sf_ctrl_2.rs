@@ -112,41 +112,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_pad_sel(&mut self) -> SF_IF_PAD_SEL_W<0> {
         SF_IF_PAD_SEL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_pad_sel_lock(&mut self) -> SF_IF_PAD_SEL_LOCK_W<3> {
         SF_IF_PAD_SEL_LOCK_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_dtr_en(&mut self) -> SF_IF_DTR_EN_W<4> {
         SF_IF_DTR_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_dqs_en(&mut self) -> SF_IF_DQS_EN_W<5> {
         SF_IF_DQS_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_bk_swap(&mut self) -> SF_IF_BK_SWAP_W<28> {
         SF_IF_BK_SWAP_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_bk2_mode(&mut self) -> SF_IF_BK2_MODE_W<29> {
         SF_IF_BK2_MODE_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_bk2_en(&mut self) -> SF_IF_BK2_EN_W<30> {
         SF_IF_BK2_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_0_bk_sel(&mut self) -> SF_IF_0_BK_SEL_W<31> {
         SF_IF_0_BK_SEL_W::new(self)
     }
@@ -169,11 +177,10 @@ impl crate::Readable for SF_CTRL_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_ctrl_2::W](W) writer structure"]
 impl crate::Writable for SF_CTRL_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_ctrl_2 to value 0"]
 impl crate::Resettable for SF_CTRL_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

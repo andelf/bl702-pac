@@ -139,56 +139,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rfckg_afifo_adpll_inv(&mut self) -> RFCKG_AFIFO_ADPLL_INV_W<0> {
         RFCKG_AFIFO_ADPLL_INV_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rfckg_afifo_rxadc_inv(&mut self) -> RFCKG_AFIFO_RXADC_INV_W<1> {
         RFCKG_AFIFO_RXADC_INV_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rfckg_afifo_tx_inv(&mut self) -> RFCKG_AFIFO_TX_INV_W<2> {
         RFCKG_AFIFO_TX_INV_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_mac_lo_time_offset(&mut self) -> RF_MAC_LO_TIME_OFFSET_W<16> {
         RF_MAC_LO_TIME_OFFSET_W::new(self)
     }
     #[doc = "Bits 22:23"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_rx_mode_hw(&mut self) -> RF_RX_MODE_HW_W<22> {
         RF_RX_MODE_HW_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_rx_mode_4s(&mut self) -> RF_RX_MODE_4S_W<24> {
         RF_RX_MODE_4S_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_rx_mode_4s_en(&mut self) -> RF_RX_MODE_4S_EN_W<26> {
         RF_RX_MODE_4S_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_rx_en_4s(&mut self) -> RF_RX_EN_4S_W<28> {
         RF_RX_EN_4S_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_rx_en_src(&mut self) -> RF_RX_EN_SRC_W<29> {
         RF_RX_EN_SRC_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_tx_en_4s(&mut self) -> RF_TX_EN_4S_W<30> {
         RF_TX_EN_4S_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_tx_en_src(&mut self) -> RF_TX_EN_SRC_W<31> {
         RF_TX_EN_SRC_W::new(self)
     }
@@ -211,11 +222,10 @@ impl crate::Readable for RF_TOP_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_top::W](W) writer structure"]
 impl crate::Writable for RF_TOP_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_top to value 0"]
 impl crate::Resettable for RF_TOP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

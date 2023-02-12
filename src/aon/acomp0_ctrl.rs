@@ -117,41 +117,49 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_en(&mut self) -> ACOMP0_EN_W<0> {
         ACOMP0_EN_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_hyst_seln(&mut self) -> ACOMP0_HYST_SELN_W<4> {
         ACOMP0_HYST_SELN_W::new(self)
     }
     #[doc = "Bits 7:9"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_hyst_selp(&mut self) -> ACOMP0_HYST_SELP_W<7> {
         ACOMP0_HYST_SELP_W::new(self)
     }
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_bias_prog(&mut self) -> ACOMP0_BIAS_PROG_W<10> {
         ACOMP0_BIAS_PROG_W::new(self)
     }
     #[doc = "Bits 12:17"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_level_sel(&mut self) -> ACOMP0_LEVEL_SEL_W<12> {
         ACOMP0_LEVEL_SEL_W::new(self)
     }
     #[doc = "Bits 18:21"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_neg_sel(&mut self) -> ACOMP0_NEG_SEL_W<18> {
         ACOMP0_NEG_SEL_W::new(self)
     }
     #[doc = "Bits 22:25"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_pos_sel(&mut self) -> ACOMP0_POS_SEL_W<22> {
         ACOMP0_POS_SEL_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_muxen(&mut self) -> ACOMP0_MUXEN_W<26> {
         ACOMP0_MUXEN_W::new(self)
     }
@@ -174,11 +182,10 @@ impl crate::Readable for ACOMP0_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [acomp0_ctrl::W](W) writer structure"]
 impl crate::Writable for ACOMP0_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets acomp0_ctrl to value 0"]
 impl crate::Resettable for ACOMP0_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

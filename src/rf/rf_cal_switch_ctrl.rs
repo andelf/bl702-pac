@@ -96,31 +96,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn acal_en(&mut self) -> ACAL_EN_W<0> {
         ACAL_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn kcal_en(&mut self) -> KCAL_EN_W<4> {
         KCAL_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn rccal_en(&mut self) -> RCCAL_EN_W<8> {
         RCCAL_EN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_acal_en(&mut self) -> INC_ACAL_EN_W<12> {
         INC_ACAL_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_fcal_en(&mut self) -> INC_FCAL_EN_W<16> {
         INC_FCAL_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn inc_fcal_en_hw(&mut self) -> INC_FCAL_EN_HW_W<17> {
         INC_FCAL_EN_HW_W::new(self)
     }
@@ -143,11 +149,10 @@ impl crate::Readable for RF_CAL_SWITCH_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_cal_switch_ctrl::W](W) writer structure"]
 impl crate::Writable for RF_CAL_SWITCH_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_cal_switch_ctrl to value 0"]
 impl crate::Resettable for RF_CAL_SWITCH_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

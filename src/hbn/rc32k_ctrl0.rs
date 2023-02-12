@@ -145,56 +145,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_cal_done(&mut self) -> RC32K_CAL_DONE_W<0> {
         RC32K_CAL_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_rdy(&mut self) -> RC32K_RDY_W<1> {
         RC32K_RDY_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_cal_inprogress(&mut self) -> RC32K_CAL_INPROGRESS_W<2> {
         RC32K_CAL_INPROGRESS_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_cal_div(&mut self) -> RC32K_CAL_DIV_W<3> {
         RC32K_CAL_DIV_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_cal_precharge(&mut self) -> RC32K_CAL_PRECHARGE_W<5> {
         RC32K_CAL_PRECHARGE_W::new(self)
     }
     #[doc = "Bits 6:15"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_dig_code_fr_cal(&mut self) -> RC32K_DIG_CODE_FR_CAL_W<6> {
         RC32K_DIG_CODE_FR_CAL_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_vref_dly(&mut self) -> RC32K_VREF_DLY_W<16> {
         RC32K_VREF_DLY_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_allow_cal(&mut self) -> RC32K_ALLOW_CAL_W<18> {
         RC32K_ALLOW_CAL_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_ext_code_en(&mut self) -> RC32K_EXT_CODE_EN_W<19> {
         RC32K_EXT_CODE_EN_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_cal_en(&mut self) -> RC32K_CAL_EN_W<20> {
         RC32K_CAL_EN_W::new(self)
     }
     #[doc = "Bits 22:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rc32k_code_fr_ext(&mut self) -> RC32K_CODE_FR_EXT_W<22> {
         RC32K_CODE_FR_EXT_W::new(self)
     }
@@ -217,11 +228,10 @@ impl crate::Readable for RC32K_CTRL0_SPEC {
 #[doc = "`write(|w| ..)` method takes [rc32k_ctrl0::W](W) writer structure"]
 impl crate::Writable for RC32K_CTRL0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rc32k_ctrl0 to value 0"]
 impl crate::Resettable for RC32K_CTRL0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

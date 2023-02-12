@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_resv1(&mut self) -> ADPLL_RESV1_W<0> {
         ADPLL_RESV1_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_resv0(&mut self) -> ADPLL_RESV0_W<16> {
         ADPLL_RESV0_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for ADPLL_RESERVED_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_reserved::W](W) writer structure"]
 impl crate::Writable for ADPLL_RESERVED_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_reserved to value 0"]
 impl crate::Resettable for ADPLL_RESERVED_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

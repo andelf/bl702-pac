@@ -112,41 +112,49 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_timeout_en(&mut self) -> BMX_TIMEOUT_EN_W<0> {
         BMX_TIMEOUT_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_arb_mode(&mut self) -> BMX_ARB_MODE_W<4> {
         BMX_ARB_MODE_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_err_en(&mut self) -> BMX_ERR_EN_W<8> {
         BMX_ERR_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_busy_option_dis(&mut self) -> BMX_BUSY_OPTION_DIS_W<9> {
         BMX_BUSY_OPTION_DIS_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_gating_dis(&mut self) -> BMX_GATING_DIS_W<10> {
         BMX_GATING_DIS_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn hsel_option(&mut self) -> HSEL_OPTION_W<12> {
         HSEL_OPTION_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn pds_apb_cfg(&mut self) -> PDS_APB_CFG_W<16> {
         PDS_APB_CFG_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_apb_cfg(&mut self) -> HBN_APB_CFG_W<24> {
         HBN_APB_CFG_W::new(self)
     }
@@ -169,11 +177,10 @@ impl crate::Readable for BMX_CFG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [bmx_cfg1::W](W) writer structure"]
 impl crate::Writable for BMX_CFG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets bmx_cfg1 to value 0"]
 impl crate::Resettable for BMX_CFG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

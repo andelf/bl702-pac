@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_pi(&mut self) -> EF_IF_CYC_PI_W<0> {
         EF_IF_CYC_PI_W::new(self)
     }
     #[doc = "Bits 6:13"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_pp(&mut self) -> EF_IF_CYC_PP_W<6> {
         EF_IF_CYC_PP_W::new(self)
     }
     #[doc = "Bits 14:19"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_wr_adr(&mut self) -> EF_IF_CYC_WR_ADR_W<14> {
         EF_IF_CYC_WR_ADR_W::new(self)
     }
     #[doc = "Bits 20:25"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_ps_cs(&mut self) -> EF_IF_CYC_PS_CS_W<20> {
         EF_IF_CYC_PS_CS_W::new(self)
     }
     #[doc = "Bits 26:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cyc_pd_cs_h(&mut self) -> EF_IF_CYC_PD_CS_H_W<26> {
         EF_IF_CYC_PD_CS_H_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for EF_IF_CYC_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_if_cyc_1::W](W) writer structure"]
 impl crate::Writable for EF_IF_CYC_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_if_cyc_1 to value 0"]
 impl crate::Resettable for EF_IF_CYC_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

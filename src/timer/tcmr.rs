@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn timer2_mode(&mut self) -> TIMER2_MODE_W<1> {
         TIMER2_MODE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn timer3_mode(&mut self) -> TIMER3_MODE_W<2> {
         TIMER3_MODE_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for TCMR_SPEC {
 #[doc = "`write(|w| ..)` method takes [tcmr::W](W) writer structure"]
 impl crate::Writable for TCMR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TCMR to value 0"]
 impl crate::Resettable for TCMR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

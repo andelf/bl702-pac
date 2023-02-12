@@ -106,36 +106,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn led_din_reg(&mut self) -> LED_DIN_REG_W<0> {
         LED_DIN_REG_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn led_din_sel(&mut self) -> LED_DIN_SEL_W<1> {
         LED_DIN_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn led_din_polarity_sel(&mut self) -> LED_DIN_POLARITY_SEL_W<2> {
         LED_DIN_POLARITY_SEL_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn leddrv_ibias(&mut self) -> LEDDRV_IBIAS_W<4> {
         LEDDRV_IBIAS_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn ir_rx_gpio_sel(&mut self) -> IR_RX_GPIO_SEL_W<8> {
         IR_RX_GPIO_SEL_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn leddrv_out_en(&mut self) -> LEDDRV_OUT_EN_W<28> {
         LEDDRV_OUT_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_leddrv(&mut self) -> PU_LEDDRV_W<31> {
         PU_LEDDRV_W::new(self)
     }
@@ -158,11 +165,10 @@ impl crate::Readable for LED_DRIVER_SPEC {
 #[doc = "`write(|w| ..)` method takes [led_driver::W](W) writer structure"]
 impl crate::Writable for LED_DRIVER_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets led_driver to value 0"]
 impl crate::Resettable for LED_DRIVER_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

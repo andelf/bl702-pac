@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_irtx_data_word1(&mut self) -> CR_IRTX_DATA_WORD1_W<0> {
         CR_IRTX_DATA_WORD1_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for IRTX_DATA_WORD1_SPEC {
 #[doc = "`write(|w| ..)` method takes [irtx_data_word1::W](W) writer structure"]
 impl crate::Writable for IRTX_DATA_WORD1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets irtx_data_word1 to value 0"]
 impl crate::Resettable for IRTX_DATA_WORD1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

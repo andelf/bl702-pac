@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_urx_abr_prd_start(&mut self) -> STS_URX_ABR_PRD_START_W<0> {
         STS_URX_ABR_PRD_START_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_urx_abr_prd_0x55(&mut self) -> STS_URX_ABR_PRD_0X55_W<16> {
         STS_URX_ABR_PRD_0X55_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for STS_URX_ABR_PRD_SPEC {
 #[doc = "`write(|w| ..)` method takes [sts_urx_abr_prd::W](W) writer structure"]
 impl crate::Writable for STS_URX_ABR_PRD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sts_urx_abr_prd to value 0"]
 impl crate::Resettable for STS_URX_ABR_PRD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

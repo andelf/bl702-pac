@@ -48,7 +48,7 @@ impl R {
     #[doc = "Bits 0:25"]
     #[inline(always)]
     pub fn gpadc_dma_rdata(&self) -> GPADC_DMA_RDATA_R {
-        GPADC_DMA_RDATA_R::new((self.bits & 0x03ff_ffff) as u32)
+        GPADC_DMA_RDATA_R::new(self.bits & 0x03ff_ffff)
     }
     #[doc = "Bits 26:31"]
     #[inline(always)]
@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:25"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_dma_rdata(&mut self) -> GPADC_DMA_RDATA_W<0> {
         GPADC_DMA_RDATA_W::new(self)
     }
     #[doc = "Bits 26:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_31_26(&mut self) -> RSVD_31_26_W<26> {
         RSVD_31_26_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for GPADC_DMA_RDATA_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_dma_rdata::W](W) writer structure"]
 impl crate::Writable for GPADC_DMA_RDATA_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_dma_rdata to value 0"]
 impl crate::Resettable for GPADC_DMA_RDATA_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

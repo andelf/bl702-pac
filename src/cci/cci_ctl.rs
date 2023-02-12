@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_write_flag(&mut self) -> CCI_WRITE_FLAG_W<0> {
         CCI_WRITE_FLAG_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cci_read_flag(&mut self) -> CCI_READ_FLAG_W<1> {
         CCI_READ_FLAG_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn ahb_state(&mut self) -> AHB_STATE_W<2> {
         AHB_STATE_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for CCI_CTL_SPEC {
 #[doc = "`write(|w| ..)` method takes [cci_ctl::W](W) writer structure"]
 impl crate::Writable for CCI_CTL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cci_ctl to value 0"]
 impl crate::Resettable for CCI_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

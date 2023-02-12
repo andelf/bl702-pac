@@ -177,76 +177,91 @@ impl R {
 impl W {
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_sf_rx_inv_sel(&mut self) -> SF_CLK_SF_RX_INV_SEL_W<2> {
         SF_CLK_SF_RX_INV_SEL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_out_gate_en(&mut self) -> SF_CLK_OUT_GATE_EN_W<3> {
         SF_CLK_OUT_GATE_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_out_inv_sel(&mut self) -> SF_CLK_OUT_INV_SEL_W<4> {
         SF_CLK_OUT_INV_SEL_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_clk_sahb_sram_sel(&mut self) -> SF_CLK_SAHB_SRAM_SEL_W<5> {
         SF_CLK_SAHB_SRAM_SEL_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_read_dly_n(&mut self) -> SF_IF_READ_DLY_N_W<8> {
         SF_IF_READ_DLY_N_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_read_dly_en(&mut self) -> SF_IF_READ_DLY_EN_W<11> {
         SF_IF_READ_DLY_EN_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_int(&mut self) -> SF_IF_INT_W<16> {
         SF_IF_INT_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_int_clr(&mut self) -> SF_IF_INT_CLR_W<17> {
         SF_IF_INT_CLR_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_int_set(&mut self) -> SF_IF_INT_SET_W<18> {
         SF_IF_INT_SET_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_dly_mode(&mut self) -> SF_AES_DLY_MODE_W<19> {
         SF_AES_DLY_MODE_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_dout_endian(&mut self) -> SF_AES_DOUT_ENDIAN_W<20> {
         SF_AES_DOUT_ENDIAN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_ctr_plus_en(&mut self) -> SF_AES_CTR_PLUS_EN_W<21> {
         SF_AES_CTR_PLUS_EN_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_key_endian(&mut self) -> SF_AES_KEY_ENDIAN_W<22> {
         SF_AES_KEY_ENDIAN_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_iv_endian(&mut self) -> SF_AES_IV_ENDIAN_W<23> {
         SF_AES_IV_ENDIAN_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_id(&mut self) -> SF_ID_W<24> {
         SF_ID_W::new(self)
     }
@@ -269,11 +284,10 @@ impl crate::Readable for SF_CTRL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_ctrl_0::W](W) writer structure"]
 impl crate::Writable for SF_CTRL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_ctrl_0 to value 0"]
 impl crate::Resettable for SF_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn apb_cci_addr(&mut self) -> APB_CCI_ADDR_W<0> {
         APB_CCI_ADDR_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for CCI_ADDR_SPEC {
 #[doc = "`write(|w| ..)` method takes [cci_addr::W](W) writer structure"]
 impl crate::Writable for CCI_ADDR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cci_addr to value 0"]
 impl crate::Resettable for CCI_ADDR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

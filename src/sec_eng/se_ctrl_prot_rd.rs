@@ -228,96 +228,115 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_sha_prot_en_rd(&mut self) -> SE_SHA_PROT_EN_RD_W<0> {
         SE_SHA_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn se_sha_id0_en_rd(&mut self) -> SE_SHA_ID0_EN_RD_W<1> {
         SE_SHA_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_sha_id1_en_rd(&mut self) -> SE_SHA_ID1_EN_RD_W<2> {
         SE_SHA_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_prot_en_rd(&mut self) -> SE_AES_PROT_EN_RD_W<4> {
         SE_AES_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_id0_en_rd(&mut self) -> SE_AES_ID0_EN_RD_W<5> {
         SE_AES_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn se_aes_id1_en_rd(&mut self) -> SE_AES_ID1_EN_RD_W<6> {
         SE_AES_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_prot_en_rd(&mut self) -> SE_TRNG_PROT_EN_RD_W<8> {
         SE_TRNG_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_id0_en_rd(&mut self) -> SE_TRNG_ID0_EN_RD_W<9> {
         SE_TRNG_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_id1_en_rd(&mut self) -> SE_TRNG_ID1_EN_RD_W<10> {
         SE_TRNG_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn se_pka_prot_en_rd(&mut self) -> SE_PKA_PROT_EN_RD_W<12> {
         SE_PKA_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn se_pka_id0_en_rd(&mut self) -> SE_PKA_ID0_EN_RD_W<13> {
         SE_PKA_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn se_pka_id1_en_rd(&mut self) -> SE_PKA_ID1_EN_RD_W<14> {
         SE_PKA_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_prot_en_rd(&mut self) -> SE_CDET_PROT_EN_RD_W<16> {
         SE_CDET_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_id0_en_rd(&mut self) -> SE_CDET_ID0_EN_RD_W<17> {
         SE_CDET_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_id1_en_rd(&mut self) -> SE_CDET_ID1_EN_RD_W<18> {
         SE_CDET_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn se_gmac_prot_en_rd(&mut self) -> SE_GMAC_PROT_EN_RD_W<20> {
         SE_GMAC_PROT_EN_RD_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn se_gmac_id0_en_rd(&mut self) -> SE_GMAC_ID0_EN_RD_W<21> {
         SE_GMAC_ID0_EN_RD_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn se_gmac_id1_en_rd(&mut self) -> SE_GMAC_ID1_EN_RD_W<22> {
         SE_GMAC_ID1_EN_RD_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn se_dbg_dis(&mut self) -> SE_DBG_DIS_W<31> {
         SE_DBG_DIS_W::new(self)
     }
@@ -340,11 +359,10 @@ impl crate::Readable for SE_CTRL_PROT_RD_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_ctrl_prot_rd::W](W) writer structure"]
 impl crate::Writable for SE_CTRL_PROT_RD_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_ctrl_prot_rd to value 0"]
 impl crate::Resettable for SE_CTRL_PROT_RD_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

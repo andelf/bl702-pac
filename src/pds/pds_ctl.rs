@@ -281,131 +281,157 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn pds_start_ps(&mut self) -> PDS_START_PS_W<0> {
         PDS_START_PS_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_sleep_forever(&mut self) -> CR_SLEEP_FOREVER_W<1> {
         CR_SLEEP_FOREVER_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xtal_force_off(&mut self) -> CR_XTAL_FORCE_OFF_W<2> {
         CR_XTAL_FORCE_OFF_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_wifi_pds_save_state(&mut self) -> CR_WIFI_PDS_SAVE_STATE_W<3> {
         CR_WIFI_PDS_SAVE_STATE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pd_dcdc18(&mut self) -> CR_PDS_PD_DCDC18_W<4> {
         CR_PDS_PD_DCDC18_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pd_bg_sys(&mut self) -> CR_PDS_PD_BG_SYS_W<5> {
         CR_PDS_PD_BG_SYS_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ctrl_gpio_ie_pu_pd(&mut self) -> CR_PDS_CTRL_GPIO_IE_PU_PD_W<6> {
         CR_PDS_CTRL_GPIO_IE_PU_PD_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ctrl_pu_flash(&mut self) -> CR_PDS_CTRL_PU_FLASH_W<7> {
         CR_PDS_CTRL_PU_FLASH_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_gate_clk(&mut self) -> CR_PDS_GATE_CLK_W<8> {
         CR_PDS_GATE_CLK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_mem_stby(&mut self) -> CR_PDS_MEM_STBY_W<9> {
         CR_PDS_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_sw_pu_flash(&mut self) -> CR_SW_PU_FLASH_W<10> {
         CR_SW_PU_FLASH_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_iso_en(&mut self) -> CR_PDS_ISO_EN_W<11> {
         CR_PDS_ISO_EN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_wait_xtal_rdy(&mut self) -> CR_PDS_WAIT_XTAL_RDY_W<12> {
         CR_PDS_WAIT_XTAL_RDY_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pwr_off(&mut self) -> CR_PDS_PWR_OFF_W<13> {
         CR_PDS_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pd_xtal(&mut self) -> CR_PDS_PD_XTAL_W<14> {
         CR_PDS_PD_XTAL_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_soc_enb_force_on(&mut self) -> CR_PDS_SOC_ENB_FORCE_ON_W<15> {
         CR_PDS_SOC_ENB_FORCE_ON_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_rst_soc_en(&mut self) -> CR_PDS_RST_SOC_EN_W<16> {
         CR_PDS_RST_SOC_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_rc32m_off_dis(&mut self) -> CR_PDS_RC32M_OFF_DIS_W<17> {
         CR_PDS_RC32M_OFF_DIS_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ldo_vsel_en(&mut self) -> CR_PDS_LDO_VSEL_EN_W<18> {
         CR_PDS_LDO_VSEL_EN_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ram_lp_with_clk_en(&mut self) -> CR_PDS_RAM_LP_WITH_CLK_EN_W<19> {
         CR_PDS_RAM_LP_WITH_CLK_EN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_np_wfi_mask(&mut self) -> CR_NP_WFI_MASK_W<21> {
         CR_NP_WFI_MASK_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pd_ldo11(&mut self) -> CR_PDS_PD_LDO11_W<22> {
         CR_PDS_PD_LDO11_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_ram_clk_en(&mut self) -> CR_PDS_FORCE_RAM_CLK_EN_W<23> {
         CR_PDS_FORCE_RAM_CLK_EN_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ldo_vol(&mut self) -> CR_PDS_LDO_VOL_W<24> {
         CR_PDS_LDO_VOL_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ctrl_rf(&mut self) -> CR_PDS_CTRL_RF_W<28> {
         CR_PDS_CTRL_RF_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_ctrl_pll(&mut self) -> CR_PDS_CTRL_PLL_W<30> {
         CR_PDS_CTRL_PLL_W::new(self)
     }
@@ -428,11 +454,10 @@ impl crate::Readable for PDS_CTL_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_ctl::W](W) writer structure"]
 impl crate::Writable for PDS_CTL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PDS_CTL to value 0"]
 impl crate::Resettable for PDS_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

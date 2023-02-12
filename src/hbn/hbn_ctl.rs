@@ -187,81 +187,97 @@ impl R {
 impl W {
     #[doc = "Bits 0:6"]
     #[inline(always)]
+    #[must_use]
     pub fn rtc_ctl(&mut self) -> RTC_CTL_W<0> {
         RTC_CTL_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_mode(&mut self) -> HBN_MODE_W<7> {
         HBN_MODE_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn trap_mode(&mut self) -> TRAP_MODE_W<8> {
         TRAP_MODE_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn pwrdn_hbn_core(&mut self) -> PWRDN_HBN_CORE_W<9> {
         PWRDN_HBN_CORE_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn pwrdn_hbn_rtc(&mut self) -> PWRDN_HBN_RTC_W<11> {
         PWRDN_HBN_RTC_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_rst(&mut self) -> SW_RST_W<12> {
         SW_RST_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_dis_pwr_off_ldo11(&mut self) -> HBN_DIS_PWR_OFF_LDO11_W<13> {
         HBN_DIS_PWR_OFF_LDO11_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_dis_pwr_off_ldo11_rt(&mut self) -> HBN_DIS_PWR_OFF_LDO11_RT_W<14> {
         HBN_DIS_PWR_OFF_LDO11_RT_W::new(self)
     }
     #[doc = "Bits 15:18"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_ldo11_rt_vout_sel(&mut self) -> HBN_LDO11_RT_VOUT_SEL_W<15> {
         HBN_LDO11_RT_VOUT_SEL_W::new(self)
     }
     #[doc = "Bits 19:22"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_ldo11_aon_vout_sel(&mut self) -> HBN_LDO11_AON_VOUT_SEL_W<19> {
         HBN_LDO11_AON_VOUT_SEL_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_dcdc18_aon(&mut self) -> PU_DCDC18_AON_W<23> {
         PU_DCDC18_AON_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn rtc_dly_option(&mut self) -> RTC_DLY_OPTION_W<24> {
         RTC_DLY_OPTION_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn pwr_on_option(&mut self) -> PWR_ON_OPTION_W<25> {
         PWR_ON_OPTION_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn sram_slp_option(&mut self) -> SRAM_SLP_OPTION_W<26> {
         SRAM_SLP_OPTION_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn sram_slp(&mut self) -> SRAM_SLP_W<27> {
         SRAM_SLP_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_state(&mut self) -> HBN_STATE_W<28> {
         HBN_STATE_W::new(self)
     }
@@ -284,11 +300,10 @@ impl crate::Readable for HBN_CTL_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_ctl::W](W) writer structure"]
 impl crate::Writable for HBN_CTL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_CTL to value 0"]
 impl crate::Resettable for HBN_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

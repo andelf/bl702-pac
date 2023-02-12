@@ -104,36 +104,43 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_size(&mut self) -> CR_EP2_SIZE_W<0> {
         CR_EP2_SIZE_W::new(self)
     }
     #[doc = "Bits 11:12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_dir(&mut self) -> CR_EP2_DIR_W<11> {
         CR_EP2_DIR_W::new(self)
     }
     #[doc = "Bits 13:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_type(&mut self) -> CR_EP2_TYPE_W<13> {
         CR_EP2_TYPE_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_stall(&mut self) -> CR_EP2_STALL_W<16> {
         CR_EP2_STALL_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_nack(&mut self) -> CR_EP2_NACK_W<17> {
         CR_EP2_NACK_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_ep2_rdy(&mut self) -> CR_EP2_RDY_W<18> {
         CR_EP2_RDY_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_ep2_rdy(&mut self) -> STS_EP2_RDY_W<19> {
         STS_EP2_RDY_W::new(self)
     }
@@ -156,11 +163,10 @@ impl crate::Readable for EP2_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [ep2_config::W](W) writer structure"]
 impl crate::Writable for EP2_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ep2_config to value 0"]
 impl crate::Resettable for EP2_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

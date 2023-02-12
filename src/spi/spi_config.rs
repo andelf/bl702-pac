@@ -141,56 +141,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_m_en(&mut self) -> CR_SPI_M_EN_W<0> {
         CR_SPI_M_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_s_en(&mut self) -> CR_SPI_S_EN_W<1> {
         CR_SPI_S_EN_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_frame_size(&mut self) -> CR_SPI_FRAME_SIZE_W<2> {
         CR_SPI_FRAME_SIZE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_sclk_pol(&mut self) -> CR_SPI_SCLK_POL_W<4> {
         CR_SPI_SCLK_POL_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_sclk_ph(&mut self) -> CR_SPI_SCLK_PH_W<5> {
         CR_SPI_SCLK_PH_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_bit_inv(&mut self) -> CR_SPI_BIT_INV_W<6> {
         CR_SPI_BIT_INV_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_byte_inv(&mut self) -> CR_SPI_BYTE_INV_W<7> {
         CR_SPI_BYTE_INV_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_rxd_ignr_en(&mut self) -> CR_SPI_RXD_IGNR_EN_W<8> {
         CR_SPI_RXD_IGNR_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_m_cont_en(&mut self) -> CR_SPI_M_CONT_EN_W<9> {
         CR_SPI_M_CONT_EN_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_deg_en(&mut self) -> CR_SPI_DEG_EN_W<11> {
         CR_SPI_DEG_EN_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_deg_cnt(&mut self) -> CR_SPI_DEG_CNT_W<12> {
         CR_SPI_DEG_CNT_W::new(self)
     }
@@ -213,11 +224,10 @@ impl crate::Readable for SPI_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [spi_config::W](W) writer structure"]
 impl crate::Writable for SPI_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets spi_config to value 0"]
 impl crate::Resettable for SPI_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

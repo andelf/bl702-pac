@@ -229,96 +229,115 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_normal_int_0(&mut self) -> STS_NORMAL_INT_0_W<0> {
         STS_NORMAL_INT_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_normal_int_1(&mut self) -> STS_NORMAL_INT_1_W<1> {
         STS_NORMAL_INT_1_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_mem_int_0(&mut self) -> STS_MEM_INT_0_W<2> {
         STS_MEM_INT_0_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_mem_int_1(&mut self) -> STS_MEM_INT_1_W<3> {
         STS_MEM_INT_1_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_frame_int_0(&mut self) -> STS_FRAME_INT_0_W<4> {
         STS_FRAME_INT_0_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_frame_int_1(&mut self) -> STS_FRAME_INT_1_W<5> {
         STS_FRAME_INT_1_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_fifo_int_0(&mut self) -> STS_FIFO_INT_0_W<6> {
         STS_FIFO_INT_0_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_fifo_int_1(&mut self) -> STS_FIFO_INT_1_W<7> {
         STS_FIFO_INT_1_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_hcnt_int(&mut self) -> STS_HCNT_INT_W<8> {
         STS_HCNT_INT_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_vcnt_int(&mut self) -> STS_VCNT_INT_W<9> {
         STS_VCNT_INT_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ahb_idle_0(&mut self) -> AHB_IDLE_0_W<16> {
         AHB_IDLE_0_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ahb_idle_1(&mut self) -> AHB_IDLE_1_W<17> {
         AHB_IDLE_1_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn st_dvp_idle(&mut self) -> ST_DVP_IDLE_W<19> {
         ST_DVP_IDLE_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn frame_valid_cnt_0(&mut self) -> FRAME_VALID_CNT_0_W<20> {
         FRAME_VALID_CNT_0_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn frame_valid_cnt_1(&mut self) -> FRAME_VALID_CNT_1_W<24> {
         FRAME_VALID_CNT_1_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn st_bus_idle(&mut self) -> ST_BUS_IDLE_W<28> {
         ST_BUS_IDLE_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn st_bus_func(&mut self) -> ST_BUS_FUNC_W<29> {
         ST_BUS_FUNC_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn st_bus_wait(&mut self) -> ST_BUS_WAIT_W<30> {
         ST_BUS_WAIT_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn st_bus_flsh(&mut self) -> ST_BUS_FLSH_W<31> {
         ST_BUS_FLSH_W::new(self)
     }
@@ -341,11 +360,10 @@ impl crate::Readable for DVP_STATUS_AND_ERROR_SPEC {
 #[doc = "`write(|w| ..)` method takes [dvp_status_and_error::W](W) writer structure"]
 impl crate::Writable for DVP_STATUS_AND_ERROR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dvp_status_and_error to value 0"]
 impl crate::Resettable for DVP_STATUS_AND_ERROR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

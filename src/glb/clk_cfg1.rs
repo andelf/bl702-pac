@@ -159,66 +159,79 @@ impl R {
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
+    #[must_use]
     pub fn qdec_clk_div(&mut self) -> QDEC_CLK_DIV_W<0> {
         QDEC_CLK_DIV_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn qdec_clk_sel(&mut self) -> QDEC_CLK_SEL_W<7> {
         QDEC_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_clk_en(&mut self) -> USB_CLK_EN_W<8> {
         USB_CLK_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn dll_48m_div_en(&mut self) -> DLL_48M_DIV_EN_W<9> {
         DLL_48M_DIV_EN_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_i2s_clk_sel(&mut self) -> REG_I2S_CLK_SEL_W<12> {
         REG_I2S_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_i2s0_clk_en(&mut self) -> REG_I2S0_CLK_EN_W<13> {
         REG_I2S0_CLK_EN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_i2s_0_ref_clk_oe(&mut self) -> REG_I2S_0_REF_CLK_OE_W<14> {
         REG_I2S_0_REF_CLK_OE_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn ble_clk_sel(&mut self) -> BLE_CLK_SEL_W<16> {
         BLE_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn ble_en(&mut self) -> BLE_EN_W<24> {
         BLE_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn m154_zb_en(&mut self) -> M154_ZB_EN_W<25> {
         M154_ZB_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cam_ref_clk_en(&mut self) -> REG_CAM_REF_CLK_EN_W<28> {
         REG_CAM_REF_CLK_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cam_ref_clk_src_sel(&mut self) -> REG_CAM_REF_CLK_SRC_SEL_W<29> {
         REG_CAM_REF_CLK_SRC_SEL_W::new(self)
     }
     #[doc = "Bits 30:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cam_ref_clk_div(&mut self) -> REG_CAM_REF_CLK_DIV_W<30> {
         REG_CAM_REF_CLK_DIV_W::new(self)
     }
@@ -241,11 +254,10 @@ impl crate::Readable for CLK_CFG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [clk_cfg1::W](W) writer structure"]
 impl crate::Writable for CLK_CFG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clk_cfg1 to value 0"]
 impl crate::Resettable for CLK_CFG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

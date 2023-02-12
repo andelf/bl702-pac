@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_2_cmd_buf_0(&mut self) -> SF_IF_2_CMD_BUF_0_W<0> {
         SF_IF_2_CMD_BUF_0_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for SF_IF_IAHB_4_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_iahb_4::W](W) writer structure"]
 impl crate::Writable for SF_IF_IAHB_4_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_iahb_4 to value 0"]
 impl crate::Resettable for SF_IF_IAHB_4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

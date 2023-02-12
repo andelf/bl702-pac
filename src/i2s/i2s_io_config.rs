@@ -95,31 +95,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_txd_inv(&mut self) -> CR_I2S_TXD_INV_W<0> {
         CR_I2S_TXD_INV_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_rxd_inv(&mut self) -> CR_I2S_RXD_INV_W<1> {
         CR_I2S_RXD_INV_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_fs_inv(&mut self) -> CR_I2S_FS_INV_W<2> {
         CR_I2S_FS_INV_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_bclk_inv(&mut self) -> CR_I2S_BCLK_INV_W<3> {
         CR_I2S_BCLK_INV_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_deg_cnt(&mut self) -> CR_DEG_CNT_W<4> {
         CR_DEG_CNT_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_deg_en(&mut self) -> CR_DEG_EN_W<7> {
         CR_DEG_EN_W::new(self)
     }
@@ -142,11 +148,10 @@ impl crate::Readable for I2S_IO_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2s_io_config::W](W) writer structure"]
 impl crate::Writable for I2S_IO_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2s_io_config to value 0"]
 impl crate::Resettable for I2S_IO_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

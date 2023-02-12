@@ -359,161 +359,193 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s20_lock(&mut self) -> TZC_GLB_SWRST_S20_LOCK_W<0> {
         TZC_GLB_SWRST_S20_LOCK_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s21_lock(&mut self) -> TZC_GLB_SWRST_S21_LOCK_W<1> {
         TZC_GLB_SWRST_S21_LOCK_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s22_lock(&mut self) -> TZC_GLB_SWRST_S22_LOCK_W<2> {
         TZC_GLB_SWRST_S22_LOCK_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s23_lock(&mut self) -> TZC_GLB_SWRST_S23_LOCK_W<3> {
         TZC_GLB_SWRST_S23_LOCK_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s24_lock(&mut self) -> TZC_GLB_SWRST_S24_LOCK_W<4> {
         TZC_GLB_SWRST_S24_LOCK_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s25_lock(&mut self) -> TZC_GLB_SWRST_S25_LOCK_W<5> {
         TZC_GLB_SWRST_S25_LOCK_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s26_lock(&mut self) -> TZC_GLB_SWRST_S26_LOCK_W<6> {
         TZC_GLB_SWRST_S26_LOCK_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s27_lock(&mut self) -> TZC_GLB_SWRST_S27_LOCK_W<7> {
         TZC_GLB_SWRST_S27_LOCK_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s28_lock(&mut self) -> TZC_GLB_SWRST_S28_LOCK_W<8> {
         TZC_GLB_SWRST_S28_LOCK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s29_lock(&mut self) -> TZC_GLB_SWRST_S29_LOCK_W<9> {
         TZC_GLB_SWRST_S29_LOCK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2a_lock(&mut self) -> TZC_GLB_SWRST_S2A_LOCK_W<10> {
         TZC_GLB_SWRST_S2A_LOCK_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2b_lock(&mut self) -> TZC_GLB_SWRST_S2B_LOCK_W<11> {
         TZC_GLB_SWRST_S2B_LOCK_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2c_lock(&mut self) -> TZC_GLB_SWRST_S2C_LOCK_W<12> {
         TZC_GLB_SWRST_S2C_LOCK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2d_lock(&mut self) -> TZC_GLB_SWRST_S2D_LOCK_W<13> {
         TZC_GLB_SWRST_S2D_LOCK_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2e_lock(&mut self) -> TZC_GLB_SWRST_S2E_LOCK_W<14> {
         TZC_GLB_SWRST_S2E_LOCK_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s2f_lock(&mut self) -> TZC_GLB_SWRST_S2F_LOCK_W<15> {
         TZC_GLB_SWRST_S2F_LOCK_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s10_lock(&mut self) -> TZC_GLB_SWRST_S10_LOCK_W<16> {
         TZC_GLB_SWRST_S10_LOCK_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s11_lock(&mut self) -> TZC_GLB_SWRST_S11_LOCK_W<17> {
         TZC_GLB_SWRST_S11_LOCK_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s12_lock(&mut self) -> TZC_GLB_SWRST_S12_LOCK_W<18> {
         TZC_GLB_SWRST_S12_LOCK_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s13_lock(&mut self) -> TZC_GLB_SWRST_S13_LOCK_W<19> {
         TZC_GLB_SWRST_S13_LOCK_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s14_lock(&mut self) -> TZC_GLB_SWRST_S14_LOCK_W<20> {
         TZC_GLB_SWRST_S14_LOCK_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s15_lock(&mut self) -> TZC_GLB_SWRST_S15_LOCK_W<21> {
         TZC_GLB_SWRST_S15_LOCK_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s16_lock(&mut self) -> TZC_GLB_SWRST_S16_LOCK_W<22> {
         TZC_GLB_SWRST_S16_LOCK_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s17_lock(&mut self) -> TZC_GLB_SWRST_S17_LOCK_W<23> {
         TZC_GLB_SWRST_S17_LOCK_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s18_lock(&mut self) -> TZC_GLB_SWRST_S18_LOCK_W<24> {
         TZC_GLB_SWRST_S18_LOCK_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s19_lock(&mut self) -> TZC_GLB_SWRST_S19_LOCK_W<25> {
         TZC_GLB_SWRST_S19_LOCK_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1a_lock(&mut self) -> TZC_GLB_SWRST_S1A_LOCK_W<26> {
         TZC_GLB_SWRST_S1A_LOCK_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1b_lock(&mut self) -> TZC_GLB_SWRST_S1B_LOCK_W<27> {
         TZC_GLB_SWRST_S1B_LOCK_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1c_lock(&mut self) -> TZC_GLB_SWRST_S1C_LOCK_W<28> {
         TZC_GLB_SWRST_S1C_LOCK_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1d_lock(&mut self) -> TZC_GLB_SWRST_S1D_LOCK_W<29> {
         TZC_GLB_SWRST_S1D_LOCK_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1e_lock(&mut self) -> TZC_GLB_SWRST_S1E_LOCK_W<30> {
         TZC_GLB_SWRST_S1E_LOCK_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn tzc_glb_swrst_s1f_lock(&mut self) -> TZC_GLB_SWRST_S1F_LOCK_W<31> {
         TZC_GLB_SWRST_S1F_LOCK_W::new(self)
     }
@@ -536,11 +568,10 @@ impl crate::Readable for TZC_GLB_CTRL_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [tzc_glb_ctrl_1::W](W) writer structure"]
 impl crate::Writable for TZC_GLB_CTRL_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets tzc_glb_ctrl_1 to value 0"]
 impl crate::Resettable for TZC_GLB_CTRL_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

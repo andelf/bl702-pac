@@ -169,66 +169,79 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_cal_os_en(&mut self) -> GPADC_CAL_OS_EN_W<0> {
         GPADC_CAL_OS_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_cont_conv_en(&mut self) -> GPADC_CONT_CONV_EN_W<1> {
         GPADC_CONT_CONV_EN_W::new(self)
     }
     #[doc = "Bits 2:4"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_res_sel(&mut self) -> GPADC_RES_SEL_W<2> {
         GPADC_RES_SEL_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_vcm_sel_en(&mut self) -> GPADC_VCM_SEL_EN_W<8> {
         GPADC_VCM_SEL_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_vcm_hyst_sel(&mut self) -> GPADC_VCM_HYST_SEL_W<9> {
         GPADC_VCM_HYST_SEL_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_lowv_det_en(&mut self) -> GPADC_LOWV_DET_EN_W<10> {
         GPADC_LOWV_DET_EN_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_clk_ana_inv(&mut self) -> GPADC_CLK_ANA_INV_W<17> {
         GPADC_CLK_ANA_INV_W::new(self)
     }
     #[doc = "Bits 18:20"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_clk_div_ratio(&mut self) -> GPADC_CLK_DIV_RATIO_W<18> {
         GPADC_CLK_DIV_RATIO_W::new(self)
     }
     #[doc = "Bits 21:24"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_length(&mut self) -> GPADC_SCAN_LENGTH_W<21> {
         GPADC_SCAN_LENGTH_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_scan_en(&mut self) -> GPADC_SCAN_EN_W<25> {
         GPADC_SCAN_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_dither_en(&mut self) -> GPADC_DITHER_EN_W<26> {
         GPADC_DITHER_EN_W::new(self)
     }
     #[doc = "Bits 27:28"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_v11_sel(&mut self) -> GPADC_V11_SEL_W<27> {
         GPADC_V11_SEL_W::new(self)
     }
     #[doc = "Bits 29:30"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_v18_sel(&mut self) -> GPADC_V18_SEL_W<29> {
         GPADC_V18_SEL_W::new(self)
     }
@@ -251,11 +264,10 @@ impl crate::Readable for GPADC_REG_CONFIG1_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpadc_reg_config1::W](W) writer structure"]
 impl crate::Writable for GPADC_REG_CONFIG1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpadc_reg_config1 to value 0"]
 impl crate::Resettable for GPADC_REG_CONFIG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

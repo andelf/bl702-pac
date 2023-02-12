@@ -102,36 +102,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn utmi_rx_err(&mut self) -> UTMI_RX_ERR_W<0> {
         UTMI_RX_ERR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn xfer_to_err(&mut self) -> XFER_TO_ERR_W<1> {
         XFER_TO_ERR_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ivld_ep_err(&mut self) -> IVLD_EP_ERR_W<2> {
         IVLD_EP_ERR_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn pid_seq_err(&mut self) -> PID_SEQ_ERR_W<3> {
         PID_SEQ_ERR_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn pid_cks_err(&mut self) -> PID_CKS_ERR_W<4> {
         PID_CKS_ERR_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn crc5_err(&mut self) -> CRC5_ERR_W<5> {
         CRC5_ERR_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn crc16_err(&mut self) -> CRC16_ERR_W<6> {
         CRC16_ERR_W::new(self)
     }
@@ -154,11 +161,10 @@ impl crate::Readable for USB_ERROR_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_error::W](W) writer structure"]
 impl crate::Writable for USB_ERROR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_error to value 0"]
 impl crate::Resettable for USB_ERROR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

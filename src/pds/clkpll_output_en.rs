@@ -139,51 +139,61 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_480m(&mut self) -> CLKPLL_EN_480M_W<0> {
         CLKPLL_EN_480M_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_240m(&mut self) -> CLKPLL_EN_240M_W<1> {
         CLKPLL_EN_240M_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_192m(&mut self) -> CLKPLL_EN_192M_W<2> {
         CLKPLL_EN_192M_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_160m(&mut self) -> CLKPLL_EN_160M_W<3> {
         CLKPLL_EN_160M_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_120m(&mut self) -> CLKPLL_EN_120M_W<4> {
         CLKPLL_EN_120M_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_96m(&mut self) -> CLKPLL_EN_96M_W<5> {
         CLKPLL_EN_96M_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_80m(&mut self) -> CLKPLL_EN_80M_W<6> {
         CLKPLL_EN_80M_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_48m(&mut self) -> CLKPLL_EN_48M_W<7> {
         CLKPLL_EN_48M_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_32m(&mut self) -> CLKPLL_EN_32M_W<8> {
         CLKPLL_EN_32M_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_en_div2_480m(&mut self) -> CLKPLL_EN_DIV2_480M_W<9> {
         CLKPLL_EN_DIV2_480M_W::new(self)
     }
@@ -206,11 +216,10 @@ impl crate::Readable for CLKPLL_OUTPUT_EN_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_output_en::W](W) writer structure"]
 impl crate::Writable for CLKPLL_OUTPUT_EN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_output_en to value 0"]
 impl crate::Resettable for CLKPLL_OUTPUT_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

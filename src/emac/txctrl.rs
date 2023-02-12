@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn txpausetv(&mut self) -> TXPAUSETV_W<0> {
         TXPAUSETV_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn txpauserq(&mut self) -> TXPAUSERQ_W<16> {
         TXPAUSERQ_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for TXCTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [txctrl::W](W) writer structure"]
 impl crate::Writable for TXCTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TXCTRL to value 0"]
 impl crate::Resettable for TXCTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -123,46 +123,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp1_rstn_ana(&mut self) -> ACOMP1_RSTN_ANA_W<0> {
         ACOMP1_RSTN_ANA_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_rstn_ana(&mut self) -> ACOMP0_RSTN_ANA_W<1> {
         ACOMP0_RSTN_ANA_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp1_test_en(&mut self) -> ACOMP1_TEST_EN_W<8> {
         ACOMP1_TEST_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_test_en(&mut self) -> ACOMP0_TEST_EN_W<9> {
         ACOMP0_TEST_EN_W::new(self)
     }
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp1_test_sel(&mut self) -> ACOMP1_TEST_SEL_W<10> {
         ACOMP1_TEST_SEL_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_test_sel(&mut self) -> ACOMP0_TEST_SEL_W<12> {
         ACOMP0_TEST_SEL_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp1_out_raw(&mut self) -> ACOMP1_OUT_RAW_W<17> {
         ACOMP1_OUT_RAW_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp0_out_raw(&mut self) -> ACOMP0_OUT_RAW_W<19> {
         ACOMP0_OUT_RAW_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn acomp_reserved(&mut self) -> ACOMP_RESERVED_W<24> {
         ACOMP_RESERVED_W::new(self)
     }
@@ -185,11 +194,10 @@ impl crate::Readable for ACOMP_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [acomp_ctrl::W](W) writer structure"]
 impl crate::Writable for ACOMP_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets acomp_ctrl to value 0"]
 impl crate::Resettable for ACOMP_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

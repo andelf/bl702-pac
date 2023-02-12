@@ -123,46 +123,55 @@ impl R {
 impl W {
     #[doc = "Bits 2:8"]
     #[inline(always)]
+    #[must_use]
     pub fn ch_ind_hw(&mut self) -> CH_IND_HW_W<2> {
         CH_IND_HW_W::new(self)
     }
     #[doc = "Bits 9:13"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_ind_hw(&mut self) -> RBB_IND_HW_W<9> {
         RBB_IND_HW_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bw_ind_hw(&mut self) -> RBB_BW_IND_HW_W<14> {
         RBB_BW_IND_HW_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
+    #[must_use]
     pub fn ch_ind(&mut self) -> CH_IND_W<16> {
         CH_IND_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn ch_ind_ctrl_hw(&mut self) -> CH_IND_CTRL_HW_W<23> {
         CH_IND_CTRL_HW_W::new(self)
     }
     #[doc = "Bits 24:28"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_ind(&mut self) -> RBB_IND_W<24> {
         RBB_IND_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_ind_ctrl_hw(&mut self) -> RBB_IND_CTRL_HW_W<29> {
         RBB_IND_CTRL_HW_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bw_ind(&mut self) -> RBB_BW_IND_W<30> {
         RBB_BW_IND_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn rbb_bw_ind_ctrl_hw(&mut self) -> RBB_BW_IND_CTRL_HW_W<31> {
         RBB_BW_IND_CTRL_HW_W::new(self)
     }
@@ -185,11 +194,10 @@ impl crate::Readable for DSP_READBACK_SPEC {
 #[doc = "`write(|w| ..)` method takes [dsp_readback::W](W) writer structure"]
 impl crate::Writable for DSP_READBACK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dsp_readback to value 0"]
 impl crate::Resettable for DSP_READBACK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

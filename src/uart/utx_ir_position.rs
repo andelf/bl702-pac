@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_ir_pos_s(&mut self) -> CR_UTX_IR_POS_S_W<0> {
         CR_UTX_IR_POS_S_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_ir_pos_p(&mut self) -> CR_UTX_IR_POS_P_W<16> {
         CR_UTX_IR_POS_P_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for UTX_IR_POSITION_SPEC {
 #[doc = "`write(|w| ..)` method takes [utx_ir_position::W](W) writer structure"]
 impl crate::Writable for UTX_IR_POSITION_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets utx_ir_position to value 0"]
 impl crate::Resettable for UTX_IR_POSITION_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

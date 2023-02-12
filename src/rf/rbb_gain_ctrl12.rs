@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_rosdac_q_bw0(&mut self) -> GAIN_CTRL12_ROSDAC_Q_BW0_W<0> {
         GAIN_CTRL12_ROSDAC_Q_BW0_W::new(self)
     }
     #[doc = "Bits 6:11"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_rosdac_i_bw0(&mut self) -> GAIN_CTRL12_ROSDAC_I_BW0_W<6> {
         GAIN_CTRL12_ROSDAC_I_BW0_W::new(self)
     }
     #[doc = "Bits 12:17"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_rosdac_q_bw1(&mut self) -> GAIN_CTRL12_ROSDAC_Q_BW1_W<12> {
         GAIN_CTRL12_ROSDAC_Q_BW1_W::new(self)
     }
     #[doc = "Bits 18:23"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_rosdac_i_bw1(&mut self) -> GAIN_CTRL12_ROSDAC_I_BW1_W<18> {
         GAIN_CTRL12_ROSDAC_I_BW1_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_g_rbb2(&mut self) -> GAIN_CTRL12_G_RBB2_W<24> {
         GAIN_CTRL12_G_RBB2_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn gain_ctrl12_g_rbb1(&mut self) -> GAIN_CTRL12_G_RBB1_W<28> {
         GAIN_CTRL12_G_RBB1_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for RBB_GAIN_CTRL12_SPEC {
 #[doc = "`write(|w| ..)` method takes [rbb_gain_ctrl12::W](W) writer structure"]
 impl crate::Writable for RBB_GAIN_CTRL12_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rbb_gain_ctrl12 to value 0"]
 impl crate::Resettable for RBB_GAIN_CTRL12_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

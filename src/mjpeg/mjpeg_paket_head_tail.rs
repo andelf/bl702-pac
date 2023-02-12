@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pket_head_byte(&mut self) -> REG_PKET_HEAD_BYTE_W<0> {
         REG_PKET_HEAD_BYTE_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pket_tail_byte(&mut self) -> REG_PKET_TAIL_BYTE_W<16> {
         REG_PKET_TAIL_BYTE_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for MJPEG_PAKET_HEAD_TAIL_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_paket_head_tail::W](W) writer structure"]
 impl crate::Writable for MJPEG_PAKET_HEAD_TAIL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_paket_head_tail to value 0"]
 impl crate::Resettable for MJPEG_PAKET_HEAD_TAIL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -96,31 +96,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_sel_cp_bias(&mut self) -> CLKPLL_SEL_CP_BIAS_W<0> {
         CLKPLL_SEL_CP_BIAS_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_icp_5u(&mut self) -> CLKPLL_ICP_5U_W<4> {
         CLKPLL_ICP_5U_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_icp_1u(&mut self) -> CLKPLL_ICP_1U_W<6> {
         CLKPLL_ICP_1U_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_int_frac_sw(&mut self) -> CLKPLL_INT_FRAC_SW_W<8> {
         CLKPLL_INT_FRAC_SW_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_cp_startup_en(&mut self) -> CLKPLL_CP_STARTUP_EN_W<9> {
         CLKPLL_CP_STARTUP_EN_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_cp_opamp_en(&mut self) -> CLKPLL_CP_OPAMP_EN_W<10> {
         CLKPLL_CP_OPAMP_EN_W::new(self)
     }
@@ -143,11 +149,10 @@ impl crate::Readable for CLKPLL_CP_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_cp::W](W) writer structure"]
 impl crate::Writable for CLKPLL_CP_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_cp to value 0"]
 impl crate::Resettable for CLKPLL_CP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

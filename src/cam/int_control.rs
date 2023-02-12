@@ -114,41 +114,49 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_normal_0_en(&mut self) -> REG_INT_NORMAL_0_EN_W<0> {
         REG_INT_NORMAL_0_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_normal_1_en(&mut self) -> REG_INT_NORMAL_1_EN_W<1> {
         REG_INT_NORMAL_1_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W<2> {
         REG_INT_MEM_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W<3> {
         REG_INT_FRAME_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_fifo_en(&mut self) -> REG_INT_FIFO_EN_W<4> {
         REG_INT_FIFO_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_hcnt_en(&mut self) -> REG_INT_HCNT_EN_W<5> {
         REG_INT_HCNT_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_vcnt_en(&mut self) -> REG_INT_VCNT_EN_W<6> {
         REG_INT_VCNT_EN_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W<28> {
         REG_FRAME_CNT_TRGR_INT_W::new(self)
     }
@@ -171,11 +179,10 @@ impl crate::Readable for INT_CONTROL_SPEC {
 #[doc = "`write(|w| ..)` method takes [int_control::W](W) writer structure"]
 impl crate::Writable for INT_CONTROL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets int_control to value 0"]
 impl crate::Resettable for INT_CONTROL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

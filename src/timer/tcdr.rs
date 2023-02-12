@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn tcdr2(&mut self) -> TCDR2_W<8> {
         TCDR2_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn tcdr3(&mut self) -> TCDR3_W<16> {
         TCDR3_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn wcdr(&mut self) -> WCDR_W<24> {
         WCDR_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for TCDR_SPEC {
 #[doc = "`write(|w| ..)` method takes [tcdr::W](W) writer structure"]
 impl crate::Writable for TCDR_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TCDR to value 0"]
 impl crate::Resettable for TCDR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

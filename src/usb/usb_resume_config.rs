@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_res_width(&mut self) -> CR_RES_WIDTH_W<0> {
         CR_RES_WIDTH_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_res_trig(&mut self) -> CR_RES_TRIG_W<12> {
         CR_RES_TRIG_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_res_force(&mut self) -> CR_RES_FORCE_W<31> {
         CR_RES_FORCE_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for USB_RESUME_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_resume_config::W](W) writer structure"]
 impl crate::Writable for USB_RESUME_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_resume_config to value 0"]
 impl crate::Resettable for USB_RESUME_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

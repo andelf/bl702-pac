@@ -136,51 +136,61 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_en(&mut self) -> CR_USB_EN_W<0> {
         CR_USB_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_rom_dct_en(&mut self) -> CR_USB_ROM_DCT_EN_W<4> {
         CR_USB_ROM_DCT_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_ctrl(&mut self) -> CR_USB_EP0_SW_CTRL_W<8> {
         CR_USB_EP0_SW_CTRL_W::new(self)
     }
     #[doc = "Bits 9:15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_addr(&mut self) -> CR_USB_EP0_SW_ADDR_W<9> {
         CR_USB_EP0_SW_ADDR_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_size(&mut self) -> CR_USB_EP0_SW_SIZE_W<16> {
         CR_USB_EP0_SW_SIZE_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_stall(&mut self) -> CR_USB_EP0_SW_STALL_W<24> {
         CR_USB_EP0_SW_STALL_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_nack_in(&mut self) -> CR_USB_EP0_SW_NACK_IN_W<25> {
         CR_USB_EP0_SW_NACK_IN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_nack_out(&mut self) -> CR_USB_EP0_SW_NACK_OUT_W<26> {
         CR_USB_EP0_SW_NACK_OUT_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_usb_ep0_sw_rdy(&mut self) -> CR_USB_EP0_SW_RDY_W<27> {
         CR_USB_EP0_SW_RDY_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_usb_ep0_sw_rdy(&mut self) -> STS_USB_EP0_SW_RDY_W<28> {
         STS_USB_EP0_SW_RDY_W::new(self)
     }
@@ -203,11 +213,10 @@ impl crate::Readable for USB_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_config::W](W) writer structure"]
 impl crate::Writable for USB_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_config to value 0"]
 impl crate::Resettable for USB_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

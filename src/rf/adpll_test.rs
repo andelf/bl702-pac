@@ -87,26 +87,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_test_out(&mut self) -> ADPLL_TEST_OUT_W<0> {
         ADPLL_TEST_OUT_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_test_data_sel(&mut self) -> ADPLL_TEST_DATA_SEL_W<16> {
         ADPLL_TEST_DATA_SEL_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_test_start_sel(&mut self) -> ADPLL_TEST_START_SEL_W<20> {
         ADPLL_TEST_START_SEL_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_test_en(&mut self) -> ADPLL_TEST_EN_W<24> {
         ADPLL_TEST_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_test_start(&mut self) -> ADPLL_TEST_START_W<25> {
         ADPLL_TEST_START_W::new(self)
     }
@@ -129,11 +134,10 @@ impl crate::Readable for ADPLL_TEST_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_test::W](W) writer structure"]
 impl crate::Writable for ADPLL_TEST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_test to value 0"]
 impl crate::Resettable for ADPLL_TEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -67,16 +67,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn acc1_val(&mut self) -> ACC1_VAL_W<0> {
         ACC1_VAL_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn acc2_val(&mut self) -> ACC2_VAL_W<16> {
         ACC2_VAL_W::new(self)
     }
     #[doc = "Bits 28:29"]
     #[inline(always)]
+    #[must_use]
     pub fn spl_val(&mut self) -> SPL_VAL_W<28> {
         SPL_VAL_W::new(self)
     }
@@ -99,11 +102,10 @@ impl crate::Readable for QDEC_VALUE_SPEC {
 #[doc = "`write(|w| ..)` method takes [qdec_value::W](W) writer structure"]
 impl crate::Writable for QDEC_VALUE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets qdec_value to value 0"]
 impl crate::Resettable for QDEC_VALUE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

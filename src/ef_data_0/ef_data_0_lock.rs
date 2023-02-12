@@ -239,101 +239,121 @@ impl R {
 impl W {
     #[doc = "Bits 0:12"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_ana_trim_1(&mut self) -> EF_ANA_TRIM_1_W<0> {
         EF_ANA_TRIM_1_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_4_l(&mut self) -> WR_LOCK_KEY_SLOT_4_L_W<13> {
         WR_LOCK_KEY_SLOT_4_L_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_5_l(&mut self) -> WR_LOCK_KEY_SLOT_5_L_W<14> {
         WR_LOCK_KEY_SLOT_5_L_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_boot_mode(&mut self) -> WR_LOCK_BOOT_MODE_W<15> {
         WR_LOCK_BOOT_MODE_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_dbg_pwd(&mut self) -> WR_LOCK_DBG_PWD_W<16> {
         WR_LOCK_DBG_PWD_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_sw_usage_0(&mut self) -> WR_LOCK_SW_USAGE_0_W<17> {
         WR_LOCK_SW_USAGE_0_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_wifi_mac(&mut self) -> WR_LOCK_WIFI_MAC_W<18> {
         WR_LOCK_WIFI_MAC_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_0(&mut self) -> WR_LOCK_KEY_SLOT_0_W<19> {
         WR_LOCK_KEY_SLOT_0_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_1(&mut self) -> WR_LOCK_KEY_SLOT_1_W<20> {
         WR_LOCK_KEY_SLOT_1_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_2(&mut self) -> WR_LOCK_KEY_SLOT_2_W<21> {
         WR_LOCK_KEY_SLOT_2_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_3(&mut self) -> WR_LOCK_KEY_SLOT_3_W<22> {
         WR_LOCK_KEY_SLOT_3_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_4_h(&mut self) -> WR_LOCK_KEY_SLOT_4_H_W<23> {
         WR_LOCK_KEY_SLOT_4_H_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn wr_lock_key_slot_5_h(&mut self) -> WR_LOCK_KEY_SLOT_5_H_W<24> {
         WR_LOCK_KEY_SLOT_5_H_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_dbg_pwd(&mut self) -> RD_LOCK_DBG_PWD_W<25> {
         RD_LOCK_DBG_PWD_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_0(&mut self) -> RD_LOCK_KEY_SLOT_0_W<26> {
         RD_LOCK_KEY_SLOT_0_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_1(&mut self) -> RD_LOCK_KEY_SLOT_1_W<27> {
         RD_LOCK_KEY_SLOT_1_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_2(&mut self) -> RD_LOCK_KEY_SLOT_2_W<28> {
         RD_LOCK_KEY_SLOT_2_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_3(&mut self) -> RD_LOCK_KEY_SLOT_3_W<29> {
         RD_LOCK_KEY_SLOT_3_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_4(&mut self) -> RD_LOCK_KEY_SLOT_4_W<30> {
         RD_LOCK_KEY_SLOT_4_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn rd_lock_key_slot_5(&mut self) -> RD_LOCK_KEY_SLOT_5_W<31> {
         RD_LOCK_KEY_SLOT_5_W::new(self)
     }
@@ -356,11 +376,10 @@ impl crate::Readable for EF_DATA_0_LOCK_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_data_0_lock::W](W) writer structure"]
 impl crate::Writable for EF_DATA_0_LOCK_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_data_0_lock to value 0"]
 impl crate::Resettable for EF_DATA_0_LOCK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

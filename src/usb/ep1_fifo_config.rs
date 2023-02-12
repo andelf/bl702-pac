@@ -119,41 +119,49 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_dma_tx_en(&mut self) -> EP1_DMA_TX_EN_W<0> {
         EP1_DMA_TX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_dma_rx_en(&mut self) -> EP1_DMA_RX_EN_W<1> {
         EP1_DMA_RX_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_tx_fifo_clr(&mut self) -> EP1_TX_FIFO_CLR_W<2> {
         EP1_TX_FIFO_CLR_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_rx_fifo_clr(&mut self) -> EP1_RX_FIFO_CLR_W<3> {
         EP1_RX_FIFO_CLR_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_tx_fifo_overflow(&mut self) -> EP1_TX_FIFO_OVERFLOW_W<4> {
         EP1_TX_FIFO_OVERFLOW_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_tx_fifo_underflow(&mut self) -> EP1_TX_FIFO_UNDERFLOW_W<5> {
         EP1_TX_FIFO_UNDERFLOW_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_rx_fifo_overflow(&mut self) -> EP1_RX_FIFO_OVERFLOW_W<6> {
         EP1_RX_FIFO_OVERFLOW_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ep1_rx_fifo_underflow(&mut self) -> EP1_RX_FIFO_UNDERFLOW_W<7> {
         EP1_RX_FIFO_UNDERFLOW_W::new(self)
     }
@@ -176,11 +184,10 @@ impl crate::Readable for EP1_FIFO_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [ep1_fifo_config::W](W) writer structure"]
 impl crate::Writable for EP1_FIFO_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ep1_fifo_config to value 0"]
 impl crate::Resettable for EP1_FIFO_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

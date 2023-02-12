@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_addr_start_0(&mut self) -> REG_ADDR_START_0_W<0> {
         REG_ADDR_START_0_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for DVP2AHB_ADDR_START_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [dvp2ahb_addr_start_0::W](W) writer structure"]
 impl crate::Writable for DVP2AHB_ADDR_START_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dvp2ahb_addr_start_0 to value 0"]
 impl crate::Resettable for DVP2AHB_ADDR_START_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

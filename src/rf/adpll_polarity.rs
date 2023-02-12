@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lp_mom_polarity(&mut self) -> ADPLL_LP_MOM_POLARITY_W<8> {
         ADPLL_LP_MOM_POLARITY_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lms_polarity(&mut self) -> ADPLL_LMS_POLARITY_W<12> {
         ADPLL_LMS_POLARITY_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fcal_polarity(&mut self) -> ADPLL_FCAL_POLARITY_W<16> {
         ADPLL_FCAL_POLARITY_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lp_polarity(&mut self) -> ADPLL_LP_POLARITY_W<20> {
         ADPLL_LP_POLARITY_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for ADPLL_POLARITY_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll_polarity::W](W) writer structure"]
 impl crate::Writable for ADPLL_POLARITY_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll_polarity to value 0"]
 impl crate::Resettable for ADPLL_POLARITY_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

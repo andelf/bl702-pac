@@ -79,32 +79,37 @@ impl R {
     #[doc = "Bits 5:31"]
     #[inline(always)]
     pub fn sf_aes_status(&self) -> SF_AES_STATUS_R {
-        SF_AES_STATUS_R::new(((self.bits >> 5) & 0x07ff_ffff) as u32)
+        SF_AES_STATUS_R::new((self.bits >> 5) & 0x07ff_ffff)
     }
 }
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_en(&mut self) -> SF_AES_EN_W<0> {
         SF_AES_EN_W::new(self)
     }
     #[doc = "Bits 1:2"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_mode(&mut self) -> SF_AES_MODE_W<1> {
         SF_AES_MODE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_pref_trig(&mut self) -> SF_AES_PREF_TRIG_W<3> {
         SF_AES_PREF_TRIG_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_pref_busy(&mut self) -> SF_AES_PREF_BUSY_W<4> {
         SF_AES_PREF_BUSY_W::new(self)
     }
     #[doc = "Bits 5:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_status(&mut self) -> SF_AES_STATUS_W<5> {
         SF_AES_STATUS_W::new(self)
     }
@@ -127,11 +132,10 @@ impl crate::Readable for SF_AES_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_aes::W](W) writer structure"]
 impl crate::Writable for SF_AES_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_aes to value 0"]
 impl crate::Resettable for SF_AES_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

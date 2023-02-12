@@ -106,36 +106,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_en(&mut self) -> GPDAC_EN_W<0> {
         GPDAC_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_en2(&mut self) -> GPDAC_EN2_W<1> {
         GPDAC_EN2_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn dsm_mode(&mut self) -> DSM_MODE_W<4> {
         DSM_MODE_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_mode(&mut self) -> GPDAC_MODE_W<8> {
         GPDAC_MODE_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_ch_a_sel(&mut self) -> GPDAC_CH_A_SEL_W<16> {
         GPDAC_CH_A_SEL_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn gpdac_ch_b_sel(&mut self) -> GPDAC_CH_B_SEL_W<20> {
         GPDAC_CH_B_SEL_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_31_24(&mut self) -> RSVD_31_24_W<24> {
         RSVD_31_24_W::new(self)
     }
@@ -158,11 +165,10 @@ impl crate::Readable for GPDAC_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [gpdac_config::W](W) writer structure"]
 impl crate::Writable for GPDAC_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets gpdac_config to value 0"]
 impl crate::Resettable for GPDAC_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

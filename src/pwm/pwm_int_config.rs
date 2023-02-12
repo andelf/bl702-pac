@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_interrupt_sts(&mut self) -> PWM_INTERRUPT_STS_W<0> {
         PWM_INTERRUPT_STS_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_int_clear(&mut self) -> PWM_INT_CLEAR_W<8> {
         PWM_INT_CLEAR_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for PWM_INT_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [pwm_int_config::W](W) writer structure"]
 impl crate::Writable for PWM_INT_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pwm_int_config to value 0"]
 impl crate::Resettable for PWM_INT_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

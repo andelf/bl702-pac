@@ -216,96 +216,115 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_en(&mut self) -> COEX_EN_W<0> {
         COEX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn wlan_en(&mut self) -> WLAN_EN_W<1> {
         WLAN_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ble_rx_ignore(&mut self) -> BLE_RX_IGNORE_W<2> {
         BLE_RX_IGNORE_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn m154_rx_ignore(&mut self) -> M154_RX_IGNORE_W<3> {
         M154_RX_IGNORE_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn bz_pri_thr(&mut self) -> BZ_PRI_THR_W<4> {
         BZ_PRI_THR_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn bz_pri_en(&mut self) -> BZ_PRI_EN_W<8> {
         BZ_PRI_EN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn bz_pri_pol(&mut self) -> BZ_PRI_POL_W<9> {
         BZ_PRI_POL_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn bz_active_pol(&mut self) -> BZ_ACTIVE_POL_W<10> {
         BZ_ACTIVE_POL_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn bz_abort_pol(&mut self) -> BZ_ABORT_POL_W<11> {
         BZ_ABORT_POL_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_pri(&mut self) -> COEX_PRI_W<12> {
         COEX_PRI_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn force_m154_win(&mut self) -> FORCE_M154_WIN_W<13> {
         FORCE_M154_WIN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn force_ble_win(&mut self) -> FORCE_BLE_WIN_W<14> {
         FORCE_BLE_WIN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_option(&mut self) -> COEX_OPTION_W<15> {
         COEX_OPTION_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_force_ch(&mut self) -> COEX_FORCE_CH_W<16> {
         COEX_FORCE_CH_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn m154_rx_abort_dis(&mut self) -> M154_RX_ABORT_DIS_W<24> {
         M154_RX_ABORT_DIS_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn m154_tx_abort_dis(&mut self) -> M154_TX_ABORT_DIS_W<25> {
         M154_TX_ABORT_DIS_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn ble_rx_abort_dis(&mut self) -> BLE_RX_ABORT_DIS_W<26> {
         BLE_RX_ABORT_DIS_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn ble_tx_abort_dis(&mut self) -> BLE_TX_ABORT_DIS_W<27> {
         BLE_TX_ABORT_DIS_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn coex_arb(&mut self) -> COEX_ARB_W<28> {
         COEX_ARB_W::new(self)
     }
@@ -328,11 +347,10 @@ impl crate::Readable for BZ_COEX_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [bz_coex_ctrl::W](W) writer structure"]
 impl crate::Writable for BZ_COEX_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets BZ_COEX_CTRL to value 0"]
 impl crate::Resettable for BZ_COEX_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

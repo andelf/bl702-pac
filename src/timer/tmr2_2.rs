@@ -48,6 +48,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn tmr(&mut self) -> TMR_W<0> {
         TMR_W::new(self)
     }
@@ -70,11 +71,10 @@ impl crate::Readable for TMR2_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [tmr2_2::W](W) writer structure"]
 impl crate::Writable for TMR2_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TMR2_2 to value 0"]
 impl crate::Resettable for TMR2_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

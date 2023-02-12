@@ -97,31 +97,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_done(&mut self) -> RF_SRAM_DONE_W<0> {
         RF_SRAM_DONE_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_en(&mut self) -> RF_SRAM_EN_W<1> {
         RF_SRAM_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_loop_en(&mut self) -> RF_SRAM_LOOP_EN_W<2> {
         RF_SRAM_LOOP_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_sts_clr(&mut self) -> RF_SRAM_STS_CLR_W<3> {
         RF_SRAM_STS_CLR_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_mode(&mut self) -> RF_SRAM_MODE_W<4> {
         RF_SRAM_MODE_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_sram_done_cnt(&mut self) -> RF_SRAM_DONE_CNT_W<16> {
         RF_SRAM_DONE_CNT_W::new(self)
     }
@@ -144,11 +150,10 @@ impl crate::Readable for RF_SRAM_CTRL0_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_sram_ctrl0::W](W) writer structure"]
 impl crate::Writable for RF_SRAM_CTRL0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_sram_ctrl0 to value 0"]
 impl crate::Resettable for RF_SRAM_CTRL0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

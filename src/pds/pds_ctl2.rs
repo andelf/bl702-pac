@@ -189,76 +189,91 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_np_pwr_off(&mut self) -> CR_PDS_FORCE_NP_PWR_OFF_W<0> {
         CR_PDS_FORCE_NP_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_bz_pwr_off(&mut self) -> CR_PDS_FORCE_BZ_PWR_OFF_W<2> {
         CR_PDS_FORCE_BZ_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_usb_pwr_off(&mut self) -> CR_PDS_FORCE_USB_PWR_OFF_W<3> {
         CR_PDS_FORCE_USB_PWR_OFF_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_np_iso_en(&mut self) -> CR_PDS_FORCE_NP_ISO_EN_W<4> {
         CR_PDS_FORCE_NP_ISO_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_bz_iso_en(&mut self) -> CR_PDS_FORCE_BZ_ISO_EN_W<6> {
         CR_PDS_FORCE_BZ_ISO_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_usb_iso_en(&mut self) -> CR_PDS_FORCE_USB_ISO_EN_W<7> {
         CR_PDS_FORCE_USB_ISO_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_np_pds_rst(&mut self) -> CR_PDS_FORCE_NP_PDS_RST_W<8> {
         CR_PDS_FORCE_NP_PDS_RST_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_bz_pds_rst(&mut self) -> CR_PDS_FORCE_BZ_PDS_RST_W<10> {
         CR_PDS_FORCE_BZ_PDS_RST_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_usb_pds_rst(&mut self) -> CR_PDS_FORCE_USB_PDS_RST_W<11> {
         CR_PDS_FORCE_USB_PDS_RST_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_np_mem_stby(&mut self) -> CR_PDS_FORCE_NP_MEM_STBY_W<12> {
         CR_PDS_FORCE_NP_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_bz_mem_stby(&mut self) -> CR_PDS_FORCE_BZ_MEM_STBY_W<14> {
         CR_PDS_FORCE_BZ_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_usb_mem_stby(&mut self) -> CR_PDS_FORCE_USB_MEM_STBY_W<15> {
         CR_PDS_FORCE_USB_MEM_STBY_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_np_gate_clk(&mut self) -> CR_PDS_FORCE_NP_GATE_CLK_W<16> {
         CR_PDS_FORCE_NP_GATE_CLK_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_bz_gate_clk(&mut self) -> CR_PDS_FORCE_BZ_GATE_CLK_W<18> {
         CR_PDS_FORCE_BZ_GATE_CLK_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_force_usb_gate_clk(&mut self) -> CR_PDS_FORCE_USB_GATE_CLK_W<19> {
         CR_PDS_FORCE_USB_GATE_CLK_W::new(self)
     }
@@ -281,11 +296,10 @@ impl crate::Readable for PDS_CTL2_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_ctl2::W](W) writer structure"]
 impl crate::Writable for PDS_CTL2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PDS_CTL2 to value 0"]
 impl crate::Resettable for PDS_CTL2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

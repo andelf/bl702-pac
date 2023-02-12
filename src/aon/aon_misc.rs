@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_soc_en_aon(&mut self) -> SW_SOC_EN_AON_W<0> {
         SW_SOC_EN_AON_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_bz_en_aon(&mut self) -> SW_BZ_EN_AON_W<1> {
         SW_BZ_EN_AON_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for AON_MISC_SPEC {
 #[doc = "`write(|w| ..)` method takes [aon_misc::W](W) writer structure"]
 impl crate::Writable for AON_MISC_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets aon_misc to value 0"]
 impl crate::Resettable for AON_MISC_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

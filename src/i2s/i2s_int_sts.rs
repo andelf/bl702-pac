@@ -120,46 +120,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s_txf_int(&mut self) -> I2S_TXF_INT_W<0> {
         I2S_TXF_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s_rxf_int(&mut self) -> I2S_RXF_INT_W<1> {
         I2S_RXF_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn i2s_fer_int(&mut self) -> I2S_FER_INT_W<2> {
         I2S_FER_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_txf_mask(&mut self) -> CR_I2S_TXF_MASK_W<8> {
         CR_I2S_TXF_MASK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_rxf_mask(&mut self) -> CR_I2S_RXF_MASK_W<9> {
         CR_I2S_RXF_MASK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_fer_mask(&mut self) -> CR_I2S_FER_MASK_W<10> {
         CR_I2S_FER_MASK_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_txf_en(&mut self) -> CR_I2S_TXF_EN_W<24> {
         CR_I2S_TXF_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_rxf_en(&mut self) -> CR_I2S_RXF_EN_W<25> {
         CR_I2S_RXF_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2s_fer_en(&mut self) -> CR_I2S_FER_EN_W<26> {
         CR_I2S_FER_EN_W::new(self)
     }
@@ -182,11 +191,10 @@ impl crate::Readable for I2S_INT_STS_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2s_int_sts::W](W) writer structure"]
 impl crate::Writable for I2S_INT_STS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2s_int_sts to value 0"]
 impl crate::Resettable for I2S_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

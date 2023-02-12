@@ -99,31 +99,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_w_swap_mode(&mut self) -> REG_W_SWAP_MODE_W<0> {
         REG_W_SWAP_MODE_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_swap0_full(&mut self) -> STS_SWAP0_FULL_W<8> {
         STS_SWAP0_FULL_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_swap1_full(&mut self) -> STS_SWAP1_FULL_W<9> {
         STS_SWAP1_FULL_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_read_swap_idx(&mut self) -> STS_READ_SWAP_IDX_W<10> {
         STS_READ_SWAP_IDX_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_swap_fstart(&mut self) -> STS_SWAP_FSTART_W<11> {
         STS_SWAP_FSTART_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_swap_fend(&mut self) -> STS_SWAP_FEND_W<12> {
         STS_SWAP_FEND_W::new(self)
     }
@@ -146,11 +152,10 @@ impl crate::Readable for MJPEG_SWAP_MODE_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_swap_mode::W](W) writer structure"]
 impl crate::Writable for MJPEG_SWAP_MODE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_swap_mode to value 0"]
 impl crate::Resettable for MJPEG_SWAP_MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

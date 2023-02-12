@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_bclk_div_l(&mut self) -> CR_BCLK_DIV_L_W<0> {
         CR_BCLK_DIV_L_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_bclk_div_h(&mut self) -> CR_BCLK_DIV_H_W<16> {
         CR_BCLK_DIV_H_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for I2S_BCLK_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2s_bclk_config::W](W) writer structure"]
 impl crate::Writable for I2S_BCLK_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2s_bclk_config to value 0"]
 impl crate::Resettable for I2S_BCLK_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -159,61 +159,73 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_busy(&mut self) -> SE_TRNG_0_BUSY_W<0> {
         SE_TRNG_0_BUSY_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_trig_1t(&mut self) -> SE_TRNG_0_TRIG_1T_W<1> {
         SE_TRNG_0_TRIG_1T_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_en(&mut self) -> SE_TRNG_0_EN_W<2> {
         SE_TRNG_0_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_dout_clr_1t(&mut self) -> SE_TRNG_0_DOUT_CLR_1T_W<3> {
         SE_TRNG_0_DOUT_CLR_1T_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_error(&mut self) -> SE_TRNG_0_HT_ERROR_W<4> {
         SE_TRNG_0_HT_ERROR_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_int(&mut self) -> SE_TRNG_0_INT_W<8> {
         SE_TRNG_0_INT_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_int_clr_1t(&mut self) -> SE_TRNG_0_INT_CLR_1T_W<9> {
         SE_TRNG_0_INT_CLR_1T_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_int_set_1t(&mut self) -> SE_TRNG_0_INT_SET_1T_W<10> {
         SE_TRNG_0_INT_SET_1T_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_int_mask(&mut self) -> SE_TRNG_0_INT_MASK_W<11> {
         SE_TRNG_0_INT_MASK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_manual_fun_sel(&mut self) -> SE_TRNG_0_MANUAL_FUN_SEL_W<13> {
         SE_TRNG_0_MANUAL_FUN_SEL_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_manual_reseed(&mut self) -> SE_TRNG_0_MANUAL_RESEED_W<14> {
         SE_TRNG_0_MANUAL_RESEED_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_manual_en(&mut self) -> SE_TRNG_0_MANUAL_EN_W<15> {
         SE_TRNG_0_MANUAL_EN_W::new(self)
     }
@@ -236,11 +248,10 @@ impl crate::Readable for SE_TRNG_0_CTRL_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_trng_0_ctrl_0::W](W) writer structure"]
 impl crate::Writable for SE_TRNG_0_CTRL_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_trng_0_ctrl_0 to value 0"]
 impl crate::Resettable for SE_TRNG_0_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

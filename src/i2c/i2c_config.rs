@@ -126,46 +126,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_m_en(&mut self) -> CR_I2C_M_EN_W<0> {
         CR_I2C_M_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_pkt_dir(&mut self) -> CR_I2C_PKT_DIR_W<1> {
         CR_I2C_PKT_DIR_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_deg_en(&mut self) -> CR_I2C_DEG_EN_W<2> {
         CR_I2C_DEG_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_scl_sync_en(&mut self) -> CR_I2C_SCL_SYNC_EN_W<3> {
         CR_I2C_SCL_SYNC_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_sub_addr_en(&mut self) -> CR_I2C_SUB_ADDR_EN_W<4> {
         CR_I2C_SUB_ADDR_EN_W::new(self)
     }
     #[doc = "Bits 5:6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_sub_addr_bc(&mut self) -> CR_I2C_SUB_ADDR_BC_W<5> {
         CR_I2C_SUB_ADDR_BC_W::new(self)
     }
     #[doc = "Bits 8:14"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_slv_addr(&mut self) -> CR_I2C_SLV_ADDR_W<8> {
         CR_I2C_SLV_ADDR_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_pkt_len(&mut self) -> CR_I2C_PKT_LEN_W<16> {
         CR_I2C_PKT_LEN_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_i2c_deg_cnt(&mut self) -> CR_I2C_DEG_CNT_W<28> {
         CR_I2C_DEG_CNT_W::new(self)
     }
@@ -188,11 +197,10 @@ impl crate::Readable for I2C_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [i2c_config::W](W) writer structure"]
 impl crate::Writable for I2C_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets i2c_config to value 0"]
 impl crate::Resettable for I2C_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -88,26 +88,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_ctrl_pwron_rst(&mut self) -> REG_CTRL_PWRON_RST_W<0> {
         REG_CTRL_PWRON_RST_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_ctrl_cpu_reset(&mut self) -> REG_CTRL_CPU_RESET_W<1> {
         REG_CTRL_CPU_RESET_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_ctrl_sys_reset(&mut self) -> REG_CTRL_SYS_RESET_W<2> {
         REG_CTRL_SYS_RESET_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_ctrl_reset_dummy(&mut self) -> REG_CTRL_RESET_DUMMY_W<4> {
         REG_CTRL_RESET_DUMMY_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn pka_clk_sel(&mut self) -> PKA_CLK_SEL_W<24> {
         PKA_CLK_SEL_W::new(self)
     }
@@ -130,11 +135,10 @@ impl crate::Readable for SWRST_CFG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [swrst_cfg2::W](W) writer structure"]
 impl crate::Writable for SWRST_CFG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets swrst_cfg2 to value 0"]
 impl crate::Resettable for SWRST_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

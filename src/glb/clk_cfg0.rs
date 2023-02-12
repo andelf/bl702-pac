@@ -140,56 +140,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pll_en(&mut self) -> REG_PLL_EN_W<0> {
         REG_PLL_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_fclk_en(&mut self) -> REG_FCLK_EN_W<1> {
         REG_FCLK_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_hclk_en(&mut self) -> REG_HCLK_EN_W<2> {
         REG_HCLK_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_bclk_en(&mut self) -> REG_BCLK_EN_W<3> {
         REG_BCLK_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_pll_sel(&mut self) -> REG_PLL_SEL_W<4> {
         REG_PLL_SEL_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_root_clk_sel(&mut self) -> HBN_ROOT_CLK_SEL_W<6> {
         HBN_ROOT_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_hclk_div(&mut self) -> REG_HCLK_DIV_W<8> {
         REG_HCLK_DIV_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_bclk_div(&mut self) -> REG_BCLK_DIV_W<16> {
         REG_BCLK_DIV_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn fclk_sw_state(&mut self) -> FCLK_SW_STATE_W<24> {
         FCLK_SW_STATE_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn chip_rdy(&mut self) -> CHIP_RDY_W<27> {
         CHIP_RDY_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn glb_id(&mut self) -> GLB_ID_W<28> {
         GLB_ID_W::new(self)
     }
@@ -212,11 +223,10 @@ impl crate::Readable for CLK_CFG0_SPEC {
 #[doc = "`write(|w| ..)` method takes [clk_cfg0::W](W) writer structure"]
 impl crate::Writable for CLK_CFG0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clk_cfg0 to value 0"]
 impl crate::Resettable for CLK_CFG0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

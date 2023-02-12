@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_frame_wblk(&mut self) -> REG_FRAME_WBLK_W<0> {
         REG_FRAME_WBLK_W::new(self)
     }
     #[doc = "Bits 16:27"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_frame_hblk(&mut self) -> REG_FRAME_HBLK_W<16> {
         REG_FRAME_HBLK_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for MJPEG_FRAME_SIZE_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_frame_size::W](W) writer structure"]
 impl crate::Writable for MJPEG_FRAME_SIZE_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_frame_size to value 0"]
 impl crate::Resettable for MJPEG_FRAME_SIZE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -75,21 +75,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn mac_b5(&mut self) -> MAC_B5_W<0> {
         MAC_B5_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn mac_b4(&mut self) -> MAC_B4_W<8> {
         MAC_B4_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn mac_b3(&mut self) -> MAC_B3_W<16> {
         MAC_B3_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn mac_b2(&mut self) -> MAC_B2_W<24> {
         MAC_B2_W::new(self)
     }
@@ -112,11 +116,10 @@ impl crate::Readable for MAC_ADDR0_SPEC {
 #[doc = "`write(|w| ..)` method takes [mac_addr0::W](W) writer structure"]
 impl crate::Writable for MAC_ADDR0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets MAC_ADDR0 to value 0"]
 impl crate::Resettable for MAC_ADDR0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

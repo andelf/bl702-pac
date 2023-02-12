@@ -238,106 +238,127 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_normal_en(&mut self) -> REG_INT_NORMAL_EN_W<0> {
         REG_INT_NORMAL_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_cam_en(&mut self) -> REG_INT_CAM_EN_W<1> {
         REG_INT_CAM_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_mem_en(&mut self) -> REG_INT_MEM_EN_W<2> {
         REG_INT_MEM_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_frame_en(&mut self) -> REG_INT_FRAME_EN_W<3> {
         REG_INT_FRAME_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_normal_int(&mut self) -> STS_NORMAL_INT_W<4> {
         STS_NORMAL_INT_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_cam_int(&mut self) -> STS_CAM_INT_W<5> {
         STS_CAM_INT_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_mem_int(&mut self) -> STS_MEM_INT_W<6> {
         STS_MEM_INT_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_frame_int(&mut self) -> STS_FRAME_INT_W<7> {
         STS_FRAME_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_idle(&mut self) -> MJPEG_IDLE_W<8> {
         MJPEG_IDLE_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_func(&mut self) -> MJPEG_FUNC_W<9> {
         MJPEG_FUNC_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_wait(&mut self) -> MJPEG_WAIT_W<10> {
         MJPEG_WAIT_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_flsh(&mut self) -> MJPEG_FLSH_W<11> {
         MJPEG_FLSH_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_mans(&mut self) -> MJPEG_MANS_W<12> {
         MJPEG_MANS_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn mjpeg_manf(&mut self) -> MJPEG_MANF_W<13> {
         MJPEG_MANF_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn ahb_idle(&mut self) -> AHB_IDLE_W<14> {
         AHB_IDLE_W::new(self)
     }
     #[doc = "Bits 16:20"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_frame_cnt_trgr_int(&mut self) -> REG_FRAME_CNT_TRGR_INT_W<16> {
         REG_FRAME_CNT_TRGR_INT_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_idle_en(&mut self) -> REG_INT_IDLE_EN_W<21> {
         REG_INT_IDLE_EN_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_idle_int(&mut self) -> STS_IDLE_INT_W<22> {
         STS_IDLE_INT_W::new(self)
     }
     #[doc = "Bits 24:28"]
     #[inline(always)]
+    #[must_use]
     pub fn frame_valid_cnt(&mut self) -> FRAME_VALID_CNT_W<24> {
         FRAME_VALID_CNT_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_int_swap_en(&mut self) -> REG_INT_SWAP_EN_W<29> {
         REG_INT_SWAP_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_swap_int(&mut self) -> STS_SWAP_INT_W<30> {
         STS_SWAP_INT_W::new(self)
     }
@@ -360,11 +381,10 @@ impl crate::Readable for MJPEG_CONTROL_3_SPEC {
 #[doc = "`write(|w| ..)` method takes [mjpeg_control_3::W](W) writer structure"]
 impl crate::Writable for MJPEG_CONTROL_3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets mjpeg_control_3 to value 0"]
 impl crate::Resettable for MJPEG_CONTROL_3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

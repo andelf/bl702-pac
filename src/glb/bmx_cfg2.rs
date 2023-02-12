@@ -95,31 +95,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_err_addr_dis(&mut self) -> BMX_ERR_ADDR_DIS_W<0> {
         BMX_ERR_ADDR_DIS_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_err_dec(&mut self) -> BMX_ERR_DEC_W<4> {
         BMX_ERR_DEC_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_err_tz(&mut self) -> BMX_ERR_TZ_W<5> {
         BMX_ERR_TZ_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_w_thre_bmx(&mut self) -> REG_W_THRE_BMX_W<8> {
         REG_W_THRE_BMX_W::new(self)
     }
     #[doc = "Bits 10:11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_w_thre_l1c(&mut self) -> REG_W_THRE_L1C_W<10> {
         REG_W_THRE_L1C_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn bmx_dbg_sel(&mut self) -> BMX_DBG_SEL_W<28> {
         BMX_DBG_SEL_W::new(self)
     }
@@ -142,11 +148,10 @@ impl crate::Readable for BMX_CFG2_SPEC {
 #[doc = "`write(|w| ..)` method takes [bmx_cfg2::W](W) writer structure"]
 impl crate::Writable for BMX_CFG2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets bmx_cfg2 to value 0"]
 impl crate::Resettable for BMX_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

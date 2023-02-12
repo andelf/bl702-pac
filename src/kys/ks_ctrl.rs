@@ -102,36 +102,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn ks_en(&mut self) -> KS_EN_W<0> {
         KS_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ghost_en(&mut self) -> GHOST_EN_W<2> {
         GHOST_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn deg_en(&mut self) -> DEG_EN_W<3> {
         DEG_EN_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn deg_cnt(&mut self) -> DEG_CNT_W<4> {
         DEG_CNT_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn rc_ext(&mut self) -> RC_EXT_W<8> {
         RC_EXT_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn row_num(&mut self) -> ROW_NUM_W<16> {
         ROW_NUM_W::new(self)
     }
     #[doc = "Bits 20:24"]
     #[inline(always)]
+    #[must_use]
     pub fn col_num(&mut self) -> COL_NUM_W<20> {
         COL_NUM_W::new(self)
     }
@@ -154,11 +161,10 @@ impl crate::Readable for KS_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [ks_ctrl::W](W) writer structure"]
 impl crate::Writable for KS_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ks_ctrl to value 0"]
 impl crate::Resettable for KS_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

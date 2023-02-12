@@ -97,31 +97,37 @@ impl R {
 impl W {
     #[doc = "Bits 17:19"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_adr_byte(&mut self) -> SF_IF_3_ADR_BYTE_W<17> {
         SF_IF_3_ADR_BYTE_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_cmd_byte(&mut self) -> SF_IF_3_CMD_BYTE_W<20> {
         SF_IF_3_CMD_BYTE_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_adr_en(&mut self) -> SF_IF_3_ADR_EN_W<26> {
         SF_IF_3_ADR_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_cmd_en(&mut self) -> SF_IF_3_CMD_EN_W<27> {
         SF_IF_3_CMD_EN_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_spi_mode(&mut self) -> SF_IF_3_SPI_MODE_W<28> {
         SF_IF_3_SPI_MODE_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_if_3_qpi_mode_en(&mut self) -> SF_IF_3_QPI_MODE_EN_W<31> {
         SF_IF_3_QPI_MODE_EN_W::new(self)
     }
@@ -144,11 +150,10 @@ impl crate::Readable for SF_IF_IAHB_6_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_if_iahb_6::W](W) writer structure"]
 impl crate::Writable for SF_IF_IAHB_6_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_if_iahb_6 to value 0"]
 impl crate::Resettable for SF_IF_IAHB_6_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

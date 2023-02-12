@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_gain_i(&mut self) -> SINGEN_GAIN_I_W<0> {
         SINGEN_GAIN_I_W::new(self)
     }
     #[doc = "Bits 12:21"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_start_addr1_i(&mut self) -> SINGEN_START_ADDR1_I_W<12> {
         SINGEN_START_ADDR1_I_W::new(self)
     }
     #[doc = "Bits 22:31"]
     #[inline(always)]
+    #[must_use]
     pub fn singen_start_addr0_i(&mut self) -> SINGEN_START_ADDR0_I_W<22> {
         SINGEN_START_ADDR0_I_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for RF_SINGEN_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_singen_2::W](W) writer structure"]
 impl crate::Writable for RF_SINGEN_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_singen_2 to value 0"]
 impl crate::Resettable for RF_SINGEN_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

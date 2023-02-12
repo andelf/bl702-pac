@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_key_slot_8_w0(&mut self) -> REG_KEY_SLOT_8_W0_W<0> {
         REG_KEY_SLOT_8_W0_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for REG_KEY_SLOT_8_W0_SPEC {
 #[doc = "`write(|w| ..)` method takes [reg_key_slot_8_w0::W](W) writer structure"]
 impl crate::Writable for REG_KEY_SLOT_8_W0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets reg_key_slot_8_w0 to value 0"]
 impl crate::Resettable for REG_KEY_SLOT_8_W0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

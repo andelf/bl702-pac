@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_cnt(&mut self) -> TX_FIFO_CNT_W<0> {
         TX_FIFO_CNT_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_fifo_cnt(&mut self) -> RX_FIFO_CNT_W<8> {
         RX_FIFO_CNT_W::new(self)
     }
     #[doc = "Bits 16:22"]
     #[inline(always)]
+    #[must_use]
     pub fn tx_fifo_th(&mut self) -> TX_FIFO_TH_W<16> {
         TX_FIFO_TH_W::new(self)
     }
     #[doc = "Bits 24:30"]
     #[inline(always)]
+    #[must_use]
     pub fn rx_fifo_th(&mut self) -> RX_FIFO_TH_W<24> {
         RX_FIFO_TH_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for UART_FIFO_CONFIG_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_fifo_config_1::W](W) writer structure"]
 impl crate::Writable for UART_FIFO_CONFIG_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_fifo_config_1 to value 0"]
 impl crate::Resettable for UART_FIFO_CONFIG_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

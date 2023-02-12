@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
+    #[must_use]
     pub fn se_pka_0_hburst(&mut self) -> SE_PKA_0_HBURST_W<0> {
         SE_PKA_0_HBURST_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn se_pka_0_hbypass(&mut self) -> SE_PKA_0_HBYPASS_W<3> {
         SE_PKA_0_HBYPASS_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for SE_PKA_0_CTRL_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_pka_0_ctrl_1::W](W) writer structure"]
 impl crate::Writable for SE_PKA_0_CTRL_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_pka_0_ctrl_1 to value 0"]
 impl crate::Resettable for SE_PKA_0_CTRL_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cam_rst(&mut self) -> REG_CAM_RST_W<0> {
         REG_CAM_RST_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_cam_pwdn(&mut self) -> REG_CAM_PWDN_W<1> {
         REG_CAM_PWDN_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for SNSR_CONTROL_SPEC {
 #[doc = "`write(|w| ..)` method takes [snsr_control::W](W) writer structure"]
 impl crate::Writable for SNSR_CONTROL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets snsr_control to value 0"]
 impl crate::Resettable for SNSR_CONTROL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

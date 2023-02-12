@@ -143,56 +143,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_wake_int(&mut self) -> RO_PDS_WAKE_INT_W<0> {
         RO_PDS_WAKE_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_rf_done_int(&mut self) -> RO_PDS_RF_DONE_INT_W<2> {
         RO_PDS_RF_DONE_INT_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_pll_done_int(&mut self) -> RO_PDS_PLL_DONE_INT_W<3> {
         RO_PDS_PLL_DONE_INT_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn pds_reset_event(&mut self) -> PDS_RESET_EVENT_W<4> {
         PDS_RESET_EVENT_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn pds_clr_reset_event(&mut self) -> PDS_CLR_RESET_EVENT_W<7> {
         PDS_CLR_RESET_EVENT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_wake_int_mask(&mut self) -> CR_PDS_WAKE_INT_MASK_W<8> {
         CR_PDS_WAKE_INT_MASK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_rf_done_int_mask(&mut self) -> CR_PDS_RF_DONE_INT_MASK_W<10> {
         CR_PDS_RF_DONE_INT_MASK_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_pll_done_int_mask(&mut self) -> CR_PDS_PLL_DONE_INT_MASK_W<11> {
         CR_PDS_PLL_DONE_INT_MASK_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_int_clr(&mut self) -> CR_PDS_INT_CLR_W<15> {
         CR_PDS_INT_CLR_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_pds_wakeup_src_en(&mut self) -> CR_PDS_WAKEUP_SRC_EN_W<16> {
         CR_PDS_WAKEUP_SRC_EN_W::new(self)
     }
     #[doc = "Bits 24:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_wakeup_event(&mut self) -> RO_PDS_WAKEUP_EVENT_W<24> {
         RO_PDS_WAKEUP_EVENT_W::new(self)
     }
@@ -215,11 +226,10 @@ impl crate::Readable for PDS_INT_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_int::W](W) writer structure"]
 impl crate::Writable for PDS_INT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets PDS_INT to value 0"]
 impl crate::Resettable for PDS_INT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

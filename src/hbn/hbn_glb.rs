@@ -136,51 +136,61 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_root_clk_sel(&mut self) -> HBN_ROOT_CLK_SEL_W<0> {
         HBN_ROOT_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_uart_clk_sel(&mut self) -> HBN_UART_CLK_SEL_W<2> {
         HBN_UART_CLK_SEL_W::new(self)
     }
     #[doc = "Bits 3:4"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_f32k_sel(&mut self) -> HBN_F32K_SEL_W<3> {
         HBN_F32K_SEL_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_pu_rc32k(&mut self) -> HBN_PU_RC32K_W<5> {
         HBN_PU_RC32K_W::new(self)
     }
     #[doc = "Bits 6:7"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11_rt_iload_sel(&mut self) -> LDO11_RT_ILOAD_SEL_W<6> {
         LDO11_RT_ILOAD_SEL_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_reset_event(&mut self) -> HBN_RESET_EVENT_W<8> {
         HBN_RESET_EVENT_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn hbn_clear_reset_event(&mut self) -> HBN_CLEAR_RESET_EVENT_W<13> {
         HBN_CLEAR_RESET_EVENT_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_ldo11soc_vout_sel_aon(&mut self) -> SW_LDO11SOC_VOUT_SEL_AON_W<16> {
         SW_LDO11SOC_VOUT_SEL_AON_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_ldo11_rt_vout_sel(&mut self) -> SW_LDO11_RT_VOUT_SEL_W<24> {
         SW_LDO11_RT_VOUT_SEL_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn sw_ldo11_aon_vout_sel(&mut self) -> SW_LDO11_AON_VOUT_SEL_W<28> {
         SW_LDO11_AON_VOUT_SEL_W::new(self)
     }
@@ -203,11 +213,10 @@ impl crate::Readable for HBN_GLB_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_glb::W](W) writer structure"]
 impl crate::Writable for HBN_GLB_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_GLB to value 0"]
 impl crate::Resettable for HBN_GLB_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

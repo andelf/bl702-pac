@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_reseed_n_msb(&mut self) -> SE_TRNG_0_RESEED_N_MSB_W<0> {
         SE_TRNG_0_RESEED_N_MSB_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for SE_TRNG_0_CTRL_2_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_trng_0_ctrl_2::W](W) writer structure"]
 impl crate::Writable for SE_TRNG_0_CTRL_2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_trng_0_ctrl_2 to value 0"]
 impl crate::Resettable for SE_TRNG_0_CTRL_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

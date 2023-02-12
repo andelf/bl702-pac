@@ -102,36 +102,43 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_rin(&mut self) -> TESTBUF_RIN_W<0> {
         TESTBUF_RIN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_rfb(&mut self) -> TESTBUF_RFB_W<4> {
         TESTBUF_RFB_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_op_cc(&mut self) -> TESTBUF_OP_CC_W<8> {
         TESTBUF_OP_CC_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_boost(&mut self) -> TESTBUF_BOOST_W<12> {
         TESTBUF_BOOST_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_bm(&mut self) -> TESTBUF_BM_W<16> {
         TESTBUF_BM_W::new(self)
     }
     #[doc = "Bits 20:21"]
     #[inline(always)]
+    #[must_use]
     pub fn testbuf_vcm(&mut self) -> TESTBUF_VCM_W<20> {
         TESTBUF_VCM_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_testbuf(&mut self) -> PU_TESTBUF_W<24> {
         PU_TESTBUF_W::new(self)
     }
@@ -154,11 +161,10 @@ impl crate::Readable for TESTBUF_SPEC {
 #[doc = "`write(|w| ..)` method takes [testbuf::W](W) writer structure"]
 impl crate::Writable for TESTBUF_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets testbuf to value 0"]
 impl crate::Resettable for TESTBUF_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

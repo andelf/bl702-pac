@@ -57,11 +57,13 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_cks_clr(&mut self) -> CR_CKS_CLR_W<0> {
         CR_CKS_CLR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_cks_byte_swap(&mut self) -> CR_CKS_BYTE_SWAP_W<1> {
         CR_CKS_BYTE_SWAP_W::new(self)
     }
@@ -84,11 +86,10 @@ impl crate::Readable for CKS_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [cks_config::W](W) writer structure"]
 impl crate::Writable for CKS_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets cks_config to value 0"]
 impl crate::Resettable for CKS_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

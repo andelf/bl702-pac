@@ -120,46 +120,55 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_seri_cs_tx(&mut self) -> PA_SERI_CS_TX_W<0> {
         PA_SERI_CS_TX_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_seri_cs_rx(&mut self) -> PA_SERI_CS_RX_W<4> {
         PA_SERI_CS_RX_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_seri_cs_hw(&mut self) -> PA_SERI_CS_HW_W<8> {
         PA_SERI_CS_HW_W::new(self)
     }
     #[doc = "Bits 12:15"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_para_cs(&mut self) -> PA_PARA_CS_W<12> {
         PA_PARA_CS_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_vdd11_sel(&mut self) -> PA_VDD11_SEL_W<20> {
         PA_VDD11_SEL_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_ldo_bm(&mut self) -> PA_LDO_BM_W<24> {
         PA_LDO_BM_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_lp_en(&mut self) -> PA_LP_EN_W<28> {
         PA_LP_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_hp_en(&mut self) -> PA_HP_EN_W<29> {
         PA_HP_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn pa_force_short_open(&mut self) -> PA_FORCE_SHORT_OPEN_W<30> {
         PA_FORCE_SHORT_OPEN_W::new(self)
     }
@@ -182,11 +191,10 @@ impl crate::Readable for PA_SPEC {
 #[doc = "`write(|w| ..)` method takes [pa::W](W) writer structure"]
 impl crate::Writable for PA_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pa to value 0"]
 impl crate::Resettable for PA_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

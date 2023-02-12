@@ -168,66 +168,79 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_tx_en(&mut self) -> CR_XCVR_FORCE_TX_EN_W<0> {
         CR_XCVR_FORCE_TX_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_tx_oe(&mut self) -> CR_XCVR_FORCE_TX_OE_W<1> {
         CR_XCVR_FORCE_TX_OE_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_tx_dp(&mut self) -> CR_XCVR_FORCE_TX_DP_W<2> {
         CR_XCVR_FORCE_TX_DP_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_tx_dn(&mut self) -> CR_XCVR_FORCE_TX_DN_W<3> {
         CR_XCVR_FORCE_TX_DN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_rx_en(&mut self) -> CR_XCVR_FORCE_RX_EN_W<4> {
         CR_XCVR_FORCE_RX_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_rx_d(&mut self) -> CR_XCVR_FORCE_RX_D_W<5> {
         CR_XCVR_FORCE_RX_D_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_rx_dp(&mut self) -> CR_XCVR_FORCE_RX_DP_W<6> {
         CR_XCVR_FORCE_RX_DP_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_force_rx_dn(&mut self) -> CR_XCVR_FORCE_RX_DN_W<7> {
         CR_XCVR_FORCE_RX_DN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_om_rx_sel(&mut self) -> CR_XCVR_OM_RX_SEL_W<8> {
         CR_XCVR_OM_RX_SEL_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_om_rx_d(&mut self) -> CR_XCVR_OM_RX_D_W<9> {
         CR_XCVR_OM_RX_D_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_om_rx_dp(&mut self) -> CR_XCVR_OM_RX_DP_W<10> {
         CR_XCVR_OM_RX_DP_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_xcvr_om_rx_dn(&mut self) -> CR_XCVR_OM_RX_DN_W<11> {
         CR_XCVR_OM_RX_DN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sts_vbus_det(&mut self) -> STS_VBUS_DET_W<31> {
         STS_VBUS_DET_W::new(self)
     }
@@ -250,11 +263,10 @@ impl crate::Readable for XCVR_IF_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [xcvr_if_config::W](W) writer structure"]
 impl crate::Writable for XCVR_IF_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets xcvr_if_config to value 0"]
 impl crate::Resettable for XCVR_IF_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

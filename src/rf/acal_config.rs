@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_ll(&mut self) -> VCO_IDAC_LL_W<0> {
         VCO_IDAC_LL_W::new(self)
     }
     #[doc = "Bits 8:13"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_lh(&mut self) -> VCO_IDAC_LH_W<8> {
         VCO_IDAC_LH_W::new(self)
     }
     #[doc = "Bits 16:21"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_hl(&mut self) -> VCO_IDAC_HL_W<16> {
         VCO_IDAC_HL_W::new(self)
     }
     #[doc = "Bits 24:29"]
     #[inline(always)]
+    #[must_use]
     pub fn vco_idac_hh(&mut self) -> VCO_IDAC_HH_W<24> {
         VCO_IDAC_HH_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for ACAL_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [acal_config::W](W) writer structure"]
 impl crate::Writable for ACAL_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets acal_config to value 0"]
 impl crate::Resettable for ACAL_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

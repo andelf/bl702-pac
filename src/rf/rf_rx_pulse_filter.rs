@@ -77,21 +77,25 @@ impl R {
 impl W {
     #[doc = "Bits 0:8"]
     #[inline(always)]
+    #[must_use]
     pub fn pf_th2(&mut self) -> PF_TH2_W<0> {
         PF_TH2_W::new(self)
     }
     #[doc = "Bits 10:18"]
     #[inline(always)]
+    #[must_use]
     pub fn pf_th1(&mut self) -> PF_TH1_W<10> {
         PF_TH1_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn pf_en_q(&mut self) -> PF_EN_Q_W<20> {
         PF_EN_Q_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn pf_en_i(&mut self) -> PF_EN_I_W<21> {
         PF_EN_I_W::new(self)
     }
@@ -114,11 +118,10 @@ impl crate::Readable for RF_RX_PULSE_FILTER_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_rx_pulse_filter::W](W) writer structure"]
 impl crate::Writable for RF_RX_PULSE_FILTER_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_rx_pulse_filter to value 0"]
 impl crate::Resettable for RF_RX_PULSE_FILTER_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

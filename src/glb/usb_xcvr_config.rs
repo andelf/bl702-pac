@@ -149,56 +149,67 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_v_hys_m(&mut self) -> USB_V_HYS_M_W<0> {
         USB_V_HYS_M_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_v_hys_p(&mut self) -> USB_V_HYS_P_W<2> {
         USB_V_HYS_P_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_bd_vth(&mut self) -> USB_BD_VTH_W<4> {
         USB_BD_VTH_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_usb_use_xcvr(&mut self) -> REG_USB_USE_XCVR_W<7> {
         REG_USB_USE_XCVR_W::new(self)
     }
     #[doc = "Bits 8:10"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_str_drv(&mut self) -> USB_STR_DRV_W<8> {
         USB_STR_DRV_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_usb_use_ctrl(&mut self) -> REG_USB_USE_CTRL_W<11> {
         REG_USB_USE_CTRL_W::new(self)
     }
     #[doc = "Bits 12:14"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_res_pullup_tune(&mut self) -> USB_RES_PULLUP_TUNE_W<12> {
         USB_RES_PULLUP_TUNE_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_slewrate_m_fall(&mut self) -> USB_SLEWRATE_M_FALL_W<16> {
         USB_SLEWRATE_M_FALL_W::new(self)
     }
     #[doc = "Bits 20:22"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_slewrate_m_rise(&mut self) -> USB_SLEWRATE_M_RISE_W<20> {
         USB_SLEWRATE_M_RISE_W::new(self)
     }
     #[doc = "Bits 24:26"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_slewrate_p_fall(&mut self) -> USB_SLEWRATE_P_FALL_W<24> {
         USB_SLEWRATE_P_FALL_W::new(self)
     }
     #[doc = "Bits 28:30"]
     #[inline(always)]
+    #[must_use]
     pub fn usb_slewrate_p_rise(&mut self) -> USB_SLEWRATE_P_RISE_W<28> {
         USB_SLEWRATE_P_RISE_W::new(self)
     }
@@ -221,11 +232,10 @@ impl crate::Readable for USB_XCVR_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [usb_xcvr_config::W](W) writer structure"]
 impl crate::Writable for USB_XCVR_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets usb_xcvr_config to value 0"]
 impl crate::Resettable for USB_XCVR_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -255,121 +255,145 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_end_int(&mut self) -> SPI_END_INT_W<0> {
         SPI_END_INT_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_txf_int(&mut self) -> SPI_TXF_INT_W<1> {
         SPI_TXF_INT_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_rxf_int(&mut self) -> SPI_RXF_INT_W<2> {
         SPI_RXF_INT_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_sto_int(&mut self) -> SPI_STO_INT_W<3> {
         SPI_STO_INT_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_txu_int(&mut self) -> SPI_TXU_INT_W<4> {
         SPI_TXU_INT_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn spi_fer_int(&mut self) -> SPI_FER_INT_W<5> {
         SPI_FER_INT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_end_mask(&mut self) -> CR_SPI_END_MASK_W<8> {
         CR_SPI_END_MASK_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_txf_mask(&mut self) -> CR_SPI_TXF_MASK_W<9> {
         CR_SPI_TXF_MASK_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_rxf_mask(&mut self) -> CR_SPI_RXF_MASK_W<10> {
         CR_SPI_RXF_MASK_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_sto_mask(&mut self) -> CR_SPI_STO_MASK_W<11> {
         CR_SPI_STO_MASK_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_txu_mask(&mut self) -> CR_SPI_TXU_MASK_W<12> {
         CR_SPI_TXU_MASK_W::new(self)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_fer_mask(&mut self) -> CR_SPI_FER_MASK_W<13> {
         CR_SPI_FER_MASK_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_end_clr(&mut self) -> CR_SPI_END_CLR_W<16> {
         CR_SPI_END_CLR_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_17(&mut self) -> RSVD_17_W<17> {
         RSVD_17_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_18(&mut self) -> RSVD_18_W<18> {
         RSVD_18_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_sto_clr(&mut self) -> CR_SPI_STO_CLR_W<19> {
         CR_SPI_STO_CLR_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_txu_clr(&mut self) -> CR_SPI_TXU_CLR_W<20> {
         CR_SPI_TXU_CLR_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn rsvd_21(&mut self) -> RSVD_21_W<21> {
         RSVD_21_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_end_en(&mut self) -> CR_SPI_END_EN_W<24> {
         CR_SPI_END_EN_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_txf_en(&mut self) -> CR_SPI_TXF_EN_W<25> {
         CR_SPI_TXF_EN_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_rxf_en(&mut self) -> CR_SPI_RXF_EN_W<26> {
         CR_SPI_RXF_EN_W::new(self)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_sto_en(&mut self) -> CR_SPI_STO_EN_W<27> {
         CR_SPI_STO_EN_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_txu_en(&mut self) -> CR_SPI_TXU_EN_W<28> {
         CR_SPI_TXU_EN_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_spi_fer_en(&mut self) -> CR_SPI_FER_EN_W<29> {
         CR_SPI_FER_EN_W::new(self)
     }
@@ -392,11 +416,10 @@ impl crate::Readable for SPI_INT_STS_SPEC {
 #[doc = "`write(|w| ..)` method takes [spi_int_sts::W](W) writer structure"]
 impl crate::Writable for SPI_INT_STS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets spi_int_sts to value 0"]
 impl crate::Resettable for SPI_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -129,46 +129,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_force_cs_zvs_aon(&mut self) -> DCDC18_FORCE_CS_ZVS_AON_W<0> {
         DCDC18_FORCE_CS_ZVS_AON_W::new(self)
     }
     #[doc = "Bits 1:3"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_cs_delay_aon(&mut self) -> DCDC18_CS_DELAY_AON_W<1> {
         DCDC18_CS_DELAY_AON_W::new(self)
     }
     #[doc = "Bits 4:6"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_zvs_td_opt_aon(&mut self) -> DCDC18_ZVS_TD_OPT_AON_W<4> {
         DCDC18_ZVS_TD_OPT_AON_W::new(self)
     }
     #[doc = "Bits 8:12"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_nonoverlap_td_aon(&mut self) -> DCDC18_NONOVERLAP_TD_AON_W<8> {
         DCDC18_NONOVERLAP_TD_AON_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_rc_sel_aon(&mut self) -> DCDC18_RC_SEL_AON_W<16> {
         DCDC18_RC_SEL_AON_W::new(self)
     }
     #[doc = "Bits 20:23"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_chf_sel_aon(&mut self) -> DCDC18_CHF_SEL_AON_W<20> {
         DCDC18_CHF_SEL_AON_W::new(self)
     }
     #[doc = "Bits 24:27"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_cfb_sel_aon(&mut self) -> DCDC18_CFB_SEL_AON_W<24> {
         DCDC18_CFB_SEL_AON_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_en_antiring_aon(&mut self) -> DCDC18_EN_ANTIRING_AON_W<28> {
         DCDC18_EN_ANTIRING_AON_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn dcdc18_pulldown_aon(&mut self) -> DCDC18_PULLDOWN_AON_W<29> {
         DCDC18_PULLDOWN_AON_W::new(self)
     }
@@ -191,11 +200,10 @@ impl crate::Readable for DCDC18_TOP_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [dcdc18_top_1::W](W) writer structure"]
 impl crate::Writable for DCDC18_TOP_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets dcdc18_top_1 to value 0"]
 impl crate::Resettable for DCDC18_TOP_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:13"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_region_r0_end(&mut self) -> SF_AES_REGION_R0_END_W<0> {
         SF_AES_REGION_R0_END_W::new(self)
     }
     #[doc = "Bits 14:27"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_region_r0_start(&mut self) -> SF_AES_REGION_R0_START_W<14> {
         SF_AES_REGION_R0_START_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_region_r0_hw_key_en(&mut self) -> SF_AES_REGION_R0_HW_KEY_EN_W<29> {
         SF_AES_REGION_R0_HW_KEY_EN_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_region_r0_en(&mut self) -> SF_AES_REGION_R0_EN_W<30> {
         SF_AES_REGION_R0_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn sf_aes_region_r0_lock(&mut self) -> SF_AES_REGION_R0_LOCK_W<31> {
         SF_AES_REGION_R0_LOCK_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for SF_AES_CFG_R0_SPEC {
 #[doc = "`write(|w| ..)` method takes [sf_aes_cfg_r0::W](W) writer structure"]
 impl crate::Writable for SF_AES_CFG_R0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets sf_aes_cfg_r0 to value 0"]
 impl crate::Resettable for SF_AES_CFG_R0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

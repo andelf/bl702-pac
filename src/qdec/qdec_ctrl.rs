@@ -139,56 +139,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn qdec_en(&mut self) -> QDEC_EN_W<0> {
         QDEC_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn led_en(&mut self) -> LED_EN_W<1> {
         LED_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn led_pol(&mut self) -> LED_POL_W<2> {
         LED_POL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn deg_en(&mut self) -> DEG_EN_W<3> {
         DEG_EN_W::new(self)
     }
     #[doc = "Bits 4:7"]
     #[inline(always)]
+    #[must_use]
     pub fn deg_cnt(&mut self) -> DEG_CNT_W<4> {
         DEG_CNT_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn spl_period(&mut self) -> SPL_PERIOD_W<8> {
         SPL_PERIOD_W::new(self)
     }
     #[doc = "Bits 12:19"]
     #[inline(always)]
+    #[must_use]
     pub fn rpt_period(&mut self) -> RPT_PERIOD_W<12> {
         RPT_PERIOD_W::new(self)
     }
     #[doc = "Bits 20:28"]
     #[inline(always)]
+    #[must_use]
     pub fn led_period(&mut self) -> LED_PERIOD_W<20> {
         LED_PERIOD_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn spl_mode(&mut self) -> SPL_MODE_W<29> {
         SPL_MODE_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn rpt_mode(&mut self) -> RPT_MODE_W<30> {
         RPT_MODE_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn input_swap(&mut self) -> INPUT_SWAP_W<31> {
         INPUT_SWAP_W::new(self)
     }
@@ -211,11 +222,10 @@ impl crate::Readable for QDEC_CTRL_SPEC {
 #[doc = "`write(|w| ..)` method takes [qdec_ctrl::W](W) writer structure"]
 impl crate::Writable for QDEC_CTRL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets qdec_ctrl to value 0"]
 impl crate::Resettable for QDEC_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

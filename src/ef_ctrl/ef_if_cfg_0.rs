@@ -232,101 +232,121 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sf_aes_mode(&mut self) -> EF_IF_SF_AES_MODE_W<0> {
         EF_IF_SF_AES_MODE_W::new(self)
     }
     #[doc = "Bits 2:3"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sboot_sign_mode(&mut self) -> EF_IF_SBOOT_SIGN_MODE_W<2> {
         EF_IF_SBOOT_SIGN_MODE_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sboot_en(&mut self) -> EF_IF_SBOOT_EN_W<4> {
         EF_IF_SBOOT_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cpu1_enc_en(&mut self) -> EF_IF_CPU1_ENC_EN_W<6> {
         EF_IF_CPU1_ENC_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cpu0_enc_en(&mut self) -> EF_IF_CPU0_ENC_EN_W<7> {
         EF_IF_CPU0_ENC_EN_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_boot_sel(&mut self) -> EF_IF_BOOT_SEL_W<8> {
         EF_IF_BOOT_SEL_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sf_key_0_sel(&mut self) -> EF_IF_SF_KEY_0_SEL_W<12> {
         EF_IF_SF_KEY_0_SEL_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sdu_dis(&mut self) -> EF_IF_SDU_DIS_W<14> {
         EF_IF_SDU_DIS_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_ble_dis(&mut self) -> EF_IF_BLE_DIS_W<15> {
         EF_IF_BLE_DIS_W::new(self)
     }
     #[doc = "Bit 16"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_wifi_dis(&mut self) -> EF_IF_WIFI_DIS_W<16> {
         EF_IF_WIFI_DIS_W::new(self)
     }
     #[doc = "Bit 17"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_0_key_enc_en(&mut self) -> EF_IF_0_KEY_ENC_EN_W<17> {
         EF_IF_0_KEY_ENC_EN_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cam_dis(&mut self) -> EF_IF_CAM_DIS_W<18> {
         EF_IF_CAM_DIS_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_sf_dis(&mut self) -> EF_IF_SF_DIS_W<19> {
         EF_IF_SF_DIS_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cpu1_dis(&mut self) -> EF_IF_CPU1_DIS_W<20> {
         EF_IF_CPU1_DIS_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_cpu_rst_dbg_dis(&mut self) -> EF_IF_CPU_RST_DBG_DIS_W<21> {
         EF_IF_CPU_RST_DBG_DIS_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_se_dbg_dis(&mut self) -> EF_IF_SE_DBG_DIS_W<22> {
         EF_IF_SE_DBG_DIS_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_efuse_dbg_dis(&mut self) -> EF_IF_EFUSE_DBG_DIS_W<23> {
         EF_IF_EFUSE_DBG_DIS_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_dbg_jtag_1_dis(&mut self) -> EF_IF_DBG_JTAG_1_DIS_W<24> {
         EF_IF_DBG_JTAG_1_DIS_W::new(self)
     }
     #[doc = "Bits 26:27"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_dbg_jtag_0_dis(&mut self) -> EF_IF_DBG_JTAG_0_DIS_W<26> {
         EF_IF_DBG_JTAG_0_DIS_W::new(self)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
+    #[must_use]
     pub fn ef_if_dbg_mode(&mut self) -> EF_IF_DBG_MODE_W<28> {
         EF_IF_DBG_MODE_W::new(self)
     }
@@ -349,11 +369,10 @@ impl crate::Readable for EF_IF_CFG_0_SPEC {
 #[doc = "`write(|w| ..)` method takes [ef_if_cfg_0::W](W) writer structure"]
 impl crate::Writable for EF_IF_CFG_0_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ef_if_cfg_0 to value 0"]
 impl crate::Resettable for EF_IF_CFG_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

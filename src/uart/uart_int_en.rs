@@ -120,46 +120,55 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_end_en(&mut self) -> CR_UTX_END_EN_W<0> {
         CR_UTX_END_EN_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_end_en(&mut self) -> CR_URX_END_EN_W<1> {
         CR_URX_END_EN_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_fifo_en(&mut self) -> CR_UTX_FIFO_EN_W<2> {
         CR_UTX_FIFO_EN_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_fifo_en(&mut self) -> CR_URX_FIFO_EN_W<3> {
         CR_URX_FIFO_EN_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_rto_en(&mut self) -> CR_URX_RTO_EN_W<4> {
         CR_URX_RTO_EN_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_pce_en(&mut self) -> CR_URX_PCE_EN_W<5> {
         CR_URX_PCE_EN_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_utx_fer_en(&mut self) -> CR_UTX_FER_EN_W<6> {
         CR_UTX_FER_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_fer_en(&mut self) -> CR_URX_FER_EN_W<7> {
         CR_URX_FER_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn cr_urx_lse_en(&mut self) -> CR_URX_LSE_EN_W<8> {
         CR_URX_LSE_EN_W::new(self)
     }
@@ -182,11 +191,10 @@ impl crate::Readable for UART_INT_EN_SPEC {
 #[doc = "`write(|w| ..)` method takes [uart_int_en::W](W) writer structure"]
 impl crate::Writable for UART_INT_EN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets uart_int_en to value 0"]
 impl crate::Resettable for UART_INT_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

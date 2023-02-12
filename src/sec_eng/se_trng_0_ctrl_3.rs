@@ -89,26 +89,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_cp_ratio(&mut self) -> SE_TRNG_0_CP_RATIO_W<0> {
         SE_TRNG_0_CP_RATIO_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_rct_c(&mut self) -> SE_TRNG_0_HT_RCT_C_W<8> {
         SE_TRNG_0_HT_RCT_C_W::new(self)
     }
     #[doc = "Bits 16:25"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_apt_c(&mut self) -> SE_TRNG_0_HT_APT_C_W<16> {
         SE_TRNG_0_HT_APT_C_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_ht_od_en(&mut self) -> SE_TRNG_0_HT_OD_EN_W<26> {
         SE_TRNG_0_HT_OD_EN_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn se_trng_0_rosc_en(&mut self) -> SE_TRNG_0_ROSC_EN_W<31> {
         SE_TRNG_0_ROSC_EN_W::new(self)
     }
@@ -131,11 +136,10 @@ impl crate::Readable for SE_TRNG_0_CTRL_3_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_trng_0_ctrl_3::W](W) writer structure"]
 impl crate::Writable for SE_TRNG_0_CTRL_3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_trng_0_ctrl_3 to value 0"]
 impl crate::Resettable for SE_TRNG_0_CTRL_3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

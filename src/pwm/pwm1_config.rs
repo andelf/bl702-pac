@@ -103,36 +103,43 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_clk_sel(&mut self) -> REG_CLK_SEL_W<0> {
         REG_CLK_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_out_inv(&mut self) -> PWM_OUT_INV_W<2> {
         PWM_OUT_INV_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_stop_mode(&mut self) -> PWM_STOP_MODE_W<3> {
         PWM_STOP_MODE_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_sw_force_val(&mut self) -> PWM_SW_FORCE_VAL_W<4> {
         PWM_SW_FORCE_VAL_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_sw_mode(&mut self) -> PWM_SW_MODE_W<5> {
         PWM_SW_MODE_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_stop_en(&mut self) -> PWM_STOP_EN_W<6> {
         PWM_STOP_EN_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn pwm_sts_top(&mut self) -> PWM_STS_TOP_W<7> {
         PWM_STS_TOP_W::new(self)
     }
@@ -155,11 +162,10 @@ impl crate::Readable for PWM1_CONFIG_SPEC {
 #[doc = "`write(|w| ..)` method takes [pwm1_config::W](W) writer structure"]
 impl crate::Writable for PWM1_CONFIG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pwm1_config to value 0"]
 impl crate::Resettable for PWM1_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

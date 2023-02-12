@@ -69,16 +69,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_0_t_loop_n(&mut self) -> SE_CDET_0_T_LOOP_N_W<0> {
         SE_CDET_0_T_LOOP_N_W::new(self)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_0_t_dly_n(&mut self) -> SE_CDET_0_T_DLY_N_W<8> {
         SE_CDET_0_T_DLY_N_W::new(self)
     }
     #[doc = "Bits 16:23"]
     #[inline(always)]
+    #[must_use]
     pub fn se_cdet_0_g_slp_n(&mut self) -> SE_CDET_0_G_SLP_N_W<16> {
         SE_CDET_0_G_SLP_N_W::new(self)
     }
@@ -101,11 +104,10 @@ impl crate::Readable for SE_CDET_0_CTRL_1_SPEC {
 #[doc = "`write(|w| ..)` method takes [se_cdet_0_ctrl_1::W](W) writer structure"]
 impl crate::Writable for SE_CDET_0_CTRL_1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets se_cdet_0_ctrl_1 to value 0"]
 impl crate::Resettable for SE_CDET_0_CTRL_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

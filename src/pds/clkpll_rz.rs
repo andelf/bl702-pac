@@ -93,31 +93,37 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_c4_en(&mut self) -> CLKPLL_C4_EN_W<0> {
         CLKPLL_C4_EN_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_r4(&mut self) -> CLKPLL_R4_W<4> {
         CLKPLL_R4_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_r4_short(&mut self) -> CLKPLL_R4_SHORT_W<8> {
         CLKPLL_R4_SHORT_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_c3(&mut self) -> CLKPLL_C3_W<12> {
         CLKPLL_C3_W::new(self)
     }
     #[doc = "Bits 14:15"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_cz(&mut self) -> CLKPLL_CZ_W<14> {
         CLKPLL_CZ_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn clkpll_rz(&mut self) -> CLKPLL_RZ_W<16> {
         CLKPLL_RZ_W::new(self)
     }
@@ -140,11 +146,10 @@ impl crate::Readable for CLKPLL_RZ_SPEC {
 #[doc = "`write(|w| ..)` method takes [clkpll_rz::W](W) writer structure"]
 impl crate::Writable for CLKPLL_RZ_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets clkpll_rz to value 0"]
 impl crate::Resettable for CLKPLL_RZ_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

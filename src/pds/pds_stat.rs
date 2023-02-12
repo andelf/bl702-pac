@@ -68,16 +68,19 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_state(&mut self) -> RO_PDS_STATE_W<0> {
         RO_PDS_STATE_W::new(self)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_rf_state(&mut self) -> RO_PDS_RF_STATE_W<8> {
         RO_PDS_RF_STATE_W::new(self)
     }
     #[doc = "Bits 16:17"]
     #[inline(always)]
+    #[must_use]
     pub fn ro_pds_pll_state(&mut self) -> RO_PDS_PLL_STATE_W<16> {
         RO_PDS_PLL_STATE_W::new(self)
     }
@@ -100,11 +103,10 @@ impl crate::Readable for PDS_STAT_SPEC {
 #[doc = "`write(|w| ..)` method takes [pds_stat::W](W) writer structure"]
 impl crate::Writable for PDS_STAT_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets pds_stat to value 0"]
 impl crate::Resettable for PDS_STAT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

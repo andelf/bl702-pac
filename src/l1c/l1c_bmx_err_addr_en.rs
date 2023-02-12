@@ -79,21 +79,25 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_err_addr_dis(&mut self) -> L1C_BMX_ERR_ADDR_DIS_W<0> {
         L1C_BMX_ERR_ADDR_DIS_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_err_dec(&mut self) -> L1C_BMX_ERR_DEC_W<4> {
         L1C_BMX_ERR_DEC_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_bmx_err_tz(&mut self) -> L1C_BMX_ERR_TZ_W<5> {
         L1C_BMX_ERR_TZ_W::new(self)
     }
     #[doc = "Bits 16:19"]
     #[inline(always)]
+    #[must_use]
     pub fn l1c_hsel_option(&mut self) -> L1C_HSEL_OPTION_W<16> {
         L1C_HSEL_OPTION_W::new(self)
     }
@@ -116,11 +120,10 @@ impl crate::Readable for L1C_BMX_ERR_ADDR_EN_SPEC {
 #[doc = "`write(|w| ..)` method takes [l1c_bmx_err_addr_en::W](W) writer structure"]
 impl crate::Writable for L1C_BMX_ERR_ADDR_EN_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets l1c_bmx_err_addr_en to value 0"]
 impl crate::Resettable for L1C_BMX_ERR_ADDR_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

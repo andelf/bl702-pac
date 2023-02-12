@@ -131,51 +131,61 @@ impl R {
 impl W {
     #[doc = "Bits 0:11"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_lo_time(&mut self) -> RF_FSM_LO_TIME_W<0> {
         RF_FSM_LO_TIME_W::new(self)
     }
     #[doc = "Bits 12:14"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_state(&mut self) -> RF_FSM_STATE_W<12> {
         RF_FSM_STATE_W::new(self)
     }
     #[doc = "Bits 16:18"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_st_4s(&mut self) -> RF_FSM_ST_4S_W<16> {
         RF_FSM_ST_4S_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_st_4s_en(&mut self) -> RF_FSM_ST_4S_EN_W<20> {
         RF_FSM_ST_4S_EN_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_en(&mut self) -> RF_FSM_EN_W<21> {
         RF_FSM_EN_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_rx_afifo_4s(&mut self) -> RF_FSM_RX_AFIFO_4S_W<22> {
         RF_FSM_RX_AFIFO_4S_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_rx_afifo_4s_en(&mut self) -> RF_FSM_RX_AFIFO_4S_EN_W<23> {
         RF_FSM_RX_AFIFO_4S_EN_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_tx_afifo_4s(&mut self) -> RF_FSM_TX_AFIFO_4S_W<24> {
         RF_FSM_TX_AFIFO_4S_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_tx_afifo_4s_en(&mut self) -> RF_FSM_TX_AFIFO_4S_EN_W<25> {
         RF_FSM_TX_AFIFO_4S_EN_W::new(self)
     }
     #[doc = "Bits 26:31"]
     #[inline(always)]
+    #[must_use]
     pub fn rf_fsm_afifo_dly_time(&mut self) -> RF_FSM_AFIFO_DLY_TIME_W<26> {
         RF_FSM_AFIFO_DLY_TIME_W::new(self)
     }
@@ -198,11 +208,10 @@ impl crate::Readable for RF_FSM_SPEC {
 #[doc = "`write(|w| ..)` method takes [rf_fsm::W](W) writer structure"]
 impl crate::Writable for RF_FSM_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets rf_fsm to value 0"]
 impl crate::Resettable for RF_FSM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

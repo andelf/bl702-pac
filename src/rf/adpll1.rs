@@ -267,121 +267,145 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_unlock_intrpt_clear(&mut self) -> ADPLL_LO_UNLOCK_INTRPT_CLEAR_W<0> {
         ADPLL_LO_UNLOCK_INTRPT_CLEAR_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_lock_sel(&mut self) -> ADPLL_LO_LOCK_SEL_W<1> {
         ADPLL_LO_LOCK_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_timeout_cnt1_sel(&mut self) -> ADPLL_TIMEOUT_CNT1_SEL_W<2> {
         ADPLL_TIMEOUT_CNT1_SEL_W::new(self)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_timeout_cnt_sel(&mut self) -> ADPLL_TIMEOUT_CNT_SEL_W<3> {
         ADPLL_TIMEOUT_CNT_SEL_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_momhold_lmsenb_ext(&mut self) -> ADPLL_MOMHOLD_LMSENB_EXT_W<4> {
         ADPLL_MOMHOLD_LMSENB_EXT_W::new(self)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_rst_coarse_det_ext(&mut self) -> ADPLL_RST_COARSE_DET_EXT_W<5> {
         ADPLL_RST_COARSE_DET_EXT_W::new(self)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_rst_spd_det_ext(&mut self) -> ADPLL_RST_SPD_DET_EXT_W<6> {
         ADPLL_RST_SPD_DET_EXT_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_loop_lock_ext(&mut self) -> ADPLL_LOOP_LOCK_EXT_W<7> {
         ADPLL_LOOP_LOCK_EXT_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fcal_done_ext(&mut self) -> ADPLL_FCAL_DONE_EXT_W<8> {
         ADPLL_FCAL_DONE_EXT_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fcal_start_ext(&mut self) -> ADPLL_FCAL_START_EXT_W<9> {
         ADPLL_FCAL_START_EXT_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_lock_directly(&mut self) -> ADPLL_LO_LOCK_DIRECTLY_W<10> {
         ADPLL_LO_LOCK_DIRECTLY_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_fsm_ext(&mut self) -> ADPLL_LO_FSM_EXT_W<11> {
         ADPLL_LO_FSM_EXT_W::new(self)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_fsm_en(&mut self) -> ADPLL_FSM_EN_W<12> {
         ADPLL_FSM_EN_W::new(self)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lock_fail_en(&mut self) -> ADPLL_LOCK_FAIL_EN_W<14> {
         ADPLL_LOCK_FAIL_EN_W::new(self)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_abnormal_dealed(&mut self) -> ADPLL_ABNORMAL_DEALED_W<15> {
         ADPLL_ABNORMAL_DEALED_W::new(self)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_det_start_ext(&mut self) -> ADPLL_VCTRL_DET_START_EXT_W<18> {
         ADPLL_VCTRL_DET_START_EXT_W::new(self)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_vctrl_det_en_ext(&mut self) -> ADPLL_VCTRL_DET_EN_EXT_W<19> {
         ADPLL_VCTRL_DET_EN_EXT_W::new(self)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_update_en_ext(&mut self) -> ADPLL_MOM_UPDATE_EN_EXT_W<20> {
         ADPLL_MOM_UPDATE_EN_EXT_W::new(self)
     }
     #[doc = "Bit 21"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_freqerr_det_start_ext(&mut self) -> ADPLL_FREQERR_DET_START_EXT_W<21> {
         ADPLL_FREQERR_DET_START_EXT_W::new(self)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_mom_search_en_ext(&mut self) -> ADPLL_MOM_SEARCH_EN_EXT_W<22> {
         ADPLL_MOM_SEARCH_EN_EXT_W::new(self)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_open(&mut self) -> ADPLL_LO_OPEN_W<23> {
         ADPLL_LO_OPEN_W::new(self)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_sfreg_sel(&mut self) -> ADPLL_SFREG_SEL_W<24> {
         ADPLL_SFREG_SEL_W::new(self)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_lo_unlock_intrpt_clear_sel(&mut self) -> ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_W<25> {
         ADPLL_LO_UNLOCK_INTRPT_CLEAR_SEL_W::new(self)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
+    #[must_use]
     pub fn adpll_force_inc_fcal_en(&mut self) -> ADPLL_FORCE_INC_FCAL_EN_W<26> {
         ADPLL_FORCE_INC_FCAL_EN_W::new(self)
     }
@@ -404,11 +428,10 @@ impl crate::Readable for ADPLL1_SPEC {
 #[doc = "`write(|w| ..)` method takes [adpll1::W](W) writer structure"]
 impl crate::Writable for ADPLL1_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets adpll1 to value 0"]
 impl crate::Resettable for ADPLL1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

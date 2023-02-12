@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tilr_0(&mut self) -> TILR_0_W<0> {
         TILR_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tilr_1(&mut self) -> TILR_1_W<1> {
         TILR_1_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tilr_2(&mut self) -> TILR_2_W<2> {
         TILR_2_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for TILR3_SPEC {
 #[doc = "`write(|w| ..)` method takes [tilr3::W](W) writer structure"]
 impl crate::Writable for TILR3_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TILR3 to value 0"]
 impl crate::Resettable for TILR3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

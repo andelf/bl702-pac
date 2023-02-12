@@ -14,7 +14,7 @@
   <peripherals>
     <peripheral>
       <name>glb</name>
-      <description>glb.</description>
+      <description>Global Register</description>
       <groupName>glb</groupName>
       <baseAddress>0x40000000</baseAddress>
       <size>0x20</size>
@@ -9399,7 +9399,7 @@
     </peripheral>
     <peripheral>
       <name>gpip</name>
-      <description>gpip.</description>
+      <description>General purpose DAC/ADC/ACOMP interface control</description>
       <groupName>gpip</groupName>
       <baseAddress>0x40002000</baseAddress>
       <size>0x20</size>
@@ -12501,7 +12501,7 @@
     </peripheral>
     <peripheral>
       <name>ef_ctrl</name>
-      <description>ef_ctrl.</description>
+      <description>eFuse memory control</description>
       <groupName>ef_ctrl</groupName>
       <baseAddress>0x40007000</baseAddress>
       <size>0x20</size>
@@ -13238,7 +13238,7 @@
     </peripheral>
     <peripheral>
       <name>l1c</name>
-      <description>l1c.</description>
+      <description>L1 Cache control</description>
       <groupName>l1c</groupName>
       <baseAddress>0x40009000</baseAddress>
       <size>0x20</size>
@@ -16512,7 +16512,7 @@
     </peripheral>
     <peripheral>
       <name>qdec</name>
-      <description>qdec.</description>
+      <description>Quadrature decoder control</description>
       <groupName>qdec</groupName>
       <baseAddress>0x4000A800</baseAddress>
       <size>0x20</size>
@@ -16692,7 +16692,7 @@
     </peripheral>
     <peripheral>
       <name>kys</name>
-      <description>kys.</description>
+      <description>Key Scan</description>
       <groupName>kys</groupName>
       <baseAddress>0x4000AB00</baseAddress>
       <size>0x20</size>
@@ -17133,7 +17133,7 @@
     </peripheral>
     <peripheral>
       <name>cam</name>
-      <description>cam.</description>
+      <description>Camera</description>
       <groupName>cam</groupName>
       <baseAddress>0x4000AD00</baseAddress>
       <size>0x20</size>
@@ -22439,7 +22439,7 @@
     </peripheral>
     <peripheral>
       <name>emac</name>
-      <description>emac.</description>
+      <description>Ethernet MAC</description>
       <groupName>emac</groupName>
       <baseAddress>0x4000D000</baseAddress>
       <size>0x20</size>
@@ -24981,7 +24981,7 @@
     </peripheral>
     <peripheral>
       <name>pds</name>
-      <description>pds.</description>
+      <description>Sleep control (Power Down Sleep)</description>
       <groupName>pds</groupName>
       <baseAddress>0x4000E000</baseAddress>
       <size>0x20</size>

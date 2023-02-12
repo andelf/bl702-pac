@@ -94,31 +94,37 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
+    #[must_use]
     pub fn pir_hpf_sel(&mut self) -> PIR_HPF_SEL_W<0> {
         PIR_HPF_SEL_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn pir_lpf_sel(&mut self) -> PIR_LPF_SEL_W<2> {
         PIR_LPF_SEL_W::new(self)
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
+    #[must_use]
     pub fn pir_dis(&mut self) -> PIR_DIS_W<4> {
         PIR_DIS_W::new(self)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
+    #[must_use]
     pub fn pir_en(&mut self) -> PIR_EN_W<7> {
         PIR_EN_W::new(self)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_cgen(&mut self) -> GPADC_CGEN_W<8> {
         GPADC_CGEN_W::new(self)
     }
     #[doc = "Bit 9"]
     #[inline(always)]
+    #[must_use]
     pub fn gpadc_nosync(&mut self) -> GPADC_NOSYNC_W<9> {
         GPADC_NOSYNC_W::new(self)
     }
@@ -141,11 +147,10 @@ impl crate::Readable for HBN_PIR_CFG_SPEC {
 #[doc = "`write(|w| ..)` method takes [hbn_pir_cfg::W](W) writer structure"]
 impl crate::Writable for HBN_PIR_CFG_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets HBN_PIR_CFG to value 0"]
 impl crate::Resettable for HBN_PIR_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

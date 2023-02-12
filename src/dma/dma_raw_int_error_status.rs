@@ -49,6 +49,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
+    #[must_use]
     pub fn raw_int_error_status(&mut self) -> RAW_INT_ERROR_STATUS_W<0> {
         RAW_INT_ERROR_STATUS_W::new(self)
     }
@@ -71,11 +72,10 @@ impl crate::Readable for DMA_RAW_INT_ERROR_STATUS_SPEC {
 #[doc = "`write(|w| ..)` method takes [dma_raw_int_error_status::W](W) writer structure"]
 impl crate::Writable for DMA_RAW_INT_ERROR_STATUS_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets DMA_RawIntErrorStatus to value 0"]
 impl crate::Resettable for DMA_RAW_INT_ERROR_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

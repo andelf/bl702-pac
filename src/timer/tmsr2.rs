@@ -66,16 +66,19 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn tmsr_0(&mut self) -> TMSR_0_W<0> {
         TMSR_0_W::new(self)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
+    #[must_use]
     pub fn tmsr_1(&mut self) -> TMSR_1_W<1> {
         TMSR_1_W::new(self)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
+    #[must_use]
     pub fn tmsr_2(&mut self) -> TMSR_2_W<2> {
         TMSR_2_W::new(self)
     }
@@ -98,11 +101,10 @@ impl crate::Readable for TMSR2_SPEC {
 #[doc = "`write(|w| ..)` method takes [tmsr2::W](W) writer structure"]
 impl crate::Writable for TMSR2_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets TMSR2 to value 0"]
 impl crate::Resettable for TMSR2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

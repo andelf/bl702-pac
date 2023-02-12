@@ -59,11 +59,13 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_total_hcnt(&mut self) -> REG_TOTAL_HCNT_W<0> {
         REG_TOTAL_HCNT_W::new(self)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
+    #[must_use]
     pub fn reg_total_vcnt(&mut self) -> REG_TOTAL_VCNT_W<16> {
         REG_TOTAL_VCNT_W::new(self)
     }
@@ -86,11 +88,10 @@ impl crate::Readable for FRAME_SIZE_CONTROL_SPEC {
 #[doc = "`write(|w| ..)` method takes [frame_size_control::W](W) writer structure"]
 impl crate::Writable for FRAME_SIZE_CONTROL_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets frame_size_control to value 0"]
 impl crate::Resettable for FRAME_SIZE_CONTROL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }

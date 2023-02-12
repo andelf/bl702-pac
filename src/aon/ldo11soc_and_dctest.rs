@@ -149,56 +149,67 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_ldo11soc_aon(&mut self) -> PU_LDO11SOC_AON_W<0> {
         PU_LDO11SOC_AON_W::new(self)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_sstart_sel_aon(&mut self) -> LDO11SOC_SSTART_SEL_AON_W<4> {
         LDO11SOC_SSTART_SEL_AON_W::new(self)
     }
     #[doc = "Bits 8:9"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_sstart_delay_aon(&mut self) -> LDO11SOC_SSTART_DELAY_AON_W<8> {
         LDO11SOC_SSTART_DELAY_AON_W::new(self)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_pulldown_aon(&mut self) -> LDO11SOC_PULLDOWN_AON_W<10> {
         LDO11SOC_PULLDOWN_AON_W::new(self)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_pulldown_sel_aon(&mut self) -> LDO11SOC_PULLDOWN_SEL_AON_W<11> {
         LDO11SOC_PULLDOWN_SEL_AON_W::new(self)
     }
     #[doc = "Bits 12:13"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_vth_sel_aon(&mut self) -> LDO11SOC_VTH_SEL_AON_W<12> {
         LDO11SOC_VTH_SEL_AON_W::new(self)
     }
     #[doc = "Bits 24:25"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_cc_aon(&mut self) -> LDO11SOC_CC_AON_W<24> {
         LDO11SOC_CC_AON_W::new(self)
     }
     #[doc = "Bit 28"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_rdy_aon(&mut self) -> LDO11SOC_RDY_AON_W<28> {
         LDO11SOC_RDY_AON_W::new(self)
     }
     #[doc = "Bit 29"]
     #[inline(always)]
+    #[must_use]
     pub fn ldo11soc_power_good_aon(&mut self) -> LDO11SOC_POWER_GOOD_AON_W<29> {
         LDO11SOC_POWER_GOOD_AON_W::new(self)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
+    #[must_use]
     pub fn pu_vddcore_misc_aon(&mut self) -> PU_VDDCORE_MISC_AON_W<30> {
         PU_VDDCORE_MISC_AON_W::new(self)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
+    #[must_use]
     pub fn pmip_dc_tp_out_en_aon(&mut self) -> PMIP_DC_TP_OUT_EN_AON_W<31> {
         PMIP_DC_TP_OUT_EN_AON_W::new(self)
     }
@@ -221,11 +232,10 @@ impl crate::Readable for LDO11SOC_AND_DCTEST_SPEC {
 #[doc = "`write(|w| ..)` method takes [ldo11soc_and_dctest::W](W) writer structure"]
 impl crate::Writable for LDO11SOC_AND_DCTEST_SPEC {
     type Writer = W;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
 #[doc = "`reset()` method sets ldo11soc_and_dctest to value 0"]
 impl crate::Resettable for LDO11SOC_AND_DCTEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
-    }
+    const RESET_VALUE: Self::Ux = 0;
 }
